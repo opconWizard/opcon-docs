@@ -80,7 +80,7 @@ From there, it is up to the customer to take any required action.
 |                                  |         included.                |
 |                                  |     -   Defines a trigger on the |
 |                                  |         Job Group to detect a    |
-|                                  |         \"Job Failed\" event.    |
+|                                  |         "Job Failed" event.    |
 |                                  |     -   Defines an Email         |
 |                                  |         including all the        |
 |                                  |         details explaining the   |

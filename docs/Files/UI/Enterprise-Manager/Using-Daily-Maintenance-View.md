@@ -30,7 +30,7 @@ daily schedules and validate the job dependencies in the Daily tables.
 When on the **Daily Maintenance** view, it gives you the ability to
 check and/or delete daily schedules, validate job dependencies in the
 Daily tables (e.g., provide indication if a circular dependency is found
-or if a \"Requires\" dependency is not met), and edit schedules and/or
+or if a "Requires" dependency is not met), and edit schedules and/or
 jobs in the Daily or Master tables.
 
 ## Daily Maintenance Toolbar

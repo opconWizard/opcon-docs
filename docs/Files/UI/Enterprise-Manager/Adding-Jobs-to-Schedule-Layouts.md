@@ -22,7 +22,7 @@ Click **Close ☒** (to the right of the **Job Master** tab) to close the
 
 []{#Add_a_Job_Dependency}Add a Job Dependency
 :::note
-If you do not have the privileges to \"Modify Jobs in Job Master\" in at least one department or \"All Administration Functions\" or \"All Functions,\" the **Add Dependency** tool is disabled.
+If you do not have the privileges to "Modify Jobs in Job Master" in at least one department or "All Administration Functions" or "All Functions," the **Add Dependency** tool is disabled.
 :::
 
 Establish the dependency link by following either of the two procedures:
@@ -103,7 +103,7 @@ Click the **OK** button to save the job dependency change(s).
 []{#Delete_a_Job}Delete a Job
 
 :::note
-If you do not have the privileges to \"Delete Jobs in Job Master\" in at least one department or \"All Administration Functions\" or \"All Functions,\" the **Delete** option is disabled.
+If you do not have the privileges to "Delete Jobs in Job Master" in at least one department or "All Administration Functions" or "All Functions," the **Delete** option is disabled.
 :::
 
 Click **Select** in the **Tools** frame.
@@ -118,7 +118,7 @@ button to cancel the deletion.
 []{#Delete_a_Dependency}Delete a Dependency
 
 :::note
-If you do not have the privileges to \"Modify Jobs in Job Master\" in at least one department or \"All Administration Functions\" or \"All Functions,\" the **Delete** option is disabled.
+If you do not have the privileges to "Modify Jobs in Job Master" in at least one department or "All Administration Functions" or "All Functions," the **Delete** option is disabled.
 :::
 
 Click **Select** in the **Tools** frame.

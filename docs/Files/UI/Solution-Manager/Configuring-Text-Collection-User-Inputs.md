@@ -64,8 +64,8 @@ restriction.
     expression text validation exception thrown, thus enriching the user
     experience. For example, the following might be a custom error
     message provided to users when they have entered incorrect phone
-    number formats: \"Please enter a 10-digit phone number with hyphens
-    (e.g., 281-446-5000).\"
+    number formats: "Please enter a 10-digit phone number with hyphens
+    (e.g., 281-446-5000)."
 
 Click the **OK** button to confirm User Input configuration, or click
 the **Cancel** button to discard changes. This will return you to the

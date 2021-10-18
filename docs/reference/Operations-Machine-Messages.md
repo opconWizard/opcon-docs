@@ -52,16 +52,16 @@ graphical interfaces following the job status.
      3        ACTIVE     Pre-run job is active, response to Type 2 message
      3      ACTIVE HELD  Pre-run job is active but held, response to Type 2 message
      3        SMA0033    Pre-run job is active
-     3        SMA0040    Pre-run job is active - \$JOB:KILL command failed
+     3        SMA0040    Pre-run job is active - $JOB:KILL command failed
      4        SMA0034    Pre-run job error
      4        SMA0096    Pre-run job already ended -- job not found for Kill request
-     4        SMA0098    Pre-run ended by user request (\$JOB:KILL)
+     4        SMA0098    Pre-run ended by user request ($JOB:KILL)
      5         MSGW-     Active job in Message Waiting status, message text follows
      5        ACTIVE     Run job is active, response to Type 2 message
      5      ACTIVE HELD  Run job is active but held, response to Type 2 message
      5        SMA0031    Job waiting to run
      5        SMA0035    Run job is active
-     5        SMA0041    Run job is active - \$JOB:KILL command failed
+     5        SMA0041    Run job is active - $JOB:KILL command failed
      6        SMA0036    Run job is complete
      6        SMA0100    Operator Replay job completed OK
      7        SMA0037    Run job is error
@@ -79,7 +79,7 @@ graphical interfaces following the job status.
      7        SMA0082    SMAFT Agent put-file (IBM i save files) program SMAFTAR20 failed
      7        SMA0083    SMAFT Agent put-file (DB2 files) program SMAFTAR30 failed
      7        SMA0084    SMAFT: IFS file type is invalid, only type STFM (stream file) is supported
-     7        SMA0085    SMAFT value supplied for \"If File Exists\" parameter is not recognized
+     7        SMA0085    SMAFT value supplied for "If File Exists" parameter is not recognized
      7        SMA0086    SMAFT Agent cancels transfer request because file exists and option is do not overwrite
      7        SMA0087    SMAFT Agent failed during attempt to backup target file
      7        SMA0088    SMAFT Agent detected invalid character in record separator following hex escape sequence
@@ -91,7 +91,7 @@ graphical interfaces following the job status.
      7        SMA0094    SMAFT Agent unable to clear target file that is subject to overwrite
      7        SMA0095    SMAFT Agent failed during creation of target file that did not exist
      7        SMA0097    Job run command has already ended -- job not found for Kill request
-     7        SMA0099    Run job ended by user request (\$JOB:KILL)
+     7        SMA0099    Run job ended by user request ($JOB:KILL)
      7        SMA0101    Operator Replay failed: Telnet host not recognized (getHostByName)
      7        SMA0102    Operator Replay failed: Cannot open socket to use with telnet (sock)
      7        SMA0103    Operator Replay failed: Cannot connect to telnet service (connect)
@@ -144,7 +144,7 @@ message sent from SMANetCom to the LSAM.
 +----------------------+----------------------------------------------+
 | DS                   | The job terminated abnormally.               |
 +----------------------+----------------------------------------------+
-| DS OUT OF QUEUE      | The job was DS\'ed while still queued.       |
+| DS OUT OF QUEUE      | The job was DS'ed while still queued.       |
 +----------------------+----------------------------------------------+
 | F DS                 | The job experienced a fault and was          |
 |                      | terminated abnormally.                       |
@@ -279,7 +279,7 @@ message sent from SMANetCom to the LSAM.
 |                      |                                              |
 |                      | **Note:** The PARAM/ATTR ERR message         |
 |                      | replaces NO JOB TITLE when the               |
-|                      | \"Contemporary, XML\" protocol is in use.    |
+|                      | "Contemporary, XML" protocol is in use.    |
 +----------------------+----------------------------------------------+
 | NO WFL FILE          | -   The Details screen in the Enterprise     |
 |                      |     Manager contains the START command, but  |
@@ -300,17 +300,17 @@ message sent from SMANetCom to the LSAM.
 |                      |                                              |
 |                      | **Note:** The PARAM/ATTR ERR message         |
 |                      | replaces NO WFL FILE when the                |
-|                      | \"Contemporary, XML\" protocol is in use.    |
+|                      | "Contemporary, XML" protocol is in use.    |
 +----------------------+----------------------------------------------+
 | NOT CODE FILE        | The Details screen in the Enterprise Manager |
 |                      | contains the RUN command, but the File Title |
 |                      | is not the name of an existing executable    |
 |                      | file.                                        |
 +----------------------+----------------------------------------------+
-| NOT DSED             | -   A \"Kill\" was requested for this job,   |
+| NOT DSED             | -   A "Kill" was requested for this job,   |
 |                      |     but the job was not O-DSed.              |
 |                      | -   This message often occurs when the kill  |
-|                      |     was attempted [after]{.ul} the job\'s    | |                      |     completion.                              |
+|                      |     was attempted [after]{.ul} the job's    | |                      |     completion.                              |
 +----------------------+----------------------------------------------+
 | NOT FOUND-ARRAY      | This message is sent in response to an       |
 |                      | OpCon job status  |
@@ -380,15 +380,15 @@ message sent from SMANetCom to the LSAM.
 |                      |     the status changes to RUNNING.           |
 +----------------------+----------------------------------------------+
 | RESTART H_ER nnn     | -   Following a restart of the LSAM, the     |
-|                      |     job\'s status could not be determined    |
-|                      |     due to a GETSTATUS hard error \"nnn\".   |
+|                      |     job's status could not be determined    |
+|                      |     due to a GETSTATUS hard error "nnn".   |
 |                      | -   A description of the specific hard error |
 |                      |     may be found in the appropriate appendix |
 |                      |     of the MCP *GETSTATUS/SETSTATUS Manual*. |
 +----------------------+----------------------------------------------+
 | RESTART S_ER nnn     | -   Following a restart of the LSAM, the     |
-|                      |     job\'s status could not be determined    |
-|                      |     due to a GETSTATUS soft error \"nnn\".   |
+|                      |     job's status could not be determined    |
+|                      |     due to a GETSTATUS soft error "nnn".   |
 |                      | -   A description of the specific soft error |
 |                      |     may be found in the appropriate appendix |
 |                      |     of the MCP *GETSTATUS/SETSTATUS Manual*. |
@@ -426,7 +426,7 @@ message sent from SMANetCom to the LSAM.
 |                      |     reported the job as failed.              |
 +----------------------+----------------------------------------------+
 | UNKNOWN ERROR        | -   This message occurs when a specific      |
-|                      |     reason for the job\'s failure could not  |
+|                      |     reason for the job's failure could not  |
 |                      |     be identified.                           |
 |                      | -   In most cases, the WFL job has failed    |
 |                      |     queue insertion. The mix number is the   |
@@ -467,9 +467,9 @@ message sent from SMANetCom to the LSAM.
 |                      |     appropriate task attributes should also  |
 |                      |     be included.                             |
 |                      | -   The WFL source file contains an          |
-|                      |     \"INCLUDE\" statement that references a  |
+|                      |     "INCLUDE" statement that references a  |
 |                      |     file that cannot be found. The WFL       |
-|                      |     compile was DS\'ed.                      |
+|                      |     compile was DS'ed.                      |
 +----------------------+----------------------------------------------+
 
 : MCP LSAM Messages in Schedule Operations
@@ -544,11 +544,11 @@ it is an OpenVMS specific exit code.
 |                | has not yet received a completion status, the LSAM |
 |                | sends a status of 7 to the SAM (after ignoring the |
 |                | first TX2 from SAM). One possible cause for this   |
-|                | error is the monitor job was \"killed\" or         |
-|                | \"stopped\" by the operator.                       |
+|                | error is the monitor job was "killed" or         |
+|                | "stopped" by the operator.                       |
 +----------------+----------------------------------------------------+
 | 10018          | The SAM has submitted more jobs for starting than  |
-|                | the LSAM\'s configured limits. This rare error     |
+|                | the LSAM's configured limits. This rare error     |
 |                | occurs when a large number of short-running jobs   |
 |                | are submitted in rapid succession. Place the       |
 |                | schedule on hold for a short time to permit the    |
@@ -566,7 +566,7 @@ it is an OpenVMS specific exit code.
 |                |     steps may be taken to minimize the occurrence  |
 |                |     of lost messages:                              |
 |                | -   Set the LSAM configuration variable            |
-|                |     \"close_dispatcher_socket\" to 0.              |
+|                |     "close_dispatcher_socket" to 0.              |
 |                | -   Consider that there may be insufficient socket |
 |                |     buffer quota and total buffer limit settings.  |
 |                |     Modification of these system variables should  |
@@ -576,23 +576,23 @@ it is an OpenVMS specific exit code.
 |                |     settings. Refer to the document appropriate to |
 |                |     the OS level and TCP/IP version of the         |
 |                |     affected machine, (i.e., Appendix A of the     |
-|                |     \"Digital TCP/IP Services for Open VMS         |
+|                |     "Digital TCP/IP Services for Open VMS         |
 |                |     Management Command Reference Operating         |
 |                |     Systems: OpenVMS Alpha Versions 6.2, 7.0,      |
-|                |     7.1\", or Software Version: DIGITAL TCP/IP     |
-|                |     Services for OpenVMS Version 4.2\").           |
+|                |     7.1", or Software Version: DIGITAL TCP/IP     |
+|                |     Services for OpenVMS Version 4.2").           |
 +----------------+----------------------------------------------------+
 | 10020          | For jobs that were submitted to the O/S, but for   |
-|                | which a \"running\" status was never received from |
+|                | which a "running" status was never received from |
 |                | the preamble, it is not possible to say with       |
 |                | certainty whether the job failed to start, or      |
 |                | started and was killed. The LSAM sends a status    |
 |                | code of 7 (failed) to the SAM.                     |
 +----------------+----------------------------------------------------+
-| 10200          | The lib\$spawn was unsuccessful. Job is marked as  |
+| 10200          | The lib$spawn was unsuccessful. Job is marked as  |
 |                | JOB_REQUEUE.                                       |
 +----------------+----------------------------------------------------+
-| 10201          | The lib\$spawn was unsuccessful. Job is marked as  |
+| 10201          | The lib$spawn was unsuccessful. Job is marked as  |
 |                | JOB_REQUEUE.                                       |
 +----------------+----------------------------------------------------+
 | 10300          | The status for this job was never updated by the   |
@@ -616,21 +616,21 @@ interfaces following the job status.
 +----------------------------------+----------------------------------+
 | Message                          | Description                      |
 +==================================+==================================+
-| \<run\'s-termination-word\>      | The run\'s condition word value  |
+| \<run's-termination-word\>      | The run's condition word value  |
 |                                  | at termination.                  |
 |                                  |                                  |
 |                                  | Used to determine a successful   |
 |                                  | or error termination.            |
 +----------------------------------+----------------------------------+
-| \<ST-failed-message\>            | The \"ST\" failed message        |
+| \<ST-failed-message\>            | The "ST" failed message        |
 |                                  | returned by the Exec when an     |
-|                                  | \"ST\" statement is rejected.    |
+|                                  | "ST" statement is rejected.    |
 +----------------------------------+----------------------------------+
 | \*ASSIGN FAILED ON FILE-NAME     | -   This message is displayed    |
 | FAC=ssssssssssss                 |     when SAM has repeatedly      |
 |                                  |     tried to assign a file that  |
 |                                  |     should be available.         |
-|                                  | -   The \"sss\" field contains   |
+|                                  | -   The "sss" field contains   |
 |                                  |     the octal facility status    |
 |                                  |     code used to determine the   |
 |                                  |     cause of the reject.         |
@@ -650,7 +650,7 @@ interfaces following the job status.
 |                                  |     without ever becoming        |
 |                                  |     active.                      |
 |                                  | -   This message is the result   |
-|                                  |     of LSAM\'s RSI (DEMAND)      |
+|                                  |     of LSAM's RSI (DEMAND)      |
 |                                  |     userid not allowed @\@CONS   |
 |                                  |     RC commands, or the DEMAND   |
 |                                  |     session cannot be started.   |
@@ -659,7 +659,7 @@ interfaces following the job status.
 |                                  | and the unique Exec Run-ID has   |
 |                                  | been identified.                 |
 +----------------------------------+----------------------------------+
-| AWAITING ECL FILE                | -   Displayed when a job\'s ECL  |
+| AWAITING ECL FILE                | -   Displayed when a job's ECL  |
 |                                  |     file is exclusively assigned |
 |                                  |     to another EXEC run.         |
 |                                  | -   The job is not able to start |
@@ -680,7 +680,7 @@ interfaces following the job status.
 |                                  | identified for the job is not    |
 |                                  | found in the ECL file.           |
 +----------------------------------+----------------------------------+
-| ECL READ ERROR                   | Displayed when a job\'s ECL      |
+| ECL READ ERROR                   | Displayed when a job's ECL      |
 |                                  | cannot be read, often due to a   |
 |                                  | corrupted ECL file/element.      |
 +----------------------------------+----------------------------------+
@@ -689,19 +689,19 @@ interfaces following the job status.
 |                                  | satisfied.                       |
 +----------------------------------+----------------------------------+
 | JOB IN BACKLOG                   | -   The job has been detected in |
-|                                  |     the Exec\'s backlog.         |
-|                                  | -   May be due to the Exec\'s    |
+|                                  |     the Exec's backlog.         |
+|                                  | -   May be due to the Exec's    |
 |                                  |     Batch Limit setting, or      |
 |                                  |     resources required by the    |
 |                                  |     job are not yet available.   |
 +----------------------------------+----------------------------------+
-| PRERUN COMPLETED                 | The job\'s prerun has completed  |
+| PRERUN COMPLETED                 | The job's prerun has completed  |
 |                                  | successfully, the actual job is  |
 |                                  | started next.                    |
 +----------------------------------+----------------------------------+
-| RC= FINNED                       | -   Displayed when an \"@\@CONS  |
-|                                  |     RC\" command for the job     |
-|                                  |     returns a \"FINNED\"         |
+| RC= FINNED                       | -   Displayed when an "@\@CONS  |
+|                                  |     RC" command for the job     |
+|                                  |     returns a "FINNED"         |
 |                                  |     response.                    |
 |                                  | -   Indicates the job terminated |
 |                                  |     without providing status     |
@@ -711,9 +711,9 @@ interfaces following the job status.
 |                                  |     account code rejected by the |
 |                                  |     system console operator.     |
 +----------------------------------+----------------------------------+
-| RC= NOT FOUND                    | -   Displayed when an \"@\@CONS  |
-|                                  |     RC\" command for the job     |
-|                                  |     returns a \"NOT FOUND\"      |
+| RC= NOT FOUND                    | -   Displayed when an "@\@CONS  |
+|                                  |     RC" command for the job     |
+|                                  |     returns a "NOT FOUND"      |
 |                                  |     response.                    |
 |                                  | -   Indicates the job is no      |
 |                                  |     longer active, but           |
@@ -744,23 +744,23 @@ interfaces following the job status.
 |                                  | used for starting an Exec job is |
 |                                  | invalid.                         |
 +----------------------------------+----------------------------------+
-| ST STMT SUBMITTED                | Displayed when the \"ST\"        |
+| ST STMT SUBMITTED                | Displayed when the "ST"        |
 |                                  | (start) statement has been       |
 |                                  | submitted to the Exec, but the   |
 |                                  | job has not yet become active.   |
 +----------------------------------+----------------------------------+
-| START CMD FAILED                 | Displayed when the \"\@START\"   |
+| START CMD FAILED                 | Displayed when the "\@START"   |
 |                                  | command has failed for an        |
 |                                  | unidentifiable reason.           |
 +----------------------------------+----------------------------------+
 | START FILE PROBLEM               | -   Displayed when the LSAM is   |
 |                                  |     unable to manipulate the     |
-|                                  |     job\'s tracking file.        |
+|                                  |     job's tracking file.        |
 |                                  | -   Additional information is    |
 |                                  |     displayed on the system      |
 |                                  |     console.                     |
 +----------------------------------+----------------------------------+
-| START STMT SUBMITTED             | Displayed when the \"\@START\"   |
+| START STMT SUBMITTED             | Displayed when the "\@START"   |
 |                                  | statement has been submitted to  |
 |                                  | the Exec, but the job has not    |
 |                                  | yet become active.               |
@@ -768,7 +768,7 @@ interfaces following the job status.
 | TRACKING FILE GONE               | -   Displayed when a job         |
 |                                  |     terminates without providing |
 |                                  |     termination status to the    |
-|                                  |     LSAM, causing the job\'s     |
+|                                  |     LSAM, causing the job's     |
 |                                  |     tracking file to be deleted. |
 |                                  | -   This indicates a job error   |
 |                                  |     termination, or an ECL issue |
@@ -811,7 +811,7 @@ system console:
 |                                  | number of DEMAND runs allowed).  |
 +----------------------------------+----------------------------------+
 | \* INVALID REALTIME PRIORITY:    | -   The RealTime option has been |
-| RAISED TO REALTIME LVL 35        |     activated on the program\'s  |
+| RAISED TO REALTIME LVL 35        |     activated on the program's  |
 |                                  |     XQT statement, but the       |
 |                                  |     priority provided is not     |
 |                                  |     valid (not between 02 and    |
@@ -820,7 +820,7 @@ system console:
 |                                  |     priority of 35.              |
 +----------------------------------+----------------------------------+
 | \* INVALID REALTIME PRIORITY:    | -   The RealTime option has been |
-| RAISED TO REALTIME LVL:          |     activated on the program\'s  |
+| RAISED TO REALTIME LVL:          |     activated on the program's  |
 | \<*param-RT-level*\>             |     XQT statement, but the       |
 |                                  |     priority provided is not     |
 |                                  |     valid (not between 02 and    |
@@ -829,7 +829,7 @@ system console:
 |                                  |     priority of 35.              |
 +----------------------------------+----------------------------------+
 | \* REALTIME OPTION SELECTED, BUT | -   The RealTime option has been |
-| NON-NUMERIC LEVEL: \<*xx*\>      |     activated on the program\'s  |
+| NON-NUMERIC LEVEL: \<*xx*\>      |     activated on the program's  |
 |                                  |     XQT statement, but the       |
 | \* ASSUMING REALTIME PRIORITY 35 |     priority provided is not     |
 |                                  |     valid (not a number between  |
@@ -1111,10 +1111,10 @@ system console:
 |                                  |     job.                         |
 |                                  | -   The Exec has rejected the    |
 |                                  |     file assignment for a reason |
-|                                  |     other than \"not             |
-|                                  |     catalogued\".                |
+|                                  |     other than "not             |
+|                                  |     catalogued".                |
 |                                  | -   The file may be              |
-|                                  |     \"unloaded\", or the LSAM is |
+|                                  |     "unloaded", or the LSAM is |
 |                                  |     not authorized to access the |
 |                                  |     file.                        |
 +----------------------------------+----------------------------------+
@@ -1210,7 +1210,7 @@ interfaces following the job status.
 |                                  | capabilities, or higher.         |
 +----------------------------------+----------------------------------+
 | \* INVALID REALTIME PRIORITY:    | -   The RealTime option has been |
-| \<*xx*\> and \* ASSUMING         |     activated on the program\'s  |
+| \<*xx*\> and \* ASSUMING         |     activated on the program's  |
 | REALTIME PRIORITY 35             |     XQT statement, but the       |
 |                                  |     priority provided is not     |
 |                                  |     valid (not between 02 and    |
@@ -1219,7 +1219,7 @@ interfaces following the job status.
 |                                  |     priority of 35.              |
 +----------------------------------+----------------------------------+
 | \* REALTIME OPTION SELECTED, BUT | -   The RealTime option has been |
-| NON-NUMERIC LEVEL: \<*xx*\> and  |     activated on the program\'s  |
+| NON-NUMERIC LEVEL: \<*xx*\> and  |     activated on the program's  |
 | \* ASSUMING REALTIME PRIORITY 35 |     XQT statement, but the       |
 |                                  |     priority provided is not     |
 |                                  |     valid (not a number between  |
@@ -1378,10 +1378,10 @@ interfaces following the job status.
 |                                  | OpCon |
 |                                  |     job caused MAM to abort.     |
 |                                  | -   MAM is restarted, the job is |
-|                                  |     identified as \"errored\".   |
+|                                  |     identified as "errored".   |
 +----------------------------------+----------------------------------+
 | \<*OpConxps-job-id*\> IS RUNNING | The MAM has identified the job   |
-|                                  | as \"running\".                  |
+|                                  | as "running".                  |
 +----------------------------------+----------------------------------+
 | \<*OpConxps-job-id*\> HAS FINNED | The MAM has identified the job   |
 |                                  | as terminated successfully.      |
@@ -1460,7 +1460,7 @@ interfaces following the job status.
 |                                  |     unable to detect the MAM as  |
 |                                  |     active.                      |
 |                                  | -   Using LMAM commands to       |
-|                                  |     \"down\" and then \"up\" the |
+|                                  |     "down" and then "up" the |
 |                                  |     MAM forces LMAM to start     |
 |                                  |     communications with MAM.     |
 +----------------------------------+----------------------------------+
@@ -1510,7 +1510,7 @@ interfaces following the job status.
 |                                  | -   Indicates a corrupted        |
 |                                  |     SMAJOR/ECL element.          |
 +----------------------------------+----------------------------------+
-| INVALID REALTIME PRIORITY:       | -   The program\'s XQT statement |
+| INVALID REALTIME PRIORITY:       | -   The program's XQT statement |
 | \<xx\> and \* ASSUMING REALTIME  |     activated the RealTime       |
 | PRIORITY 35                      |     option, but the runstream    |
 |                                  |     did not provide a valid      |
@@ -1519,10 +1519,10 @@ interfaces following the job status.
 |                                  |     the invalid priority. Valid  |
 |                                  |     priority values range from   |
 |                                  |     02 to 35.                    |
-|                                  | -   The program\'s priority      |
+|                                  | -   The program's priority      |
 |                                  |     defaults to 35.              |
 +----------------------------------+----------------------------------+
-| REALTIME OPTION SELECTED, BUT    | -   The program\'s XQT statement |
+| REALTIME OPTION SELECTED, BUT    | -   The program's XQT statement |
 | NON-NUMERIC LEVEL: \<xx\> and \* |     activated the RealTime       |
 | ASSUMING REALTIME PRIORITY 35    |     option, but the runstream    |
 |                                  |     did not provide a valid      |
@@ -1531,7 +1531,7 @@ interfaces following the job status.
 |                                  |     the invalid priority. Valid  |
 |                                  |     priority values range from   |
 |                                  |     02 to 35.                    |
-|                                  | -   The program\'s priority      |
+|                                  | -   The program's priority      |
 |                                  |     defaults to 35.              |
 +----------------------------------+----------------------------------+
 | \*\* REG KEYIN ERROR, STATUS=    | -   The program received an      |
@@ -1546,7 +1546,7 @@ interfaces following the job status.
 |                                  |     registration procedure.      |
 |                                  | -   Refer to Unisys              |
 |                                  |     documentation for the error  |
-|                                  |     code\'s meaning.             |
+|                                  |     code's meaning.             |
 +----------------------------------+----------------------------------+
 | SMA JOB OUTPUT RETRIEVAL ACTIVE  | The Job Output Retrieval System  |
 | - *hh:mm:ss.tt*                  | (JORS) is ready to accept        |
@@ -1567,7 +1567,7 @@ interfaces following the job status.
 |                                  |     contains the unauthorized    |
 |                                  |     keyin.                       |
 |                                  | -   The \<terminal-id\> field    |
-|                                  |     contains the keyin\'s        |
+|                                  |     contains the keyin's        |
 |                                  |     terminal identification.     |
 +----------------------------------+----------------------------------+
 | JORS RCD READ LOCK FAILURE       | -   The SMAJOR is unable to      |
@@ -1598,7 +1598,7 @@ interfaces following the job status.
 |                                  |     XFRTCP/ECL element.          |
 +----------------------------------+----------------------------------+
 | INVALID REALTIME PRIORITY:       | -   The RealTime option has been |
-| \<xx\> and \* ASSUMING REALTIME  |     activated on the program\'s  |
+| \<xx\> and \* ASSUMING REALTIME  |     activated on the program's  |
 | PRIORITY 35                      |     XQT statement, but the       |
 |                                  |     priority provided is not     |
 |                                  |     valid (not between 02 and    |
@@ -1607,7 +1607,7 @@ interfaces following the job status.
 |                                  |     priority of 35.              |
 +----------------------------------+----------------------------------+
 | REALTIME OPTION SELECTED, BUT    | -   The RealTime option has been |
-| NON-NUMERIC LEVEL: \<xx\> and \* |     activated on the program\'s  |
+| NON-NUMERIC LEVEL: \<xx\> and \* |     activated on the program's  |
 | ASSUMING REALTIME PRIORITY 35    |     XQT statement, but the       |
 |                                  |     priority provided is not     |
 |                                  |     valid (not a number between  |
@@ -1671,10 +1671,10 @@ interfaces following the job status.
 | PROTOCOL                         |     to communicate in LEGACY     |
 |                                  |     protocol.                    |
 |                                  | -   The configuration must be    |
-|                                  |     \"Contemporary, Non-XML\".   |
+|                                  |     "Contemporary, Non-XML".   |
 +----------------------------------+----------------------------------+
 | JOB \<OpConxps-job-id\> ERRORED  | The configuration option is set  |
-| ON \<mm/dd/yyyy\> AT             | to display the job\'s ECL        |
+| ON \<mm/dd/yyyy\> AT             | to display the job's ECL        |
 | \<hh:mm:ss\> and JOB             | location on error terminations.  |
 | \<OpConxps-job-id\> ECL:         |                                  |
 | \<qual\*file.element/version\>   |                                  |
@@ -1803,9 +1803,9 @@ Windows exit codes).
                      70004                     Error in logging on to SAP system: bad User ID, password, or TCP/IP address.
                      70005                     Error in checking existing job status: could not find the job on the SAP system.
                      70006                     Error in job copy: The LSAM could not copy the job to run it in SAP.
-                     70007                     Error in Job definition get: after the job was copied for execution, the LSAM couldn\'t retrieve the copied job\'s details; therefore, the job could not run.
+                     70007                     Error in Job definition get: after the job was copied for execution, the LSAM couldn't retrieve the copied job's details; therefore, the job could not run.
                      70008                     Error in starting the copied job: the job copy and job retrieve were successful, but the LSAM could not start the job.
-                     70009                     Error in getting the job\'s current status
+                     70009                     Error in getting the job's current status
                      70010                     Error in reading the job log
                      70011                     Error in getting the children job information for the current job
                      70012                     Error in aborting job
@@ -1821,132 +1821,132 @@ Error Codes.
 
    Message Number  Description
   ---------------- --------------------------------
-   value \'XM\',   xmi_messages
-    value \'9\',   msg_logon_gen
-   value \'010\'   msg_logon
-   value \'011\'   msg_logoff_gen
-   value \'012\'   msg_logoff
-   value \'013\'   msg_auditlevel_set
-   value \'014\'   msg_versions_get_gen
-   value \'015\'   msg_versions_get
-   value \'016\'   msg_version_check
-   value \'017\'   msg_interface_describe
-   value \'018\'   msg_logmsg_enter
-   value \'019\'   msg_log_select
-   value \'020\'   msg_message_formats_upload
-   value \'021\',  msg_already_logged_on_gen
-   value \'022\',  msg_already_logged_on
-   value \'023\',  msg_unknown_interface
-   value \'024\',  msg_unknown_version
-   value \'025\',  msg_logon_denied_gen
-   value \'026\',  msg_logon_denied
-   value \'027\',  msg_not_logged_on_gen
-   value \'028\',  msg_not_logged_on
-   value \'029\',  msg_invalid_range
-   value \'030\',  msg_cant_select
-   value \'031\',  msg_cant_log
-   value \'032\',  msg_cant_upload
-   value \'033\',  msg_invalid_parameters
-   value \'034\',  msg_problem_detected
-   value \'035\',  msg_reorg
-   value \'037\',  msg_reorg_gen
-   value \'046\',  msg_jobname_missing
-   value \'047\',  msg_jobid_missing
-   value \'048\',  msg_ext_user_missing
-   value \'049\',  msg_job_does_not_exist
-   value \'050\',  msg_progname_missing
-   value \'051\'   msg_no_archive_info
-   value \'052\',  msg_invalid_print_params
-   value \'053\',  msg_invalid_archive_params
-   value \'054\',  msg_no_release_privilege
-   value \'055\',  msg_job_not_active
-   value \'056\',  msg_no_abort_privilege
-   value \'057\',  msg_no_job_found
-   value \'058\'   msg_targethost_missing
-   value \'059\',  msg_no_jobsteps
-   value \'060\',  msg_no_job_protocol
-   value \'061\',  msg_empty_job_protocol
-   value \'062\',  msg_step_count_missing
-   value \'063\',  msg_no_spoollist
-   value \'064\',  msg_privilege_missing
-   value \'065\',  msg_invalid_spoolid
-   value \'066\',  msg_no_immediate_start_poss
-   value \'067\',  msg_no_resources_found
-   value \'068\',  msg_invalid_date_time
-   value \'069\',  msg_invalid_server_name
-   value \'070\',  msg_prog_has_no_variant
-   value \'071\',  msg_prog_does_not_exist
-   value \'072\',  msg_no_execute_privilege
-   value \'073\',  msg_prog_not_executable
-   value \'074\'   msg_no_variants_defined
-   value \'075\'   msg_invalid_select_option
-   value \'076\'   msg_select_param_missing
-   value \'077\'   msg_trace_before_call
-   value \'078\'   msg_select_jobname_missing
-   value \'079\'   msg_select_username_missing
-   value \'080\'   msg_cant_del_in_jobtable
-   value \'081\'   msg_cant_del_joblog
-   value \'082\'   msg_problem_pred_succ
-   value \'083\'   msg_commit_failed
-   value \'084\'   msg_no_delete_privilege
-   value \'085\'   msg_job_running
-   value \'086\'   msg_interface_reorg
-   value \'087\'   msg_interface_reorg_gen
-   value \'088\'   msg_parent_child_inconsistency
-   value \'089\'   msg_child_register_error
-   value \'090\'   msg_mask_error
-   value \'091\'   msg_param_missing
-   value \'092\'   msg_event_does_not_exist
-   value \'093\'   msg_event_raise_failed
-   value \'094\'   msg_job_confirmation_failed
-   value \'095\'   msg_wrong_confirmation_type
-   value \'096\'   msg_wrong_selection_par
-   value \'097\'   msg_parentchild_inactive
-   value \'098\'   msg_interception_inactive
-   value \'099\'   msg_wrong_counter
-   value \'100\'   msg_wrong_printer_name
-   value \'101\'   msg_selection_finished
-   value \'194\'   msg_cant_enq_job
-   value \'195\'   msg_cant_read_jobdata
-   value \'196\'   msg_cant_release_job
-   value \'197\'   msg_cant_set_jobstatus_in_db
-   value \'198\'   msg_cant_start_job_immediately
-   value \'199\'   msg_cant_update_jobdata
-   value \'200\'   msg_eventcnt_generation_error
-   value \'201\'   msg_invalid_dialog_type
-   value \'202\'   msg_invalid_new_jobdata
-   value \'203\'   msg_invalid_new_jobstatus
-   value \'204\'   msg_invalid_startdate
-   value \'205\'   msg_job_edit_failed
-   value \'206\'   msg_job_modify_canceled
-   value \'207\'   msg_job_not_modifiable_anymore
-   value \'208\'   msg_nothing_to_do
-   value \'209\'   msg_no_batch_on_target_host
-   value \'210\'   msg_no_batch_server_found
-   value \'211\'   msg_no_batch_wp_for_jobclass
-   value \'212\'   msg_no_modify_privilege_given
-   value \'213\'   msg_no_release_privilege_given
-   value \'214\'   msg_no_startdate_no_release
-   value \'216\'   msg_invalid_targetgroup
-   value \'217\'   msg_conflicting_targets
-   value \'218\'   msg_job_doesnt_have_steps
-   value \'219\'   msg_wrong_step_type
-   value \'220\'   msg_job_doesnt_have_this_step
-   value \'221\'   msg_cannot_get_priarc_params
-   value \'222\'   msg_cannot_read_job
-   value \'223\'   msg_cannot_modify_job
-   value \'224\'   msg_wrong_step_number
-   value \'225\'   msg_error_modifying_worktable
-   value \'227\'   msg_job_nosteps
-   value \'228\'   msg_jobcount_missing
-   value \'229\'   msg_invalid_target
-   value \'230\'   msg_error_reading_worktable
-   value \'231\'   msg_delete_line_error
-   value \'232\'   msg_no_step_info
-   value \'233\'   msg_wrong_action
-   value \'234\'   msg_no_change_authority
-   value \'235\'   msg_invalid_jobclass
-   value \'236\'   msg_wrong_client
+   value 'XM',   xmi_messages
+    value '9',   msg_logon_gen
+   value '010'   msg_logon
+   value '011'   msg_logoff_gen
+   value '012'   msg_logoff
+   value '013'   msg_auditlevel_set
+   value '014'   msg_versions_get_gen
+   value '015'   msg_versions_get
+   value '016'   msg_version_check
+   value '017'   msg_interface_describe
+   value '018'   msg_logmsg_enter
+   value '019'   msg_log_select
+   value '020'   msg_message_formats_upload
+   value '021',  msg_already_logged_on_gen
+   value '022',  msg_already_logged_on
+   value '023',  msg_unknown_interface
+   value '024',  msg_unknown_version
+   value '025',  msg_logon_denied_gen
+   value '026',  msg_logon_denied
+   value '027',  msg_not_logged_on_gen
+   value '028',  msg_not_logged_on
+   value '029',  msg_invalid_range
+   value '030',  msg_cant_select
+   value '031',  msg_cant_log
+   value '032',  msg_cant_upload
+   value '033',  msg_invalid_parameters
+   value '034',  msg_problem_detected
+   value '035',  msg_reorg
+   value '037',  msg_reorg_gen
+   value '046',  msg_jobname_missing
+   value '047',  msg_jobid_missing
+   value '048',  msg_ext_user_missing
+   value '049',  msg_job_does_not_exist
+   value '050',  msg_progname_missing
+   value '051'   msg_no_archive_info
+   value '052',  msg_invalid_print_params
+   value '053',  msg_invalid_archive_params
+   value '054',  msg_no_release_privilege
+   value '055',  msg_job_not_active
+   value '056',  msg_no_abort_privilege
+   value '057',  msg_no_job_found
+   value '058'   msg_targethost_missing
+   value '059',  msg_no_jobsteps
+   value '060',  msg_no_job_protocol
+   value '061',  msg_empty_job_protocol
+   value '062',  msg_step_count_missing
+   value '063',  msg_no_spoollist
+   value '064',  msg_privilege_missing
+   value '065',  msg_invalid_spoolid
+   value '066',  msg_no_immediate_start_poss
+   value '067',  msg_no_resources_found
+   value '068',  msg_invalid_date_time
+   value '069',  msg_invalid_server_name
+   value '070',  msg_prog_has_no_variant
+   value '071',  msg_prog_does_not_exist
+   value '072',  msg_no_execute_privilege
+   value '073',  msg_prog_not_executable
+   value '074'   msg_no_variants_defined
+   value '075'   msg_invalid_select_option
+   value '076'   msg_select_param_missing
+   value '077'   msg_trace_before_call
+   value '078'   msg_select_jobname_missing
+   value '079'   msg_select_username_missing
+   value '080'   msg_cant_del_in_jobtable
+   value '081'   msg_cant_del_joblog
+   value '082'   msg_problem_pred_succ
+   value '083'   msg_commit_failed
+   value '084'   msg_no_delete_privilege
+   value '085'   msg_job_running
+   value '086'   msg_interface_reorg
+   value '087'   msg_interface_reorg_gen
+   value '088'   msg_parent_child_inconsistency
+   value '089'   msg_child_register_error
+   value '090'   msg_mask_error
+   value '091'   msg_param_missing
+   value '092'   msg_event_does_not_exist
+   value '093'   msg_event_raise_failed
+   value '094'   msg_job_confirmation_failed
+   value '095'   msg_wrong_confirmation_type
+   value '096'   msg_wrong_selection_par
+   value '097'   msg_parentchild_inactive
+   value '098'   msg_interception_inactive
+   value '099'   msg_wrong_counter
+   value '100'   msg_wrong_printer_name
+   value '101'   msg_selection_finished
+   value '194'   msg_cant_enq_job
+   value '195'   msg_cant_read_jobdata
+   value '196'   msg_cant_release_job
+   value '197'   msg_cant_set_jobstatus_in_db
+   value '198'   msg_cant_start_job_immediately
+   value '199'   msg_cant_update_jobdata
+   value '200'   msg_eventcnt_generation_error
+   value '201'   msg_invalid_dialog_type
+   value '202'   msg_invalid_new_jobdata
+   value '203'   msg_invalid_new_jobstatus
+   value '204'   msg_invalid_startdate
+   value '205'   msg_job_edit_failed
+   value '206'   msg_job_modify_canceled
+   value '207'   msg_job_not_modifiable_anymore
+   value '208'   msg_nothing_to_do
+   value '209'   msg_no_batch_on_target_host
+   value '210'   msg_no_batch_server_found
+   value '211'   msg_no_batch_wp_for_jobclass
+   value '212'   msg_no_modify_privilege_given
+   value '213'   msg_no_release_privilege_given
+   value '214'   msg_no_startdate_no_release
+   value '216'   msg_invalid_targetgroup
+   value '217'   msg_conflicting_targets
+   value '218'   msg_job_doesnt_have_steps
+   value '219'   msg_wrong_step_type
+   value '220'   msg_job_doesnt_have_this_step
+   value '221'   msg_cannot_get_priarc_params
+   value '222'   msg_cannot_read_job
+   value '223'   msg_cannot_modify_job
+   value '224'   msg_wrong_step_number
+   value '225'   msg_error_modifying_worktable
+   value '227'   msg_job_nosteps
+   value '228'   msg_jobcount_missing
+   value '229'   msg_invalid_target
+   value '230'   msg_error_reading_worktable
+   value '231'   msg_delete_line_error
+   value '232'   msg_no_step_info
+   value '233'   msg_wrong_action
+   value '234'   msg_no_change_authority
+   value '235'   msg_invalid_jobclass
+   value '236'   msg_wrong_client
 
   : SAP BAPI Errors
 
@@ -1995,7 +1995,7 @@ code can be found in the job output.
 ## UNIX LSAM Messages
 
 This section covers messages generated by the LSAM which may appear in
-the LSAM\'s log and/or error file. Whether informational or to report an
+the LSAM's log and/or error file. Whether informational or to report an
 error condition, messages begin with text generated by the LSAM,
 followed by (in parentheses):
 
@@ -2024,7 +2024,7 @@ message ID may be followed by a variety of error codes.
 |                                  |                                  |
 |                                  | In this case, the user should    |
 |                                  | check what was entered for       |
-|                                  | \"Start Image\" on the Job       |
+|                                  | "Start Image" on the Job       |
 |                                  | Details screen.                  |
 +----------------------------------+----------------------------------+
 
@@ -2032,12 +2032,12 @@ There are currently over 500 messages which might be output, making a
 listing of each impractical. The following table lists the messages
 which address conditions that can generally be understood and/or
 corrected by the user without intervention of SMA Technologies Support personnel. Within the Message
-Text, \"\[x\]\" indicates variable data.
+Text, "\[x\]" indicates variable data.
 
 Once jobs are built, the Schedule Operations screen contains different
-information depending on a job\'s status. In many cases, a specific
+information depending on a job's status. In many cases, a specific
 failure message is returned from the LSAM and viewable in the field
-\"Detailed Job Messages\" under the \"General\" tab of the Job
+"Detailed Job Messages" under the "General" tab of the Job
 Configuration screen (in Schedule Operations). When UNIX jobs are
 processing, the status information in Schedule Operations includes the
 Process ID (pid) number or any optional status messages.
@@ -2053,8 +2053,8 @@ Scripts using the sma_status utility can use the 20-character message area to di
 | \[x\] multiply-defined           | The indicated step               | |                                  | \[STARTING_STEP, ENDING_STEP,    |
 |                                  | RESTART_STEP\] was found to be   |
 |                                  | included more than once. Check   |
-|                                  | \"Start Image\" and              |
-|                                  | \"Parameters\" in the job\'s Job |
+|                                  | "Start Image" and              |
+|                                  | "Parameters" in the job's Job |
 |                                  | Details screen.                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -2068,9 +2068,9 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | NIX-Job-Details.md) |
 |                                  | .                          |
 +----------------------------------+----------------------------------+
-| Invalid job step \[x\]           | Shell variable \'next_step\' set | |                                  | to a non-existent job Step Label |
+| Invalid job step \[x\]           | Shell variable 'next_step' set | |                                  | to a non-existent job Step Label |
 |                                  | as displayed. Check all settings |
-|                                  | of \'next_step\' -- especially   |
+|                                  | of 'next_step' -- especially   |
 |                                  | for use of incorrect letter      |
 |                                  | case.                            |
 |                                  |                                  |
@@ -2086,7 +2086,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | .                          |
 +----------------------------------+----------------------------------+
 | Infinite loop detected           | The job experienced              |
-|                                  | \'number_of_steps\' iterations   |
+|                                  | 'number_of_steps' iterations   |
 |                                  | and was terminated. Check the    |
 |                                  | following:                       |
 |                                  |                                  |
@@ -2096,7 +2096,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | -   Step gets repeated, possibly |
 |                                  |     via intervening steps        |
 |                                  | -   Job logic correct but        |
-|                                  |     \'number_of_step\' set too   |
+|                                  |     'number_of_step' set too   |
 |                                  |     small                        |
 |                                  |                                  |
 |                                  | **Note:** The Infinite loop      |
@@ -2115,7 +2115,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 +----------------------------------+----------------------------------+
 | Unable to change ownership for   | Ownership of the indicated job   |
 | \[x\]                            | stdout/dtderr output file could  | |                                  | not be changed from              |
-|                                  | \'root/root\' per the LSAM       |
+|                                  | 'root/root' per the LSAM       |
 |                                  | Configuration setting.           |
 +----------------------------------+----------------------------------+
 | Process \[x\] did not start      | The LSAM health monitor has      | |                                  | determined that the indicated    |
@@ -2145,26 +2145,26 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | properly if the cause was of a   |
 |                                  | momentary nature.                |
 +----------------------------------+----------------------------------+
-| Sending SIGUSR1 (die) to all     | The \"bin/lsam\<*SAM_Socket*\>   |
-| LSAM processes                   | stop\" command was given; this   |
+| Sending SIGUSR1 (die) to all     | The "bin/lsam\<*SAM_Socket*\>   |
+| LSAM processes                   | stop" command was given; this   |
 |                                  | message is confirmation that the |
 |                                  | LSAM is in normal termination    |
 |                                  | processing.                      |
 +----------------------------------+----------------------------------+
-| Unable to find \[x\]             | \"\[x\]\" cannot be located for  | |                                  | processing.                      |
+| Unable to find \[x\]             | "\[x\]" cannot be located for  | |                                  | processing.                      |
 +----------------------------------+----------------------------------+
-| Unable to create \[x\]           | \"\[x\]\" cannot be created for  | |                                  | processing.                      |
+| Unable to create \[x\]           | "\[x\]" cannot be created for  | |                                  | processing.                      |
 +----------------------------------+----------------------------------+
-| Unable to open \[x\]             | \"\[x\]\" cannot be opened for   | |                                  | processing.                      |
+| Unable to open \[x\]             | "\[x\]" cannot be opened for   | |                                  | processing.                      |
 +----------------------------------+----------------------------------+
-| Unable to read \[x\]             | Data cannot be read from         | |                                  | \"\[x\]\".                       |
+| Unable to read \[x\]             | Data cannot be read from         | |                                  | "\[x\]".                       |
 +----------------------------------+----------------------------------+
-| Unable to write \[x\]            | Data cannot be written to        | |                                  | \"\[x\]\".                       |
+| Unable to write \[x\]            | Data cannot be written to        | |                                  | "\[x\]".                       |
 +----------------------------------+----------------------------------+
-| Deleting \[x\]                   | \"\[x\]\" was deleted. This is   | |                                  | normally just an informational   |
+| Deleting \[x\]                   | "\[x\]" was deleted. This is   | |                                  | normally just an informational   |
 |                                  | message, and not indicative of a |
-|                                  | problem unless \"\[x\]\" is      | |                                  | later referenced in an \"Unable  |
-|                                  | to \...\" message.               |
+|                                  | problem unless "\[x\]" is      | |                                  | later referenced in an "Unable  |
+|                                  | to \..." message.               |
 +----------------------------------+----------------------------------+
 | Unable to connect to \[x\]       | A socket-based connection cannot | |                                  | be made to the indicated remote  |
 |                                  | service or system. Determine if  |
@@ -2173,10 +2173,10 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | network is operational, and      |
 |                                  | correct the condition.           |
 +----------------------------------+----------------------------------+
-| Unable to send \[x1\] to \[x2\]  | A message \"\[x1\]\" cannot be   | |                                  | sent over the socket-based       |
+| Unable to send \[x1\] to \[x2\]  | A message "\[x1\]" cannot be   | |                                  | sent over the socket-based       |
 |                                  | connection to the indicated      |
 |                                  | remote service or system         |
-|                                  | (\"\[x2\]\"). Determine if the   | |                                  | indicated system or service is   |
+|                                  | ("\[x2\]"). Determine if the   | |                                  | indicated system or service is   |
 |                                  | up-and-running, and/or if the    |
 |                                  | network is operational, and      |
 |                                  | correct the condition.           |
@@ -2196,8 +2196,8 @@ Scripts using the sma_status utility can use the 20-character message area to di
 +----------------------------------+----------------------------------+
 | LSAM health monitor disabled     | The LSAM health monitor has      |
 |                                  | ceased operation. This is normal |
-|                                  | after issuance of the \"LSAM     |
-|                                  | stop\" command.                  |
+|                                  | after issuance of the "LSAM     |
+|                                  | stop" command.                  |
 +----------------------------------+----------------------------------+
 | Sender not allowed by the LSAM   | The portion of the LSAM which    |
 | configuration                    | communicates with the SAM has    |
@@ -2207,7 +2207,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | acceptable. The received message |
 |                                  | was ignored. It may be necessary |
 |                                  | to run the LSAM Configuration    |
-|                                  | program to update the LSAM\'s    |
+|                                  | program to update the LSAM's    |
 |                                  | configuration.                   |
 +----------------------------------+----------------------------------+
 | Received unauthorized message    | Some portion of the LSAM has     |
@@ -2217,7 +2217,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | message was ignored. It may be   |
 |                                  | necessary to run the LSAM        |
 |                                  | Configuration program to update  |
-|                                  | the LSAM\'s configuration.       |
+|                                  | the LSAM's configuration.       |
 +----------------------------------+----------------------------------+
 | Received a message with a blank  | The portion of the LSAM which    |
 | machine name                     | communicates with the SAM has    |
@@ -2276,10 +2276,10 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | output this message during       |
 |                                  | normal termination of the LSAM.  |
 |                                  | If the                           |
-|                                  | \"bin/lsam\<*SAM_Socket*\>       |
-|                                  | stop\" command was not given,    |
+|                                  | "bin/lsam\<*SAM_Socket*\>       |
+|                                  | stop" command was not given,    |
 |                                  | then some process or user on the |
-|                                  | system issued a \"kill\" command |
+|                                  | system issued a "kill" command |
 |                                  | on the indicated process.        |
 +----------------------------------+----------------------------------+
 | Received order to stop LSAM      | This message is output during    |
@@ -2288,20 +2288,20 @@ Scripts using the sma_status utility can use the 20-character message area to di
 | \[x\] Operational                | Each process in the LSAM should  | |                                  | output this message during       |
 |                                  | normal startup of the LSAM.      |
 +----------------------------------+----------------------------------+
-| Too many arguments for \[x\]     | The addition of the text for     | |                                  | \"Start Image\" and              |
-|                                  | \"Parameters\" in the job        |
+| Too many arguments for \[x\]     | The addition of the text for     | |                                  | "Start Image" and              |
+|                                  | "Parameters" in the job        |
 |                                  | definition resulted in \> 100    |
-|                                  | arguments. An \"argument\" is    |
+|                                  | arguments. An "argument" is    |
 |                                  | any text but a space. For        |
 |                                  | example, the Start               |
 |                                  | Image/Parameters combination     |
-|                                  | \"/usr/john/job x y abc123 1\",  |
+|                                  | "/usr/john/job x y abc123 1",  |
 |                                  | the start image is               |
-|                                  | \"/usr/john/job\", and the four  |
-|                                  | arguments are \"x\", \"y\",      |
-|                                  | \"abc123\", and \"1\". (It is    |
+|                                  | "/usr/john/job", and the four  |
+|                                  | arguments are "x", "y",      |
+|                                  | "abc123", and "1". (It is    |
 |                                  | possible to include parameters   |
-|                                  | in the \"Start Image\" text box  |
+|                                  | in the "Start Image" text box  |
 |                                  | in the EM.)                      |
 +----------------------------------+----------------------------------+
 | Blank start image for \[x\]      | The indicated job contained no   | |                                  | start image, i.e., script or     |
@@ -2320,8 +2320,8 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | non-existent or incorrectly      |
 |                                  | formatted.                       |
 +----------------------------------+----------------------------------+
-| Not allowed to start job \[x\]   | The LSAM is configured to not    | | as \'root\'                      | allow jobs to execute with       |
-|                                  | \'root\' privileges. This can be |
+| Not allowed to start job \[x\]   | The LSAM is configured to not    | | as 'root'                      | allow jobs to execute with       |
+|                                  | 'root' privileges. This can be |
 |                                  | changed by running the LSAM      |
 |                                  | Configuration program.           |
 +----------------------------------+----------------------------------+
@@ -2347,15 +2347,15 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | reference to a                   |
 |                                  | shell/interpreter, e.g., the     |
 |                                  | first line of the job script     |
-|                                  | reads, \"!\#/bin/bogus\", an     |
+|                                  | reads, "!\#/bin/bogus", an     |
 |                                  | additional message will be       |
 |                                  | generated to indicate this       |
 |                                  | possibility.                     |
 +----------------------------------+----------------------------------+
-| Unable to \'cd\' to \$HOME for   | LSAM configuration parameter     |
+| Unable to 'cd' to $HOME for   | LSAM configuration parameter     |
 | \[x\]                            | *require_HOME_directory* is      | |                                  | enabled and the indicated job    |
 |                                  | cannot be executed within the    |
-|                                  | associated user\'s HOME          |
+|                                  | associated user's HOME          |
 |                                  | directory. The most likely cause |
 |                                  | is an error defining the HOME    |
 |                                  | directory when the user was      |
@@ -2366,7 +2366,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 | Received TX0 for pid = \[x\] -   | This is an informational message | | \[x\]                            | output to confirm receipt of a   |
 |                                  | command from SAM to terminate    |
 |                                  | the indicated job after the user |
-|                                  | executed the \"Kill Job\"        |
+|                                  | executed the "Kill Job"        |
 |                                  | command from a graphical         |
 |                                  | interface. This does not         |
 |                                  | indicate that the job actually   |
@@ -2375,7 +2375,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | confirmed in a subsequent        |
 |                                  | message.                         |
 +----------------------------------+----------------------------------+
-| Can\'t fork() for \[x\] -        | The LSAM is unable to create a   | | decrementing max jobs to \[x\]   | process in which to run the      |
+| Can't fork() for \[x\] -        | The LSAM is unable to create a   | | decrementing max jobs to \[x\]   | process in which to run the      |
 |                                  | indicated job, and is decreasing |
 |                                  | the number of jobs it will       |
 |                                  | attempt to simultaneously run in |
@@ -2397,7 +2397,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 |                                  | The LSAM will close the          |
 |                                  | connection in preparation for    |
 |                                  | SAM initiating a new connection. |
-|                                  | \"\[x\]\" can be set with the    | |                                  | LSAM Configuration program.      |
+|                                  | "\[x\]" can be set with the    | |                                  | LSAM Configuration program.      |
 +----------------------------------+----------------------------------+
 
 : UNIX LSAM Messages
@@ -2424,7 +2424,7 @@ Scripts using the sma_status utility can use the 20-character message area to di
 ### UNIX LSAM Exit Codes
 
 When a job completes, the OpCon status will
-change to either \'Finished OK\' or \'Failed\'. The 20-character message
+change to either 'Finished OK' or 'Failed'. The 20-character message
 text changes to include the exit codes from the job.
 
 #### LSAM Exit Codes
@@ -2612,7 +2612,7 @@ error. SMA Technologies recommends:
 : UNIX LSAM Exit Codes
 
 In many cases, a specific failure message is returned from the LSAM and
-viewable as field \"LSAM Error Message\" under the \"General\" tab of
+viewable as field "LSAM Error Message" under the "General" tab of
 the Job Configuration screen. Messages begin with text generated by the
 LSAM, and conclude with parentheses containing an integer message ID and
 perhaps other test. If the error was the result of a system call, the
@@ -2636,7 +2636,7 @@ by a variety of error codes.
 |                                  |                                  |
 |                                  | In this case, the user should    |
 |                                  | check what was entered for       |
-|                                  | \"Start Image\" on the Job       |
+|                                  | "Start Image" on the Job       |
 |                                  | Details screen.                  |
 +----------------------------------+----------------------------------+
 
@@ -2754,8 +2754,8 @@ error, the SAM may retry processing and may again encounter the same
 error and report it.
 
 To prevent the SAM from encountering the same error repeatedly, the
-job(s) involved may be placed \"ON HOLD\", or the SAM may be placed \"ON
-HOLD\", until the error is resolved. Some errors may be resolved without
+job(s) involved may be placed "ON HOLD", or the SAM may be placed "ON
+HOLD", until the error is resolved. Some errors may be resolved without
 operator intervention, such as a job exclusion or inclusion that cannot
 be satisfied. When the proper condition is satisfied, the SAM is
 notified by XPS390 and this resolves the error. If a condition is
@@ -2898,7 +2898,7 @@ XPS*nnnc*
 |                                  |     definition in XPSPRMnn, or   |
 |                                  |     the SMF ID of this LPAR, and |
 |                                  |     subsequently the schedule    |
-|                                  |     \"Machine ID\" for events    |
+|                                  |     "Machine ID" for events    |
 |                                  |     that is honored by this      |
 |                                  |     LSAM.                        |
 +----------------------------------+----------------------------------+
@@ -2908,8 +2908,8 @@ XPS*nnnc*
 |                                  |     parameter library.           |
 |                                  | -   The resulting default        |
 |                                  |     parameter values can be      |
-|                                  |     viewed with the \"F          |
-|                                  |     LSAM,PARMS\" command.        |
+|                                  |     viewed with the "F          |
+|                                  |     LSAM,PARMS" command.        |
 +----------------------------------+----------------------------------+
 | XPS003I - Storage Recovery       | Issued during back out or remove |
 | Attempt                          | processing.                      |
@@ -2927,7 +2927,7 @@ XPS*nnnc*
 | Initialized-Restart              |     was not located in the start |
 |                                  |     parameter list or the        |
 |                                  |     parameter library and the    |
-|                                  |     operator answered \"N\" to   |
+|                                  |     operator answered "N" to   |
 |                                  |     the XPS101V operator         |
 |                                  |     request.                     |
 |                                  | -   Supply the Parms dataset and |
@@ -2937,7 +2937,7 @@ XPS*nnnc*
 | (*nnn.nnn.nnn.nnn*) Port: *pppp* | initialization to indicate the   |
 |                                  | LPAR Host IP address             |
 |                                  | (*nnn.nnn.nnn.nnn*) returned by  |
-|                                  | the OMVS \"GETHOSTID\" request,  |
+|                                  | the OMVS "GETHOSTID" request,  |
 |                                  | and to indicate the IP port      |
 |                                  | (*pppp*) on which XPS390 is      |
 |                                  | listening for SAM messages.      |
@@ -3047,7 +3047,7 @@ XPS*nnnc*
 |                                  |     appear operational, contact  |
 |                                  |     the TCP/IP LAN Network       |
 |                                  |     Support Technician.          |
-|                                  | -   The Type code \"O\"          |
+|                                  | -   The Type code "O"          |
 |                                  |     indicates the message was    |
 |                                  |     issued by XPSYSOUT.          |
 +----------------------------------+----------------------------------+
@@ -3055,7 +3055,7 @@ XPS*nnnc*
 | Connection Established           |     disconnect was corrected,    |
 |                                  |     and the LSAM and the SAM are |
 | XPS016O - XPSYS0 Window          |     in communication.            |
-| Connection Established           | -   The Type code \"O\"          |
+| Connection Established           | -   The Type code "O"          |
 |                                  |     indicates the message was    |
 |                                  |     issued by XPSYSOUT.          |
 |                                  | -   This message normally        |
@@ -3072,7 +3072,7 @@ XPS*nnnc*
 |                                  |     result of stopping and       |
 |                                  |     immediately restarting the   |
 |                                  |     LSAM.                        |
-|                                  | -   z/OS TCPIP often \"hold(s)\" |
+|                                  | -   z/OS TCPIP often "hold(s)" |
 |                                  |     access to a port after it is |
 |                                  |     closed to ensure any         |
 |                                  |     buffered messages are        |
@@ -3083,7 +3083,7 @@ XPS*nnnc*
 |                                  |     appear operational, contact  |
 |                                  |     the TCP/IP LAN Network       |
 |                                  |     Support Technician.          |
-|                                  | -   The Type code \"O\"          |
+|                                  | -   The Type code "O"          |
 |                                  |     indicates the message was    |
 |                                  |     issued by XPSYSOUT.          |
 +----------------------------------+----------------------------------+
@@ -3098,7 +3098,7 @@ XPS*nnnc*
 |                                  |     result of stopping and       |
 |                                  |     immediately restarting the   |
 |                                  |     LSAM.                        |
-|                                  | -   z/OS TCPIP often \"hold(s)\" |
+|                                  | -   z/OS TCPIP often "hold(s)" |
 |                                  |     access to a port after close |
 |                                  |     to ensure any buffered       |
 |                                  |     messages are completed       |
@@ -3110,7 +3110,7 @@ XPS*nnnc*
 |                                  |     appear operational, contact  |
 |                                  |     the TCP/IP LAN Network       |
 |                                  |     Support Technician.          |
-|                                  | -   The Type code \"O\"          |
+|                                  | -   The Type code "O"          |
 |                                  |     indicates the message was    |
 |                                  |     issued by XPSYSOUT.          |
 +----------------------------------+----------------------------------+
@@ -3127,8 +3127,8 @@ XPS*nnnc*
 |                                  |     its issuance cannot be       |
 |                                  |     determined.                  |
 +----------------------------------+----------------------------------+
-| XPS020W - Process CSA Will       | -   Issued in response to an \"F |
-| Change at Next IPL               |     LSAM,PROCESS=nn\" operator   |
+| XPS020W - Process CSA Will       | -   Issued in response to an "F |
+| Change at Next IPL               |     LSAM,PROCESS=nn" operator   |
 |                                  |     command.                     |
 |                                  | -   CSA storage is allocated at  |
 |                                  |     IPL to coincide with the     |
@@ -3136,8 +3136,8 @@ XPS*nnnc*
 |                                  |     in the LSAM/Machine          |
 |                                  |     environment.                 |
 +----------------------------------+----------------------------------+
-| XPS021I - Current Stored PARMS   | -   Issued in response to an \"F |
-| for \[*sysid*\]                  |     LSAM,parm=\" operator        | |                                  |     command to indicate the      |
+| XPS021I - Current Stored PARMS   | -   Issued in response to an "F |
+| for \[*sysid*\]                  |     LSAM,parm=" operator        | |                                  |     command to indicate the      |
 |                                  |     status of all run time       |
 |                                  |     parameters after processing  |
 |                                  |     the last command.            |
@@ -3146,13 +3146,13 @@ XPS*nnnc*
 |                                  |     this message.                |
 |                                  | -   This message and the         |
 |                                  |     subsequent parameter list    |
-|                                  |     are also issued by an \"F    |
-|                                  |     LSAM,PARMS\" command or by   |
+|                                  |     are also issued by an "F    |
+|                                  |     LSAM,PARMS" command or by   |
 |                                  |     executing the XPSAUDIT       |
 |                                  |     program.                     |
 |                                  | -   Note that the PROCESSES      |
 |                                  |     display issued does          |
-|                                  |     [not]{.ul} show a \"Stored\" | |                                  |     Process of zero. Since this  |
+|                                  |     [not]{.ul} show a "Stored" | |                                  |     Process of zero. Since this  |
 |                                  |     count is used to size CSA    |
 |                                  |     storage queues, only the SAM |
 |                                  |     is advised of a process of   |
@@ -3165,13 +3165,13 @@ XPS*nnnc*
 |                                  |     command is invalid.          |
 +----------------------------------+----------------------------------+
 | XPS023I - Process Count Set to   | -   Indicates a Machine Process  |
-| Zero                             |     Count of \"0000\" has been   |
+| Zero                             |     Count of "0000" has been   |
 |                                  |     sent to the SAM.             |
 |                                  | -   This is the same as          |
-|                                  |     indicating a \"Machine       |
-|                                  |     Down\" condition.            |
-|                                  | -   Issued in response to an \"F |
-|                                  |     LSAM,PROCESS=0\" operator    |
+|                                  |     indicating a "Machine       |
+|                                  |     Down" condition.            |
+|                                  | -   Issued in response to an "F |
+|                                  |     LSAM,PROCESS=0" operator    |
 |                                  |     command. This command is     |
 |                                  |     particularly useful when an  |
 |                                  |     z/OS system QUIESCE is       |
@@ -3186,7 +3186,7 @@ XPS*nnnc*
 |                                  |     restart. Note that the       |
 |                                  |     PROCESSES display issued at  |
 |                                  |     message XPS021I does NOT     |
-|                                  |     show a \"Stored\" Process of |
+|                                  |     show a "Stored" Process of |
 |                                  |     zero. Since this count is    |
 |                                  |     used to size CSA storage     |
 |                                  |     queues, only the SAM is      |
@@ -3204,7 +3204,7 @@ XPS*nnnc*
 |                                  | -   An operator command (F       |
 |                                  |     LSAM,parm=value).            |
 |                                  | -   An LSAM JCL Parm             |
-|                                  |     (PARM=\'parm=value\').       |
+|                                  |     (PARM='parm=value').       |
 |                                  | -   Correct and retry the        |
 |                                  |     operation.                   |
 +----------------------------------+----------------------------------+
@@ -3265,8 +3265,8 @@ XPS*nnnc*
 |                                  |     subsystem from which sysouts |
 |                                  |     is retrieved.                |
 +----------------------------------+----------------------------------+
-| XPS029I - Stop Command           | -   This is a response to an \"F |
-| Recognized                       |     LSAM,STOP\" or a \"P LSAM\"  |
+| XPS029I - Stop Command           | -   This is a response to an "F |
+| Recognized                       |     LSAM,STOP" or a "P LSAM"  |
 |                                  |     operator command.            |
 |                                  | -   Indicates he LSAM is         |
 |                                  |     systematically shutting down |
@@ -3464,10 +3464,10 @@ XPS*nnnc*
 |                                  | chnologies]{.GeneralCompanyName} |
 |                                  |     Support.                     |
 +----------------------------------+----------------------------------+
-| XPS047I - \[*\$event*\]          | -   This is a response to a step | |                                  |     condition code or DSN        |
+| XPS047I - \[*$event*\]          | -   This is a response to a step | |                                  |     condition code or DSN        |
 |                                  |     trigger.                     |
 |                                  | -   Indicates the event command  |
-|                                  |     \[*\$event*\] was sent to    | |                                  |     the SAM.                     |
+|                                  |     \[*$event*\] was sent to    | |                                  |     the SAM.                     |
 |                                  | -   The condition or trigger was |
 |                                  |     caused by the job issuing    |
 |                                  |     the message.                 |
@@ -3560,8 +3560,8 @@ XPS*nnnc*
 |                                  | -   The newly started task       |
 |                                  |     terminates.                  |
 +----------------------------------+----------------------------------+
-| XPS057A - Invalid Command        | -   Indicates an \"F             |
-|                                  |     XPSPLEX,command\" was        |
+| XPS057A - Invalid Command        | -   Indicates an "F             |
+|                                  |     XPSPLEX,command" was        |
 |                                  |     entered and the command      |
 |                                  |     syntax was invalid.          |
 |                                  | -   Refer to the syntax of the F |
@@ -3607,8 +3607,8 @@ XPS*nnnc*
 | Restart - Activate LSAM          |     format error cannot be       |
 |                                  |     recovered during             |
 |                                  |     initialization.              |
-|                                  | -   Events that were \"in        |
-|                                  |     process\" during a system    |
+|                                  | -   Events that were "in        |
+|                                  |     process" during a system    |
 |                                  |     outage might not be properly |
 |                                  |     reported to SAM.             |
 |                                  | -   Contact [SMA                 | |                                  |     Te                           |
@@ -3629,7 +3629,7 @@ XPS*nnnc*
 |                                  | -   The job was canceled.        |
 |                                  | -   Check the schedule detail    |
 |                                  |     for this job and review the  |
-|                                  |     job \"Machine ID\" field.    |
+|                                  |     job "Machine ID" field.    |
 |                                  | -   Check the JCL for SYSID      |
 |                                  |     routing information and      |
 |                                  |     class assignments.           |
@@ -3651,8 +3651,8 @@ XPS*nnnc*
 |                                  | chnologies]{.GeneralCompanyName} |
 |                                  |     Support.                     |
 |                                  | -   To eliminate these messages  |
-|                                  |     enter command \"F            |
-|                                  |     LSAM.TRAC=N\".               |
+|                                  |     enter command "F            |
+|                                  |     LSAM.TRAC=N".               |
 +----------------------------------+----------------------------------+
 | XPS063I - XPSU84: Step Tracking  | -   This is a TRACE Level 2      |
 | Initiated                        |     response.                    |
@@ -3668,8 +3668,8 @@ XPS*nnnc*
 |                                  | chnologies]{.GeneralCompanyName} |
 |                                  |     Support.                     |
 |                                  | -   To eliminate these messages  |
-|                                  |     enter command \"F            |
-|                                  |     LSAM.TRAC=N\".               |
+|                                  |     enter command "F            |
+|                                  |     LSAM.TRAC=N".               |
 +----------------------------------+----------------------------------+
 | XPS064I - XPSU84: Tracking       | -   This is a TRACE Level 2      |
 | Record Updated                   |     response.                    |
@@ -3685,11 +3685,11 @@ XPS*nnnc*
 |                                  | chnologies]{.GeneralCompanyName} |
 |                                  |     Support.                     |
 |                                  | -   To eliminate these messages  |
-|                                  |     enter command \"F            |
-|                                  |     LSAM,TRACE=N\".              |
+|                                  |     enter command "F            |
+|                                  |     LSAM,TRACE=N".              |
 +----------------------------------+----------------------------------+
 | XPS065E - XPSCOMM Event          | -   Indicates the Event Token    |
-| \[*eventname*\] Not Found        |     coded in the                 | |                                  |     \$EVENT=\[*eventname*\]      |
+| \[*eventname*\] Not Found        |     coded in the                 | |                                  |     $EVENT=\[*eventname*\]      |
 |                                  |     parameter in the XPSCOMM     |
 |                                  |     program was not located in   |
 |                                  |     the system Event Table.      |
@@ -3710,8 +3710,8 @@ XPS*nnnc*
 |                                  |     the SETQUES= parameter in    |
 |                                  |     XPSPRMnn*.                   |
 |                                  | -*Refer to current SETQUES    |
-|                                  |     settings using the \"F       |
-|                                  |     LSAM,DISP=PARMS\" command*.  |
+|                                  |     settings using the "F       |
+|                                  |     LSAM,DISP=PARMS" command*.  |
 |                                  | -   Contact [SMA                 | |                                  |     Te                           |
 |                                  | chnologies]{.GeneralCompanyName} |
 |                                  |     Support [immediately]{.ul}   | |                                  |     if the reason for this       |
@@ -3736,7 +3736,7 @@ XPS*nnnc*
 |                                  |     can be shut down.            |
 |                                  | -   To shut down BOTH tasks      |
 |                                  |     (OPCONnn and XPSPLEX) use    |
-|                                  |     the \"F LSAM,SHUTDOWN\"      |
+|                                  |     the "F LSAM,SHUTDOWN"      |
 |                                  |     command.                     |
 +----------------------------------+----------------------------------+
 | XPS070I - Pre-run Condition(*c*) | -   Indicates that the Task      |
@@ -3758,8 +3758,8 @@ XPS*nnnc*
 |                                  |     number of units needed       |
 |                                  |     (*nn*), job \[*jobname*\] is | |                                  |     submitted immediately;       |
 |                                  |     otherwise, the job is sent   |
-|                                  |     back to SAM with a \"Pre-run |
-|                                  |     Failed\" condition and SAM   |
+|                                  |     back to SAM with a "Pre-run |
+|                                  |     Failed" condition and SAM   |
 |                                  |     reschedules the job at the   |
 |                                  |     interval set by SAM          |
 |                                  |     installation options.        |
@@ -3777,7 +3777,7 @@ XPS*nnnc*
 |                                  |     (*+*), the trigger was       |
 |                                  |     manually released, in which  |
 |                                  |     case the \[*taskname*\] is   | |                                  |     the TSO Userid responsible   |
-|                                  |     for setting the trigger\'s   |
+|                                  |     for setting the trigger's   |
 |                                  |     count to zero.               |
 +----------------------------------+----------------------------------+
 | XPS073E - \[*Error Condition*\]  | -   Indicates a Trigger or       | |                                  |     Tracking Exit did not load   |
@@ -3887,8 +3887,8 @@ XPS*nnnc*
 |                                  |     determined.                  |
 +----------------------------------+----------------------------------+
 | XPS073E - XPS390 Not Initialized | -   Indicates XPSELOAD program   |
-|                                  |     cannot be executed \"stand   |
-|                                  |     alone\" without OPCON/XPS    |
+|                                  |     cannot be executed "stand   |
+|                                  |     alone" without OPCON/XPS    |
 |                                  |     being initialized.           |
 |                                  | -   Start the OPCONnn task to    |
 |                                  |     reload exits automatically.  |
@@ -3987,7 +3987,7 @@ XPS*nnnc*
 |                                  |     format error caused a        |
 |                                  |     temporary tracking failure.  |
 |                                  | -   This message may be issued   |
-|                                  |     during a \"RESET\" command.  |
+|                                  |     during a "RESET" command.  |
 |                                  |     If this message is received  |
 |                                  |     at any other time, contact   |
 |                                  |     [SMA                         | |                                  |     Te                           |
@@ -3998,7 +3998,7 @@ XPS*nnnc*
 | not Available                    |     format error caused a        |
 |                                  |     temporary tracking failure.  |
 |                                  | -   This message may be issued   |
-|                                  |     during a \"RESET\" command.  |
+|                                  |     during a "RESET" command.  |
 |                                  |     If this message is received  |
 |                                  |     at any other time, contact   |
 |                                  |     [SMA                         | |                                  |     Te                           |
@@ -4077,8 +4077,8 @@ XPS*nnnc*
 |                                  | -   XPS390 does not check the    |
 |                                  |     outcome if operator          |
 |                                  |     commands; nevertheless,      |
-|                                  |     associated \"Message         |
-|                                  |     Triggers\" may monitor the   |
+|                                  |     associated "Message         |
+|                                  |     Triggers" may monitor the   |
 |                                  |     results of any given         |
 |                                  |     command.                     |
 +----------------------------------+----------------------------------+
@@ -4089,8 +4089,8 @@ XPS*nnnc*
 |                                  |     the SAM.                     |
 +----------------------------------+----------------------------------+
 | XPS090A - XPCB Token Not         | -   Indicates the LSAM is        |
-| Initialized                      |     entering \"Primary           |
-|                                  |     Initialization\" and         |
+| Initialized                      |     entering "Primary           |
+|                                  |     Initialization" and         |
 |                                  |     allocating CSA storage for   |
 |                                  |     the first time after a       |
 |                                  |     system IPL.                  |
@@ -4104,7 +4104,7 @@ XPS*nnnc*
 | Initialized                      |     format error caused a        |
 |                                  |     temporary tracking failure.  |
 |                                  | -   This message may be issued   |
-|                                  |     during a \"RESET\" command.  |
+|                                  |     during a "RESET" command.  |
 |                                  | -   If this message is received  |
 |                                  |     at any other time, contact   |
 |                                  |     [SMA                         | |                                  |     Te                           |
@@ -4233,7 +4233,7 @@ XPS*nnnc*
 | XPS101I - Step Cond Code IGNORED | -   Indicates the SAM schedule   |
 | as Requested                     |     entry for this job requested |
 |                                  |     that the job be considered   |
-|                                  |     \"OK\" even if a given step  |
+|                                  |     "OK" even if a given step  |
 |                                  |     ended in a condition code    |
 |                                  |     equal to or higher than a    |
 |                                  |     defined value.               |
@@ -4242,11 +4242,11 @@ XPS*nnnc*
 |                                  |                                  |
 |                                  | OpCon |
 |                                  |     tracking is halted and a     |
-|                                  |     \"Step OK\" message is sent  |
+|                                  |     "Step OK" message is sent  |
 |                                  |     to the SAM.                  |
 |                                  | -   Check the schedule detail    |
 |                                  |     for this job and review the  |
-|                                  |     step \"Cond Code OK\" field. |
+|                                  |     step "Cond Code OK" field. |
 |                                  | -   Contact the application      |
 |                                  |     programmer or scheduler for  |
 |                                  |     further information.         |
@@ -4263,11 +4263,11 @@ XPS*nnnc*
 |                                  |                                  |
 |                                  | OpCon |
 |                                  |     tracking is halted and a     |
-|                                  |     \"Job Fin Error\" message is |
+|                                  |     "Job Fin Error" message is |
 |                                  |     sent to SAM.                 |
 |                                  | -   Check the schedule detail    |
 |                                  |     for this job and review the  |
-|                                  |     step \"Cond Code Fail\"      |
+|                                  |     step "Cond Code Fail"      |
 |                                  |     field.                       |
 |                                  | -   Contact the application      |
 |                                  |     programmer or scheduler for  |
@@ -4276,7 +4276,7 @@ XPS*nnnc*
 | XPS103I - Job Marked COMPLETE    | -   Indicates the SAM schedule   |
 | Due to Step Cond Code            |     entry for this job requested |
 |                                  |     that the job be marked       |
-|                                  |     \"Complete\" if a given step |
+|                                  |     "Complete" if a given step |
 |                                  |     ended in a condition code    |
 |                                  |     equal to or higher than a    |
 |                                  |     defined value.               |
@@ -4285,11 +4285,11 @@ XPS*nnnc*
 |                                  |                                  |
 |                                  | OpCon |
 |                                  |     tracking is halted and a     |
-|                                  |     \"Job Fin OK\" message is    |
+|                                  |     "Job Fin OK" message is    |
 |                                  |     sent to SAM.                 |
 |                                  | -   Check the schedule detail    |
 |                                  |     for this job and review the  |
-|                                  |     step \"Cond Code Comp\"      |
+|                                  |     step "Cond Code Comp"      |
 |                                  |     field.                       |
 |                                  | -   Contact the application      |
 |                                  |     programmer or scheduler for  |
@@ -4307,19 +4307,19 @@ XPS*nnnc*
 |                                  |     the offending step.          |
 |                                  | -   Check the schedule detail    |
 |                                  |     for this job and review the  |
-|                                  |     step \"Cond Code Abort\"     |
+|                                  |     step "Cond Code Abort"     |
 |                                  |     field.                       |
 |                                  | -   Contact the application      |
 |                                  |     programmer or scheduler for  |
 |                                  |     further information.         |
 +----------------------------------+----------------------------------+
-| XPS105A - Confirm Y/N is XPS390  | -   This is a response to an \"F |
-| to be*REMOVED\|RESET\|CYCLED*?  |     LSAM, REMOVEX\" or \"F       |
-|                                  |     LSAM,RESET=S\|C\" command.   |
+| XPS105A - Confirm Y/N is XPS390  | -   This is a response to an "F |
+| to be*REMOVED\|RESET\|CYCLED*?  |     LSAM, REMOVEX" or "F       |
+|                                  |     LSAM,RESET=S\|C" command.   |
 |                                  | -   Prompts the operator is      |
 |                                  |     prompted for confirmation of |
 |                                  |     the action.                  |
-|                                  | -   A Reply of \"Y\" causes all  |
+|                                  | -   A Reply of "Y" causes all  |
 |                                  |     internal storage allocations |
 |                                  |     to be freed and reallocated. |
 |                                  | -   For RESET=S or REMOVEX, all  |
@@ -4343,9 +4343,9 @@ XPS*nnnc*
 |                                  |     nonzero Process request,     |
 |                                  |     causes this prompt to be     |
 |                                  |     issued.                      |
-|                                  | -   A reply of \"Y\" leaves the  |
-|                                  |     process count at \"0\".      |
-|                                  | -   A reply of \"N\" reverts the |
+|                                  | -   A reply of "Y" leaves the  |
+|                                  |     process count at "0".      |
+|                                  | -   A reply of "N" reverts the |
 |                                  |     process count to the last    |
 |                                  |     value defined by PROCESS=    |
 |                                  |     command or the value in      |
@@ -4355,7 +4355,7 @@ XPS*nnnc*
 |                                  |                                  |
 |                                  | **Note:** The PROCESSES display  |
 |                                  | issued at message XPS021R does   |
-|                                  | [not]{.ul} show a \"Stored\"     | |                                  | Process of zero. Since this      |
+|                                  | [not]{.ul} show a "Stored"     | |                                  | Process of zero. Since this      |
 |                                  | count is used to size CSA        |
 |                                  | storage queues, only the SAM is  |
 |                                  | advised of a process of ZERO.    |
@@ -4388,14 +4388,14 @@ XPS*nnnc*
 |                                  |     addresses. XPS390 allows the |
 |                                  |     job to execute, but does not |
 |                                  |     report status to SAM or may  |
-|                                  |     report a \"failed\" status.  |
+|                                  |     report a "failed" status.  |
 |                                  |     It is possible to manually   |
 |                                  |     complete the job on SAM and  |
 |                                  |     continue processing.         |
 +----------------------------------+----------------------------------+
 | XPS110A - XPSPRMnn Not           | -   Indicates that the LSAM is   |
-| Initialized, Reply Y/N to Use    |     in \"Primary                 |
-| SMA Defaults                     |     Initialization\" and         |
+| Initialized, Reply Y/N to Use    |     in "Primary                 |
+| SMA Defaults                     |     Initialization" and         |
 |                                  |     allocating CSA storage for   |
 |                                  |     the first time after a       |
 |                                  |     system IPL and no XPSPRMnn   |
@@ -4417,12 +4417,12 @@ XPS*nnnc*
 | Options: RESTART or IGNORE       |     Recovery Management routine  |
 |                                  |     has found that scheduled     |
 |                                  |     events were executing or     |
-|                                  |     \"in-process\" when the      |
+|                                  |     "in-process" when the      |
 |                                  |     system IPL occurred.         |
-|                                  | -   Reply \"RESTART\" to this    |
+|                                  | -   Reply "RESTART" to this    |
 |                                  |     message for the LSAM to      |
 |                                  |     report failing jobs to SAM.  |
-|                                  | -   Reply, \"IGNORE\", if all    |
+|                                  | -   Reply, "IGNORE", if all    |
 |                                  |     SAM reconciliation is        |
 |                                  |     complete.                    |
 +----------------------------------+----------------------------------+
@@ -4451,10 +4451,10 @@ XPS*nnnc*
 | Status.                          |     functions of the Primary     |
 |                                  |     LSAM, which has apparently   |
 |                                  |     left the Sysplex complex.    |
-|                                  | -   A response of \"N\" returns  |
+|                                  | -   A response of "N" returns  |
 |                                  |     this LPAR to its normal PSAM |
 |                                  |     status.                      |
-|                                  | -   A response of \"Y\" requires |
+|                                  | -   A response of "Y" requires |
 |                                  |     following the procedures for |
 |                                  |     LSAM Fail-Over.              |
 +----------------------------------+----------------------------------+
@@ -4617,7 +4617,7 @@ XPS*nnnc*
 | XPS196C - Invalid Reply          | -   Indicates an invalid reply   |
 |                                  |     was issued in response the   |
 |                                  |     XPS110A message.             |
-|                                  | -   Only \"Y\" or \"N\" is       |
+|                                  | -   Only "Y" or "N" is       |
 |                                  |     accepted.                    |
 +----------------------------------+----------------------------------+
 | XPS275I -- EXPIRING:             | Because it has not been          |
@@ -4629,7 +4629,7 @@ XPS*nnnc*
 |                                  |     status.                      |
 |                                  | -   The x digit refers to the    |
 |                                  |     exit number (1 -- 9).        |
-|                                  | -   The \'I\' information        |
+|                                  | -   The 'I' information        |
 |                                  |     character refers to the      |
 |                                  |     typical Action/Information   |
 |                                  |     Indicator.                   |

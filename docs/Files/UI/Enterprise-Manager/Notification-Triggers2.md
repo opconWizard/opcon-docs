@@ -13,7 +13,7 @@ Triggers are responsible for writing the notification information to the OpCon d
     full trigger name in the **type filter text** box.
 - You can add groups inside of other groups to better organize the
     triggers.
-- You must add triggers to the \"lowest level\" groups within a group
+- You must add triggers to the "lowest level" groups within a group
     tree.
 
 ## Right-Click Menu
@@ -30,7 +30,7 @@ options:
     select **Add Group** from another group, it will create a child
     group.
 - **[Delete Group](Managing-Groups.md#Deleting)**: This option
-    deletes the selected group and all items within that group\'s tree.
+    deletes the selected group and all items within that group's tree.
 - **[Add Machine Trigger](Managing-Triggers.md#Adding)**: In the
     **Machines** tab, this option provides a list of machine triggers,
     as defined in the [Machine     Triggers](../../../notifications/Notification-Triggers.md#Machine)

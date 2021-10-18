@@ -1,7 +1,7 @@
 # Adding Jobs from Job Master to Daily Schedule
 
 :::note
-Jobs can be added from the Job Master to the Daily Schedules regardless of the daily schedule\'s status or the Job\'s build status. For more information, refer to [Adding Jobs to Daily Schedules](../../../operations/adding-jobs.md) in the **Concepts** online help.
+Jobs can be added from the Job Master to the Daily Schedules regardless of the daily schedule's status or the Job's build status. For more information, refer to [Adding Jobs to Daily Schedules](../../../operations/adding-jobs.md) in the **Concepts** online help.
 :::
 
 To perform this procedure:
@@ -50,7 +50,7 @@ b.  Click on the drop-down arrow and select a **machine** or select
     **\<None\>** to build an instance for each machine in the defined
     Machine Group.
 
-Click the **Yes** button to confirm the request sent for \"job name\" or
+Click the **Yes** button to confirm the request sent for "job name" or
 click the **Cancel** button to cancel the request.
 
 If multiple jobs were selected:

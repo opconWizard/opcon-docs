@@ -18,12 +18,12 @@ replication that can be used: transactional, merge, and snapshot.
 OpCon makes use of transactional replication to distribute data from the
 production database to the failover database. Data moves from the
 publisher to the distributor, and from there, it can be either
-\"pushed\" to the subscriber by the distributor or \"pulled\" from the
+"pushed" to the subscriber by the distributor or "pulled" from the
 distributor by the subscriber.
 
 This topic assumes that the publisher and subscriber will be distinct
 instances of SQL Server on physically separate machines while the
-distributor may be on it\'s own instance of SQL Server or it may share
+distributor may be on it's own instance of SQL Server or it may share
 an instance of SQL Server with either the publisher or subscriber.
 
 ## Requirements
@@ -43,10 +43,10 @@ Verify that the following is set up [prior]{.ul} to attempting transactional rep
 
 The Publication Server is the server containing the primary OpCon
 database. This is referred to throughout this section as the
-\"Publishing Database Server\". The Subscription Server is any other SQL
+"Publishing Database Server". The Subscription Server is any other SQL
 server that should contain a copy of the OpCon database. This is
-referred to throughout this section as the \"Subscribing Database
-Server\".
+referred to throughout this section as the "Subscribing Database
+Server".
 
 ### Registering the Database Servers
 
@@ -67,7 +67,7 @@ On the Desired Database Server:
 6. **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 7. **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 8. Click the **Connect** button.
 
 Register the Database Server
@@ -106,7 +106,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority on the target server.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Test** button. Make sure the connection results are
 successful.
@@ -214,7 +214,7 @@ On the Complete the Wizard screen:
 Enter a *Publication name* and click **Finish**.
 
   ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [On the Create Publications screen, the goal is to see \"Success\" with 0 Errors and 0 Warnings. If errors are present, rerun the New Publication Wizard process.]
+  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [On the Create Publications screen, the goal is to see "Success" with 0 Errors and 0 Warnings. If errors are present, rerun the New Publication Wizard process.]
   ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Click **Close**.
@@ -258,7 +258,7 @@ Push Subscriptions:
         you need to off load agent processing from the Distributor but
         retain some of the benefits of easier administration, you can
         run the agent at the Subscriber.
-  - Source: \"Push Subscriptions\", in SQL Server Books Online
+  - Source: "Push Subscriptions", in SQL Server Books Online
         Version 8.00.000 \[HTML Help file\] Microsoft Corporation,         Seattle, WA.
 
 ###### Considering Pull Subscriptions
@@ -282,7 +282,7 @@ Pull Subscriptions:
         publications and the Merge Agent for merge publications all run
         at the Subscriber. This can result in a reduction of the amount
         of processing overhead on the Distributor.
-  - Source: \"Push Subscriptions\", in SQL Server Books Online
+  - Source: "Push Subscriptions", in SQL Server Books Online
         Version 8.00.000 \[HTML Help file\] Microsoft Corporation,         Seattle, WA.
 
 ##### First Option: Setting Up a Push Subscription
@@ -549,7 +549,7 @@ the correct value and use the information to update the file.
 - **%1**: Defines the directory path of the parent directory to the
     OpCon/xps \<Configuration Directory\> on the Secondary SAM
     application server. Exclude the trailing backslash (\\) and always
-    enclose this parameter in double quotes (e.g., \"C:\\ProgramData\").
+    enclose this parameter in double quotes (e.g., "C:\\ProgramData").
 - **%2**: The password with which sa logs in to the SQL Server on
     which the Publishing OpCon database exists.
 - **%3**: The password with which sa logs in to the SQL Server on
@@ -563,7 +563,7 @@ Determine the correct value, and use the information to update the file.
 - **%1**: Defines the directory path of the parent directory to the
     OpCon/xps \<Configuration Directory\> on the Secondary SAM
     application server. Exclude the trailing backslash (\\) and always
-    enclose this parameter in double quotes (e.g., \"C:\\ProgramData\").
+    enclose this parameter in double quotes (e.g., "C:\\ProgramData").
 
 #### Modifying the Stop Replication Command File
 

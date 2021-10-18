@@ -58,7 +58,7 @@ section for more detail.
 
 *(Optional)* Toggle the **Track Event Executions**
 switch to monitor execution on any job dynamically added as part of the
-Service Request. If the Service Request is defined with any \$JOB:ADD
+Service Request. If the Service Request is defined with any $JOB:ADD
 events, this option will track the added jobs so that users can see if
 they finished successfully.
 

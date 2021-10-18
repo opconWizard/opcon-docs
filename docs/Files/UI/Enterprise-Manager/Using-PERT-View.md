@@ -1,6 +1,6 @@
 # Using PERT View
 
-The **PERT** view provides the best view for the schedule\'s individual
+The **PERT** view provides the best view for the schedule's individual
 jobs and the job dependency relationships. There are a few preferences
 relating to the **PERT** view that can be changed according to your
 preference. For additional information on changing these preferences,
@@ -9,7 +9,7 @@ messages displayed for failed jobs, refer to [Operations Machine Messages](../..
  in the **Concepts** online help.
 
 When on the **PERT** screen, it displays the job dependency
-relationships and the job\'s current status in simple schedules. In
+relationships and the job's current status in simple schedules. In
 order for the schedule and jobs information to display in the **PERT**
 view, you **must** first select a schedule within another view (e.g.,
 **List** or **Matrix**) and activate the **Listen for selection changes
@@ -59,7 +59,7 @@ the following items:
         to a horizontal tree layout.
 - **Zoom In:** Selecting this menu item will change the zoom action
     for the diagram. Options include: 10%, 20%, 30%, 40%, 50%, 60%, 70%,
-    80%, 90%, 100%, 150%, and 200%. Each time \'zoom in\' is selected
+    80%, 90%, 100%, 150%, and 200%. Each time 'zoom in' is selected
     the display will increase to the next greater percentage available.
 - **Zoom Out:** Selecting this menu item will change the zoom action
     for the display. The display will decrease to next lower percentage
@@ -70,7 +70,7 @@ the following items:
     function to take a screenshot and save the visible area of the
     current view.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Creating and Saving Custom     Diagrams](Creating-Custom-Diagrams-PERT.md)
@@ -79,5 +79,5 @@ Related Topics
 - [Opening Mini Maps](Opening-Mini-Maps.md)
 - [Viewing Job Information](Viewing-Job-Info.md)
 - [Viewing Job History     Information](Viewing-Job-History-Info.md)
-- [Viewing Container Jobs\'     SubSchedules](Viewing-Container-Job-SubSchedules.md)
+- [Viewing Container Jobs'     SubSchedules](Viewing-Container-Job-SubSchedules.md)
 - [Performing Additional Job     Procedures](Performing-Job-Procedures-PERT.md)

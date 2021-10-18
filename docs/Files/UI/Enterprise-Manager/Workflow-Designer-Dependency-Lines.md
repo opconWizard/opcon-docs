@@ -23,7 +23,7 @@ the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -62,7 +62,7 @@ the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -100,7 +100,7 @@ the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -140,7 +140,7 @@ the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |
@@ -179,7 +179,7 @@ the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |
@@ -218,7 +218,7 @@ the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |
@@ -269,7 +269,7 @@ the end.
 | sources/Images/EM/EMconflictdep2 | circle indicates a *Conflict*    |
 | .png "Conflict Dependency Line") | dependency. The job on the end   |
 |                                  | with the circle has a            |
-|                                  | \"Conflict\" dependency with the |
+|                                  | "Conflict" dependency with the |
 |                                  | job where the line starts. The   |
 |                                  | job with the circle on it will   |
 |                                  | not run if the job at the        |

@@ -63,7 +63,7 @@ The SMADDI service requires that all elements be nested as described in
 formatting of elements is not important to the service; however, SMA Technologies recommends the indentation for
 easiest readability. Carriage returns, line feeds, and non-significant
 spaces are optional and are ignored. Use two forward slash characters
-(//) to \"comment out\" a line.
+(//) to "comment out" a line.
 
 :::note
 Spaces in the data portion of an element are important and are considered part of the data for input to the OpCon database.

@@ -13,7 +13,7 @@ To add a user account:
 2.  Click ![Add icon](../../../Resources/Images/EM/EMadd.png "Add icon")
     **Add** on the **User Accounts** toolbar.
 3.  Enter the *new user* in the **Name** text box.
-4.  Enter the new user\'s *full name* in the **Full User Name** text
+4.  Enter the new user's *full name* in the **Full User Name** text
     box.
 5.  *(Optional)* Add *notes*, *comments*, and *email
     Address* details.

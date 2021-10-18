@@ -13,13 +13,13 @@ OpCon:
 - [SMA_SAMWATCH](#SMA_SAMW)
 
 :::note
-A SQL user without administrator privileges must be a member of the \"opconspuser\" role to use the administrative stored procedures.
+A SQL user without administrator privileges must be a member of the "opconspuser" role to use the administrative stored procedures.
 :::
 
 ## SMA_CHGMACHINE
 
 The SMA_CHGMACHINE stored procedure increases job-processing performance
-by changing a heavily used LSAM machine\'s ID to 1. Because the SAM
+by changing a heavily used LSAM machine's ID to 1. Because the SAM
 operates in a processing loop, the machine with an ID of 1 receives
 slightly more processing time. It is common for less critical machines
 to be tested first with OpCon; therefore,
@@ -30,7 +30,7 @@ processing loop.
 
 ### Syntax
 
-EXEC SMA_CHGMACHINE \'\<Machine Name\>\'
+EXEC SMA_CHGMACHINE '\<Machine Name\>'
 
 #### Parameters
 
@@ -39,7 +39,7 @@ The stored procedure uses the following parameter:
 - **\<Machine Name\>**: The name of the LSAM whose MachineID is
     changed to 1.
 
-### Changing a Machine\'s ID
+### Changing a Machine's ID
 
 To change the Machine ID of an LSAM, you must execute SMA_CHGMACHINE
 then stop and restart the SMA Service Manager. Follow the procedure
@@ -68,7 +68,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in then **Password** text box.
+    box and the *sa's password* in then **Password** text box.
 
 Click the **Connect** button.
 
@@ -84,7 +84,7 @@ Enter the command for the **SMA_CHGMACHINE** stored procedure.
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | **EXAMPLE:** The command for the | | circular                         | SMA_CHGMACHINE stored procedure: |
 | background](../../../Reso        |                                  |
-| urces/Images/example-icon(48x48) | EXEC SMA_CHGMACHINE \'NEPTUNE\'  |
+| urces/Images/example-icon(48x48) | EXEC SMA_CHGMACHINE 'NEPTUNE'  |
 | .png "Example icon") |                                  |
 +----------------------------------+----------------------------------+
 
@@ -113,7 +113,7 @@ Machines with Non-XML formatted data.
 ### Syntax
 
 EXEC SMA_CHG_UNIX_GIDUID
-\'OLDGID\',\'NEWGID\',\'OLDUID\',\'NEWUID\',\'SKDNAME\'
+'OLDGID','NEWGID','OLDUID','NEWUID','SKDNAME'
 
 :::note
 The wrapping of the syntax in this document does not indicate the location of a carriage return; the ↵ indicates the location of a carriage return.
@@ -157,8 +157,8 @@ The following describes the parameters for the stored procedure:
 | .png "Example icon") | User ID of 45:                   |
 |                                  |                                  |
 |                                  | EXEC SMA_CHG_UNIX_GIDUID         |
-|                                  | \'                               |
-|                                  | 123\',\'789\',\'45\',\'56\',NULL |
+|                                  | '                               |
+|                                  | 123','789','45','56',NULL |
 +----------------------------------+----------------------------------+
 
 +----------------------------------+----------------------------------+
@@ -167,8 +167,8 @@ The following describes the parameters for the stored procedure:
 | urces/Images/example-icon(48x48) | the User ID set to 56:           |
 | .png "Example icon") |                                  |
 |                                  | EXEC SMA_CHG_UNIX_GIDUID         |
-|                                  | NULL,\'789\',NULL,\'56\',        |
-|                                  | \'ProdSched1\'                   |
+|                                  | NULL,'789',NULL,'56',        |
+|                                  | 'ProdSched1'                   |
 +----------------------------------+----------------------------------+
 
 ### Executing SMA_CHG_UNIX_GIDUID
@@ -196,7 +196,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in then **Password** text box.
+    box and the *sa's password* in then **Password** text box.
 
 Click the **Connect** button.
 
@@ -211,8 +211,8 @@ Enter the command for the **SMA_CHG_UNIX_GIDUID** stored procedure.
 
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | **EXAMPLE:** [EXEC               | | circular                         | SMA_CHG_UNIX_GIDUID              |
-| background](../../../Reso        | \'123\',\'789\',\'45\',\'        |
-| urces/Images/example-icon(48x48) | 56\',NULL]{style="font-family: ' |
+| background](../../../Reso        | '123','789','45','        |
+| urces/Images/example-icon(48x48) | 56',NULL]{style="font-family: ' |
 | .png "Example icon") | Courier New';font-size: 11.5pt"} |
 |                                  |                                  |
 |                                  |                                  |
@@ -220,8 +220,8 @@ Enter the command for the **SMA_CHG_UNIX_GIDUID** stored procedure.
 |                                  | **- or -**                       |
 |                                  |                                  |
 |                                  | EXEC SMA_CHG_UNIX_GIDUID         |
-|                                  | NULL,\'                          |
-|                                  | 789\',NULL,\'56\',\'ProdSched1\' |
+|                                  | NULL,'                          |
+|                                  | 789',NULL,'56','ProdSched1' |
 +----------------------------------+----------------------------------+
 
 Click the **Execute** button on the toolbar or press **F5** to execute
@@ -229,7 +229,7 @@ the query.
 
 ## SMA_CLEAN_ENS
 
-The SMA_CLEAN_ENS stored procedure cleans up \"orphaned\" entries in the
+The SMA_CLEAN_ENS stored procedure cleans up "orphaned" entries in the
 ENSSELECTED table of the OpCon database.
 
 :::caution
@@ -248,7 +248,7 @@ The stored procedure performs the following actions:
   - Duplicate entries.
   - A group of machine triggers in ENSSELECTED contains a machine ID
         that does not exist in the main machine (MACHS) table.
-  - A schedule\'s ID in ENSSELECTED does not exist in the main
+  - A schedule's ID in ENSSELECTED does not exist in the main
         schedule (SNAME) table.
   - A schedule in ENSSELECTED contains a job ID that does not exist
         in the main job (JMASTER) table.
@@ -278,7 +278,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in then **Password** text box.
+    box and the *sa's password* in then **Password** text box.
 
 Click the **Connect** button.
 
@@ -352,7 +352,7 @@ This process is irreversible. SMA Technologies recommends backing up the databas
 
 ### Syntax
 
-EXEC SMA_CLEARSCHED \'\<ScheduleName\>\'
+EXEC SMA_CLEARSCHED '\<ScheduleName\>'
 
 #### Parameters
 
@@ -362,7 +362,7 @@ The stored procedure uses the following parameter:
     will be cleared.
   - The schedule name must not exceed 40 characters.
   - Enclose the schedule name in single quotation marks (e.g.,
-        \'Production Schedule\').
+        'Production Schedule').
 
 ## SMA_COPYSCHED
 
@@ -379,19 +379,19 @@ Declare \@errortext Varchar(255)
 
 BEGIN
 
-exec SMA_COPYSCHED \'\<SourceSchedule\>\'
+exec SMA_COPYSCHED '\<SourceSchedule\>'
 
-,\'\<TargetSchedule\>\'
+,'\<TargetSchedule\>'
 
-,\'Copy Privileges (Y/N)\'
+,'Copy Privileges (Y/N)'
 
-,\'Copy Jobs (Y/N)\'
+,'Copy Jobs (Y/N)'
 
 ,\@errorcode OUTPUT
 
 ,\@errortext OUTPUT
 
-Print convert (Char(5), \@errorcode) + \' \' + \@errortext
+Print convert (Char(5), \@errorcode) + ' ' + \@errortext
 
 END
 
@@ -402,20 +402,20 @@ The following describes the parameters for the stored procedure:
 - **\<SourceSchedule\>**: The name of the schedule to copy.
   - The schedule name must not exceed forty (40) characters.
   - Enclose the schedule name in single quotation marks (e.g.,
-        \'Schedule Name\').
+        'Schedule Name').
 - **\<TargetSchedule\>**: The name of the new schedule for the stored
     procedure to create.
   - The schedule name must not exceed forty (40) characters.
-  - Enclose the schedule name in single quotation marks (e.g., \'New
-        Schedule\').
+  - Enclose the schedule name in single quotation marks (e.g., 'New
+        Schedule').
 - **Copy Privileges (Y/N)**: Indicates if the privileges for the
     schedule should be copied to the new schedule. Enclose the Y or N in
-    single quotation marks (e.g., \'Y\').
+    single quotation marks (e.g., 'Y').
   - Y indicates Yes.
   - N indicates No.
 - **Copy Jobs (Y/N)**: Indicates if the jobs in the schedule should be
     copied to the new schedule or not. Enclose the Y or N in single
-    quotation marks (e.g., \'Y\').
+    quotation marks (e.g., 'Y').
   - Y = Yes
   - N = No
 - **\@errorcode**: A variable to get the exit code from SQL server
@@ -448,7 +448,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in then **Password** text box.
+    box and the *sa's password* in then **Password** text box.
 
 Click the **Connect** button.
 
@@ -470,20 +470,20 @@ Copy and paste the following syntax into the query window:
 |                                  | BEGIN                            |
 |                                  |                                  |
 |                                  | exec SMA_COPYSCHED               |
-|                                  | \'\<SourceSchedule\>\'           |
+|                                  | '\<SourceSchedule\>'           |
 |                                  |                                  |
-|                                  | ,\'\<TargetSchedule\>\'          |
+|                                  | ,'\<TargetSchedule\>'          |
 |                                  |                                  |
-|                                  | ,\'Copy Privileges (Y/N)\'       |
+|                                  | ,'Copy Privileges (Y/N)'       |
 |                                  |                                  |
-|                                  | ,\'Copy Jobs (Y/N)\'             |
+|                                  | ,'Copy Jobs (Y/N)'             |
 |                                  |                                  |
 |                                  | ,\@errorcode OUTPUT              |
 |                                  |                                  |
 |                                  | ,\@errortext OUTPUT              |
 |                                  |                                  |
 |                                  | Print convert (Char(5),          |
-|                                  | \@errorcode) + \' \' +           |
+|                                  | \@errorcode) + ' ' +           |
 |                                  | \@errortext                      |
 |                                  |                                  |
 |                                  | END                              |
@@ -501,20 +501,20 @@ example:
 |                                  | BEGIN                            |
 |                                  |                                  |
 |                                  | exec SMA_COPYSCHED               |
-|                                  | \'Development\'                  |
+|                                  | 'Development'                  |
 |                                  |                                  |
-|                                  | ,\'Production\'                  |
+|                                  | ,'Production'                  |
 |                                  |                                  |
-|                                  | ,\'N\'                           |
+|                                  | ,'N'                           |
 |                                  |                                  |
-|                                  | ,\'Y\'                           |
+|                                  | ,'Y'                           |
 |                                  |                                  |
 |                                  | ,\@errorcode OUTPUT              |
 |                                  |                                  |
 |                                  | ,\@errortext OUTPUT              |
 |                                  |                                  |
 |                                  | Print convert (Char(5),          |
-|                                  | \@errorcode) + \' \' +           |
+|                                  | \@errorcode) + ' ' +           |
 |                                  | \@errortext                      |
 |                                  |                                  |
 |                                  | END                              |
@@ -539,7 +539,7 @@ This process is irreversible. SMA Technologies recommends backing up the databas
 
 ### Syntax
 
-EXEC SMA_DELETESCHED \'\<Schedule Name\>\'
+EXEC SMA_DELETESCHED '\<Schedule Name\>'
 
 #### Parameters
 
@@ -548,7 +548,7 @@ The stored procedure uses the following parameter:
 - **\<Schedule Name\>**: The name of the schedule to delete.
   - The schedule name must not exceed 20 characters.
   - Enclose the schedule name in single quotation marks (e.g.,
-        \'OldSched\').
+        'OldSched').
 
 ### Executing SMA_DELETESCHED
 
@@ -575,7 +575,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in then **Password** text box.
+    box and the *sa's password* in then **Password** text box.
 
 Click the **Connect** button.
 
@@ -589,7 +589,7 @@ Click the **New Query** button on the toolbar.
 Enter the command for the **SMA_DELETESCHED** stored procedure.
 
 :::tip Example
-EXEC SMA_DELETESCHED \'Shipping\'
+EXEC SMA_DELETESCHED 'Shipping'
 :::
 
 Click the **Execute** button on the toolbar or press **F5** to execute
@@ -623,9 +623,9 @@ Declare \@errortext Varchar(255)
 
 BEGIN
 
-exec SMA_mergesched \'TargetSchedule\'
+exec SMA_mergesched 'TargetSchedule'
 
-,\'SourceSchedule\'
+,'SourceSchedule'
 
 ,0
 
@@ -633,7 +633,7 @@ exec SMA_mergesched \'TargetSchedule\'
 
 ,\@errortext OUTPUT
 
-Print convert (Char(5), \@errorcode) + \' \' + \@errortext
+Print convert (Char(5), \@errorcode) + ' ' + \@errortext
 
 END
 
@@ -645,12 +645,12 @@ The following describes the parameters for the stored procedure:
     jobs from the Source Schedule are merged into this schedule).
   - The schedule name must not exceed 40 characters.
   - Enclose the schedule name in single quotation marks (e.g.,
-        \'KeepSchedule\').
+        'KeepSchedule').
 - **SourceSchedule**: The name of the schedule to merge into the
     Target Schedule.
   - The schedule name must not exceed 40 characters.
-  - Enclose the schedule name in single quotation marks (e.g., \'Old
-        Schedule\').
+  - Enclose the schedule name in single quotation marks (e.g., 'Old
+        Schedule').
 - **0**: Indicates the OpCon User ID to be audited. Use 0 for ocadm.
 - **\@errorcode**: A variable to get the exit code from SQL server
     returned in the output.
@@ -682,7 +682,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in then **Password** text box.
+    box and the *sa's password* in then **Password** text box.
 
 Click the **Connect** button.
 
@@ -704,9 +704,9 @@ Enter the command for the **SMA_MERGESCHED** stored procedure.
 |                                  | BEGIN                            |
 |                                  |                                  |
 |                                  | exec SMA_mergesched              |
-|                                  | \'TargetSchedule\'               |
+|                                  | 'TargetSchedule'               |
 |                                  |                                  |
-|                                  | ,\'SourceSchedule\'              |
+|                                  | ,'SourceSchedule'              |
 |                                  |                                  |
 |                                  | ,0                               |
 |                                  |                                  |
@@ -715,7 +715,7 @@ Enter the command for the **SMA_MERGESCHED** stored procedure.
 |                                  | ,\@errortext OUTPUT              |
 |                                  |                                  |
 |                                  | Print convert (Char(5),          |
-|                                  | \@errorcode) + \' \' +           |
+|                                  | \@errorcode) + ' ' +           |
 |                                  | \@errortext                      |
 |                                  |                                  |
 |                                  | END                              |
@@ -730,8 +730,8 @@ the query.
 ## SMA_SAMWATCH
 
 The stored procedure creates a new special SAMID with the same timestamp
-as the actual SAM. The value stored in the special SAMID is the \"old\"
-timestamp. The next execution compares the SAM\'s actual current
+as the actual SAM. The value stored in the special SAMID is the "old"
+timestamp. The next execution compares the SAM's actual current
 timestamp to the old timestamp. If the two are equal or the SAMID does
 not exist, the SAM has stopped processing. If specified, the procedure
 retries detecting the SAM at defined intervals. When SMA_SAMWATCH finds
@@ -740,7 +740,7 @@ single machine and writes a message to the Windows Event Log.
 
 ### Syntax
 
-EXEC SMA_SAMWATCH SAMID,\'Recipient\',\<\#1\>,\<\#2\>
+EXEC SMA_SAMWATCH SAMID,'Recipient',\<\#1\>,\<\#2\>
 
 #### Parameters
 
@@ -762,10 +762,10 @@ To specify a recipient for a Network Popup message, enter the host name
 of the machine or enter the Windows User.
 
 :::tip Example
-EXEC SMA_SAMWATCH 1,\'OpsMachine\'
+EXEC SMA_SAMWATCH 1,'OpsMachine'
 :::
 
-To specify a command file, enter the executable\'s full path and file
+To specify a command file, enter the executable's full path and file
 name.
 
 :::note
@@ -782,8 +782,8 @@ The command file may contain multiple net send commands or any other valid comma
 | background](../../../Reso        | named if the SAM fails:          |
 | urces/Images/example-icon(48x48) |                                  |
 | .png "Example icon") | EXEC SMA_SAMWATCH                |
-|                                  | 1,\'C:\\ProgramData\\OpCon       |
-|                                  | xps\\Scripts\\sma_samwatch.cmd\' |
+|                                  | 1,'C:\\ProgramData\\OpCon       |
+|                                  | xps\\Scripts\\sma_samwatch.cmd' |
 +----------------------------------+----------------------------------+
 
 **\<\#1\>**: The number of times SMA_SAMWATCH retries when a SAMPULSE
@@ -802,12 +802,12 @@ SAM is not running or during a SAM regeneration.
 | background](../../../Reso        | SAM seven times at 20 second     |
 | urces/Images/example-icon(48x48) | intervals, the command executes  |
 | .png "Example icon") | a command file named             |
-|                                  | \"sma_samwatch.cmd\" if the SAM  |
+|                                  | "sma_samwatch.cmd" if the SAM  |
 |                                  | has not been detected:           |
 |                                  |                                  |
 |                                  | EXEC SMA_SAMWATCH                |
-|                                  | 1,\'C:\\ProgramData\\OpConxps\\  |
-|                                  | Scripts\\sma_samwatch.cmd\',7,20 |
+|                                  | 1,'C:\\ProgramData\\OpConxps\\  |
+|                                  | Scripts\\sma_samwatch.cmd',7,20 |
 +----------------------------------+----------------------------------+
 
 ### Scheduling SMA_SAMWATCH in SQL
@@ -839,7 +839,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in then **Password** text box.
+    box and the *sa's password* in then **Password** text box.
 
 Click the **Connect** button.
 
@@ -864,7 +864,7 @@ On the New Job screen:
 
 Go to the **Select a page** frame and click the **Schedules** tab.
 
-On the Schedules tab\'s screen:
+On the Schedules tab's screen:
 
 Click the **New** button.
 

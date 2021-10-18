@@ -98,9 +98,9 @@ the job.
 Specify which of the following formats to use to calculate the Start
 Offset:
 
-- **Absolute**: This option indicates that the job\'s Start Offset
+- **Absolute**: This option indicates that the job's Start Offset
     will be calculated from the assigned start time of the schedule.
-- **Relative**: This option indicates that the job\'s Start Offset
+- **Relative**: This option indicates that the job's Start Offset
     will be calculated from the time the schedule was released for
     execution.
 
@@ -131,10 +131,10 @@ start offset for the job.
 Specify which of the following settings to use to calculate the Latest
 Start Offset:
 
-- **Absolute**: This option indicates that the job\'s Latest Start
+- **Absolute**: This option indicates that the job's Latest Start
     Offset will be calculated from the assigned start time of the
     schedule.
-- **Relative**: This option indicates that the job\'s Latest Start
+- **Relative**: This option indicates that the job's Latest Start
     Offset will be calculated from the time the schedule was released
     for execution.
 
@@ -159,15 +159,15 @@ make your selections.
 Select one of the following sources to use for predicting the estimated
 start time:
 
-- **Calculated**: (Default) This option uses the job\'s start offset
+- **Calculated**: (Default) This option uses the job's start offset
     value and dependency chain to calculate the estimated start time.
     When a job has no external dependencies, this is the best option.
-- **History**: This option uses the job\'s average start time by
+- **History**: This option uses the job's average start time by
     frequency from history as the estimated start time. The History
     option is useful when a job depends on external events or user
     interaction to start the job.
 - **User Defined**: This option uses a hard-coded Predicted Start Time
-    in days, hours, and minutes offset from the schedule\'s start time.
+    in days, hours, and minutes offset from the schedule's start time.
     The User Defined option is useful when the History option does not
     prove to be an accurate enough estimated start time.
 
@@ -176,7 +176,7 @@ start time:
 The **Job Execution** frame is used to set the priority and maximum run
 time for the job.
 
-Specify a number for the job\'s priority, zero (0) being the lowest.
+Specify a number for the job's priority, zero (0) being the lowest.
 Either manually input the priority number or utilize the input field
 selectors to make your selections.
 
@@ -253,8 +253,8 @@ are:
     the job.
 - **Latest Run Time (Offset)**: This option is used to specify the
     latest possible start time for the recurring job based on the
-    schedule\'s start time. The value entered in the field is an offset
-    that will be added to the schedule\'s defined Schedule Date and
+    schedule's start time. The value entered in the field is an offset
+    that will be added to the schedule's defined Schedule Date and
     scheduled Start Time in the Daily tables.
 - **Number of Runs**: This option is used to specify the total number
     of times for the recurring job to run.

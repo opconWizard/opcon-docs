@@ -30,9 +30,9 @@ Example:
 
  
 
-Modern web browsers don't need you to use URL encoding even if it\'s
+Modern web browsers don't need you to use URL encoding even if it's
 good practice to replace special characters with percent-encoding (e.g.,
-- for space). For example, in the example above, \"run backup\" may
+- for space). For example, in the example above, "run backup" may
 automatically be transformed into the following:
 
  

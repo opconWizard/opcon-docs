@@ -7,7 +7,7 @@ viewport: width=device-width, initial-scale=1.0
 # Managing Script Runners
 
 The **Script Runners** editor is designed to provide a way to create and
-manage the \"interpreters\" and associated command templates. These
+manage the "interpreters" and associated command templates. These
 templates will be passed to the Agent machine so that the Agent knows
 how to execute the scripts that are received from the centralized
 database. For more information about this concept, refer to [Embedded Scripts](../../../automation-concepts/embedded-scripts.md) in the
@@ -26,7 +26,7 @@ functionality.
 Right-clicking on a script runner in the editor opens a menu that
 provides the same options as the toolbar.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Adding Script Runners](Adding-Script-Runners.md)

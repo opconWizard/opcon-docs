@@ -51,7 +51,7 @@ c.  *(Optional)* Enter a valid *user* and *password* in
 d.  Click the **Next** button to advance to the **Description** screen.
 e.  Enter the correct *email addresses* in the **To** and **From** text
     boxes .
-f.  *(Optional)* Add another *recipient\'s email
+f.  *(Optional)* Add another *recipient's email
     address* in the **CC** text box.
 g.  Enter a *subject*that describes the problem.
 h.  Click on the **Message** tab.

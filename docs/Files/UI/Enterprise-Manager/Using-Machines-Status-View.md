@@ -5,7 +5,7 @@ defined in the OpCon database in different
 formats: **Table**, **Map**, and **Statistics**.
 
 - **Table** ![Machines Status Table     Tab](../../../Resources/Images/EM/EMmachstsTableview.png "Machines Status Table Tab"):
-    The **Table** tab (Default view) lists the machine\'s information
+    The **Table** tab (Default view) lists the machine's information
     (e.g., Machine Status, Machine Name, Operating System, Last Update,
     Running Jobs, Groups, Socket number, Version number, TLS, and
     Activity) in the OpCon environment in a
@@ -56,7 +56,7 @@ The **Machines Status** view has the following right-click menu options:
     jobs in the database that show they are running for that machine and
     sets the running job count to that number. Refer to
     [Re-Synchronizing Running     Jobs](Re-Synchronizing-Running-Jobs.md).
-- **Start Communication**: If the LSAM     is not in a started state, the status can be changed to \'started\'.
+- **Start Communication**: If the LSAM     is not in a started state, the status can be changed to 'started'.
     Refer to [Starting Communication](Starting-Communication.md).
 - **Stop Communication**: If the LSAM is     not in a stopped state, the status can be changed to stopped. Refer
     to [Stopping Communication](Stopping-Communication.md).
@@ -71,7 +71,7 @@ The **Machines Status** view has the following right-click menu options:
     Refer to [Preferences for Window To     Host](Preferences-for-Windows-To-Host.md).
 - **Edit Machine**: Refer to [Editing Machine     Information](Editing-Machine-Information.md).
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Changing Machines Status Table Column     Order](Changing-MS-Table-Column-Order.md)

@@ -141,7 +141,7 @@ Keep in mind the following visual indicators on the page when filtering
 is applied:
 
 - The color scheme of dark yellow serves as a visual identifier of
-    \"filtered\" and will be applied to field borders, buttons,
+    "filtered" and will be applied to field borders, buttons,
     controls, tags, etc.
 - The triple bar button on top-right corner of grids (![Yelow Triple     Bar Button](../../../Resources/Images/SM/Yellow-Triple-Bar-Button.png "Yelow Triple Bar Button"))
     changes to dark yellow whenever a hidden column has filter criteria.
@@ -241,7 +241,7 @@ Breadcrumb Selection
 
 ![Breadcrumbs](../../../Resources/Images/SM/Schedule-Processes.png "Breadcrumbs")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)

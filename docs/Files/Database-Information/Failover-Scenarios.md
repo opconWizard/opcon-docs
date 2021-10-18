@@ -39,8 +39,8 @@ configured, Automatic Failover can occur in the following, situations:
 - When the Primary SMAServMan shuts down normally. Normal shutdown can
     occur because of one of the following:
   - The administrator shuts down the SMA Service Manager through the
-        Windows Service Control Manager (SCM) or through the \"net
-        stop\" command.
+        Windows Service Control Manager (SCM) or through the "net
+        stop" command.
   - The administrator manually performs a normal machine shutdown
         (e.g., through the Start \> Shutdown menu).
 
@@ -55,11 +55,11 @@ configured, Automatic Failover can occur in the following, situations:
     criteria defined by a user.
 
   ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [When the Secondary SMAServMan\'s application group is active, starting the Primary SMAServMan has no effect.]
+  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [When the Secondary SMAServMan's application group is active, starting the Primary SMAServMan has no effect.]
   ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------
 
   ----------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The administrator must activate at least one failover option in the Secondary SMAServMan\'s configuration file for automatic failover to occur.]
+  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The administrator must activate at least one failover option in the Secondary SMAServMan's configuration file for automatic failover to occur.]
   ----------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Choosing Failover Triggers
@@ -95,7 +95,7 @@ response from the Primary SMAServMan, there is no distinction between a
 temporary network problem and a primary machine crash.
 
   --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White \"X\" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [If configuring the Secondary SMAServMan to take control of processing upon connection loss, the customer must guarantee network connectivity.]
+  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [If configuring the Secondary SMAServMan to take control of processing upon connection loss, the customer must guarantee network connectivity.]
   --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 For information on configuring failover based on abnormal shutdown on
@@ -144,7 +144,7 @@ In the Services window:
 
 Click on the **SMA OpCon Service Manager** service.
 
-Change the SMAServMan\'s Startup Type to **Automatic (Delayed Start)**
+Change the SMAServMan's Startup Type to **Automatic (Delayed Start)**
 using the following steps:
 
 a.  Double-click on **SMA OpCon Service Manager**.
@@ -168,7 +168,7 @@ In the Services window:
 
 Click on the **SMA OpCon Service Manager** service.
 
-Change the SMAServMan\'s Startup Type to **Manual** using the following
+Change the SMAServMan's Startup Type to **Manual** using the following
 steps:
 
 a.  Double-click on **SMA OpCon Service Manager**.
@@ -234,14 +234,14 @@ notification. Refer to
   SMAServMan.ini Setting   Primary Machine Value
   ------------------------ ----------------------------------------
   Mode                     StandAlone
-  TerminationScript        \"\"*\<Termination Event Script\>*\"\"
+  TerminationScript        ""*\<Termination Event Script\>*""
 
   : SMAServMan Failover Scenario One: Primary SMAServMan Configuration
 
   SMAServMan.ini Setting   Secondary Machine Value
   ------------------------ -------------------------------------------
   Mode                     StandAlone
-  InitializationScript     \"\"*\<Initialization Event Script\>*\"\"
+  InitializationScript     ""*\<Initialization Event Script\>*""
 
   : SMAServMan Failover Scenario One: Backup SMAServMan Configuration
 
@@ -264,7 +264,7 @@ notification. Refer to
 ##### Process Flows
 
 Based on the above configuration values, the following process flows
-show SMAServMan\'s expected behavior.
+show SMAServMan's expected behavior.
 
 ###### Good Startup
 
@@ -348,14 +348,14 @@ files, refer to [Determining Values for the Command Files](Manual-Setup-for-Micr
   SMAServMan.ini Setting   Primary Machine Value
   ------------------------ ----------------------------------------
   Mode                     StandAlone
-  TerminationScript        \"\"*\<Termination Event Script\>*\"\"
+  TerminationScript        ""*\<Termination Event Script\>*""
 
   : SMAServMan Failover Scenario Two: Primary SMAServMan Configuration
 
   SMAServMan.ini Setting   Secondary Machine Value
   ------------------------ -------------------------------------------
   Mode                     StandAlone
-  InitializationScript     \"\"*\<Initialization Event Script\>*\"\"
+  InitializationScript     ""*\<Initialization Event Script\>*""
 
   : SMAServMan Failover Scenario Two: Backup SMAServMan Configuration
 
@@ -378,7 +378,7 @@ files, refer to [Determining Values for the Command Files](Manual-Setup-for-Micr
 ##### Process Flows
 
 Based on the above configuration values, the following process flows
-indicate SMAServMan\'s expected behavior.
+indicate SMAServMan's expected behavior.
 
 ###### Good Startup
 
@@ -456,7 +456,7 @@ for each setting.
   Mode                      Primary
   FailOverSocketNumber      6500
   TimeOutInSecondsForSync   60
-  SyncInitFailureScript     \"\"*\<Synchronization Event Script\>*\"\"
+  SyncInitFailureScript     ""*\<Synchronization Event Script\>*""
 
   : SMAServMan Failover Scenario Three: Primary SMAServMan Configuration
 
@@ -468,9 +468,9 @@ for each setting.
   SecondsBetweenPings               15
   PingRetryCount                    1
   PingTimeOutInMilliseconds         500
-  SyncInitFailureScript             \"\"*\<Synchronization Event Script\>*\"\"
+  SyncInitFailureScript             ""*\<Synchronization Event Script\>*""
   PrimaryAbnormalShutdownFailover   Y
-  PrimaryAbnormalShutdownScript     \"\"*\<Shutdown Script\>*\"\"
+  PrimaryAbnormalShutdownScript     ""*\<Shutdown Script\>*""
 
   : SMAServMan Failover Scenario Three: Secondary SMAServMan
   Configuration
@@ -494,19 +494,19 @@ for each setting.
 ##### Startup Process Flows
 
 Based on the above configuration values, the following process flows
-indicate SMAServMan\'s expected behavior.
+indicate SMAServMan's expected behavior.
 
 ###### Synchronization Failure
 
 The following table presents the general steps when the Primary and
-Secondary SMAServMan\'s fail to synchronize.
+Secondary SMAServMan's fail to synchronize.
 
   Step   Description
   ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1      Primary and Secondary SMAServMan\'s attempt to synchronize.
+  1      Primary and Secondary SMAServMan's attempt to synchronize.
   2      If synchronization unsuccessful, the Primary SMAServMan continues to attempt synchronization after every number of seconds specified by the TimeOutInSecondsForSync configuration setting. The Secondary SMAServMan continues to attempt synchronization after every number of seconds specified by the SecondsBetweenPings configuration setting.
-  3      After every unsuccessful attempt at synchronization, the Primary and Secondary SMAServMan\'s execute the script specified by the SyncInitFailureScript configuration setting on each machine. In this example, the scripts write events to the Windows Event Log notifying the administrator that synchronization has failed between the machines.
-  4      After executing the scripts, both SMAServMan\'s restart the process of initializing synchronization. Refer to step 1.
+  3      After every unsuccessful attempt at synchronization, the Primary and Secondary SMAServMan's execute the script specified by the SyncInitFailureScript configuration setting on each machine. In this example, the scripts write events to the Windows Event Log notifying the administrator that synchronization has failed between the machines.
+  4      After executing the scripts, both SMAServMan's restart the process of initializing synchronization. Refer to step 1.
 
   : Automatic SMAServMan Failover with No Secondary Database:
   Synchronization Failure
@@ -518,7 +518,7 @@ of the SAM-SS with a failover machine.
 
   Step   Description
   ------ --------------------------------------------------------------------------------------------------------
-  1      Primary and Secondary SMAServMan\'s attempt to synchronize.
+  1      Primary and Secondary SMAServMan's attempt to synchronize.
   2      If synchronization successful, Primary SMAServMan sets Primary Application Group to ACTIVE.
   3      If synchronization successful, Secondary SMAServMan sets Secondary Application Group to STANDBY.
   4      Primary SMAServMan starts Primary SAM-SS.
@@ -594,7 +594,7 @@ Files](Manual-Setup-for-Microsoft-SQL-Replication.md#Determin)
   Mode                      Primary
   FailOverSocketNumber      6500
   TimeOutInSecondsForSync   60
-  SyncInitFailureScript     \"\"*\<Synchronization Event Script\>*\"\"
+  SyncInitFailureScript     ""*\<Synchronization Event Script\>*""
 
   : SMAServMan Failover Scenario Four: Primary SMAServMan Configuration
 
@@ -613,15 +613,15 @@ Files](Manual-Setup-for-Microsoft-SQL-Replication.md#Determin)
 +---------------------------------+-----------------------------------+
 | PingTimeOutInMilliseconds       | 500                               |
 +---------------------------------+-----------------------------------+
-| SyncInitFailureScript           | \"\"*\<Synchronization Event      |
-|                                 | Script\>*\"\"                     |
+| SyncInitFailureScript           | ""*\<Synchronization Event      |
+|                                 | Script\>*""                     |
 +---------------------------------+-----------------------------------+
 | PrimaryAbnormalShutdownFailover | Y                                 |
 +---------------------------------+-----------------------------------+
-| PrimaryAbnormalShutdownScript   | \"\"C:\                           |
+| PrimaryAbnormalShutdownScript   | ""C:\                           |
 |                                 | \ProgramData\\OpConxps\\Utilities |
 |                                 |                                   |
-|                                 | \\Database\\StopRepl.cmd\"\"      |
+|                                 | \\Database\\StopRepl.cmd""      |
 +---------------------------------+-----------------------------------+
 
 : SMAServMan Failover Scenario Four: Secondary SMAServMan Configuration
@@ -645,12 +645,12 @@ Files](Manual-Setup-for-Microsoft-SQL-Replication.md#Determin)
 ##### Startup Process Flows
 
 Based on the above configuration values, the following process flows
-indicate SMAServMan\'s expected behavior.
+indicate SMAServMan's expected behavior.
 
 ###### Synchronization Failure
 
 The following table presents the general steps when the Primary and
-Secondary SMAServMan\'s fail to synchronize.
+Secondary SMAServMan's fail to synchronize.
 
   ----------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
   ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Secondary SMAServMan.ini file is configured not to failover when there is a synchronization failure.]
@@ -658,10 +658,10 @@ Secondary SMAServMan\'s fail to synchronize.
 
   Step   Description
   ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  1      Primary and Secondary SMAServMan\'s attempt to synchronize.
+  1      Primary and Secondary SMAServMan's attempt to synchronize.
   2      If synchronization unsuccessful, the Primary SMAServMan continues to attempt synchronization after every number of seconds specified by the TimeOutInSecondsForSync configuration setting. The Secondary SMAServMan continues to attempt synchronization after every number of seconds specified by the SecondsBetweenPings configuration setting.
-  3      After every unsuccessful attempt at synchronization, the Primary and Secondary SMAServMan\'s execute the script specified by the SyncInitFailureScript configuration setting on each machine. In this example, the scripts write events to the Windows Event Log notifying the administrator that synchronization has failed between the machines.
-  4      After executing the scripts, both SMAServMan\'s restart the process of initializing synchronization. Refer to step 1.
+  3      After every unsuccessful attempt at synchronization, the Primary and Secondary SMAServMan's execute the script specified by the SyncInitFailureScript configuration setting on each machine. In this example, the scripts write events to the Windows Event Log notifying the administrator that synchronization has failed between the machines.
+  4      After executing the scripts, both SMAServMan's restart the process of initializing synchronization. Refer to step 1.
 
   : Automatic SMAServMan Failover with a Secondary Database:
   Synchronization Failure
@@ -673,7 +673,7 @@ of the SAM-SS with a failover machine and database.
 
   Step   Description
   ------ ----------------------------------------------------------------------------------------------------
-  1      Primary and Secondary SMAServMan\'s attempt to synchronize.
+  1      Primary and Secondary SMAServMan's attempt to synchronize.
   2      If synchronization successful, Primary SMAServMan sets Primary Application Group to ACTIVE .
   3      If synchronization successful, Secondary SMAServMan sets Secondary Application Group to STANDBY.
   4      Primary SMAServMan starts Primary SAM-SS.

@@ -60,7 +60,7 @@ all monitor types.
     will appear on the main screen of the SMA Resource Monitor (maximum
     characters: 60). The following values are invalid for the monitor
     name: \\ (backslash), / (forward slash), : (colon), \* (asterisk), ?
-    (question mark), \" (quotes), \< (less than), \> (greater than), \|
+    (question mark), " (quotes), \< (less than), \> (greater than), \|
     (pipe)
 - **Documentation**: Provides a place to document monitor information.
 - **Network Share**: For **File Monitors**, determines if the SMA
@@ -101,16 +101,16 @@ Parameters step contains different details.
 #### Auto-Disable and Auto Re-Enable Behavior
 
 When SMA Resource Monitor automatically deactivates a Counter, Service,
-or Process Monitor, it unselects the \"Active\" checkbox for that
+or Process Monitor, it unselects the "Active" checkbox for that
 monitor on the respective summary tab of the main SMA Resource Monitor
 screen. To automatically re-enable the monitor, configure one or more of
 the Auto Re-Enable Trigger settings.
 
 If auto re-enable is configured, when SMA Resource Monitor automatically
 deactivates a monitor, it disables the trigger, but keeps monitoring for
-the re-enabling of the trigger and the \"Active\" box for the monitor in
+the re-enabling of the trigger and the "Active" box for the monitor in
 the respective summary tab continues to show selected. To manually
-enable the trigger again, unselect then select the \"Active\" checkbox
+enable the trigger again, unselect then select the "Active" checkbox
 on the respective summary tab of the main SMA Resource Monitor screen.
 
 #### File Monitor Parameters
@@ -120,7 +120,7 @@ on the respective summary tab of the main SMA Resource Monitor screen.
     or all files of an extension type, etc. UNC paths are also
     supported. The following values are invalid for the file name: \\
     (backslash), / (forward slash),\
-    : (colon), \* (asterisk), ? (question mark), \" (quotes), \< (less
+    : (colon), \* (asterisk), ? (question mark), " (quotes), \< (less
     than), \> (greater than), \| (pipe).
 - **File State**: Defines the File State values to monitor:
   - **Create**: File Creation (default)
@@ -179,8 +179,8 @@ on the respective summary tab of the main SMA Resource Monitor screen.
     | .png "Example icon") |                                  |
     |                                  | For large file transfers, it     |
     |                                  | takes time for the complete file |
-    |                                  | to arrive. Set the \'Wait        |
-    |                                  | Verify\' value high enough to    |
+    |                                  | to arrive. Set the 'Wait        |
+    |                                  | Verify' value high enough to    |
     |                                  | make sure that the file should   |
     |                                  | not have changed size in that    |
     |                                  | time. As soon as the size        |
@@ -229,7 +229,7 @@ provides a way to monitor resources only during a specified time period
 of the day.
 
 **Triggers**: This frame contains the fields required to set up the
-triggers for the counter monitor\'s Action Groups.
+triggers for the counter monitor's Action Groups.
 
 **Above Max Value**: Defines the maximum cutoff value for the counter.
 If the value goes above this cutoff, the configured action group(s) are
@@ -243,7 +243,7 @@ triggered.
 Average trigger.
 
 :::note
-The average value is calculated by taking 1 sample every second and averaging last \'n\' samples. Where \'n\' is defined above in Samples.
+The average value is calculated by taking 1 sample every second and averaging last 'n' samples. Where 'n' is defined above in Samples.
 :::
 
 - **Above/Below**: Select **Above** or **Below** from this list box to
@@ -413,7 +413,7 @@ Action Groups.
 - **Action Group Name** (Required): Defines the Action Group Name. The
     maximum characters for the Action Group Name is 60. The following
     values are invalid for the action group name: \\ (backslash), /
-    (forward slash), : (colon), \* (asterisk), ? (question mark), \"
+    (forward slash), : (colon), \* (asterisk), ? (question mark), "
     (quotes), \< (less than), \> (greater than), \| (pipe).
 - **Documentation**: Provides a place to document the action group.
 
@@ -423,7 +423,7 @@ Action Groups.
     group. Click inside the checkbox to activate the action, clear the
     checkbox to deactivate the action.
 - **Action**: Defines the action(s) to take when a rule is triggered.
-    Type a dollar sign (\$) to see a drop-down list of actions and their
+    Type a dollar sign ($) to see a drop-down list of actions and their
     syntaxes. Supported actions include:
   - All OpCon events. For more information, refer to [Event         Types](../../events/types.md).
   - Local commands. Use the following action:
@@ -491,7 +491,7 @@ Actions:
     service was monitored.
 - \[\[\@SERVICENAME\]\] - This is the display name of the service that     was monitored and caused the action to fire.
 - \[\[\@UNIQUEID\]\] - This is a unique identifying number that is     associated with each action fired.
-- \[\[\@ServiceLogon\]\] - This is the name of the user the services     is \"running as\" or \"Local System\".
+- \[\[\@ServiceLogon\]\] - This is the name of the user the services     is "running as" or "Local System".
 
 ##### Variables for Process Monitor Actions
 

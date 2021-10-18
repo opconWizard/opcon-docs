@@ -30,12 +30,12 @@ Tuxedo ART environment.
     start with an & (i.e. &TEST).
 - **Value**: The value field defines the variable value. OpCon
     properties can be used in this field as these will be resolved when
-    the job is started (e.g., \[\[\$SCHEDULE DATE_j\]\],     \[\[SI.C102\]\], \[\[\$SCHEDULE DATE (-1d)\]\], \[\[\$SCHEDULE DATE
-    (-1M)\]\], SubStr(\[\[\$SCHEDULE DATE-BVH\]\],0,2), etc.). The     Control-T keyins can be used to select properties. The definitions
+    the job is started (e.g., \[\[$SCHEDULE DATE_j\]\],     \[\[SI.C102\]\], \[\[$SCHEDULE DATE (-1d)\]\], \[\[$SCHEDULE DATE
+    (-1M)\]\], SubStr(\[\[$SCHEDULE DATE-BVH\]\],0,2), etc.). The     Control-T keyins can be used to select properties. The definitions
     include a special function called SubStr which will extract the
     characters starting at the first character for the number of
     characters defined by the second character. In the above example
-    SubStr(\[\[\$SCHEDULE DATE-BVH\]\],0,2), if the date is defined as     MMDDYYYY, the MM field will be extracted and passed as the variable.
+    SubStr(\[\[$SCHEDULE DATE-BVH\]\],0,2), if the date is defined as     MMDDYYYY, the MM field will be extracted and passed as the variable.
 
 ## Step Control Tab
 
@@ -44,28 +44,28 @@ Tuxedo ART environment.
 - **Step Name**: The name of the step defined in the script.
 - **Min CC**: The minimum step completion code.
 - **Max CC**: The maximum step completion code.
-- **Step Action**: Only the \'Send Trigger Message TO SAM\' is
+- **Step Action**: Only the 'Send Trigger Message TO SAM' is
     supported (e.g., JEVENT=SS1TEST10).
 - **Trigger Message**: The trigger message that is sent to SAM for
     Agent Feedback. This must match an LSAM Feedback User Message match
     event definition. For example, if trigger message is
     JEVENT=SS1TEST10, then LSAM Feedback User message must include the
-    definition User Message match \'JEVENT=SS1TEST10\'.
+    definition User Message match 'JEVENT=SS1TEST10'.
 
 ## Failure Criteria Tab
 
 The job definition supports advanced failure criteria.
 
 - **Comparison Operator**: Defines the comparison operator for the
-    \"if statement\" when comparing the actual value of the job\'s exit
+    "if statement" when comparing the actual value of the job's exit
     code to the failure criteria rules.
   - Valid Values: Range, Equal To, Not Equal To, Less Than, Less or
         Equal, Greater Than, Greater and Equal
-- **Value**: Defines the value used for comparison to the job\'s
+- **Value**: Defines the value used for comparison to the job's
     actual exit code with the comparison operator.
   - Valid Values range from -2147483648 to 2147483647
 - **End Value**: Defines the end value for comparison when the
-    comparison operator is \"Range\".
+    comparison operator is "Range".
   - Valid Values range from -2147483648 to 2147483647
 - **Result**: Defines the desired resulting job status when the
     criteria for the line is equal to true. You may only specify the
@@ -77,8 +77,8 @@ The job definition supports advanced failure criteria.
   - Valid Values: And, Or
 - **Anything Else**: This field contains the other possible result if
     the Exit code falls outside the advanced criteria comparisons.
-  - If the Result field is set to \"Finish OK\", Anything Else
-        contains \"Fail\".
-  - If the Result field is set to \"Fail\", Anything Else contains
-        \"Finish OK\".
+  - If the Result field is set to "Finish OK", Anything Else
+        contains "Fail".
+  - If the Result field is set to "Fail", Anything Else contains
+        "Finish OK".
 :::

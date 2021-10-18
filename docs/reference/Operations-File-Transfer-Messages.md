@@ -8,7 +8,7 @@ viewport: width=device-width, initial-scale=1.0
 
 In addition to displaying the completion percentage and the interim
 transfer operations (e.g., compressing, decompressing, etc.), the EM
-displays specific file transfer codes from the LSAM\'s participating in
+displays specific file transfer codes from the LSAM's participating in
 the file transfer job. The Origination column identifies the error
 location: the FTAgent (Destination) and/or the FTServer (Source).
 
@@ -22,7 +22,7 @@ The following error messages may be encountered in the \*SMA/FTAGENT.
   CFG_SMAFT_IN_USE = N                                                                                                                Log error: SMAFT is not enabled for this LSAMFTAGENT aborts.
   CFG_SMAFT_IN_USE = O                                                                                                                Log error: SMAFT is permitted for outbound file transfers onlyFTAGENT aborts.
   CFG_SMAFT_IN_USE is not any of the following: N, O, I, B                                                                            Log error: Invalid value for SMAFT_IN_USE flag. Flag is: xFTAGENT aborts.
-  Disposition is \"Do Not Overwrite\" and Destination file exists.                                                                    Log error: File xxxxxxx exists and overwrite is not permittedFTAGENT aborts.
+  Disposition is "Do Not Overwrite" and Destination file exists.                                                                    Log error: File xxxxxxx exists and overwrite is not permittedFTAGENT aborts.
   CFG_FTAGENT_PORT is outside the range 1024 - 65535                                                                                  Log error: Invalid value for FTAGENT port: nnnnnFTAGENT aborts.
   Unable to establish a dialog with the File Transfer Server                                                                          Log error: FT Server OPEN error: \<reason\> for IP: \<server IP\> port: \<server port\>
   Warning encountered while attempting to establish a dialog with the File Transfer Server                                            Log error: FT Server OPEN warning: \<reason\> for IP: \<server IP\> port: \<server port\>
@@ -33,7 +33,7 @@ The following error messages may be encountered in the \*SMA/FTAGENT.
   Message packets arrived out of sequence                                                                                             Log error: Packet number error. Previous: \<previous packet number\> Received: \<received packet number\>FTAGENT aborts.
   The data type specified for the destination file does not match the data type for the existing file.                                Log error: Data type mismatch for appended file. Spec: \<specified data type\> File: \<File data type\>FTAGENT aborts.
   A message type other than 020, 022, 023, 024, 028, or 029 was received by the \*SMA/FTAGENT program from the File Transfer server   Log error: File: Undefined msg type \<msg header\>FTAGENT aborts.
-  The \*SMA/FTAGENT program attempted to place a job status message in the \*SMA/OUTBOUND/FILE, but was unable to do so.              Log error: Can\'t write to SAM. \<first 132 characters of the status message\>FTAGENT aborts.
+  The \*SMA/FTAGENT program attempted to place a job status message in the \*SMA/OUTBOUND/FILE, but was unable to do so.              Log error: Can't write to SAM. \<first 132 characters of the status message\>FTAGENT aborts.
   An unsupported Common Character Set designation was received.                                                                       Log error: Invalid CommonCharSet \<CommonCharSet\>FTAGENT aborts.
 
   : MCP SMA File Transfer Error Messages
@@ -85,8 +85,8 @@ Schedule Operations.
 |                                  | files are not supported.         |
 +----------------------------------+----------------------------------+
 | File to be Catalogued            | The requested source file is in  |
-|                                  | a \"to be catalogued\" status.   |
-|                                  | \"To be\" files are not          |
+|                                  | a "to be catalogued" status.   |
+|                                  | "To be" files are not          |
 |                                  | supported.                       |
 +----------------------------------+----------------------------------+
 | File is a Tape File              | The requested source file is a   |
@@ -94,16 +94,16 @@ Schedule Operations.
 |                                  | supported.                       |
 +----------------------------------+----------------------------------+
 | File is to be WRITE ONLY         | The requested source file is in  |
-|                                  | a \"to be write only\" status.   |
-|                                  | \"To be\" files are not          |
+|                                  | a "to be write only" status.   |
+|                                  | "To be" files are not          |
 |                                  | supported.                       |
 +----------------------------------+----------------------------------+
 | File is to be Dropped            | The requested source file is in  |
-|                                  | a \"to be dropped\" status. \"To |
-|                                  | be\" files are not supported.    |
+|                                  | a "to be dropped" status. "To |
+|                                  | be" files are not supported.    |
 +----------------------------------+----------------------------------+
 | File is WRITE ONLY               | The requested source file is     |
-|                                  | \"write only\" and cannot be     |
+|                                  | "write only" and cannot be     |
 |                                  | read for the transfer.           |
 +----------------------------------+----------------------------------+
 | Encryption not supported         | The FTAgent has requested an     |
@@ -207,8 +207,8 @@ Schedule Operations.
 | 7 (07) Invalid transfer mode     | -   The file character set for   |
 | (must be ASCII)                  |     the job is not supported.    |
 |                                  | -   The character set must be    |
-|                                  |     either \"ASCII\" or          |
-|                                  |     \"Default Text\".            |
+|                                  |     either "ASCII" or          |
+|                                  |     "Default Text".            |
 +----------------------------------+----------------------------------+
 | 8 (10) Invalid Compression mode  | Compression Required has been    |
 | (must be NONE)                   | specified for the file transfer  |
@@ -222,8 +222,8 @@ Schedule Operations.
 +----------------------------------+----------------------------------+
 | 10 (12) Invalid Overwrite        | Destination File Handling has    |
 | parameter (cannot be APPEND)     | been identified as either        |
-|                                  | \"Append\" or \"Backup and       |
-|                                  | Append\". The OS 2200 FTAgent    |
+|                                  | "Append" or "Backup and       |
+|                                  | Append". The OS 2200 FTAgent    |
 |                                  | does not support file appends.   |
 +----------------------------------+----------------------------------+
 | 13 (15) Common Bank slot not     | The number of File Transfer jobs |
@@ -275,7 +275,7 @@ Schedule Operations.
 +----------------------------------+----------------------------------+
 | 18 (22) COMM Failure: OPEN       | The attempt to open a connection |
 | connection failed                | to the FTServer failed. The      |
-|                                  | job\'s log file contains         |
+|                                  | job's log file contains         |
 |                                  | detailed error information.      |
 +----------------------------------+----------------------------------+
 | 19 (23) Invalid CAPABILITIES     | The FTAgent has received an      |
@@ -302,13 +302,13 @@ Schedule Operations.
 +----------------------------------+----------------------------------+
 | 22 (26) FACILITIES STATUS error  | A Facilities Error occurred      |
 | (\@FAC)                          | while attempting to manage the   |
-|                                  | destination file. The job\'s log |
+|                                  | destination file. The job's log |
 |                                  | file will contain detailed error |
 |                                  | information.                     |
 +----------------------------------+----------------------------------+
 | 23 (27) Open OUTPUT file failed  | An error occurred when the       |
 |                                  | FTAgent attempted to open the    |
-|                                  | destination file. The job\'s log |
+|                                  | destination file. The job's log |
 |                                  | file will contain detailed error |
 |                                  | information.                     |
 +----------------------------------+----------------------------------+
@@ -322,7 +322,7 @@ Schedule Operations.
 +----------------------------------+----------------------------------+
 | 25 (31) File WRITE error (SDFIO) | The FTAgent encountered an error |
 |                                  | when attempting to write data to |
-|                                  | the destination file. The job\'s |
+|                                  | the destination file. The job's |
 |                                  | log will contain detailed error  |
 |                                  | information.                     |
 +----------------------------------+----------------------------------+
@@ -338,7 +338,7 @@ Schedule Operations.
 |                                  | Support.                         |
 +----------------------------------+----------------------------------+
 | 27 (33) COMM Failure: Connection | The FTServer rejected the        |
-| Rejected                         | FTAgent\'s attempt to open a     |
+| Rejected                         | FTAgent's attempt to open a     |
 |                                  | communications session.          |
 +----------------------------------+----------------------------------+
 | 28 (34) COMM Failure: Connection | The communications connection    |
@@ -376,15 +376,15 @@ Schedule Operations.
 |                                  | FTAgent.                         |
 +----------------------------------+----------------------------------+
 | 33 (41)Preferred Compression     | The File Transfer job is defined |
-| FAILED                           | with \"Compression Preferred\"   |
-|                                  | and \"Fail if Preferred not      |
-|                                  | met\". The file has been         |
+| FAILED                           | with "Compression Preferred"   |
+|                                  | and "Fail if Preferred not      |
+|                                  | met". The file has been         |
 |                                  | transferred successfully.        |
 +----------------------------------+----------------------------------+
 | 34 (42) Preferred Encryption     | The File Transfer job is defined |
-| FAILED                           | with \"Encryption Preferred\"    |
-|                                  | and \"Fail if Preferred not      |
-|                                  | met\". The file has been         |
+| FAILED                           | with "Encryption Preferred"    |
+|                                  | and "Fail if Preferred not      |
+|                                  | met". The file has been         |
 |                                  | transferred successfully.        |
 +----------------------------------+----------------------------------+
 | 35 (43) Invalid Destination File | The Read and/or Write keys       |
@@ -408,7 +408,7 @@ Operations
 ## UNIX File Transfer Error Codes
 
 File transfer errors received by STDOUT/STDERR may be viewed in the
-EM\'s Job Output Retrieval System (JORS).
+EM's Job Output Retrieval System (JORS).
 
  
 
@@ -416,7 +416,7 @@ The messages in this section are output by the UNIX Agent and Server;
 messages output by a non-UNIX Agent or Server will be different, and the
 user is referred to the documentation for the appropriate LSAM. When the
 destination machine is UNIX and an error originates in the Server, the
-Agent will pre-pend \"FTServer:\" to the message to indicate that it
+Agent will pre-pend "FTServer:" to the message to indicate that it
 originated with the Server. For example:
 
  
@@ -428,17 +428,17 @@ FTServer: Error reading Temp File
 +--------------------------+--------------------------+-------------+
 | Message                  | Explanation              | Origination |
 +==========================+==========================+=============+
-| Original Destination     | Per the job\'s           | FTAgent     |
-| File \[*dest*\]          | \"Overwrite\" option,    |             | | backed-up to             | the FTAgent backed up    |             |
+| Original Destination     | Per the job's           | FTAgent     |
+| File \[*dest*\]          | "Overwrite" option,    |             | | backed-up to             | the FTAgent backed up    |             |
 | \[*backup*\]             | the Destination File     |             | |                          | prior to starting the    |             |
 |                          | file transfer.           |             |
 +--------------------------+--------------------------+-------------+
-| Original Destination     | At the job\'s startup,   | FTAgent     |
+| Original Destination     | At the job's startup,   | FTAgent     |
 | File \[*file*\] did not  | no Destination File      |             | | exist to back-up         | existed to backup.       |             |
 +--------------------------+--------------------------+-------------+
 | Could not change default | Following the transfer   | FTAgent     |
 | access permissions for   | of a new Destination     |             |
-| Destination File         | file, the new file\'s    |             |
+| Destination File         | file, the new file's    |             |
 | \[*dest*\]               | access privileges could  |             | |                          | not be changed from the  |             |
 |                          | system-dependent default |             |
 |                          | to:                      |             |
@@ -460,8 +460,8 @@ FTServer: Error reading Temp File
 | \--\>                    |     transfer.            |             |
 | \[                       | -   The Destination File |             | | *dest_mach*\]*dest_file* |     was created or       |             |
 |                          |     overwritten.         |             |
-|                          | -   Shown if the job\'s  |             |
-|                          |     \"Overwrite\" option |             |
+|                          | -   Shown if the job's  |             |
+|                          |     "Overwrite" option |             |
 |                          |     specified appending, |             |
 |                          |     but the Destination  |             |
 |                          |     File did not exist   |             |
@@ -480,7 +480,7 @@ FTServer: Error reading Temp File
 | complete!                | completion. The file may |             |
 |                          | or may not have been     |             |
 |                          | transferred. Refer to    |             |
-|                          | the job\'s STDERR output |             |
+|                          | the job's STDERR output |             |
 |                          | for details of what went |             |
 |                          | wrong.                   |             |
 +--------------------------+--------------------------+-------------+
@@ -489,7 +489,7 @@ FTServer: Error reading Temp File
 
 ### STDERR
 
-Written to a job\'s STDERR file when the job requirements could not be
+Written to a job's STDERR file when the job requirements could not be
 met:
 
 +----------------------+----------------------+---------------------+
@@ -518,16 +518,16 @@ met:
 |                      | i.e., that portion   |                     |
 |                      | of the Destination   |                     |
 |                      | File prior to the    |                     |
-|                      | final \'/\' in the   |                     |
+|                      | final '/' in the   |                     |
 |                      | filename.            |                     |
 +----------------------+----------------------+---------------------+
 | Destination File     | The file transfer    | FTAgent             |
 | \[*file*\] already   | was aborted because  |                     | | exists and overwrite | the Destination File |                     |
 | not allowed.         | already existed and  |                     |
 |                      | the user specified   |                     |
-|                      | \"Do Not Overwrite\" |                     |
-|                      | for the job\'s       |                     |
-|                      | \"Overwrite\"        |                     |
+|                      | "Do Not Overwrite" |                     |
+|                      | for the job's       |                     |
+|                      | "Overwrite"        |                     |
 |                      | option.              |                     |
 +----------------------+----------------------+---------------------+
 | Could not back-up    | -   The file         | FTAgent             |
@@ -537,8 +537,8 @@ met:
 |                      |     be backed up as  |                     |
 |                      |     the user         |                     |
 |                      |     specified for    |                     |
-|                      |     the job\'s       |                     |
-|                      |     \"Overwrite\"    |                     |
+|                      |     the job's       |                     |
+|                      |     "Overwrite"    |                     |
 |                      |     option.          |                     |
 |                      | -   The indicator    |                     |
 |                      |     field provides   |                     |
@@ -566,8 +566,8 @@ met:
 |                      |     as Failed        |                     |
 |                      |     because the user |                     |
 |                      |     checked the      |                     |
-|                      |     \"Send           |                     |
-|                      |     fail\...\" box   |                     |
+|                      |     "Send           |                     |
+|                      |     fail\..." box   |                     |
 |                      |     under Failure    |                     |
 |                      |     Criteria in the  |                     |
 |                      |     Job Details      |                     |
@@ -600,8 +600,8 @@ met:
 |                      |     as Failed        |                     |
 |                      |     because the user |                     |
 |                      |     checked the      |                     |
-|                      |     \"Send           |                     |
-|                      |     fail\...\" box   |                     |
+|                      |     "Send           |                     |
+|                      |     fail\..." box   |                     |
 |                      |     under Failure    |                     |
 |                      |     Criteria in the  |                     |
 |                      |     Job Details      |                     |
@@ -702,7 +702,7 @@ met:
 | (*indicator*)        |     processing.      |                     |
 |                      | -   The indicator    |                     |
 | Could not rename     |     field provides   |                     |
-| unTAR\'d             |     the specific     |                     |
+| unTAR'd             |     the specific     |                     |
 | \[*un-TAR*\] to Temp |     reason.          |                     | | \[*temp*\]           |                      |                     |
 | (*indicator*)        |                      |                     |
 +----------------------+----------------------+---------------------+
@@ -905,7 +905,7 @@ met:
 |                      | file, or could not   |                     |
 |                      | update the timestamp |                     |
 |                      | of the destination   |                     |
-|                      | file when \"append\" |                     |
+|                      | file when "append" |                     |
 |                      | was specified.       |                     |
 +----------------------+----------------------+---------------------+
 | Invalid length of    | The length of the    | FTAgent             |
@@ -916,7 +916,7 @@ met:
 |                      | file be saved in a   |                     |
 |                      | record-oriented      |                     |
 |                      | format (by           |                     |
-|                      | pre-pending a \'=\'  |                     |
+|                      | pre-pending a '='  |                     |
 |                      | to the destination   |                     |
 |                      | file name).          |                     |
 +----------------------+----------------------+---------------------+
@@ -928,7 +928,7 @@ met:
 |                      | saved in a           |                     |
 |                      | record-oriented      |                     |
 |                      | format (by           |                     |
-|                      | pre-pending a \'=\'  |                     |
+|                      | pre-pending a '='  |                     |
 |                      | to the destination   |                     |
 |                      | file name).          |                     |
 +----------------------+----------------------+---------------------+
@@ -940,7 +940,7 @@ met:
 |                      | saved in a           |                     |
 |                      | record-oriented      |                     |
 |                      | format (by           |                     |
-|                      | pre-pending a \'=\'  |                     |
+|                      | pre-pending a '='  |                     |
 |                      | to the destination   |                     |
 |                      | file name).          |                     |
 +----------------------+----------------------+---------------------+
@@ -951,7 +951,7 @@ met:
 |                      | saved in a           |                     |
 |                      | record-oriented      |                     |
 |                      | format (by           |                     |
-|                      | pre-pending a \'=\'  |                     |
+|                      | pre-pending a '='  |                     |
 |                      | to the destination   |                     |
 |                      | file name). *RS*     |                     |
 |                      | indicates the        |                     |
@@ -961,7 +961,7 @@ met:
 | bad/missing Index    | that the file be     |                     |
 | File \[%s\]          | sent in a            |                     | |                      | record-oriented      |                     |
 |                      | format (by           |                     |
-|                      | pre-pending a \'=\'  |                     |
+|                      | pre-pending a '='  |                     |
 |                      | to the source file   |                     |
 |                      | name), and the       |                     |
 |                      | associated index     |                     |
@@ -1056,7 +1056,7 @@ The UNIXLSAM.log file contains these errors.
 | 14007                | Socket Errors        | FTAgent and FTServer |
 +----------------------+----------------------+----------------------+
 | 14008                | Destination folder   | FTAgent and FTServer |
-|                      | doesn\'t exist       |                      |
+|                      | doesn't exist       |                      |
 |                      |                      |                      |
 |                      | **- or -**           |                      |
 |                      |                      |                      |
@@ -1094,8 +1094,8 @@ The UNIXLSAM.log file contains these errors.
 |                      | Source file is       |                      |
 |                      | missing              |                      |
 +----------------------+----------------------+----------------------+
-| 14012                | \"Delete Source      | FTAgent and FTServer |
-|                      | File\" is required   |                      |
+| 14012                | "Delete Source      | FTAgent and FTServer |
+|                      | File" is required   |                      |
 |                      | and the user does    |                      |
 |                      | not have permissions |                      |
 |                      | to delete file.      |                      |

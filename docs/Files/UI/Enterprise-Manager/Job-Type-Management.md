@@ -1553,8 +1553,8 @@ c.  Editing the JCL. If you use an external editor, be sure to save the
     results before closing and confirm that you want to load the
     results.
 d.  Clicking the **OK** button.
-e.  Making sure the **Save JCL DD Name** starts with \"TEMP\". If it
-    does not, change it to a \"TEMP\...\" **DD Name** that is configured
+e.  Making sure the **Save JCL DD Name** starts with "TEMP". If it
+    does not, change it to a "TEMP\..." **DD Name** that is configured
     on the z/OS Agent.
 f.  Clicking the **Save JCL** button.
 g.  Closing the **JCL/Sysout Access** dialog.
@@ -1568,7 +1568,7 @@ Edit the submitted JCL directly for restarts by:
 
 a.  Clicking the **JCL/Sysout Access** button. The **JCL/Sysout Access**
     dialog displays.
-b.  Entering \"0\" in the **Outlimit** text box.
+b.  Entering "0" in the **Outlimit** text box.
 c.  Clicking the **View Sysout** button.
 d.  *(Optional)* Editing the JCL.
 e.  Clicking the **Copy to clipboard** button.

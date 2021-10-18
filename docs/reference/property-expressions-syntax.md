@@ -25,7 +25,7 @@ The following rules apply to defining expressions:
     not need to surround it in quotes. For example: \[\[My     Property\]\]==\[\[ABCD 123\]\]
 - If you type out the string, surround it in double quotes if it
     contain letters or if it should not be treated as a number. For
-    example: \[\[My Property\]\]==\"ABCD 123\" -   If the expression is on a command line, or in an Event string, then
+    example: \[\[My Property\]\]=="ABCD 123" -   If the expression is on a command line, or in an Event string, then
     you must surround the entire expression within the following
     characters: **\[\[= \]\]**     -   If the expression is an expression dependency, or is a job
         completion complex expression trigger, then you [do not]{.ul}         need to use the following characters: **\[\[= \]\]**
@@ -49,9 +49,9 @@ evaluator. The available operands are the following:
     numbers, which may include a decimal point. Example: 783, 8732.2345
 - **String**: This type of operand is represented by an unlimited
     sequence of any printable character enclosed within double quotes.
-    To include a double quote (\") or backslash (\\) in a string, it
-    must be escaped with a backslash. Examples: \"abcd\",
-    \"abcd\\\"efgh\", \"C:\\\\File\\\\Test.txt\", \"-35.354\"
+    To include a double quote (") or backslash (\\) in a string, it
+    must be escaped with a backslash. Examples: "abcd",
+    "abcd\"efgh", "C:\\\\File\\\\Test.txt", "-35.354"
 
 ## Operators
 
@@ -96,7 +96,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 +---------------------------+-----------+---------------------------+
 |                           |           | 2 \^ 10                   |
 +---------------------------+-----------+---------------------------+
-|                           |           | 3 \^ \"B\"                |
+|                           |           | 3 \^ "B"                |
 +---------------------------+-----------+---------------------------+
 | 2                         | /         | **Divide**: This function |
 |                           |           | operates on two numeric   |
@@ -115,7 +115,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 +---------------------------+-----------+---------------------------+
 |                           |           | 75 / 0                    |
 +---------------------------+-----------+---------------------------+
-|                           |           | 46 / \"c\"                |
+|                           |           | 46 / "c"                |
 +---------------------------+-----------+---------------------------+
 | 2                         | \*        | **Multiply**: This        |
 |                           |           | function operates on two  |
@@ -132,7 +132,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 +---------------------------+-----------+---------------------------+
 |                           |           | 76 \* -234                |
 +---------------------------+-----------+---------------------------+
-|                           |           | 34 \* \"a\"               |
+|                           |           | 34 \* "a"               |
 +---------------------------+-----------+---------------------------+
 |                           | \%        | **Modulus** (Remainder    |
 |                           |           | after division): This     |
@@ -151,7 +151,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 +---------------------------+-----------+---------------------------+
 |                           |           | 67 % 3                    |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"abcd\" % 4              |
+|                           |           | "abcd" % 4              |
 +---------------------------+-----------+---------------------------+
 | 3                         | \+        | **Add**: This function    |
 |                           |           | operates on two numeric   |
@@ -171,11 +171,11 @@ For mathematical operations, the result will never exceed 15 numbers.
 +---------------------------+-----------+---------------------------+
 |                           |           | 12 + 15                   |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"12\" + \"15\"           |
+|                           |           | "12" + "15"           |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"abcd\" + \"efgh\"       |
+|                           |           | "abcd" + "efgh"       |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"abcd\" + 1234           |
+|                           |           | "abcd" + 1234           |
 +---------------------------+-----------+---------------------------+
 | 3                         | \-        | **Subtract**: This        |
 |                           |           | function operates on two  |
@@ -195,7 +195,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 |                           |           | -   It may also be used   |
 |                           |           |     on a single numeric   |
 |                           |           |     operand to return its |
-|                           |           |     \"negative\" value.   |
+|                           |           |     "negative" value.   |
 |                           |           |                           |
 |                           |           | Examples:                 |
 +---------------------------+-----------+---------------------------+
@@ -213,12 +213,12 @@ For mathematical operations, the result will never exceed 15 numbers.
 +---------------------------+-----------+---------------------------+
 |                           |           | -(-45.23)                 |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"abcd\" + 1234           |
+|                           |           | "abcd" + 1234           |
 +---------------------------+-----------+---------------------------+
 | 4                         | \>=       | **Greater than or         |
 |                           |           | equals**: This function   |
 |                           |           | is similar to             |
-|                           |           | \"GreaterThan\" except    |
+|                           |           | "GreaterThan" except    |
 |                           |           | that it returns true even |
 |                           |           | if the operands are       |
 |                           |           | equal. All else being     |
@@ -244,11 +244,11 @@ For mathematical operations, the result will never exceed 15 numbers.
 |                           |           |                           |
 |                           |           | Token2=abcd               |
 +---------------------------+-----------+---------------------------+
-|                           |           | 765 \> \"abcd\"           |
+|                           |           | 765 \> "abcd"           |
 +---------------------------+-----------+---------------------------+
 | 4                         | \<=       | **Less than or equals**:  |
 |                           |           | This function is similar  |
-|                           |           | to \"LessThan\" except    |
+|                           |           | to "LessThan" except    |
 |                           |           | that it returns true even |
 |                           |           | if the operands are       |
 |                           |           | equal. All else being     |
@@ -274,7 +274,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 |                           |           |                           |
 |                           |           | Token2=abcd               |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"ajhgd\" \< 8746         |
+|                           |           | "ajhgd" \< 8746         |
 +---------------------------+-----------+---------------------------+
 |                           | \>        | **Greater than**: This    |
 |                           |           | function operates on two  |
@@ -284,7 +284,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 |                           |           | greater than the second.  |
 |                           |           | For strings, an alphabet  |
 |                           |           | that comes later is       |
-|                           |           | considered \"greater\".   |
+|                           |           | considered "greater".   |
 |                           |           | All else being equal,     |
 |                           |           | uppercase letters are     |
 |                           |           | considered greater than   |
@@ -308,7 +308,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 |                           |           |                           |
 |                           |           | Token2=abcd               |
 +---------------------------+-----------+---------------------------+
-|                           |           | 87643 \> \"kgd\"          |
+|                           |           | 87643 \> "kgd"          |
 +---------------------------+-----------+---------------------------+
 | 4                         | \<        | **Less than**: This       |
 |                           |           | function operates on two  |
@@ -318,7 +318,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 |                           |           | less than the second. For |
 |                           |           | strings, an alphabet that |
 |                           |           | comes before is           |
-|                           |           | considered \"lesser\".    |
+|                           |           | considered "lesser".    |
 |                           |           | All else being equal,     |
 |                           |           | lowercase letters are     |
 |                           |           | considered lesser than    |
@@ -342,7 +342,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 |                           |           |                           |
 |                           |           | Token2=ABCD               |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"jhsgd\" \< 934          |
+|                           |           | "jhsgd" \< 934          |
 +---------------------------+-----------+---------------------------+
 | 5                         | !=        | **Not equals**: This      |
 |                           |           | function returns true if  |
@@ -356,7 +356,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 +---------------------------+-----------+---------------------------+
 |                           |           | Expression                |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"cats\" != \"dogs\"      |
+|                           |           | "cats" != "dogs"      |
 +---------------------------+-----------+---------------------------+
 |                           |           | \[\[Token1\]\] \<\>       | |                           |           | \[\[Token2\]\]            |
 |                           |           |                           |
@@ -489,7 +489,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 +---------------------------+-----------+---------------------------+
 |                           |           | Expression                |
 +---------------------------+-----------+---------------------------+
-|                           |           | \[\[Token1\]\] = \"abcd\" | +---------------------------+-----------+---------------------------+
+|                           |           | \[\[Token1\]\] = "abcd" | +---------------------------+-----------+---------------------------+
 |                           |           | \[\[SI.Prop               | |                           |           | .2014/01/21.Schedule1\]\] |
 |                           |           | =                         |
 |                           |           | \[\[SI.Prop               | |                           |           | .2014/01/21.Schedule2\]\] |
@@ -504,7 +504,7 @@ For mathematical operations, the result will never exceed 15 numbers.
 |                           |           |                           |
 |                           |           | Proper for Schedule3=5    |
 +---------------------------+-----------+---------------------------+
-|                           |           | \"jhgsd\" = 7634          |
+|                           |           | "jhgsd" = 7634          |
 +---------------------------+-----------+---------------------------+
 
 : Operators and Precedence for Property Evaluation
@@ -536,16 +536,16 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | AreEqual(\"abc\", \"abc\",       |
-|                                  | \"abc\", \"abc\")                |
+|                                  | AreEqual("abc", "abc",       |
+|                                  | "abc", "abc")                |
 +----------------------------------+----------------------------------+
-|                                  | AreEqual(\"abc\", \"ABC\",       |
-|                                  | \"Abc\", \"abc\")                |
+|                                  | AreEqual("abc", "ABC",       |
+|                                  | "Abc", "abc")                |
 +----------------------------------+----------------------------------+
 |                                  | AreEqual(3 \> 2, 6 \< 10, 8 \<\> |
 |                                  | 4)                               |
 +----------------------------------+----------------------------------+
-|                                  | AreEqual(76, \"xyz\")            |
+|                                  | AreEqual(76, "xyz")            |
 +----------------------------------+----------------------------------+
 |                                  | AreEqual(\                       |
 |                                  | [\[MI.PropertyName.Machine1\]\], | |                                  | \                                |
@@ -577,7 +577,7 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | Expr(\"(5 + 4 \* 9 + 9) / 5\")   |
+|                                  | Expr("(5 + 4 \* 9 + 9) / 5")   |
 +----------------------------------+----------------------------------+
 |                                  | Expr(\[\[Property1\]\] +         | |                                  | \[\[Property2\]\])               |
 |                                  |                                  |
@@ -604,7 +604,7 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | Index(\"abcdefgh\", \"ef\")      |
+|                                  | Index("abcdefgh", "ef")      |
 +----------------------------------+----------------------------------+
 |                                  | Index(\[\[Token1\]\],            | |                                  | \[\[Token2\]\])                  |
 |                                  |                                  |
@@ -616,7 +616,7 @@ to perform advanced comparisons. It is important to know that:
 |                                  |                                  |
 |                                  | Token2=8                         |
 +----------------------------------+----------------------------------+
-|                                  | Index(\"abcd\", 654)             |
+|                                  | Index("abcd", 654)             |
 +----------------------------------+----------------------------------+
 | Length(value)                    | The Length function operates on  |
 |                                  | one string operands, and it      |
@@ -629,12 +629,12 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | Length(\[\[\$JOB NAME\]\])       | |                                  |                                  |
+|                                  | Length(\[\[$JOB NAME\]\])       | |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
 |                                  | Where:                           |
 |                                  |                                  |
-|                                  | \$JOB NAME=Jobabcdefg            |
+|                                  | $JOB NAME=Jobabcdefg            |
 +----------------------------------+----------------------------------+
 | LogToBase(value, value)          | The LogToBase function accepts   |
 |                                  | two numeric parameters to        |
@@ -657,7 +657,7 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | LogToBase(81, 3)                 |
 +----------------------------------+----------------------------------+
-|                                  | LogToBase(100, \"a\")            |
+|                                  | LogToBase(100, "a")            |
 +----------------------------------+----------------------------------+
 | Replace(source, search,          | This function returns the source |
 | replacement)                     | string with the defined          |
@@ -681,8 +681,8 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | Replace(\"abcdefgh\", \"c\",     |
-|                                  | \"x\")                           |
+|                                  | Replace("abcdefgh", "c",     |
+|                                  | "x")                           |
 +----------------------------------+----------------------------------+
 |                                  | Replace(\[\[Prop1\]\],           | |                                  | \[\[Prop2\]\], \[\[Prop3\]\])    |
 |                                  |                                  |
@@ -690,13 +690,13 @@ to perform advanced comparisons. It is important to know that:
 |                                  |                                  |
 |                                  | Where:                           |
 |                                  |                                  |
-|                                  | Prop1=\"cranberry\"              |
+|                                  | Prop1="cranberry"              |
 |                                  |                                  |
-|                                  | Prop2=\"cran\"                   |
+|                                  | Prop2="cran"                   |
 |                                  |                                  |
-|                                  | Prop3=\"mul\"                    |
+|                                  | Prop3="mul"                    |
 +----------------------------------+----------------------------------+
-|                                  | Replace(878, \"sdfgd\", \"fdg\") |
+|                                  | Replace(878, "sdfgd", "fdg") |
 +----------------------------------+----------------------------------+
 | ReplaceBackslashes(search,       | This function replaces a         |
 | replacement)                     | backslash (/) character in a     |
@@ -718,8 +718,8 @@ to perform advanced comparisons. It is important to know that:
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
 |                                  | Re                               |
-|                                  | placeBackslashes(\"abcd\\efgh\", |
-|                                  | \"/\")                           |
+|                                  | placeBackslashes("abcd\\efgh", |
+|                                  | "/")                           |
 +----------------------------------+----------------------------------+
 |                                  | R                                |
 |                                  | eplaceBackslashes(\[\[Prop1\]\], | |                                  | \[\[Prop2\]\])                   |
@@ -728,12 +728,12 @@ to perform advanced comparisons. It is important to know that:
 |                                  |                                  |
 |                                  | Where:                           |
 |                                  |                                  |
-|                                  | Prop1=\"5698\\456\"              |
+|                                  | Prop1="5698\\456"              |
 |                                  |                                  |
-|                                  | Prop2=\"+\"                      |
+|                                  | Prop2="+"                      |
 +----------------------------------+----------------------------------+
 |                                  | ReplaceBackslashes(85+5=90,      |
-|                                  | \"mte\")                         |
+|                                  | "mte")                         |
 +----------------------------------+----------------------------------+
 | SubStr(value, start, length)     | The SubStr function returns a    |
 |                                  | partial string of the expression |
@@ -763,7 +763,7 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | SubStr(\"abcdefgh\", 0, 4)       |
+|                                  | SubStr("abcdefgh", 0, 4)       |
 +----------------------------------+----------------------------------+
 |                                  | SubStr(\[\[J                     | |                                  | I.Prop.2014/01/21.Skd1.Job1\]\], |
 |                                  | 5, 10)                           |
@@ -776,11 +776,11 @@ to perform advanced comparisons. It is important to know that:
 |                                  | Job1=Su                          |
 |                                  | percalafragalisticexpealadocious |
 +----------------------------------+----------------------------------+
-|                                  | SubStr(\"abcdefg\", -1, 4)       |
+|                                  | SubStr("abcdefg", -1, 4)       |
 +----------------------------------+----------------------------------+
-|                                  | SubStr(\"abcd\", 2, 10)          |
+|                                  | SubStr("abcd", 2, 10)          |
 +----------------------------------+----------------------------------+
-|                                  | SubStr(\"abcd\", 5, 2)           |
+|                                  | SubStr("abcd", 5, 2)           |
 +----------------------------------+----------------------------------+
 | SubStrNE(value, start, length,   | The SubStrNE function returns a  |
 | default value)                   | partial string of the expression |
@@ -811,11 +811,11 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | SubStrNE(\"abcdefgh\", -1, 4,    |
-|                                  | \"Could not evaluate\")          |
+|                                  | SubStrNE("abcdefgh", -1, 4,    |
+|                                  | "Could not evaluate")          |
 +----------------------------------+----------------------------------+
 |                                  | SubStrNE(\[\[J                   | |                                  | I.Prop.2014/01/21.Skd1.Job1\]\], |
-|                                  | 5, 10, \"Could not evaluate\")   |
+|                                  | 5, 10, "Could not evaluate")   |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -826,48 +826,48 @@ to perform advanced comparisons. It is important to know that:
 |                                  | percalafragalisticexpealadocious |
 +----------------------------------+----------------------------------+
 | TimeDiff(time1, time2, format)   | The TimeDiff function subtracts  |
-|                                  | 'time2' from \'time1\' and       |
+|                                  | 'time2' from 'time1' and       |
 |                                  | returns the difference in the    |
-|                                  | \'format\' specified. The two    |
+|                                  | 'format' specified. The two    |
 |                                  | times must be specified as       |
 |                                  | strings in the form of:          |
-|                                  | \'hh:mm:ss\'. The \'format\'     |
+|                                  | 'hh:mm:ss'. The 'format'     |
 |                                  | could be any one of the          |
 |                                  | following:                       |
 |                                  |                                  |
 |                                  | -   signed_percent -- percentage |
-|                                  |     difference between \'time1   |
-|                                  |     and \'time2\' that includes  |
+|                                  |     difference between 'time1   |
+|                                  |     and 'time2' that includes  |
 |                                  |     the plus (+) or minus (-)    |
 |                                  |     sign (e.g., +10)             |
 |                                  | -   unsigned_percent --          |
 |                                  |     percentage difference        |
-|                                  |     between \'time1 and          |
-|                                  |     \'time2\' that does not      |
+|                                  |     between 'time1 and          |
+|                                  |     'time2' that does not      |
 |                                  |     include the plus (+) or      |
 |                                  |     minus (-) sign (e.g., 10)    |
 |                                  | -   signed_secs -- difference in |
-|                                  |     seconds between \'time1\'    |
-|                                  |     and \'time2\' that includes  |
+|                                  |     seconds between 'time1'    |
+|                                  |     and 'time2' that includes  |
 |                                  |     the plus (+) or minus (-)    |
 |                                  |     sign (e.g., -60)             |
 |                                  | -   unsigned_secs -- unsigned    |
 |                                  |     difference in seconds        |
-|                                  |     between \'time1\' and        |
-|                                  |     \'time2\' that does not      |
+|                                  |     between 'time1' and        |
+|                                  |     'time2' that does not      |
 |                                  |     include the plus (+) or      |
 |                                  |     minus (-) sign (e.g., 60)    |
 |                                  | -   signed_string -- signed      |
-|                                  |     difference between \'time1\' |
-|                                  |     and \'time2\' in             |
-|                                  |     \'hh:mm:ss\' format that     |
+|                                  |     difference between 'time1' |
+|                                  |     and 'time2' in             |
+|                                  |     'hh:mm:ss' format that     |
 |                                  |     includes the plus (+) or     |
 |                                  |     minus (-) sign (e.g.,        |
 |                                  |     +02:36:20)                   |
 |                                  | -   unsigned_string -- unsigned  |
-|                                  |     difference between \'time1\' |
-|                                  |     and \'time2\' in             |
-|                                  |     \'hh:mm:ss\' format that     |
+|                                  |     difference between 'time1' |
+|                                  |     and 'time2' in             |
+|                                  |     'hh:mm:ss' format that     |
 |                                  |     does not include the plus    |
 |                                  |     (+) or minus (-) sign (e.g., |
 |                                  |     02:36:20)                    |
@@ -882,18 +882,18 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | TimeDiff(\"00:10:00\",           |
-|                                  | \"00:20:00\",                    |
-|                                  | \"signed_percent\")              |
+|                                  | TimeDiff("00:10:00",           |
+|                                  | "00:20:00",                    |
+|                                  | "signed_percent")              |
 +----------------------------------+----------------------------------+
-|                                  | TimeDiff(\"00:10:00\",           |
-|                                  | \"00:20:00\", \"unsigned_secs\") |
+|                                  | TimeDiff("00:10:00",           |
+|                                  | "00:20:00", "unsigned_secs") |
 +----------------------------------+----------------------------------+
-|                                  | TimeDiff(\"00:10:00\",           |
-|                                  | \"00:20:00\", \"signed_string\") |
+|                                  | TimeDiff("00:10:00",           |
+|                                  | "00:20:00", "signed_string") |
 +----------------------------------+----------------------------------+
-|                                  | TimeDiff(\"abcd\", \"efgh\",     |
-|                                  | \"signed_secs\")                 |
+|                                  | TimeDiff("abcd", "efgh",     |
+|                                  | "signed_secs")                 |
 +----------------------------------+----------------------------------+
 | TimeDiffNE(time1, time2, format, | The TimeDiffNE function is the   |
 | default value)                   | same as the TimeDiff function    |
@@ -907,14 +907,14 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | TimeDiffNE(\"00:10:00\",         |
-|                                  | \"00:20:00\", \"Not a format\",  |
-|                                  | \"Default\")                     |
+|                                  | TimeDiffNE("00:10:00",         |
+|                                  | "00:20:00", "Not a format",  |
+|                                  | "Default")                     |
 +----------------------------------+----------------------------------+
-|                                  | TimeDiffNE(\"00:10:00\", \"Not a |
-|                                  | time span\",                     |
-|                                  | \"unsigned_percent\",            |
-|                                  | \"Default\")                     |
+|                                  | TimeDiffNE("00:10:00", "Not a |
+|                                  | time span",                     |
+|                                  | "unsigned_percent",            |
+|                                  | "Default")                     |
 +----------------------------------+----------------------------------+
 | ToBool(value)                    | This function accepts a string   |
 |                                  | or a boolean parameter. If the   |
@@ -966,7 +966,7 @@ to perform advanced comparisons. It is important to know that:
 |                                  |                                  |
 |                                  | Where:                           |
 |                                  |                                  |
-|                                  | Token1=\"-24.567\"               |
+|                                  | Token1="-24.567"               |
 +----------------------------------+----------------------------------+
 |                                  | ToFloat(\[\[Token1\]\])          | |                                  |                                  |
 |                                  |                                  |
@@ -993,9 +993,9 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | ToFloatNE(true, \"NAN\")         |
+|                                  | ToFloatNE(true, "NAN")         |
 +----------------------------------+----------------------------------+
-|                                  | ToFloatNE(\[\[Token1\]\],        | |                                  | \"NAN\")                         |
+|                                  | ToFloatNE(\[\[Token1\]\],        | |                                  | "NAN")                         |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -1020,7 +1020,7 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | ToInt(\"24.567\")                |
+|                                  | ToInt("24.567")                |
 +----------------------------------+----------------------------------+
 |                                  | ToInt(\[\[Token1\]\])            | |                                  |                                  |
 |                                  |                                  |
@@ -1055,9 +1055,9 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | ToInt(\"true\",\"NAN\")          |
+|                                  | ToInt("true","NAN")          |
 +----------------------------------+----------------------------------+
-|                                  | ToInt(\[\[Token1\]\],\"NAN\")    | |                                  |                                  |
+|                                  | ToInt(\[\[Token1\]\],"NAN")    | |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
 |                                  | Where:                           |
@@ -1116,7 +1116,7 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | ToLong(\[\[Token1\]\],\"NAN\")   | |                                  |                                  |
+|                                  | ToLong(\[\[Token1\]\],"NAN")   | |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
 |                                  | Where:                           |
@@ -1132,7 +1132,7 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | ToLower(\"ABCD\")                |
+|                                  | ToLower("ABCD")                |
 +----------------------------------+----------------------------------+
 |                                  | ToLower(\[\[Prop1\]\])           | |                                  |                                  |
 |                                  |                                  |
@@ -1158,7 +1158,7 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | ToOaTime(\"180\")                |
+|                                  | ToOaTime("180")                |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -1166,7 +1166,7 @@ to perform advanced comparisons. It is important to know that:
 |                                  |                                  |
 |                                  | 180=minutes (3 hours)            |
 +----------------------------------+----------------------------------+
-|                                  | ToOaTime(\"06:00\")              |
+|                                  | ToOaTime("06:00")              |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -1174,7 +1174,7 @@ to perform advanced comparisons. It is important to know that:
 |                                  |                                  |
 |                                  | 6=hours                          |
 +----------------------------------+----------------------------------+
-|                                  | ToOaTime(\"3:06:00\")            |
+|                                  | ToOaTime("3:06:00")            |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -1218,9 +1218,9 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | ToStrNE(24.567,\"NAN\")          |
+|                                  | ToStrNE(24.567,"NAN")          |
 +----------------------------------+----------------------------------+
-|                                  | ToStrNE(ToInt(\[\[Token1\]\]) +  | |                                  | ToInt(Token2),\"NAN\")           |
+|                                  | ToStrNE(ToInt(\[\[Token1\]\]) +  | |                                  | ToInt(Token2),"NAN")           |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -1239,15 +1239,15 @@ to perform advanced comparisons. It is important to know that:
 +----------------------------------+----------------------------------+
 |                                  | Expression                       |
 +----------------------------------+----------------------------------+
-|                                  | ToUpper(\"abcd\")                |
+|                                  | ToUpper("abcd")                |
 +----------------------------------+----------------------------------+
 |                                  | ToUpper(\[\[Prop1\]\])           | |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
 |                                  | Where:                           |
 |                                  |                                  |
-|                                  | Prop1=\"[sma                     | |                                  | technologies]                    |
-|                                  | {.GeneralCompanyNameLowercase}\" |
+|                                  | Prop1="[sma                     | |                                  | technologies]                    |
+|                                  | {.GeneralCompanyNameLowercase}" |
 +----------------------------------+----------------------------------+
 |                                  | ToUpper(45674)                   |
 +----------------------------------+----------------------------------+
@@ -1263,15 +1263,15 @@ resolved using the Property Expression API.
 
 In some cases, a job may require that the value of a property contains a
 specific string. For this use case, we have a job that must only process
-if a Global Property named \"Today\" matches the current date. We must
+if a Global Property named "Today" matches the current date. We must
 check for a string value because a date is not a simple number
 (integer). To set this up, enter the following information under the
 Expression Dependency tab:
 
-\[\[Today\]\]==\[\[\$DATE\]\]
+\[\[Today\]\]==\[\[$DATE\]\]
 
 :::note
-\[\[Today\]\] must have the same date format as \[\[\$DATE\]\].
+\[\[Today\]\] must have the same date format as \[\[$DATE\]\].
 :::
 
 When OpCon finds the result is true, then the
@@ -1279,7 +1279,7 @@ dependency is resolved. If the result is false, the job will remain in a
 [Wait Expression Dependency]{.skd-job-statuses} state.
 
 +----------------------------------+----------------------------------+
-| ![White \"person reading\" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
+| ![White "person reading" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
 | background](../../Resourc        | implementing the Dependency      |
 | es/Images/moreinfo-icon(48x48).p | concept.]            |
 | ng "More Info icon") |                                  |
@@ -1307,7 +1307,7 @@ dependency is resolved. If the result is false, the job will remain in a
 
 In some cases, a job may require that the value of a property contains a
 specific number (integer). For this use case, we have a job that must
-only process if the value of a Global Property named \"BackupServer\"
+only process if the value of a Global Property named "BackupServer"
 has a value of 1. We must use the ToInt function to convert the value of
 the property to an integer because all OpCon properties are stored as
 strings. To set this up, enter the following information under the
@@ -1321,7 +1321,7 @@ dependency is resolved. If the result is false, the job will remain in a
 [Wait Expression Dependency]{.skd-job-statuses} state.
 
 +----------------------------------+----------------------------------+
-| ![White \"person reading\" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
+| ![White "person reading" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
 | background](../../Resourc        | implementing the Dependency      |
 | es/Images/moreinfo-icon(48x48).p | concept.]            |
 | ng "More Info icon") |                                  |
@@ -1352,14 +1352,14 @@ see if the machine is currently idle. In OpCon that means we want to see
 if the machine is running zero jobs. Use the following syntax in an
 expression dependency for this use case:
 
-ToInt(\[\[MI.\$MACHINE RUNNING JOBS.MachineName\]\]) == 0
+ToInt(\[\[MI.$MACHINE RUNNING JOBS.MachineName\]\]) == 0
 
 When OpCon finds the result is true, then the
 dependency is resolved. If the result is false, the job will remain in a
 [Wait Expression Dependency]{.skd-job-statuses} state.
 
 +----------------------------------+----------------------------------+
-| ![White \"person reading\" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
+| ![White "person reading" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
 | background](../../Resourc        | implementing the Dependency      |
 | es/Images/moreinfo-icon(48x48).p | concept.]            |
 | ng "More Info icon") |                                  |
@@ -1394,8 +1394,8 @@ the Estimated Run Time, there are a number of potential scenarios:
     percentage. Two scenarios exist for this idea:
   - Wait until the job finishes then execute an event if the job ran
         long.
-  - Trigger an event as soon as the job exceeds the \'acceptable
-        threshold\', in this case based on a calculated time based on
+  - Trigger an event as soon as the job exceeds the 'acceptable
+        threshold', in this case based on a calculated time based on
         Estimated Run Time plus a percentage.
 
 #### Trigger Events when a Job Runs for Less Time than Expected
@@ -1411,7 +1411,7 @@ this up, add one of the triggers provided below to JobB.
 If the schedule date and schedule name are different for JobA and JobB,
 add the following Job Completion Complex Expression to JobB:
 
-TimeDiff(\[\[JI.\$ACTUAL RUN TIME.\<Schedule Date\>.\<Schedule Name\>.JobA\]\], \"00:00:00\", \"signed_secs\") \< 60
+TimeDiff(\[\[JI.$ACTUAL RUN TIME.\<Schedule Date\>.\<Schedule Name\>.JobA\]\], "00:00:00", "signed_secs") \< 60
 
 Where:
 
@@ -1421,7 +1421,7 @@ the schedule name of JobA.
 If the schedule date and schedule name are the same for JobA and JobB,
 add the following Job Completion Complex Expression to JobB:
 
-TimeDiff(\[\[JI.\$ACTUAL RUN TIME\...JobA\]\], \"00:00:00\", \"signed_secs\") \< 60
+TimeDiff(\[\[JI.$ACTUAL RUN TIME\...JobA\]\], "00:00:00", "signed_secs") \< 60
 
 When OpCon finds that JobA ran for less than
 60 seconds, then the event trigger will fire and send whatever events
@@ -1429,7 +1429,7 @@ you have defined. If the job ran for 60 seconds or more, event(s) will
 not be triggered.
 
 +----------------------------------+----------------------------------+
-| ![White \"person reading\" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
+| ![White "person reading" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
 | background](../../Resourc        | implementing the Job Events      |
 | es/Images/moreinfo-icon(48x48).p | concept.]            |
 | ng "More Info icon") |                                  |
@@ -1445,10 +1445,10 @@ not be triggered.
 |                                  |     in Job Master)               |
 +----------------------------------+----------------------------------+
 
-#### Trigger Events as Soon as a Job\'s Run Time Exceeds the Estimated Run Time by a User-defined Percentage
+#### Trigger Events as Soon as a Job's Run Time Exceeds the Estimated Run Time by a User-defined Percentage
 
 For this use case, we want to trigger events as soon as a job runs for
-more time than we expect based on the job\'s run time being more than
+more time than we expect based on the job's run time being more than
 the estimated run time by a percentage. Let us further examine this use
 case with an example.
 
@@ -1460,21 +1460,21 @@ schedule and date, use the information below to set this up.
 
 Add the following Job Completion Complex Expression to JobA:
 
-\[\[JI.\$JOB STATUS\...JobB\]\]==\"Wait Expression Dependency\"
+\[\[JI.$JOB STATUS\...JobB\]\]=="Wait Expression Dependency"
 
 To trigger the following event:
 
-\$JOB:CANCEL,\[\[\$SCHEDULE DATE\]\],\[\[\$SCHEDULE NAME\]\],JobB
+$JOB:CANCEL,\[\[$SCHEDULE DATE\]\],\[\[$SCHEDULE NAME\]\],JobB
 
 Add the following expression dependency to JobB:
 
-\[\[JI.\$JOB STATUS\...JobA\]\]==\"Job Running\" && TimeDiff(\[\[\$TIMEhh:mm:ss\]\], SubStr(\[\[JI.\$JOB
-STARTTIME\...JobA\]\], Index(\[\[JI.\$JOB STARTTIME\...JobA\]\], \" \") + 1, 8), \"signed_secs\") \> TimeDiff(\[\[JI.\$EST RUN TIME\...JobA\]\],
-\"00:00:00\", \"signed_secs\") \* 1.1
+\[\[JI.$JOB STATUS\...JobA\]\]=="Job Running" && TimeDiff(\[\[$TIMEhh:mm:ss\]\], SubStr(\[\[JI.$JOB
+STARTTIME\...JobA\]\], Index(\[\[JI.$JOB STARTTIME\...JobA\]\], " ") + 1, 8), "signed_secs") \> TimeDiff(\[\[JI.$EST RUN TIME\...JobA\]\],
+"00:00:00", "signed_secs") \* 1.1
 
 Where:
 
-\$TIMEhh:mm:ss is a Global Property with the value hh:mm:ss.
+$TIMEhh:mm:ss is a Global Property with the value hh:mm:ss.
 
 Add a job status event to JobB to trigger the desired action when JobA
 exceeds 110% of the estimated run time.
@@ -1486,7 +1486,7 @@ upon completion. If JobA does not exceed 110% of the estimated run time,
 it will cancel JobB, if JobB is still in a [Wait Expression Dependency]{.skd-job-statuses} state.
 
 +----------------------------------+----------------------------------+
-| ![White \"person reading\" icon  | **MORE INFO:**                   | | on blue circular                 | [[]{#aanchor577}Provided here    |
+| ![White "person reading" icon  | **MORE INFO:**                   | | on blue circular                 | [[]{#aanchor577}Provided here    |
 | background](../../Resourc        | are several references for       |
 | es/Images/moreinfo-icon(48x48).p | implementing the Expression      |
 | ng "More Info icon") | Dependency and Job Events        |
@@ -1516,20 +1516,20 @@ it will cancel JobB, if JobB is still in a [Wait Expression Dependency]{.skd-job
 |                                  |     in Job Master)               |
 +----------------------------------+----------------------------------+
 
-#### Trigger Events after Job Completion if a Job\'s Run Time Exceeds the Estimated Run Time by a User-defined Percentage
+#### Trigger Events after Job Completion if a Job's Run Time Exceeds the Estimated Run Time by a User-defined Percentage
 
 For this use case, we want to trigger events if a job runs for more time
-than we expect based on the job\'s run time being more than the
+than we expect based on the job's run time being more than the
 estimated run time by a percentage. To set this up, add the following
 Job Completion Complex Expression to the job and the event to trigger
 the action:
 
-TimeDiff(\[\[\$TIMEhh:mm:ss\]\], SubStr(\[\[JI.\$JOB STARTTIME\]\], Index(\[\[JI.\$JOB STARTTIME\]\], \" \") + 1, 8), \"signed_secs\") \>
-TimeDiff(\[\[JI.\$EST RUN TIME\]\], \"00:00:00\", \"signed_secs\") \* 1.1
+TimeDiff(\[\[$TIMEhh:mm:ss\]\], SubStr(\[\[JI.$JOB STARTTIME\]\], Index(\[\[JI.$JOB STARTTIME\]\], " ") + 1, 8), "signed_secs") \>
+TimeDiff(\[\[JI.$EST RUN TIME\]\], "00:00:00", "signed_secs") \* 1.1
 
 Where:
 
-\$TIMEhh:mm:ss is a Global Property with the value hh:mm:ss.
+$TIMEhh:mm:ss is a Global Property with the value hh:mm:ss.
 
 When OpCon finds the job ran for more than
 110% of the estimated run time, then the event trigger will fire and
@@ -1537,7 +1537,7 @@ send whatever events you have defined. If the job ran for 110% of the
 estimated run time or less, event(s) will not be triggered.
 
 +----------------------------------+----------------------------------+
-| ![White \"person reading\" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
+| ![White "person reading" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
 | background](../../Resourc        | implementing the Job Events      |
 | es/Images/moreinfo-icon(48x48).p | concept.]            |
 | ng "More Info icon") |                                  |
@@ -1562,17 +1562,17 @@ named "Target" based on the computation of subtracting the value of one
 property from another and dividing it by 8. We must use the ToInt
 function to convert the value of the properties to integers because all
 OpCon Properties are stored as strings. To
-set this up, configure a \$PROPERTY:SET event on the job using the
+set this up, configure a $PROPERTY:SET event on the job using the
 following syntax:
 
-\$PROPERTY:SET,Target,\[\[=(ToInt(\[\[Source1\]\])-ToInt(\[\[Source2\]\]))/8\]\]\
+$PROPERTY:SET,Target,\[\[=(ToInt(\[\[Source1\]\])-ToInt(\[\[Source2\]\]))/8\]\]\
 
-If \"Source1\" has a value of 85 and \"Source2\" has a value of 21,
-OpCon will set the value of \"Target\" to a
+If "Source1" has a value of 85 and "Source2" has a value of 21,
+OpCon will set the value of "Target" to a
 value of 8 (because (85-21)/8 is equal to a value of 8).
 
 +----------------------------------+----------------------------------+
-| ![White \"person reading\" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
+| ![White "person reading" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are several references for       |
 | background](../../Resourc        | implementing the Job Events      |
 | es/Images/moreinfo-icon(48x48).p | concept.]            |
 | ng "More Info icon") |                                  |

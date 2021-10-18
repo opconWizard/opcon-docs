@@ -171,7 +171,7 @@ processing.
 |                 |          |           |         | which the       |
 |                 |          |           |         | service         |
 |                 |          |           |         | re-synchronizes |
-|                 |          |           |         | users\'         |
+|                 |          |           |         | users'         |
 |                 |          |           |         | accounts        |
 |                 |          |           |         | between the     |
 |                 |          |           |         | LSAP server and |
@@ -283,7 +283,7 @@ For OpenLDAP, UserName must contain the encrypted string of common name and doma
 
 #### Debug Options
 
-The Debug Options configure the SMA LDAP Monitor\'s logging behavior.
+The Debug Options configure the SMA LDAP Monitor's logging behavior.
 
 +---------------+----------+---------------+---------+---------------+
 | Debug Options | Required | Default       | Dynamic | Definition    |
@@ -335,8 +335,8 @@ The Debug Options configure the SMA LDAP Monitor\'s logging behavior.
 |               |          |               |         |     maximum   |
 |               |          |               |         |     size, it  |
 |               |          |               |         |     is        |
-|               |          |               |         |     \"rolled  |
-|               |          |               |         |     over.\"   |
+|               |          |               |         |     "rolled  |
+|               |          |               |         |     over."   |
 |               |          |               |         | -   This      |
 |               |          |               |         |     setting   |
 |               |          |               |         |     creates   |

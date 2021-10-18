@@ -75,7 +75,7 @@ If the SAM and the SQL database are on different machines, then the Distributed 
 ### SQL Server Administrative Requirements
 
 - If SQL server is installed on a separate machine, the Microsoft SQL
-    Administrative Utilities compatible with the SQL server\'s version
+    Administrative Utilities compatible with the SQL server's version
     of MSSQL must be installed on the SAM server.
 
 ### Recommendations
@@ -165,7 +165,7 @@ group in SQL Server if Windows Authentication to SQL is desired.
 
 If multiple versions of SQL Server have been installed on the SQL Server
 machine, it is important to confirm that the SQL Native Client TCP/IP
-Port number matches the SQL Server\'s TCP/IP Port number.
+Port number matches the SQL Server's TCP/IP Port number.
 
 [Confirm the SQL Server Port Number]{.ul}
 To confirm the SQL Port number, complete the following procedure:
@@ -229,7 +229,7 @@ Close the **SQL Server Configuration Manager**.
 
 ## Installation Media
 
-Throughout this manual, the text \"*\<media\>*\" appears in many paths
+Throughout this manual, the text "*\<media\>*" appears in many paths
 to represent the OpCon distribution media. OpCon is available in the
 following methods of delivery:
 

@@ -45,8 +45,8 @@ The **Machine Information** dialog contains the following information:
 -   **Time Zone**: (Optional) Lists a user-defined name for the time
     zone where the machine physically exists.
 -   **Time Offset from SAM**: Lists the read-only setting that shows the
-    calculated value of the difference between the machine\'s time and
-    SAM\'s time. This field only appears if the machine has Time Zone
+    calculated value of the difference between the machine's time and
+    SAM's time. This field only appears if the machine has Time Zone
     Name and Time Offset from UTC (hours) configured, AND the SAM has
     stored its Time Zone Name and Offset from UTC in the database.
 -   **TLS**: Lists whether this machine should use TLS.

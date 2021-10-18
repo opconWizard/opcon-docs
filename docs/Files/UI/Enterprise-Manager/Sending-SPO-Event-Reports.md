@@ -17,12 +17,12 @@ Report or a CO Report notification:
         \<job_name\> is passed with the notification.
     -   If text is specified, the resulting SPO message contains only
         the user-defined message.
--   **Severity**: Defines the choices for the message\'s severity level.
+-   **Severity**: Defines the choices for the message's severity level.
     The choices are: Informational, Minor, Major, Warning, Critical,
     Indeterminate, or Unselect.
 -   **Alarmid**(Optional): Defines any valid AL alarmid attribute. If no
     user-defined alarmid is specified and the SPO Default Alarm ID is
-    not set in the UI\'s Administration \> Options, the LSAM Machine
+    not set in the UI's Administration \> Options, the LSAM Machine
     name is sent with the event report. The maximum for this field is
     250 characters.
 -   **Alarmqual**(Optional): Defines any valid AL alarmqual attribute.

@@ -17,10 +17,10 @@ following two modes:
 In order to view the daily job definition, you must have [at least]{.ul} all of the following privileges:
 
 - **Schedule Privilege**: User must be at least in a role that has
-    access to the job\'s parent schedule.
+    access to the job's parent schedule.
 - **Departmental Function Privilege**: User must be at least in a role
     that has View Jobs in Daily Schedules and View Jobs in Schedule
-    Operations privileges for the assigned job\'s department.
+    Operations privileges for the assigned job's department.
 - **Access Code Privilege**: User must be at least in a role that has
     access to the assigned job access code.
 
@@ -28,11 +28,11 @@ In order to edit the daily job definition, you must be in the ocadm role
 or have [at least]{.ul} all of the following privileges:
 
 - **Schedule Privilege**: User must be at least in a role that has
-    access to the job\'s parent schedule.
+    access to the job's parent schedule.
 - **Departmental Function Privilege**: User must be at least in a role
     that has View Jobs in Daily Schedules, View Jobs in Schedule
     Operations, Modify Jobs in Daily Schedules privileges for the
-    assigned job\'s department.
+    assigned job's department.
 - **Access Code Privilege**: User must be at least in a role that has
     access to the assigned job access code with **Allow job updates**
     flag set to true.
@@ -120,7 +120,7 @@ toggle **Full Screen** mode.
 
 ![Daily Job Definition Menu](../../../Resources/Images/SM/Daily-Job-Definition-Menu.png "Daily Job Definition Menu")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Accessing Job Summary](Accessing-Job-Summary.md)

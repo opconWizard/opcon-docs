@@ -16,7 +16,7 @@ represented by a different line style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -54,7 +54,7 @@ represented by a different line style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -92,7 +92,7 @@ represented by a different line style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -132,7 +132,7 @@ represented by a different line style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |
@@ -171,7 +171,7 @@ represented by a different line style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |
@@ -210,7 +210,7 @@ represented by a different line style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |

@@ -16,11 +16,11 @@ To configure Pingman, modify the pingman.ini file located in the
 |                  |            | before pinging.                    |
 +------------------+------------+------------------------------------+
 | SendTo           | 1 second   | Seconds to wait before the ping is |
-|                  |            | considered \"lost\" on the way to  |
+|                  |            | considered "lost" on the way to  |
 |                  |            | the host.                          |
 +------------------+------------+------------------------------------+
 | RecvFrom         | 1 second   | Seconds to wait before the ping is |
-|                  |            | considered \"lost\" on the way     |
+|                  |            | considered "lost" on the way     |
 |                  |            | back from the host.                |
 +------------------+------------+------------------------------------+
 | Show Every Error | TRUE       | -   Pingman logs errors to the     |

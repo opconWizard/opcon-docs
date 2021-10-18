@@ -21,15 +21,15 @@ The table contains definitions of OpCon schedule statuses. The last column conta
 |                    |                       | needed when there are |
 |                    |                       | failed jobs in the    |
 |                    |                       | schedule and the      |
-|                    |                       | \'Failed jobs should  |
+|                    |                       | 'Failed jobs should  |
 |                    |                       | keep the schedule     |
-|                    |                       | open\' option is set  |
+|                    |                       | open' option is set  |
 |                    |                       | to true (in Server    |
 |                    |                       | Options). The         |
 |                    |                       | schedule stays in the |
-|                    |                       | status of \"In        |
+|                    |                       | status of "In        |
 |                    |                       | Process - Contains    |
-|                    |                       | Failed Jobs\" in this |
+|                    |                       | Failed Jobs" in this |
 |                    |                       | scenario. If all the  |
 |                    |                       | jobs are actually     |
 |                    |                       | completed, then the   |
@@ -365,11 +365,11 @@ permitted status changes.
 |                |                | the LSAM for   |                |
 |                |                | processing,    | Mark Failed    |
 |                |                | and waited the |                |
-|                |                | \"number of    |                |
+|                |                | "number of    |                |
 |                |                | minutes        |                |
 |                |                | between        |                |
 |                |                | checking       |                |
-|                |                | running jobs\" |                |
+|                |                | running jobs" |                |
 |                |                | and found the  |                |
 |                |                | job to still   |                |
 |                |                | be in a Start  |                |

@@ -45,7 +45,7 @@ and restart child processes.
 The SAP Job Spools right-click menu option allows you to view the
 individual spool files for an SAP job.
 
-- **View SAP Job\'s Spools**: Displays the list of SAP spools found.
+- **View SAP Job's Spools**: Displays the list of SAP spools found.
 - **Refresh**: Refreshes the list of SAP spools.
 - **Close**: Closes the dialog.
 - **SAP Spool Details**: Displays the spool details.
@@ -57,7 +57,7 @@ individual spool files for an SAP job.
 - **Close**: Closes the dialog.
 
 +----------------------------------+----------------------------------+
-| ![White \"person reading\" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are references for monitoring    |
+| ![White "person reading" icon  | **MORE INFO:** [Provided here    | | on blue circular                 | are references for monitoring    |
 | background](../../Resourc        | and restarting SAP Child         |
 | es/Images/moreinfo-icon(48x48).p | Processes.]          |
 | ng "More Info icon") |                                  |

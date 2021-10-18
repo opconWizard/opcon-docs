@@ -42,7 +42,7 @@ learn more about its functionality.
 The **Matrix** view contains a table for all jobs that belong to the
 selected schedule for a selected day. The **Job Matrix** table provides
 the columnar information listed below. The column order can be set to
-the user\'s preference. In order to change the order of a column, click
+the user's preference. In order to change the order of a column, click
 on the column heading of the column to be moved and drag the column to
 the preferred location. Each column value will also be displayed in a
 tool tip by hovering over a row.
@@ -50,7 +50,7 @@ tool tip by hovering over a row.
  
 
   -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the \"Show Job Containers\" preference is turned off, the **Job Matrix** table will not show the Container jobs. For more information on this setting, refer to [[Setting Preferences from Enterprise Manager](Preferences-from-EM.md){#aanchor233}]{.Hyperlink}.]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the "Show Job Containers" preference is turned off, the **Job Matrix** table will not show the Container jobs. For more information on this setting, refer to [[Setting Preferences from Enterprise Manager](Preferences-from-EM.md){#aanchor233}]{.Hyperlink}.]
   -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -   **Machine Name**: The name of the OpCon
@@ -73,7 +73,7 @@ tool tip by hovering over a row.
         the clock.
 -   **Server End Time**: The date and time the job ended.
     -   When a job has not ended, the clock icon appears in front of the
-        word \"Running\" to indicate that the job has not ended.
+        word "Running" to indicate that the job has not ended.
     -   When a job has ended, the actual end time appears without the
         clock.
 -   **Duration**: The amount of time it took the job in each row of the
@@ -93,7 +93,7 @@ the same as those in the **List** view. For more information, refer to
 
  
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 -   [Synchronizing Data between the List and Matrix     Views](Synchronizing-Data-between-List-and-Matrix-Views.md)

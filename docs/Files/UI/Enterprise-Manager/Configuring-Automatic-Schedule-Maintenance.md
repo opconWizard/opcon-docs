@@ -34,17 +34,17 @@ To configure auto maintenance:
     .popupBody aria-hidden="true"}](javascript:void(0)){.MCTextPopup
     .popup .popupHead}** checkbox.
 8.  *(Optional)* Select the **[Build On     Hold[[]{.MCTextPopupArrow}Indicates if the schedule should be built
-    with a status of \"On Hold.\" The SAM will not process the schedule
+    with a status of "On Hold." The SAM will not process the schedule
     until it is released manually or through an OpCon
     event.]{.MCTextPopupBody .MCTextPopupBody_Closed .needs-pie
     .popupBody aria-hidden="true"}](javascript:void(0)){.MCTextPopup
     .popup .popupHead}** checkbox.
 9.  *(Optional)* Enter an *[Auto Build     Time[[]{.MCTextPopupArrow}Defines the clock time to build the
     schedule. The default value of 00:00 will build at the time
-    indicated by the Server Option setting for \"Hour of each day SAM
-    should detect Schedules to build.\" To define a specific time for
+    indicated by the Server Option setting for "Hour of each day SAM
+    should detect Schedules to build." To define a specific time for
     this schedule to build, change the value from 00:00 to a time that
-    would be later than the Server Option for SAM\'s build time. Note:
+    would be later than the Server Option for SAM's build time. Note:
     To enable notification for failed schedule build processes, define
     OpCon events on the SMA_SKD_BUILD job on the AdHoc schedule. SMA
     Technologies provides template jobs for AdHoc with the AdHoc.mdb
@@ -55,9 +55,9 @@ To configure auto maintenance:
 10. *(Optional)* Select the **[Auto     Delete[[]{.MCTextPopupArrow}Indicates if OpCon should automatically
     delete the schedule. When this setting is on, the graphical
     interfaces provide a field to set the number of days in the past to
-    delete the schedule. If a Schedule has a status of \"On Hold\" and
+    delete the schedule. If a Schedule has a status of "On Hold" and
     has never been released, it will be deleted in the automatic delete
-    process. If a schedule is \"On Hold\" after previously being
+    process. If a schedule is "On Hold" after previously being
     released, it will not be deleted in the automatic delete process. If
     auto delete is enabled, the log file is named
     Auto_Delete\_\<Schedule Date\>\_\<Schedule Name\>.log in the

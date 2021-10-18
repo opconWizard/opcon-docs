@@ -49,14 +49,14 @@ ii. Using the search field and filter criteria to find it. You can use
     and filter the search by property name, property value, or both
     (default).
 
-Double-click on the **global property** (e.g., \$SCHEDULE DATE).
+Double-click on the **global property** (e.g., $SCHEDULE DATE).
 
 :::note
 Double brackets will automatically be placed around the placeholder for the token that is defined.
 :::
 
 :::tip Example
-$JOB:ADD,\[\[\$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth.
+$JOB:ADD,\[\[$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth.
 :::
 
 Click the **Reset** button to reset the parameters to their original states.

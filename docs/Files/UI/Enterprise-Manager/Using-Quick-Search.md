@@ -8,7 +8,7 @@ viewport: width=device-width, initial-scale=1.0
 
 The **Quick Search** function displays a dialog to search for and edit
 schedules and/or jobs. The dialog contains a list of schedules and the
-schedule\'s corresponding jobs that can both be viewed and/or edited in
+schedule's corresponding jobs that can both be viewed and/or edited in
 the **Schedule Master** or **Job Master** screen.
 
 ## Searching Schedule/Job Details

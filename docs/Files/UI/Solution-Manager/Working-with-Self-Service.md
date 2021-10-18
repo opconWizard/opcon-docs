@@ -6,8 +6,8 @@ viewport: width=device-width, initial-scale=1.0
 
 # Working with Self Service
 
-SMA Technologies\' flagship product, OpCon, is a comprehensive cross-platform workload automation solution. Self Service
-is a licensed module for OpCon in SMA Technologies\' next-generation web interface. It
+SMA Technologies' flagship product, OpCon, is a comprehensive cross-platform workload automation solution. Self Service
+is a licensed module for OpCon in SMA Technologies' next-generation web interface. It
 is an innovative solution that empowers front-office staff to trigger
 OpCon workflows without having to engage the IT department.
 

@@ -63,7 +63,7 @@ Clicking or right-clicking on one of the bars or tubes displayed in the
 
  
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")Related
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")Related
 Topics
 
 -   [Creating and Saving Custom     Diagrams](Creating-Custom-Diagrams-Bar.md)

@@ -92,14 +92,14 @@ information on each field for this job type, refer to [File Transfer Job Details
 The \<host_name\> element defines the Source Machine for the transfer.
 To qualify as a machine for this field, a machine must be enabled for
 file transfer in the [File Transfer Settings](../../objects/machines.md#File) category in
-the Machine\'s advanced settings.
+the Machine's advanced settings.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Machine
 - **Valid Values**:
   - Low Range / Minimum Characters: 1
   - High Range / Maximum Characters: 24
-  - Invalid Characters: \' (single quote), \~ (tilde), \`(grave
+  - Invalid Characters: ' (single quote), \~ (tilde), \`(grave
         accent)
 
 #### \<ft_src_user\>\</ft_src_user\>
@@ -173,7 +173,7 @@ If Binary is used for the source data type, it WILL also be used for the destina
 #### \<ft_compress\>\</ft_compress\>
 
 The \<ft_compress\> element allows the user to select compression
-options. It is in the \"File Options\" category.
+options. It is in the "File Options" category.
 
 - **Requirements**: This is a Required field.
 - **Valid Values**: None, Required, Preferred
@@ -201,14 +201,14 @@ The \<ft_delsrcfile\> element determines if the source file will be
 deleted after the SMAFT process completes successfully.
 
 - **Requirements**: This is a Required field, and if data is not
-    provided it will be set to \"No\".
+    provided it will be set to "No".
 - **EM field label**: Delete Source File
 - **Valid Values**: No, Required, Preferred
 
 #### \<ft_failpref\>\</ft_failpref\>
 
 The \<ft_failpref\> element allows an FT job return a fail code if the
-\"Preferred\" Encryption and Compression settings are not met.
+"Preferred" Encryption and Compression settings are not met.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Fails if preferred settings not satisfied
@@ -217,7 +217,7 @@ The \<ft_failpref\> element allows an FT job return a fail code if the
 #### \<ft_bandwidth\>\</ft_bandwidth\>
 
 The \<ft_bandwidth\> element sets the transfer rate of the file and
-allows the user to \"throttle back\" bandwidth usage.
+allows the user to "throttle back" bandwidth usage.
 
 - **Requirements**: This is a Required field.
 - **Valid Values**: 64, 128, 256, 512, 1024, 2048, \>2048
@@ -227,14 +227,14 @@ allows the user to \"throttle back\" bandwidth usage.
 The \<dest_mach\> element defines the name of the destination machine
 for the file transfer. In order to qualify as a machine for this field,
 a machine must be enabled for file transfer in the [File Transfer Settings](../../objects/machines.md#File) category in
-the Machine\'s advanced settings.
+the Machine's advanced settings.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Machine
 - **Valid Values**:
   - Low Range / Minimum Characters: 1
   - High Range / Maximum Characters: 24
-  - Invalid Characters: \' (single quote), \~ (tilde), \`(grave
+  - Invalid Characters: ' (single quote), \~ (tilde), \`(grave
         accent)
 
 #### \<ft_dest_dt\>\</ft_dest_dt\>
@@ -472,7 +472,7 @@ The [\<JOB_DATE\>]{style="text-transform: lowercase;"} element defines the calen
     requirements:
   - The date must be entered in either the CCYYMMDD format, or the
         Short Date format recognized by the
-        OpCon server\'s Regional Settings.
+        OpCon server's Regional Settings.
   - Minimum Characters: 1
   - Maximum Characters: 20
   - Valid Characters: Numeric Characters (0 - 9), slash (/), dash
@@ -832,7 +832,7 @@ based on the job failure or success status.
 
 The \<ibmi_dynvar_filename\> element defines the root name of the file
 (including an extension, if any, from an IFS stream file) that is
-stored, similar to the OpCon system property \$ARRIVED FILE SHORT NAME.
+stored, similar to the OpCon system property $ARRIVED FILE SHORT NAME.
 
 - **Requirements**: Optional when the job type is File Arrival for IBM
     i \<jobdata\>.
@@ -887,7 +887,7 @@ The [\<TXT_OPT\>]{style="text-transform: lowercase;"} element defines the detail
 #### \<cl_log\>\</cl_log\>
 
 The [\<CL_LOG\>]{style="text-transform: lowercase;"} element defines whether the commands that are run in a control language program are
-logged to the job log by way of the CL program\'s message queue.
+logged to the job log by way of the CL program's message queue.
 
 - **Requirements**: Required for IBM i \<jobdata\>.
 - **EM field label**: Log CL Commands
@@ -1016,7 +1016,7 @@ The [\<MSG_REPLY\>]{style="text-transform: lowercase;"} element defines the resp
 or Both and when the message meets the search criteria.
 
 - **Requirements**: Required for \<msg_info\> if
-    [\<MSG_ACTN\>]{style="text-transform: lowercase;"} is \'Reply\' or     \'Both\'.
+    [\<MSG_ACTN\>]{style="text-transform: lowercase;"} is 'Reply' or     'Both'.
 - **EM field label**: Reply
 - **Valid Values**:
   - Minimum Characters: 1
@@ -1029,7 +1029,7 @@ the message meets the criteria or if they want to allow it to keep
 running.
 
 - **Requirements**: This field is optional for \<msg_info\>. Defaults
-    to \'N\' if an empty set of tags are defined.
+    to 'N' if an empty set of tags are defined.
 - **EM field label**: End Job
 - **Valid Values**: Yes, No
 
@@ -1039,7 +1039,7 @@ The [\<MSG_EVENTS\>]{style="text-transform: lowercase;"} element defines the OpC
 the message meets the search criteria.
 
 - **Requirements**: Required for \<msg_info\> if
-    [\<MSG_ACTN\>]{style="text-transform: lowercase;"} is \'Both\'. -   **Valid Values**: Available Values: Complete list of
+    [\<MSG_ACTN\>]{style="text-transform: lowercase;"} is 'Both'. -   **Valid Values**: Available Values: Complete list of
     OpCon events and as in the Job Master \>
     Events screen.
   - Minimum Characters: 1
@@ -1252,8 +1252,8 @@ be performed (i.e., execution of a Java class or a command line).
 The \<java_jar\> element defines the jar file containing the class and
 method to be executed.
 
-- **Requirements**: This is a required field for operations \"CLASS\"
-    and \"JAR\" and must end with a .jar extension.
+- **Requirements**: This is a required field for operations "CLASS"
+    and "JAR" and must end with a .jar extension.
 - **EM field label**: Jar File Name
 - **Valid Values**: Alpha and numeric characters, - (hyphen) and \_
     (underscore) characters, and period.
@@ -1266,7 +1266,7 @@ The \<java_class\> element defines the name of the Java class to be
 executed.
 
 - **Requirements**: This is a required field if the operation is
-    \"CLASS\".
+    "CLASS".
 - **EM field label**: Class Name
 - **Valid Values**: Alpha and numeric characters, - (hyphen) and \_
     (underscore) characters, and period.
@@ -1279,11 +1279,11 @@ The \<java_method\> element defines the name of the Java method to be
 executed.
 
 - **Requirements**: This is an optional field if the operation is
-    \"CLASS\".
+    "CLASS".
 - **EM field label**: Method Name
 - **Valid Values**: Alpha and numeric characters, - (hyphen) and \_
     (underscore) characters, and period. If a value is not specified,
-    this will default to \"main\", which is the default execution method
+    this will default to "main", which is the default execution method
     of a Java object.
   - Minimum Characters: 1
   - Maximum Characters: 4000
@@ -1293,8 +1293,8 @@ executed.
 The \<java_alt_jvm\> element defines the path to an alternate JVM to be
 executed by the Java Agent.
 
-- **Requirements**: This is an optional field for operations \"CLASS\"
-    and \"JAR\".
+- **Requirements**: This is an optional field for operations "CLASS"
+    and "JAR".
 - **EM field label**: Alternate JVM
 - **Valid Values**:
   - Minimum characters: 1
@@ -1307,7 +1307,7 @@ The \<java_cmd_file\> element defines the name of the command file to be
 executed.
 
 - **Requirements**: This is a required field for operations
-    \"COMMAND\" and \"JAR\" and consists of the full file name where the
+    "COMMAND" and "JAR" and consists of the full file name where the
     command \<java_cmd\> value can be found.
 - **EM field label**: Directory Path
 - **Valid Values**:
@@ -1320,7 +1320,7 @@ The \<java_exe\> element defines the name of the executable or script to
 be run.
 
 - **Requirements**: This is a required field if the operation is
-    \"COMMAND\" and must end with an .exe, a .cmd, a .bat, or a .sh
+    "COMMAND" and must end with an .exe, a .cmd, a .bat, or a .sh
     extension.
 - **EM field label**: Executable
 - **Valid Values**:
@@ -1731,7 +1731,7 @@ notification for this job as a display message.
 #### \<mcp_template_display\>\</mcp_template_display\>
 
 The \<mcp_template_display\> element defines the template displays file
-associated with the OpCon job\'s messages.
+associated with the OpCon job's messages.
 
 - **Requirements**: Optional for MCP \<jobdata\>.
 - **EM field label**: Template Displays File
@@ -1914,7 +1914,7 @@ blank, the application assumes that this is not a BNA Transfer copy.
 
 #### \<mcp_copy_compare\>\</mcp_copy_compare\>
 
-Specifies if the \"COPY & COMPARE\" feature is to be used to copy the
+Specifies if the "COPY & COMPARE" feature is to be used to copy the
 file.
 
 - **Requirements**: Optional for MCP \<jobdata\> when the value for
@@ -2034,7 +2034,7 @@ end-of-task notification for this prerun job as a display message.
 #### \<mcp_pre_template_display\>\</mcp_pre_template_display\>
 
 The \<mcp_pre_template_display\> element defines the template displays
-file associated with the OpCon job\'s messages.
+file associated with the OpCon job's messages.
 
 - **Requirements**: Optional for MCP \<jobdata\>.
 - **EM field label**: Template Displays File
@@ -2220,7 +2220,7 @@ blank, the application assumes that this is not a BNA Transfer copy.
 
 #### \<mcp_pre_copy_compare\>\</mcp_pre_copy_compare\>
 
-Specifies if the \"COPY & COMPARE\" feature is to be used to copy the
+Specifies if the "COPY & COMPARE" feature is to be used to copy the
 file.
 
 - **Requirements**: Optional for MCP \<mcpprerun\> when the value for
@@ -2421,12 +2421,12 @@ The \<fileinfo\> and \<uprerun\> elements are mutually exclusive.
 #### \<qlfr\>\</qlfr\>
 
 The \<qlfr\> element defines the Qualifier for the file containing the
-job\'s ECL.
+job's ECL.
 
 - **Requirements**: Required for OS2200 \<jobdata\>.
 - **EM field label**: Qualifier
 - **Valid Values**: Valid data characters for this element are
-    alphanumeric characters, the dollar sign (\$), the pound sign (\#),
+    alphanumeric characters, the dollar sign ($), the pound sign (\#),
     and the dash (--). The Qualifier must not exceed 12 characters.
 
 :::note
@@ -2435,29 +2435,29 @@ If including a pound sign (\#) with the qualifier, it must be the first characte
 
 #### \<flname\>\</flname\>
 
-The \<flname\> element defines the File Name containing the job\'s ECL.
+The \<flname\> element defines the File Name containing the job's ECL.
 
 - **Requirements**: Required for OS2200 \<jobdata\>.
 - **EM field label**: File Name
 - **Valid Values**: Valid data characters for this element are
-    alphanumeric characters, the dollar sign (\$), dash (--), and
+    alphanumeric characters, the dollar sign ($), dash (--), and
     forward slash (/). The File Name must not exceed 20 characters
     including read and write keys. The actual file name excluding read
     and write keys must not exceed 12 characters.
 
 :::tip Example
-\<flname\>ECL\$FILE/RKEY/WKEY\</flname\>
+\<flname\>ECL$FILE/RKEY/WKEY\</flname\>
 :::
 
 #### \<eltname\>\</eltname\>
 
 The \<eltname\> element defines the element and version name for the
-file element containing the job\'s ECL.
+file element containing the job's ECL.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: Element Name
 - **Valid Values**: Valid data characters are for this element are
-    alphanumeric characters, the dollar sign (\$), and the dash (--).
+    alphanumeric characters, the dollar sign ($), and the dash (--).
     The element and version name must not exceed 12 characters each. The
     element and version must be separated by a forward slash (/).
 
@@ -2467,7 +2467,7 @@ file element containing the job\'s ECL.
 
 #### \<jprty\>\</jprty\>
 
-The \<jprty\> element defines the Priority used on the job\'s run card.
+The \<jprty\> element defines the Priority used on the job's run card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: Priority
@@ -2476,7 +2476,7 @@ The \<jprty\> element defines the Priority used on the job\'s run card.
 
 #### \<runopt\>\</runopt\>
 
-The \<runopt\> element defines the options used on the job\'s run card.
+The \<runopt\> element defines the options used on the job's run card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: Options
@@ -2489,7 +2489,7 @@ The \<runopt\> element defines the options used on the job\'s run card.
 #### \<cword\>\</cword\>
 
 The \<cword\> element defines the Condition Word value used on the
-job\'s run card.
+job's run card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: Condition Word (Octal)
@@ -2498,7 +2498,7 @@ job\'s run card.
 
 #### \<runid\>\</runid\>
 
-The \<runid\> element defines the Run ID used on the job\'s run card.
+The \<runid\> element defines the Run ID used on the job's run card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: Run ID
@@ -2507,7 +2507,7 @@ The \<runid\> element defines the Run ID used on the job\'s run card.
 
 #### \<acct\>\</acct\>
 
-The \<acct\> element defines the Account used on the job\'s run card.
+The \<acct\> element defines the Account used on the job's run card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: Account
@@ -2517,17 +2517,17 @@ The \<acct\> element defines the Account used on the job\'s run card.
 
 #### \<proj\>\</proj\>
 
-The \<proj\> element defines the Project ID used on the job\'s run card.
+The \<proj\> element defines the Project ID used on the job's run card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: Project
 - **Valid Values**: Valid data characters for this element are
-    alphanumeric characters, the dollar sign (\$), and the dash (--).
+    alphanumeric characters, the dollar sign ($), and the dash (--).
     The Project ID must not exceed 12 characters.
 
 #### \<userid\>\</userid\>
 
-The \<userid\> element defines the User ID used on the job\'s run card.
+The \<userid\> element defines the User ID used on the job's run card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: User ID
@@ -2537,7 +2537,7 @@ The \<userid\> element defines the User ID used on the job\'s run card.
 
 #### \<maxpg\>\</maxpg\>
 
-The \<maxpg\> element defines the Max Pages value used on the job\'s run
+The \<maxpg\> element defines the Max Pages value used on the job's run
 card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
@@ -2547,7 +2547,7 @@ card.
 
 #### \<maxcrd\>\</maxcrd\>
 
-The \<maxcrd\> element defines the Max Cards value used on the job\'s
+The \<maxcrd\> element defines the Max Cards value used on the job's
 run card.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
@@ -2559,7 +2559,7 @@ run card.
 
 #### \<defstat\>\</defstat\>
 
-The \<defstat\> element defines the job\'s default Completion Status.
+The \<defstat\> element defines the job's default Completion Status.
 
 - **Requirements**: Optional for OS2200 \<jobdata\>.
 - **EM field label**: Anything Else
@@ -2578,7 +2578,7 @@ describe a Completion Status for the job.
 #### \<opr\>\</opr\>
 
 The \<opr\> element defines the logical operator used to compare a
-job\'s Completion Statuses.
+job's Completion Statuses.
 
 - **Requirements**: Optional for OS2200 \<cstat\>.
 - **EM field label**: And/Or
@@ -2627,7 +2627,7 @@ of the \<wdpt\> when the \<cond\> is Range.
 
 #### \<cstatus\>\</cstatus\>
 
-The \<cstatus\> element defines the job\'s Completion Status when the
+The \<cstatus\> element defines the job's Completion Status when the
 specified conditions are met.
 
 - **Requirements**: Optional for OS2200 \<cstat\>.
@@ -2653,12 +2653,12 @@ The \<uprerun\> and \<fileinfo\> elements are mutually exclusive.
 #### \<prqlfr\>\</prqlfr\>
 
 The \<prqlfr\> element defines the Qualifier for the file containing the
-prerun job\'s ECL.
+prerun job's ECL.
 
 - **Requirements**: Required for OS2200 Prerun \<uprerun\>
 - **EM field label**: Qualifier
 - **Valid Values**: Valid data characters for this element are
-    alphanumeric characters, the dollar sign (\$), the pound sign (\#),
+    alphanumeric characters, the dollar sign ($), the pound sign (\#),
     and the dash (--). The Qualifier must not exceed 12 characters.
 
 :::note
@@ -2673,24 +2673,24 @@ for the schedule.
 - **Requirements**: Required for OS2200 Prerun \<uprerun\>.
 - **EM field label**: File Name
 - **Valid Values**: Valid data characters for this element are
-    alphanumeric characters, the dollar sign (\$), dash (--), and
+    alphanumeric characters, the dollar sign ($), dash (--), and
     forward slash (/). The File Name must not exceed 20 characters
     including read and write keys. The actual file name excluding read
     and write keys must not exceed 12 characters.
 
 :::tip Example
-\<flname\>ECL\$FILE/RKEY/WKEY\</flname\>
+\<flname\>ECL$FILE/RKEY/WKEY\</flname\>
 :::
 
 #### \<preltname\>\</preltname\>
 
 The \<preltname\> element defines the element and version name for the
-file element containing the prerun job\'s ECL.
+file element containing the prerun job's ECL.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
 - **EM field label**: Element Name
 - **Valid Values**: Valid data characters are for this element are
-    alphanumeric characters, the dollar sign (\$), and the dash (--).
+    alphanumeric characters, the dollar sign ($), and the dash (--).
     The element and version name must not exceed 12 characters each. The
     element and version must be separated by a forward slash (/).
 
@@ -2700,7 +2700,7 @@ file element containing the prerun job\'s ECL.
 
 #### \<prjprty\>\</prjprty\>
 
-The \<prjprty\> element defines the Priority used on the prerun job\'s
+The \<prjprty\> element defines the Priority used on the prerun job's
 run card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
@@ -2710,7 +2710,7 @@ run card.
 
 #### \<prrunopt\>\</prrunopt\>
 
-The \<prrunopt\> element defines the Options used on the prerun job\'s
+The \<prrunopt\> element defines the Options used on the prerun job's
 run card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
@@ -2722,7 +2722,7 @@ run card.
 #### \<prcword\>\</prcword\>
 
 The \<prcword\> element defines the Condition Word value used on the
-prerun job\'s run card.
+prerun job's run card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
 - **EM field label**: Condition Word (Octal)
@@ -2731,7 +2731,7 @@ prerun job\'s run card.
 
 #### \<prrunid\>\</prrunid\>
 
-The \<prrunid\> element defines the Run ID used on the prerun job\'s run
+The \<prrunid\> element defines the Run ID used on the prerun job's run
 card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
@@ -2741,7 +2741,7 @@ card.
 
 #### \<pracct\>\</pracct\>
 
-The \<pracct\> element defines the Account used on the prerun job\'s run
+The \<pracct\> element defines the Account used on the prerun job's run
 card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
@@ -2752,18 +2752,18 @@ card.
 
 #### \<prproj\>\</prproj\>
 
-The \<prproj\> element defines the Project ID used on the prerun job\'s
+The \<prproj\> element defines the Project ID used on the prerun job's
 run card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
 - **EM field label**: Project
 - **Valid Values**: Valid data characters for this element are
-    alphanumeric characters, the dollar sign (\$), and the dash (--).
+    alphanumeric characters, the dollar sign ($), and the dash (--).
     The Project ID must not exceed 12 characters.
 
 #### \<pruserid\>\</pruserid\>
 
-The \<pruserid\> element defines the User ID used on the prerun job\'s
+The \<pruserid\> element defines the User ID used on the prerun job's
 run card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
@@ -2775,7 +2775,7 @@ run card.
 #### \<prmaxpg\>\</prmaxpg\>
 
 The \<prmaxpg\> element defines the Max Pages value used on the prerun
-job\'s run card.
+job's run card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
 - **EM field label**: Max Pages
@@ -2785,7 +2785,7 @@ job\'s run card.
 #### \<prmaxcrd\>\</prmaxcrd\>
 
 The \<prmaxcrd\> element defines the Max Cards value used on the prerun
-job\'s run card.
+job's run card.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
 - **EM field label**: Max Cards
@@ -2794,7 +2794,7 @@ job\'s run card.
 
 #### \<prdefstat\>\</prdefstat\>
 
-The \<prdefstat\> element defines the prerun job\'s default Completion
+The \<prdefstat\> element defines the prerun job's default Completion
 Status.
 
 - **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
@@ -2814,7 +2814,7 @@ describe a Completion Status for the prerun job.
 #### \<propr\>\</propr\>
 
 The \<propr\> element defines the logical operator used to compare a
-prerun job\'s Completion Statuses.
+prerun job's Completion Statuses.
 
 - **Requirements**: Optional for \<prcstat\>.
 - **EM field label**: And/Or
@@ -2853,7 +2853,7 @@ of the \<wdpt\> when the \<cond\> is Range.
 
 #### \<prcstatus\>\</prcstatus\>
 
-The \<prcstatus\> element defines the prerun job\'s Completion Status
+The \<prcstatus\> element defines the prerun job's Completion Status
 when the specified conditions are met.
 
 - **Requirements**: Optional for \<prcstat\>.
@@ -2890,7 +2890,7 @@ The \<fdqlfr\> element defines the Qualifier for the parent
 - **Requirements**: Required for \<fileinfo\>.
 - **EM field label**: Qualifier
 - **Valid Values**: Valid data characters for this element are
-    alphanumeric characters, the dollar sign (\$), pound sign (\#), and
+    alphanumeric characters, the dollar sign ($), pound sign (\#), and
     dash (--). The qualifier must not exceed 12 characters.
 
 :::note
@@ -2905,7 +2905,7 @@ The \<fdfname\> element defines the File Name for the parent
 - **Requirements**: Required for \<fileinfo\>.
 - **EM field label**: Filename
 - **Valid Values**: Valid data options for this element are
-    alphanumeric characters, the dollar sign (\$), and the dash (--).
+    alphanumeric characters, the dollar sign ($), and the dash (--).
     The File Name must not exceed 12 characters.
 
 #### \<deptype\>\</deptype\>
@@ -3435,7 +3435,7 @@ OpCon schedules.
 
 #### \<sql_other_options\>\</sql_other_options\>
 
-The \<sql_other_options\> element defines an override password using -\$
+The \<sql_other_options\> element defines an override password using -$
 switch.
 
 - **Requirements**: This is an Optional field.
@@ -4143,7 +4143,7 @@ The [\<tuxedo_art_step_name\>]{style="text-transform: lowercase;"} element defin
 - **Valid Values**:
   - Each name may contain alphabetic and numeric characters;
         however, a name cannot be more than eight characters in length
-        and a name\'s first character cannot be numeric.
+        and a name's first character cannot be numeric.
   - There can be one or two names up to eight characters each,
         separated by a period (.). There have to be between 1 and 17
         characters.
@@ -4176,8 +4176,8 @@ The [\<tuxedo_art_step_max\>]{style="text-transform: lowercase;"} element define
 
 #### \<tuxedo_art_step_action\>\</tuxedo_art_step_action\>
 
-The [\<tuxedo_art_step_action\>]{style="text-transform: lowercase;"} element defines the step action. Currently, only the \'Send Trigger
-Message TO SAM\' is supported (e.g., JEVENT=SS1TEST10).
+The [\<tuxedo_art_step_action\>]{style="text-transform: lowercase;"} element defines the step action. Currently, only the 'Send Trigger
+Message TO SAM' is supported (e.g., JEVENT=SS1TEST10).
 
 - **Requirements**: Required if tuxedo_art_step_control parent element
     is specified.
@@ -4202,7 +4202,7 @@ definition.
   - Minimum Characters: 1
   - Maximum Characters: 20
   - Valid Characters: All
-  - If the text begins with \'\$EVENT= \', a maximum of 8 additional
+  - If the text begins with '$EVENT= ', a maximum of 8 additional
         characters are allowed.
 
 ## UNIX Job Element Structure
@@ -4315,7 +4315,7 @@ start image.
 - **Valid Values**:
   - Minimum Characters: 1
   - Maximum Characters: 2000
-  - Invalid Characters: \'(Single Quote), \~ (tilde), \`(grave
+  - Invalid Characters: '(Single Quote), \~ (tilde), \`(grave
         accent)
 
 #### \<PRE_RUN\>\</PRE_RUN\> {#pre_runpre_run style="text-transform: lowercase;"}
@@ -4750,7 +4750,7 @@ sub-directories under the specified file path.
 
 #### \<cmd_line\>\</cmd_line\>
 
-The \<cmd_line\> element defines the job\'s command line.
+The \<cmd_line\> element defines the job's command line.
 
 - **Requirements**: Required for Windows \<jobdata\>.
 - **EM field label**: Command Line
@@ -5149,7 +5149,7 @@ the job name:
   - **EM field label**: n/a
 - **Valid Values**: Valid data characters for this element are
     uppercase alphabetical characters (A -- Z), numeric characters (0 --
-    9), the dollar sign (\$), the pound sign (\#), and the at sign (@).
+    9), the dollar sign ($), the pound sign (\#), and the at sign (@).
     The event name must not exceed eight characters. The first character
     cannot be numeric.
 
@@ -5163,11 +5163,11 @@ The \<security_id\> element defines the z/OS security ID to be assigned
 to this job, if any. The default is the user ID in the job card or the
 USERID from XPSPARMS.
 
-- **Requirements**: Optional for the \'Batch Job\' event type.
+- **Requirements**: Optional for the 'Batch Job' event type.
 - **EM field label**: Batch User
 - **Valid Values**: Valid data characters for this element are
     uppercase alphabetical characters (A -- Z), numeric characters (0 --
-    9), the dollar sign (\$), the pound sign (\#), and the at sign (@).
+    9), the dollar sign ($), the pound sign (\#), and the at sign (@).
     The first character cannot be numeric.
 
 :::note
@@ -5177,17 +5177,17 @@ Tokens should also be allowed. Although brackets are invalid characters, the str
 #### \<ddname\>\</ddname\>
 
 The \<ddname\> element defines the DD Name in the LSAM task that
-contains the library name(s) that contain this job\'s JCL or the Rexx
+contains the library name(s) that contain this job's JCL or the Rexx
 Exec. The default is XPSJCL or the value of the JCLDD parameter in
 XPSPARMS.
 
-- **Requirements**: Optional for \'Batch Job\' or \'REXX Event\'
+- **Requirements**: Optional for 'Batch Job' or 'REXX Event'
     (Dynamic) event type.
 - **EM field label (Batch)**: DDNAME
 - **EM field label (Rexx)**: Submit DDNAME
 - **Valid Values**: Valid data characters for this element are
     uppercase alphabetical characters (A -- Z), numeric characters (0 --
-    9), the dollar sign (\$), the pound sign (\#), and the at sign (@).
+    9), the dollar sign ($), the pound sign (\#), and the at sign (@).
     The first character cannot be numeric, and the name cannot be more
     than eight characters in length.
 
@@ -5200,11 +5200,11 @@ Tokens should also be allowed. Although brackets are invalid characters, the str
 The \<override_ddname\> element defines the DD Name in the LSAM task to
 search for JCL before the DDNAME.
 
-- **Requirements**: Optional for \'Batch Job\' event type.
+- **Requirements**: Optional for 'Batch Job' event type.
 - **EM field label**: Override DDNAME
 - **Valid Values**: Valid data characters for this element are
     uppercase alphabetical characters (A -- Z), numeric characters (0 --
-    9), the dollar sign (\$), the pound sign (\#), and the at sign (@).
+    9), the dollar sign ($), the pound sign (\#), and the at sign (@).
     The first character cannot be numeric.
 
 :::note
@@ -5216,11 +5216,11 @@ Tokens should also be allowed. Although brackets are invalid characters, the str
 The \<member_name\> element defines a Member name to be used in place of
 the \<event_name\>. It is most commonly used for temporary overrides.
 
-- **Requirements**: Optional for \'Batch Job\' event type.
+- **Requirements**: Optional for 'Batch Job' event type.
 - **EM field label**: Temporary Member
 - **Valid Values**: Valid data characters for this element are
     uppercase alphabetical characters (A -- Z), numeric characters (0 --
-    9), the dollar sign (\$), the pound sign (\#), and the at sign (@).
+    9), the dollar sign ($), the pound sign (\#), and the at sign (@).
     The first character cannot be numeric, and the name cannot be more
     than eight characters in length.
 
@@ -5235,8 +5235,8 @@ for the job. Any return code less than this value is considered a
 failure condition. If it is not defined, the low return code will not be
 checked.
 
-- **Requirements**: Optional for Batch Job, Started Task, \'REXX
-    Event\' (Dynamic), Tracked Job, and Queued Job.
+- **Requirements**: Optional for Batch Job, Started Task, 'REXX
+    Event' (Dynamic), Tracked Job, and Queued Job.
 - **EM field label**: Min CC
 - **Valid Values**: Valid data for this element is an integer value in
     the range 0 through 4095. If defined, the value must be less than or
@@ -5249,8 +5249,8 @@ for the job. Any return code greater than this value is considered a
 failure condition. If it is not defined, the high return code will not
 be checked.
 
-- **Requirements**: Optional for \'Batch Job\', \'Started Task\',
-    \'REXX Event\' (Dynamic), \'Tracked Job\', or \'Queued Job\' event
+- **Requirements**: Optional for 'Batch Job', 'Started Task',
+    'REXX Event' (Dynamic), 'Tracked Job', or 'Queued Job' event
     types.
 - **EM field label**: Max CC
 - **Valid Values**: Valid data for this element is an integer value in
@@ -5262,9 +5262,9 @@ be checked.
 The \<submit_from\> element determines if the job will be started on the
 system where the pre-runs were satisfied.
 
-- **Requirements**: Optional for all event types: \'Batch Job\',
-    \'Started Task\', \'REXX Event\' (Dynamic), \'Tracked Job\',
-    \'Queued Job\' and \'Console Command Execution\'.
+- **Requirements**: Optional for all event types: 'Batch Job',
+    'Started Task', 'REXX Event' (Dynamic), 'Tracked Job',
+    'Queued Job' and 'Console Command Execution'.
 - **EM field label**: Submit on any System
 - **Valid Values**: Valid values include **From Any LSAM** or
     **Primary LSAM Only**. Set the value to **Primary LSAM Only** to
@@ -5274,7 +5274,7 @@ system where the pre-runs were satisfied.
     requirements).
 
 :::note
-Primary LSAM refers to the LSAM/PSAM on which the job is scheduled. It should not be confused with a \"gateway LSAM\" in a SYSPLEX group.
+Primary LSAM refers to the LSAM/PSAM on which the job is scheduled. It should not be confused with a "gateway LSAM" in a SYSPLEX group.
 :::
 
 #### \<cmd_parm\>\</cmd_parm\>
@@ -5282,8 +5282,8 @@ Primary LSAM refers to the LSAM/PSAM on which the job is scheduled. It should no
 The \<cmd_parm\> element defines the complete start parameter for the
 started task (e.g., TYPE=WARM).
 
-- **Requirements**: Optional for \'Console Command Execution\',
-    \'Started Task\', or \'REXX Event\' (Dynamic), event type.
+- **Requirements**: Optional for 'Console Command Execution',
+    'Started Task', or 'REXX Event' (Dynamic), event type.
 - **EM field label (Command)**: Operator Command
 - **EM field label (Rexx or Started Task)**: Execution Parms
 - **Valid Values**: It may contain any properties allowed in a Stared
@@ -5297,12 +5297,12 @@ The \<prsysid\> element specifies the SMF System ID (Machine ID) on
 which to run the prerun, if other than the Primary Machine ID. This ID
 must be a member of the z/OS Sysplex, have a z/OS LSAM installed and
 running. Enter a value of ANY to allow preruns on any machine in the
-Sysplex. This element defines the data relating to the \"Pre-run
-System\" field in the EM.
+Sysplex. This element defines the data relating to the "Pre-run
+System" field in the EM.
 
-- **Requirements**: Optional for all event types: \'Batch Job\',
-    \'Started Task\', \'REXX Event\' (Dynamic), \'Tracked Job\',
-    \'Queued Job\' and \'Console Command Execution\'.
+- **Requirements**: Optional for all event types: 'Batch Job',
+    'Started Task', 'REXX Event' (Dynamic), 'Tracked Job',
+    'Queued Job' and 'Console Command Execution'.
 - **EM field label**: Pre-run System
 - **Valid Values**: The value may be *a one- to four-character string
     defining a Machine*, *ANY*, or *blank* (to run the prerun on the
@@ -5317,9 +5317,9 @@ The File Prerun, Message Prerun, Task Prerun, Tape Prerun, and REXX Preruns use 
 For a Restart run, the \<restart_dupdsnact\> element determines how XPR
 cleans up duplicate dataset(s).
 
-- **Requirements**: Optional for all event types: \'Batch Job\',
-    \'Started Task\', \'REXX Event\' (Dynamic), \'Tracked Job\',
-    \'Queued Job\' and \'Console Command Execution\'.
+- **Requirements**: Optional for all event types: 'Batch Job',
+    'Started Task', 'REXX Event' (Dynamic), 'Tracked Job',
+    'Queued Job' and 'Console Command Execution'.
 - **EM field label**: Duplicate Dataset Action - Restart
 - **Valid Values**:
   - \<blank\>: The LSAM defaults are used.
@@ -5332,9 +5332,9 @@ cleans up duplicate dataset(s).
 For a Normal run, the \<dupdsnact\> element determines how XPR cleans up
 duplicate dataset(s).
 
-- **Requirements**: Optional for all event types: \'Batch Job\',
-    \'Started Task\', \'REXX Event\' (Dynamic), \'Tracked Job\',
-    \'Queued Job\' and \'Console Command Execution\'.
+- **Requirements**: Optional for all event types: 'Batch Job',
+    'Started Task', 'REXX Event' (Dynamic), 'Tracked Job',
+    'Queued Job' and 'Console Command Execution'.
 - **EM field label**: Duplicate Dataset Action - Normal
 - **Valid Values**:
   - \<blank\>: The LSAM defaults are used.
@@ -5351,9 +5351,9 @@ The File Prerun, Message Prerun, Task Prerun, Tape Prerun, and REXX Preruns use 
 The \<restart_gdg\> element determines how XPR determines Generation
 Data Group (GDG) base generations.
 
-- **Requirements**: Optional for all event types: \'Batch Job\',
-    \'Started Task\', \'REXX Event\' (Dynamic), \'Tracked Job\',
-    \'Queued Job\' and \'Console Command Execution\'.
+- **Requirements**: Optional for all event types: 'Batch Job',
+    'Started Task', 'REXX Event' (Dynamic), 'Tracked Job',
+    'Queued Job' and 'Console Command Execution'.
 - **EM field label**: GDG Regression
 - **Valid Values**:
   - \<blank\>: The LSAM defaults are used.
@@ -5374,13 +5374,13 @@ Data Group (GDG) base generations.
     separated by double backslashes, to be used in this run. Each
     override (@) or symbolic (&) definition is separated by two
     backslashes (\\\\).
-- When the z/OS LSAM encounters an \"&name=\" symbolic, it scans each
+- When the z/OS LSAM encounters an "&name=" symbolic, it scans each
     JCL statement for an operand match. Only operands are changed by an
-    \"&\" symbolic override.
+    "&" symbolic override.
 - To qualify for replacement, an operand must be preceded by a comma
-    or a blank and include an \"=\" sign (e.g., all instances of
+    or a blank and include an "=" sign (e.g., all instances of
     UNIT=xxxxx are substituted using &UNIT=SYSDA).
-- The \"@\" overrides should not be confused with \"&\" symbolics.
+- The "@" overrides should not be confused with "&" symbolics.
     Overrides are placeholders for data and symbolics are replacements
     of very specific data, in a specific field, enclosed in specific
     delimiters.
@@ -5391,11 +5391,11 @@ an entire 80 byte JCL record. Overrides have no restrictions on content
 or delimiters except they cannot contain double backslashes (e.g., a
 date card override could be represented as \@TODAY=October 12, 2005).
 
-- **Requirements**: Optional for \'Batch Job\' event type.
+- **Requirements**: Optional for 'Batch Job' event type.
 - **EM field label**: JCL Substitution
 - **Valid Values**: Internal OpCon are
     represented by \[\[...\]\] notations and may be used as data     components of either symbolics or overrides (e.g.,
-    \@TODAY=\[\[\$DATE\]\]). Valid Values include:     -   The value of event_type must be **Batch Job**
+    \@TODAY=\[\[$DATE\]\]). Valid Values include:     -   The value of event_type must be **Batch Job**
   - Minimum Characters: 7 (minimum valid definition has the form
         \\\\&a=\\\\ or \\\\\@a=\\\\)
   - Maximum Characters: 3400
@@ -5409,8 +5409,8 @@ The parent element \<step_control\> contains the child elements needed
 for step control. Repeat for multiple steps. The order specified in the
 file determines the order in the list.
 
-- **Requirements**: Optional for \'Batch Job\', \'Started Task\',
-    \'Tracked Job\', or \'Queued Job\' event types.
+- **Requirements**: Optional for 'Batch Job', 'Started Task',
+    'Tracked Job', or 'Queued Job' event types.
 - **Valid Values**: A maximum of 80 steps can be defined.
 
 #### \<step_name\>\</step_name\>
@@ -5425,7 +5425,7 @@ statement that invokes a procedure containing execstep.
 - **EM field label**: Step name
 - **Valid Values**: Each name may contain alphabetic, national, and
     numeric characters; however, a name cannot be more than eight
-    characters in length and a name\'s first character cannot be
+    characters in length and a name's first character cannot be
     numeric.
   - There can be one or two names up to eight characters each,
         separated by a dot (.). The has to be between 1 and 17
@@ -5472,7 +5472,7 @@ If the step_min is specified, step_max must also be specified.
 #### \<step_action\>\</step_action\>
 
 The \<step_action\> child element defines the action to be taken when
-the defined step\'s return code falls in the Step CC range.
+the defined step's return code falls in the Step CC range.
 
 - **Requirements**: Required if step_control parent element is
     specified.
@@ -5504,11 +5504,11 @@ the defined step\'s return code falls in the Step CC range.
 
 \<step_msg\> may be up to 20 characters, and is posted to the Schedule
 Operations screen of the graphical interfaces. If the message is
-\"\$EVENT=eventname\" the eventname action defined in the z/OS event
+"$EVENT=eventname" the eventname action defined in the z/OS event
 trigger table is triggered.
 
-- **Requirements**: Optional unless step_action is set to \'Send
-    Trigger Message to SAM\'. Required only with the T (Send Trigger
+- **Requirements**: Optional unless step_action is set to 'Send
+    Trigger Message to SAM'. Required only with the T (Send Trigger
     Message to SAM) action, but may be used with any Step Action
     selected.
 - **EM field label**: Trigger Message
@@ -5517,12 +5517,12 @@ trigger table is triggered.
     z/OS Event table.
   - The value of event_type must be Batch Job, Started Task, Tracked
         Job, or Queued Job.
-  - If step_action is set to \'Send Trigger Message to SAM\',
+  - If step_action is set to 'Send Trigger Message to SAM',
         step_msg must be specified.
   - Minimum Characters: 1
   - Maximum Characters: 20
   - Valid Characters: All
-  - If the text begins with \'\$EVENT= \', a maximum of 8 additional
+  - If the text begins with '$EVENT= ', a maximum of 8 additional
         characters are allowed.
 
 ### File Prerun Element Definitions
@@ -5550,7 +5550,7 @@ specified.
 
 **EM field label**: Dataset
 
-**Valid Values**: The percent (\'%\') and asterisk (\'\*\') characters
+**Valid Values**: The percent ('%') and asterisk ('\*') characters
 are allowable wildcards. A wild card character in the middle of the DSN
 represents any single character; moreover, an asterisk at the end of the
 dataset name matches any number of following characters:
@@ -5561,7 +5561,7 @@ Minimum Characters: 1
 
 Maximum Characters: 44
 
-Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ \~ ! @ \# \$ % &
+Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ \~ ! @ \# $ % &
 \* \_ + . ?
 
 should also be allowed. Although brackets are invalid characters, the
@@ -5569,7 +5569,7 @@ string \[\[xxxx\]\] should be allowed where xxxx equals any character set.
 
 SMADDI should uppercase all alpha characters specified.
 
-The format of this value can contain any number of \"words\" as long as:
+The format of this value can contain any number of "words" as long as:
 
 - Each word contains a maximum of 8 characters.
 - Each word is separated by periods.
@@ -5653,7 +5653,7 @@ specific scheduled job or task.
 - **Requirements**: Optional for \<file_prerun\>.
 - **EM field label**: Job Name
 - **Valid Values**: The event_type can be any value.
-  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# \$
+  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
   - Although brackets are invalid characters, the string
         \[\[xxxx\]\] should be allowed where xxxx equals any character         set.
   - The first character cannot be numeric.
@@ -5747,7 +5747,7 @@ or task.
 - **Requirements**: Optional for \<msg_prerun\>.
 - **EM field label**: Job name
 - **Valid Values**: The event_type can be any value:
-  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# \$
+  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
   - The first character cannot be numeric.
   - Minimum Characters: 1
   - Maximum Characters: 8
@@ -5797,7 +5797,7 @@ job, system task, or TSO User ID being sought.
     specified.
 - **EM field label**: Job/Task Name
 - **Valid Values**: The event_type can be any value.
-  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# \$
+  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
   - Although brackets are invalid characters, the string
         \[\[xxxx\]\] should be allowed where xxxx equals any character         set.
   - The first character cannot be numeric.
@@ -5844,7 +5844,7 @@ as defined by IBM unit standards.
         Tracked Job, Queued Job, or Console Command Execution.
   - Minimum Characters: 1
   - Maximum Characters: 8
-  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# \$
+  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
         / -
   - Although brackets are invalid characters, the string
         \[\[xxxx\]\] should be allowed where xxxx equals any character         set.
@@ -5885,7 +5885,7 @@ execute.
     specified.
 - **EM field label**: REXX Name
 - **Valid Values**: The event_type can be any value.
-  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# \$
+  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
   - The first character cannot be numeric.
   - Minimum Characters: 1
   - Maximum Characters: 8
@@ -5900,7 +5900,7 @@ REXX executable code.
 - **Requirements**: Optional for \<rexx_preren\>.
 - **EM field label**: REXX DD
 - **Valid Values**: The event_type can be any value.
-  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# \$
+  - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
   - The first character cannot be numeric.
   - Minimum Characters: 1
   - Maximum Characters: 8

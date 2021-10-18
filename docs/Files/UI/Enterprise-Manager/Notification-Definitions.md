@@ -70,10 +70,10 @@ how to define and send that notification type:
         the tabs is **Test**. When you select
         **[Test](Sending-Notification-Tests.md)**, the notification
         for the current tab will send a test.
-  - If the notification has \"default information,\" the Event
+  - If the notification has "default information," the Event
         Trigger value will be set to *Test Notification*.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Entering Notification Definition     Information](Entering-Notification-Definition-Info.md)

@@ -24,8 +24,8 @@ To set the preferences:
     Colors** frame.
 6.  Click the**Edit** button. The **Colors Preference - Individual Job
     Status Color** dialog displays.
-7.  Click on the **Color** button to the right of the \"Please select a
-    Color:\" text. The **Color** dialog displays.
+7.  Click on the **Color** button to the right of the "Please select a
+    Color:" text. The **Color** dialog displays.
 8.  Select the **color** and click **OK**.
 9.  Click the **Update List** button.
 10. Repeat [Steps 5 - 9]{.ul} to change additional Individual Job Status
@@ -43,8 +43,8 @@ To set the preferences:
     dialog displays.
 3.  Select the **Job Status** to add from the **Please select a Job
     Status** drop-down list.
-4.  Click on the **Color** button to the right of the \"Please select a
-    Color:\" text. The **Color** dialog displays.
+4.  Click on the **Color** button to the right of the "Please select a
+    Color:" text. The **Color** dialog displays.
 5.  Select the *color* and click **OK**.
 6.  Click the **Add To List** button.
 7.  Repeat [Steps 2 - 6]{.ul} to add more Individual Job Status colors.

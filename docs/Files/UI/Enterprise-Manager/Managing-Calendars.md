@@ -16,7 +16,7 @@ toolbar below to learn more about its functionality.
 
 ![Cak=lendars toolbar](../../../Resources/Images/EM/EMcalendarstoolbar.png "Calendars toolbar")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Adding Holidays or Non-Working Days to     Calendars](Adding-Days-to-Calendars.md)

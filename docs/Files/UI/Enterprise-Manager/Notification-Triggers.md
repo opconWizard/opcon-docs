@@ -8,7 +8,7 @@ viewport: width=device-width, initial-scale=1.0
 
 The **Notification Triggers** tab in the [**Job Master**](Using-Job-Master.md) editor is a read-only view used to
 show the triggers and OpCon events defined in
-the **Notification Manager** that will be triggered by the job\'s
+the **Notification Manager** that will be triggered by the job's
 actions.
 
 ## Viewing Job Event Notification Triggers

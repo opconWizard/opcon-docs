@@ -23,7 +23,7 @@ SMAServMan configuration determines basic service settings, logging
 behavior, the application group, and the actions taken when an
 application or machine fails. The SMAServMan.ini file resides in the
 \<Configuration Directory\>\\SAM\\ folder. The table contains the
-definitions of each configuration parameter. If a value of \"Yes\" is in
+definitions of each configuration parameter. If a value of "Yes" is in
 the Dynamic column, any changes take effect immediately upon saving the
 file. All other configuration settings require the service to be
 restarted before the change takes effect.
@@ -75,7 +75,7 @@ to the Windows operating system.
 | Mode           | StandAlone     | N             | -   Determines |
 |                |                |               |     the        |
 |                |                |               |                |
-|                |                |               |  SMAServMan\'s |
+|                |                |               |  SMAServMan's |
 |                |                |               |     role in    |
 |                |                |               |     the        |
 |                |                |               |     failover   |
@@ -144,7 +144,7 @@ to the Windows operating system.
 
 #### Primary Mode Settings
 
-If necessary, Primary Mode Settings determine the SMAServMan\'s behavior
+If necessary, Primary Mode Settings determine the SMAServMan's behavior
 as manager of the [primary]{.ul} application group.
 +-------------------+-----------+---------------+-------------------+
 | Primary Mode      | Default   | Dynamic (Y/N) | Description       |
@@ -249,7 +249,7 @@ as manager of the [primary]{.ul} application group.
 
 : SMAServMan Configuration: Primary Mode Settings
 
-If necessary, Secondary Mode Settings determine the SMAServMan\'s
+If necessary, Secondary Mode Settings determine the SMAServMan's
 behavior as manager of the [secondary]{.ul} application group.
 +-------------------+-----------+---------------+-------------------+
 | Secondary Mode    | Default   | Dynamic (Y/N) | Description       |
@@ -302,7 +302,7 @@ behavior as manager of the [secondary]{.ul} application group.
 |                   |           |               |     the number of |
 |                   |           |               |     consecutive   |
 |                   |           |               |     ping          |
-|                   |           |               |     \"failures\"  |
+|                   |           |               |     "failures"  |
 |                   |           |               |     before        |
 |                   |           |               |     initiating    |
 |                   |           |               |     failover.     |
@@ -642,10 +642,10 @@ The Debug Options configure the SMAServMan logging behavior.
 |                    |         |               | **Caution:** This  |
 |                    |         |               | number must be     |
 |                    |         |               | greater than the   |
-|                    |         |               | \"Maximum number   |
+|                    |         |               | "Maximum number   |
 |                    |         |               | of days archived   |
 |                    |         |               | SAM logs should be |
-|                    |         |               | kept\" logging     |
+|                    |         |               | kept" logging     |
 |                    |         |               | setting in the     |
 |                    |         |               | Global Options.    |
 |                    |         |               | For additional     |
@@ -670,8 +670,8 @@ The Debug Options configure the SMAServMan logging behavior.
 |                    |         |               |     When the file  |
 |                    |         |               |     reaches this   |
 |                    |         |               |     maximum size,  |
-|                    |         |               |     it is \"rolled |
-|                    |         |               |     over.\"        |
+|                    |         |               |     it is "rolled |
+|                    |         |               |     over."        |
 |                    |         |               | -   This setting   |
 |                    |         |               |     creates small, |
 |                    |         |               |     manageable log |
@@ -811,13 +811,13 @@ for that application.
 |                         |               | is started.             |
 +-------------------------+---------------+-------------------------+
 | CommandLineArguments    | N             | Defines the arguments   |
-|                         |               | in the application\'s   |
+|                         |               | in the application's   |
 |                         |               | command line.           |
 +-------------------------+---------------+-------------------------+
 | InitialTimeOutInSeconds | Y             | -   Process startup     |
 |                         |               |     typically takes     |
 |                         |               |     longer than the     |
-|                         |               |     \"main\" loop of    |
+|                         |               |     "main" loop of    |
 |                         |               |     the process.        |
 |                         |               | -   If the application  |
 |                         |               |     has not made the    |
@@ -825,8 +825,8 @@ for that application.
 |                         |               |     within this time    |
 |                         |               |     limit, it is        |
 |                         |               |     considered to be    |
-|                         |               |     \"hung\" or \"in    |
-|                         |               |     error\" and is      |
+|                         |               |     "hung" or "in    |
+|                         |               |     error" and is      |
 |                         |               |     terminated.         |
 |                         |               | -   If the application  |
 |                         |               |     has a heavy         |
@@ -844,8 +844,8 @@ for that application.
 |                         |               |     seconds since the   |
 |                         |               |     last call, it is    |
 |                         |               |     considered to be    |
-|                         |               |     \"hung\" or \"in    |
-|                         |               |     error\" and is      |
+|                         |               |     "hung" or "in    |
+|                         |               |     error" and is      |
 |                         |               |     terminated.         |
 |                         |               | -   If the application  |
 |                         |               |     has a heavy         |
@@ -867,7 +867,7 @@ for that application.
 | RestartApplicationLimit | Y             | -   If this parameter   |
 |                         |               |     is zero, no attempt |
 |                         |               |     is made to restart  |
-|                         |               |     a \"hung\"          |
+|                         |               |     a "hung"          |
 |                         |               |     application.        |
 |                         |               | -   The application     |
 |                         |               |     restart is only     |
@@ -903,7 +903,7 @@ for that application.
 |                         |               | application after       |
 |                         |               | determining that the    |
 |                         |               | application was         |
-|                         |               | \"hung,\" this optional |
+|                         |               | "hung," this optional |
 |                         |               | user-defined script is  |
 |                         |               | run (e.g., command file |
 |                         |               | to pass an event to the |
@@ -960,42 +960,42 @@ for that application.
 +----------------------+----------------------+----------------------+
 | Parameter            | Application          | Application Default  |
 +======================+======================+:====================:+
-| ApplicationPath      | SAM                  | \"\"\<Target         |
+| ApplicationPath      | SAM                  | ""\<Target         |
 |                      |                      | Director             |
 |                      |                      | y\>\\OpConxps\\SAM\\ |
 |                      |                      |                      |
-|                      |                      | Sam.exe\"Dir         |
+|                      |                      | Sam.exe"Dir         |
 |                      |                      | ectory\>\\OpConxps\\ |
 |                      |                      |                      |
-|                      |                      | SAM\\Sam.exe\"\"     |
+|                      |                      | SAM\\Sam.exe""     |
 +----------------------+----------------------+----------------------+
-|                      | SMANetCom            | \"\"\<Target         |
+|                      | SMANetCom            | ""\<Target         |
 |                      |                      | Directory            |
 |                      |                      | \>\\OpConxps\\SAM\\\ |
-|                      |                      | SMANetCom.exe\"\"    |
+|                      |                      | SMANetCom.exe""    |
 +----------------------+----------------------+----------------------+
-|                      | SMANotifyHandler     | \"\"\<Target         |
+|                      | SMANotifyHandler     | ""\<Target         |
 |                      |                      | Directory\>\\O       |
 |                      |                      | pConxps\\SAM\\ENS\\\ |
 |                      |                      | SMAN                 |
-|                      |                      | otifyHandler.exe\"\" |
+|                      |                      | otifyHandler.exe"" |
 +----------------------+----------------------+----------------------+
-|                      | SMARequestRouter     | \"\"\<Target         |
+|                      | SMARequestRouter     | ""\<Target         |
 |                      |                      | Directory            |
 |                      |                      | \>\\OpConxps\\SAM\\\ |
 |                      |                      | SMAR                 |
-|                      |                      | equestRouter.exe\"\" |
+|                      |                      | equestRouter.exe"" |
 +----------------------+----------------------+----------------------+
-|                      | SM                   | \"\"\<Target         |
+|                      | SM                   | ""\<Target         |
 |                      | AStartTimeCalculator | Directory            |
 |                      |                      | \>\\OpConxps\\SAM\\\ |
 |                      |                      | SMAStartTi           |
-|                      |                      | meCalculator.exe\"\" |
+|                      |                      | meCalculator.exe"" |
 +----------------------+----------------------+----------------------+
-|                      | SMALDAPMon           | \"\"\<Target         |
+|                      | SMALDAPMon           | ""\<Target         |
 |                      |                      | Directory            |
 |                      |                      | \>\\OpConxps\\SAM\\\ |
-|                      |                      | SMALDAPMon.exe\"\"   |
+|                      |                      | SMALDAPMon.exe""   |
 +----------------------+----------------------+----------------------+
 | StartInDirectory     | SAM                  | \<Target             |
 |                      |                      | Director             |
@@ -1205,7 +1205,7 @@ The following list contains the names of the Application Hung Scripts:
 
 Each of the Application Hung Scripts calls their own respective
 supplemental script (e.g., SAMHung.cmd calls SAM.cmd) to execute
-database queries relevant to the \"hung\" application, and output the
+database queries relevant to the "hung" application, and output the
 results to a text file for troubleshooting. The following list contains
 the names for the supplemental scripts:
 
@@ -1286,7 +1286,7 @@ In the Services window:
 
 Scroll down to the **SMA OpCon Service Manager** service.
 
-Change the *SMAServMan\'s* **Startup Type** to **Automatic (Delayed
+Change the *SMAServMan's* **Startup Type** to **Automatic (Delayed
 Start)** using the following steps:
 
 a.  Double-click on **SMA OpCon Service Manager**.

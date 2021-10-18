@@ -9,11 +9,11 @@ replication including the topics:
 - Restoring replication
 
   --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White \"X\" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Failure to follow replication failover and recovery procedures in the proper order can result in data corruption. SMA Technologies has tested the following steps in the order listed to achieve successful replication failover and recovery.]
+  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Failure to follow replication failover and recovery procedures in the proper order can result in data corruption. SMA Technologies has tested the following steps in the order listed to achieve successful replication failover and recovery.]
   --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   --------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White \"X\" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Exceeding the number of licensed machines (LSAMs) causes the license to be shortened to 30 days from date of license violation and will void the license key.]
+  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Exceeding the number of licensed machines (LSAMs) causes the license to be shortened to 30 days from date of license violation and will void the license key.]
   --------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Automatic Failover to the Subscribing Database Server
@@ -92,12 +92,12 @@ Service Manager on the Secondary Server by following the steps below.
 5. Click **Stop** (■).
 6. Click **Close ☒** on the **Services** window.
 
-### Verifying the SMA Service Manager\'s Status on the Primary Server
+### Verifying the SMA Service Manager's Status on the Primary Server
 
 To ensure the primary SMA Service Manager has stopped, verify the
-SMAServMan\'s status by performing the steps below.
+SMAServMan's status by performing the steps below.
 
-[Verify SMAServMan\'s Status]{.ul}
+[Verify SMAServMan's Status]{.ul}
 
 1. Use menu path: **Start \> Control Panel**.
 2. Double-click **Administrative Tools**.
@@ -132,7 +132,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -198,7 +198,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -242,7 +242,7 @@ complete the steps in this section to disable publishing.
 14. Click the **Options** tab in the **Select a page** menu.
 15. Select the **Overwrite the existing database** checkbox.
 16. Go to the **Restore the database files as** frame.
-17. Make sure that the file name and path are valid for the database\'s
+17. Make sure that the file name and path are valid for the database's
     data and log files.
 18. Go to the **Recovery state** frame.
 19. Click the radio button by Leave the database ready to use by rolling
@@ -264,7 +264,7 @@ refer to [Update Database](../../utilities/Graphical-Utilities/SMA-OpCon-Configu
 
 Following restoration, it is possible to have a mismatch of SQL Login
 IDs between the restored database and the SQL server. This mismatch
-prevents SAM\'s SQL Login ID (opconsam) and the graphical interface\'s
+prevents SAM's SQL Login ID (opconsam) and the graphical interface's
 SQL Login ID (opconui) from in to the database. To fix this problem,
 complete the steps below.
 
@@ -288,7 +288,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -302,13 +302,13 @@ Click the **New Query** button.
 
 Select the **OpCon Database** from the list at the top of the screen.
 
-Enter the query: **dbo.sp_change_users_login \'update_one\',
-\'opconsam\',\'opconsam\'**.
+Enter the query: **dbo.sp_change_users_login 'update_one',
+'opconsam','opconsam'**.
 
 Click the **Execute** button or press **F5** to execute the query.
 
-Enter the query: **dbo.sp_change_users_login \'update_one\' ,
-\'opconui\',\'opconui\'**.
+Enter the query: **dbo.sp_change_users_login 'update_one' ,
+'opconui','opconui'**.
 
 Click the **Execute** button or press **F5** to execute the query.
 
@@ -342,7 +342,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 

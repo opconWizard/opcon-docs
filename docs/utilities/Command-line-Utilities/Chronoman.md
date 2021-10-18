@@ -7,7 +7,7 @@ The information presented in this topic pertains largely to running the Chronoma
 OpCon user-defined properties can be updated
 with calculated dates using an executable called Chronoman
 (Chronoman.exe). The SAM can calculate simple dates based on calendar
-offsets from the \$SCHEDULE DATE or \$DATE; however, Chronoman is used
+offsets from the $SCHEDULE DATE or $DATE; however, Chronoman is used
 to make complex date calculations (e.g., a property may need to be
 updated with the date of the last working day of the month).
 
@@ -169,7 +169,7 @@ The wrapping of the syntax in this document does not indicate the location of a 
 |           | -   The property parameter can be omitted if the        |
 |           |     property name is defined in the command file (=c).  |
 |           | -   If specifying the property name with the =t switch  |
-|           |     and the property name requires quotes (\") because  |
+|           |     and the property name requires quotes (") because  |
 |           |     it contains a period (.), escape the quotes with a  |
 |           |     backslash (\\) on the command line.                 |
 +-----------+---------------------------------------------------------+
@@ -238,7 +238,7 @@ The wrapping of the syntax in this document does not indicate the location of a 
 | =s        | This parameter is the name of the schedule to use if    |
 |           | the \<units of offset\> are WD (Working Days) or if a   |
 |           | command file computes working days. Chronoman uses the  |
-|           | schedule\'s Holiday Calendar to determine non-working   |
+|           | schedule's Holiday Calendar to determine non-working   |
 |           | days. The schedule parameter can be omitted if a        |
 |           | command file is specified and the command file defines  |
 |           | the name of the schedule prior to performing a          |
@@ -273,7 +273,7 @@ The wrapping of the syntax in this document does not indicate the location of a 
 |                                  |     05:00) plus the offset (-1)  |
 |                                  |     hour.                        |
 |                                  | -   The property is in the       |
-|                                  |     format \"mmddyy hh:nn\".     |
+|                                  |     format "mmddyy hh:nn".     |
 |                                  | -   When the calculation is      |
 |                                  |     complete, TestProperty has a |
 |                                  |     value of 091517 04:00.       |
@@ -459,7 +459,7 @@ control.
 |                               |     May 25,                         |
 |                               |     FIND_CALENDAR_YEAR_BEGIN would  |
 |                               |     set the date to January 1 of    |
-|                               |     the computed date\'s current    |
+|                               |     the computed date's current    |
 |                               |     year.                           |
 +-------------------------------+-------------------------------------+
 | FIND_CALENDAR_YEAR_END        | -   The date is set to the last day |
@@ -470,7 +470,7 @@ control.
 |                               |     directives moved the date to    |
 |                               |     May 25, FIND_CALENDAR_YEAR_END  |
 |                               |     would set the date to December  |
-|                               |     31 of the computed date\'s      |
+|                               |     31 of the computed date's      |
 |                               |     current year.                   |
 +-------------------------------+-------------------------------------+
 | FIND_DAY_OF_WEEK_BACKWARD     | -   Finds the date of the first     |
@@ -862,7 +862,7 @@ control.
 : Chronoman Special Directive
 
 This next table shows the command line/command file equivalency. In the
-table, the **R/O** column header represents \"Required/Optional\".
+table, the **R/O** column header represents "Required/Optional".
 
 +-------------------+-------------------+-----+-------------------+
 | Command-line      | Command File      | R/O | Comments/Defaults |
@@ -982,7 +982,7 @@ cannot resolve any System or user-defined System tokens.
 
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | **SCENARIO 1:** If today is a    | | circular                         | working day, set the property to |
-| background](../../../Reso        | today\'s date. If today is NOT a |
+| background](../../../Reso        | today's date. If today is NOT a |
 | urces/Images/example-icon(48x48) | working day, set the property to |
 | .png "Example icon") | the date of the next working     |
 |                                  | day.                             |
@@ -991,10 +991,10 @@ cannot resolve any System or user-defined System tokens.
 |                                  |                                  |
 |                                  | **OpCon Command Line**:          |
 |                                  |                                  |
-|                                  | \"C:\\Program                    |
+|                                  | "C:\\Program                    |
 |                                  | File                             |
-|                                  | s\\Opconxps\\MSLSAM\\Chronoman\" |
-|                                  | =t\\\"WK.Day\\\" =cC:\\Chronoman |
+|                                  | s\\Opconxps\\MSLSAM\\Chronoman" |
+|                                  | =t\"WK.Day\" =cC:\\Chronoman |
 |                                  | Files\\WkDayCommand.txt          |
 |                                  | =sTestSchedule                   |
 |                                  |                                  |
@@ -1014,7 +1014,7 @@ cannot resolve any System or user-defined System tokens.
 |                                  | property to be updated is called |
 |                                  | WK.Day. The schedule to be used  |
 |                                  | for determining working days is  |
-|                                  | called \"TestSchedule\".         |
+|                                  | called "TestSchedule".         |
 |                                  |                                  |
 |                                  | -   The WK.Day property is       |
 |                                  |     surrounded with escaped      |
@@ -1044,9 +1044,9 @@ cannot resolve any System or user-defined System tokens.
 |                                  |                                  |
 |                                  | **OpCon Command Line**:          |
 |                                  |                                  |
-|                                  | \"C:\\Program                    |
+|                                  | "C:\\Program                    |
 |                                  | File                             |
-|                                  | s\\Opconxps\\MSLSAM\\Chronoman\" |
+|                                  | s\\Opconxps\\MSLSAM\\Chronoman" |
 |                                  | =tNextDay =cC:\\Chronoman        |
 |                                  | Files\\NextDayCommand.txt        |
 |                                  | =sTestSchedule                   |
@@ -1090,15 +1090,15 @@ cannot resolve any System or user-defined System tokens.
 +----------------------------------+----------------------------------+
 
 +----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **SCENARIO 3:** Set the property | | circular                         | to tomorrow\'s date.             |
+| ![White pencil icon on green     | **SCENARIO 3:** Set the property | | circular                         | to tomorrow's date.             |
 | background](../../../Reso        |                                  |
 | urces/Images/example-icon(48x48) |                                  |
 | .png "Example icon") |                                  |
 |                                  | **OpCon Command Line**:          |
 |                                  |                                  |
-|                                  | \"C:\\Program                    |
+|                                  | "C:\\Program                    |
 |                                  | File                             |
-|                                  | s\\Opconxps\\MSLSAM\\Chronoman\" |
+|                                  | s\\Opconxps\\MSLSAM\\Chronoman" |
 |                                  | =tTomorrow =cC:\\Chronoman       |
 |                                  | Files\\TomorrowCommand.txt       |
 |                                  | =sTestSchedule                   |
@@ -1141,7 +1141,7 @@ cannot resolve any System or user-defined System tokens.
 |                                  | System property was created in   |
 |                                  | the Enterprise Manager. The      |
 |                                  | property was given a Name of     |
-|                                  | \$SCHEDULE DATE JUL and a value  |
+|                                  | $SCHEDULE DATE JUL and a value  |
 |                                  | of YYYYj.                        |
 |                                  |                                  |
 |                                  | -   The property can be passed   |
@@ -1164,16 +1164,16 @@ cannot resolve any System or user-defined System tokens.
 |                                  |                                  |
 |                                  | **OpCon Command Line**:          |
 |                                  |                                  |
-|                                  | \"C:\\Chronoman                  |
-|                                  | Files\\JulianFirst.cmd\"         |
-|                                  | \[\[\$SCHEDULE DATE JUL\]\]      | |                                  |                                  |
+|                                  | "C:\\Chronoman                  |
+|                                  | Files\\JulianFirst.cmd"         |
+|                                  | \[\[$SCHEDULE DATE JUL\]\]      | |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
 |                                  | **JulianFirst.cmd File**:        |
 |                                  |                                  |
-|                                  | \"C:\\Program                    |
+|                                  | "C:\\Program                    |
 |                                  | File                             |
-|                                  | s\\OpConxps\\MSLSAM\\Chronoman\" |
+|                                  | s\\OpConxps\\MSLSAM\\Chronoman" |
 |                                  | =cC:\\Chronoman                  |
 |                                  | Files\\JulianFirstCommand.txt    |
 |                                  | =sTestSchedule =j%1              |
@@ -1184,7 +1184,7 @@ cannot resolve any System or user-defined System tokens.
 |                                  |                                  |
 |                                  | SET_FORMAT_STRING, YYYYy\        |
 |                                  | SET_TOKEN_NAME,                  |
-|                                  | \"Julian.First\"\                |
+|                                  | "Julian.First"\                |
 |                                  | FIND_MONTH_BEGIN\                |
 |                                  | FIND_WORKING_DAY_FORWARD\        |
 |                                  | ZERO_FILL_DIRECTIVE,5,7          |
@@ -1207,7 +1207,7 @@ cannot resolve any System or user-defined System tokens.
 |                                  |     defines the property to be   |
 |                                  |     updated as Julian.First. The |
 |                                  |     name is surrounded in quotes |
-|                                  |     as \"Julian.First\" because  |
+|                                  |     as "Julian.First" because  |
 |                                  |     there is a period in the     |
 |                                  |     name.                        |
 |                                  | -   [FIND_MONTH_BEGIN]{styl      | |                                  | e="font-family: 'Courier New';"} |
@@ -1300,7 +1300,7 @@ Chronoman processing.
 - The log file resides in the \<Output Directory\>\\MSLSAM\\Log\\
     directory.
 - Each time the Chronoman.exe runs, it creates a log file name with
-    the following syntax: Chronoman_CCYYMMDD_HHmmssss.log. The \"ssss\"
+    the following syntax: Chronoman_CCYYMMDD_HHmmssss.log. The "ssss"
     in syntax represents seconds and tenths of seconds (e.g.,
     Chronoman_20110513_15263142.log).
 - Upon startup, Chronoman.exe checks the MSLSAM\\Log folder for log
@@ -1402,7 +1402,7 @@ Chronoman ERROR: \#\#\#\#\# Supplemental Data: \[xxxxxxxxxx\]
 |              |                                                      |
 |              | The Property Name cannot contain the following       |
 |              | characters:\                                         |
-|              | \' ( ) \\ , = ; \|                                   |
+|              | ' ( ) \\ , = ; \|                                   |
 +--------------+------------------------------------------------------+
 | 27           | Time format not specified.                           |
 +--------------+------------------------------------------------------+

@@ -49,7 +49,7 @@ You will need to make sure the Enterprise Manager is configured to
 communicate with the OpCon database.
 
 :::note
-The OpCon Server component\'s database connection should have been automatically configured during the SMA OpCon SAM installation. For more information, refer to the [SMA Connection Configuration Tool](../server-programs/schedule-activity-monitor.md#SMA) in the **Server Programs** online help.
+The OpCon Server component's database connection should have been automatically configured during the SMA OpCon SAM installation. For more information, refer to the [SMA Connection Configuration Tool](../server-programs/schedule-activity-monitor.md#SMA) in the **Server Programs** online help.
 :::
 
 [Configure the Database Connection Information for the OpCon Server]{.ul}
@@ -113,7 +113,7 @@ Choose your authentication method and connect to the database. Choose
 option *a* or *b* .
 
 a.  To use SQL Authentication, enter *opconui* in the **Username** field
-    and enter *opconui\'s password* in the **Password** text box.
+    and enter *opconui's password* in the **Password** text box.
 b.  To use Windows Authentication, select the **Use Windows
     Authentication** checkbox.
 
@@ -235,11 +235,11 @@ password entered by the user** radio button.
 
 Enter *opconui* in the **Login ID** field.
 
-Enter *opconui\'s password* in the **Password** field then click
+Enter *opconui's password* in the **Password** field then click
 **Next**.
 
 :::note
-The default opconui password is 0pC0nxp\$. The \'0\'s are zeros, and the character after the \'p\' is a dollar sign.
+The default opconui password is 0pC0nxp$. The '0's are zeros, and the character after the 'p' is a dollar sign.
 :::
 
 Select the **Change the default database to** checkbox.
@@ -494,7 +494,7 @@ Select the **Securables** page in the **Select a page** navigation pane.
 
 Click **Search**.
 
-Select the **The server \'*Servername\\Instance*\'** radio button and
+Select the **The server '*Servername\\Instance*'** radio button and
 click **OK**.
 
 :::note
@@ -522,21 +522,21 @@ Expand (+) the **Security** folder.
 If the SAM and the database are on a different machine:
 
 +----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [On a domain named  | | circular                         | \"ABCCompany\" with a SAM        |
+| ![White pencil icon on green     | **EXAMPLE:** [On a domain named  | | circular                         | "ABCCompany" with a SAM        |
 | background](../../Reso           | Application Server named         |
-| urces/Images/example-icon(48x48) | \"OpConxpsServer\", the Login    |
+| urces/Images/example-icon(48x48) | "OpConxpsServer", the Login    |
 | .png "Example icon") | name for the SQL server would    |
 |                                  | be:]{.statement2}                |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
-|                                  | ABCCompany\\OpConxpsServer\$     |
+|                                  | ABCCompany\\OpConxpsServer$     |
 +----------------------------------+----------------------------------+
 
 a.  Right-click **Logins** and select **New Login** from the menu.
 b.  Enter the *domain* and *SAM Application Server name* in the **Login
     name** text box, using the following syntax:
-    [DomainName\\ServerName\$]{style="font-family: 'Courier New';"} c.  Proceed to Step 5.
+    [DomainName\\ServerName$]{style="font-family: 'Courier New';"} c.  Proceed to Step 5.
 
 *- or -*
 
@@ -652,7 +652,7 @@ A new Sync category with:
 - [Role=\[Value for     DefaultOpConRole\]]{style="font-family: 'Courier New';"}
 
 For **LDAPGroupUseHash**, this setting can be removed and the program
-will correctly read the \'\#\' character in a Group name.
+will correctly read the '\#' character in a Group name.
 
 Add **DefaultUserPassword**. Set the value to the encrypted value for
 default password for OpCon users that will be added by SMALDAPMon. Use
@@ -799,7 +799,7 @@ Review all parameters for correctness. Review all
 [General](../administration/server-options.md#general) settings in the
 **Concepts** online help for details.
 
-To modify a parameter\'s value:
+To modify a parameter's value:
 
 a.  Click on the preferred **parameter** in the parameter table.
 b.  Enter a *valid value* in the frame at the bottom of the screen.
@@ -945,7 +945,7 @@ skip this section and proceed to [OpCon Server Configuration](#Finish).
      in the **Concepts** online help.
 
   --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White \"X\" icon on red circular background](../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Backing up the OpCon database and the transaction log regularly is an extremely important aspect of operating OpCon. If the transaction log is not backed up regularly, the hard drive eventually fills up and OpCon discontinues processing.]
+  ![White "X" icon on red circular background](../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Backing up the OpCon database and the transaction log regularly is an extremely important aspect of operating OpCon. If the transaction log is not backed up regularly, the hard drive eventually fills up and OpCon discontinues processing.]
   --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [Create DSNs for the Transport Databases]{.ul}
@@ -1099,7 +1099,7 @@ If **UNIX LSAMs** exist in the environment:
 
 a.  Select **UNIXLSAMPath** in the **Select Global Property** list box.
 b.  In the **Global Property Value** text box, verify the path to the
-    \"bin\" directory on the UNIX machine.
+    "bin" directory on the UNIX machine.
 
 Select **DB_SERVER_NAME** in the **Select Global Property** list box.
 
@@ -1171,7 +1171,7 @@ the AdHoc jobs. Use either [Event Notification](../notifications/Event-Notificat
 the **Concepts** online help to configure notifications for groups of
 jobs, or go to the [Job Events](../Files/UI/Enterprise-Manager/Job-Events.md) in
 the **Enterprise Manager** online help to configure for each job with
-the \$NOTIFY:\<Action\> events. Refer to additional information about
+the $NOTIFY:\<Action\> events. Refer to additional information about
 [Defining Events](../events/defining.md)
  in the **OpCon Events** online help.
 
@@ -1230,13 +1230,13 @@ message:
 a.  Environment for the SAM and database (e.g., Production)
 b.  The System ID copied from the **License Information** tab (press
     **Ctrl + V** to paste the value from the clipboard)
-c.  Your company\'s name
+c.  Your company's name
 
 [Place the License File in the SAM Directory]{.ul}
 After SMA Technologies responds to the license request, save the license file to the SAM directory.
 
 :::caution
-If the license file is encrypted after being received from SMA Technologies (e.g., saved to a Windows folder set with the \"Encrypt contents to secure data\" option), SAM will not be able to read the license file.
+If the license file is encrypted after being received from SMA Technologies (e.g., saved to a Windows folder set with the "Encrypt contents to secure data" option), SAM will not be able to read the license file.
 :::
 
 1. Open your email program to get the license file from [SMA     Technologies]{.GeneralCompanyName}.

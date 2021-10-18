@@ -6,7 +6,7 @@ the scripts in this topic, refer to [Environment Variables](#Environm).
 This section describes the scripts used to maintain the database through
 OpCon. SMA Technologies suggests:
 
-- Daily backups of the \"master\", \"msdb\", and \"distribution\"
+- Daily backups of the "master", "msdb", and "distribution"
     databases to provide further data protection. These backups are used
     in the event of the loss of the database server, refer to [Job     Details](#Job).
 - Monthly to yearly maintenance with supplemental scripts depending on
@@ -27,12 +27,12 @@ files, refer to [Mirroring Information Worksheet](Database-Mirroring-Checklist.m
 SMA Technologies provides several supplemental SQL stored procedures to aid in managing the OpCon data.
 
 :::note
-A SQL user without administrator privileges must be a member of the \"opconspuser\" role to use the following supplemental stored procedures.
+A SQL user without administrator privileges must be a member of the "opconspuser" role to use the following supplemental stored procedures.
 :::
 
 - [SMA_JOBAVG](#SMA_JOBA): Averages the run time of
     jobs in the OpCon database history.
-- [SMA_CLEAN_ENS](#SMA_CLEA): Cleans up \"orphaned\"
+- [SMA_CLEAN_ENS](#SMA_CLEA): Cleans up "orphaned"
     entries in the ENSSELECTED table of the OpCon database.
 - [SMA_COMPACTTOKENIDS](#SMA_COMP): Re-allocates the
     IDs for the tokens in the OpCon database to lower the number of the
@@ -44,7 +44,7 @@ The SMA_JOBAVG stored procedure will automatically calculate average
 start time and run time by frequency for every job it processes.
 
 :::note
-The Job Average utility only uses the run times of jobs in the \"FINISHED OK\" status. Jobs that are Marked FINISHED OK are not considered. It also uses the first run of the job each day to calculate average start times (Finished OK or Failed status).
+The Job Average utility only uses the run times of jobs in the "FINISHED OK" status. Jobs that are Marked FINISHED OK are not considered. It also uses the first run of the job each day to calculate average start times (Finished OK or Failed status).
 :::
 
 The SMA_JOBAVG stored procedure should be scheduled to run at regular
@@ -82,21 +82,21 @@ For SQL Authentication:
 
 call .\\SMA_SetDBEnvironmentScriptingVariables.cmd ↵
 
-sqlcmd -S%OpConxpsSQLInstance% -Uopconsam -P%opconsamDefault% -Q\"exec
-%DatabaseName%.dbo.SMA_JOBAVG\" \> SMA_JOBAVG.txt ↵
+sqlcmd -S%OpConxpsSQLInstance% -Uopconsam -P%opconsamDefault% -Q"exec
+%DatabaseName%.dbo.SMA_JOBAVG" \> SMA_JOBAVG.txt ↵
 
 For Windows Authentication:
 
 call .\\SMA_SetDBEnvironmentScriptingVariables.cmd ↵
 
-sqlcmd -S%OpConxpsSQLInstance% -E -Q\"exec
-%DatabaseName%.dbo.SMA_JOBAVG\" \> SMA_JOBAVG.txt ↵
+sqlcmd -S%OpConxpsSQLInstance% -E -Q"exec
+%DatabaseName%.dbo.SMA_JOBAVG" \> SMA_JOBAVG.txt ↵
 
 If desired, the default behavior of the stored procedure can be changed
 by modifying the desired command file to use the following syntax in the
 -Q parameter:
 
--Q\"exec %DatabaseName%.dbo.SMA_JOBAVG SW1,SW2,SW3,\'SW4\',\'SW5\'\"
+-Q"exec %DatabaseName%.dbo.SMA_JOBAVG SW1,SW2,SW3,'SW4','SW5'"
 
 - **SW1**: Defines the number of job run times to be averaged. Specify
     the desired value, or use the word DEFAULT as a place holder to
@@ -132,7 +132,7 @@ by modifying the desired command file to use the following syntax in the
 5. Modify the **--Q** parameter. Insert the values for SW1 through SW5,
     as desired. These values must be in order, must start with one space
     after the **SMA_JOBAVG** stored procedure name, and must precede the
-    closing quotation mark (\") for the command.
+    closing quotation mark (") for the command.
 
 #### Syntax
 
@@ -162,7 +162,7 @@ help).
 
 ### SMA_CLEAN_ENS
 
-The SMA_CLEAN_ENS stored procedure cleans up \"orphaned\" entries in the
+The SMA_CLEAN_ENS stored procedure cleans up "orphaned" entries in the
 ENSSELECTED table of the OpCon database.
 
   ---------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -181,7 +181,7 @@ The stored procedure performs the following actions:
   - Duplicate entries
   - A group of machine triggers in ENSSELECTED contains a machine ID
         that does not exist in the main machine (MACHS) table.
-  - A schedule\'s ID in ENSSELECTED does not exist in the main
+  - A schedule's ID in ENSSELECTED does not exist in the main
         schedule (SNAME) table.
   - A schedule in ENSSELECTED contains a job ID that does not exist
         in the main job (JMASTER) table.
@@ -206,7 +206,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -276,7 +276,7 @@ highest number. The highest possible ID for a threshold or resource is
 processing jobs properly.
 
 The SMA_COMPACTTHRESHIDS stored procedure should be scheduled to run at
-regular intervals to keep the \"next\" token ID value below the maximum.
+regular intervals to keep the "next" token ID value below the maximum.
 SMA Technologies provides command files for automating the maintenance of Threshold and Resource IDs. These files
 reside in the \<Configuration Directory\>\\Utilities\\Database\\
 directory.
@@ -335,14 +335,14 @@ Directory\>\\Utilities\\Database\\.
 |                                  |                                  |
 |                                  | Command Line:                    |
 |                                  |                                  |
-|                                  | \"\[\[SM                         | |                                  | AOpConDataPath\]\]\\utilities\\d |
-|                                  | atabase\\Compact_ThreshIDs.cmd\" |
+|                                  | "\[\[SM                         | |                                  | AOpConDataPath\]\]\\utilities\\d |
+|                                  | atabase\\Compact_ThreshIDs.cmd" |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
 |                                  | Working Directory:               |
 |                                  |                                  |
-|                                  | \"\[\[SMAOpConDat                | |                                  | aPath\]\]\\utilities\\database\" |
+|                                  | "\[\[SMAOpConDat                | |                                  | aPath\]\]\\utilities\\database" |
 +----------------------------------+----------------------------------+
 
 SMA Technologies recommends scheduling this job during a time that thresholds and resources are not being deleted and
@@ -359,7 +359,7 @@ for a token is 2,147,483,647. If the ID is exceeded, the SAM is unable
 to continue processing jobs properly.
 
 The SMA_COMPACTTOKENIDS stored procedure should be scheduled to run at
-regular intervals to keep the \"next\" token ID value below the maximum.
+regular intervals to keep the "next" token ID value below the maximum.
 SMA Technologies provides command files for automating the maintenance of token IDs. These files reside in the
 \<Configuration Directory\>\\Utilities\\Database\\ directory.
 
@@ -417,14 +417,14 @@ Directory\>\\Utilities\\Database\\.
 |                                  |                                  |
 |                                  | Command Line:                    |
 |                                  |                                  |
-|                                  | \"\[\[S                          | |                                  | MAOpConDataPath\]\]\\utilities\\ |
-|                                  | database\\Compact_TokenIDs.cmd\" |
+|                                  | "\[\[S                          | |                                  | MAOpConDataPath\]\]\\utilities\\ |
+|                                  | database\\Compact_TokenIDs.cmd" |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
 |                                  | Working Directory:               |
 |                                  |                                  |
-|                                  | \"\[\[SMAOpConD                  | |                                  | ataPath\]\]\\utilities\\database |
+|                                  | "\[\[SMAOpConD                  | |                                  | ataPath\]\]\\utilities\\database |
 +----------------------------------+----------------------------------+
 
 SMA Technologies recommends scheduling this job during a time that tokens are not being deleted and recreated.

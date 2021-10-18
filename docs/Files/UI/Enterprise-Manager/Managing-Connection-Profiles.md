@@ -13,7 +13,7 @@ Development
 
 ![Color-coded Navigational Views](../../../Resources/Images/EM/EMprofilepics.png "Color-coded Navigational Views")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Setting up New Profiles](Setting-up-New-Profiles.md)

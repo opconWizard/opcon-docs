@@ -43,7 +43,7 @@ arguments are:
 |                                  | created.                         |
 |                                  |                                  |
 |                                  | Create a token called            |
-|                                  | \$DATEMMDDYYYY with a value of   |
+|                                  | $DATEMMDDYYYY with a value of   |
 |                                  | mmddyyyy.                        |
 |                                  |                                  |
 |                                  | Create a job that executes       |
@@ -52,12 +52,12 @@ arguments are:
 |                                  |                                  |
 |                                  | -   **-r**                       |
 |                                  |                                  |
-|                                  |   \"C:\\ProgramData\\OpConxps\\S |
+|                                  |   "C:\\ProgramData\\OpConxps\\S |
 |                                  | MAResourceMonitor\\Rules\\\<Rule |
-|                                  |     Name\>.Rule\"                |
+|                                  |     Name\>.Rule"                |
 |                                  | -   **-f**                       |
-|                                  |     \"C:\\temp\                  |
-|                                  | \dym\[\[\$DATEMMDDYYYY\]\].txt\" | |                                  |                                  |
+|                                  |     "C:\\temp\                  |
+|                                  | \dym\[\[$DATEMMDDYYYY\]\].txt" | |                                  |                                  |
 |                                  | This new job can be run daily to |
 |                                  | update the name specification in |
 |                                  | the Rules file.                  |
@@ -85,10 +85,10 @@ arguments are:
 |                                  |                                  |
 |                                  | -   **-r**                       |
 |                                  |                                  |
-|                                  |   \"C:\\ProgramData\\OpConxps\\S |
+|                                  |   "C:\\ProgramData\\OpConxps\\S |
 |                                  | MAResourceMonitor\\Rules\\\<Rule |
-|                                  |     Name\>.Rule\"                |
-|                                  | -   **-f** \"\[\[DYNFNAME\]\]\"  | |                                  |                                  |
+|                                  |     Name\>.Rule"                |
+|                                  | -   **-f** "\[\[DYNFNAME\]\]"  | |                                  |                                  |
 |                                  | Before running this job, an      |
 |                                  | event to set this token must be  |
 |                                  | generated from the UNIX machine  |

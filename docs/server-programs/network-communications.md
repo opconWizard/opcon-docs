@@ -50,7 +50,7 @@ installed.
 
 If TLS client authentication is used, the LSAM must similarly be able to
 authenticate the SMANetCom certificate. The matching certificate or the
-root certificate must be stored as documented for the LSAM\'s host
+root certificate must be stored as documented for the LSAM's host
 platform.
 
 SMA Technologies documentation for each LSAM will provide guidelines for configuring the LSAM options that control TLS
@@ -145,7 +145,7 @@ The Configuration Directory location is based on where you installed your progra
 :::
 
 The tables contain the definitions of each configuration parameter. If a
-value of \"Y\" is in the Dynamic column, any changes take effect
+value of "Y" is in the Dynamic column, any changes take effect
 immediately upon saving the file. All other configuration settings
 require the service to be restarted before the change takes effect.
 
@@ -212,7 +212,7 @@ Service Settings contain basic information for SMANetCom processing.
 |                  |             |               |     .      |
 |                  |             |               | -   \# (hash     |
 |                  |             |               |     symbol) and  |
-|                  |             |               |     \' (single   |
+|                  |             |               |     ' (single   |
 |                  |             |               |     quot         |
 |                  |             |               | ation/apostrophe |
 |                  |             |               |     sign) are    |
@@ -230,7 +230,7 @@ Service Settings contain basic information for SMANetCom processing.
 |                  |             |               |     file, and    |
 |                  |             |               |     the          |
 |                  |             |               |                  |
-|                  |             |               |   \'(apostrophe) |
+|                  |             |               |   '(apostrophe) |
 |                  |             |               |     is not       |
 |                  |             |               |     allowed from |
 |                  |             |               |     EM and it    |
@@ -275,9 +275,9 @@ Service Settings contain basic information for SMANetCom processing.
 |                  |             |               |     From a       |
 |                  |             |               |     Command      |
 |                  |             |               |     Prompt,      |
-|                  |             |               |     \'-install\' |
+|                  |             |               |     '-install' |
 |                  |             |               |     or           |
-|                  |             |               |     \'-remove\'  |
+|                  |             |               |     '-remove'  |
 |                  |             |               |     is used to   |
 |                  |             |               |     i            |
 |                  |             |               | nstall/uninstall |
@@ -331,7 +331,7 @@ Service Settings contain basic information for SMANetCom processing.
 - The SMANetComName setting is available to set in the event that
     multiple instances of SMANetCom are required to support the volume
     of LSAMs. Each LSAM can be assigned to its own SMANetCom in the LSAM
-    machine definition\'s Advanced Settings in the database.
+    machine definition's Advanced Settings in the database.
 - One SMANetCom instance (based on its name) can support maximum 2048
     LSAMs; however, administrators should determine the maximum number
     for an environment based on performance.
@@ -387,7 +387,7 @@ path.
 | General Settings | Default    | Dynamic (Y/N) | Description      |
 +==================+============+===============+==================+
 | Mode             | StandAlone | N             | -   Determines   |
-|                  |            |               |     SMANetCom\'s |
+|                  |            |               |     SMANetCom's |
 |                  |            |               |     role in the  |
 |                  |            |               |     failover     |
 |                  |            |               |     process.     |
@@ -425,8 +425,8 @@ path.
 |                  |            |               |     two sets of  |
 |                  |            |               |     double       |
 |                  |            |               |     quotes       |
-|                  |            |               |     (\"          |
-|                  |            |               | \"\<Path\>\"\"). |
+|                  |            |               |     ("          |
+|                  |            |               | "\<Path\>""). |
 +------------------+------------+---------------+------------------+
 | T                | \<Blank\>  | N             | -   Provides the |
 | erminationScript |            |               |     path and     |
@@ -443,8 +443,8 @@ path.
 |                  |            |               |     two sets of  |
 |                  |            |               |     double       |
 |                  |            |               |     quotes       |
-|                  |            |               |     (\"          |
-|                  |            |               | \"\<Path\>\"\"). |
+|                  |            |               |     ("          |
+|                  |            |               | "\<Path\>""). |
 +------------------+------------+---------------+------------------+
 
 : SMANetCom Configuration: General Settings
@@ -482,7 +482,7 @@ path.
 | CheckLSAMConfigura |         |               |     often          |
 | tionInMilliseconds |         |               |     SMANetCom      |
 |                    |         |               |     checks each    |
-|                    |         |               |     LSAM\'s        |
+|                    |         |               |     LSAM's        |
 |                    |         |               |     configuration  |
 |                    |         |               |     parameters for |
 |                    |         |               |     an update.     |
@@ -521,8 +521,8 @@ The Debug Options configure the SMANetCom logging behavior.
 |                    |         |               |     When the file  |
 |                    |         |               |     reaches this   |
 |                    |         |               |     maximum size,  |
-|                    |         |               |     it is \"rolled |
-|                    |         |               |     over.\"        |
+|                    |         |               |     it is "rolled |
+|                    |         |               |     over."        |
 |                    |         |               | -   This setting   |
 |                    |         |               |     creates small, |
 |                    |         |               |     manageable log |
@@ -640,7 +640,7 @@ The Debug Options configure the SMANetCom logging behavior.
 |                    |         |               | -   The valid      |
 |                    |         |               |     setting is     |
 |                    |         |               |     NONE, ALL, or  |
-|                    |         |               |     the machine\'s |
+|                    |         |               |     the machine's |
 |                    |         |               |     name.          |
 +--------------------+---------+---------------+--------------------+
 
@@ -654,7 +654,7 @@ Application Log of the Windows Event Viewer.
 +---------------+-----------------+---------------+-----------------+
 | Service Start | Default         | Dynamic (Y/N) | Description     |
 +===============+=================+===============+=================+
-| Msg           | \$SERVICENAME   | Y             | -   Defines the |
+| Msg           | $SERVICENAME   | Y             | -   Defines the |
 |               | started.\       |               |     log message |
 |               |                 |               |     indicating  |
 |               |                 |               |     SMANetCom   |
@@ -669,7 +669,7 @@ Application Log of the Windows Event Viewer.
 |               |                 |               |     this        |
 |               |                 |               |     setting.    |
 |               |                 |               | -               |
-|               |                 |               |   \$SERVICENAME |
+|               |                 |               |   $SERVICENAME |
 |               |                 |               |     is a        |
 |               |                 |               |     supported   |
 |               |                 |               |     token for   |
@@ -693,7 +693,7 @@ Application Log of the Windows Event Viewer.
 +--------------+-----------------+---------------+-----------------+
 | Service Stop | Default         | Dynamic (Y/N) | Description     |
 +==============+=================+===============+=================+
-| Msg          | \$SERVICENAME   | Y             | -   Defines the |
+| Msg          | $SERVICENAME   | Y             | -   Defines the |
 |              | stopped.\       |               |     log message |
 |              |                 |               |     indicating  |
 |              |                 |               |     the         |
@@ -710,7 +710,7 @@ Application Log of the Windows Event Viewer.
 |              |                 |               |     this        |
 |              |                 |               |     setting.    |
 |              |                 |               | -               |
-|              |                 |               |   \$SERVICENAME |
+|              |                 |               |   $SERVICENAME |
 |              |                 |               |     is a        |
 |              |                 |               |     supported   |
 |              |                 |               |     token for   |

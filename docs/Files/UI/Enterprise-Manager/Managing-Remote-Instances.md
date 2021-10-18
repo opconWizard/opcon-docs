@@ -18,7 +18,7 @@ functionality.
 
 ![Remote Instances toolbar](../../../Resources/Images/EM/EMdashboardtoolbar.png "Remote Instances toolbar")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Adding Remote Instances](Adding-Remote-Instances.md)

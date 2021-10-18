@@ -40,7 +40,7 @@ To build schedules automatically, create a command file containing the
 DoBatch program and the BUILD parameter, using the following syntax:
 
 DoBatch.exe \[DSN\],UID,PWD,logfile,BUILD\[HLD\],StartDate,EndDate,
-\[Overwrite?\],ScheduleName(s) +CSV+ +JOBID+\[\[\$JOBID\]\] ↵
+\[Overwrite?\],ScheduleName(s) +CSV+ +JOBID+\[\[$JOBID\]\] ↵
 
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | how to create a command file to  |
@@ -49,8 +49,8 @@ DoBatch.exe \[DSN\],UID,PWD,logfile,BUILD\[HLD\],StartDate,EndDate,
 | .png "Example icon") | and overwrite any existing       |
 |                                  | schedules:                       |
 |                                  |                                  |
-|                                  | cd \"c:\\program                 |
-|                                  | files\\opconxps\\opconxps\" ↵\   |
+|                                  | cd "c:\\program                 |
+|                                  | files\\opconxps\\opconxps" ↵\   |
 |                                  | DoBatch.exe,batchuser,           |
 |                                  | password,build.log,BUILD,1,7,y,\ |
 |                                  | SCHED1,SCHED2 ↵                  |
@@ -62,15 +62,15 @@ To check schedules automatically, create a command file containing the
 DoBatch program and the CHECK parameter, using the following syntax:
 
 DoBatch.exe
-\[DSN\],UID,PWD,logfile,CHECK\[+\],StartDate,EndDate,ScheduleName(s) +JOBID+\[\[\$JOBID\]\] ↵
+\[DSN\],UID,PWD,logfile,CHECK\[+\],StartDate,EndDate,ScheduleName(s) +JOBID+\[\[$JOBID\]\] ↵
 
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | how to create a command file to  |
 | background](../../../Reso        | check all schedules for the next |
 | urces/Images/example-icon(48x48) | day:                             |
 | .png "Example icon") |                                  |
-|                                  | cd \"c:\\program                 |
-|                                  | files\\opconxps\\opconxps\" ↵\   |
+|                                  | cd "c:\\program                 |
+|                                  | files\\opconxps\\opconxps" ↵\   |
 |                                  | DoBatch.exe,batchus              |
 |                                  | er,password,check.log,CHECK,1,1, |
 |                                  | ↵                                |
@@ -85,15 +85,15 @@ To delete schedules automatically, create a command file containing the
 DoBatch program and the DELETE parameter, using the following syntax:
 
 DoBatch.exe \[DSN\],UID,PWD,logfile,DELETE,StartDate,EndDate,
-ScheduleName(s) +JOBID+\[\[\$JOBID\]\] ↵
+ScheduleName(s) +JOBID+\[\[$JOBID\]\] ↵
 
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | how to create a command file to  |
 | background](../../../Reso        | delete all schedules for the     |
 | urces/Images/example-icon(48x48) | past seven days:                 |
 | .png "Example icon") |                                  |
-|                                  | cd \"c:\\program                 |
-|                                  | files\\opconxps\\opconxps\" ↵\   |
+|                                  | cd "c:\\program                 |
+|                                  | files\\opconxps\\opconxps" ↵\   |
 |                                  | DoBatch.exe,batchuser,p          |
 |                                  | assword,delete.log,DELETE,-7,-1, |
 |                                  | ↵                                |
@@ -105,7 +105,7 @@ To forecast schedules automatically, create a command file containing
 the DoBatch program and FORECAST parameter, using the following syntax:
 
 DoBatch.exe \[DSN\],UID,PWD,logfile,FORECAST,StartDate,EndDate,
-ScheduleName(s) +CSV+ +JOBID+\[\[\$JOBID\]\] ↵
+ScheduleName(s) +CSV+ +JOBID+\[\[$JOBID\]\] ↵
 
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | example shows how to create a    |
@@ -113,8 +113,8 @@ ScheduleName(s) +CSV+ +JOBID+\[\[\$JOBID\]\] ↵
 | urces/Images/example-icon(48x48) | schedule SCHED1 for the next     |
 | .png "Example icon") | seven days:                      |
 |                                  |                                  |
-|                                  | cd \"c:\\program                 |
-|                                  | files\\opconxps\\opconxps\" ↵\   |
+|                                  | cd "c:\\program                 |
+|                                  | files\\opconxps\\opconxps" ↵\   |
 |                                  | DoBatch.exe,batchuser,password,  |
 |                                  | forecast.log,FORECAST,1,7,SCHED1 |
 |                                  | +CSV+ ↵                          |
@@ -139,8 +139,8 @@ The Output Directory was configured during installation. For more information, r
 
 This section lists the DoBatch parameters and their descriptions.
 Information regarding *Build*, *Check*, *Delete*, and *Forecast* for
-each parameter is also provided. The letter \'**O**\' means optional,
-\'**R**\' means required, and \'**NA**\' means does not apply.
+each parameter is also provided. The letter '**O**' means optional,
+'**R**' means required, and '**NA**' means does not apply.
 
 - **DSN**: (Legacy) DSN should be left blank as DoBatch only executes
     using the database connection defined on the OpCon Server with the
@@ -235,13 +235,13 @@ each parameter is also provided. The letter \'**O**\' means optional,
         deletion of these files.
   - There is a file for each schedule. If the schedule is built for
         multiple days, the additional days are appended to the
-        schedule\'s file.
+        schedule's file.
 - **+JOBID+\[\[JOBID\]\]** (Optional): A parameter that defines the     unique ID of the job for SMASchedMan to send Detailed Job Messages
     back to.
   - If specified, the SAM will resolve the token at run time to the
-        job\'s unique ID. SMASchedMan will then be able to write all
-        Exception Messages and Completion Message to the job\'s
-        \"Detailed Job Messages\" field.
+        job's unique ID. SMASchedMan will then be able to write all
+        Exception Messages and Completion Message to the job's
+        "Detailed Job Messages" field.
 
 ## Logging
 

@@ -16,7 +16,7 @@ When on the **Notification Acknowledgement** screen, it lists any
 -   **Escalation Level**: The current level of the
     [escalation]{.GeneralEscalatedNotification}, as defined in the rule     sequence.
 -   **Status**: The current state of the
-    [escalation]{.GeneralEscalatedNotification}\'s acknowledgment.     Status has three states:
+    [escalation]{.GeneralEscalatedNotification}'s acknowledgment.     Status has three states:
     -   **Pending**: An [escalation]{.GeneralEscalatedNotification} is         awaiting acknowledgment and has been sent to one or more groups
         of users who are part of the
         [escalation]{.GeneralEscalatedNotification} rule.     -   **Exhausted**: An [escalation]{.GeneralEscalatedNotification}

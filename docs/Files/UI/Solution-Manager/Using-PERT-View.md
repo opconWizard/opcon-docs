@@ -35,7 +35,7 @@ indicate what was originally selected (i.e., jobs or schedules) for
 visualization.
 
 The color of each node in the diagram is dependent upon the underlying
-job\'s current job status, as indicated below:
+job's current job status, as indicated below:
 
 - Green - Indicates the underlying job has a status of [Finished     OK]{.skd-job-statuses}.
 - Black - Indicates the underlying job has a status of
@@ -236,7 +236,7 @@ style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -266,7 +266,7 @@ style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -296,7 +296,7 @@ style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (the selected job) has the   |
-|                                  |     \"Requires\" dependency on   |
+|                                  |     "Requires" dependency on   |
 |                                  |     the job where the line       |
 |                                  |     starts (the dependent job).  |
 |                                  |     In other words, the          |
@@ -328,7 +328,7 @@ style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |
@@ -359,7 +359,7 @@ style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |
@@ -390,7 +390,7 @@ style and image at the end.
 |                                  | -   The job on the end with the  |
 |                                  |     arrow pointing towards it    |
 |                                  |     (selected job) has an        |
-|                                  |     \"After\" dependency on the  |
+|                                  |     "After" dependency on the  |
 |                                  |     job where the line starts    |
 |                                  |     (dependent job). In other    |
 |                                  |     words, the *dependent job*   |
@@ -423,7 +423,7 @@ style and image at the end.
 | rces/Images/SM/SMconflictdepline | indicates a *Conflict*           |
 | .png "Conflict Dependency Line") | dependency. The job on the end   |
 |                                  | with the circle has a            |
-|                                  | \"Conflict\" dependency with the |
+|                                  | "Conflict" dependency with the |
 |                                  | job where the line starts. The   |
 |                                  | job with the circle on it will   |
 |                                  | not run if the job at the        |
@@ -592,7 +592,7 @@ Bulk Job Status Update (Schedule Level) in PERT View
 
 ![Bulk Job Status Update (Schedule Level) in PERT View](../../../Resources/Images/SM/BulkJobUpdate(ScheduleLevel)inPERT.png "Bulk Job Status Update (Schedule Level) in PERT View")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)

@@ -28,7 +28,7 @@ aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
 *(Optional)* Select the **[Allow Multi-Instance[[]{.MCTextPopupArrow}Determines if the job can have
 multiple instances of the same job on the same schedule date. To request
 multiple instances of a job, refer to Schedule Instance Definition or
-refer to the \$JOB:ADD event. To make full use of Multi-Instance jobs,
+refer to the $JOB:ADD event. To make full use of Multi-Instance jobs,
 SMA Technologies recommends using Job Instance Properties. Refer to
 Multi-Instance Jobs. ]{.MCTextPopupBody .MCTextPopupBody_Closed
 .needs-pie .popupBody
@@ -36,20 +36,20 @@ aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
 .popupHead}** checkbox. For more information, refer to [Multi-Instance Jobs](../../../operations/job-names.md#Multi-In) in
 the **Concepts** online help.
 
-Select the **[Disable Build[[]{.MCTextPopupArrow}Determines, when a build is requested, if the job\'s frequencies are reviewed by
+Select the **[Disable Build[[]{.MCTextPopupArrow}Determines, when a build is requested, if the job's frequencies are reviewed by
 SMASchedMan to refer to if it qualifies for the build date. If the value
-is False (default), when a build is requested, the job\'s frequencies
+is False (default), when a build is requested, the job's frequencies
 are reviewed by SMASchedMan to refer to if it qualifies for the build
 date. If the value is True, when a build is requested, SMASchedMan
 ignores the job. When the value is True, the job can still be added to a
-daily schedule through manually adding it or through a \$JOB:ADD(HLD)
+daily schedule through manually adding it or through a $JOB:ADD(HLD)
 event.]{.MCTextPopupBody .MCTextPopupBody_Closed .needs-pie .popupBody
 aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
 .popupHead}** checkbox. For more information, refer to [Disable Build](../../../objects/jobs.md#disable-build) in the **Concepts** online
 help.
 
 Select a **[primary machine[[]{.MCTextPopupArrow}Defines the name of a single machine for the job to run on. If the Primary Machine is not
-available at the job\'s run time, the job will not be able to run unless
+available at the job's run time, the job will not be able to run unless
 Alternate machines are avail-able. Additionally, if a Primary Machine is
 configured, the job cannot be configured to run on a Machine
 group.]{.MCTextPopupBody .MCTextPopupBody_Closed .needs-pie .popupBody
@@ -88,7 +88,7 @@ a.  Select the **[Run on Least Tasked Machine[[]{.MCTextPopupArrow}If     this o
     .popupHead}** radio button to run the job on one machine in the
     group.
 b.  Select the **[Run on Each Machine[[]{.MCTextPopupArrow}If this     option is set, OpCon runs the job on every machine in the group.
-    When the job\'s schedule is built and the job qualifies for the day,
+    When the job's schedule is built and the job qualifies for the day,
     OpCon creates a copy of the job for each machine in the group while
     assigning a specific machine to each copy of the job. The copy of
     each job is named using the following syntax: Job Name_Machine Name.

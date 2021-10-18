@@ -10,8 +10,8 @@ To add a batch user:
 2. Select **Windows** in the **Select the target OS** drop-down list.
 3. Click ![Add icon](../../../Resources/Images/EM/EMadd.png "Add icon") **Add** on the **Batch Users** toolbar.
 4. Enter a valid *Windows User* in the **User** text box.
-5. Enter the *user\'s password* in the **Password** text box.
-6. Enter the *user\'s password* again in the **Confirm Password** text box.
+5. Enter the *user's password* in the **Password** text box.
+6. Enter the *user's password* again in the **Confirm Password** text box.
 7. Click ![Save icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save** on the **Batch Users** toolbar.
 
 ## Adding a Batch User for IBM i
@@ -60,8 +60,8 @@ To add a batch user:
 2. Select **SQL** in the **Select the target OS** drop-down list.
 3. Click ![Add icon](../../../Resources/Images/EM/EMadd.png "Add icon") **Add** on the **Batch Users** toolbar.
 4. Enter a valid *Windows User* in the **User** text box.
-5. Enter the *user\'s password* in the **Password** text box.
-6. Enter the *user\'s password* again in the **Confirm Password** text box.
+5. Enter the *user's password* in the **Password** text box.
+6. Enter the *user's password* again in the **Confirm Password** text box.
 7. Click ![Save icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save** on the **Batch Users** toolbar.
 
 ## Adding a Batch User for UNIX

@@ -14,7 +14,7 @@ The schedule and job status change commands are used with events and graphical i
     [Held]{.skd-job-statuses} state. Jobs on the schedule(s) continue     processing from the point where they were stopped. If there are
     subschedules under the defined schedule and they are in a status of
     [Parent Hold]{.skd-job-statuses}, those subschedules will also be     released.
-- **Start Schedule**: Overrides the identified schedule\'s start
+- **Start Schedule**: Overrides the identified schedule's start
     date(s) and time(s), and causes them to run immediately. The SAM
     begins processing the schedule(s) as soon as this option is
     selected. If there are subschedules under the defined schedule and
@@ -61,12 +61,12 @@ The schedule and job status change commands are used with events and graphical i
         R/3 and CRM, SAP BW, UNIX, and z/OS platforms.
   - **Restart on Hold**: Places the selected job(s) automatically in
         an On Hold state on restart. -   **Mark Finished OK**: Changes the selected job(s) to a [Finished
-    OK]{.skd-job-statuses} status regardless of the job\'s current
+    OK]{.skd-job-statuses} status regardless of the job's current
     status. All events are processed as if the job(s) had [Finished     OK]{.skd-job-statuses} without intervention. If a job is [Marked
     Finished OK]{.skd-job-statuses} before it starts, both the start and
     finish time saved in history equal the time the job is marked.
 - **Mark Failed**: Changes the selected job(s) to a
-    [Failed]{.skd-job-statuses} status regardless of the job\'s current     status. All events are processed as if the job(s) had failed without
+    [Failed]{.skd-job-statuses} status regardless of the job's current     status. All events are processed as if the job(s) had failed without
     intervention. If a job is [Marked Failed]{.skd-job-statuses} before     it starts, both the start and finish time saved in history equal the
     time the job is marked.
 - **Under Review**: Places the selected job(s) in an [Under     Review]{.skd-job-statuses} status that reflects that the job is

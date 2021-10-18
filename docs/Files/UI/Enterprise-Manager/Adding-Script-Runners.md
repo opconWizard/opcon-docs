@@ -35,7 +35,7 @@ When creating script runners, bear in mind the following key points:
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
-|                                  | [Let\'s take this example one    | |                                  | step further and say that you    |
+|                                  | [Let's take this example one    | |                                  | step further and say that you    |
 |                                  | had two versions of the Python   |
 |                                  | runner for a Windows machine.    |
 |                                  | Here, in this case, you would    |
@@ -84,12 +84,12 @@ syntax for the placement of the file and arguments. As a base, you can
 copy the command template syntax from one of the following predefined
 script runners installed with application and modify it, accordingly:
 
--   PowerShell (powershell.exe -ExecutionPolicy Bypass -File \$FILE
-    \$ARGUMENTS)
--   Python (python \$FILE \$ARGUMENTS)
--   PERL (perl \$FILE \$ARGUMENTS)
--   Command Shell (cmd.exe /c \$FILE \$ARGUMENTS)
--   CScript (Cscript.exe \$FILE \$ARGUMENTS)
+-   PowerShell (powershell.exe -ExecutionPolicy Bypass -File $FILE
+    $ARGUMENTS)
+-   Python (python $FILE $ARGUMENTS)
+-   PERL (perl $FILE $ARGUMENTS)
+-   Command Shell (cmd.exe /c $FILE $ARGUMENTS)
+-   CScript (Cscript.exe $FILE $ARGUMENTS)
 
 When defining or modifying the command template, bear in mind the
 following:
@@ -97,11 +97,11 @@ following:
 -   The template may contain tokens, which will be resolved at runtime.
     -   SMA Technologies recommends using Machine         Instance properties for the path to the executable so that the
         template will work on different machines.
--   \$FILE is a placeholder for the location where the Agent should
+-   $FILE is a placeholder for the location where the Agent should
     place the filename when constructing the command to send to the
     operating system.
     -   This placeholder should be defined for every runner.
--   \$ARGUMENTS is a placeholder for the location where the Agent should
+-   $ARGUMENTS is a placeholder for the location where the Agent should
     place the arguments when constructing the command to send to the
     operating system.
     -   This placeholder is optional for each runner, but [SMA         Technologies]{.GeneralCompanyName} recommends that you include

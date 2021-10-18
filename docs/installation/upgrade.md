@@ -91,12 +91,12 @@ Use menu path: **Start \> Run**.
 
 Enter *cmd* to open a command window.
 
-Change the directory to the LSAM\'s directory.
+Change the directory to the LSAM's directory.
 
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../Reso           | cd \"c:\\program                 |
-| urces/Images/example-icon(48x48) | files\\opconxps\\mslsam\"        |
+| background](../../Reso           | cd "c:\\program                 |
+| urces/Images/example-icon(48x48) | files\\opconxps\\mslsam"        |
 | .png "Example icon") |                                  |
 +----------------------------------+----------------------------------+
 

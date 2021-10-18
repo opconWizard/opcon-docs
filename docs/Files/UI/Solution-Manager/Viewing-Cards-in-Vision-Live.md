@@ -142,11 +142,11 @@ statuses:
 |                                  |                                  |
 |                                  |                                  |
 |                                  | Now, if Card2 has a Pattern of   |
-|                                  | \"tag1\" and Card3 has a Pattern |
-|                                  | of \"tag2\", and if there is a   |
+|                                  | "tag1" and Card3 has a Pattern |
+|                                  | of "tag2", and if there is a   |
 |                                  | job that has Finished OK and has |
 |                                  | two tags associated with it      |
-|                                  | (\"tag1\" and \"tag2\"), this    |
+|                                  | ("tag1" and "tag2"), this    |
 |                                  | job will get counted once for    |
 |                                  | Card2 and once for Card3. But,   |
 |                                  | since Card1 has a sum of counts  |

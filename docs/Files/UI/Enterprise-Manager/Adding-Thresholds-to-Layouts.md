@@ -7,7 +7,7 @@ viewport: width=device-width, initial-scale=1.0
 #  Adding Thresholds to Layouts
 
   -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the privileges to \"Modify Jobs in Job Master\" in at least one department, or \"All Administration Functions\" or \"All Functions,\" the **Select Threshold** tool is disabled.]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the privileges to "Modify Jobs in Job Master" in at least one department, or "All Administration Functions" or "All Functions," the **Select Threshold** tool is disabled.]
   -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 To add a threshold:

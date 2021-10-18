@@ -8,7 +8,7 @@ viewport: width=device-width, initial-scale=1.0
 
 The **Operations** module has made performing mass action on job status
 updates at the date level easier. For example, with a few simple steps,
-you can update a job\'s status for a selected date to [Mark Finished OK]{.skd-job-statuses} when the job\'s current state is in [Waiting,
+you can update a job's status for a selected date to [Mark Finished OK]{.skd-job-statuses} when the job's current state is in [Waiting,
 Held]{.skd-job-statuses}.
 
 To perform bulk job status updates:
@@ -154,7 +154,7 @@ Click **Apply** to apply the job status change.
 
 Close the **Selection** panel when done.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)

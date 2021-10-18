@@ -30,7 +30,7 @@ on the specific screen in which you are currently working.
 | rces/Images/EM/EMcrossref.p | References**: This tool     |   |   |
 | ng "Cross References icon") | will allow you to view the  |   |   |
 |                             | cross reference details for |   |   |
-|                             | the schedule\'s dependent   |   |   |
+|                             | the schedule's dependent   |   |   |
 |                             | master jobs.                |   |   |
 +-----------------------------+-----------------------------+---+---+
 | ![Copy                      | **[]{#Copy}Copy**: This     |   |   | | icon](../../.               | tool will copy the          |   |   |

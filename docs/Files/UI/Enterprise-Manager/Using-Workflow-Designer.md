@@ -39,7 +39,7 @@ the toolbar below to learn more about its functionality.
 
 ![Workflow Designer toolbar](../../../Resources/Images/EM/EMwkflowdsgntoolbar.png "Workflow Designer toolbar")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Understanding Flow Diagram     Icons](Workflow-Designer-Flow-Diagram-Icons.md)

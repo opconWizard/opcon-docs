@@ -58,8 +58,8 @@ To perform this procedure:
 
 ## Viewing Job Output
 
-This action will open a job\'s output file when the job is complete.
-Before attempting to view a job\'s output file, first refer to [Viewing a Job Output
+This action will open a job's output file when the job is complete.
+Before attempting to view a job's output file, first refer to [Viewing a Job Output
 File](../../../operations/job-output.md) in the **Concepts** online help.
 
 To perform this procedure:
@@ -236,7 +236,7 @@ To perform this procedure:
 This action will send a request to kill the job. Any jobs dependent on
 killed jobs will not have the dependencies met. To enable/disable the
 kill feature, refer to the [Administrative Machine Information](../../../objects/machines.md#Administ) (Allow
-\"Kill Job\" section) within the **Concepts** online help.
+"Kill Job" section) within the **Concepts** online help.
 
   -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
   ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [This option is not available for the BIS, OpenVMS, IBM i, and OS 2200 platforms.]
@@ -308,7 +308,7 @@ This action will place the job back in a [Qualifying]{.skd-job-statuses} state. 
   -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If a job is configured to \"Run Again\" when [Finished OK]{.skd-job-statuses}, the actual run count is maintained across manual restarts of the job. To run the job again and reset the actual run count to zero, you must delete the job from the Daily and then add it back again. For more information, refer to [Deleting Jobs](#Deleting).]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If a job is configured to "Run Again" when [Finished OK]{.skd-job-statuses}, the actual run count is maintained across manual restarts of the job. To run the job again and reset the actual run count to zero, you must delete the job from the Daily and then add it back again. For more information, refer to [Deleting Jobs](#Deleting).]
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 To perform this procedure:
@@ -559,7 +559,7 @@ To perform this procedure:
 5. Click on **SAP Job Spools** from the menu. The **SAP Login** dialog
     displays.
 6. Enter the *SAP login credentials* then click **OK**. The **View SAP
-    Job\'s Spools** dialog displays.
+    Job's Spools** dialog displays.
 7. *(Optional)* Click the **Refresh** button to update
     the list.
 8. Double-click on the *job spool* to retrieve. The **SAP Spool
@@ -570,6 +570,6 @@ To perform this procedure:
     button to open the file in an external editor (e.g., Notepad).
 12. Click the **Close** button to close the **SAP Spool Details**
     dialog.
-13. Click the **Close** button to close the **View SAP Job\'s Spools**
+13. Click the **Close** button to close the **View SAP Job's Spools**
     dialog.
 :::

@@ -83,11 +83,11 @@ it builds. The syntax is:
 Parent Schedule Name_Container Job Name\[Schedule to Run as a SubSchedule\]
 
 +----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** A Schedule named    | | circular                         | \"Daily Process 1\" has a        |
-| background](../../Reso           | Container job named \"First      |
-| urces/Images/example-icon(48x48) | Backup\" that has set the        |
+| ![White pencil icon on green     | **EXAMPLE:** A Schedule named    | | circular                         | "Daily Process 1" has a        |
+| background](../../Reso           | Container job named "First      |
+| urces/Images/example-icon(48x48) | Backup" that has set the        |
 | .png "Example icon") | schedule to run as a subschedule |
-|                                  | to \"Backups\". When the         |
+|                                  | to "Backups". When the         |
 |                                  | schedule builds into the Daily   |
 |                                  | tables, the name would be:       |
 |                                  |                                  |
@@ -123,7 +123,7 @@ name of the subschedule:
     copies with several instance definitions where the first predefined
     property name is unique for each definition.
 
-## Accessing a Container Job\'s Properties
+## Accessing a Container Job's Properties
 
 When OpCon adds a Container job to a schedule
 in Operations and it has Job Instance properties, those properties are
@@ -131,7 +131,7 @@ also passed on to the subschedule as Schedule Instance properties. This
 is necessary because the jobs on its subschedule often need to access
 those properties. You can predefine the Job Instance properties on the
 Container job (refer to [Instance Definition](../job-components/instances)), in the
-[\$JOB:ADD event](../events/types.md#$JOB:ADD), or with
+[$JOB:ADD event](../events/types.md#$JOB:ADD), or with
 the [Adding Jobs to Daily Schedules](../operations/adding-jobs.md)
 feature.
 
@@ -140,12 +140,12 @@ feature.
 | background](../../Reso           | Windows machine, and each file   |
 | urces/Images/example-icon(48x48) | must be processed exactly the    |
 | .png "Example icon") | same way with a schedule named   |
-|                                  | \"ProcessFiles\" containing      |
+|                                  | "ProcessFiles" containing      |
 |                                  | three (3) jobs. Because a copy   |
-|                                  | of \"ProcessFiles\" must run     |
+|                                  | of "ProcessFiles" must run     |
 |                                  | each time a file arrives, the    |
 |                                  | administrator makes              |
-|                                  | \"ProcessFiles\" into a          |
+|                                  | "ProcessFiles" into a          |
 |                                  | subschedule and uses a           |
 |                                  | multi-instance Container job to  |
 |                                  | run that subschedule. To make    |
@@ -187,7 +187,7 @@ feature.
 |                                  | subschedule. The Container job   |
 |                                  | has multi-instance turned on and |
 |                                  | is given a frequency of          |
-|                                  | \"OnRequest\" with a date in the |
+|                                  | "OnRequest" with a date in the |
 |                                  | past selected. This will prevent |
 |                                  | the Container job from being     |
 |                                  | automatically built with the     |
@@ -214,7 +214,7 @@ feature.
 |                                  | [SMARM]{.GeneralSMARM} will add  | |                                  | the Container job to the Daily   |
 |                                  | schedule:                        |
 |                                  |                                  |
-|                                  | \$JOB:ADD,\[\[\$DATE\            | |                                  | ]\],MainProcess,DailyFiles,OnReq |
+|                                  | $JOB:ADD,\[\[$DATE\            | |                                  | ]\],MainProcess,DailyFiles,OnReq |
 |                                  | uest,FileName=\[\[\@FileName\]\] | |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -228,7 +228,7 @@ feature.
 |                                  | event, it adds a copy of the     |
 |                                  | *DailyFiles* multi-instance      |
 |                                  | Container job to the current     |
-|                                  | day\'s schedule with a Job       |
+|                                  | day's schedule with a Job       |
 |                                  | Instance property defined as:    |
 |                                  | [FileName=FileA]{style           | |                                  | ="font-family: 'Courier New';"}. |
 |                                  |                                  |
@@ -286,19 +286,19 @@ This example describes how to make one schedule dependent on another.
 |                                  | Container jobs.                  |
 |                                  |                                  |
 |                                  | a.  The first Container job is   |
-|                                  |     named \"RunFirst\" and has   |
+|                                  |     named "RunFirst" and has   |
 |                                  |     Schedule1 defined in         |
 |                                  |     Schedule to Run as a         |
 |                                  |     SubSchedule.                 |
 |                                  | b.  The second Container job is  |
-|                                  |     named \"RunSecond\" and has  |
+|                                  |     named "RunSecond" and has  |
 |                                  |     Schedule2 defined in         |
 |                                  |     Schedule to Run as a         |
 |                                  |     SubSchedule.                 |
 |                                  |                                  |
 |                                  | Creates a job dependency for     |
-|                                  | \"RunSecond\" to require         |
-|                                  | \"RunFirst\".                    |
+|                                  | "RunSecond" to require         |
+|                                  | "RunFirst".                    |
 |                                  |                                  |
 |                                  | As a result:                     |
 |                                  |                                  |
@@ -307,7 +307,7 @@ This example describes how to make one schedule dependent on another.
 |                                  |     List view in the Enterprise  |
 |                                  |     Manager Operations shows the |
 |                                  |     following:                   |
-|                                  | -   If all jobs on RunFirst\'s   |
+|                                  | -   If all jobs on RunFirst's   |
 |                                  |     subschedule                  |
 |                                  |     (Maste                       |
 |                                  | rSchedule_RunFirst\[Schedule1\]) | |                                  |     Finish OK, then RunSecond    |
@@ -349,20 +349,20 @@ This example describes how to make a job dependent on a schedule.
 |                                  | To set this up, the company:     |
 |                                  |                                  |
 |                                  | 1.  Creates a subschedule named  |
-|                                  |     \"ImportantJobs\".           |
+|                                  |     "ImportantJobs".           |
 |                                  | 2.  Moves the thirty jobs from   |
-|                                  |     the \"MasterProcess\"        |
+|                                  |     the "MasterProcess"        |
 |                                  |     schedule to the              |
-|                                  |     \"ImportantJobs\" schedule.  |
+|                                  |     "ImportantJobs" schedule.  |
 |                                  | 3.  Creates a Container job in   |
 |                                  |     the MasterProcess schedule   |
-|                                  |     named \"30Jobs\" and sets    |
+|                                  |     named "30Jobs" and sets    |
 |                                  |     ImportantJobs as the         |
 |                                  |     Schedule to Run as a         |
 |                                  |     SubSchedule.                 |
 |                                  | 4.  Creates a job dependency for |
-|                                  |     \"ProcessRecords\" to        |
-|                                  |     require \"30Jobs\".          |
+|                                  |     "ProcessRecords" to        |
+|                                  |     require "30Jobs".          |
 |                                  |                                  |
 |                                  | As a result:                     |
 |                                  |                                  |
@@ -372,13 +372,13 @@ This example describes how to make a job dependent on a schedule.
 |                                  |     schedule as a container for  |
 |                                  |     the subschedule named        |
 |                                  |     Master                       |
-|                                  | Process_30Jobs\[ImportantJobs\]. | |                                  | -   If the \"30Jobs\" Container  |
+|                                  | Process_30Jobs\[ImportantJobs\]. | |                                  | -   If the "30Jobs" Container  |
 |                                  |     job Finishes OK (because all |
 |                                  |     jobs on its subschedule      |
 |                                  |     Finished OK), then the       |
 |                                  |     dependency is met for        |
 |                                  |     ProcessRecords to run.       |
-|                                  | -   If the \"30Jobs\" Container  |
+|                                  | -   If the "30Jobs" Container  |
 |                                  |     job Fails (because one or    |
 |                                  |     more jobs failed on its      |
 |                                  |     subschedule), then the       |

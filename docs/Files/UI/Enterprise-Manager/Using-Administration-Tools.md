@@ -98,7 +98,7 @@ depending on the specific [editor](Navigation-Editors.md) or
 | esource in Use value icon") | value currently in use. The |   |   |
 |                             | **Locked** label will       |   |   |
 |                             | appear if one or more jobs  |   |   |
-|                             | require \"All\" of the      |   |   |
+|                             | require "All" of the      |   |   |
 |                             | resource.                   |   |   |
 +-----------------------------+-----------------------------+---+---+
 | ![Reset Job Type            | **[]{#Reset_Job_Type}Reset  |   |   | | icon](../../../Resourc      | Job Type** (Ctrl+Shift+D):  |   |   |

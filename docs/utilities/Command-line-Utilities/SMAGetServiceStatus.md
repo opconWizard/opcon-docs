@@ -8,7 +8,7 @@ recovery actions.
 
 []{#aanchor72} Use the following syntax for the SMAGetServiceStatus.exe program in the \<Target Directory\>\\OpConxps\\Utilities\\:
 
-SMAGetServiceStatus.exe \"*\<Service Display Name\>*\"
+SMAGetServiceStatus.exe "*\<Service Display Name\>*"
 
 ### Parameters
 
@@ -16,7 +16,7 @@ The following describes the command-line parameters:
 
 **SMAGetServiceStatus.exe**: The name of the command.
 
-**\<Service Display Name\>**: The \"Display Name\" for a service (in the
+**\<Service Display Name\>**: The "Display Name" for a service (in the
 Properties \> General tab) in the Services window. For more details,
 refer to [Getting Service Display Names](#Getting_Service_Display_Names).
 
@@ -47,11 +47,11 @@ To perform the procedure:
 |                                  | In the Job Details screen, the   |
 |                                  | Command Line is:                 |
 |                                  |                                  |
-|                                  | \"\<Target                       |
+|                                  | "\<Target                       |
 |                                  | Directory\>\\OpConxps\\Util      |
-|                                  | ities\\SMAGetServiceStatus.exe\" |
-|                                  | \"SMA Microsoft Resource         |
-|                                  | Monitor\"                        |
+|                                  | ities\\SMAGetServiceStatus.exe" |
+|                                  | "SMA Microsoft Resource         |
+|                                  | Monitor"                        |
 |                                  |                                  |
 |                                  | In the Job Details screen, the   |
 |                                  | Exit Code is EQ -2.              |
@@ -59,9 +59,9 @@ To perform the procedure:
 |                                  | In the Events screen:            |
 |                                  |                                  |
 |                                  | a.  The status is                |
-|                                  |     \'**Failed**\'.              |
+|                                  |     '**Failed**'.              |
 |                                  | b.  The Event is                 |
-|                                  |     \$                           |
+|                                  |     $                           |
 |                                  | NOTIFY:EMAIL,Admin\@Company.com, |
 |                                  |     SMA Microsoft Resource       |
 |                                  |     Monitor, SMA Microsoft       |

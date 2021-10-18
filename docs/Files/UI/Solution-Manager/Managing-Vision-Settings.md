@@ -86,7 +86,7 @@ frequencies, refer to [Managing Vision Frequencies](Managing-Vision-Frequencies.
 This field is optional for Group cards.
 :::
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Creating Cards](Creating-Cards.md)

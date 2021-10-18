@@ -36,8 +36,8 @@ Modify Advanced Machine Parameters
 15. Select **Available Property** in the **Administrative Machine
     Information** tab.
 16. Click the **Add** button. The **Add** dialog displays.
-17. Enter a *name* and a *value* (e.g., ProgramPath=\"C:\\Program
-    Files\\OpConxps\\Utilities\").
+17. Enter a *name* and a *value* (e.g., ProgramPath="C:\\Program
+    Files\\OpConxps\\Utilities").
 18. Click the **OK** button to add as an available property.
 19. Click the **Update** button to save the added available property or
     click the **Defaults** button to reset the **Available Property**

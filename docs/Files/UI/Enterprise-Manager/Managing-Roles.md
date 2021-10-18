@@ -14,7 +14,7 @@ toolbar below to learn more about its functionality.
 
 ![Roles toolbar](../../../Resources/Images/EM/EMsecurityusetoolbar.png "Roles toolbar")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Adding Roles](Adding-Roles.md)

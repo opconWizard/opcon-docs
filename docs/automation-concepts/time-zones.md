@@ -14,7 +14,7 @@ extremely difficult, and as a result, prone to error.
 
 Depending on the automation requirements, the
 OpCon administrator may choose to configure
-the OpCon server\'s time zone for Coordinated
+the OpCon server's time zone for Coordinated
 Universal Time (UTC). If there are users and
 LSAMs distributed across widely varied time zones, SMA Technologies strongly recommends
 setting the SAM server to UTC and establishing that common frame of
@@ -32,5 +32,5 @@ OpCon support supports the following:
     Name and Offset from UTC which is displayed with the Last SAM Pulse
     in Operations Views.
 - If the machine definitions contain time zone information, it is used
-    in combination with the SAM\'s time zone information to show an
-    LSAM\'s time offset from the SAM.
+    in combination with the SAM's time zone information to show an
+    LSAM's time offset from the SAM.

@@ -77,7 +77,7 @@ Solution Manager Operations with Filter Profiles
 
 ![Solution Manager Operations Filter Profiles](../../../Resources/Images/SM/Operations-with-Filter-Profiles.png "Solution Manager Operations Filter Profiles")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)

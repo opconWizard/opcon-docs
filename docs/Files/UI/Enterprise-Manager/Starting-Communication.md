@@ -7,7 +7,7 @@ viewport: width=device-width, initial-scale=1.0
 #  Starting Communication
 
 If the LSAM is not in a started state, the status can be changed to
-\'started\'.
+'started'.
 
 To perform this procedure:
 

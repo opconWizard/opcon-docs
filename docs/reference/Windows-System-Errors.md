@@ -664,8 +664,8 @@ Error Codes.
 
 : Windows Errors
 
-**Source:** *\"Platform SDK: Debugging and Error Handling: System Error
-Codes (0 -- 499).\"* MSDN Library.
+**Source:** *"Platform SDK: Debugging and Error Handling: System Error
+Codes (0 -- 499)."* MSDN Library.
 http://msdn.microsoft.com/library/default.asp?url=/library/en-us/debug/base/system_error_codes\_\_0-499\_.asp
 Accessed 11/30/2005 10:30 am.
 :::

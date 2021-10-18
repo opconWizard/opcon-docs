@@ -75,25 +75,25 @@ modification of the following information for ABAP Programs:
         group of values for the Variant.
   - **Low Value**: Defines a variable value associated with the
         Parameter name.
-    - If the Kind is set to \'**P**\' (simple parameter), the Low
-            Value is the variable used to represent that parameters\'
+    - If the Kind is set to '**P**' (simple parameter), the Low
+            Value is the variable used to represent that parameters'
             value.
-    - If the Kind is set to \'**S**\' (selection), the Low Value,
+    - If the Kind is set to '**S**' (selection), the Low Value,
             High Value, and Option are used with the Sign to qualify the
             parameter.
   - **High Value**: Defines a variable value associated with the
         Parameter name.
-    - If Kind is set to \'**P**\', the High Value does not apply
+    - If Kind is set to '**P**', the High Value does not apply
             and cannot be modified.
-    - If the Kind is set to \'**S**\', the Low Value, High Value,
+    - If the Kind is set to '**S**', the Low Value, High Value,
             and Option are used with the Sign to qualify the parameter.
   - **Kind**: Defines the parameter type. Parameter types are:
-    - **S** - Selection type: For modifying \'**S**\' type
-            parameters, refer to the \'Modify\' information below.
+    - **S** - Selection type: For modifying '**S**' type
+            parameters, refer to the 'Modify' information below.
     - **P** - Simple Parameter type: For information on the Low
             Value, refer to the [Job Dependency             Types](#Job_Dependency_Types) table.
   - **Option**: Options are operators that apply to the Low Value
-        and High Value when the Kind is set to \'**S**\'. Additionally,
+        and High Value when the Kind is set to '**S**'. Additionally,
         the *Sign* modifies the manner in which SAP applies the Option
         to qualify the parameter.
   - **Sign**: Determines whether to Include or Exclude the value
@@ -154,7 +154,7 @@ modification of the following information for ABAP Programs:
       - Print
     - **Selection cover sheet**: Determines whether the report
             output should include a cover page with the report
-            selections. Valid options are \'*Yes*\' and \'*No*\'.
+            selections. Valid options are '*Yes*' and '*No*'.
     - **Recipient**: Defines the name of the spool request
             recipient. On the print out, this name appears on the cover
             sheet. The default value for the recipient name is the

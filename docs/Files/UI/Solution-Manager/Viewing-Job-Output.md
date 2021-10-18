@@ -9,7 +9,7 @@ a job if it:
     Start Time]{.skd-job-statuses}, or [Skipped]{.skd-job-statuses}
 
 :::note
-Before attempting to view a job\'s output file, first refer to [Viewing a Job Output File](../../../operations/job-output.md) in the **Concepts** online help.
+Before attempting to view a job's output file, first refer to [Viewing a Job Output File](../../../operations/job-output.md) in the **Concepts** online help.
 :::
 
 To view job output:
@@ -66,7 +66,7 @@ Click the **Close** button to return to the previous page.
 
 Close the **Selection** panel when done.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Performing Job Status     Changes](Performing-Job-Status-Changes.md)

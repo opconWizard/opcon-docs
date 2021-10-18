@@ -34,7 +34,7 @@ functionality.
 Right-clicking on a script in the editor opens a menu that provides the
 same options as the toolbar.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Adding Scripts](Adding-Scripts.md)

@@ -67,7 +67,7 @@ mode will not be covered in this topic.
     database should be identical to the path of the principal database.
     If the file layouts must differ, the MOVE option in the RESTORE
     statement is required (e.g., if the principal database is on drive
-    \'F:\' but the mirror system lacks an F: drive).
+    'F:' but the mirror system lacks an F: drive).
 4. All of the server instances in a mirroring session should use the
     same master code page and collation. Differences can cause a problem
     during mirroring setup.
@@ -78,7 +78,7 @@ mode will not be covered in this topic.
     principal must wait for a response from the mirror before committing
     database changes. This can have a negative impact on performance.
 8. Do not reconfigure an in-use database mirroring endpoint. The server
-    instances use each other\'s endpoints to learn the state of the
+    instances use each other's endpoints to learn the state of the
     other systems. If the endpoint is reconfigured, it might restart,
     which can appear to be an error to the other server instances. This
     is particularly important in high-safety mode with automatic
@@ -141,9 +141,9 @@ SMA Technologies provides the following command files to aid with mirroring:
     directory.
 13. Right-click **SMA_SetDBMirroringScriptingVariables.cmd** and select
     **Edit** from the menu.
-14. Find the section in the command file named \"Scripting Variables
-    used on the witness server\".
-15. Delete the characters \"**rem**\" from the front of the SET command
+14. Find the section in the command file named "Scripting Variables
+    used on the witness server".
+15. Delete the characters "**rem**" from the front of the SET command
     for each of the five (5) Witness Server variables.
 16. Use menu path: **File \> Save**.
 17. **Close** the file.
@@ -159,10 +159,10 @@ Modify SMA_DBMirrorCreateLoginsAndEndpoints.cmd
     **Edit** from the menu.
 2. Find the section containing the **SMA_CREATEWITNESSENDPOINT**
     script.
-3. Delete the characters \"**rem**\" from the front of the two (2)
+3. Delete the characters "**rem**" from the front of the two (2)
     lines as instructed inside the command file.
 4. Find the section containing the **SMA_CREATEWITNESSLOGIN** scripts.
-5. Delete the characters \"**rem**\" from the front of the six (6)
+5. Delete the characters "**rem**" from the front of the six (6)
     lines as instructed inside the command file.
 6. Use menu path: **File \> Save**.
 7. **Close** the file.
@@ -172,10 +172,10 @@ Modify SMA_DBMirrorSetup.cmd
 1. Right-click **SMA_DBMirrorSetup.cmd**, and select **Edit** from the
     menu.
 2. Find the section containing the **SMA_SETWITNESS** script.
-3. Delete the characters \"**rem**\" from the front of the two (2)
+3. Delete the characters "**rem**" from the front of the two (2)
     lines as instructed inside the command file.
 4. Find the section containing the **SMA_ADDWITNESSMONITORJOB** script.
-5. Delete the characters \"**rem**\" from the front of the four (4)
+5. Delete the characters "**rem**" from the front of the four (4)
     lines as instructed inside the command file.
 6. Use menu path: **File \> Save**.
 7. **Close** the file.
@@ -189,19 +189,19 @@ menu.
 If high-availability has been configured, find the line containing the
 **SMA_REMOVEWITNESS** script.
 
-Delete the characters \"**rem**\" from the front of the line containing
+Delete the characters "**rem**" from the front of the line containing
 the **SMA_REMOVEWITNESS** script and from next line down.
 
 If the mirrored database will be used by OpCon programs after the
 mirroring is removed:
 
 a.  Find the line containing the **SMA_DROPMIRROR** script.
-b.  Add the characters \"**rem**\" to the front of the line containing
+b.  Add the characters "**rem**" to the front of the line containing
     the **SMA_DROPMIRROR** script and to the front of the next line down
     to comment them out.
 c.  Find the line containing the **SMA_RESTOREMIRRORWITHRECOVERY**
     script.
-d.  Delete the characters \"**rem**\" from the front of the line
+d.  Delete the characters "**rem**" from the front of the line
     containing the **SMA_RESTOREMIRRORWITHRECOVERY** script and from the
     next line down.
 
@@ -221,11 +221,11 @@ Modify SMA_ManualFailoverToMirror.cmd
     from the menu.
 2. Find the line containing **SC \\\\%PrincipalServerName% stop
     SMA_ServMan**.
-3. Delete the characters \"**rem**\" from the front of the stop
+3. Delete the characters "**rem**" from the front of the stop
     command.
 4. Find the line containing **SC \\\\%MirrorServerName% start
     SMA_ServMan**.
-5. Delete the characters \"**rem**\" from the front of the start
+5. Delete the characters "**rem**" from the front of the start
     command.
 6. Use menu path: **File \> Save**.
 7. **Close** the file.
@@ -236,11 +236,11 @@ Modify SMA_ManualFailbackToPrincipal.cmd
     from the menu.
 2. Find the line containing **SC \\\\%MirrorServerName% stop
     SMA_ServMan**.
-3. Delete the characters \"**rem**\" from the front of the stop
+3. Delete the characters "**rem**" from the front of the stop
     command.
 4. Find the line containing **SC \\\\%PrincipalServerName% start
     SMA_ServMan**.
-5. Delete the characters \"**rem**\" from the front of the start
+5. Delete the characters "**rem**" from the front of the start
     command.
 6. Use menu path: **File \> Save**.
 7. **Close** the file.
@@ -337,7 +337,7 @@ Some of the potential issues SMA Technologies has identified with Manual Failove
     to automatically reconnect to the mirror server if the principal
     server becomes unavailable.
 - Do not reconfigure an in-use database mirroring endpoint. The server
-    instances use each other\'s endpoints to learn the state of the
+    instances use each other's endpoints to learn the state of the
     other systems. If the endpoint is reconfigured, it might restart,
     which can appear to be an error to the other server instances.
 
@@ -348,14 +348,14 @@ and also in high-performance mode. When running in high-protection mode
 this is typically how one would switch processing to the mirror server
 in the event of a fault on the principal server. Before forcing service
 it is important to verify that the principal server is genuinely
-unavailable. According to the SQL Server documentation \"If the
+unavailable. According to the SQL Server documentation "If the
 principal server was merely disconnected from the database mirroring
 session and is still running, some clients might continue to access the
 original principal database. Before you force service, it is important
 to prevent clients from accessing the original principal server.
 Otherwise, after service is forced, the original principal database and
 the current principal database could be updated independently of the
-other.\"
+other."
 
 On the mirror server the SQL script SMA_MIRRORFORCEDFAILOVER.sql can be
 used to initiate a forced service failover.
@@ -384,7 +384,7 @@ Some of the potential issues SMA Technologies has identified with Forced Service
     database. This problem does not exist for Windows authenticated
     logins.
 - Do not reconfigure an in-use database mirroring endpoint. The server
-    instances use each other\'s endpoints to learn the state of the
+    instances use each other's endpoints to learn the state of the
     other systems. If the endpoint is reconfigured, it might restart,
     which can appear to be an error to the other server instances.
 
@@ -426,7 +426,7 @@ b.  In the event of a database connection failure OpCon programs will
     shut down or the database they are attempting to connect to is once
     again available. In an automatic failover database mirroring
     configuration it is possible that the principal and mirror roles
-    could switch, i.e., the principal database is \"pulled out\" from
+    could switch, i.e., the principal database is "pulled out" from
     under the OpCon applications. In this case the applications will
     continue to attempt to reconnect to the database, all the while
     maintaining contact with the SMAServMan management application, and
@@ -457,7 +457,7 @@ the server overloads the CPU it is possible that unexpected and unwanted
 occurrences of automatic failover may take place.
 
 Do not reconfigure an in-use database mirroring endpoint. The server
-instances use each other\'s endpoints to learn the state of the other
+instances use each other's endpoints to learn the state of the other
 systems. If the endpoint is reconfigured, it might restart, which can
 appear to be an error to the other server instances. This is
 particularly important in high-safety mode with automatic failover, in
@@ -474,7 +474,7 @@ role or have been added as a member of the dbm_monitor fixed database
 role in the msdb system database.
 
 When database monitoring is set up through SQL Server Management Studio
-a SQL Server Agent job named \"Database Mirroring Monitor Job\" is
+a SQL Server Agent job named "Database Mirroring Monitor Job" is
 automatically added and run every minute by the SQL Server Agent. When
 database mirroring is set up via scripting, this job must be added
 manually using the sp_dbmmonitoraddmonitoring system stored procedure.
@@ -489,8 +489,8 @@ EXEC sp_dbmmonitorchangemonitoring 1, 5 ;
 
 Where:
 
-- 1 = the identifier of the \"Update period\" parameter. \"Update
-    period\" is currently the only parameter available.
+- 1 = the identifier of the "Update period" parameter. "Update
+    period" is currently the only parameter available.
 - 5 = the new update period in minutes. This must be an integer value
     between 1 and 120.
 
@@ -506,7 +506,7 @@ Unrestored Log, Oldest Unsent Transaction, and Mirror Commit Overhead.
     the event the principal fails.
 - Unrestored Log specifies how many KB of unrestored transaction log
     the mirror server has in the redo queue. This value gives an
-    indication of the \"failover time\" that will be necessary before
+    indication of the "failover time" that will be necessary before
     the mirror server can take over serving up the database in the event
     that the principal fails.
 - Oldest Unsent Transaction is the time stamp of the oldest

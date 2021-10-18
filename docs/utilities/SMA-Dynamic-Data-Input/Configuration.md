@@ -105,7 +105,7 @@ password entered by the user** radio button.
 
 Enter *opconui* in the **Login ID** field.
 
-Enter *opconui\'s password* in the **Password** field then click
+Enter *opconui's password* in the **Password** field then click
 **Next**.
 
 Select the **Change the default database to** checkbox.

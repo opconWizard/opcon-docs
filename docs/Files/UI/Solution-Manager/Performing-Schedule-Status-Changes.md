@@ -101,7 +101,7 @@ Select one of the following status updates to apply to the selected
 schedule(s):
 
   -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Any status updates that are applied to the Schedule Names selected will effect ALL jobs that are scheduled to run on that specific date (as opposed to \"just\" the ones that are listed within the current scope being viewed).]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Any status updates that are applied to the Schedule Names selected will effect ALL jobs that are scheduled to run on that specific date (as opposed to "just" the ones that are listed within the current scope being viewed).]
   -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 - **Release**: This option allows you to release the selected
@@ -114,7 +114,7 @@ schedule(s):
     are subschedules under the selected schedule and they are in a
     status of [Waiting]{.skd-job-statuses} or [In     Process]{.skd-job-statuses}, those subschedules are placed in a
     status of [Parent Hold]{.skd-job-statuses}. -   **Start**: This option allows you to override the selected
-    schedule\'s start date(s) and time(s), and cause them to run
+    schedule's start date(s) and time(s), and cause them to run
     immediately. The SAM begins processing the schedule(s) as soon as
     this option is selected. If there are subschedules under the defined
     schedule and they are in a status of [Parent     Hold]{.skd-job-statuses}, those subschedules will also be started.
@@ -127,7 +127,7 @@ schedule(s):
 
 Close the **Selection** panel when done.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Performing Job Status     Changes](Performing-Job-Status-Changes.md)

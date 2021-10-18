@@ -14,7 +14,7 @@ icon on the toolbar below to learn more about its functionality.
 
 ![Access Codes toolbar](../../../Resources/Images/EM/EMcalendarstoolbar.png "Access Codes toolbar")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Adding Access Codes](Adding-Access-Codes.md)

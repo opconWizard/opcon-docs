@@ -61,7 +61,7 @@ history clean up process.
 - The log file resides in the \<Output Directory\>\\SAM\\Log\\
     directory.
 - Each time the Audit.exe runs, it creates a log file name with the
-    following syntax: Audit_CCYYMMDD_HHmmssss.log. The \"ssss\" in
+    following syntax: Audit_CCYYMMDD_HHmmssss.log. The "ssss" in
     syntax represents seconds and tenths of seconds (e.g.,
     Audit_20110513_15263142.log).
 - Upon startup, Audit.exe checks the SAM\\Log folder for log files

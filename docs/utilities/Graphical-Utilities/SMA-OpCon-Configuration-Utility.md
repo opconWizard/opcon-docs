@@ -1,7 +1,7 @@
 # SMA OpCon Configuration Utility
 
 The SMA OpCon Configuration Utility is designed to configure the scripts
-and configuration files on a machine containing SMA OpCon\'s software.
+and configuration files on a machine containing SMA OpCon's software.
 The tool is most useful on the OpCon Server and on machines containing
 multiple LSAMs (Agents). This program is automatically installed on the
 OpCon Server. If you would like this utility installed on any machine,
@@ -57,9 +57,9 @@ screen:
   - **Use Win Auth**: Select this option to indicate that Windows
         Authentication should be used to set up or update the database.
   - **Use SQL sa**: Select this option to indicate that the SQL
-        \"sa\" login should be used to set up or update the database.
-  - **Password**: If \"Use SQL sa\" was selected, enter the password
-        for \"sa\" before clicking the Create Database or Update
+        "sa" login should be used to set up or update the database.
+  - **Password**: If "Use SQL sa" was selected, enter the password
+        for "sa" before clicking the Create Database or Update
         Database buttons.
     - **Show Password**: Select this checkbox to see the sa
             password in clear text.
@@ -147,7 +147,7 @@ database and its files on the SQL Database Server.
         same server, you can click the browse button (shown as an
         ellipsis) at the end of the field.
     - Browse to the SQL Data directory and click **OK**.
-    - The utility will automatically append \"OPCONXPS_Data.MDF\"
+    - The utility will automatically append "OPCONXPS_Data.MDF"
             to the path for the file name. Change the file name if
             desired.
 - **Initial DB Data File Size**: Defines the initial size in megabytes
@@ -163,7 +163,7 @@ database and its files on the SQL Database Server.
         same server, you can click the browse button (shown as an
         ellipsis) at the end of the field.
     - Browse to the SQL Data directory and click **OK**.
-    - The utility will automatically append \"OPCONXPS_Log.LDF\"
+    - The utility will automatically append "OPCONXPS_Log.LDF"
             to the path for the file name. Change the file name if
             desired.
 - **Initial DB Log File Size**: Defines the value for the initial size
@@ -195,7 +195,7 @@ Server.
         same server, you can click the browse button (shown as an
         ellipsis) at the end of the field.
     - Browse to the SQL Data directory and click **OK**.
-    - The utility will automatically append \"SMADB_Backup.bak\"
+    - The utility will automatically append "SMADB_Backup.bak"
             to the path for the file name. Change the file name if
             desired.
 - **Path to Transaction Log Backup File**: Defines the location of the
@@ -207,7 +207,7 @@ Server.
         same server, you can click the browse button (shown as an
         ellipsis) at the end of the field.
     - Browse to the SQL Data directory and click **OK**.
-    - The utility will automatically append \"SMATLog_Backup.bak\"
+    - The utility will automatically append "SMATLog_Backup.bak"
             to the path for the file name. Change the file name if
             desired.
 - **DB Backup User**: Defines the SQL user to use for the database
@@ -228,7 +228,7 @@ Server.
         ellipsis) at the end of the field.
     - Browse to the SQL Data directory and click **OK**.
     - The utility will automatically append
-            \"SystemDB_Backup.bak\" to the path for the file name.
+            "SystemDB_Backup.bak" to the path for the file name.
             Change the file name if desired.
 - **Maintenance Variables Verified**: Select this checkbox (at the
     bottom of the screen) to verify that all settings are correct on the
@@ -259,7 +259,7 @@ name for the principal database server including the host name, primary
 DNS suffix, and end point port number. The default value in the command
 file provides the syntax.
 
-- Default: \'TCP://hostname.PrimaryDNSSuffix:EndpointPortNumber\'
+- Default: 'TCP://hostname.PrimaryDNSSuffix:EndpointPortNumber'
 - Determine the Primary DNS Suffix by executing **IPCONFIG /ALL** from
     a command prompt on the principal server.
 
@@ -305,7 +305,7 @@ name for the mirror database server including the host name, primary DNS
 suffix, and end point port number. The default value in the command file
 provides the syntax.
 
-- Default: \'TCP://hostname.PrimaryDNSSuffix:EndpointPortNumber\'
+- Default: 'TCP://hostname.PrimaryDNSSuffix:EndpointPortNumber'
 
 **Login For Mirror Service**: Defines the Windows user account the
 Mirror SQL Server Service uses.
@@ -344,7 +344,7 @@ for the witness database server including the host name, primary DNS
 suffix, and end point port number. The default value in the command file
 provides the syntax.
 
-- Default: \'TCP://hostname.PrimaryDNSSuffix:EndpointPortNumber\'
+- Default: 'TCP://hostname.PrimaryDNSSuffix:EndpointPortNumber'
 
 **LoginForWitnessService**: Defines the Windows user account the Witness
 SQL Server Service uses.
@@ -432,7 +432,7 @@ replication for databases on the SQL Database Server.
     which the SQL Server service runs.
 - **REPLDATA Folder**: Defines the folder where the snapshot agent
     will write the data to be replicated.
-  - Default: \\\\%DistributorServerName%\\C\$\\Program
+  - Default: \\\\%DistributorServerName%\\C$\\Program
         Files\\Microsoft SQL Server\\MSSQL.1\\MSSQL\\repldata
   - SMA Technologies recommends creating a         share on the repldata folder and specifying the value of this
         variable as \\\\%DistributorServerName%\\repldataShareName
@@ -487,7 +487,7 @@ replication for databases on the SQL Database Server.
 - **DB Replication Scripts Directory**: Defines the directory where
     the SQL scripts used in setting up and tearing down replication will
     be located. If OpCon was installed in the default location, this
-    value would be \'C:\\Program Files\\OpConxps\\Utilities\\Database\'.
+    value would be 'C:\\Program Files\\OpConxps\\Utilities\\Database'.
 - **Run Snapshot Agent As**: Defines the Windows Domain user the
     Snapshot Agent runs as. Refer to
     [Considerations](../../Files/Database-Information/Setup-for-Automatic-Microsoft-SQL-Replication.md#Consider)
@@ -580,7 +580,7 @@ If the EM Installation Directory field is blank, browse to and select the instal
 The Microsoft Agent and each of the other Windows-based proxy agents
 (SAP, SAP BW) can be installed onto one machine and are controlled by
 individual .ini files. This screen offers easy way to update each
-agent\'s .ini file for the TCP/IP ports for normal communication and for
+agent's .ini file for the TCP/IP ports for normal communication and for
 the Job Output Retrieval System (JORS). The default port values
 delivered by SMA Technologies within these .ini files (3100, 3110) are normally sufficient and rarely need to be
 changed, unless more than one agent is installed on the same machine.

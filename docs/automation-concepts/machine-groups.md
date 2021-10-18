@@ -15,8 +15,8 @@ The following scenario applies Machine Groups to Jobs for Failover
 purposes:
 
 Only one machine will be assigned to the Machine Group, and all of the
-jobs will use this Machine Group with the \"Run on Least Tasked
-Machine\" option defined. In this case, every job will run on this group
+jobs will use this Machine Group with the "Run on Least Tasked
+Machine" option defined. In this case, every job will run on this group
 as opposed to running on one specific machine. If the machine in that
 group has a hardware failure, another machine with an
 LSAM could be placed in that group to take over the processing until the primary machine is repaired. In this case there
@@ -29,14 +29,14 @@ update hundreds of individual jobs to use the new machine.
 ## Workload Balancing
 
 The following scenario applies Machine Groups to Jobs for Workload
-Balancing by selecting the option to \"Run on Least Tasked Machine\":
+Balancing by selecting the option to "Run on Least Tasked Machine":
 
 Multiple jobs exist, the jobs are able to be processed on more than one
 machine, and there is no specific priority order for which machine to
 process the jobs on. This usually occurs when the machines in question
 have access to shared data. The machines are placed in a machine group,
-and jobs are assigned to that group with the \"Run on Least Tasked
-Machine\" option defined. At each job\'s runtime,
+and jobs are assigned to that group with the "Run on Least Tasked
+Machine" option defined. At each job's runtime,
 OpCon uses its Workload Balancing algorithm
 to determine which machine in the group to use for execution.
 
@@ -55,15 +55,15 @@ the machine.
 
 The following scenario applies Machine Groups to a job so the same job
 definition is automatically applied to multiple machines. This is done
-by selecting the machine group option to \"Run on Each Machine\":
+by selecting the machine group option to "Run on Each Machine":
 
 The same program exists on multiple machines of the same OS Type.
 Additionally, the program is installed in the same location on each
 machine. In OpCon, all of these machines are
 placed in a machine group. A job is set up to run the program. Because
 the same job definition will work for all machines, the job is assigned
-to the machine group with the \"Run on Each Machine\" option defined.
-When the job\'s schedule is built and the job qualifies for the day,
+to the machine group with the "Run on Each Machine" option defined.
+When the job's schedule is built and the job qualifies for the day,
 OpCon creates a copy of the job for each
 machine in the group. Each copy is named using the following syntax: Job
 Name_Machine Name.
@@ -85,14 +85,14 @@ The same group of jobs needs to run on multiple machines of the same OS
 Type. Additionally, the programs for the jobs are installed in the same
 location on each machine. In OpCon, all of
 these machines are placed in a machine group. The jobs in the schedule
-are set up as required, and each job is set to \"Use Schedule Instance
-Machine\". On the Schedule definition, the \"Multi-Instance\" checkbox
+are set up as required, and each job is set to "Use Schedule Instance
+Machine". On the Schedule definition, the "Multi-Instance" checkbox
 is marked, and the correct machine group is defined for the option to
-\"Build an instance for each machine in the Group\". When the schedule
+"Build an instance for each machine in the Group". When the schedule
 is built and the jobs qualify for the day,
 OpCon creates a copy of the schedule for each
 machine in the group, and each of the jobs have their Primary Machine
-set based on the Schedule instance\'s machine. Each instance of the
+set based on the Schedule instance's machine. Each instance of the
 schedule is named using the following syntax: Schedule Name_Machine
 Name.
 

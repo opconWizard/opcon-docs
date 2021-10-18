@@ -1,12 +1,12 @@
 # Performing Bulk Job Status Updates (Schedule Level)
 
 The **Operations** module has made performing mass action on job status
-updates at the schedule level easier. Let\'s say, for example, that you
+updates at the schedule level easier. Let's say, for example, that you
 wanted to specify the following mass update conditions:
 
-1. Update the job\'s status to [Cancel]{.skd-job-statuses} for the     selected schedule when the job\'s current state is
-    [Waiting]{.skd-job-statuses}. 2.  Update the job\'s status to [Cancel]{.skd-job-statuses} for the
-    selected schedule when the job\'s current state is in [Waiting,     Held]{.skd-job-statuses}.
+1. Update the job's status to [Cancel]{.skd-job-statuses} for the     selected schedule when the job's current state is
+    [Waiting]{.skd-job-statuses}. 2.  Update the job's status to [Cancel]{.skd-job-statuses} for the
+    selected schedule when the job's current state is in [Waiting,     Held]{.skd-job-statuses}.
 
 This is all possible in **Operations** with a few simple steps.
 
@@ -125,7 +125,7 @@ Click **Apply** to apply the job status change.
 
 Close the **Selection** panel when done.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)

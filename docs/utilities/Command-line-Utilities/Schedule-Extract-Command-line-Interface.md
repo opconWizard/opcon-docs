@@ -21,10 +21,10 @@ Extract. For more information about SMADDI, refer to the [SMA Dynamic Data Input
 help.
 
 Another use case is to facilitate automatic movement of a schedule from
-a \"test\" environment to a \"production\" environment. Upon extracting
-a \"test\" schedule, all of the changes for \"production\" can be made
+a "test" environment to a "production" environment. Upon extracting
+a "test" schedule, all of the changes for "production" can be made
 automatically. Then the changed file can be transferred to SMADDI in the
-\"production\" environment to create the schedule. For more information,
+"production" environment to create the schedule. For more information,
 refer to [Automatic Change Files](#Automati).
 
 Before configuring jobs to run Schedule Extract, configure the
@@ -58,8 +58,8 @@ b.  If the machine is 32-bit, make sure to install the EM from the
 |                                  |                                  |
 |                                  | With this string:                |
 |                                  |                                  |
-|                                  | command=\"C:\\Program Files      |
-|                                  | (x86)\\Java\\jre6\\bin\\java\"   |
+|                                  | command="C:\\Program Files      |
+|                                  | (x86)\\Java\\jre6\\bin\\java"   |
 +----------------------------------+----------------------------------+
 
 You have to run the job as a user that has logged on to the machine and
@@ -85,8 +85,8 @@ The syntax for the command-line interface is:
 \<Target Directory\>\\OpConxps\\Enterprise
 Manager\\Tools\\schedule_extract.cmd
 
--opconprofile \<ProfileName\> (-s \"\<ScheduleName\>\" OR -f \"\<File
-Name\>\")
+-opconprofile \<ProfileName\> (-s "\<ScheduleName\>" OR -f "\<File
+Name\>")
 
 \[-opconuser \<OpconUser\>\] \[-opconpassword \<Password\>\] \[-c \<Y/N\>\]
 
@@ -120,8 +120,8 @@ of schedules to extract.
     arguments, with each argument and value separated with a semicolon
     (;).
 
-**-opconuser** (Optional): The name of a valid OpCon user that has \"All
-Administrative Functions\" or \"All Function Privileges\". If not
+**-opconuser** (Optional): The name of a valid OpCon user that has "All
+Administrative Functions" or "All Function Privileges". If not
 specified, the command line schedule extract will check the OpCon
 Database to see if the Windows user that started the job also has an
 OpCon login with the required privileges.
@@ -225,10 +225,10 @@ of the schedule_extract command file.
 |                                  | -   Use the                      |
 |                                  |                                  |
 |                                  | OpCon |
-|                                  |     user \'ocadm\' and its       |
+|                                  |     user 'ocadm' and its       |
 |                                  |     password                     |
 |                                  | -   Extract the schedule         |
-|                                  |     \'Sched001\' from the Master |
+|                                  |     'Sched001' from the Master |
 |                                  |     tables of the                |
 |                                  |                                  |
 |                                  | OpCon |
@@ -242,7 +242,7 @@ of the schedule_extract command file.
 | .png "Example icon") | -opconuser ocadm                 |
 |                                  |                                  |
 |                                  | -opconpassword opconxps -s       |
-|                                  | \"TEST ONE\"                     |
+|                                  | "TEST ONE"                     |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
@@ -254,10 +254,10 @@ of the schedule_extract command file.
 |                                  | -   Use the                      |
 |                                  |                                  |
 |                                  | OpCon |
-|                                  |     user \'ocadm\' and its       |
+|                                  |     user 'ocadm' and its       |
 |                                  |     password                     |
-|                                  | -   Extract the schedule \'TEST  |
-|                                  |     ONE\' from the Master tables |
+|                                  | -   Extract the schedule 'TEST  |
+|                                  |     ONE' from the Master tables |
 |                                  |     of the                       |
 |                                  |                                  |
 |                                  | OpCon |
@@ -285,10 +285,10 @@ of the schedule_extract command file.
 |                                  | -   Use the                      |
 |                                  |                                  |
 |                                  | OpCon |
-|                                  |     user \'ocadm\' and its       |
+|                                  |     user 'ocadm' and its       |
 |                                  |     password                     |
 |                                  | -   Extract the schedule         |
-|                                  |     \'Sched002\' from the Master |
+|                                  |     'Sched002' from the Master |
 |                                  |     tables of the                |
 |                                  |                                  |
 |                                  | OpCon |
@@ -318,7 +318,7 @@ of the schedule_extract command file.
 |                                  | -   Use the                      |
 |                                  |                                  |
 |                                  | OpCon |
-|                                  |     user \'ocadm\' and its       |
+|                                  |     user 'ocadm' and its       |
 |                                  |     password                     |
 |                                  | -   Extract the list of          |
 |                                  |     schedules contained in the   |
@@ -339,7 +339,7 @@ During the extract process, Schedule Extract will check the directory
 defined in the **Change File Directory** setting in the **Enterprise
 Manager Preferences** (refer to [Setting Preferences for Schedule Extract](../../Files/UI/Enterprise-Manager/Preferences-for-Schedule-Extract.md)
  in the **Enterprise Manager** online help). The change file name
-must consist of the name of the schedule to extract and the \"\_GC.xml\"
+must consist of the name of the schedule to extract and the "\_GC.xml"
 extension. If this file is found, Schedule Extract applies the changes
 to the extracted information as it creates the SMADDI XML formatted
 file.
@@ -357,7 +357,7 @@ The following Tag IDs define the values that can be changed:
 - **Schedule_Name**: The schedule name will be changed in all objects
     extracted for this schedule (new_schedule, new_master, add_frequency
     and add_dependency). This includes changing the schedule name if
-    discovered on any \$SCHEDULE or \$JOB events in the schedule name
+    discovered on any $SCHEDULE or $JOB events in the schedule name
     field.
   - By default, this replacement element does not do partial string
         replacement. Specify
@@ -373,7 +373,7 @@ The following Tag IDs define the values that can be changed:
 - **Job_Name**: The matching Job Name will be changed in the
     new_master, add_frequency and add_dependency objects extracted for
     this schedule). This includes changing the job name if discovered on
-    any \$JOB events in the job name field.
+    any $JOB events in the job name field.
   - By default, this replacement element does not do partial string
         replacement. Specify
         \<global_change_partial_update\>true\</global_change_partial_update\>
@@ -507,9 +507,9 @@ Valid Values for this element include *true* and *false*.
 | urces/Images/example-icon(48x48) | when a matching schedule name of |
 | .png "Example icon") | TTEST is found.                  |
 |                                  |                                  |
-|                                  | \<?xml version=\"1.0\"           |
-|                                  | encoding=\"ISO-8859-1\"          |
-|                                  | standalone=\"no\"?\>             |
+|                                  | \<?xml version="1.0"           |
+|                                  | encoding="ISO-8859-1"          |
+|                                  | standalone="no"?\>             |
 |                                  |                                  |
 |                                  | \<global_change_file\>           |
 |                                  |                                  |
@@ -539,9 +539,9 @@ Valid Values for this element include *true* and *false*.
 |                                  | Windows user is found in a       |
 |                                  | Windows job.                     |
 |                                  |                                  |
-|                                  | \<?xml version=\"1.0\"           |
-|                                  | encoding=\"ISO-8859-1\"          |
-|                                  | standalone=\"no\"?\>             |
+|                                  | \<?xml version="1.0"           |
+|                                  | encoding="ISO-8859-1"          |
+|                                  | standalone="no"?\>             |
 |                                  |                                  |
 |                                  | \<global_change_file\>           |
 |                                  |                                  |
@@ -591,7 +591,7 @@ Valid Values for this element include *true* and *false*.
 The following sample code contains tags for every global change
 supported with Schedule Extract:
 
-\<?xml version=\"1.0\" encoding=\"ISO-8859-1\" standalone=\"no\"?\>
+\<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?\>
 
 \<global_change_file\>
 
@@ -733,11 +733,11 @@ SMAEUROPE\\PRODUCTION\</global_change_new_value\>
 ## Logging
 
 The command line interface for Schedule Extract writes all of the output
-to the \"console\". This means that to view any log information or
-discover why the job has failed, you must \"View Job Output\" or
+to the "console". This means that to view any log information or
+discover why the job has failed, you must "View Job Output" or
 redirect the output to your own log file. Use \> to create a new file or
 \>\> to append to an existing file. JORS must be enabled for the machine
-and the LSAM\'s configuration file must be set to \"Capture Job Output\"
+and the LSAM's configuration file must be set to "Capture Job Output"
 if you want to use the View Job Output feature.
 
 +----------------------------------+----------------------------------+

@@ -12,9 +12,9 @@ Configuration](https://help.smatechnologies.com/opcon/agents/ibmi/latest/Files/A
   - If a specific name validation lists a different number of
         maximum characters, the specific rules override this rule.
   - Names must begin with an alphabetic character (A through Z, @,
-        \$, and \#).
+        $, and \#).
   - All subsequent characters can be alphanumeric (A through Z, 0
-        through 9, @, \$, \#, and \_ (underscore)).
+        through 9, @, $, \#, and \_ (underscore)).
   - There can be no embedded blanks.
 - For international languages, certain other signs might qualify as
     alphanumeric characters (such as the English Pound symbol (£)), but
@@ -199,7 +199,7 @@ required for the Call Information.
 
 - **Log CL Commands**: (Required): Defines whether the commands that
     are run in a control language program are logged to the job log by
-    way of the CL program\'s message queue.
+    way of the CL program's message queue.
 
   - Default Value: **\*JOBD**
   - Valid Values: **\***, **\*JOBD**, **\*NO**, **\*YES**
@@ -312,11 +312,11 @@ definitions below:
     - Reply (default value)
     - Event
     - Both
-- **Reply**: Defines the response the LSAM sends as     the reply when the *Action* is set to *\'Reply\'* or *\'Both\'* and
+- **Reply**: Defines the response the LSAM sends as     the reply when the *Action* is set to *'Reply'* or *'Both'* and
     when the message meets the search criteria. The reply must not
     exceed 6 characters.
-  - Reply is **Required** if *Action* is set to *\'Reply\'* or
-        *\'Both\'*.
+  - Reply is **Required** if *Action* is set to *'Reply'* or
+        *'Both'*.
 - **End Job** (Required): Defines whether to end the
     OpCon job after the message meets the
     criteria or to allow it to keep running.
@@ -369,7 +369,7 @@ that would each execute the IBM i LSAM SETDYNVAR command, setting one value per 
 added to this table in a single job.
 
 The LSAM assigns the Dynamic Variable values before the job start request is assembled within the LSAM job
-scheduler so that the assigned values can be used within the job\'s Call
+scheduler so that the assigned values can be used within the job's Call
 information or used by the job itself after it starts execution. Once
 the values are stored in the LSAM table, they are available to any feature of the LSAM wherever Dynamic
 Variables are supported. Refer to field definitions below:
@@ -422,17 +422,17 @@ Variables are supported. Refer to field definitions below:
 
 - **Remote System** (Required): Defines the name of the remote system.
     The remote system name must not exceed 255 characters.
-  - Field value extensions: The IBM i \"FTP\" command keywords not
+  - Field value extensions: The IBM i "FTP" command keywords not
         already used by the OpCon job can be added to the Remote System
         name to alter how the FTP connection will be managed.
 
-        To add FTP command keywords, type the IBM i Agent\'s \"job
-        parameters separator character\" after the Remote System name,
+        To add FTP command keywords, type the IBM i Agent's "job
+        parameters separator character" after the Remote System name,
         then type or paste the FTP command keywords and their values.
         The total characters typed into the Remote System name cannot
         exceed 255 characters.
 
-        An explanation of the Agent\'s command parameters separator
+        An explanation of the Agent's command parameters separator
         character may be found under [Extending the IBM i Call Command         with Special
         Parameters](https://help.smatechnologies.com/opcon/agents/ibmi/latest/Files/Agents/IBM-i/Configuration.md#Extendin)
         .
@@ -583,7 +583,7 @@ It is valid to use only one of the times and not the other. If no Time
 values are entered (values are left set to zeros), then a simple check
 for file existence will be performed, without verifying the creation
 time of the file; however, the End Time (possibly combined with other
-IBM i Agent \$@-variable values, as described below) can be used to
+IBM i Agent $@-variable values, as described below) can be used to
 define whether a File Arrival job will perform only a one-time,
 immediate check for a file, or whether the job will run in a loop,
 performing periodic checks for a file until it arrives -- or until the
@@ -631,7 +631,7 @@ User ID. The authorities listed on this display are the common values
 used for stream files in the IBM i Integrated File Systems outside of
 the DB2 database, such as the root '/' file system. It is possible to
 validate more specific authorities for files (tables) located in the DB2
-database by adding '\$@' Agent variable names to the Variables tab, as
+database by adding '$@' Agent variable names to the Variables tab, as
 explained below.
 
 ### File Creation Time Stamp Window, Relative to Midnight (in days,hrs,mins or a token)
@@ -689,14 +689,14 @@ Dynamic Variable, if specified for the "Record Count Dynamic Variable."
     record separators.
 
 :::note
-Do not confuse the option \$\@RECHKFREQ (re-check frequency) with the Stable Duration. These are two separate functions that operate independently of each other. The re-check frequency would be used first in order to find a matching file, then the Stable Duration, if specified, would be used to re-check the selected file to assure that its size is stable.
+Do not confuse the option $\@RECHKFREQ (re-check frequency) with the Stable Duration. These are two separate functions that operate independently of each other. The re-check frequency would be used first in order to find a matching file, then the Stable Duration, if specified, would be used to re-check the selected file to assure that its size is stable.
 :::
 
 ### (On Success) Store Processed File Details to LSAM Dynamic Variables
 
 - **File Name Variable**: Defines the root name of the file (including
     an extension, if any, from an IFS stream file) that is stored,
-    similar to the OpCon system property \$ARRIVED FILE SHORT NAME. The
+    similar to the OpCon system property $ARRIVED FILE SHORT NAME. The
     value of the Dynamic Variable could be used after the File Arrival
     Job, if there is any other automation process that the Agent will
     perform that needs a local reference to the file that was found.
@@ -722,9 +722,9 @@ parameter that is unique to one command, for the other command.
 Therefore, remember that the CHKFILE command is used for DB2 database
 files (tables), while the CHKIFSFIL command is used for IFS file systems
 outside of the DB2 database. Each parameter name becomes a special
-variable name by prefixing the characters '\$@' to the keyword, e.g.,
+variable name by prefixing the characters '$@' to the keyword, e.g.,
 the keyword for "Re-check frequency" is registered in the Variables tab
-as '\$\@RECHKFREQ'.
+as '$\@RECHKFREQ'.
 
   CHKFILE      CHKIFSFIL
   ------------ ------------
@@ -739,10 +739,10 @@ as '\$\@RECHKFREQ'.
   RECHKFREQ    RECHKFREQ
   AUT
 
-  : IBM i File Arrival Job Parameters Supported only by \$@-Variable
+  : IBM i File Arrival Job Parameters Supported only by $@-Variable
   Names
 
-When using the \$\@JOBENDTIME parameter, the Agent's raw commands
+When using the $\@JOBENDTIME parameter, the Agent's raw commands
 (CHKFILE and CHKIFSFIL) will accept either a decimal value or a "clock
 time" value for the job end time, which is always relative to midnight.
 For example, the value provided for the Job End Time could be either
@@ -761,7 +761,7 @@ parameter keywords, but if they are added to the Variables tab list,
 then the Variables tab value will replace the value supplied by the
 original OpCon job start request.
 
-The reason this parameter override potential exists is because the \$@
+The reason this parameter override potential exists is because the $@
 prefix for names in the Variables tab table can be used for other
 sub-types of IBM i jobs that are also supported by pre-defined Agent
 commands. One example where this rule might be useful is when an Agent
@@ -785,14 +785,14 @@ The following command parameter keyword special values have unique
 significance when used with the OpCon File Arrival Job, in the Variables
 tab.
 
-- **\$\@FAILIFZERO**: This is the same as the job master Failure
+- **$\@FAILIFZERO**: This is the same as the job master Failure
     Condition, "Fail If File Contains Zero Records or Zero Bytes."
     However, if the other job failure condition ("Fail On Error Except
     Reached End Time") is already selected, then this Variables tab
     special variable can be used to also specify that a job should NOT
     fail if the file contains zero records or zero data bytes.
 
-- **\$\@RECHKFREQ**: This Agent special variable is used to control
+- **$\@RECHKFREQ**: This Agent special variable is used to control
     how aggressive the File Arrival job will be when it is watching for
     a file to arrive. It specifies the number of seconds that the job
     should wait between checks. For File Arrival jobs started by OpCon,
@@ -807,7 +807,7 @@ tab.
     zero, meaning that the file check will be performed only once,
     regardless of the setting of the End Time.
 
-- **\$\@AUT**: As documented for the CHKFILE command, this Agent
+- **$\@AUT**: As documented for the CHKFILE command, this Agent
     special variable can provide a customized list of one or more DB2
     object authorities that should be checked for the AUTUSER. When this
     special variable is included in the list, it will override the EM
@@ -815,14 +815,14 @@ tab.
     simpler authorities that apply more directly to stream files in the
     IFS root file system.
 
-- **\$\@CRETREFDATE**: This is the keyword that supports this Agent's
+- **$\@CRETREFDATE**: This is the keyword that supports this Agent's
     option to override the default assumption that the File Creation
     Times are always relative to midnight which is the starting time of
     the OpCon Schedule that submitted the File Arrival job. In some
     cases, it might be desirable to utilize an Agent Dynamic Variable
     token to control which date is the midnight reference. In unusual
     cases, it also becomes possible to temporarily add the
-    \$\@CRTREFDATE and specify a hard-coded value whenever an OpCon
+    $\@CRTREFDATE and specify a hard-coded value whenever an OpCon
     Restart of a Job might be necessary. (Outside of OpCon control, the
     CRTREFDATE parameter default would be the current IBM i system date,
     if this keyword is not used. The use case for the CHKFILE and
@@ -831,7 +831,7 @@ tab.
     execution, including a Multi-Step Job Script and also, possibly, the
     Agent's Captured Data Response Rules.)
 
-- **\$\@JOBENDTIME** and **\$\@JOBREFDATE**: These are the keywords
+- **$\@JOBENDTIME** and **$\@JOBREFDATE**: These are the keywords
     that support this Agent's option to control the Job End Time,
     separately from the File Create End Time. Refer to the description
     above about the CRTREFDATE for the values that can also be used for
@@ -853,7 +853,7 @@ Variables tab.
 
 The completion status of the job (successful or failed) can be managed
 by the Failure Condition selected from its drop-down list, and/or by two
-of the Agent's \$@-variables. In some cases, these two different
+of the Agent's $@-variables. In some cases, these two different
 controls can be combined to achieve a more specific outcome.
 
 The events that are triggered by an IBM i File Arrival job can be more
@@ -868,21 +868,21 @@ start request for an IBM i File Arrival job.
 
 #### How the Re-Check Frequency Controls the File Arrival Job Behavior
 
-The IBM i File Arrival job supports \$\@RECHKFREQ as a Agent special
+The IBM i File Arrival job supports $\@RECHKFREQ as a Agent special
 variable name that can be configured using the job's Variables tab. This
 "re-check frequency" specifies the number of seconds between retries of
 the File Arrival job, to see if a qualified file has arrived. The File
 Arrival checks can be made more or less aggressive depending on how long
 the job pauses between checks.
 
-When the \$\@RECHKFREQ is not specified in the Variables tab, the
+When the $\@RECHKFREQ is not specified in the Variables tab, the
 default behavior is that only one check will be performed to see if a
 file exists. If a qualified file is not found, the File Arrival job will
 end immediately. In this case, the Job End Time has no effect -- it is
 ignored.
 
 To define a File Arrival job that will act as a File Watcher, be sure to
-register the \$\@RECHKFREQ variable with a value of some number of
+register the $\@RECHKFREQ variable with a value of some number of
 seconds. With this value specified, the Job End Time controls how long
 the File Arrival job will repeat checking for a qualifying file.
 
@@ -890,12 +890,12 @@ the File Arrival job will repeat checking for a qualifying file.
 
 The IBM i File Arrival job supports an additional Job End Time
 parameter. This value is entered using the Variables tab of the job
-master record to specify a value for the \$\@JOBENDTIME Agent variable
+master record to specify a value for the $\@JOBENDTIME Agent variable
 name. When a Job End Time is specified, the File Creation End time no
 longer influences the job end time, but is used only for validating the
 time the file was created.
 
-If the \$\@JOBENDTIME special variable is not specified under the
+If the $\@JOBENDTIME special variable is not specified under the
 Variables tab , then the File Creation End Time will be used as the Job
 End Time.
 
@@ -904,12 +904,12 @@ File Creation End Time is used only to validate the creation time of the
 file.
 
 There will always be a Job End Time, in order to prevent File Arrival
-jobs that use the \$\@RECHKFREQ from executing eternally. The Job End
+jobs that use the $\@RECHKFREQ from executing eternally. The Job End
 Time is determined by the following order of job parameter evaluation:
 
-- The \$\@JOBENDTIME was specified.
+- The $\@JOBENDTIME was specified.
 
-- The \$\@JOBENDTIME was not specified, but the File Creation End Time
+- The $\@JOBENDTIME was not specified, but the File Creation End Time
     was specified, so the File Creation End Time is also used for the
     Job End Time.
 
@@ -941,7 +941,7 @@ file was found, the job completion code (and an LSAM Feedback code) will
 include the completion code CKF0009. This code represents the same
 condition as code CKF0001 (file name not found), but it includes the
 additional meaning that the Job End Time expired before the file could
-be found. But if the \$\@RECHKFREQ was set to zeros and the single check
+be found. But if the $\@RECHKFREQ was set to zeros and the single check
 for a file produced no match, then the job completion code will be
 CKF0001.
 
@@ -949,7 +949,7 @@ One important advantage of using a Job End Time is that it becomes
 possible for the File Arrival job to wait for, and eventually select a
 file that has a creation time that is older than when the job started,
 depending on the settings of the File Creation Start and End Times.
-Using a non-zero \$\@RECHKFREQ with the Job End Time permits the job to
+Using a non-zero $\@RECHKFREQ with the Job End Time permits the job to
 wait until a file created in the past is finally moved to the target
 directory or library where the File Arrival job is watching for the
 file. In other words, the job will not stop checking for the file (until
@@ -988,7 +988,7 @@ qualified file immediately when OpCon tells it to start.
 
 - If OpCon starts the File Arrival job at a time that is later than
     the End Time, only a single file check will be performed, regardless
-    of the setting of an optional \$\@RECHKFREQ value. Any matching file
+    of the setting of an optional $\@RECHKFREQ value. Any matching file
     that is found will be checked to be sure that it was not created
     outside of the File Creation Times. If a file with a matching name
     is found, but its Create Time falls outside of the specified
@@ -999,7 +999,7 @@ If both a Start Time and an End Time are specified, then all of the
 operations described above for each single time will apply.
 
 - This is another case in which the IBM i File Arrival command
-    parameter special variable \$\@RECHKFREQ can vary the behavior of
+    parameter special variable $\@RECHKFREQ can vary the behavior of
     the File Arrival job.
 
 #### Managing Job Status versus the Possible Exit Descriptions (Completion Codes)
@@ -1029,7 +1029,7 @@ makes it possible for the File Arrival job to adjust subsequent
 processing by any OpCon Jobs or Schedules that may follow.
 
 Using the Variables tab to register the Agent command parameter
-\$\@FAILIFZERO = \*NO, it becomes possible to define a File Arrival job
+$\@FAILIFZERO = \*NO, it becomes possible to define a File Arrival job
 that uses the job master Failure Condition of "Fail On Error Except
 Reached End Time", but the Variables tab tells the Agent file check
 command to also NOT fail the job if the Job End Time was reached with no

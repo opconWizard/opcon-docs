@@ -37,7 +37,7 @@ schedules into the Daily tables for the selected dates.
     build the required schedule instances based on the request.
   - For each named instance of a schedule that it builds,
         SMASchedMan creates a property called InstanceName that contains
-        the name of \"this\" schedule instance.
+        the name of "this" schedule instance.
     - The property is built as:
             [InstanceName=xxxxx]{style="font-family: 'Courier New';"}         -   The property can be used at runtime in job events.
 - The jobs of a schedule must qualify for the selected date(s) to be
@@ -46,7 +46,7 @@ schedules into the Daily tables for the selected dates.
         for the schedule and any shared holiday calendars (including
         Master), and qualifies the job based on frequency settings for a
         specific date.
-  - If a job has the flag set to \"Disable Build\", SMASchedMan will
+  - If a job has the flag set to "Disable Build", SMASchedMan will
         not include the job with the schedule.
   - When building a subschedule, if no jobs qualify for the day,
         SMASchedMan creates a Null job called SubScheduleNullJob to
@@ -134,7 +134,7 @@ SMA Request Router configuration determines basic service and logging
 behavior, and Request Handler definitions. The SMARequestRouter.ini file
 resides in the \<Configuration Directory\>\\SAM\\ folder. The tables
 contain the definitions of each configuration parameter. If a value of
-\"Y\" is in the Dynamic column, any changes take effect immediately upon
+"Y" is in the Dynamic column, any changes take effect immediately upon
 saving the file. All other configuration settings require the service to
 be restarted before the change takes effect.
 
@@ -270,7 +270,7 @@ processing.
 
 #### Debug Options
 
-The Debug Options configure the SMA Request Router\'s logging behavior.
+The Debug Options configure the SMA Request Router's logging behavior.
 
 +--------------------+---------+---------------+--------------------+
 | Debug Options      | Default | Dynamic (Y/N) | Definition         |
@@ -288,8 +288,8 @@ The Debug Options configure the SMA Request Router\'s logging behavior.
 |                    |         |               |     When the file  |
 |                    |         |               |     reaches this   |
 |                    |         |               |     maximum size,  |
-|                    |         |               |     it is \"rolled |
-|                    |         |               |     over.\"        |
+|                    |         |               |     it is "rolled |
+|                    |         |               |     over."        |
 |                    |         |               | -   This setting   |
 |                    |         |               |     creates small  |
 |                    |         |               |     manageable log |
@@ -352,7 +352,7 @@ in the table.
   RequestHandler         SMASchedMan           N               The name of the Request Handler that builds, checks, and deletes schedules.
   RequestExecutable      .\\ SMASchedMan.exe   N               The path and name of the SMASchedMan Request Handler executable.
   RequestExecutionPath   .\\                   N               The working directory for the SMASchedMan Request Handler.
-  RequestArguments       \<Blank\>             N               Defines the arguments in the SMASchedMan Request Handler executable\'s command line.
+  RequestArguments       \<Blank\>             N               Defines the arguments in the SMASchedMan Request Handler executable's command line.
 
   : SMA Request Router Configuration: SMASchedMan Request Handler 01
   Settings
@@ -367,7 +367,7 @@ specified in the table.
   RequestHandler         LSAMDATARETRIEVER             N               Name of the Request Handler for the Job Output Retrieval System (JORS).
   RequestExecutable      .\\SMALSAMDataRetriever.exe   N               The path and name of the LSAMDATARETRIEVER Request Handler executable.
   RequestExecutionPath   .\\                           N               The working directory for the LSAMDATARETRIEVER Request Handler.
-  RequestArguments       \<Blank\>                     N               Defines arguments in the LSAMDATARETRIEVER Request Handler executable\'s command line.
+  RequestArguments       \<Blank\>                     N               Defines arguments in the LSAMDATARETRIEVER Request Handler executable's command line.
 
   : SMA Request Router Configuration: LSAMDATARETRIEVER Request Handler
   02 Settings
@@ -382,7 +382,7 @@ parameters.
   RequestHandler         SAPQUERYPROCESSOR          N               Name of the Request Handler required for creating SAP jobs.
   RequestExecutable      .\\SAPQueryProcessor.exe   N               The path and name of the SAPQUERYPROCESSOR Request Handler executable.
   RequestExecutionPath   .\\                        N               The working directory for the SAPQUERYPROCESSOR Request Handler.
-  RequestArguments       \<Blank\>                  N               Defines the arguments in the SAPQUERYPROCESSOR Request Handler executable\'s command line.
+  RequestArguments       \<Blank\>                  N               Defines the arguments in the SAPQUERYPROCESSOR Request Handler executable's command line.
 
   : SMA Request Router Configuration: SAPQUERYPROCESSOR Request Handler
   03 Settings
@@ -397,7 +397,7 @@ specified in the table.
   RequestHandler         SAPBWQUERYPROCESSOR        N               Name of the Request Handler required for creating SAP BW jobs.
   RequestExecutable      .\\SAPQueryProcessor.exe   N               The path and name of the SAPQUERYPROCESSOR Request Handler executable.
   RequestExecutionPath   .\\                        N               The working directory for the SAPBWQUERYPRO-CESSOR Request Handler.
-  RequestArguments       \<Blank\>                  N               Defines the arguments in the SAPBWQUERYPRO-CESSOR Request Handler executable\'s command line.
+  RequestArguments       \<Blank\>                  N               Defines the arguments in the SAPBWQUERYPRO-CESSOR Request Handler executable's command line.
 
   : SMA Request Router Configuration: SAPBWQUERYPROCESSOR Request
   Handler 04 Settings
@@ -412,7 +412,7 @@ specified in the table.
   RequestHandler         BIRTPROCESSOR              N               Name of the Request Handler required to process the report request.
   RequestExecutable      .\\ SMABIRTProcessor.exe   N               The path and name of the BIRTPROCESSOR Request Handler executable.
   RequestExecutionPath   .\\                        N               The working directory for the BIRTPROCESSOR Request Handler.
-  RequestArguments       \<Blank\>                  N               Defines the arguments in the BIRTPROCESSOR Request Handler executable\'s command line.
+  RequestArguments       \<Blank\>                  N               Defines the arguments in the BIRTPROCESSOR Request Handler executable's command line.
 
   : SMA Request Router Configuration: BIRTPROCESSOR Request Handler 06
   Settings
@@ -430,7 +430,7 @@ The General Settings are reserved for future use.
 
 #### Debug Options
 
-The Debug Options configure the SMA LSAM Data Retriever\'s logging
+The Debug Options configure the SMA LSAM Data Retriever's logging
 behavior. The SMALSAMDataRetriever.log resides in the \<Output
 Directory\>\\SAM\\Log\\ directory.
 
@@ -497,7 +497,7 @@ The SMABIRTPROCESSOR.ini file contains the following major sections:
 
 #### Debug Options
 
-The Debug Options configure the SMABirtProcessor\'s logging settings.
+The Debug Options configure the SMABirtProcessor's logging settings.
 The SMABirtProcessor.log file resides in the \<Output
 Directory\>\\SAM\\Log\\ directory.
 
@@ -535,9 +535,9 @@ and SAP BW.
 
 #### Debug Options
 
-The Debug Options configure the SAP Query Processor\'s and the
-SAPBWQueryProcessor\'s logging behavior. The SAPQueryProcessor.log
-contains both SAP and SAP BW Query Processors\' information and resides
+The Debug Options configure the SAP Query Processor's and the
+SAPBWQueryProcessor's logging behavior. The SAPQueryProcessor.log
+contains both SAP and SAP BW Query Processors' information and resides
 in the \<Output Directory\>\\SAM\\Log\\ directory.
 
 :::note
@@ -560,8 +560,8 @@ The Output Directory was configured during installation. For more information, r
 |                    |         |               |     When the file  |
 |                    |         |               |     reaches this   |
 |                    |         |               |     maximum size,  |
-|                    |         |               |     it is \"rolled |
-|                    |         |               |     over.\"        |
+|                    |         |               |     it is "rolled |
+|                    |         |               |     over."        |
 |                    |         |               | -   This setting   |
 |                    |         |               |     creates small, |
 |                    |         |               |     manageable log |

@@ -12,7 +12,7 @@ status change of one or more items within a group.
 | ![White pencil icon on green     | **EXAMPLE:** In Notification     | | circular                         | Manager, a trigger for Job       |
 | background](../../Reso           | Failed is set on a Job Group of  |
 | urces/Images/example-icon(48x48) | jobs containing a job named      |
-| .png "Example icon") | \"Backup.\" The job \"Backup\"   |
+| .png "Example icon") | "Backup." The job "Backup"   |
 |                                  | is configured to run on each     |
 |                                  | machine in a group.              |
 |                                  |                                  |
@@ -28,7 +28,7 @@ status change of one or more items within a group.
 |                                  | -   Backup_WinMach2              |
 |                                  | -   Backup_WinMach3              |
 |                                  |                                  |
-|                                  | Because \"Backup\" was selected  |
+|                                  | Because "Backup" was selected  |
 |                                  | in the Job Group, if any one of  |
 |                                  | the jobs fail, the notification  |
 |                                  | will be sent and the exact name  |
@@ -67,7 +67,7 @@ Group.
 | urces/Images/example-icon(48x48) | on a Notification Manager Group  |
 | .png "Example icon") | of schedules containing a        |
 |                                  | schedule named                   |
-|                                  | \"ImportantProcess\". This       |
+|                                  | "ImportantProcess". This       |
 |                                  | schedule is configured as a      |
 |                                  | subschedule on other schedules,  |
 |                                  | and it also has Container jobs   |
@@ -91,11 +91,11 @@ Group.
 |                                  | or 3 is placed On Hold, the      |
 |                                  | trigger will fire. It does not   |
 |                                  | fire for schedules 2 or 4        |
-|                                  | because \"OtherSchedule\" is the |
+|                                  | because "OtherSchedule" is the |
 |                                  | schedule that contains jobs. The |
 |                                  | trigger would fire for those     |
 |                                  | schedules only if                |
-|                                  | \"OtherSchedule\" was in the     |
+|                                  | "OtherSchedule" was in the     |
 |                                  | Notification Manager Group.      |
 +----------------------------------+----------------------------------+
 
@@ -115,8 +115,8 @@ Daily was derived from the selected job in the Master.
 | ![White pencil icon on green     | **EXAMPLE:** In Notification     | | circular                         | Manager, a trigger for Job       |
 | background](../../Reso           | Failed is set on a Notification  |
 | urces/Images/example-icon(48x48) | Manager Group of jobs containing |
-| .png "Example icon") | a job named \"Backup.\" The job  |
-|                                  | \"Backup\" is configured to run  |
+| .png "Example icon") | a job named "Backup." The job  |
+|                                  | "Backup" is configured to run  |
 |                                  | on each machine in a group.      |
 |                                  |                                  |
 |                                  |                                  |
@@ -130,7 +130,7 @@ Daily was derived from the selected job in the Master.
 |                                  | -   Backup_WinMach2              |
 |                                  | -   Backup_WinMach3              |
 |                                  |                                  |
-|                                  | Because \"Backup\" was selected  |
+|                                  | Because "Backup" was selected  |
 |                                  | in the Notification Manager      |
 |                                  | Group, if any one of the jobs in |
 |                                  | the Daily fail, the notification |
@@ -175,14 +175,14 @@ Daily was derived from the selected job in the Master.
 +-------------------------------+-------------------------------------+
 | Job Still Attempting to Start | -   The Job Still Attempting to     |
 |                               |     Start trigger is fired when SAM |
-|                               |     checks on the job\'s status and |
+|                               |     checks on the job's status and |
 |                               |     the job is still in a [Start    | |                               |     Attempted]{.skd-job-statuses}   |
 |                               |     status.                         |
 |                               | -   To change the frequency at      |
 |                               |     which this occurs, change the   |
-|                               |     \"Minutes between checking      |
-|                               |     running jobs\" parameter in the |
-|                               |     \"Time Settings\" category of   |
+|                               |     "Minutes between checking      |
+|                               |     running jobs" parameter in the |
+|                               |     "Time Settings" category of   |
 |                               |     the **Advanced Configuration    |
 |                               |     for Machine \<machine name\>**  |
 |                               |     screen. Refer to [Time          | |                               |     Set                             |
@@ -250,7 +250,7 @@ Daily was derived from the selected job in the Master.
 | Job to be Killed              | -   A job kill command has been     |
 |                               |     issued through a graphical      |
 |                               |     interface or through a          |
-|                               |     \$JOB:KILL event.               |
+|                               |     $JOB:KILL event.               |
 |                               | -   The trigger fires when the SAM  |
 |                               |     sends the kill message to the   |
 |                               |     LSAM.                           |

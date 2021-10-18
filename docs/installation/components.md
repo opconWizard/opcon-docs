@@ -72,7 +72,7 @@ Choose your authentication method and connect to the database. Choose
 option *a* or *b*.
 
 a.  To use SQL Authentication, enter *opconui* in the **Username** field
-    and enter *opconui\'s password*in the **Password** text box.
+    and enter *opconui's password*in the **Password** text box.
 b.  To use Windows Authentication, select the **Use Windows
     Authentication** checkbox.
 
@@ -135,7 +135,7 @@ can distribute the profiles to all other EM machines with a simple file
 copy. After first installation on many machines, this process may be
 helpful; however, after users have configured their own profiles there
 may be a reason they should have a unique set of connection profiles.
-Before overwriting a user\'s connection profiles, be sure to back up
+Before overwriting a user's connection profiles, be sure to back up
 their existing profiles.xml file.
 
 1. On the machine with all the EM profiles already configured, browse
@@ -146,14 +146,14 @@ their existing profiles.xml file.
 4. Right-click and select **Paste** from the menu.
 5. In any other EM machine, browse to the *shared location* and copy
     the file.
-6. On the other EM machine, browse to the user\'s
+6. On the other EM machine, browse to the user's
     **.enterpriseManager** in the *user directory*.
 7. Right-click in the directory and select **Paste** from the menu.
 8. If a **Profiles.xml file** already exists, confirm if you should
     overwrite the file.
 
 :::note
-SMA Technologies recommends automating distribution of a \"central\" Profiles.xml file with an OpCon job if common profile information should always be maintained from a single point.
+SMA Technologies recommends automating distribution of a "central" Profiles.xml file with an OpCon job if common profile information should always be maintained from a single point.
 :::
 
 ### Upgrade Installation on Windows
@@ -358,7 +358,7 @@ database before updating the EM repository. The procedures in this
 section apply to EM installations on both Windows and Linux.
 
 :::note
-On some Windows 7 machines and Windows 2008 R2 Servers, the automatic updates will fail because of lack of privileges on the machine. If this happens, modify the privileges on the EnterpriseManager folder to grant \"Full Control\" to \"Creator Owner\", \"Users\", and the \"LogonUser\".
+On some Windows 7 machines and Windows 2008 R2 Servers, the automatic updates will fail because of lack of privileges on the machine. If this happens, modify the privileges on the EnterpriseManager folder to grant "Full Control" to "Creator Owner", "Users", and the "LogonUser".
 :::
 
 [Update the Repository for the Update Sites]{.ul}
@@ -370,7 +370,7 @@ On some Windows 7 machines and Windows 2008 R2 Servers, the automatic updates wi
     Installation media.
 4. Double-click the **repository.zip** file.
 5. Extract the **zip file** to the repository location(s). Be sure to
-    choose the option to \"**Use folder names**\".
+    choose the option to "**Use folder names**".
 
 [Add an Update Site to the Enterprise Manager]{.ul}
 
@@ -668,7 +668,7 @@ ii. Open **certmgr** and make sure that the newly-created certificate is
     copied to (listed in) the **Trusted Root Certificate Authorities**
     certificate store.
 iii. Double-click on the new certificate in the list.
-iv. Switch to the **Details** tab, copy the \"Thumbprint\" value into a
+iv. Switch to the **Details** tab, copy the "Thumbprint" value into a
     text editor (e.g., Notepad), and remove all the spaces. The value
     (free of any spaces) will replace \<certificate thumbprint\> in the
     command specified in [Step vi]{.ul}.
@@ -693,7 +693,7 @@ v.  Save and close the configuration file.
 vi. Open the **command prompt** in Administrator mode (*Run as
     administrator*).
 
-vii. Change the directory to \"SAM\" under **OpConxps** installation
+vii. Change the directory to "SAM" under **OpConxps** installation
      folder.
 
 viii. Run the following command:
@@ -714,7 +714,7 @@ iv. In the **CertificateSerialNumber** field, insert the custom
 v.  Save and close the configuration file.
 vi. Open the **command prompt** in Administrator mode *(Run as
     administrator)*.
-vii. Change the directory to \"SAM\" under OpConxps installation folder.
+vii. Change the directory to "SAM" under OpConxps installation folder.
 viii. Run the following command:
 
 Click **Next**.
@@ -1022,7 +1022,7 @@ If file extensions are not displayed and you create a text document named test.t
 4. Select **SMA OpCon Resource Monitor** program in the **Services**
     list.
 5. Use menu path: **Action \> Stop**.
-6. Confirm the Service\'s **Status** is **Stopped**.
+6. Confirm the Service's **Status** is **Stopped**.
 7. Close the **Services** window.
 
 [Remove the SMA Resource Monitor]{.ul}
@@ -1071,7 +1071,7 @@ The installation writes the log file named SMA_OpCon_Resource_Monitor_Install.lo
 4. Select **SMA OpCon Resource Monitor** program in the **Services**
     list.
 5. Use menu path: **Action \> Start**.
-6. Confirm the Service\'s **Status** is **Started**.
+6. Confirm the Service's **Status** is **Started**.
 7. Close the **Services** window.
 
 ## Silent Mode
@@ -1139,7 +1139,7 @@ Find and enable the preferred command based on your requirements:
 a.  Set the **\_siType** variable equal to **1** in the file to perform
     a COMPLETE install of the MSI package.
 b.  Set the **\_siType** variable equal to **2** and set the
-    **\_siRemove** variable equal to **\"\<feature\>,\<feature\>\"** in
+    **\_siRemove** variable equal to **"\<feature\>,\<feature\>"** in
     the file to perform a COMPLETE install of the MSI package, except
     for features specified to be removed. Refer to the [Silent Install     Features](#Silent_Install_Features) section for the
     complete feature list.
@@ -1168,8 +1168,8 @@ section for a complete list of parameters.
 | ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
 | background](../../Reso           | set                              |
 | urces/Images/example-icon(48x48) | \_siPar                          |
-| .png "Example Icon") | ameter=\"RESMON_MSGIN=\'C:\\PATH |
-|                                  | TO MSLSAM\\MSLSAM\\MSGIN\'\"     |
+| .png "Example Icon") | ameter="RESMON_MSGIN='C:\\PATH |
+|                                  | TO MSLSAM\\MSLSAM\\MSGIN'"     |
 +----------------------------------+----------------------------------+
 
 +----------------------------------+----------------------------------+
@@ -1182,8 +1182,8 @@ section for a complete list of parameters.
 |                                  |                                  |
 |                                  |                                  |
 |                                  | -siP                             |
-|                                  | arameter=REINSTALLMODE=\"vomus\" |
-|                                  | REINSTALL=\"ALL\"                |
+|                                  | arameter=REINSTALLMODE="vomus" |
+|                                  | REINSTALL="ALL"                |
 +----------------------------------+----------------------------------+
 
 Use menu path: **File \> Save**.
@@ -1344,7 +1344,7 @@ specified in this section.
 ### Silent Install Parameters
 
 The complete list of parameters that can be defined by a space-separated
-string using the format PARAMETER=\"VALUE\" for the **\_siParameter**
+string using the format PARAMETER="VALUE" for the **\_siParameter**
 variable are specified in this section.
 
 +----------------------------------+----------------------------------+
@@ -1682,7 +1682,7 @@ variable are specified in this section.
 +-----------------------+---------------------------------------------+
 | TLS_CERT_REVOCATION   | -   Indicates whether or not to validate    |
 |                       |     certificates against the local          |
-|                       |     certificate store\'s revocation list.   |
+|                       |     certificate store's revocation list.   |
 |                       |                                             |
 |                       | -   Default value: False                    |
 |                       |                                             |

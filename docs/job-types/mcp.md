@@ -46,7 +46,7 @@ The START and RUN type jobs use the following fields:
     passed to the task.
   - The maximum number of characters for Arguments is 200.
   - A WFL accepts string, integer, and Boolean arguments.
-  - Enclose a string argument in double quotes (\"STRING PARAM\").
+  - Enclose a string argument in double quotes ("STRING PARAM").
   - Pass integer arguments as numbers (e.g., 5).
   - Pass Boolean arguments as TRUE or FALSE.
   - Parentheses are allowed around all the arguments.
@@ -111,7 +111,7 @@ The START and RUN type jobs use the following fields:
 **Job Summary Information**: For START type jobs, this frame contains
 the fields to define a specific location for the job summary
 information. This is useful for sites that choose to store job summary
-in locations other than the MCP LSAM\'s default location. The JORS process will use this information to look up the file
+in locations other than the MCP LSAM's default location. The JORS process will use this information to look up the file
 when a JORS request is sent.
 
 - **User Code**: Defines the MCP user to impersonate when looking up
@@ -214,8 +214,8 @@ The COPY type jobs use the following fields:
   - The maximum number of characters for the **Hostname** field
         is 256.
   - Tokens are supported in this field.
-- **Copy & Compare** (Optional): Specifies to use the \"COPY &
-    COMPARE\" feature if the check box is marked to copy the file.
+- **Copy & Compare** (Optional): Specifies to use the "COPY &
+    COMPARE" feature if the check box is marked to copy the file.
 
 ### CHANGE Fields
 
@@ -315,7 +315,7 @@ the job specified on the Job Description:
     passed to the task.
   - The maximum number of characters for Arguments is 92.
   - A WFL accepts string, integer, and Boolean arguments.
-  - Enclose a string argument in double quotes (\"STRING PARAM\").
+  - Enclose a string argument in double quotes ("STRING PARAM").
   - Pass integer arguments as numbers (e.g., 5).
   - Pass Boolean arguments as TRUE or FALSE.
   - Parentheses are allowed around all the arguments.
@@ -391,7 +391,7 @@ program or WFL.
 **Job Summary Information**: For START type Prerun jobs, this frame
 contains the fields to define a specific location for the job summary
 information. This is useful for sites that choose to store job summary
-in locations other than the MCP LSAM\'s default location. The JORS process will use this information to look up the file
+in locations other than the MCP LSAM's default location. The JORS process will use this information to look up the file
 when a JORS request is sent.
 
 **User Code**: Defines the MCP user to impersonate when looking up job
@@ -494,8 +494,8 @@ The COPY type jobs use the following fields:
   - The maximum number of characters for the **Hostname** field
         is 256.
   - Tokens are supported in this field.
-- **Copy & Compare** (Optional): Specifies to use the \"COPY &
-    COMPARE\" feature if the checkbox is marked to copy the file.
+- **Copy & Compare** (Optional): Specifies to use the "COPY &
+    COMPARE" feature if the checkbox is marked to copy the file.
 
 ### CHANGE Fields
 

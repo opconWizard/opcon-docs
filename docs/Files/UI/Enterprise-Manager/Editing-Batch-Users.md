@@ -19,7 +19,7 @@ To edit a batch user:
     the **Batch Users** screen.
 
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Reserved batch users, e.g., \"Use Service Account\" for Windows, cannot be edited at this time.]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Reserved batch users, e.g., "Use Service Account" for Windows, cannot be edited at this time.]
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------
 :::
 

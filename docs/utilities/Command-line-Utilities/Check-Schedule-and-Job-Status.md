@@ -9,22 +9,22 @@ utility provides various logical operators to compare job statuses.
 The SMAChkStat.exe utility allows the comparison of the status
 description of a job or schedule to a specific value(s).
 
-- Based on whether the job or schedule\'s status code matches the
+- Based on whether the job or schedule's status code matches the
     comparison expression, the utility either fails or succeeds. If it
     fails, the utility returns an exit code of 33001; otherwise, it
     returns a zero (0). As a consequence, this utility enables branching
     to different jobs or to different OpCon
-    events based on the job or schedule\'s current status.
+    events based on the job or schedule's current status.
 - The ChkStat command line must support a 40-character schedule name.
 - The ChkStat command line must support a 128-character job name.
 
 ## Syntax
 
-Insert the SMA Check Status executable in a job\'s command line using
+Insert the SMA Check Status executable in a job's command line using
 the following syntax:
 
 smachkstat.exe
-ScheduleDate\<space\>ScheduleName\<space\>\"ComparisonExpression\"\<space\>
+ScheduleDate\<space\>ScheduleName\<space\>"ComparisonExpression"\<space\>
 \[JobName\] ↵
 
 :::note
@@ -42,17 +42,17 @@ The following describes the command-line parameters:
     syntax recognized by the regional settings of the user running the
     utility.
   - If the Schedule Date contains space, enclose the parameter in
-        double quotes (e.g., \"\[\[\$SCHEDULE DATE\]\]\"). -   **ScheduleName**: This parameter is the schedule\'s name defined in
+        double quotes (e.g., "\[\[$SCHEDULE DATE\]\]"). -   **ScheduleName**: This parameter is the schedule's name defined in
     the database. Make sure the schedule name exists for the specified
     date and a job exists in the schedule.
   - If the database has a binary sort order, the schedule name is
         case-sensitive.
   - If the Schedule Name contains space, enclose the parameter in
-        double quotes (e.g., \"Schedule Name\".
+        double quotes (e.g., "Schedule Name".
 - **ComparisonExpression**: This parameter is the job/schedule status
     logical expression to be evaluated against the
     OpCon job/schedule status.
-  - Quotation marks (\") must enclose the entire expression. Refer
+  - Quotation marks (") must enclose the entire expression. Refer
         to the [SMAChkStat Sample         Expressions](#SMAChkStat_Sample_Expressions)
         table for sample expressions.
   - Listed in order of operations, the logical expression may
@@ -93,10 +93,10 @@ The following describes the command-line parameters:
       : []{#Schedule_Status_Keywords}Schedule Status Keywords
       Expression                      Meaning
       ------------------------------- -------------------------------
-      \"ON_HOLD \| MISSED\"           ON HOLD OR MISSED
-      \"!(RUNNING)\"                  NOT RUNNING
-      \"!(RUNNING) & ! (CANCELED)\"   NOT RUNNING AND NOT CANCELLED
-      \"!(WAITING) \| CANCELED\"      NOT WAITING OR CANCELLED
+      "ON_HOLD \| MISSED"           ON HOLD OR MISSED
+      "!(RUNNING)"                  NOT RUNNING
+      "!(RUNNING) & ! (CANCELED)"   NOT RUNNING AND NOT CANCELLED
+      "!(WAITING) \| CANCELED"      NOT WAITING OR CANCELLED
 
       : []{#SMAChkStat_Sample_Expressions}SMAChkStat Sample Expressions
     \
@@ -109,7 +109,7 @@ The following describes the command-line parameters:
   - If the database has a binary sort order, the job name is
         case-sensitive. Do not include the square brackets in the syntax
         (\[\]).     -   If the Job Name contains spaces, enclose the parameter in double
-        quotes (e.g., \"Job Name\").
+        quotes (e.g., "Job Name").
 
 ## Logging
 
@@ -118,7 +118,7 @@ The Output Directory was configured during installation. For more information, r
 :::
 
 - The SMACheckStat.log file provides detailed information of errors
-    generated during the utility\'s execution. The log file resides in
+    generated during the utility's execution. The log file resides in
     the \<Output Directory\>\\SAM\\Log\\ directory. The syntax for the
     log file name is SMACheckStat\_\<date-time stamp\>.log.
 - All archived log files reside in the \<Output

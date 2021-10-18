@@ -21,7 +21,7 @@ When on the **Escalation Acknowledgment** screen, it lists any
 -   **Escalation Level**: The current level of the
     [escalation]{.GeneralEscalatedNotification}, as defined in the rule     sequence.
 -   **Status**: The current state of the
-    [escalation]{.GeneralEscalatedNotification}\'s acknowledgment.     Status has two states:
+    [escalation]{.GeneralEscalatedNotification}'s acknowledgment.     Status has two states:
     -   **Pending**: An [escalation]{.GeneralEscalatedNotification} is         awaiting acknowledgment and has been sent to one or more groups
         of users who are part of the
         [escalation]{.GeneralEscalatedNotification} rule.     -   **Exhausted**: An [escalation]{.GeneralEscalatedNotification}
@@ -32,7 +32,7 @@ When on the **Escalation Acknowledgment** screen, it lists any
 
  
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 -   [Viewing Notification Details](Viewing-Notification-Details.md)

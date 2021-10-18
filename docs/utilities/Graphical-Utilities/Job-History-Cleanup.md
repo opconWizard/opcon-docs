@@ -83,12 +83,12 @@ The following describes the command-line parameters:
 |                                  | The user is batchuser and the    |
 |                                  | password is batchpwd. The        |
 |                                  | schedule option was omitted,     |
-|                                  | which means all schedules\'      |
+|                                  | which means all schedules'      |
 |                                  | history will be archived. (A -p  |
 |                                  | switch was not listed to         |
 |                                  | indicate a purge.) The days to   |
 |                                  | keep was set to 30, which means  |
-|                                  | the previous month\'s history    |
+|                                  | the previous month's history    |
 |                                  | will be kept. The minimum        |
 |                                  | records parameter was set to 12, |
 |                                  | which means at least 12 records  |
@@ -117,10 +117,10 @@ The following describes the command-line parameters:
 |                                  | The user is batchuser and the    |
 |                                  | password is batchpwd. The        |
 |                                  | schedule option was omitted,     |
-|                                  | which means all schedules\'      |
+|                                  | which means all schedules'      |
 |                                  | history will be deleted. The     |
 |                                  | days to keep was set to 365,     |
-|                                  | which means the previous year\'s |
+|                                  | which means the previous year's |
 |                                  | history will be kept. The        |
 |                                  | minimum records parameter was    |
 |                                  | set to 120, which means at least |
@@ -145,7 +145,7 @@ clean up process.
 - The log file resides in the \<Output Directory\>\\SAM\\Log\\
     directory.
 - Each time the History.exe runs, it creates a log file name with the
-    following syntax: History_CCYYMMDD_HHmmssss.log. The \"ssss\" in
+    following syntax: History_CCYYMMDD_HHmmssss.log. The "ssss" in
     syntax represents seconds and tenths of seconds (e.g.,
     History_20110513_15263142.log).
 - Upon startup, History.exe checks the SAM\\Log folder for log files

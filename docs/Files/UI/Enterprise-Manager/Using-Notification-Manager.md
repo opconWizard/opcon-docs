@@ -35,7 +35,7 @@ functionality.
 
 ![Notification Manager toolbar](../../../Resources/Images/EM/EMnotifmgrtoolbar.png "Notification Manager toolbar")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Notification Triggers](Notification-Triggers2.md)

@@ -13,11 +13,11 @@ notification:
     of the search criteria in the notification filter for a third-party
     tool. The maximum for this field is 64 characters.
     -   The SMA Notify Handler places this ID in the message with the
-        format: \"EventID=\<space\>XXXXXX\".
+        format: "EventID=\<space\>XXXXXX".
     -   All characters are allowed except for the following: \~ (Tilde)
-        , \# (Pound), % (Percent), ! (Exclamation), @ (At), \$ (Dollar),
+        , \# (Pound), % (Percent), ! (Exclamation), @ (At), $ (Dollar),
         \^ Carat
--   **Severity**: Defines the choices for the message\'s severity level.
+-   **Severity**: Defines the choices for the message's severity level.
     The choices are: Information, Warning, or Error.
 -   **Message**: Defines a user-defined message up to 3,000 characters.
     In addition to the user-defined text, the message includes the

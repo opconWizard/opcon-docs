@@ -44,7 +44,7 @@ b.  Do the following to use SQL authentication to connect to the
 ```{=html}
 <!-- -->
 ```
-i.  Enter [opconui]{.ul} in the **Username** text box. ii. Enter the *opconui\'s password* in the **Password** text box.
+i.  Enter [opconui]{.ul} in the **Username** text box. ii. Enter the *opconui's password* in the **Password** text box.
 iii. Enter the *SQL server name* or *IP Address* in the **SQL Server**
      text box .
 

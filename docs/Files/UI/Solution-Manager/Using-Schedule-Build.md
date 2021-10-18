@@ -210,7 +210,7 @@ To build a schedule:
 20. *(Optional)* Click the *.log file link* to view the
     job log.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Using Schedule Build Queue](Using-Schedule-Build-Queue.md)

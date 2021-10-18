@@ -13,8 +13,8 @@ directory. Follow the procedure below to do so.
 To configure the installation directory:
 
 1.  Click the **Yes** button when prompted with the following message:
-    *\"OpCon/xps installation directory has not been configured, and it
-    is needed to locate the tools. Do you want to configure it now?\"*.
+    *"OpCon/xps installation directory has not been configured, and it
+    is needed to locate the tools. Do you want to configure it now?"*.
     The **External Tools Preferences** dialog should display.
 2.  Enter the [directory]{._Override style="font-style: italic;"} in the     **OpCon/xps installation directory** text box or use the **Browse**
     button to locate the directory.

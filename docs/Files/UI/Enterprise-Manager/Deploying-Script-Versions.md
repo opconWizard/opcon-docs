@@ -8,10 +8,10 @@ viewport: width=device-width, initial-scale=1.0
 
 The Deploy Version feature allows you to deploy a specific version of a
 script to all or a subset of Master jobs already associated with that
-script. Let\'s say, for example, you had previously associated \"Version
-3\" of a script with ten different jobs in ten different schedules. You
-could use the deployment wizard to replace \"Version 3\" in all of those
-jobs with \"Version 7\" in a simple process.
+script. Let's say, for example, you had previously associated "Version
+3" of a script with ten different jobs in ten different schedules. You
+could use the deployment wizard to replace "Version 3" in all of those
+jobs with "Version 7" in a simple process.
 
 To deploy a script version:
 

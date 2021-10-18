@@ -55,7 +55,7 @@ This report becomes more CPU intensive as the amount of Job History in the datab
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -123,8 +123,8 @@ This report becomes more CPU intensive as the amount of Job History in the datab
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -152,7 +152,7 @@ This report becomes more CPU intensive as the amount of Job History in the datab
 +----------------------------------------------------------------------+
 | **Required Filters**: \<None\>                                       |
 +----------------------------------------------------------------------+
-| **Parameters**: -p \"MACHS_MACHID=\<value\>\"                        |
+| **Parameters**: -p "MACHS_MACHID=\<value\>"                        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -176,8 +176,8 @@ This report becomes more CPU intensive as the amount of Job History in the datab
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -217,8 +217,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -256,7 +256,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: \<None\>                                       |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"ENSOPTIONS_OPTION=\<value\>\"                    |
+| **Parameters**: -p"ENSOPTIONS_OPTION=\<value\>"                    |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -278,7 +278,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -300,7 +300,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -322,7 +322,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -346,8 +346,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"HISTORY_SKDDATE=\<value\>\"                      |
-| -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"                         |
+| **Parameters**: -p"HISTORY_SKDDATE=\<value\>"                      |
+| -p"SKDID=\<value\>" -p"DEPTID=\<value\>"                         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -374,8 +374,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
-| -p\"HISTORY_JSTART= \<value\>\"                                      |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
+| -p"HISTORY_JSTART= \<value\>"                                      |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -429,7 +429,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -454,8 +454,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -503,7 +503,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -527,7 +527,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -553,7 +553,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -577,7 +577,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -599,7 +599,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -623,7 +623,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -652,7 +652,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -679,7 +679,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: \<None\>                                       |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"MACHGRPS_MACHGRPID=\<value\>\"                   |
+| **Parameters**: -p"MACHGRPS_MACHGRPID=\<value\>"                   |
 |                                                                      |
 | For detailed syntax requirements, refer to [-p                       | | MACHGRPS_MACHGRPID](../utilities/Command-l                           |
 | ine-Utilities/BIRT-Report-Generator.md#-p_MACHGRPS_MACHGRPID) |
@@ -701,8 +701,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
-| -p\"HISTORY_SKDDATE=\<value\>\"                                      |
+| **Parameters**: -p"SKDID=\<value\>"                                |
+| -p"HISTORY_SKDDATE=\<value\>"                                      |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -727,8 +727,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
-| -p\"HISTORY_SKDDATE=\<value\>\"                                      |
+| **Parameters**: -p"SKDID=\<value\>"                                |
+| -p"HISTORY_SKDDATE=\<value\>"                                      |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -753,8 +753,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -782,8 +782,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -803,7 +803,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 | **Description**: Shows the jobs in the primary history table, their  |
 | finish status, associated runtime information, and machine each job  |
 | was executed on. Sorted by schedule. The report begins from the      |
-| table\'s most recent entry.                                          |
+| table's most recent entry.                                          |
 +----------------------------------------------------------------------+
 | **File Name**: skdrep05                                              |
 +----------------------------------------------------------------------+
@@ -811,7 +811,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -827,7 +827,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 | **Description**: Shows the jobs in the primary history table, their  |
 | finish status, associated runtime information, and machine each job  |
 | was executed on. Every row will display the job name. Sorted by      |
-| schedule. The report begins from the table\'s most recent entry. The |
+| schedule. The report begins from the table's most recent entry. The |
 | report uses a special filter for selecting months from history.      |
 +----------------------------------------------------------------------+
 | **File Name**: skdrep47                                              |
@@ -836,7 +836,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"HISTORY_JSTART=\<value\>\" |
+| **Parameters**: -p"SKDID=\<value\>" -p"HISTORY_JSTART=\<value\>" |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -861,7 +861,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -885,8 +885,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
-| -p\"HISTORY_SKDDATE=\<value\>\"                                      |
+| **Parameters**: -p"SKDID=\<value\>"                                |
+| -p"HISTORY_SKDDATE=\<value\>"                                      |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -912,8 +912,8 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
-| -p\"HISTARC_SKDDATE=\<value\>\"                                      |
+| **Parameters**: -p"SKDID=\<value\>"                                |
+| -p"HISTARC_SKDDATE=\<value\>"                                      |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -941,7 +941,7 @@ This report returns records for all dates in the history archive table which cou
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -954,7 +954,7 @@ This report returns records for all dates in the history archive table which cou
 ## Job History Count by Month
 
 :::note
-The \"Job Count Average by Month\" graph in the report charts the job count average for each month. Each point is calculated by taking the total number of jobs run in a month and dividing that by the actual number of days jobs ran.
+The "Job Count Average by Month" graph in the report charts the job count average for each month. Each point is calculated by taking the total number of jobs run in a month and dividing that by the actual number of days jobs ran.
 :::
 
 +----------------------------------------------------------------------+
@@ -967,7 +967,7 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Year                                           |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"YEAR=\<yyyy\>\"                                  |
+| **Parameters**: -p"YEAR=\<yyyy\>"                                  |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -989,7 +989,7 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1013,7 +1013,7 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1037,7 +1037,7 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1072,7 +1072,7 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"TAGNAME=\<value\>\"                              |
+| **Parameters**: -p"TAGNAME=\<value\>"                              |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1095,7 +1095,7 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: \<None\>                                       |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"AUDITHST_SQLDATE=\<value\>\"                     |
+| **Parameters**: -p"AUDITHST_SQLDATE=\<value\>"                     |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1119,8 +1119,8 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments, Job Types              |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
-| -p\"JOBTYPEID=\<value\>\"                                            |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
+| -p"JOBTYPEID=\<value\>"                                            |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1146,7 +1146,7 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Year                                           |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"YEAR=\<yyyy\>\"                                  |
+| **Parameters**: -p"YEAR=\<yyyy\>"                                  |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1180,8 +1180,8 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1208,8 +1208,8 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1235,8 +1235,8 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1263,8 +1263,8 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1290,7 +1290,7 @@ The \"Job Count Average by Month\" graph in the report charts the job count aver
 +----------------------------------------------------------------------+
 | **Required Filters**: Job Status                                     |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"JOB_STATUS=\<job status code\>\"                 |
+| **Parameters**: -p"JOB_STATUS=\<job status code\>"                 |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1319,8 +1319,8 @@ The History table does not include jobs that missed their latest start time, or 
 | **Required Filters**: Job Status, Year, Highlight (default value is  |
 | 10)                                                                  |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"JOB_STATUS=\<job status code\>\"                 |
-| -p\"HIGHLIGHT=\<number\>\" -p\"YEAR=\<yyyy\>\"                       |
+| **Parameters**: -p"JOB_STATUS=\<job status code\>"                 |
+| -p"HIGHLIGHT=\<number\>" -p"YEAR=\<yyyy\>"                       |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1346,7 +1346,7 @@ The History table does not include jobs that missed their latest start time, or 
 +----------------------------------------------------------------------+
 | **Required Filters**: Job Status                                     |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"JOB_STATUS=\<job status code\>\"                 |
+| **Parameters**: -p"JOB_STATUS=\<job status code\>"                 |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1373,8 +1373,8 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1400,7 +1400,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Year                                           |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"YEAR=\<yyyy\>\"                                  |
+| **Parameters**: -p"YEAR=\<yyyy\>"                                  |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1433,7 +1433,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1455,7 +1455,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Calendars                           |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"CALDESC_CALID=\<value\>\"                        |
+| **Parameters**: -p"CALDESC_CALID=\<value\>"                        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1469,7 +1469,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 
 +----------------------------------------------------------------------+
 | **Description**: Shows jobs with a Start Offset other than 00:00.    |
-| Includes a job\'s schedule, frequency, and time-related information, |
+| Includes a job's schedule, frequency, and time-related information, |
 | sorted by schedule.                                                  |
 +----------------------------------------------------------------------+
 | **File Name**: xref16                                                |
@@ -1478,7 +1478,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1500,7 +1500,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1514,7 +1514,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 
 +----------------------------------------------------------------------+
 | **Description**: Shows the details of all jobs with a build status   |
-| of \"Disable Frequency\", sorted by schedule.                        |
+| of "Disable Frequency", sorted by schedule.                        |
 +----------------------------------------------------------------------+
 | **File Name**: skdrep50                                              |
 +----------------------------------------------------------------------+
@@ -1522,7 +1522,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1538,7 +1538,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 
 +----------------------------------------------------------------------+
 | **Description**: Shows the details of all jobs with a build status   |
-| of \"Do Not Schedule\", sorted by schedule.                          |
+| of "Do Not Schedule", sorted by schedule.                          |
 +----------------------------------------------------------------------+
 | **File Name**: skdrep10                                              |
 +----------------------------------------------------------------------+
@@ -1546,7 +1546,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1562,7 +1562,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 
 +----------------------------------------------------------------------+
 | **Description**: Shows the details of all jobs with a build status   |
-| of \"On Hold\", sorted by schedule.                                  |
+| of "On Hold", sorted by schedule.                                  |
 +----------------------------------------------------------------------+
 | **File Name**: skdrep33                                              |
 +----------------------------------------------------------------------+
@@ -1570,7 +1570,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1586,7 +1586,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 
 +----------------------------------------------------------------------+
 | **Description**: Shows the details of all jobs with a build status   |
-| of \"To be Skipped\", sorted by schedule.                            |
+| of "To be Skipped", sorted by schedule.                            |
 +----------------------------------------------------------------------+
 | **File Name**: skdrep51                                              |
 +----------------------------------------------------------------------+
@@ -1594,7 +1594,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1684,7 +1684,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Job Status                                     |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"JOB_BUILD_STATUS=\<build status ID\>\"           |
+| **Parameters**: -p"JOB_BUILD_STATUS=\<build status ID\>"           |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1708,7 +1708,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Advance Frequency Code                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"ADV_FREQUENCY=\<advanced frequency code\>\"      |
+| **Parameters**: -p"ADV_FREQUENCY=\<advanced frequency code\>"      |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1741,8 +1741,8 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: JAFC and VALUE                                 |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"JAFC=\<field code\>\" -p\"VALUE=\<search         |
-| text\>\"                                                             |
+| **Parameters**: -p"JAFC=\<field code\>" -p"VALUE=\<search         |
+| text\>"                                                             |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1800,8 +1800,8 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1828,8 +1828,8 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1855,7 +1855,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 | For detailed syntax requirements, refer to [-p                       | | SKDID](../Utiliti                                                    |
 | es/Command-line-Utilities/BIRT-Report-Generator.md#-_p_SKDID) |
@@ -1886,8 +1886,8 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1916,8 +1916,8 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates, Schedules, Departments         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
-| -p\"DEPTID=\<value\>\"                                               |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
+| -p"DEPTID=\<value\>"                                               |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1943,7 +1943,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1965,7 +1965,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates,Schedules                       |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -1989,7 +1989,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates,Schedules                       |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -2013,7 +2013,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule Dates,Schedules                       |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDDATE=\<value\>\" -p\"SKDID=\<value\>\"        |
+| **Parameters**: -p"SKDDATE=\<value\>" -p"SKDID=\<value\>"        |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -2038,7 +2038,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -2061,7 +2061,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules                                      |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\"                                |
+| **Parameters**: -p"SKDID=\<value\>"                                |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -2074,7 +2074,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 ## Top X Failed Jobs for Selected Month
 
 +----------------------------------------------------------------------+
-| **Description**: Shows a list of the top \'X\' (e.g., Top 10) failed |
+| **Description**: Shows a list of the top 'X' (e.g., Top 10) failed |
 | jobs in history for a selected month and year.                       |
 +----------------------------------------------------------------------+
 | **File Name**: stt003                                                |
@@ -2083,8 +2083,8 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Year, Month, Top (default value is 10)         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"YEAR=\<yyyy\>\" -p\"MONTH=\<mm\>\"               |
-| -p\"TOP=\<number\>\"                                                 |
+| **Parameters**: -p"YEAR=\<yyyy\>" -p"MONTH=\<mm\>"               |
+| -p"TOP=\<number\>"                                                 |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -2101,7 +2101,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 ## Top X Longest Running Jobs for Selected Month
 
 +----------------------------------------------------------------------+
-| **Description**: Shows a list of the top \'X\' (e.g., Top 10) jobs   |
+| **Description**: Shows a list of the top 'X' (e.g., Top 10) jobs   |
 | from history that took the longest time to run during a selected     |
 | month and year.                                                      |
 +----------------------------------------------------------------------+
@@ -2111,8 +2111,8 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Year, Month, Top (default value is 10)         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"YEAR=\<yyyy\>\" -p\"MONTH=\<mm\>\"               |
-| -p\"TOP=\<number\>\"                                                 |
+| **Parameters**: -p"YEAR=\<yyyy\>" -p"MONTH=\<mm\>"               |
+| -p"TOP=\<number\>"                                                 |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -2138,7 +2138,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedule, Department                           |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |
@@ -2173,7 +2173,7 @@ The start option does not ignore preruns or maximum concurrent job limitations o
 +----------------------------------------------------------------------+
 | **Required Filters**: Schedules, Departments                         |
 +----------------------------------------------------------------------+
-| **Parameters**: -p\"SKDID=\<value\>\" -p\"DEPTID=\<value\>\"         |
+| **Parameters**: -p"SKDID=\<value\>" -p"DEPTID=\<value\>"         |
 |                                                                      |
 |                                                                      |
 |                                                                      |

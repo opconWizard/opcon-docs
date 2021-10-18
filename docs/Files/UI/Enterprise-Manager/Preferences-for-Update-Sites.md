@@ -43,14 +43,14 @@ database before updating the EM repository.
  
 
   -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [On some Windows 7 machines and Windows Servers, the automatic updates will fail because of lack of privileges on the machine. If this happens, modify the privileges on the EnterpriseManager folder to grant \"Full Control\" to \"Creator Owner,\" \"Users,\" and \"LogonUser.\"]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [On some Windows 7 machines and Windows Servers, the automatic updates will fail because of lack of privileges on the machine. If this happens, modify the privileges on the EnterpriseManager folder to grant "Full Control" to "Creator Owner," "Users," and "LogonUser."]
   -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  
 
  
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 -   [Updating the Repository for Update     Sites](Updating-the-Repository-for-Update-Sites.md)

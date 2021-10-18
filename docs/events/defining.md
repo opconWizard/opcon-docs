@@ -161,7 +161,7 @@ The following event keywords are valid entries for the schedule date:
 
   Keyword                Value
   ---------------------- -----------------------------------------------------------------------------------------------------------
-  CURRENT                Today\'s date.
+  CURRENT                Today's date.
   EARLIEST               Earliest date this schedule exists.
   EARLIEST HELD          Earliest date this schedule exists in a [held]{.skd-job-statuses} state.   EARLIEST ACTIVE        Earliest date this schedule exists in an [active]{.skd-job-statuses} state.
   EARLIEST NONCOMPLETE   Earliest date this schedule exists in a [non-complete]{.skd-job-statuses} state.   EARLIEST WAITING       Earliest date this schedule exists in a [waiting to start]{.skd-job-statuses} state.

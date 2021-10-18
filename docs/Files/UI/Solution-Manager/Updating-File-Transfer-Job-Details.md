@@ -94,7 +94,7 @@ Select the **data type** of the file on the source machine:
     should use the default text data type for the platform when working
     with the file.
 - **ASCII**: Indicates the file is a simple text file in ASCII format.
-- **Binary**: Indicates the file\'s structure should be left intact
+- **Binary**: Indicates the file's structure should be left intact
     during the transfer process.
 
 **In the Destination frame:**
@@ -123,7 +123,7 @@ the destination machine:
     with the file.
 - **ASCII**: Indicates the file should be written to the Destination
     Machine as a simple text file in ASCII format.
-- **Binary**: Indicates the file\'s structure should be left intact
+- **Binary**: Indicates the file's structure should be left intact
     during the transfer process.
 
 **In the Options frame:**

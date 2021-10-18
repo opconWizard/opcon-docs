@@ -224,7 +224,7 @@ delete frequencies at the card level, refer to the [Related Topics](#Related_Top
 3. Click the **Delete** button.
 4. Click the **Yes** button.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 []{#Related_Topics}Related Topics
 
 - [Adding Vision     Frequencies](Adding-Vision-Frequencies.md)

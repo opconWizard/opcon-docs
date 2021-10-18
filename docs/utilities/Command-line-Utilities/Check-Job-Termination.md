@@ -2,13 +2,13 @@
 
 The Check Job Termination utility (SMACheckTerm.exe) allows the
 comparison of the termination description of a completed job to a
-specific value(s). Based on whether the job\'s exit code matches the
+specific value(s). Based on whether the job's exit code matches the
 comparison expression, the utility either fails or succeeds. If it
 fails, the utility returns one of the failure exit codes listed in the
 [Exit Codes](#Exit) table; otherwise, it returns a 0. As
 a consequence, this utility enables branching to different jobs or to
 different OpCon events based on the details
-of a job\'s exit code.
+of a job's exit code.
 
 ## Rules
 
@@ -19,7 +19,7 @@ of a job\'s exit code.
 | .png "Example icon") | this:                            |
 |                                  |                                  |
 |                                  | SMACheckTerm.exe JobA ScheduleA  |
-|                                  | \"\[\[\$SCHEDULE DATE\]\]\"      | |                                  | \"+000000001:0000:N\"            |
+|                                  | "\[\[$SCHEDULE DATE\]\]"      | |                                  | "+000000001:0000:N"            |
 +----------------------------------+----------------------------------+
 
 ## Logging
@@ -29,7 +29,7 @@ The Output Directory was configured during installation. For more information, r
 :::
 
 The SMACheckTerm log file provides detailed information of errors
-generated during the utility\'s execution. The log file resides in the
+generated during the utility's execution. The log file resides in the
 \<Output Directory\>\\SAM\\Log\\ directory. The syntax for the log file
 name is SMACheckTerm\_\<date-time stamp\>.log.
 

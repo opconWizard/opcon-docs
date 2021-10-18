@@ -13,7 +13,7 @@ situations. DTS resolves the following issues:
 
 - Databases that have been upgraded from MSSQL 7.0 to MSSQL 2000 (or
     higher) have an issue with a command in MSSQL 7.0 (and higher)
-    called \"TOP\".
+    called "TOP".
 - Databases that are being moved from a Binary sort order to a
     non-Binary sort order may have collation conflicts (SQL error 446)
     during processing.
@@ -67,7 +67,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority **- or -**
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -143,7 +143,7 @@ Select one of the following radio button options for authentication:
 - **Use Windows Authentication** to log in with the current Windows
     User with local administrative authority.
 - **Use SQL Server Authentication** and enter *sa* in the **Login**
-    text box and the *sa\'s password* in the **Password** text box.
+    text box and the *sa's password* in the **Password** text box.
 
 Select the **original OpCon database** in the **Database** drop-down
 list and click **Next**.
@@ -159,7 +159,7 @@ Select one of the following radio button options for authentication:
 - **Use Windows Authentication** to log in with the current Windows
     User with local administrative authority.
 - **Use SQL Server Authentication** and enter *sa* in the **Login**
-    text box and the *sa\'s password* in the **Password** text box.
+    text box and the *sa's password* in the **Password** text box.
 
 Click **Next**.
 
@@ -201,7 +201,7 @@ Back Up the Transfer Database
     a *.bak* file extension (e.g., D:\\MSSQL\\Backup\\DTSOpconxps.bak).
 9. Click **OK** to accept the backup (.bak) filename.
 10. Click the **Options** tab in the **Select a page** menu.
-11. On the Options tab\'s screen:
+11. On the Options tab's screen:
 12. Go the **Overwrite media** frame.
 13. Select the **Append to the existing backup set** or **Overwrite all
     existing backup sets** radio button. Either option is acceptable.
@@ -308,7 +308,7 @@ The following list describes the parameters for the commands:
 - **PathToOpconDataDir:** The directory path of the \<Configuration
     Directory\>**\\Utilities\\Database\\** directory. Exclude the
     trailing backslash (\\) and always enclose this parameter in double
-    quotes (e.g., \"C:\\ProgramData\\OpConxps\\Utilities\\Database\").
+    quotes (e.g., "C:\\ProgramData\\OpConxps\\Utilities\\Database").
 - **userName**: For the DB_Update.cmd file only, this is the user name
     with privileges to update the OpCon database.
 - **saPassword**: For the DB_Update.cmd file only, this is the
@@ -317,7 +317,7 @@ The following list describes the parameters for the commands:
 #### Execute the Command Script
 
   ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [To successfully execute the DB_Update_WinAuth.cmd file, the administrator must be logged in to the SAM application server as an Active Directory User with privileges to the \"sysadmin\" server role on the SQL Server.]
+  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [To successfully execute the DB_Update_WinAuth.cmd file, the administrator must be logged in to the SAM application server as an Active Directory User with privileges to the "sysadmin" server role on the SQL Server.]
   ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1. Use menu path: **Start \> Run**.

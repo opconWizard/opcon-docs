@@ -13,7 +13,7 @@ To view the logs:
 3.  Hover over **SAP Machine** in the menu and click on **SAP Jobs**.
     The **View SAP Jobs** dialog displays.
 4.  Enter a *job name* or a *name with a wildcard*.
-5.  *(Optional)* Enter a *date range* for the job\'s
+5.  *(Optional)* Enter a *date range* for the job's
     creation date.
 6.  *(Optional)*) Enter an *event* in the **Event ID**
     text box.

@@ -95,8 +95,8 @@ for editing and viewing information:\
 |                      |                      | This option is only  |
 |                      |                      | available when the   |
 |                      |                      | selection is made to |
-|                      |                      | \"use a tree for     |
-|                      |                      | navigation.\" This   |
+|                      |                      | "use a tree for     |
+|                      |                      | navigation." This   |
 |                      |                      | view is already set  |
 |                      |                      | by default in        |
 |                      |                      | Enterprise Manager.  |

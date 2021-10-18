@@ -15,7 +15,7 @@ the toolbar below to learn more about its functionality.
 
 ![Departments toolbar](../../../Resources/Images/EM/EMcalendarstoolbar.png "Departments toolbar")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Adding Departments](Adding-Departments.md)

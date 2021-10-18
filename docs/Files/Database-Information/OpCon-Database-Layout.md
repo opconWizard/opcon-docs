@@ -7,7 +7,7 @@ viewport: width=device-width, initial-scale=1.0
 # OpCon Database Layout
 
   --------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White \"X\" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [The information in this topic is correct; however, most of the Daily tables have an additional column for the Instance Number for schedules. This new column is part of the Primary Key for each of the affected tables. User defined Reports and SQL queries will be affected by this change.]
+  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [The information in this topic is correct; however, most of the Daily tables have an additional column for the Instance Number for schedules. This new column is part of the Primary Key for each of the affected tables. User defined Reports and SQL queries will be affected by this change.]
   --------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Disclaimer
@@ -28,7 +28,7 @@ Technologies]{.GeneralCompanyName}-provided SQL scripts.
 ## Introduction
 
   --------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
-  ![White \"X\" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Unauthorized updates to the OpCon database voids OpCon support and warranties.]
+  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Unauthorized updates to the OpCon database voids OpCon support and warranties.]
   --------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
 
 The Database is a dynamic component of OpCon (Operations
@@ -45,8 +45,8 @@ The OpCon database uses three roles. These roles include SQL login IDs
 for OpCon components.
 
 - **OpConxps**: This role has full control of the OpCon database.
-  - **opconsam**: This login ID is the SAM and supporting service\'s
-        (SAM-SS\') ID for access to the database.
+  - **opconsam**: This login ID is the SAM and supporting service's
+        (SAM-SS') ID for access to the database.
   - **opconui**: This login ID is the ID for the graphical
         interfaces to access the database.
 - **opconspuser**: This role has EXEC permission to execute
@@ -371,7 +371,7 @@ user connections to OpCon.
 
   Column Name     Explanation                                                                                                  Data Type       Additional Information
   --------------- ------------------------------------------------------------------------------------------------------------ --------------- ------------------------
-  CONNECTIONID    This column contains the SQL Server SPIDs of the users\' connections to the database                         int (4)         None
+  CONNECTIONID    This column contains the SQL Server SPIDs of the users' connections to the database                         int (4)         None
   OPCONUSERNAME   This column contains the OpCon User Logins                                                                   varchar (512)   None
   SQLUSERNAME     This column contains the names of the SQL Server logins used to establish the connections to the database.   varchar (128)   None
   HOSTNAME        This column contains the host names of the machines at which the SQL Server connections originated.          varchar (128)   None
@@ -700,9 +700,9 @@ in the Enterprise Manager.
 |              |                  |              |     Calendar     |
 +--------------+------------------+--------------+------------------+
 | CALNAME      | -   This column  | char (50)    | The Holiday      |
-|              |     contains the |              | Calendar\'s name |
+|              |     contains the |              | Calendar's name |
 |              |     calendar     |              | includes the     |
-|              |     names.       |              | prefix \"HC:\"   |
+|              |     names.       |              | prefix "HC:"   |
 |              | -   The          |              | and the Schedule |
 |              |     Enterprise   |              | Name.            |
 |              |     Manager      |              |                  |
@@ -714,9 +714,9 @@ in the Enterprise Manager.
 +--------------+------------------+--------------+------------------+
 | CALUSEMASTER | -   This column  | char (1)     | -   Y: Yes       |
 |              |     contains the |              | -   N: No        |
-|              |     \"Use Master |              |                  |
+|              |     "Use Master |              |                  |
 |              |     Holiday      |              |                  |
-|              |     Calendar\"   |              |                  |
+|              |     Calendar"   |              |                  |
 |              |     flag for     |              |                  |
 |              |     each         |              |                  |
 |              |     calendar.    |              |                  |
@@ -1086,7 +1086,7 @@ ENS Group IDs.
 | ACTIONINCID | This column      | char (1)      | -   Y: Yes       |
 |             | contains a flag  |               | -   N: No        |
 |             | determining if   |               |                  |
-|             | each job\'s      |               |                  |
+|             | each job's      |               |                  |
 |             | unique number is |               |                  |
 |             | included with    |               |                  |
 |             | the              |               |                  |
@@ -1237,7 +1237,7 @@ Handler has processed. When the SMA Notify Handler retrieves the record
 successfully, it deletes the record.
 
   ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The stored procedure \'SMA_CHECK_FOR_NOTIFICATION\' should be used to insert data into the table.]
+  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The stored procedure 'SMA_CHECK_FOR_NOTIFICATION' should be used to insert data into the table.]
   ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
 
 +----------------+----------------+----------------+----------------+
@@ -1343,7 +1343,7 @@ successfully, it deletes the record.
 |                | contains a     |                | -   N: No      |
 |                | flag           |                |                |
 |                | determining if |                |                |
-|                | each job\'s    |                |                |
+|                | each job's    |                |                |
 |                | unique number  |                |                |
 |                | is included    |                |                |
 |                | with the       |                |                |
@@ -2828,7 +2828,7 @@ correct record in the HISTORY primary table.
 
 The table contains the messages associated with test notifications
 generated via the ENS Manager utility as well as notifications generated
-through the use of \$NOTIFY:\<action\> OpCon events.
+through the use of $NOTIFY:\<action\> OpCon events.
 
 +---------------+----------------+----------------+----------------+
 | Column Name   | Explanation    | Data Type      | Additional     |
@@ -3172,7 +3172,7 @@ the JMASTER primary table.
 |             |     thre         |               |                  |
 |             | sholds/resources |               |                  |
 |             |     at each      |               |                  |
-|             |     job\'s run   |               |                  |
+|             |     job's run   |               |                  |
 |             |     time.        |               |                  |
 +-------------+------------------+---------------+------------------+
 | DEPTHROPER  | -   This column  | smallint (2)  | -   0: Equal (=) |
@@ -3195,7 +3195,7 @@ the JMASTER primary table.
 |             |     thre         |               |                  |
 |             | sholds/resources |               |                  |
 |             |     at each      |               |                  |
-|             |     job\'s run   |               |                  |
+|             |     job's run   |               |                  |
 |             |     time.        |               |                  |
 +-------------+------------------+---------------+------------------+
 | USEALL      | This column      | char (5)      | -   Valid values |
@@ -3408,7 +3408,7 @@ primary table.
 |              |     specific   |                |     trigger.   |
 |              |     to a       |                | -   All other  |
 |              |                |                |     values are |
-|              |    platform\'s |                |     plat       |
+|              |    platform's |                |     plat       |
 |              |     list of    |                | form-specific. |
 |              |     feedback,  |                |                |
 |              |     or it will |                |                |
@@ -3453,7 +3453,7 @@ primary table.
 |              |     column     |                | information on |
 |              |     contains   |                | valid OpCon    |
 |              |     each       |                | events, refer  |
-|              |     event\'s   |                | to the [OpCon  | |              |     details.   |                | Events](../    |
+|              |     event's   |                | to the [OpCon  | |              |     details.   |                | Events](../    |
 |              | -   This       |                | OpCon-Events |
 |              |     column can |                | /Introduction.md) |
 |              |     contain    |                | online help.   |
@@ -3589,7 +3589,7 @@ schedule. However, each job record must be unique.
 |             |     ACCESSID     |               |                  |
 |             |     table.       |               |                  |
 |             | -   This         |               |                  |
-|             |     column\'s    |               |                  |
+|             |     column's    |               |                  |
 |             |     data limits  |               |                  |
 |             |     access to    |               |                  |
 |             |     the job in   |               |                  |
@@ -3613,7 +3613,7 @@ schedule. However, each job record must be unique.
 |             |     MACHS table. |               |                  |
 |             | -   The primary  |               |                  |
 |             |     machine is   |               |                  |
-|             |     each job\'s  |               |                  |
+|             |     each job's  |               |                  |
 |             |     default      |               |                  |
 |             |     machine.     |               |                  |
 |             | -   This column  |               |                  |
@@ -5203,7 +5203,7 @@ processes all records in this table. When the SMA Notify Handler
 retrieves the record successfully, it deletes the record.
 
   ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The stored procedure \'SMA_CHECK_FOR_NOTIFICATION\' should be used to insert data into the table.]
+  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The stored procedure 'SMA_CHECK_FOR_NOTIFICATION' should be used to insert data into the table.]
   ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
 
 +-------------+-----------------+----------------+-----------------+
@@ -5288,7 +5288,7 @@ retrieves the record successfully, it deletes the record.
 | ACTIONINCID | This column     | char (1)       | -   Y: Yes      |
 |             | contains a flag |                | -   N: No       |
 |             | determining if  |                |                 |
-|             | each job\'s     |                |                 |
+|             | each job's     |                |                 |
 |             | unique number   |                |                 |
 |             | is included     |                |                 |
 |             | with the        |                |                 |
@@ -5542,7 +5542,7 @@ OpCon only supports BIRT Reports.
 |              |     contains   |                |                |
 |              |     the name   |                |                |
 |              |     of each    |                |                |
-|              |     report\'s  |                |                |
+|              |     report's  |                |                |
 |              |     primary    |                |                |
 |              |     table.     |                |                |
 |              | -   All other  |                |                |
@@ -6593,7 +6593,7 @@ The SDEPTHR table contains Daily Schedule Threshold Dependency details.
 |             | the              |               |                  |
 |             | thre             |               |                  |
 |             | sholds/resources |               |                  |
-|             | at each job\'s   |               |                  |
+|             | at each job's   |               |                  |
 |             | run time.        |               |                  |
 +-------------+------------------+---------------+------------------+
 | DEPTHROPER  | This column      | smallint (2)  | -   0: Equal (=) |
@@ -6607,7 +6607,7 @@ The SDEPTHR table contains Daily Schedule Threshold Dependency details.
 |             | of the           |               | -   4: Less Than |
 |             | thre             |               |     or Equal     |
 |             | sholds/resources |               |     (\<=)        |
-|             | at each job\'s   |               | -   5: Not Equal |
+|             | at each job's   |               | -   5: Not Equal |
 |             | run time.        |               |     (\<\>)       |
 +-------------+------------------+---------------+------------------+
 | USEALL      | This column      | char (5)      | -   Valid values |
@@ -6890,7 +6890,7 @@ triggered when the job terminates with a specified status.
 |              |     specific   |                |     trigger.   |
 |              |     to a       |                | -   All other  |
 |              |                |                |     values are |
-|              |    platform\'s |                |     plat       |
+|              |    platform's |                |     plat       |
 |              |     list of    |                | form-specific. |
 |              |     feedback,  |                |                |
 |              |     or it will |                |                |
@@ -7290,7 +7290,7 @@ built or added into the Daily schedule.
 |             |     ACCESSID     |               |                  |
 |             |     table.       |               |                  |
 |             | -   This         |               |                  |
-|             |     column\'s    |               |                  |
+|             |     column's    |               |                  |
 |             |     data limits  |               |                  |
 |             |     access to    |               |                  |
 |             |     the job in   |               |                  |
@@ -7314,7 +7314,7 @@ built or added into the Daily schedule.
 |             |     MACHS table. |               |                  |
 |             | -   The primary  |               |                  |
 |             |     machine is   |               |                  |
-|             |     each job\'s  |               |                  |
+|             |     each job's  |               |                  |
 |             |     default      |               |                  |
 |             |     machine.     |               |                  |
 |             | -   The field is |               |                  |
@@ -8399,7 +8399,7 @@ links the auxiliary information to the primary information.
 |             |                 |                |     Change      |
 |             |                 |                |     Reason      |
 |             |                 |                | -   52:         |
-|             |                 |                |     Schedule\'s |
+|             |                 |                |     Schedule's |
 |             |                 |                |     Estimated   |
 |             |                 |                |     Start and   |
 |             |                 |                |     End Times   |
@@ -8474,7 +8474,7 @@ sections of the Enterprise Manager and SAM. All keys are by default base
 one and increment of one.
 
   --------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White \"X\" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Invalid changes in this table result in database referential integrity problems, and subsequent failure of the user to insert, delete or modify information in the database.]
+  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Invalid changes in this table result in database referential integrity problems, and subsequent failure of the user to insert, delete or modify information in the database.]
   --------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 +-------------+------------------+--------------+------------------+
@@ -8768,7 +8768,7 @@ The THRESH table contains Threshold and Resource names and values.
 |               | one or more     |               |     an empty    |
 |               | jobs in         |               |     string, or  |
 |               | Operations      |               |     a string a  |
-|               | require \"All\" |               |     values      |
+|               | require "All" |               |     values      |
 |               | of the defined  |               |     stored by   |
 |               | resource to     |               |     the SAM for |
 |               | meet a          |               |     maintaining |
@@ -8905,13 +8905,13 @@ The TOKEN table contains Token names and values.
 |             |     defined or  |                |                 |
 |             |     can be one  |                |                 |
 |             |     of the      |                |                 |
-|             |     system\'s   |                |                 |
+|             |     system's   |                |                 |
 |             |     predefined  |                |                 |
 |             |     tokens that |                |                 |
 |             |     begin with  |                |                 |
 |             |     a dollar    |                |                 |
 |             |     sign        |                |                 |
-|             |     (**\$**).   |                |                 |
+|             |     (**$**).   |                |                 |
 |             | -   The SAM     |                |                 |
 |             |     expands     |                |                 |
 |             |                 |                |                 |
@@ -8950,8 +8950,8 @@ The TOKEN table contains Token names and values.
 |             |                 |                |     the         |
 |             |                 |                |     contents of |
 |             |                 |                |     tokens      |
-|             |                 |                |     \$DATE and  |
-|             |                 |                |     \$NOW is    |
+|             |                 |                |     $DATE and  |
+|             |                 |                |     $NOW is    |
 |             |                 |                |     Short Date, |
 |             |                 |                |     which is    |
 |             |                 |                |     interpreted |
@@ -9113,7 +9113,7 @@ even on a schedule those users have access to.
 |             | contains the     |              |     that you can |
 |             | flag to          |              |     only view    |
 |             | determine each   |              |     records with |
-|             | user\'s rights.  |              |     this Access  |
+|             | user's rights.  |              |     this Access  |
 |             |                  |              |     Code.        |
 |             |                  |              | -   1: Indicates |
 |             |                  |              |     that you can |
@@ -9252,7 +9252,7 @@ The UMACHGRP table is currently not in use.
 |             | contains the     |              |     that you can |
 |             | flag to          |              |     only view    |
 |             | determine each   |              |     records with |
-|             | user\'s rights.  |              |     this Machine |
+|             | user's rights.  |              |     this Machine |
 |             |                  |              |     Group.       |
 |             |                  |              | -   1: Indicates |
 |             |                  |              |     that you can |
@@ -9315,7 +9315,7 @@ The UMACHS table is currently not in use.
 |             | contains the     |              |     that you can |
 |             | flag to          |              |     only view    |
 |             | determine each   |              |     records with |
-|             | user\'s rights.  |              |     this Machine |
+|             | user's rights.  |              |     this Machine |
 |             |                  |              | -   1: Indicates |
 |             |                  |              |     that you can |
 |             |                  |              |     update       |

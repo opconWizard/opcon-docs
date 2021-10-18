@@ -78,7 +78,7 @@ The toolbar provides shortcuts to the File menu options.
 [[]{#Log_in_to_Schedule_Import/Export}Log in to Schedule Import/Export]{.ul}
 
 :::note
-If you disable a login that is defined as a user\'s Network Account name (e.g., Domain\\User), the user will not be able to log in to any interactive applications. The Import Export Utility will inform the user that they are disabled and shut down the program.
+If you disable a login that is defined as a user's Network Account name (e.g., Domain\\User), the user will not be able to log in to any interactive applications. The Import Export Utility will inform the user that they are disabled and shut down the program.
 :::
 
 Use menu path: **Start \> All Programs \> Opconxps \> Utilities \>
@@ -117,7 +117,7 @@ Select the **Save Settings** checkbox to save the connection information
 for the next login and click **OK**.
 
 :::note
-To log in to the Schedule Import Export utility, a user must have one of the following privileges: \"All Administrative Functions\" or \"Import and Export Schedules\".
+To log in to the Schedule Import Export utility, a user must have one of the following privileges: "All Administrative Functions" or "Import and Export Schedules".
 :::
 
 :::caution
@@ -157,20 +157,20 @@ transfer process does and does not include.
     the appropriate individual privileges for each Role for the
     schedules, machines, and machine groups associated with the exported
     schedules; however:
-  - The utility does not export the \"Inherits Privileges to All
-        Schedules\", \"Inherits Privileges to All Machines\" or
-        \"Inherits Privileges to All Machine Groups\" functions. This is
+  - The utility does not export the "Inherits Privileges to All
+        Schedules", "Inherits Privileges to All Machines" or
+        "Inherits Privileges to All Machine Groups" functions. This is
         a security measure. Just because a user inherits privileges in a
-        \"test\" database, does not mean they should inherit privileges
-        in a \"production\" database.
+        "test" database, does not mean they should inherit privileges
+        in a "production" database.
 - The utility transports the departments associated with the exported
     schedules and the Role function privileges for those departments as
-    well as that Role\'s non-departmental privileges; however:
+    well as that Role's non-departmental privileges; however:
   - The utility does not export departmental privileges that are
         valid for all departments.
   - The utility does not export departmental privileges associated
         with un-exported departments.
-  - When the Role privileges are imported, only a [new]{.ul} users\'         Role\'s privileges are accepted. If the Role exists in the
+  - When the Role privileges are imported, only a [new]{.ul} users'         Role's privileges are accepted. If the Role exists in the
         target database, the privileges in the target database are
         retained and users in the transport database (that do not exist
         in the target database) are imported and assigned to the Role in
@@ -184,7 +184,7 @@ transfer process does and does not include.
     of the three Alternate machines on exported schedules.
 - The utility exports machine group names, but not the machine group
     itself. This enables exporting to a new environment (with different
-    machines) while maintaining a customer\'s scheduling structure.
+    machines) while maintaining a customer's scheduling structure.
 - The utility exports optionally exports all Global Properties or only
     those Global Properties associated with exported schedules.
 - The utility exports either all Thresholds/Resources, or only those
@@ -206,9 +206,9 @@ considered:
 - The Schema versions must be the same for the two databases between
     which the schedule is being moved.
 - When a new machine is created in the destination database, the
-    Schedule Import/Export utility will mark the machine status \"Down\"
+    Schedule Import/Export utility will mark the machine status "Down"
     to allow the management of the LSAMs within the license. The machine
-    will need to be marked \"Up\" for jobs to process on it.
+    will need to be marked "Up" for jobs to process on it.
 - Batch User IDs submitted with jobs are only imported if those Batch
     User IDs exist in the destination database. When the import is
     complete, the details of imported jobs need to be verified to make
@@ -405,7 +405,7 @@ filename containing a list of schedules for the program to extract.
 
 **-l** (lower case L): Provides the full file path (including drive
 letter) and filename for the ImpEx.exe log file. If -l is not given,
-then Schedule Import Export\'s default log file will be placed in the
+then Schedule Import Export's default log file will be placed in the
 same directory as the ImpEx.exe file. The syntax for the default log
 file name is ImpEx\_\<date-time stamp\>.log. The log file provides
 detailed information of errors generated during job execution and
@@ -422,9 +422,9 @@ R/3 and CRM jobs. There are two ways to specify the -s switch.
 
 Specify the full path and file name of a configuration file listing
 connection information for each machine. For example:
--s\"c:\\programdata\\opconxps\\utilities\\SAPLoginFile.txt\"
+-s"c:\\programdata\\opconxps\\utilities\\SAPLoginFile.txt"
 
-- The \'SAPLoginFile.txt\' can be named anything, but it must contain
+- The 'SAPLoginFile.txt' can be named anything, but it must contain
     the following format:\
     \
     MACH1,USERID,PWD\
@@ -477,7 +477,7 @@ Machine Tab
 - The left window displays the machine names in the transport
     database.
 - The right window displays the machine names in the SQL database that
-    the user has privileges to with the \"allow Job Update?\" flag set
+    the user has privileges to with the "allow Job Update?" flag set
     to true.
 
 User Tab
@@ -601,8 +601,8 @@ database.
 
 - **Y** = Purge the jobs from the destination schedule before
     importing
-- **N** = Add the jobs in the transport database\'s schedule(s) to the
-    SQL database\'s schedule(s) (the import will roll back if duplicate
+- **N** = Add the jobs in the transport database's schedule(s) to the
+    SQL database's schedule(s) (the import will roll back if duplicate
     job names exist)
 
 **OverwriteCal?**: Used to indicate how the import should continue if
@@ -610,8 +610,8 @@ any one of the calendars in the transport database already exists in the
 SQL database.
 
 - **Y** = Purge all dates from destination calendar(s)
-- **N** = Add the dates in the transport database\'s calendar(s) to
-    the SQL database\'s calendar(s)
+- **N** = Add the dates in the transport database's calendar(s) to
+    the SQL database's calendar(s)
 
 **-e**: (Optional) The full file path (including drive letter) and
 filename where the Exit Code Override File (E.C.O.F.) is written. If not
@@ -627,7 +627,7 @@ the job will always be considered a success.
 
 **-l** (lower case L): (Optional) Provides the full file path (including
 drive letter) and filename for the ImpEx.exe log file. If --l is not
-given or the Logfile given is invalid, then Schedule Import Export\'s
+given or the Logfile given is invalid, then Schedule Import Export's
 default log file will be placed in the same directory as the ImpEx.exe
 file. The syntax for the default log file name is ImpEx\_\<date-time
 stamp\>.log. The log file provides detailed information of errors
@@ -638,14 +638,14 @@ the SAP server.
 the mapping file. The mapping file contains any desired machine and user
 mappings.
 
-- If the \"Force Machine Mapping\" option is turned on in the
+- If the "Force Machine Mapping" option is turned on in the
     transport database, the mapping file is **required**.
   - If -m is not given, the import will fail and the log file will
         indicate that the required mapping was not defined.
   - If -m is given, but not all machines were mapped, the import
         will fail and the log file will indicate that the required
         mapping was not defined.
-- If the \"Force Machine Mapping\" option is turned off in the
+- If the "Force Machine Mapping" option is turned off in the
     transport database, the mapping file is **optional**.
   - If -m is not given, the import will bring the machines and users
         into the new database as they existed in the original database.
@@ -658,9 +658,9 @@ specify the -s switch.
 
 Specify the full path and file name of a configuration file listing
 connection information for each machine. For example:
--s\"c:\\programdata\\opconxps\\utilities\\SAPLoginFile.txt\"
+-s"c:\\programdata\\opconxps\\utilities\\SAPLoginFile.txt"
 
-- The \'SAPLoginFile.txt\' can be named anything, but it must contain
+- The 'SAPLoginFile.txt' can be named anything, but it must contain
     the following format:\
     \
     MACH1,USERID,PWD\
@@ -718,7 +718,7 @@ E.C.O.F. if it encounters an error when run from the command line.
 | 0             | Batch run successful.   | Success!                |
 +---------------+-------------------------+-------------------------+
 | 37001         | Program aborted.        | If the program is       |
-|               |                         | \"killed\" in the       |
+|               |                         | "killed" in the       |
 |               |                         | middle of processing.   |
 +---------------+-------------------------+-------------------------+
 | 37002         | Invalid DSN, UserID,    | If there is a           |

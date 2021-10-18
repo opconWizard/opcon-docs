@@ -27,7 +27,7 @@ displayed per execution:
 - **Schedule**: The name of the schedule containing the selected job.
 - **Job**: The name of the selected job.
 - **Agent**: The name of the LSAM machine for which the job executed.
-    For jobs that \"run on each machine\" in a group, the machine name
+    For jobs that "run on each machine" in a group, the machine name
     will display for each copy of the job that ran.
 - **Termination Status**: The completion status of the job (whether it
     terminated successfully or not).
@@ -80,7 +80,7 @@ To access job execution history:
   ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Job execution history can also be accessed while in PERT View. For more information, refer to [PERT View Job Executions History Access](Using-PERT-View.md#PERT11).]
   -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Accessing Job Summary](Accessing-Job-Summary.md)

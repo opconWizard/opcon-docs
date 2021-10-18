@@ -264,7 +264,7 @@ Security.
 match the server name on the certificate installed on the machine where
 this agent resides. If this field is left blank, then the name on the
 certificate is assumed to be either the fully qualified domain name
-(FQDN) of the agent machine, if specified in the machine\'s settings, or
+(FQDN) of the agent machine, if specified in the machine's settings, or
 the "OpCon" machine name for the agent, if the FQDN is not specified.
 For more information, refer to [Validation of the Digital Certificate Distinguished Name](../server-programs/network-communications.md#validati)
  in the **Server Programs** online help.
@@ -328,7 +328,7 @@ and viewing job output, refer to [Viewing a Job Output File](../operations/job-o
   - Windows (MSLSAM only)
   - z/OS
 - Valid values range from 1024 to 32767
-- Default value is \'0\' (a value of zero disables the feature).
+- Default value is '0' (a value of zero disables the feature).
 
 **Requires XML Escape Sequences**: Determines if the SAM converts
 reserved characters (e.g., "\<", "\>", "&", etc.) before sending
@@ -382,8 +382,8 @@ messages to an LSAM.
     and the graphical interfaces report the machine as "down".
   - Valid values range from 1000 (Default) to 60000 milliseconds.
 - **Time Offset from SAM (hours)**: Defines a read-only setting that
-    shows the calculated value of the difference between the Machine\'s
-    time and SAM\'s time. This field only appears if the machine has
+    shows the calculated value of the difference between the Machine's
+    time and SAM's time. This field only appears if the machine has
     Time Zone Name and Time Offset from UTC (hours) configured, AND the
     SAM has stored its Time Zone Name and Offset from UTC in the
     database.

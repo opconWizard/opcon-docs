@@ -46,7 +46,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -115,7 +115,7 @@ machine where the database restoration occurs.
 1. Log on to the OpCon database server as a *Windows user* with access
     to the database installation directories.
 2. Right-click on **Start** and select **Explore**.
-3. Browse to the drive and directory of the last backup\'s location.
+3. Browse to the drive and directory of the last backup's location.
 4. If the backup is not on the machine where the restoration occurs,
     copy the backup file onto this machine.
 5. Use menu path: **Organize \> Copy**.
@@ -154,7 +154,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -191,7 +191,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -222,7 +222,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -257,7 +257,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -298,7 +298,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -327,7 +327,7 @@ Restore the Backup File
 15. Click the **Options** tab in the **Select a page** menu.
 16. Select the **Overwrite the existing database** checkbox.
 17. Go to the **Restore the database files as** frame.
-18. Make sure that the file name and path are valid for the database\'s
+18. Make sure that the file name and path are valid for the database's
     data and log files.
 19. Go to the **Recovery state** frame.
 20. Select the **Leave the database ready to use by rolling back
@@ -346,7 +346,7 @@ For information on running the Database Upgrade scripts, refer to
 
 Following restoration, it is possible to have a mismatch of SQL Login
 IDs between the restored database and the SQL server. This mismatch
-prevents SAM\'s SQL Login ID (opconsam) and the graphical interface\'s
+prevents SAM's SQL Login ID (opconsam) and the graphical interface's
 SQL Login ID (opconui) from in to the database. To fix this problem,
 please complete the steps below.
 
@@ -368,7 +368,7 @@ list:
 - **Windows Authentication** to log in with the current Windows User
     with local administrative authority.
 - **SQL Server Authentication** then enter *sa* in the **Login** text
-    box and the *sa\'s password* in the **Password** text box.
+    box and the *sa's password* in the **Password** text box.
 
 Click the **Connect** button.
 
@@ -381,16 +381,16 @@ the screen.
 
 Go to the right-hand frame.
 
-Enter the query: **dbo.sp_change_users_login \'update_one\',
-\'opconsam\',\'opconsam\'**.
+Enter the query: **dbo.sp_change_users_login 'update_one',
+'opconsam','opconsam'**.
 
 Click the **Execute** button in the toolbar or press **F5** to execute
 the query.
 
 Go to the right-hand frame.
 
-Enter the query: **dbo.sp_change_users_login \'update_one\',
-\'opconui\',\'opconui\'**.
+Enter the query: **dbo.sp_change_users_login 'update_one',
+'opconui','opconui'**.
 
 Click the **Execute** button in the toolbar or press **F5** to execute
 the query.

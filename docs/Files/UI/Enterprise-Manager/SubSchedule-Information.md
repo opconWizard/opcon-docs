@@ -93,7 +93,7 @@ information on the **Schedule Details** tab:
     it will be indicating the start time of the subschedule as defined
     in the Schedule Master.
 -   **End Time**: If the subschedule has not yet completed, this will
-    display \'*Not Finished*\'. If the subschedule has completed, the
+    display '*Not Finished*'. If the subschedule has completed, the
     finished time will be displayed.
 -   **Post Processes Tab**: This tab allows access to the information
     about the post processes of the selected subschedule and displays

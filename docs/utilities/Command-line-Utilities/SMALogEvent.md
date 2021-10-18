@@ -51,26 +51,26 @@ triggered notification.
 |                                  | -   For the                      |
 |                                  |     SyncInitFailureScript        |
 |                                  |     setting, the message might   |
-|                                  |     be: \"The Primary SMAServMan |
+|                                  |     be: "The Primary SMAServMan |
 |                                  |     is unable to synchronize     |
 |                                  |     with the Secondary           |
-|                                  |     SMAServMan.\"                |
+|                                  |     SMAServMan."                |
 |                                  | -   For the                      |
 |                                  |     PrimaryAbnormalShutdown      |
 |                                  |     setting, the message might   |
-|                                  |     be: \"The Secondary SMA      |
+|                                  |     be: "The Secondary SMA      |
 |                                  |     Service Manager has begun    |
 |                                  |     processing in the            |
 |                                  |                                  |
 |                                  | OpCon |
-|                                  |     database.\"                  |
+|                                  |     database."                  |
 +----------------------------------+----------------------------------+
 
 ## Renaming the Command File
 
 To prevent a production program from being overwritten by future
 OpCon upgrades, SMA Technologies distributes the WriteEvent.cmd file
-as Test_WriteEvent.cmd. To remove the characters \"Test\_\", copy and
+as Test_WriteEvent.cmd. To remove the characters "Test\_", copy and
 rename the file.
 
 :::note
@@ -88,7 +88,7 @@ To rename the command file:
     directories.
 2. Right-click on **Start** and select **Explore**.
 3. Browse to and select the **\<Configuration
-    Directory\>\\OpConxps\\SAM\\**directory in Explorer\'s **Folders**
+    Directory\>\\OpConxps\\SAM\\**directory in Explorer's **Folders**
     frame.
 4. Right-click on **Test_WriteEvent.cmd** and select **Copy**.
 5. Right-click in the **\<Configuration Directory\>\\OpConxps\\SAM\\**
@@ -111,11 +111,11 @@ To modify the command file:
     access to the OpCon/xps installation directories.
 2. Right-click on **Start** and select **Explore**.
 3. Browse to and select the **\<Target Directory\>\\OpConxps\\SAM\\**
-    directory in Explorer\'s **Folders** frame.
+    directory in Explorer's **Folders** frame.
 4. Right-click the **WriteEvent.cmd** file and select **Edit**.
     **Notepad** should open.
-5. Modify the path to the SAM directory **\"C:\\Program
-    Files\\OpConxps\\SAM\\SMALogEvent\"** for the *actual path to the
+5. Modify the path to the SAM directory **"C:\\Program
+    Files\\OpConxps\\SAM\\SMALogEvent"** for the *actual path to the
     SAM directory*.
 6. Modify the source **SMAServMan** with the *desired source for the
     event*.
@@ -139,9 +139,9 @@ To modify the command file:
 |                                  | \\OpConxps\\SAM\\WriteEvent.cmd, |
 |                                  | contains the following:          |
 |                                  |                                  |
-|                                  | \"C:\\Program                    |
+|                                  | "C:\\Program                    |
 |                                  | Fil                              |
-|                                  | es\\OpConxps\\SAM\\SMALogEvent\" |
+|                                  | es\\OpConxps\\SAM\\SMALogEvent" |
 |                                  | SecondServMan, I, MSG201         |
 +----------------------------------+----------------------------------+
 :::

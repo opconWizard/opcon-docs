@@ -7,7 +7,7 @@ viewport: width=device-width, initial-scale=1.0
 #  Copying Roles
 
 Copying a role produces an identical new account with the same name
-preceded by the text \"co:\" (e.g., \"co:RoleName\"). All privileges
+preceded by the text "co:" (e.g., "co:RoleName"). All privileges
 assigned to the original role are copied to the new role.
 
 To copy a role:

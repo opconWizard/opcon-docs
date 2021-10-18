@@ -63,7 +63,7 @@ Click **OK** to close the program.
 
 Use the following command-line syntax:
 
-SMAEvalExp.exe \"expression\"
+SMAEvalExp.exe "expression"
 
 ### Parameters
 
@@ -106,9 +106,9 @@ To check a global property to see if its value is equal to a specific
 string, use the == operator.
 
 The following expression checks to see if the value of a global property
-named \"DDIService\" is equal to \"running\":
+named "DDIService" is equal to "running":
 
-SMAEvalExp.exe \"\[\[=\[\[DDIService\]\]==\\\"running\\\"\]\]\"
+SMAEvalExp.exe "\[\[=\[\[DDIService\]\]==\"running\"\]\]"
 
 If the result is true, then command will succeed. If the result is
 false, the command will fail. If run through an
@@ -125,9 +125,9 @@ number:
 - Use the == (check equality) operator.
 
 The following expression checks to see if the value of a global property
-named \"BackupServer\" has a value of 1:
+named "BackupServer" has a value of 1:
 
-SMAEvalExp.exe \"\[\[=ToInt(\[\[BackupServer\]\])==1\]\]\"
+SMAEvalExp.exe "\[\[=ToInt(\[\[BackupServer\]\])==1\]\]"
 
 If the result is true, then command will succeed. If the result is
 false, the command will fail. If run through an
@@ -138,16 +138,16 @@ other jobs and send notifications based on the failure of this job.
 
 To check the exit code of a job to see if it is less than 20:
 
-- Use the ToIntNE function to convert the value of the \$JOB
+- Use the ToIntNE function to convert the value of the $JOB
     TERMINATION property to an integer and also set the default value to
     0 in case the job has no termination value.
 - Use the \< (less than) operator.
 
 The following expression checks to see if the DNSEntries job termination
-value is less than 20, with a default result of \"True\" if the job does
+value is less than 20, with a default result of "True" if the job does
 not yet have a termination value:
 
-SMAEvalExp.exe \"\[\[=ToIntNE(\[\[JI.\$JOB TERMINATION.2013/10/29.BPMNetworkTest.DNSEntries\]\],0)\<20\]\]\"
+SMAEvalExp.exe "\[\[=ToIntNE(\[\[JI.$JOB TERMINATION.2013/10/29.BPMNetworkTest.DNSEntries\]\],0)\<20\]\]"
 
 If the result is true, then the command will succeed. If the result is
 false, the command will fail. If run through an
@@ -169,7 +169,7 @@ from JobA.
 - Create the EvalJobAExit job on the same schedule as JobA.
 - Configure EvalJobAExit job to succeed unless the exit code
     is 0000000033. The command line for EvalJobAExit is:
-- Configure a \$JOB:ADD event for EvalJobAExit on failure to add the
+- Configure a $JOB:ADD event for EvalJobAExit on failure to add the
     FixFiles job to the schedule.
 
 #### Trigger Events Based on Deviation from Estimated Run Time
@@ -182,17 +182,17 @@ of potential scenarios:
     deviation percent.
 - The job runs for longer than the estimated run time plus the
     deviation percent. Two scenarios exist for this idea:
-  - Wait until the \'monitored job\' finishes and then run the
-        SMAEvalExp job to determine if the \'monitored job\' ran long.
-  - Trigger the event as soon as the \'monitored job\' exceeds the
-        \'acceptable threshold\', in this case based on a calculated
+  - Wait until the 'monitored job' finishes and then run the
+        SMAEvalExp job to determine if the 'monitored job' ran long.
+  - Trigger the event as soon as the 'monitored job' exceeds the
+        'acceptable threshold', in this case based on a calculated
         time based on Estimated Run Time plus a percentage.
 
 ##### Trigger Events Based on a Job Running for Less Time than Expected
 
-To trigger events after job completion if a job\'s run time is less the
+To trigger events after job completion if a job's run time is less the
 estimated run time by a percentage, use SMAEvalExp.exe to check the time
-difference between a job\'s actual run time and a specific number.
+difference between a job's actual run time and a specific number.
 
 - Assume the job in question is named JobA.
 - If the requirement is to check for the job running less than 5
@@ -209,17 +209,17 @@ affect other jobs and send notifications based on the failure of this
 job.
 
 - If JobA ran for more 5 minutes or more, the job will succeed because
-    the result is \"True\".
+    the result is "True".
 - If JobA ran for less than 5 minutes, the command will fail because
-    the result is \"False\".
+    the result is "False".
 - When the SMAEvalExp job fails, Events can be configured to affect
     other jobs and send notifications based on the failure of this job.
 
-##### Trigger Events after Job Completion if a Job\'s Run Time Exceeds the Estimated Run Time by a User-defined Percentage
+##### Trigger Events after Job Completion if a Job's Run Time Exceeds the Estimated Run Time by a User-defined Percentage
 
-To trigger events after job completion if a job\'s run time exceeds the
+To trigger events after job completion if a job's run time exceeds the
 estimated run time by a percentage, use SMAEvalExp.exe to check the time
-difference between a job\'s actual run time and its estimated run time.
+difference between a job's actual run time and its estimated run time.
 
 - Assume the job in question is named JobA.
 - If the requirement is to check for a deviation of more than 10%,
@@ -228,12 +228,12 @@ difference between a job\'s actual run time and its estimated run time.
         subsequent job to JobA on the same schedule.
   - After JobA completes, run the SMAEvalExp job with the following
         command line:
-- This expression checks the time difference between JobA\'s actual
+- This expression checks the time difference between JobA's actual
     run time and its estimated run time.
 - If the calculated percent is less than or equal to 10, the job will
-    succeed because the result is \"True\".
+    succeed because the result is "True".
 - If the calculated percent is greater than 10, the command will fail
-    because the result is \"False\".
+    because the result is "False".
 - When the SMAEvalExp job fails, Events can be configured to affect
     other jobs and send notifications based on the failure of this job.
 
@@ -247,10 +247,10 @@ value:
 - Use the = (assignment) operator.
 
 The following expression sets the value of a global property named
-\"Available\" to the result of an arithmetic expression that includes a
-value from a Machine Instance property named \"DiskSpace\":
+"Available" to the result of an arithmetic expression that includes a
+value from a Machine Instance property named "DiskSpace":
 
-SMAEvalExp.exe \"\[\[=\[\[Available\]\]=(25/4 + 84.56 - ToInt(\[\[MI.DiskSpace.MachName\]\]))\]\]\"
+SMAEvalExp.exe "\[\[=\[\[Available\]\]=(25/4 + 84.56 - ToInt(\[\[MI.DiskSpace.MachName\]\]))\]\]"
 
 If the result is true, then command will succeed. If the result is
 false, the command will fail. If run through an
@@ -266,14 +266,14 @@ properties to calculate the value:
     values to integers.
 - Use the = (assignment) operator.
 
-The following calculates a User Property named \"Target\" based on a
+The following calculates a User Property named "Target" based on a
 computation involving two other User Defined Properties and a constant:
 
-SMAEvalExp.exe \"\[\[=\[\[Target\]\] =(ToInt(\[\[Source1\]\])-ToInt(\[\[Source2\]\]))/8\]\]\"
+SMAEvalExp.exe "\[\[=\[\[Target\]\] =(ToInt(\[\[Source1\]\])-ToInt(\[\[Source2\]\]))/8\]\]"
 
-If \"Source1\" has a value of 85 and \"Source2\" has a value of 21,
+If "Source1" has a value of 85 and "Source2" has a value of 21,
 SMAEvalExp.exe will return an exit code of 0 and set the value of
-\"Target\" to a value of 8 (i.e., (85-21)/8 is equal to a value of 8).
+"Target" to a value of 8 (i.e., (85-21)/8 is equal to a value of 8).
 
 ## Logging
 

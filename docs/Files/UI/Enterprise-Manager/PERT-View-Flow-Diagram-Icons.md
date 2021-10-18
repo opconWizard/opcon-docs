@@ -1,7 +1,7 @@
 # PERT View Flow Diagram Icons
 
 In the diagram, each job is represented by a rectangle (also referred to
-as a \"job box\") containing a colored bar indicating the job status, an
+as a "job box") containing a colored bar indicating the job status, an
 icon representing the job type, the job name, and/or icons representing
 the special information about the job. For information on the Job Status
 colors, refer to [Setting Preferences for Status Colors](Preferences-for-Status-Colors.md). For a description of

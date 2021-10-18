@@ -9,7 +9,7 @@ While most schedules in Schedule Operations appear as the original schedule name
 
 When OpCon builds additional copies of a multi-instance schedule into the Daily schedules, the naming convention depends on whether Schedule Instance properties were supplied.
 
-If Schedule Instance properties are not supplied, the SAM appends the instance number to the schedule name by adding a dollar sign followed by a four-digit number (\$XXXX). Each time the same schedule is built this way, the number increments by one.
+If Schedule Instance properties are not supplied, the SAM appends the instance number to the schedule name by adding a dollar sign followed by a four-digit number ($XXXX). Each time the same schedule is built this way, the number increments by one.
 
 If Schedule Instance properties are supplied, OpCon appends the value of the first property to the schedule name. For more information, refer to [Instance Definition](../job-components/instances.md). Also refer to [Schedule Instance Definition](../Files/UI/Enterprise-Manager/Schedule-Instance-Definition.md) in the **Enterprise Manager** online help.
 

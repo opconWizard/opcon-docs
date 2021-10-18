@@ -38,11 +38,11 @@ User Interface screen, an action pane appears below the menu.
 - **Whole Words Only**: Indicates if the whole word must be found to
     match the criteria.
   - If selected, the search will only find the whole word as it
-        stands alone (e.g., typing \'rule\' for the name would only find
+        stands alone (e.g., typing 'rule' for the name would only find
         (if it existed) Rule, rule).
   - If not selected, the search will find the name not only if it
         stands alone, but will also find other words that match the same
-        order of characters for the name (e.g., typing \'rule\' for the
+        order of characters for the name (e.g., typing 'rule' for the
         name would find (if it existed) Rule, rule, Ruler, ruler, Ruled,
         ruled).
 - **Case-Sensitive**: Indicates if case-sensitivity should be applied

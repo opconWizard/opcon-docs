@@ -27,8 +27,8 @@ characters, asterisk (\*) and question mark (?).
 
 ## Filter Query Examples
 
-Suppose, we have the following dataset: \"toto\", \"atotob\", \"titi\",
-\"tata\", \"atotobtata\", \"atotobbtata\", \"tototiti\".
+Suppose, we have the following dataset: "toto", "atotob", "titi",
+"tata", "atotobtata", "atotobbtata", "tototiti".
 
 We could then query the dataset using both simple and complex search
 methods. Take a look at the table below which shows the query result
@@ -36,16 +36,16 @@ against the dataset using a given text query.
 
   Text Query   Returns
   ------------ ---------------------------------------------------------------------
-  toto         \"toto\", \"atotob\", \"atotobtata\", \"atotobbtata\", \"tototiti\"
-  toto\*tata   \"atotobtata\", \"atotobbtata\"
-  toto?tata    \"atotobtata\"
-  =toto        \"toto\"
-  =toto\*      \"tototiti\"
-  =\*toto      \"toto\"
-  =\*toto\*    \"toto\", \"atotob\", \"atotobtata\", \"atotobbtata\", \"tototiti\"
-  =\*titi      \"titi\", \"tototiti\"
+  toto         "toto", "atotob", "atotobtata", "atotobbtata", "tototiti"
+  toto\*tata   "atotobtata", "atotobbtata"
+  toto?tata    "atotobtata"
+  =toto        "toto"
+  =toto\*      "tototiti"
+  =\*toto      "toto"
+  =\*toto\*    "toto", "atotob", "atotobtata", "atotobbtata", "tototiti"
+  =\*titi      "titi", "tototiti"
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Creating Categories](Creating-Categories.md)

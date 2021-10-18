@@ -23,7 +23,7 @@ counts all of the jobs, but not the jobs in any subschedules.
  
 
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the \"Show Job Containers\" preference is turned off, the job counts in the pie chart will not include the Container jobs. For more information on this setting, refer to [[Setting Preferences from Enterprise Manager](Preferences-from-EM.md){#aanchor660}]{.Hyperlink}.]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the "Show Job Containers" preference is turned off, the job counts in the pie chart will not include the Container jobs. For more information on this setting, refer to [[Setting Preferences from Enterprise Manager](Preferences-from-EM.md){#aanchor660}]{.Hyperlink}.]
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  
@@ -66,7 +66,7 @@ The **Pie Chart** view also has the following right-click menu options:
 
  
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")Related
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")Related
 Topics
 
 -   [Creating and Saving Custom     Diagrams](Creating-Custom-Diagrams-Pie.md)

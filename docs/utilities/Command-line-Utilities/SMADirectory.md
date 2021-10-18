@@ -184,7 +184,7 @@ argument.
 |           |                |                 |                 |
 |           |                |                 | **- or -**      |
 |           |                |                 |                 |
-|           |                |                 | \".\"           |
+|           |                |                 | "."           |
 +-----------+----------------+-----------------+-----------------+
 | -F        | TimeType       | FM              | This parameter  |
 |           |                |                 | specifies the   |
@@ -472,13 +472,13 @@ Directory,DaysToRetain,FileExtensions
 The following describes the command-line parameters:
 
 - **\<Target Directory\>**: The path to the OpCon installation folder
-    (e.g., \"C:\\Program Files\\\").
+    (e.g., "C:\\Program Files\").
 - **Directory**: The path to the directory to examine.
 - **DaysToRetain**: The number of days to keep in the directory.
   - The counter must be entered in English. For example, 5d.
   - The value must be greater than zero, but less than 32,757.
 - **FileExtensions**: The file extensions to apply this retention
-    period to (e.g., \"log\" would look for files with the log
+    period to (e.g., "log" would look for files with the log
     extension).
   - One or more file extensions can be specified (separated by
         commas).
@@ -489,15 +489,15 @@ The following describes the command-line parameters:
 
 +----------------------------------+----------------------------------+
 | ![White pencil icon on green     | The following command line would | | circular                         | delete any files with an         |
-| background](../../../Reso        | extension of \"log\" that were   |
+| background](../../../Reso        | extension of "log" that were   |
 | urces/Images/example-icon(48x48) | older than 5 days:               |
 | .png "Example icon") |                                  |
-|                                  | \"C:\\Program                    |
+|                                  | "C:\\Program                    |
 |                                  | Files\\                          |
-|                                  | OpConxps\\MSLSAM\\SMADirectory\" |
+|                                  | OpConxps\\MSLSAM\\SMADirectory" |
 |                                  |                                  |
-|                                  | \"C:\\Program                    |
-|                                  | Data\\OpConxps\\SAM\\Log,5,log\" |
+|                                  | "C:\\Program                    |
+|                                  | Data\\OpConxps\\SAM\\Log,5,log" |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |

@@ -9,7 +9,7 @@ viewport: width=device-width, initial-scale=1.0
 The **Workload Chart** view is useful to refer to at a glance if a
 schedule or the schedules for that day have over run the estimated
 runtime. There are a few preferences relating to the workload chart that
-can be changed according to the user\'s preference. For additional
+can be changed according to the user's preference. For additional
 information on changing these preferences, refer to [Setting Preferences for Charts](Preferences-for-Charts.md).
 
  

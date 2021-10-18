@@ -114,7 +114,7 @@ To access job summary:
   ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The job summary can also be accessed while in PERT View. For more information, refer to [PERT View Job Summary Access](Using-PERT-View.md#PERT9).]
   -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Accessing Daily Job     Definition](Accessing-Daily-Job-Definition.md)

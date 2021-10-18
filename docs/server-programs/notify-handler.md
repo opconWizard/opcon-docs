@@ -32,7 +32,7 @@ reading the NOTIFY table:
 SMA Notify Handler configuration determines basic application and
 logging behavior.
 
-[]{#aanchor17} All of the SMA Notify Handler\'s configuration settings exist in the Enterprise Manager\'s Server Options. For more information,
+[]{#aanchor17} All of the SMA Notify Handler's configuration settings exist in the Enterprise Manager's Server Options. For more information,
 refer to [Managing Server Options](../Files/UI/Enterprise-Manager/Managing-Server-Options.md)
  in the **Enterprise Manager** online help.
 
@@ -47,7 +47,7 @@ When processing notifications:
     notifications containing a Schedule Name will contain the unique
     schedule name instance for the customer to follow up on if
     necessary.
-- Any OpCon/xps Events are passed in the SAM\'s MSGIN directory for
+- Any OpCon/xps Events are passed in the SAM's MSGIN directory for
     processing. SMA Notify Handler automatically supplies the user name
     and password.
 - For all notification types with message or text fields, SMA Notify
@@ -69,7 +69,7 @@ When processing notifications:
         that message fails, SMA Notify Handler logs an error and cannot
         successfully send the message.
   - When using MSG.exe, SMA Notify Handler always uses asterisk (\*)
-        for the user name and assumes the \"Recipients\" defined are
+        for the user name and assumes the "Recipients" defined are
         either Host Names or IP Addresses.
   - For a successful message, the Authentication User (UNC Access)
         and Authentication Password (UNC Access) must be defined in the

@@ -118,12 +118,12 @@ everything) in the job field.
 When defining the string, bear in mind the following:
 
 - The value may be:
-  - an empty string (\"\")
-  - a fixed string (\"abc\")
-  - a string with instance properties (\[\[\$this.Property\]\]) -   The value may not be a property expression.
+  - an empty string ("")
+  - a fixed string ("abc")
+  - a string with instance properties (\[\[$this.Property\]\]) -   The value may not be a property expression.
 - \[\[\@name\]\] is a [case-sensitive]{.ul} token that can be used to     refer to the current instance name.
 - \[\[\@current\]\] is a [case-sensitive]{.ul} token that can be used     to refer to the current value of the job field.
-- \$this may be used as a placeholder for the instance property named
+- $this may be used as a placeholder for the instance property named
     in the instance definition. This placeholder is
     [case-sensitive]{.ul}.
 In the New Value field:
@@ -133,8 +133,8 @@ Provide a replacement value for the string.
 When defining the new value, bear in mind the following:
 
 - The value may be:
-  - a fixed string (\"abc\")
-  - a string with instance properties (\[\[\$this.Property\]\])     -   a property expression (\[\[\@current\]\] + ToOaTime(\"02:00\"))
+  - a fixed string ("abc")
+  - a string with instance properties (\[\[$this.Property\]\])     -   a property expression (\[\[\@current\]\] + ToOaTime("02:00"))
 
 Click the **Is Expression** checkbox if the new value provided is a
 property expression.
@@ -145,11 +145,11 @@ property expression.
 | urces/Images/example-icon(48x48) |                                  |
 | .png "Example icon") | **Scenario \#1**: [A command     | |                                  | line string value needs to be    |
 |                                  | changed from                     |
-|                                  | \"C:\\MyFolder\\MyApp.exe -arg1  |
-|                                  | firstArg -arg2 secondArg\" to    |
-|                                  | \"C:\\MyFolder\\MyApp.exe -arg1  |
+|                                  | "C:\\MyFolder\\MyApp.exe -arg1  |
+|                                  | firstArg -arg2 secondArg" to    |
+|                                  | "C:\\MyFolder\\MyApp.exe -arg1  |
 |                                  | firstArg -arg2 secondArg -arg3   |
-|                                  | thirdArg\". The exception rule   |
+|                                  | thirdArg". The exception rule   |
 |                                  | definition would                 |
 |                                  | be:]{.statement2}                |
 |                                  |                                  |
@@ -172,8 +172,8 @@ property expression.
 |                                  |                                  |
 |                                  |                                  |
 |                                  | **Scenario \#2**: [The machine   | |                                  | needs to be changed from         |
-|                                  | \"MyMachine\" to                 |
-|                                  | \"My\<Property\>Machine\". The   |
+|                                  | "MyMachine" to                 |
+|                                  | "My\<Property\>Machine". The   |
 |                                  | exception rule definition would  |
 |                                  | be:]{.statement2}                |
 |                                  |                                  |
@@ -184,15 +184,15 @@ property expression.
 |                                  | **To Replace**: MyMachine        |
 |                                  |                                  |
 |                                  | **New Value**:                   |
-|                                  | My\[\[\$this.Property\]\]Machine | |                                  |                                  |
+|                                  | My\[\[$this.Property\]\]Machine | |                                  |                                  |
 |                                  | **Is Expression**: false         |
 |                                  |                                  |
 |                                  |                                  |
 |                                  |                                  |
 |                                  | **Scenario \#3**: [The           | |                                  | department needs to be changed   |
-|                                  | from \"\<CurrentValue\>\" to     |
-|                                  | \"\<C                            |
-|                                  | urrentValue\>\<InstanceName\>\". |
+|                                  | from "\<CurrentValue\>" to     |
+|                                  | "\<C                            |
+|                                  | urrentValue\>\<InstanceName\>". |
 |                                  | The exception rule definition    |
 |                                  | would be:]{.statement2}          |
 |                                  |                                  |
@@ -209,7 +209,7 @@ property expression.
 |                                  |                                  |
 |                                  |                                  |
 |                                  | **Scenario \#4**: [The job start | |                                  | offset needs to be changed from  |
-|                                  | \"\<CurrentValue\>\" by adding   |
+|                                  | "\<CurrentValue\>" by adding   |
 |                                  | 10 minutes to it. In this        |
 |                                  | scenario, the use of an          |
 |                                  | expression is ideal for changing |
@@ -223,7 +223,7 @@ property expression.
 |                                  |                                  |
 |                                  | **To Replace**:                  |
 |                                  |                                  |
-|                                  | **New Value**: \[\[\@current\]\] | |                                  | + ToOaTime(\"00:10\")            |
+|                                  | **New Value**: \[\[\@current\]\] | |                                  | + ToOaTime("00:10")            |
 |                                  |                                  |
 |                                  | **Is Expression**: true          |
 +----------------------------------+----------------------------------+

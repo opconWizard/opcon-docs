@@ -147,7 +147,7 @@ information applies to defining Class operations:
       - **GE** (greater than or equal to)
       - **LE** (less than or equal to)
     - **Exit Code Integer**: Any integer (-2,147,483,648 through
-            2,147,483,647) to compare with the job\'s exit code.
+            2,147,483,647) to compare with the job's exit code.
 
 ## Command Operation Fields
 
@@ -228,7 +228,7 @@ information applies to defining Command operations:
       - **GE** (greater than or equal to)
       - **LE** (less than or equal to)
     - **Exit Code Integer**: Any integer (-2,147,483,648 through
-            2,147,483,647) to compare with the job\'s exit code.
+            2,147,483,647) to compare with the job's exit code.
 
 ## JAR Operation Fields
 
@@ -357,5 +357,5 @@ the job.
     - **GE** (greater than or equal to)
     - **LE** (less than or equal to)
   - **Exit Code Integer**: Any integer (-2,147,483,648 through
-        2,147,483,647) to compare with the job\'s exit code.
+        2,147,483,647) to compare with the job's exit code.
 :::

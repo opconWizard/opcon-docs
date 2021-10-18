@@ -47,7 +47,7 @@ To perform this procedure:
 
 ## Starting Schedules
 
-This action overrides a schedule\'s start date and time. The SAM begins
+This action overrides a schedule's start date and time. The SAM begins
 processing as soon as this option is selected.
 
 To perform this procedure:
@@ -256,12 +256,12 @@ c.  Click on the drop-down arrow and select a **machine** or select
   ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If no properties are defined for the schedule, OpCon will still request the build for the schedule, but no properties will be defined.]
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Click the **Yes** button to confirm the request sent for \"job name\" or
+Click the **Yes** button to confirm the request sent for "job name" or
 click the **Cancel** button to cancel the request.
 
 If multiple jobs were selected:
 
-Repeat [Steps 8 - 12]{.ul} to add the additional jobs\' information.
+Repeat [Steps 8 - 12]{.ul} to add the additional jobs' information.
 
 If you need to add additional property definitions:
 

@@ -57,12 +57,12 @@ following steps:
 5. Set **Alarmid** to JOB_EMAIL.
 6. Set **Alarmqual** to the destination email address.
 7. Include up to four addresses separated by commas if multiple email
-    addresses are desired. The line\'s syntax does not allow spaces.
+    addresses are desired. The line's syntax does not allow spaces.
 
 ## Configuring SMTP Notifications
 
 The SMA Notify Handler uses SMTP for email and for text messages. Ensure
-an SMTP server is available and verify the server\'s name.
+an SMTP server is available and verify the server's name.
 
 [Configure the SMA Notify Handler to Use SMTP]{.ul}
 In EM Navigation under Administration:

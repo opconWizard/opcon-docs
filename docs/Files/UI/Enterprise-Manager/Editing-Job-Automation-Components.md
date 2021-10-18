@@ -215,7 +215,7 @@ Select an [OpCon]{.GeneralOpConGlobalName style="font-weight: bold;"} **event te
 information, refer to the [OpCon Events](../../../events/introduction.md) online help.
 
   --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [\$JOB:ADD,\<schedule date\>,\<schedule name\>,\<job name\>,\<frequency name\>]{.statement2}
+  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [$JOB:ADD,\<schedule date\>,\<schedule name\>,\<job name\>,\<frequency name\>]{.statement2}
   --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
 
 []{#Place_your_mouse_cursor}Place your mouse cursor at the beginning of a **\<syntax placeholder\>** displayed in the **Event Parameters** text
@@ -242,14 +242,14 @@ ii. Using the search field and filter criteria to find it. You can use
     and filter the search by property name, property value, or both
     (default).
 
-Double-click on the **global property** (e.g., \$SCHEDULE DATE).
+Double-click on the **global property** (e.g., $SCHEDULE DATE).
 
 :::note
 Double brackets will automatically be placed around the placeholder for the token that is defined.
 :::
 
   --------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [\$JOB:ADD,\[\[\$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth]{.statement2}
+  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [$JOB:ADD,\[\[$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth]{.statement2}
   --------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------
 
 Click the **Reset** button to reset the parameters to their original

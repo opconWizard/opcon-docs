@@ -390,8 +390,8 @@ The Time Settings category contains time-related settings for the SAM.
 |                    |         |               |     to 1440.       |
 |                    |         |               |                    |
 |                    |         |               | **Note:** Jobs in  |
-|                    |         |               | a \"Start          |
-|                    |         |               | Attempted\" status |
+|                    |         |               | a "Start          |
+|                    |         |               | Attempted" status |
 |                    |         |               | are not subject to |
 |                    |         |               | this timer because |
 |                    |         |               | they are checked   |
@@ -482,7 +482,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               | -   The user must |
 |                   |           |               |     have          |
 |                   |           |               |     privileges to |
-|                   |           |               |     \"Read\" all  |
+|                   |           |               |     "Read" all  |
 |                   |           |               |     network       |
 |                   |           |               |     shares from   |
 |                   |           |               |     which the SMA |
@@ -492,7 +492,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     files. The    |
 |                   |           |               |     user must     |
 |                   |           |               |     also have     |
-|                   |           |               |     \"Write\"     |
+|                   |           |               |     "Write"     |
 |                   |           |               |     privileges to |
 |                   |           |               |     the \<Output  |
 |                   |           |               |     Dire          |
@@ -639,7 +639,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     Notify        |
 |                   |           |               |     Handler will  |
 |                   |           |               |     use as the    |
-|                   |           |               |     \"From\"      |
+|                   |           |               |     "From"      |
 |                   |           |               |     address when  |
 |                   |           |               |     sending       |
 |                   |           |               |     E-mail or     |
@@ -690,7 +690,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     will only     |
 |                   |           |               |     send the      |
 |                   |           |               |     message with  |
-|                   |           |               |     that \"From\" |
+|                   |           |               |     that "From" |
 |                   |           |               |     address,      |
 |                   |           |               |     leaving the   |
 |                   |           |               |     validation up |
@@ -928,7 +928,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     Notify        |
 |                   |           |               |     Handler will  |
 |                   |           |               |     use as the    |
-|                   |           |               |     \"From\"      |
+|                   |           |               |     "From"      |
 |                   |           |               |     address when  |
 |                   |           |               |     sending       |
 |                   |           |               |     E-mail or     |
@@ -979,7 +979,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     will only     |
 |                   |           |               |     send the      |
 |                   |           |               |     message with  |
-|                   |           |               |     that \"From\" |
+|                   |           |               |     that "From" |
 |                   |           |               |     address,      |
 |                   |           |               |     leaving the   |
 |                   |           |               |     validation up |
@@ -1219,7 +1219,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     Notify        |
 |                   |           |               |     Handler will  |
 |                   |           |               |     use as the    |
-|                   |           |               |     \"From\"      |
+|                   |           |               |     "From"      |
 |                   |           |               |     address when  |
 |                   |           |               |     sending SMS   |
 |                   |           |               |     Text Messages |
@@ -1269,7 +1269,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     will only     |
 |                   |           |               |     send the      |
 |                   |           |               |     message with  |
-|                   |           |               |     that \"From\" |
+|                   |           |               |     that "From" |
 |                   |           |               |     address,      |
 |                   |           |               |     leaving the   |
 |                   |           |               |     validation up |
@@ -1473,7 +1473,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     Notify        |
 |                   |           |               |     Handler will  |
 |                   |           |               |     use as the    |
-|                   |           |               |     \"From\"      |
+|                   |           |               |     "From"      |
 |                   |           |               |     address when  |
 |                   |           |               |     sending Text  |
 |                   |           |               |     Messages      |
@@ -1523,7 +1523,7 @@ Notify Handler will use to send email and/or SMS notifications.
 |                   |           |               |     will only     |
 |                   |           |               |     send the      |
 |                   |           |               |     message with  |
-|                   |           |               |     that \"From\" |
+|                   |           |               |     that "From" |
 |                   |           |               |     address,      |
 |                   |           |               |     leaving the   |
 |                   |           |               |     validation up |
@@ -1675,8 +1675,8 @@ the SMA Notify Handler.
 |                   |           |               |     reaches this  |
 |                   |           |               |     maximum size, |
 |                   |           |               |     it is         |
-|                   |           |               |     \"rolled      |
-|                   |           |               |     over.\"       |
+|                   |           |               |     "rolled      |
+|                   |           |               |     over."       |
 |                   |           |               | -   This setting  |
 |                   |           |               |     creates small |
 |                   |           |               |     manageable    |
@@ -1762,8 +1762,8 @@ the SMA Notify Handler.
 |                   |           |               |     all           |
 |                   |           |               |     notification  |
 |                   |           |               |     types         |
-|                   |           |               |     [except]{.ul} | |                   |           |               |     \"Text        |
-|                   |           |               |     Message.\"    |
+|                   |           |               |     [except]{.ul} | |                   |           |               |     "Text        |
+|                   |           |               |     Message."    |
 |                   |           |               | -   Valid values  |
 |                   |           |               |     are True and  |
 |                   |           |               |     False.        |
@@ -1784,15 +1784,15 @@ the SMA Notify Handler.
 |                   |           |               |     includes the  |
 |                   |           |               |     machine name  |
 |                   |           |               |     to identify   |
-|                   |           |               |     the job\'s    |
+|                   |           |               |     the job's    |
 |                   |           |               |     machine.      |
 |                   |           |               | -   This setting  |
 |                   |           |               |     applies to    |
 |                   |           |               |     all           |
 |                   |           |               |     notification  |
 |                   |           |               |     types         |
-|                   |           |               |     [except]{.ul} | |                   |           |               |     \"Text        |
-|                   |           |               |     Message.\"    |
+|                   |           |               |     [except]{.ul} | |                   |           |               |     "Text        |
+|                   |           |               |     Message."    |
 |                   |           |               | -   Valid values  |
 |                   |           |               |     are True and  |
 |                   |           |               |     False.        |
@@ -1816,14 +1816,14 @@ the SMA Notify Handler.
 |                   |           |               | -   Valid values  |
 |                   |           |               |     are the tilde |
 |                   |           |               |     (\~), the     |
-|                   |           |               |     \"at\" symbol |
+|                   |           |               |     "at" symbol |
 |                   |           |               |     (@), the      |
 |                   |           |               |     exclamation   |
 |                   |           |               |     mark (!), the |
 |                   |           |               |     pound sign    |
 |                   |           |               |     (\#), the     |
 |                   |           |               |     dollar sign   |
-|                   |           |               |     (\$), the     |
+|                   |           |               |     ($), the     |
 |                   |           |               |     caret symbol  |
 |                   |           |               |     (\^), and the |
 |                   |           |               |     pipe symbol ( |
@@ -2297,7 +2297,7 @@ OpCon Login passwords.
 |                    |         |               |     For example,   |
 |                    |         |               |     if set to 2,   |
 |                    |         |               |     the password   |
-|                    |         |               |     \"jjj\" would  |
+|                    |         |               |     "jjj" would  |
 |                    |         |               |     be invalid.    |
 |                    |         |               | -   Setting the    |
 |                    |         |               |     value to 0     |
@@ -2351,7 +2351,7 @@ OpCon Login passwords.
 |                    |         |               |     minimum number |
 |                    |         |               |     of characters  |
 |                    |         |               |     allowed for    |
-|                    |         |               |     every user\'s  |
+|                    |         |               |     every user's  |
 |                    |         |               |     password in    |
 |                    |         |               |                    |
 |                    |         |               |    [OpCon]{.Genera | |                    |         |               | lOpConGlobalName}. |

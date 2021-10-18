@@ -38,18 +38,18 @@ The **Event Template** drop-down contains several Administrative Events for adva
 Fill out the *fields* to define the event.
 
 :::note
-Unlike defining events in Self Service, do not include user variables \${variable} in Vision actions as there is no place to enter the user input when the action is triggered. However, there are system variables that can be defined for Vision actions, as explained below.
+Unlike defining events in Self Service, do not include user variables ${variable} in Vision actions as there is no place to enter the user input when the action is triggered. However, there are system variables that can be defined for Vision actions, as explained below.
 :::
 
 - []{#aanchor455} You have the option to use the following system     variables specifically for Vision cards:
 
-  - **\[\[CI.\$CARD NAME\]\]** - Resolves to the card name.     -   **\[\[CI.\$CARD FREQUENCY NAME\]\]** - Resolves to the frequency
+  - **\[\[CI.$CARD NAME\]\]** - Resolves to the card name.     -   **\[\[CI.$CARD FREQUENCY NAME\]\]** - Resolves to the frequency
         name defined for the card.
-  - **\[\[CI.\$CARD STATUS\]\]** - Resolves to the status the         defined Vision action has triggered.
-  - **\[\[CI.\$CARD START TIME\]\]** - Resolves to the estimated or         actual start time for the card.
-  - **\[\[CI.\$CARD END TIME\]\]** - Resolves to the estimated or         actual end time for the card.
-  - **\[\[CI.\$REMOTE INSTANCE NAME\]\]** - Resolves to the remote         instance name defined for the card.
-  - **\[\[CI.\$SCHEDULE DATE\]\]** - Resolves to the schedule date         defined for the card.
+  - **\[\[CI.$CARD STATUS\]\]** - Resolves to the status the         defined Vision action has triggered.
+  - **\[\[CI.$CARD START TIME\]\]** - Resolves to the estimated or         actual start time for the card.
+  - **\[\[CI.$CARD END TIME\]\]** - Resolves to the estimated or         actual end time for the card.
+  - **\[\[CI.$REMOTE INSTANCE NAME\]\]** - Resolves to the remote         instance name defined for the card.
+  - **\[\[CI.$SCHEDULE DATE\]\]** - Resolves to the schedule date         defined for the card.
 
     You can use the same variable multiple times in the same event, as
     well as in other events for the same action. The variable(s) will be

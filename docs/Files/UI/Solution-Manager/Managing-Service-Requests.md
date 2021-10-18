@@ -15,7 +15,7 @@ Service Request Button Management Options
 
 ![Service Request Management Options](../../../Resources/Images/SM/Managing-Service-Requests.png "Service Request Management Options")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Enabling Admin Mode Editing](Enabling-Admin-Mode-Editing.md)

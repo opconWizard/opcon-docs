@@ -97,7 +97,7 @@ MS SQL Job does not require any special tools to be installed.
 #### Other Options Tab
 
 - **Other Options**: *(Optional)* Defines an override
-    password using -\$ switch.
+    password using -$ switch.
 
 ### Fields for MS SQL Script
 
@@ -134,7 +134,7 @@ Running a MS SQL Script job requires SQLCMD to be installed on the agent machine
 | ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
 | background](../../Reso           | SELECT FirstName, LastName FROM  |
 | urces/Images/example-icon(48x48) | Person.Person WHERE LastName     |
-| .png "Example icon") | LIKE \'Whi%\';                   |
+| .png "Example icon") | LIKE 'Whi%';                   |
 +----------------------------------+----------------------------------+
 
 - **Statement(s)**: Defines the SQL query to be executed against the
@@ -280,5 +280,5 @@ Running an Other DB job through ODBC/OLE DB connections requires the appropriate
     file where the results of the query should be directed. Only local
     file paths are allowed.
 - **Other Options**: *(Optional)* Defines an override
-    password using -\$ switch. Override password only works for ODBC and
+    password using -$ switch. Override password only works for ODBC and
     DSN jobs.

@@ -18,7 +18,7 @@ To create and associate a category:
 2. Enter a unique name for the new category. As a best practice, when
     naming the category, choose a naming convention that helps refine
     the Service Request filtering query. For example, you could name the
-    category: *Important/Saturday*. In doing so, \"Saturday\" could be
+    category: *Important/Saturday*. In doing so, "Saturday" could be
     used as the Category filter.
 
 3. Select a background color for the new category. There are no

@@ -48,7 +48,7 @@ beginning of the string.
   ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [In the Audit Management screen, type **\*JobName** to find a specific job name in the output.]{.statement2}
   --------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Viewing Audit     Records](Viewing-and-Exporting-Audit-Records.md#Viewing)

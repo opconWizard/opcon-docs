@@ -1,10 +1,10 @@
 ---
 lang: en-us
-title: Viewing Container Jobs\' SubSchedules
+title: Viewing Container Jobs' SubSchedules
 viewport: width=device-width, initial-scale=1.0
 ---
 
-#  Viewing Container Jobs\' SubSchedules
+#  Viewing Container Jobs' SubSchedules
 
 To view the SubSchedule:
 

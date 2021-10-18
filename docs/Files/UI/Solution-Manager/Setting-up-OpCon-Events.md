@@ -22,7 +22,7 @@ The **Event Template** drop-down contains several Administrative Events for adva
 :::
 
 Insert *variable(s)* into any part of the Event using the following
-notation: **\${variable}**
+notation: **${variable}**
 
 - You can use the same variable multiple times in the same Event, as
     well as in other Events for the same Service Request. If you do
@@ -32,16 +32,16 @@ notation: **\${variable}**
 
 - []{#aanchor419} You have the option to use the following system     variables specifically in Solution Manager:
 
-  - **\${SM.USER.LOGIN}** - Resolves to the Name defined for the
+  - **${SM.USER.LOGIN}** - Resolves to the Name defined for the
         OpCon user who clicked the Service
         Request button.
-  - **\${SM.USER.NAME}** - Resolves to the Full User Name defined
+  - **${SM.USER.NAME}** - Resolves to the Full User Name defined
         for the OpCon user who clicked the
         Service Request button.
-  - **\${SM.USER.EMAIL}** - Resolves to the Email Address defined
+  - **${SM.USER.EMAIL}** - Resolves to the Email Address defined
         for the OpCon user who clicked the
         Service Request button.
-  - **\${SM.USER.COMMENTS}** - Resolves to the Comments defined for
+  - **${SM.USER.COMMENTS}** - Resolves to the Comments defined for
         the OpCon user who clicked the
         Service Request button.
 

@@ -49,7 +49,7 @@ Right-clicking on a **Job** icon will show several job-related menu
 items. Refer to [Job Right-click Menu](Working-with-Operation.md)
 for more detail.
 
-![White \"person reading\" icon on bluecircular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on bluecircular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Using Plan Mode](Using-Plan-Mode.md)

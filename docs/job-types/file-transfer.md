@@ -7,7 +7,7 @@ OpCon token replacement.
 SAM prepares to send the job to the LSAM. For additional information about the SMA File Transfer process, refer to [File Transfer Jobs](../automation-concepts/file-transfer-jobs.md).
 
 :::warning
-If the LSAMs and the machines involved in the file transfer are not properly configured, the file transfer job fails. For more information, refer to [File Transfer Settings](../objects/machines.md#File). These settings are commingled with the LSAM\'s Job Output Retrieval System (JORS) parameters. For additional information, refer to the LSAM online help for the desired platform. For more information on the JORS Port Number and viewing job output, refer to [Viewing a Job Output File](../operations/job-output.md).
+If the LSAMs and the machines involved in the file transfer are not properly configured, the file transfer job fails. For more information, refer to [File Transfer Settings](../objects/machines.md#File). These settings are commingled with the LSAM's Job Output Retrieval System (JORS) parameters. For additional information, refer to the LSAM online help for the desired platform. For more information on the JORS Port Number and viewing job output, refer to [Viewing a Job Output File](../operations/job-output.md).
 :::
 
 :::note
@@ -20,7 +20,7 @@ Machine definition for Primary and Alternate machines and Machine Groups is not 
     transfer. Only the machines enabled for file transfer can be defined
     for this value. Refer to [File Transfer     Settings](../objects/machines.md#File).
 - **User (Source)**: Defines the Batch User ID with access to the file
-    on the Source machine. Define \"N/A\" if the platform does not
+    on the Source machine. Define "N/A" if the platform does not
     require a user. OpCon Users can only
     specify Batch User IDs they have privileges to that are defined in
     [Batch User Privileges](../administration/privileges.md#batch-user-privileges)
@@ -61,7 +61,7 @@ Machine definition for Primary and Alternate machines and Machine Groups is not 
 
 **User (Destination)**: Defines the Batch User ID with access to the
 location on the Destination machine that will receive the file. Define
-\"N/A\" if the platform does not require a user.
+"N/A" if the platform does not require a user.
 OpCon Users can only specify Batch User IDs
 they have privileges to that are defined in [Batch User Privileges](../administration/privileges.md#batch-user-privileges).
 
@@ -163,7 +163,7 @@ For UNIX as destination:
 |                                  |                                  |
 |                                  | **Note:** Wildcard file transfer |
 |                                  | only supports the Overwrite      |
-|                                  | option for \"When File Exists\". |
+|                                  | option for "When File Exists". |
 +----------------------------------+----------------------------------+
 
 - If you use wildcards for the destination file and the destination
@@ -171,15 +171,15 @@ For UNIX as destination:
 - You can transfer multiple files from a source that supports multiple
     file transfer to a destination that does not. To do this, specify a
     single file name in the destination. The single file created is a
-    gzip file; therefore, SMA Technologies     recommends naming the file with an extension of \".tar.gz\" (e.g.,
-    \"myfiles.tar.gz\").
+    gzip file; therefore, SMA Technologies     recommends naming the file with an extension of ".tar.gz" (e.g.,
+    "myfiles.tar.gz").
 
 :::note
-On File Transfer jobs where an MCP or IBM i machine is the destination machine and the data type is text, the record length of the destination file may be specified. Specify record length by appending a comma to the destination file title, and then the constant \"REC=nnnnn\" (without quotation marks), where nnnnn is the desired record length.
+On File Transfer jobs where an MCP or IBM i machine is the destination machine and the data type is text, the record length of the destination file may be specified. Specify record length by appending a comma to the destination file title, and then the constant "REC=nnnnn" (without quotation marks), where nnnnn is the desired record length.
 :::
 
 :::
-When a specific blocking factor is required on an MCP destination file, the blocking factor will be identified by the string, \",BLK=nnnnnnnn\", where nnnnnnnn represents the number of records per block to be declared for the destination file. Currently, the customer indicates the record length by the string, \",REC=nnnnnnnn\". The BLK and REC mnemonics are to follow the file title of the destination file, but need not be in any particular order.
+When a specific blocking factor is required on an MCP destination file, the blocking factor will be identified by the string, ",BLK=nnnnnnnn", where nnnnnnnn represents the number of records per block to be declared for the destination file. Currently, the customer indicates the record length by the string, ",REC=nnnnnnnn". The BLK and REC mnemonics are to follow the file title of the destination file, but need not be in any particular order.
 :::
 
 :::note
@@ -196,7 +196,7 @@ If anything other than Binary is defined as the Source Data Type, the integrity 
 - **ASCII**: Indicates the file is a simple text file in ASCII format.
     Set this option when the file should explicitly be treated as an
     ASCII file.
-- **Binary**: Indicates the file\'s structure should be left intact
+- **Binary**: Indicates the file's structure should be left intact
     during the transfer process. This option must be set for all
     non-text files. Additionally, this option should be set for text
     files being transferred between platforms with different text types
@@ -218,7 +218,7 @@ translation from one text type to another.
 - **ASCII**: Indicates the file should be written to the Destination
     Machine as a simple text file in ASCII format. Set this option when
     the file should explicitly be written as an ASCII file.
-- **Binary**: Indicates the file\'s structure should be left intact
+- **Binary**: Indicates the file's structure should be left intact
     during the transfer process. This option must be set if the Source
     Data Type is set to Binary, but this option is invalid if the Source
     Data Type is anything other than Binary.
@@ -273,7 +273,7 @@ valid options:
     final status of the job.
 
 :::note
-z/OS does support the \"delete source file\" option when z/OS is the destination. It is not supported when z/OS is the source.
+z/OS does support the "delete source file" option when z/OS is the destination. It is not supported when z/OS is the source.
 :::
 
 **Maximum Transfer Rate (kbits/second)**: Defines the transfer rate for
@@ -489,7 +489,7 @@ this online help:
 
 ## Failure Criteria
 
-- **Fails if \"Preferred\" settings not satisfied**: Determines if the
+- **Fails if "Preferred" settings not satisfied**: Determines if the
     job should fail when the file transfer itself succeeds, but the
     transfer did not comply with the preferred settings for Delete
     Source File, Compression, and Encryption.

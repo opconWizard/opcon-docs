@@ -46,7 +46,7 @@ LSAM machine to execute immediately before the job specified in the Start Image.
     Core Dump, and there are no signals.
 
 **Start Image**: Defines the full path to the executable file on the
-LSAM machine. If the job requires a user\'s environment variables, refer to [LSAM Environment
+LSAM machine. If the job requires a user's environment variables, refer to [LSAM Environment
 Variables](https://help.smatechnologies.com/opcon/agents/unix/latest/Files/Agents/UNIX/LSAM-Environment-Variables.md)
  in the **UNIX LSAM** online help.
 
@@ -80,7 +80,7 @@ and will result in the defined exit code.
 - **Custom Application Log**: Defines an external application log to
     be attached to the job output log. The external log will be searched
     for a matching String to Search value(s) to determine the
-    application\'s exit code. Wildcard characters can be used to create
+    application's exit code. Wildcard characters can be used to create
     a file naming pattern for specifying multiple application log files.
 
 **Environment Variables**: Defines the environment variables for the job
@@ -101,15 +101,15 @@ and their associated values.
 |                                  | various values of Run_Time and   |
 |                                  | Exit_Code.                       |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=20;2=20,Y |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=30;2=30,Y |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=40;2=40,Y |
 +----------------------------------+----------------------------------+
@@ -143,7 +143,7 @@ and their associated values.
      concept.
   - At runtime, the script and type information are used by the
         Agent to create a temporary script file in the location of the
-        \$FILE placeholder in the run command template. For more
+        $FILE placeholder in the run command template. For more
         information, refer to [Adding Script         Runners](../Files/UI/Enterprise-Manager/Adding-Script-Runners.md)
          in the **Enterprise Manager** online help.
 - **Script Type**: Displays the script type associated with the
@@ -158,7 +158,7 @@ and their associated values.
 - **Arguments**: Defines any script parameters to pass to the script
     at runtime.
   - At runtime, the Agent will place the arguments in the location
-        of the \$ARGUMENTS placeholder. For more information, refer to
+        of the $ARGUMENTS placeholder. For more information, refer to
         [Adding Script         Runners](../Files/UI/Enterprise-Manager/Adding-Script-Runners.md)
          in the **Enterprise Manager** online help.
 
@@ -180,15 +180,15 @@ and their associated values.
 |                                  | various values of Run_Time and   |
 |                                  | Exit_Code.                       |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=20;2=20,Y |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=30;2=30,Y |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=40;2=40,Y |
 +----------------------------------+----------------------------------+
@@ -209,7 +209,7 @@ Failed. For additional information on UNIX exit codes, refer to [UNIX LSAM Exit 
 
 - **Basic Exit Codes**: Provides fields to define basic criteria for
     OpCon to determine the final status of
-    the job based on the job\'s exit code. If basic criteria options do
+    the job based on the job's exit code. If basic criteria options do
     not meet the needs of the job, define the Advanced Exit Codes
     instead. Basic failure criterion contains two parts: *Operator* and
     *Exit code integer*.
@@ -221,14 +221,14 @@ Failed. For additional information on UNIX exit codes, refer to [UNIX LSAM Exit 
     - **GT** (greater than)
     - **GE** (greater than or equal to)
     - **LE** (less than or equal to)
-  - **Exit code integer**: An integer to compare with the job\'s
+  - **Exit code integer**: An integer to compare with the job's
         exit code. Due to operating system constraints, the UNIX
         LSAM only recognizes values between -127         and 127.
 - **Advanced Failure Criteria**: UNIX jobs can make use of the
     Advanced Failure Criteria feature for the job defined in the Start
     Image. For more information, refer to [Advanced Failure Criteria](../objects/jobs.md#advanced-failure-criteria).
 - **Fails on Core Dump**: Determines the configuration for how the
-    LSAM should report the job\'s status when the job     does or does not create a core file. For example:
+    LSAM should report the job's status when the job     does or does not create a core file. For example:
   - If the Fails on Core Dump flag is checked and a core dump is
         produced, then the job status will return a failed exit code.
   - If the Fails on Core Dump flag is checked and a core dump is not
@@ -245,11 +245,11 @@ The UNIX LSAM supports the Job Restart Step capability which allows users to def
 when a job is restarted from Schedule Operations. By default, jobs
 restart from the first step. Additionally, UNIX jobs support the ability
 for users to specify that only a portion of a job be executed. By
-default, jobs execute \"From Beginning to End\". Use of either the Job
+default, jobs execute "From Beginning to End". Use of either the Job
 Restart Step or the Job Start/End Step capability requires formatting of
-the job\'s top-level script, and use of the Job Start/End Step
-capability requires formatting of the job\'s \"Start Image\" or
-\"Parameters\" in the OpCon Job Details. For
+the job's top-level script, and use of the Job Start/End Step
+capability requires formatting of the job's "Start Image" or
+"Parameters" in the OpCon Job Details. For
 additional information, refer to the
 [sma_job_step](https://help.smatechnologies.com/opcon/agents/unix/latest/Files/Agents/UNIX/sma_job_step.md)
  utility in the **UNIX LSAM** online help.
@@ -283,7 +283,7 @@ The following information applies to the Episys: Run JobFile sub-type:
      in the **UNIX LSAM** online help.
 - **RSJ Path**: Defines the path to the directory on the UNIX machine
     where the RSJ programs are installed.
-- **SYM Number**: Defines the Episys \"SYM\" which contains the job
+- **SYM Number**: Defines the Episys "SYM" which contains the job
     for OpCon to run. The value should be a
     three-digit number or an OpCon token that
     resolves to a three-digit number. For information on creating tokens
@@ -292,7 +292,7 @@ The following information applies to the Episys: Run JobFile sub-type:
 - **Episys Job**: Defines the name of the job in Episys.
 - **Restart Point**: The name of the restart point for the job.
   - If EM finds a token (text surrounded in double brackets like
-        \[\[\$SCHEDULE NAME\]\]), it will not validate the characters         within the token.
+        \[\[$SCHEDULE NAME\]\]), it will not validate the characters         within the token.
   - The EM will strip any trailing spaces on this field.
   - EM will automatically wrap this field in single quotes when
         building the command line. This means that user entered spaces
@@ -322,7 +322,7 @@ sub-type.
      in the **Enterprise Manager** online help.
 - **RSJ Path**: Defines the path to the directory on the UNIX Machine
     where the RSJ programs are installed.
-- **SYM Number**: Defines the Episys \"SYM\" where the control file
+- **SYM Number**: Defines the Episys "SYM" where the control file
     resides. The value should be a three-digit number or an
     OpCon token that resolves to a
     three-digit number. For information on creating tokens and setting
@@ -350,7 +350,7 @@ sub-type.
      in the **Enterprise Manager** online help.
 - **RSJ Path**: Defines the path to the directory on the UNIX machine
     where the RSJ programs are installed.
-- **SYM Number**: Defines the Episys \"SYM\" where the output resides.
+- **SYM Number**: Defines the Episys "SYM" where the output resides.
     The value should be a three-digit number or an
     OpCon token that resolves to a
     three-digit number. For information on creating Tokens and setting
@@ -362,7 +362,7 @@ sub-type.
     Output file to use for comparison to the FED File. To ensure the
     correct file name is specified, use an
     OpCon token with the Property Name (e.g.,
-    \[\[BatchOutputFile\]\]) defined by an associated \"Find Batch     Output Sequence Number\" type job.
+    \[\[BatchOutputFile\]\]) defined by an associated "Find Batch     Output Sequence Number" type job.
 
 ### Episys: Find Batch Output Sequence Number
 
@@ -377,7 +377,7 @@ Sequence Number sub-type.
      in the **Enterprise Manager** online help.
 - **RSJ Path**: Defines the path to the directory on the UNIX machine
     where the RSJ programs are installed.
-- **SYM Number**: Defines the Episys \"SYM\" where the output resides.
+- **SYM Number**: Defines the Episys "SYM" where the output resides.
     The value should be a three-digit number or an
     OpCon token that resolves to a
     three-digit number. For information on creating Tokens and setting
@@ -388,15 +388,15 @@ Sequence Number sub-type.
 - **Property Name**: Defines the name of the
     OpCon Property (e.g., BatchOutputFile)
     that will have its value set by this job. An
-    OpCon token on an associated \"Compare
-    ACH Totals\" job will reference this property name (e.g.,
+    OpCon token on an associated "Compare
+    ACH Totals" job will reference this property name (e.g.,
     \[\[BatchOutputFile\]\]. Refer to     [Properties](../objects/properties.md).
 - **MSGIN Directory**: Defines the full path to the MSGIN directory on
     the UNIX machine the job will run on.
 - **OpCon/xps User ID**: Defines an OpCon/xps User ID with privileges
-    to \"Maintain Global Properties\".
+    to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user\'s login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
      in the **OpCon Events** online help.
 
 ### Episys: Find Report from Episys Reports
@@ -412,7 +412,7 @@ Reports sub-type.
      in the **Enterprise Manager** online help.
 - **RSJ Path**: Defines the path to the directory on the UNIX machine
     where the RSJ programs are installed.
-- **SYM Number**: Defines the Episys \"SYM\" where the report resides.
+- **SYM Number**: Defines the Episys "SYM" where the report resides.
     The value should be a three-digit number or an
     OpCon token that resolves to a
     three-digit number. For information on creating tokens and setting
@@ -427,9 +427,9 @@ Reports sub-type.
 - **MSGIN Directory**: Defines the full path to the MSGIN directory on
     the UNIX machine the job will run on.
 - **OpCon/xps User ID**: Defines an OpCon/xps User ID with privileges
-    to \"Maintain Global Properties\".
+    to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user\'s login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
      in the **OpCon Events** online help.
 - **Occurrence to Search for**: Defines a numerical value (maximum
     value 99) that identifies the occurrence of the Report title to
@@ -448,7 +448,7 @@ Output sub-type.
      in the **Enterprise Manager** online help.
 - **RSJ Path**: Defines the path to the directory on the UNIX machine
     where the RSJ programs are installed.
-- **SYM Number**: Defines the Episys \"SYM\" where the report resides.
+- **SYM Number**: Defines the Episys "SYM" where the report resides.
     The value should be a three-digit number or an
     OpCon token that resolves to a
     three-digit number. For information on creating tokens and setting
@@ -465,9 +465,9 @@ Output sub-type.
 - **MSGIN Directory**: Defines the full path to the MSGIN directory on
     the UNIX machine the job will run on.
 - **OpCon/xps User ID**: Defines an OpCon/xps User ID with privileges
-    to \"Maintain Global Properties\".
+    to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user\'s login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
     .
 - **Occurrence to Search for**: Defines a numerical value (maximum
     value 99) that identifies the occurrence of the Report title to
@@ -508,7 +508,7 @@ sub-type.
      in the **Enterprise Manager** online help.
 - **RSJ Path**: Defines the path to the directory on the UNIX machine
     where the RSJ programs are installed.
-- **SYM Number**: Defines the Episys \"SYM\" where the report resides.
+- **SYM Number**: Defines the Episys "SYM" where the report resides.
     The value should be a three-digit number or an
     OpCon token that resolves to a
     three-digit number. For information on creating tokens and setting
@@ -517,8 +517,8 @@ sub-type.
 - **Report Name**: Defines the name of the report whose sequence
     number is of interest.
 - **FTP User**: Defines the name of the user which the files will be
-    \"FTPed\" as.
-- **FTP User Password**: Defines the FTP User\'s Password. Some
+    "FTPed" as.
+- **FTP User Password**: Defines the FTP User's Password. Some
     special characters have a special meaning to the UNIX shell and may
     be converted by the shell into other strings (such as '\*'). These
     characters must be 'escaped' with a backslash.

@@ -15,7 +15,7 @@ file, the command line must have the .com extension.
     [Embedded Script](#Fields3).
 - **User ID**: Defines the User ID assigned to the job for Windows
     security authentication.
-  - Define \"Use Service Account\" if the MSLSAM is running as a
+  - Define "Use Service Account" if the MSLSAM is running as a
         Domain User. For additional information on running the MSLSAM as
         a Domain User, refer to [Service Configuration         Options](https://help.smatechnologies.com/opcon/agents/windows/latest/Files/Agents/Microsoft/Service-Configuration-Options.md)
          in the **Microsoft LSAM** online help.
@@ -81,7 +81,7 @@ LSAM machine.
     machine the SAM selects from the Machine Group.
 - If the command line has a reference to a directory or filename that
     contains spaces, the directory and file name must be enclosed in
-    double quotes (e.g., \"c:\\this is my directory\\test.exe\").
+    double quotes (e.g., "c:\\this is my directory\\test.exe").
 - Do not place command-line parameters within the double quotes.
 - The MSLSAM automatically executes .com, .exe, .cmd, and .bat files;
     otherwise, the command line must specify a path to a file
@@ -119,10 +119,10 @@ status to the operating system, SMA Technologies provides the E.C.O.F feature to
 jobs.
 
 - If a job uses this feature, the value in the E.C.O.F. supersedes the
-    job\'s standard termination value.
+    job's standard termination value.
 - Upon termination, the job produces the E.C.O.F. The MSLSAM reads the
     E.C.O.F. and compares the value in the file to the Failure Criteria
-    (refer to below) to determine the job\'s final status. Refer to
+    (refer to below) to determine the job's final status. Refer to
     [Microsoft LSAM Configuration and     Operation](https://help.smatechnologies.com/opcon/agents/windows/latest/Files/Agents/Microsoft/Configuration-and-Operation.md)
      in the **Microsoft LSAM** online help.
 
@@ -148,7 +148,7 @@ job.
     - **GE** (greater than or equal to)
     - **LE** (less than or equal to)
   - **Exit Code**: Any integer (-2,147,483,648 through
-        2,147,483,647) to compare with the job\'s exit code.
+        2,147,483,647) to compare with the job's exit code.
 
 **Advanced Failure Criteria**: Windows jobs can make use of the Advanced
 Failure Criteria feature for the job defined in the Command Line. For
@@ -162,7 +162,7 @@ If Advanced Failure Criteria is selected, no job-related customized log entries 
 job, the OpCon reports the prerun job as
 Failed. After a failure, the SAM reschedules the prerun job.
 OpCon allows only one prerun failure
-criteria. The failure criterion\'s structure for the prerun job and for
+criteria. The failure criterion's structure for the prerun job and for
 the main job is the same. (Refer to the description for Exit Codes
 above.)
 
@@ -181,7 +181,7 @@ and will result in the defined exit code.
 - **Custom Application Log**: Defines an external application log to
     be attached to the job output log. The external log will be searched
     for a matching String to Search value(s) to determine the
-    application\'s exit code. Windows wildcard characters can be used to
+    application's exit code. Windows wildcard characters can be used to
     create a file naming pattern for specifying multiple application log
     files.
 
@@ -203,15 +203,15 @@ and their associated values.
 |                                  | various values of Run_Time and   |
 |                                  | Exit_Code.                       |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=20;2=20,Y |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=30;2=30,Y |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=40;2=40,Y |
 +----------------------------------+----------------------------------+
@@ -249,7 +249,7 @@ to the [Embedded Scripts](../automation-concepts/embedded-scripts.md)
 concept.
 
 - At runtime, the script and type information are used by the Agent to
-    create a temporary script file in the location of the \$FILE
+    create a temporary script file in the location of the $FILE
     placeholder in the run command template. For more information, refer
     to [Adding Script     Runners](../Files/UI/Enterprise-Manager/Adding-Script-Runners.md)
      in the **Enterprise Manager** online help.
@@ -273,7 +273,7 @@ The **View** button will only be enabled for embedded scripts for which the user
 runtime.
 
 - At runtime, the Agent will place the arguments in the location of
-    the \$ARGUMENTS placeholder. For more information, refer to [Adding     Script
+    the $ARGUMENTS placeholder. For more information, refer to [Adding     Script
     Runners](../Files/UI/Enterprise-Manager/Adding-Script-Runners.md)
      in the **Enterprise Manager** online help.
 
@@ -302,15 +302,15 @@ and their associated values.
 |                                  | various values of Run_Time and   |
 |                                  | Exit_Code.                       |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=20;2=20,Y |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=30;2=30,Y |
 |                                  |                                  |
-|                                  | \[\[\$SCHEDULE                   | |                                  | DATE\]\],\[\[\$SCHEDULE          |
+|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
 |                                  | NAME\]\],JobAdde                 |
 |                                  | d-runtime-Envvar,ap1,1=40;2=40,Y |
 +----------------------------------+----------------------------------+
@@ -497,10 +497,10 @@ The Corelation subtype will automatically add needed quotation marks around the 
 #### Parameters
 
 - **Batch Options**: Defines an optional way to specify parameters.
-    Some job parameters are \"nested.\" Each parameter consists of
-    multiple arguments. The simplest format is \"tag\|value\" (similar
+    Some job parameters are "nested." Each parameter consists of
+    multiple arguments. The simplest format is "tag\|value" (similar
     to **Batch Options**). If this is a nested parameter, then the
-    \"parents\" are specified as well. If this value is selected, the
+    "parents" are specified as well. If this value is selected, the
     **Include job details in output** checkbox is selected
     automatically, and **Property Owner** is optional when selecting
     **Batch Options**. When defining a **Name** or **Value**, \| (pipe)
@@ -523,7 +523,7 @@ The WS_FTP Pro subtype will automatically add needed quotation marks around the 
 
 **WS_FTP Pro Location**: Defines the path to the directory on the
 Windows Machine where WS_FTP Pro is installed. WS_FTP Pro installs by
-default to the \"C:\\Program Files\\Ipswitch\\WS_FTP Professional\"
+default to the "C:\\Program Files\\Ipswitch\\WS_FTP Professional"
 directory on the machine where the job will run (with WS_FTP Pro
 installed).
 
@@ -554,7 +554,7 @@ destination file.
 
 **File Transfer Options**: Defines all desired WS_FTP Pro File Transfer
 Options. For more information, please consult the WS_FTP Pro Tools Guide
-under the heading \"File Transfer Options\". You can download the manual
+under the heading "File Transfer Options". You can download the manual
 from
 <http://docs.ipswitch.com/WS_FTP-124/Manuals/English/WS_FTP_Tools_Guide.pdf>.
 
@@ -564,7 +564,7 @@ from
 - If your job fails with an exit code not in the [Microsoft LSAM     Machine
     Messages](https://help.smatechnologies.com/opcon/agents/windows/latest/Files/Agents/Microsoft/Machine-Messages.md)
     , please consult the WS_FTP Pro Tools Guide under the heading
-    \"Return Codes\".
+    "Return Codes".
 
 **Advanced Failure Criteria**: The WS_FTP Pro sub-type can make use of
 the Advanced Failure Criteria feature for the job defined in the Command

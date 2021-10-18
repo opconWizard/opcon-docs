@@ -62,7 +62,7 @@ An SMANetCom archive file for the time range of 12:58:16 to 13:58:00 would be na
 
 Once per day the SAM deletes old archive folders. The SAM retains 10
 days of archived logs by default. For additional information, refer to
-the \"Maximum number of days archived SAM logs should be kept\" logging
+the "Maximum number of days archived SAM logs should be kept" logging
 setting. Refer to [Logging](../administration/server-options.md#logging) in
 the **Concepts** online help.
 
@@ -90,7 +90,7 @@ log when it starts or when it regenerates.
 
 - If the SAM encounters a corrupt SAM.log file at startup, the SAM
     archives the bad log file. The naming convention for such a log file
-    is SAM hhmmss - Bad File.log where hhmmss is the SAM\'s start time.
+    is SAM hhmmss - Bad File.log where hhmmss is the SAM's start time.
     For example, if the SAM tries to read a bad SAM.log file at
     09:00:00, the SAM archives the corrupt log file as SAM 090000 - Bad
     File.log.
@@ -123,7 +123,7 @@ errors, to help with debugging.
 
 ### Log Messages
 
-In the SMANetComTrace.log, every \"To\" (\>\>\>) message is an SMANetCom
+In the SMANetComTrace.log, every "To" (\>\>\>) message is an SMANetCom
 message. Each SMANetCom message has the following syntax:
 TE/TI/TX\#MachineName Message.
 
@@ -146,7 +146,7 @@ the associated SMA protocol types.
 
 #### LSAM Response Breakdown
 
-In the SMANetComTrace.log, every \"From\" (\<\<\<) message is an LSAM
+In the SMANetComTrace.log, every "From" (\<\<\<) message is an LSAM
 response to an SMANetCom request. Embedded in a 48-character string, the
 message follows the machine name and job name in an LSAM response. Break
 down the string in the following manner:
@@ -171,7 +171,7 @@ down the string in the following manner:
     maximum number of jobs the LSAM is allowed to process concurrently.
 - The last 20 characters are the exit condition and the status
     description of the job. For more information on LSAM exit
-    conditions, refer to the individual LSAM\'s online help.
+    conditions, refer to the individual LSAM's online help.
 
 :::note
 For most LSAMs, the status description will not be shown.

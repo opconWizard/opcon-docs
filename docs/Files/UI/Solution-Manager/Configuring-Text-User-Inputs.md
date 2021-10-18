@@ -61,8 +61,8 @@ restriction.
     expression text validation exception thrown, thus enriching the user
     experience. For example, the following might be a custom error
     message provided to users when they have entered incorrect phone
-    number formats: \"Please enter a 10-digit phone number with hyphens
-    (e.g., 281-446-5000).\"
+    number formats: "Please enter a 10-digit phone number with hyphens
+    (e.g., 281-446-5000)."
 
 Specify how to format the value being injected within the OpCon Event,
 using the following output formatting options:

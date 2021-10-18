@@ -156,7 +156,7 @@ On the machine with the Legacy Audit Management utility:
 Log in as a *Windows user with Local Administrative Rights*.
 
 :::note
-If you disable a login that is defined as a user\'s Network Account name (e.g., Domain\\User), the user will not be able to log in to any interactive applications. The Legacy Audit Management will inform the user that they are disabled and shut down the program.
+If you disable a login that is defined as a user's Network Account name (e.g., Domain\\User), the user will not be able to log in to any interactive applications. The Legacy Audit Management will inform the user that they are disabled and shut down the program.
 :::
 
 Right-click on **Start** and select **Explore**.
@@ -243,7 +243,7 @@ activation, the Filter screen displays the following fields:
     Initially, all query result types are selected.
 - **Record Selection Range**: Select an inclusive range with a
     beginning and an ending date to further narrow the search. The
-    fields accept any valid date format from the machine\'s Regional
+    fields accept any valid date format from the machine's Regional
     Settings (found in Control Panel).
 - **Action Type**: Select the types of SQL query to display. For
     example, the administrator may select to view only the Delete
@@ -284,7 +284,7 @@ delete records. Future dates cannot be specified. When specifying the
 Cut-off Date, the Days to Keep are also calculated. The date can be any
 valid date specification for the Windows Regional settings being used.
 If you input an invalid date, the old date remains in effect. The
-minimum date is the current day\'s date. The maximum Cut-off date is
+minimum date is the current day's date. The maximum Cut-off date is
 computed with the maximum of 32,000 Days to Keep.
 
 Entering a Cut-off Date
@@ -417,7 +417,7 @@ LEGACYAUDIT.EXE DSN,UID,PWD,{Days to Keep\|Cut-off Date}, \[-e\] \[-l\]
 | urces/Images/example-icon(48x48) | and the password is batchpwd.    |
 | .png "Example icon") | The Days to Keep was set to 30,  |
 |                                  | which means the previous         |
-|                                  | month\'s audit history is kept.  |
+|                                  | month's audit history is kept.  |
 |                                  |                                  |
 |                                  | legacyaudit.exe                  |
 |                                  | OPCONXPS,batchuser,batchpwd,30,  |

@@ -49,7 +49,7 @@ d.  Click **OK**.
     Manager.
 4. Click the **SMA Microsoft Resource Monitor** in the Services list.
 5. Use menu path: **Action \> Start**.
-6. Confirm the SMA Microsoft Resource Monitor\'s **Status** is
+6. Confirm the SMA Microsoft Resource Monitor's **Status** is
     **Started**.
 7. **Close ☒** the **Services** window.
 
@@ -61,7 +61,7 @@ d.  Click **OK**.
     Manager.
 4. Click the **SMA Microsoft Resource Monitor** in the Services list.
 5. Use menu path: **Action \> Stop**.
-6. Confirm the SMA Microsoft Resource Monitor\'s **Status** is
+6. Confirm the SMA Microsoft Resource Monitor's **Status** is
     **Stopped**.
 7. **Close ☒** the **Services** window.
 
@@ -177,7 +177,7 @@ processing.
 |             |             | Manager.    |             |          |
 +-------------+-------------+-------------+-------------+----------+
 | Pa          | \           | -   Defines | N           | Y        |
-| thToRuleAnd | ".\\Rules\" |     the     |             |          |
+| thToRuleAnd | ".\\Rules" |     the     |             |          |
 | ActionFiles |             |     full    |             |          |
 |             |             |     path to |             |          |
 |             |             |     the     |             |          |
@@ -208,7 +208,7 @@ processing.
 |             |             |     folder  |             |          |
 |             |             |     named   |             |          |
 |             |             |             |             |          |
-|             |             |  \"Rules\". |             |          |
+|             |             |  "Rules". |             |          |
 |             |             |             |             |          |
 |             |             | **Note:**   |             |          |
 |             |             | The         |             |          |
@@ -592,8 +592,8 @@ processing.
 |             |             |     path in |             |          |
 |             |             |     double  |             |          |
 |             |             |     quotes  |             |          |
-|             |             |     (\"\    |             |          |
-|             |             | <path\>\"). |             |          |
+|             |             |     ("\    |             |          |
+|             |             | <path\>"). |             |          |
 +-------------+-------------+-------------+-------------+----------+
 | Termin      | Blank       | -   The     | N           | N        |
 | ationScript |             |     full    |             |          |
@@ -643,8 +643,8 @@ processing.
 |             |             |     path in |             |          |
 |             |             |     double  |             |          |
 |             |             |     quotes  |             |          |
-|             |             |     (\"\    |             |          |
-|             |             | <path\>\"). |             |          |
+|             |             |     ("\    |             |          |
+|             |             | <path\>"). |             |          |
 +-------------+-------------+-------------+-------------+----------+
 | We          | Blank       | Defines the | N           | N        |
 | bServiceURL |             | web         |             |          |
@@ -711,8 +711,8 @@ processing.
 |               |         |     maximum   |               |          |
 |               |         |     size, it  |               |          |
 |               |         |     is        |               |          |
-|               |         |     \"rolled  |               |          |
-|               |         |     over\".   |               |          |
+|               |         |     "rolled  |               |          |
+|               |         |     over".   |               |          |
 |               |         | -   This      |               |          |
 |               |         |     setting   |               |          |
 |               |         |     creates   |               |          |

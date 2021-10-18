@@ -99,7 +99,7 @@ The **Filter** frame has the following options:
     |                                  | [                                |     |                                  | Calendars:{CALDESC.CALID}:SELECT |
     |                                  | CALNAME,CALID FROM CALDESC WHERE |
     |                                  | SKDID = 0 AND CALNAME \<\>       |
-    |                                  | \'Master Holiday\' ORDER BY      |
+    |                                  | 'Master Holiday' ORDER BY      |
     |                                  | CALNAME.]{.statement2}           |
     |                                  |                                  |
     |                                  |                                  |

@@ -268,7 +268,7 @@ The AdHoc schedule allows the execution of jobs that run outside normal
 schedule activity. The AdHoc schedule behaves the same as any other
 schedule, but never requires a Build process. The SAM automatically puts
 the AdHoc schedule in the Daily tables if any job on the schedule is
-requested through a \$JOB:ADD, \$JOB:TRACK, or \$JOB:QUEUE event type.
+requested through a $JOB:ADD, $JOB:TRACK, or $JOB:QUEUE event type.
 When the AdHoc schedule is in the Daily tables, it remains open for that
 day until midnight. If jobs are still active on the AdHoc schedule at
 midnight, the schedule closes after all jobs are completed.
@@ -311,9 +311,9 @@ build unless specifically called by some other user-defined process.
 
 - Each job has one event defined for Failure as an example of what to
     configure. Upon "Failed" for each job the event is defined as:
-  - SMA_SKD_BUILD: \$NOTIFY:EMAIL,\[\[SMAAdminEmail\]\],,,Schedule         Build Failure,
-  - SMA_SKD_CHECK: \$NOTIFY:EMAIL,\[\[SMAAdminEmail\]\],,,Schedule         Check Failure,
-  - SMA_SKD_DELETE: \$NOTIFY:EMAIL,\[\[SMAAdminEmail\]\],,,Schedule         Delete Failure,
+  - SMA_SKD_BUILD: $NOTIFY:EMAIL,\[\[SMAAdminEmail\]\],,,Schedule         Build Failure,
+  - SMA_SKD_CHECK: $NOTIFY:EMAIL,\[\[SMAAdminEmail\]\],,,Schedule         Check Failure,
+  - SMA_SKD_DELETE: $NOTIFY:EMAIL,\[\[SMAAdminEmail\]\],,,Schedule         Delete Failure,
     - Customers should modify the value of the Global Property
             named \[SMAAdminEmail\] to contain the email address or             semicolon separated list of email addresses that should
             receive the notification.
@@ -569,7 +569,7 @@ job, change the Job Build Status to On Hold or Released}.
   - Runner:\
         **SQLScript**
   - Run Command Template:\
-        **sqlcmd -i \$FILE \$ ARGUMENTS**
+        **sqlcmd -i $FILE $ ARGUMENTS**
   - Arguments:\
         **-S\[\[DB_SERVER_NAME\]\] -U\[\[SqlMaintUser\]\]         -P\[\[SqlMaintPassword\]\] -h -1 -b**
   - Environment Variables:
@@ -597,7 +597,7 @@ activate this job, change the Job Build Status to On Hold or Released.
   - Runner:\
         **SQLScript**
   - Run Command Template:\
-        **sqlcmd -i \$FILE \$ ARGUMENTS**
+        **sqlcmd -i $FILE $ ARGUMENTS**
   - Arguments:\
         **-S\[\[DB_SERVER_NAME\]\] -U\[\[SqlMaintUser\]\]         -P\[\[SqlMaintPassword\]\] -h -1 -b**
   - Environment Variables:
@@ -624,7 +624,7 @@ Build Status to On Hold or Released.
   - Runner:\
         **SQLScript**
   - Run Command Template:\
-        **sqlcmd -i \$FILE \$ ARGUMENTS**
+        **sqlcmd -i $FILE $ ARGUMENTS**
   - Arguments:\
         **-S\[\[DB_SERVER_NAME\]\] -U\[\[SqlMaintUser\]\]         -P\[\[SqlMaintPassword\]\] -h -1 -b**
   - Environment Variables:
@@ -664,7 +664,7 @@ Job Average.
   - Runner:\
         **SQLScript**
   - Run Command Template:\
-        **sqlcmd -i \$FILE \$ ARGUMENTS**
+        **sqlcmd -i $FILE $ ARGUMENTS**
   - Arguments:\
         **-S\[\[DB_SERVER_NAME\]\] -U\[\[SqlMaintUser\]\]         -P\[\[SqlMaintPassword\]\] -b**
   - Environment Variables:

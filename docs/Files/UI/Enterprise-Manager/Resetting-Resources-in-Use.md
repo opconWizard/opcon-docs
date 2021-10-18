@@ -4,7 +4,7 @@
 SAM is responsible for keeping track of the resources in use. If all resources are in use, the SAM waits until a resource is available before submitting the next job.
 :::
 
-If something unusual has occurred, and the \"Resources in Use\" value in
+If something unusual has occurred, and the "Resources in Use" value in
 incorrect, the EM provides a button to allow an administrator to fix the
 value. You should only use this feature if you are completely sure that
 the value is inaccurate.

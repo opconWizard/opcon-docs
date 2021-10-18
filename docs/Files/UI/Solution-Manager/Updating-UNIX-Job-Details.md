@@ -75,7 +75,7 @@ Expand the **Task Details** panel to expose its content.
   -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
 
 Select a **User Id** to use when running the job. Either use the default
-value of \"0/0\" or assign it to an available batch user. Keep in mind
+value of "0/0" or assign it to an available batch user. Keep in mind
 that user information must be defined as a Batch User ID in
 OpCon Administration.
 
@@ -164,7 +164,7 @@ Use the **and/or** field to define multiple failure criteria. This field
 defines the way the strings are evaluated together.
 
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You must define all \"And\" comparisons before the \"Or\" comparisons. Additionally, if the Comparison Operator on the previous group is \"Equal To\", then the *and/or* value must be set to \"Or\".]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You must define all "And" comparisons before the "Or" comparisons. Additionally, if the Comparison Operator on the previous group is "Equal To", then the *and/or* value must be set to "Or".]
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Use the **Fail on Core Dump** switch to configure how the
@@ -234,7 +234,7 @@ To perform this procedure:
     when enabled.
 9. Expand the **Task Details** panel to expose its content.
 10. Select a **User Id** to use when running the job. Either use the
-    default value of \"0/0\" or assign it to an available batch user.
+    default value of "0/0" or assign it to an available batch user.
     Keep in mind that user information must be defined as a Batch User
     ID in OpCon Administration.
 11. Select from the **Machines or Machine Group** drop-down list the
@@ -322,7 +322,7 @@ Expand the **Task Details** panel to expose its content.
   -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
 
 Select a **User Id** to use when running the job. Either use the default
-value of \"0/0\" or assign it to an available batch user. Keep in mind
+value of "0/0" or assign it to an available batch user. Keep in mind
 that user information must be defined as a Batch User ID in
 OpCon Administration.
 
@@ -346,7 +346,7 @@ this job. The **Comments** field will populate with any notes provided
 about the script.
 
   --------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circlular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Selecting the \"Latest\" version means that just before the job runs, the latest version of the script will be used.]
+  ![White pencil/paper icon on gray circlular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Selecting the "Latest" version means that just before the job runs, the latest version of the script will be used.]
   --------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------
 
 [Viewing Scripts]{.ul}
@@ -400,7 +400,7 @@ Use the **and/or** field to define multiple failure criteria. This field
 defines the way the strings are evaluated together.
 
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You must define all \"And\" comparisons before the \"Or\" comparisons. Additionally, if the Comparison Operator on the previous group is \"Equal To\", then the *and/or* value must be set to \"Or\".]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You must define all "And" comparisons before the "Or" comparisons. Additionally, if the Comparison Operator on the previous group is "Equal To", then the *and/or* value must be set to "Or".]
   -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Use the **Fail on Core Dump** switch to configure how the

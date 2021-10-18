@@ -92,8 +92,8 @@ date**.
 By default, all of these jobs are disabled.
 :::
 
-This job has been configured to run a report against OpCon\'s today\'s
-date **(\[\[\$SCHEDULE DATEMS\]\])** and generates a report against a schedule it resides in **(\[\[\$SCHEDULE ID\]\])**.
+This job has been configured to run a report against OpCon's today's
+date **(\[\[$SCHEDULE DATEMS\]\])** and generates a report against a schedule it resides in **(\[\[$SCHEDULE ID\]\])**.
 
 Copy the **Failed Jobs by Date** job to any desired schedule where this
 report is desired.
@@ -173,7 +173,7 @@ When the job qualifies to run, SAM resolves the \[\[OPCON-SCRIPTS\]\] token to t
 following command line:
 
 \
-\"C:\\Program Files (x86)\\OpConxps\\Scripts\\MyScript.cmd\"
+"C:\\Program Files (x86)\\OpConxps\\Scripts\\MyScript.cmd"
 
 When your company decides to reorganize the file structure again, simply
 update the value for the Global Property to change the path to your
@@ -217,7 +217,7 @@ How will I know when SAM is not running?
 
 #### Answer
 
-Configure the \"Hung\" scripts in the SAM folder. For more information,
+Configure the "Hung" scripts in the SAM folder. For more information,
 refer to [Hung Script Configuration](../server-programs/service-manager.md#Hung_Script_Configuration)
  in the **Server Programs** online help.
 
@@ -244,8 +244,8 @@ How do I make sure the subschedule started on time?
 
 #### Answer
 
-Job\'s within a subschedule do not qualify until after the Container job
-running the subschedule starts. A \"Flag As Late to Start\" notification
+Job's within a subschedule do not qualify until after the Container job
+running the subschedule starts. A "Flag As Late to Start" notification
 must be set up on the Container job to make sure the subschedule is
 started on time. Once that is verified, all of the nested job
 notifications should work as intended.
@@ -290,7 +290,7 @@ commands provided:
 
 a.  For IBM i, refer to [IBM i Procedures to shut down a     Machine](#IBM_i_Procedures_to_shut_down_a_Machine).
 b.  For MCP, the machine count in the Enterprise Manager ought to be
-    correct. To confirm this from the LSAM\'s perspective, refer to the
+    correct. To confirm this from the LSAM's perspective, refer to the
     [Interactive LSAM     Window](https://help.smatechnologies.com/opcon/agents/mcp/latest/Files/Agents/MCP/Interactive-LSAM-Window.md)
      in the **MCP LSAM** online help.
 c.  For MSLSAM, refer to [Check for Running     Jobs](https://help.smatechnologies.com/opcon/agents/windows/latest/Files/Agents/Microsoft/Upgrading-from-a-Release-Prior-to-15.0.md#Check_for_Running_Jobs)
@@ -413,38 +413,38 @@ and CRM, and Windows LSAMs:
 4. Expand (+) the **Configuration** option.
 5. Double-click the **Services** icon.
 6. Scroll down to the SMA **LSAM service** in the **Services** list.
-7. Confirm the **LSAM\'s Status** is **Started**.
+7. Confirm the **LSAM's Status** is **Started**.
 
 ## Use Threshold Dependencies for Late to Start Notifications on a Job-dependent External Event
 
 #### Use Case
 
 We have a job which is dependent on a file arriving. The job is built
-\'On Hold\' and [SMA Resource Monitor]{.GeneralSMAResourceMonitor} sends a \$JOB:RELEASE when the file arrives. The problem is we are not
+'On Hold' and [SMA Resource Monitor]{.GeneralSMAResourceMonitor} sends a $JOB:RELEASE when the file arrives. The problem is we are not
 notified if the file is late arriving. How can we set this up to receive
 a Late to Start notification?
 
 #### Answer
 
-If a job is \'On Hold\', it is not in a \"Qualifying\" status and the
-\"Flag Job As Late\" setting is ignored. Instead of building the job
-\"On Hold\", use a **threshold dependency** to release the job once the
+If a job is 'On Hold', it is not in a "Qualifying" status and the
+"Flag Job As Late" setting is ignored. Instead of building the job
+"On Hold", use a **threshold dependency** to release the job once the
 file arrives.
 
 ##### Procedure Explanation
 
-A threshold will be created to use as an \"On\" and \"Off\" switch for
+A threshold will be created to use as an "On" and "Off" switch for
 the job. [[SMA Resource Monitor]{.GeneralSMAResourceMonitor}](../utilities/SMA-Resource-Monitor/Introduction.md)
-will watch for the arrival of the file and send a \$THRESHOLD:SET event
+will watch for the arrival of the file and send a $THRESHOLD:SET event
 to update the threshold to the determined value. The job will have a
 threshold dependency equal to the value [SMA Resource Monitor]{.GeneralSMAResourceMonitor} will set once the file arrives.
-This leaves the job in a \"Waiting Threshold Dependency\" status until
+This leaves the job in a "Waiting Threshold Dependency" status until
 the files arrives.
 
-The job will also have a \"Flag Job As Late to Start\" value set up.
+The job will also have a "Flag Job As Late to Start" value set up.
 This will flag the job as [Late to Start]{.skd-job-statuses} if the file has not arrived by the determined time. ENS will send an notification if
 the job is [Late to Start]{.skd-job-statuses}. The job will update the threshold value once it is complete, closing the loop for the next
-day\'s processing.
+day's processing.
 
 ##### Procedure
 
@@ -458,7 +458,7 @@ threshold. For more information, refer to [Summary Information](../utilities/SMA
 
 a.  In the File Monitor, set up the parameters to watch for the desired
     file.
-b.  In the associated action group, use the \$THRESHOLD:SET event to
+b.  In the associated action group, use the $THRESHOLD:SET event to
     change the value of your threshold to one (1).
 
 Create a **threshold dependency** for the job to require your threshold

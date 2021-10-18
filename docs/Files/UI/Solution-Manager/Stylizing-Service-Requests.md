@@ -19,12 +19,12 @@ the custom HTML code.
 Enter the following template HTML code:
 
 ::: {style="background-color: #dcdcdc;"}
-\<div style=\"background-color: \#043A4F;height:
+\<div style="background-color: \#043A4F;height:
 12px;width:200px;border-radius: 3px;border: 2px solid \#043A4F;color:
-white;font-size: 14px;font-weight: bold;padding: 25px\"\>
+white;font-size: 14px;font-weight: bold;padding: 25px"\>
 
-    \<span class=\"v-icon FontAwesome\" style=\"color:
-\#93D7FA\"\>&\#xf0ac\</span\>
+    \<span class="v-icon FontAwesome" style="color:
+\#93D7FA"\>&\#xf0ac\</span\>
 
     \<span\>SERVICE REQUEST NAME\</span\>
 
@@ -40,29 +40,29 @@ Change the color of the font icon by entering a new HEX color code in
 the template code, as highlighted below in orange:
 
 ::: {style="background-color: #dcdcdc;"}
-\<span class=\"v-icon FontAwesome\" style=\"color:
-\#[93D7FA]{style="background-color: #ff8c00;"}\"\>&\#xf0ac\</span\> :::
+\<span class="v-icon FontAwesome" style="color:
+\#[93D7FA]{style="background-color: #ff8c00;"}"\>&\#xf0ac\</span\> :::
 
 Change the appearance of the font icon by entering or pasting a new
 Unicode in the template code, as highlighted below in orange:
 
 ::: {style="background-color: #dcdcdc;"}
-\<span class=\"v-icon FontAwesome\" style=\"color:
-\#93D7FA\"\>&\#x[f0ac]{style="background-color: #ff8c00;"}\</span\> :::
+\<span class="v-icon FontAwesome" style="color:
+\#93D7FA"\>&\#x[f0ac]{style="background-color: #ff8c00;"}\</span\> :::
 
 To find the desired Unicode:
 
 a.  Go to: <https://fontawesome.com/v4.7.0/icons/>.
 b.  Select the icon that you wish to include on the button.
-c.  Copy the Unicode from the icon\'s details page, as shown in the
+c.  Copy the Unicode from the icon's details page, as shown in the
     graphic.
 
 Remove the font icon from the button by commenting out the following
 line in the template code, as demonstrated below:
 
 ::: {style="background-color: #dcdcdc;"}
-\<!\--\<span class=\"v-icon FontAwesome\" style=\"color:
-\#93D7FA\"\>&\#xf0ac\</span\>\--\>
+\<!\--\<span class="v-icon FontAwesome" style="color:
+\#93D7FA"\>&\#xf0ac\</span\>\--\>
 :::
 
 To modify the text that appears on the button:

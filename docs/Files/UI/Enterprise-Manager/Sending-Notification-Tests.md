@@ -25,7 +25,7 @@ b.  Click the specific **Notification** tab.
 c.  Click the **Test** button.
 
   -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the notification has \"default information,\" the Event Trigger value will be set to Test Notification.]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the notification has "default information," the Event Trigger value will be set to Test Notification.]
   -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
 
  

@@ -91,7 +91,7 @@ To request the license file:
 4. Select the **System ID** \[e.g., (OpconServer_6410)\] at the end of     the first line.
 5. Right-click and select **Copy**.
 6. Send an email to <license@smatechnologies.com> to request an updated
-    license file for OpCon that includes support for \"SMA Vision\" and
+    license file for OpCon that includes support for "SMA Vision" and
     paste the System ID into the email request. You should receive the
     license within an hour during regular business hours.
 7. Click **OK** to close the **About** dialog.
@@ -109,7 +109,7 @@ To save the license file:
     Service Manager** in your **Windows Services** tool to pick up the
     file immediately.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 []{#Related_Topics}Related Topics
 
 - [Viewing Cards in Vision     Live](Viewing-Cards-in-Vision-Live.md)

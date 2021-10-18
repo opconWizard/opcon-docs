@@ -30,7 +30,7 @@ To add a schedule:
     time that is offset from the schedule start time. At the appointed
     time, the SAM will start examining the schedule to determine whether
     any jobs qualify to start. Note: For a SubSchedule, the SAM does not
-    use the Start Time value to control the SubSchedule\'s actual start
+    use the Start Time value to control the SubSchedule's actual start
     time. When the Container Job calling the SubSchedule qualifies to
     start, the SAM force-starts the SubSchedule. When the Start Time
     value is defined for a SubSchedule, SAM only uses the value for
@@ -41,7 +41,7 @@ To add a schedule:
     aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
     .popupHead}** text box of the **Schedule Details** frame. If start
     time is not specified, the default of 00:00 (midnight) is used.
-7.  Select the **[Workdays per Week[[]{.MCTextPopupArrow}Defines the     schedule\'s working days. Note: The Workdays per Week setting
+7.  Select the **[Workdays per Week[[]{.MCTextPopupArrow}Defines the     schedule's working days. Note: The Workdays per Week setting
     directly affects all job and schedule frequencies.
     ]{.MCTextPopupBody .MCTextPopupBody_Closed .needs-pie .popupBody
     aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
@@ -50,7 +50,7 @@ To add a schedule:
     **[Multi-Instance[[]{.MCTextPopupArrow}Determines if multiple     instances of the same schedule (business process) are allowed. When
     turning this setting on, the graphical interface validates that
     there are no cross-sched-ule dependencies to this schedule
-    (cross-schedule dependencies on Multi-Instance Schedule\'s jobs are
+    (cross-schedule dependencies on Multi-Instance Schedule's jobs are
     invalid).]{.MCTextPopupBody .MCTextPopupBody_Closed .needs-pie
     .popupBody aria-hidden="true"}](javascript:void(0)){.MCTextPopup
     .popup .popupHead}** checkbox.
@@ -64,7 +64,7 @@ To add a schedule:
     configured as a SubSchedule. When turning this setting on, the
     graphical interface validates that there are no cross-schedule
     dependencies to this schedule (cross-schedule dependencies on
-    Multi-Instance Schedule\'s jobs are invalid).]{.MCTextPopupBody
+    Multi-Instance Schedule's jobs are invalid).]{.MCTextPopupBody
     .MCTextPopupBody_Closed .needs-pie .popupBody
     aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
     .popupHead}** checkbox.
@@ -75,16 +75,16 @@ To add a schedule:
     .popupBody aria-hidden="true"}](javascript:void(0)){.MCTextPopup
     .popup .popupHead}** checkbox.
 11. *(Optional)* Select the **[Use Master     Holiday[[]{.MCTextPopupArrow}Determines if Master Holiday Calendar
-    dates will be applied to the schedule\'s Holiday Calendar. When
+    dates will be applied to the schedule's Holiday Calendar. When
     turning this setting off, the graphical interface will present the
-    option to add the master holiday dates to the schedule\'s holiday
+    option to add the master holiday dates to the schedule's holiday
     calendar before disassociating the calendar from the schedule.
     ]{.MCTextPopupBody .MCTextPopupBody_Closed .needs-pie .popupBody
     aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
     .popupHead}** checkbox.
 12. *(Optional)* select an **additional holiday
     calendar** in the **[Additional     Holidays[[]{.MCTextPopupArrow}Defines the name of a calendar that
-    contain the specific \'Additional Holidays\' to apply to the
+    contain the specific 'Additional Holidays' to apply to the
     schedule. The default name is \<None\> (HC: Only).]{.MCTextPopupBody
     .MCTextPopupBody_Closed .needs-pie .popupBody
     aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup

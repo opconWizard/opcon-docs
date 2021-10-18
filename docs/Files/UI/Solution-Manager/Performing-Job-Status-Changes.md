@@ -19,7 +19,7 @@ the keyword and click **Enter**) in the **Jobs** section on the
 ![Jobs Operation Dials](../../../Resources/Images/SM/Job-Operation-Dials.png "Jobs Operation Dials")
 
   -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The \"Ignored\" operation dial groups any job with a job status of [Cancelled]{.skd-job-statuses} or [Skipped]{.skd-job-statuses}.]
+  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The "Ignored" operation dial groups any job with a job status of [Cancelled]{.skd-job-statuses} or [Skipped]{.skd-job-statuses}.]
   -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The **Processes** page will display.
@@ -111,12 +111,12 @@ job(s):
     type supports this feature and there is an available list of steps
     in the database returned by the Agent during runtime.
 - **Mark Finished OK**: This option allows you to change the selected
-    job(s) to a [Finished OK]{.skd-job-statuses} status regardless of     the job\'s current status. All events are processed as if the job(s)
+    job(s) to a [Finished OK]{.skd-job-statuses} status regardless of     the job's current status. All events are processed as if the job(s)
     had [Finished OK]{.skd-job-statuses} without intervention. If a job     is [Marked Finished OK]{.skd-job-statuses} before it starts, both
     the start and finish time saved in history equal the time the job is
     marked.
 - **Mark Failed**: This option allows you change the selected job(s)
-    to a [Failed]{.skd-job-statuses} status regardless of the job\'s     current status. All events are processed as if the job(s) had failed
+    to a [Failed]{.skd-job-statuses} status regardless of the job's     current status. All events are processed as if the job(s) had failed
     without intervention. If a job is [Marked Failed]{.skd-job-statuses}     before it starts, both the start and finish time saved in history
     equal the time the job is marked.
 - **Mark Under Review**: This option allows you to change the selected
@@ -132,7 +132,7 @@ job(s):
 
 Close the **Selection** panel when done.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)

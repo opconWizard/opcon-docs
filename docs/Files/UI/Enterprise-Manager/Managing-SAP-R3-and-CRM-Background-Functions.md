@@ -54,7 +54,7 @@ to define for a job.
     the trigger.
 - **Save**: Click the **Save** button to save the latest changes.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Managing Event Driven     Automation](Managing-Event-Driven-Automation.md)
@@ -93,7 +93,7 @@ include in the data grid. Available job statuses are:
 search results in the following columns: **Job Name**, **Job Number**,
 **Status**.
 
-**Job Log**: Click the **Job Log** button to view the selected job\'s
+**Job Log**: Click the **Job Log** button to view the selected job's
 SAP job log information.
 
 **Edit Job**: Click the **Edit** Job button to modify the job on the SAP
@@ -109,7 +109,7 @@ the SAP system.
 - [Interception Profiles](#Intercep2)
 - [Raise Event](#Raise)
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Copying SAP Jobs](Copying-SAP-Jobs.md)
@@ -141,7 +141,7 @@ additional profiles for interception.
     interception.
 - **Refresh**: Click the **Refresh** button to refresh the page.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Managing Interception     Profiles](Managing-Interception-Profiles.md)
@@ -160,9 +160,9 @@ all intercepted SAP jobs. Below is a brief explanation of the screen.
 - **Childs**: Indicates the number of child jobs.
 - **Parent Child**: Identifies the job as a Child (C) or Parent (P).
 - **Parent Count**: If the job is a Child, contains the intercepted
-    job\'s SAP parent job number.
+    job's SAP parent job number.
 - **Parent Name**: If the job is a Child, contains the intercepted
-    job\'s SAP parent job name.
+    job's SAP parent job name.
 - **Intercepted Date**: Date the job was intercepted.
 - **Intercepted Time**: Time the job was intercepted.
 - **Start ASAP**: Click the **Start ASAP** button to enable the
@@ -171,7 +171,7 @@ all intercepted SAP jobs. Below is a brief explanation of the screen.
 - **Refresh**: Click the **Refresh** button to retrieve an updated
     list of intercepted jobs.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Starting Intercepted Jobs     ASAP](Starting-Intercepted-Jobs-ASAP.md)
@@ -191,7 +191,7 @@ regarding the availability of SAP background processes.
 - **Free Processes**: Contains the number of background processes
     available (e.g., not busy) to run jobs.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Monitoring SAP R/3 and CRM Background Process     Resources](Monitoring-SAP-R3-and-CRM-Background-Process-Resources.md)
@@ -208,7 +208,7 @@ to satisfy an SAP job event requirement.
 - **Send**: Click the **Send** button to send the event to the SAP
     system.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Raising Events](Raising-Events.md)
@@ -239,7 +239,7 @@ occurring on the SAP system should be monitored.
     monitoring SAP event history.
 - **Refresh**: Click the **Refresh** button to refresh the page.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Managing Event Profiles](Managing-Event-Profiles.md)

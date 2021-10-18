@@ -12,7 +12,7 @@ replication that can be used: transactional, merge, and snapshot.
 OpCon makes use of transactional replication to distribute data from the
 production database to the failover database. Data moves from the
 publisher to the distributor, and from there, it can be either
-\"pushed\" to the subscriber by the distributor or \"pulled\" from the
+"pushed" to the subscriber by the distributor or "pulled" from the
 distributor by the subscriber.
 
 This topic assumes that the publisher and subscriber will be distinct
@@ -443,12 +443,12 @@ required configurations.
 3. Right-click over the graphic and select **Stop Communication** from
     the menu.
 4. Click on **Open Advanced Settings Panel**.
-5. Click **Allow \"Kill Job\"**.
+5. Click **Allow "Kill Job"**.
 6. Select **True** from the list and click **Update**.
 7. Click the **Communication Settings** tab.
 8. Click **JORS Port Number**.
 9. Enter the *JORS Port Number* as it is defined in the MSLSAM.ini file
-    found in the LSAM\'s \<Configuration Directory\>\\MSLSAM folder
+    found in the LSAM's \<Configuration Directory\>\\MSLSAM folder
     (e.g., 3110), and click **Update**.
 10. Click **Requires XML Escape Sequences**.
 11. Confirm the value for this setting is **True** and click **Accept**.
@@ -506,7 +506,7 @@ b.  Click ![Save icon](../../Resources/Images/EM/EMsave.png "Save icon")
 Select **PrimaryDBUpdateKey** in the **Select Global Property** list
 box.
 
-Replace **SMA\$usa** in the **Global Property Value** text box with the
+Replace **SMA$usa** in the **Global Property Value** text box with the
 *sa password on the Primary Database Server*.
 
 Click ![Save icon](../../Resources/Images/EM/EMsave.png "Save icon")
@@ -541,7 +541,7 @@ b.  Click ![Save icon](../../Resources/Images/EM/EMsave.png "Save icon")
 Select **SecondaryDBUpdateKey** in the **Select Global Property** list
 box.
 
-Replace **SMA\$usa** in the **Global Property Value** text box with the
+Replace **SMA$usa** in the **Global Property Value** text box with the
 *sa password on the Secondary Database Server*.
 
 Click ![Save icon](../../Resources/Images/EM/EMsave.png "Save icon")
@@ -579,7 +579,7 @@ By default, SMA Technologies distributes the SMAReplicationSetup schedule with P
 case of the SMAReplicationSetup jobs, the
 CreatePullSubscriptionOnPublisher job and
 CreatePullSubscriptionOnSubscriber job are active by default. If Push
-Replication will be set up, then modify the job\'s frequencies to
+Replication will be set up, then modify the job's frequencies to
 disable the Pull jobs and to enable the
 CreatePushSubscriptionOnPublisher job.
 
@@ -619,7 +619,7 @@ address the problem and restart replication.
 
 [Set up Notifications for the SMAReplicationMonitor Jobs]{.ul}
 The following procedure configures text messages through job level
-events; however, the notification can be any \$NOTIFY type event and
+events; however, the notification can be any $NOTIFY type event and
 could instead be managed through ENS if desired. For information on ENS,
 refer to [Event Notification](../../notifications/Event-Notification.md) in
 the **Concepts** online help.
@@ -648,7 +648,7 @@ Click **Add**.
 
 On the Event Definition dialog:
 
-Select the **\$NOTIFY:TEXTMSG** template in the **Event Template** list.
+Select the **$NOTIFY:TEXTMSG** template in the **Event Template** list.
 
 Select **Failed** in the **Job Status** list.
 
@@ -657,13 +657,13 @@ Below the Job Status list:
 a.  Replace **\<to\>** with the *email address to a cell phone number*.
 b.  Replace **\<message\>** with the message to deliver in the text.
     SMA Technologies recommends the following     message:\
-    **Replication has failed on the OpConxps database. The \[\[\$JOB     NAME\]\] job has failed**.
+    **Replication has failed on the OpConxps database. The \[\[$JOB     NAME\]\] job has failed**.
     +----------------------------------+----------------------------------+
     | ![White pencil/paper icon on     | **NOTE:** [The finished event    |     | gray circular                    | string would read:]  |
-    | background](../.                 | \$NOTIFY:TEXTMSG,55512           |
+    | background](../.                 | $NOTIFY:TEXTMSG,55512           |
     | ./Resources/Images/note-icon(48x | 12\@cellprovider.com,Replication |
     | 48).png "Note icon") | has failed on the OpConxps       |
-    |                                  | database. The \[\[\$JOB NAME\]\] |     |                                  | job has failed.                  |
+    |                                  | database. The \[\[$JOB NAME\]\] |     |                                  | job has failed.                  |
     +----------------------------------+----------------------------------+
 c.  Select all of the text defined for the \<to\> and \<message\> (all
     of the text should be highlighted gray).
@@ -681,7 +681,7 @@ Click **Add**.
 
 On the Event Definition dialog:
 
-Select the **\$NOTIFY:TEXTMSG** template in the **Event Template** list.
+Select the **$NOTIFY:TEXTMSG** template in the **Event Template** list.
 
 Select **Failed** in the **Job Status** list.
 
@@ -697,7 +697,7 @@ By default, SMA Technologies distributes the SMAReplicationTearDown schedule wit
 case of the SMAReplicationTearDown jobs, the
 DropPullSubscriptionOnSubscriber job and DropPullSubscriptionOnPublisher
 job are active by default. If Push Replication will be set up, then
-modify the job\'s frequencies to disable the Pull jobs and to enable the
+modify the job's frequencies to disable the Pull jobs and to enable the
 DropPushSubscriptionOnPublisher and DropPushSubscriptionOnSubscriber
 jobs.
 
@@ -727,7 +727,7 @@ SMA Technologies provides two schedules to use for the automated replication set
 
 The SMAReplicationSetup schedule will be executed on request when it is
 time to initially set up replication, when the primary server has been
-brought back on-line after an outage, or after a \'failover\' event. The
+brought back on-line after an outage, or after a 'failover' event. The
 SMAReplicationSetup schedule consists of five OpCon jobs:
 
 - [SetUpDistributor](#SetUpDis)
@@ -743,7 +743,7 @@ The SetUpDistributor job will execute the SQL script
 SMA_DBReplicationSetUpDistributor.sql from a Windows command file called
 SMA_DBReplicationSetUpDistributor.cmd. This job configures the
 distributor, creates the distribution database, adds the replication
-\"housekeeping\" jobs to the SQL Server agent and also adds the Snapshot
+"housekeeping" jobs to the SQL Server agent and also adds the Snapshot
 Agent job
 (PublisherSQLInstance-PublicationDatabaseName-PublicationName-1) and
 LogReader agent job (PublisherSQLInstance-PublicationDatabaseName-1) to
@@ -813,7 +813,7 @@ The CreatePushSubscriptionOnPublisher job will execute the SQL script
 SMA_DBReplicationCreatePushSubscriptionOnPublisher.sql from a Windows
 command file called
 SMA_DBReplicationCreatePushSubscriptionOnPublisher.cmd. This job creates
-the push subscription on the publisher server. By default this job\'s
+the push subscription on the publisher server. By default this job's
 frequency is set to Do Not Schedule because the Pull subscription is
 enabled by default. To use a Push subscription, set this job to a
 Release build status and change the Pull subscription jobs to Do Not
@@ -904,7 +904,7 @@ steps:
 7. Select the **SMAReplicationMonitor** schedule in the **Schedule
     Selection** frame.
 8. Accept the default date for the **Start** date (today).
-9. In the **Stop** date, select **tomorrow\'s date** from the calendar.
+9. In the **Stop** date, select **tomorrow's date** from the calendar.
 10. Click the **Overwrite** option and click **Build**.
 11. Accept the default selection to build the schedule On Hold and click
     **OK**.
@@ -913,7 +913,7 @@ steps:
 [Run the SMAReplicationSetup Schedule]{.ul}
 
 1. Double-click **List**.
-2. Double-click **today\'s date**.
+2. Double-click **today's date**.
 3. In the tree view under the date, double-click the
     **SMAReplicationSetup** schedule to see the jobs.
 4. Right-click the **SMAReplicationSetup** schedule and select
@@ -934,7 +934,7 @@ schedule, complete the steps below to automatically monitor the
 replication status.
 
 1. Double-click the **SMAReplicationMonitor** schedule (in the tree
-    view under *today\'s date)* to see the jobs.
+    view under *today's date)* to see the jobs.
 2. Right-click the **SMAReplicationMonitor** schedule and select
     **Release** from the menu.
 
@@ -967,7 +967,7 @@ checked to ensure the replication process has been completely removed.
 The KillReplicationMonitors job is set up to stop the jobs that are
 currently executing on the SMAReplicationMonitor schedule before
 replication itself is stopped by the other jobs. The job is a NULL job
-that Finishes OK and then triggers the \$JOB:KILL events.
+that Finishes OK and then triggers the $JOB:KILL events.
 
 #### DropPullSubscriptionOnSubscriber
 
@@ -1012,7 +1012,7 @@ The DropPushSubscriptionOnPublisher job executes the SQL script
 SMA_DBReplicationDropSubscriptionOnPublisher.sql from a Windows command
 file called SMA_DBReplicationDropSubscriptionOnPublisher.cmd. This job
 drops the push subscription from the publisher server. By default this
-job\'s frequency is set to Do Not Schedule because the Pull subscription
+job's frequency is set to Do Not Schedule because the Pull subscription
 is enabled by default. To use a Push subscription, set this job to a
 Release build status and change the Pull subscription jobs to Do Not
 Schedule. For information, refer to [Configure the SMAReplicationTearDown Jobs for Push
@@ -1038,7 +1038,7 @@ SMA_DBReplicationDropPushSubscriptionOnSubscriber.sql from a Windows
 command file called
 SMA_DBReplicationDropPushSubscriptionOnSubscriber.cmd. This job cleans
 up metadata about the push subscription on the subscriber server. By
-default this job\'s frequency is set to Do Not Schedule because the Pull
+default this job's frequency is set to Do Not Schedule because the Pull
 subscription is enabled by default. To use a Push subscription, set this
 job to a Release build status and change the Pull subscription jobs to
 Do Not Schedule. For information, refer to [Configure the SMAReplicationTearDown Jobs for Push
@@ -1148,7 +1148,7 @@ steps:
 [Run the SMAReplicationTearDown Schedule]{.ul}
 
 1. Double-click **List**.
-2. Double-click **today\'s date**.
+2. Double-click **today's date**.
 3. In the tree view under the date, double-click the
     **SMAReplicationTearDown** schedule to see the jobs.
 4. Right-click the **SMAReplicationTearDown** schedule.
@@ -1209,13 +1209,13 @@ The SMAReplicationRecoverToPrimary schedule consists of 5 OpCon jobs:
 #### TransferFullDBBackupToPrimary
 
 The TransferFullDBBackupToPrimary job employs SMA Technologies' File Transfer feature to
-move the secondary database\'s backup file to the primary server. The
+move the secondary database's backup file to the primary server. The
 backup file will be transferred as a binary file.
 
 #### TransferTLogBackupToPrimary
 
 The TransferTLogBackupToPrimary job employs SMA Technologies' File Transfer feature to
-move the secondary database\'s transaction log file to the primary
+move the secondary database's transaction log file to the primary
 server. The backup file will be transferred as a binary file.
 
 #### RestoreDatabaseOnPrimary
@@ -1288,7 +1288,7 @@ steps:
 [Run the SMAReplicationTearDown Schedule]{.ul}
 
 1. Double-click **List**.
-2. Double-click **today\'s date**.
+2. Double-click **today's date**.
 3. Double-click the **SMAReplicationRecoverToPrimary** (in the tree
     view under the date) schedule to see the jobs.
 4. Right-click the **SMAReplicationRecoverToPrimary** schedule and
@@ -1315,7 +1315,7 @@ In the Services window:
 
 Scroll down to the **SMA OpCon Service Manager** service.
 
-Change the *SMAServMan\'s* **Startup Type** to **Automatic (Delayed
+Change the *SMAServMan's* **Startup Type** to **Automatic (Delayed
 Start)** using the following steps:
 
 a.  Double-click on **SMA OpCon Service Manager**.

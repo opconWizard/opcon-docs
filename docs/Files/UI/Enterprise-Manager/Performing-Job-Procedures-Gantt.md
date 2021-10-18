@@ -21,8 +21,8 @@ To perform this procedure:
 
 ## Viewing Job Output
 
-This action will open a job\'s output file when the job is complete.
-Before attempting to view a job\'s output file, first refer to [Viewing a Job Output File](../../../operations/job-output.md) in the **Concepts** online help.
+This action will open a job's output file when the job is complete.
+Before attempting to view a job's output file, first refer to [Viewing a Job Output File](../../../operations/job-output.md) in the **Concepts** online help.
 
 To perform this procedure:
 
@@ -443,7 +443,7 @@ To perform this procedure:
 3. Use menu path: **Job \> SAP Job Spools**. The **SAP Login** dialog
     displays.
 4. Enter the *SAP login credentials* then click **OK**. The **View SAP
-    Job\'s Spools** dialog displays.
+    Job's Spools** dialog displays.
 5. *(Optional)* Click the **Refresh** button to update
     the list.
 6. Double-click on the *job spool* to retrieve. The **SAP Spool
@@ -454,5 +454,5 @@ To perform this procedure:
     button to open the file in an external editor (e.g., Notepad).
 10. Click the **Close** button to close the **SAP Spool Details**
     dialog.
-11. Click the **Close** button to close the **View SAP Job\'s Spools**
+11. Click the **Close** button to close the **View SAP Job's Spools**
     dialog.

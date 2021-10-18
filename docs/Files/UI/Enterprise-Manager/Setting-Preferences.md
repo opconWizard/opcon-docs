@@ -33,7 +33,7 @@ viewport: width=device-width, initial-scale=1.0
 
 The EM applies preference changes as soon as they have been applied.
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 -   [Setting Preferences from Enterprise     Manager](Preferences-from-EM.md)

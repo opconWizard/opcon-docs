@@ -27,7 +27,7 @@ beginning of the string.
 
  
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 -   [Viewing History     Records](Viewing-and-Exporting-History-Records.md#Viewing)

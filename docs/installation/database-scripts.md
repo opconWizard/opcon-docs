@@ -44,8 +44,8 @@ The schema installation script name is Opconxps_DBTables.sql. When
 executed, the script performs the following tasks:
 
 - Installs or updates the OpCon database schema
-- Grants full control to the \"OpConxps\" role for all OpCon tables
-- Grants read-only access to the \"opconreader\" role for all OpCon
+- Grants full control to the "OpConxps" role for all OpCon tables
+- Grants read-only access to the "opconreader" role for all OpCon
     tables
 - Populates static tables with data
 - Loads initial data to selected administration tables
@@ -62,7 +62,7 @@ executed, the script performs the following tasks:
 - Grants EXEC permissions on all stored procedures to the opconxps
     database role
 - Grants EXEC permission for supplemental stored procedures to the
-    \"opconspuser\" role
+    "opconspuser" role
 - Generates output to the DB_Setup.log during database creation or the
     DB_Update.log during database update
 
@@ -82,8 +82,8 @@ The PDSA framework script name is PDSAFramework.sql. When executed, the
 script performs the following tasks:
 
 - Creates the tables required for the PDSA
-- Grants full control to the \"OpConxps\" role for all PDSA tables
-- Grants read-only access to the \"opconreader\" role for all PDSA
+- Grants full control to the "OpConxps" role for all PDSA tables
+- Grants read-only access to the "opconreader" role for all PDSA
     tables
 - Generates output to the DB_Setup.log during database creation or the
     DB_Update.log during database update

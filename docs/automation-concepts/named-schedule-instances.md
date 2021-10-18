@@ -21,16 +21,16 @@ The following information applies to defining exception rules:
 - **Job Field**: Defines the job field in which to apply the exception rule.
 - **To Replace**: Defines the value to replace in the job field.
   - The value may be:
-    - an empty string (\"\")
-    - a fixed string (\"abc\")
-    - a string with instance properties (\[\[\$this.Property\]\]) -   The value may not be a property expression.
+    - an empty string ("")
+    - a fixed string ("abc")
+    - a string with instance properties (\[\[$this.Property\]\]) -   The value may not be a property expression.
   - \[\[\@name\]\] is a case-sensitive token that can be used to     refer to the current instance name.
   - \[\[\@current\]\] is a case-sensitive token that can be used     to refer to the current value of the job field.
   - $this may be used as a placeholder for the instance property named in the instance definition. This placeholder is case-sensitive.
 - **New Value**: Defines the replacement value.
   - The value may be:
   - a fixed string ("abc")
-  - a string with instance properties (\[\[\$this.Property\]\])     -   a property expression (\[\[\@current\]\ + ToOaTime("02:00"))
+  - a string with instance properties (\[\[$this.Property\]\])     -   a property expression (\[\[\@current\]\ + ToOaTime("02:00"))
 - **Is Expression**: Specifies, when enabled, that the new value is a property expression.
 
 ### Use Cases for Exception Rules
@@ -71,7 +71,7 @@ To change the machine from "MyMachine" to "My\<Property\>Machine":
 
 **To Replace**: MyMachine
 
-**New Value**: My\[\[\$this.Property\]\]Machine
+**New Value**: My\[\[$this.Property\]\]Machine
 
 **Is Expression**: false
 

@@ -39,7 +39,7 @@ folder.
 
 The following is an example of the old command-line syntax:
 
-SMAHoliday.exe /C:\"MasterHoliday\"/Y:2017 /S:FR
+SMAHoliday.exe /C:"MasterHoliday"/Y:2017 /S:FR
 
 :::note
 To get the full capability of this utility, SMA Technologies recommends using the dash (-) argument.
@@ -115,7 +115,7 @@ Non-customized.
   Easter Sunday                         The Easter Sunday date is currently calculated by an astrological algorithm for all years until 4099 A.D (refer to [www.assa.org.au/edm](http://www.assa.org.au/edm "Calculate the Date of Easter Sunday") for more information). The additional Customized settings are calculated based on the same algorithm.
   Easter Monday (Le lundi de Pâques)    Calculated based on the Paschal-algorithm Easter date plus one day.
   Good Friday (Vendredi saint)          Calculated based on the Paschal-algorithm Easter date minus two days.
-  Ascension Day (L\'Ascension)          Calculated based on the Paschal-algorithm Easter date plus thirty-nine days.
+  Ascension Day (L'Ascension)          Calculated based on the Paschal-algorithm Easter date plus thirty-nine days.
   Whit Sunday (Pentecôte)               Calculated based on the Paschal-algorithm Easter date plus forty-nine days.
   Whit Monday (Le lundi de Pentecôte)   Calculated based on the Paschal-algorithm Easter date plus fifty days.
 
@@ -130,7 +130,7 @@ Non-customized.
 |                                  | number. use Month/Day format to  |
 |                                  | specify individual dates as a    |
 |                                  | holiday (e.g., 01/01 is New      |
-|                                  | Years\' Day, 02/29 is the leap   |
+|                                  | Years' Day, 02/29 is the leap   |
 |                                  | year date).                      |
 |                                  |                                  |
 |                                  |                                  |
@@ -150,7 +150,7 @@ Non-customized.
 | w = week of month                | The week can be followed by a    |
 |                                  | number between 1 and 4 (e.g.,    |
 |                                  | w3). You must enter the letter   |
-|                                  | \"l\" (lowercase L) for the last |
+|                                  | "l" (lowercase L) for the last |
 |                                  | week of the month (e.g., wl).    |
 +----------------------------------+----------------------------------+
 | m = month                        | The month must be followed by a  |
@@ -170,7 +170,7 @@ Non-customized.
 |                                  | (e.g., 11/fr-4 ; Black Friday).  |
 |                                  | Valid values for week number are |
 |                                  | 1 to 3; you must enter the       |
-|                                  | letter \"l\" (lowercase L) for   |
+|                                  | letter "l" (lowercase L) for   |
 |                                  | the last week of the month       |
 |                                  | (e.g., wl).                      |
 +----------------------------------+----------------------------------+

@@ -20,8 +20,8 @@ to
   SMAServMan.ini Setting   Value
   ------------------------ --------------------------------------
   Mode                     StandAlone
-  InitializationScript     \"\"\<Initialization Script\>\"\"
-  TerminationScript        \"\"\<Termination Event Script\>\"\"
+  InitializationScript     ""\<Initialization Script\>""
+  TerminationScript        ""\<Termination Event Script\>""
 
   : Basic StandAlone: SMAServMan Configuration
 
@@ -37,7 +37,7 @@ to
 ## Process Flows
 
 Based on the above configuration values, the following process flows
-indicate SMAServMan\'s expected behavior.
+indicate SMAServMan's expected behavior.
 
 ### Good Startup
 

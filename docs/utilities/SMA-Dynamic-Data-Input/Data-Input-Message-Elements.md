@@ -112,7 +112,7 @@ dates will be added/deleted.
     calendar name that exists in the OpCon
     database or a new Calendar to be created. Calendar names are a
     maximum of 50 characters in length and cannot include the following
-    characters: \' (single quote), ( (left parenthesis), ) (right
+    characters: ' (single quote), ( (left parenthesis), ) (right
     parenthesis),\
     , (comma), = (equal symbol), ;(semicolon), \| (vertical bar). SMADDI
     allows only one \<calname\> element per \<calinfo\> element.
@@ -134,7 +134,7 @@ calendar.
 
 - **Requirements**: Required for \<calinfo\>.
 - **Valid Values**: Valid data for this element is a short date in the
-    format recognized by the database server\'s Regional Settings (e.g.,
+    format recognized by the database server's Regional Settings (e.g.,
     7/7/2008). SMADDI allows multiple \<caldate\> elements per
     \<calinfo\> element. The value for \<caldate\> defines a date in the
     target calendar.
@@ -268,7 +268,7 @@ The \<skdname\> element defines the schedule name.
     schedule name that does not exist in the
     OpCon database.
   - Invalid values include the following: \< (less than), \>
-        (greater than), & (ampersand), \' (single quote), \"(double
+        (greater than), & (ampersand), ' (single quote), "(double
         quote), \| (pipe), , (comma), ; (semicolon), % (percent), ( )
         (open and closed parentheses), { } (open and closed braces), \[         \] (open and closed brackets), = (equals sign), \\ (backslash),
         ! (exclamation point), \~ (tilde), \`(accent grave)
@@ -278,8 +278,8 @@ The \<skdname\> element defines the schedule name.
 
 #### \<skdstart\>\</skdstart\>
 
-The \<skdstart\> element is a schedule\'s start time, also included
-during a schedule\'s definition.
+The \<skdstart\> element is a schedule's start time, also included
+during a schedule's definition.
 
 - **Requirements**: Optional for \<skdinfo\> which defaults to 00:00.
     SMADDI allows only one \<skdstart\> element per \<skdinfo\> element.
@@ -301,7 +301,7 @@ for the schedule.
 
 #### \<calusemaster\>\</calusemaster\>
 
-The \<calusemaster\> element indicates if the schedule\'s calendar
+The \<calusemaster\> element indicates if the schedule's calendar
 should use the Master Holiday Calendar.
 
 - **Requirements**: Optional for \<skdinfo\>.
@@ -360,7 +360,7 @@ consecutively.
 
 #### \<buildovr\>\</buildovr\>
 
-If \'True\', the \<buildovr\> element indicates that if the schedule
+If 'True', the \<buildovr\> element indicates that if the schedule
 exists in the daily tables, it should be overwritten when built again.
 This will only happen if the schedule is complete or does not exist.
 
@@ -370,8 +370,8 @@ This will only happen if the schedule is complete or does not exist.
 
 #### \<buildhld\>\</buildhld\>
 
-If \'True\', the \<buildhld\> element indicates that the schedule should
-be built with a status of \"On Hold\". The SAM will not process the
+If 'True', the \<buildhld\> element indicates that the schedule should
+be built with a status of "On Hold". The SAM will not process the
 schedule until it is released manually or through an
 OpCon event.
 
@@ -484,7 +484,7 @@ elements can be defined for the new schedule.
 
 #### \<skd_bld4machgrp\>\</skd_bld4machgrp\>
 
-Defines the Machine Group Name for the schedule\'s instances. This
+Defines the Machine Group Name for the schedule's instances. This
 element is only valid when the Multi-Instance element is True.
 
 - **Requirements**: Optional for \<skdinfo\>.
@@ -509,9 +509,9 @@ Defines a string of property definitions for a schedule instance.
 - **EM field label**: Define Property Values
 - **Valid Values**: The property string must be in the format
     PName1=PValue1;PName2=PValue2...
-  - Values for the \"PName\" should not contain the following
-        characters: \' ( ) \\ , = ; \|
-  - Values for the \"PValue\" should not contain a semicolon (;)
+  - Values for the "PName" should not contain the following
+        characters: ' ( ) \\ , = ; \|
+  - Values for the "PValue" should not contain a semicolon (;)
   - If the Multi-Instance element is True, and the
         \<skd_bld4machgrp\> element is not specified, any number of
         \<skd_predef_prop\> elements can be defined to specify multiple
@@ -564,9 +564,9 @@ Defines a property definition for a named instance of the schedule.
 - **EM field label**: Properties
 - **Valid Values**: The property string must be in the format
     PName1=PValue1.
-  - Values for the \"PName\" should not contain the following
-        characters: \' ( ) \\ , = ; \|
-  - Values for the \"PValue\" should not contain a semicolon (;)
+  - Values for the "PName" should not contain the following
+        characters: ' ( ) \\ , = ; \|
+  - Values for the "PValue" should not contain a semicolon (;)
 
 #### \<jobpat\>\</jobpat\>
 
@@ -664,17 +664,17 @@ rule associated with a defined job pattern.
         +----------------------+----------------------+----------------------+
   - Where *m* = Substring in the current value to replace.
     - If the field code is for Job Build Status (933), valid
-            values are: \"On Hold\", \"Released\", or \"To Be Skipped\".
+            values are: "On Hold", "Released", or "To Be Skipped".
     - For all other field codes, *m* cannot be a property
-            expression. Valid values are: an empty string (\"\"), a
-            fixed string (\"abc\"), or a string with instance properties
-            (\[\[\$this.Property\]\]).     -   Where *x* = String value with which to replace *m*.
+            expression. Valid values are: an empty string (""), a
+            fixed string ("abc"), or a string with instance properties
+            (\[\[$this.Property\]\]).     -   Where *x* = String value with which to replace *m*.
     - If the field code is for Job Build Status (933), valid
-            values are: \"On Hold\", \"Released\", \"Cancelled\", \"To
-            Be Skipped\", \"Do Not Schedule, or \"Disable Build\".
+            values are: "On Hold", "Released", "Cancelled", "To
+            Be Skipped", "Do Not Schedule, or "Disable Build".
     - For all other field codes, valid values are: a fixed string
-            (\"abc\"), a string with instance properties
-            (\[\[\$this.Property\]\]), or a property expression             (\[\[\@current\]\] + ToOaTime(\"02:00\")).
+            ("abc"), a string with instance properties
+            (\[\[$this.Property\]\]), or a property expression             (\[\[\@current\]\] + ToOaTime("02:00")).
   - Where the value for NewValueIsExpression indicates whether or
         not *x* is a property expression. Valid values are: true or
         false.
@@ -688,7 +688,7 @@ rule associated with a defined job pattern.
     |                                  | ption\>&lt;Exception&gt;&lt;Fiel |
     |                                  | dCode&gt;3002&lt;/FieldCode&gt;\ |
     |                                  | &lt;NewValue&gt                  |
-    |                                  | ;\$this.MyUser&lt;/NewValue&gt;\ |
+    |                                  | ;$this.MyUser&lt;/NewValue&gt;\ |
     |                                  | &lt;NewValueIsExpression&gt;fal  |
     |                                  | se&lt;/NewValueIsExpression&gt;\ |
     |                                  | &lt                              |
@@ -1170,7 +1170,7 @@ The add_dependency message type and its elements can be used to add a
 new job, threshold, or resource dependency to a job. For information on
 creating data input files, refer to [Creating Data Input Files](Creating-Data-Input-Files.md).
 
-If \"\<skddate\>\" appears, the system considers it an addition to a
+If "\<skddate\>" appears, the system considers it an addition to a
 daily schedule. The following sample code contains the structure for
 defining every possible element for the add_dependency message type:
 
@@ -1280,7 +1280,7 @@ The \<skdname\> element defines the Schedule Name.
     Daily tables. SMADDI allows only one \<skdname\> element per
     \<schedule\> element.
   - Invalid Characters: \< (less than) \> (greater than) &
-        (ampersand) \' (single quote) \" (double quote) \| (pipe),
+        (ampersand) ' (single quote) " (double quote) \| (pipe),
         (comma), \~ (tilde), \`(accent grave)
   - Maximum Characters: 255
 
@@ -1524,7 +1524,7 @@ build or not.
 #### \<job_expr_dep\>\</job_expr_dep\>
 
 The \< job\_ expr_dep\> element defines a complex expression, for the
-job, that must evaluate to \"True\" before the job can run when
+job, that must evaluate to "True" before the job can run when
 scheduled with any frequency.
 
 - **Requirements**: Optional for \<job\> on the new_daily or
@@ -1563,11 +1563,11 @@ of the script to run.
 - **EM field label:** Version
 - **Valid Values:** Valid data for this element is an integer ranging
     from 0 to 2147483647.
-  - An integer value of 0 is equivalent to the \"LATEST\" version.
+  - An integer value of 0 is equivalent to the "LATEST" version.
 
 #### \<job_embed_script_runner\>\</job_embed_script_runner\>
 
-The \<job_embed_script_runner\> element defines the \"interpreter\" for
+The \<job_embed_script_runner\> element defines the "interpreter" for
 relaying how to execute the script.
 
 - **Requirements**: This is an Optional field.
@@ -1674,7 +1674,7 @@ The \<afc_end_value\> element defines the End Value for the parent
 
 **Cross-field dependency**: The \<afc_end_value\> element is only valid
 if the \<afc_operator\> element for the parent \<afc\> has a value of
-\"Range\". If the \<afc_operator\> element is any other value, SMADDI
+"Range". If the \<afc_operator\> element is any other value, SMADDI
 will ignore the \<afc_end_value\> element.
 
 #### \<afc_result\>\</afc_result\>
@@ -1942,9 +1942,9 @@ Defines a string of property definitions for a job instance.
     Value
 - **Valid Values**: The property string must be in the format
     PName1=PValue1;PName2=PValue2...
-  - Values for the \"PName\" should not contain the following
-        characters: \' ( ) \\ , = ; \|
-  - Values for the \"PValue\" should not contain a semicolon (;)
+  - Values for the "PName" should not contain the following
+        characters: ' ( ) \\ , = ; \|
+  - Values for the "PValue" should not contain a semicolon (;)
   - If defined within a new_master \<msgtype\> and the
         \<multi_inst_job\> element is True, any number of
         \<job_predef_propty\> elements can be defined to specify
@@ -2220,7 +2220,7 @@ For LSAM Feedback: Valid data for this element is any string to match.
 - Use percent (%) as opposed to asterisk (\*) as a wildcard.
 - Use underscore ( \_ ) as opposed to question mark (?) for a single
     character wildcard.
-- Single quotes (\') are invalid in this field.
+- Single quotes (') are invalid in this field.
 - This field is a maximum of 4000 characters long.
 
 For Job Completion Complex Expression, the value must be an expression
@@ -2293,7 +2293,7 @@ parent \<vpre\>.
 #### \<pvvalue\>\</pvvalue\>
 
 The \<pvvalue\> element defines the value compared to the parent
-\<vpre\>\'s current value.
+\<vpre\>'s current value.
 
 - **Requirements**: Required for \<vpre\>.
 - **EM field label**: Value
@@ -2303,11 +2303,11 @@ The \<pvvalue\> element defines the value compared to the parent
 #### \<pvuseall\>\</pvuseall\>
 
 The \<pvuseall\> element indicates if the resource dependency should use
-\"All\" of the resources.
+"All" of the resources.
 
 - **Requirements**: Optional for \<vpre\>.
   - Mutually exclusive with \<ppvalue\>.
-  - \<pvuseall\> can only be set to \"True\" if the \<pvname\>
+  - \<pvuseall\> can only be set to "True" if the \<pvname\>
         contains a Resource.
 - **EM field label**: All (checkbox)
 - **Valid Values**: Valid data for this element is **True** or
@@ -2692,7 +2692,7 @@ The \<frqname\> element defines the Frequency Name for the parent
 - **EM field label**: Frequency Name
 - **Valid Values**: Valid data for this element is any name 20
     characters or less that does not contain the following characters:
-    \' (single quote), \| (Pipe symbol), \\ (backslash), \" (double
+    ' (single quote), \| (Pipe symbol), \\ (backslash), " (double
     quote), ; (semi-colon), % (percent), & (ampersand), \< (less
     than) \> (greater than), ( ) (open and closed parentheses), \[ \]     (open and closed brackets), { } (open and closed braces), , (comma),
     = (equals), ! (exclamation point), and space.
@@ -3088,12 +3088,12 @@ Start Date for the offset intervals with the On Intervals \<fgrp\>.
 
 - **Requirements**: Optional for \<frq\>.
 - **EM field labels**:
-  - *Request Date* if \'When to Schedule\' is specified as \'On
-        Request\'
-  - On Intervals \>Start if \'When to Schedule\' is specified as
-        \'On Intervals\'
+  - *Request Date* if 'When to Schedule' is specified as 'On
+        Request'
+  - On Intervals \>Start if 'When to Schedule' is specified as
+        'On Intervals'
 - **Valid Values**: Valid data for this element is a date in the
-    format recognized by the OpCon server\'s Regional Settings. To
+    format recognized by the OpCon server's Regional Settings. To
     enable the Every Year feature, use 1900 in the year position.
 
 ##### \<ofdays\>\</ofdays\>
@@ -3159,7 +3159,7 @@ Period, Beg of Period, or On Occurrence \<fgrp\>s.
 - **EM field label**: Periods
 - **Valid Values**: Valid data options for this element are Week,
     Month, Quarter, and Year. If omitted, the data defaults to Month.
-    The \"Week\" option is only valid with the Beg of Period and End of
+    The "Week" option is only valid with the Beg of Period and End of
     Period values for \<fgrp\>.
 
 ##### \<cname\>\</cname\>

@@ -21,7 +21,7 @@ in the graphic to learn more about that item.
 
 ![External Tools Topic](../../../Resources/Images/EM/EMexternaltoolsmenu.png "External Tools Topic")
 
-![White \"person reading\" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Configuring the Installation     Directory](Configuring-the-Installation-Directory.md)

@@ -76,14 +76,14 @@ ii. Using the search field and filter criteria to find it. You can use
     and filter the search by property name, property value, or both
     (default).
 
-Double-click on the **global property** (e.g., \$SCHEDULE DATE).
+Double-click on the **global property** (e.g., $SCHEDULE DATE).
 
 :::note
 Double brackets will automatically be placed around the placeholder for the token that is defined.
 :::
 
 :::tip Example
-$JOB:ADD,\[\[\$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth
+$JOB:ADD,\[\[$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth
 :::
 
 Click **Reset** to reset the parameters to their original states.
@@ -164,7 +164,7 @@ b.  Click the ![Insert Token     buton](../../../Resources/Images/EM/EMinserttok
     **Insert token** button or press **Ctrl/t** on the keyboard to list
     available global properties.
 c.  Scroll down and double-click on the **Global Property** (e.g.,
-    \$SCHEDULE DATE).
+    $SCHEDULE DATE).
 
 Click the **Reset** button to reset the parameters to their original
 states.
