@@ -1,7 +1,12 @@
-# Components
+# Event Notifcation
 
-The Event Notification system in OpCon
-consists of the following components:
+Event Notification in OpCon is a process in which Machine, Schedule, and Job status change events generate (i.e., trigger) notifications. For critical notifications, administrators can also apply [escalation]{.GeneralEscalatedNotification} rules to provide higher visibility.
+
+The basic types of notifications include Windows Event Log, Email (SMTP), Network Message, SNMP Trap, Unisys Single Point of Operations (SPO) AL and CO Reports, Text Messages (SMS), OpCon/xps Events, and Command. With OpCon, notifications can be created in several ways. 
+
+## Components
+
+The Event Notification system in OpCon consists of the following components:
 
 - **SMA Notify Handler**: Reads the OpCon
     database and writes the message according to notification type. For
@@ -30,4 +35,3 @@ consists of the following components:
     [escalations]{.GeneralEscalatedNotificationPlural} and to     acknowledge them. For more information, refer to [Using Escalation
     Acknowledgment](../Files/UI/Enterprise-Manager/Using-Escalation-Acknowlegement.md)
      in the **Enterprise Manager** online help.
-:::
