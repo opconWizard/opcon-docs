@@ -33,36 +33,13 @@ of a breadcrumb trail.
 
 ![Schedule Processes](../../../Resources/Images/SM/Schedule-Processes.png "Schedule Processes")
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [Depending on the      | | gray circular                    | number of schedules returned in  |
-| background](../../.              | general or after making date     |
-| ./Resources/Images/note-icon(48x | selections, you may wish to      |
-| 48).png "Note icon") | filter and/or sort the list of   |
-|                                  | schedules to make it easier to   |
-|                                  | make your schedule               |
-|                                  | selections.]         |
-|                                  |                                  |
-|                                  | -   [For filtering, use the      | |                                  |     **Filter Bar** just above    |
-|                                  |     the list of schedules to     |
-|                                  |     filter the list. Type the    |
-|                                  |     keyword in the appropriate   |
-|                                  |     field and click **Enter**,   |
-|                                  |     and the list will filter     |
-|                                  |     accordingly.]    |
-|                                  |                                  |
-|                                  | ```{=html}                       |
-|                                  | <!-- -->                         |
-|                                  |```                              |
-|                                  | -   [For sorting, click on the   | |                                  |     column heading to sort the   |
-|                                  |     column in ascending order    |
-|                                  |     (indicated by a small arrow  |
-|                                  |     pointing down). Click on the |
-|                                  |     column heading again to sort |
-|                                  |     the column in descending     |
-|                                  |     order (indicated by a small  |
-|                                  |     arrow pointing up).          |
-|                                  |     ]                |
-+----------------------------------+----------------------------------+
+:::note
+Depending on the number of schedules returned in general or after making date selections, you may wish to filter and/or sort the list of schedules to make it easier to make your schedule selections.
+
+For filtering, use the **Filter Bar** just above the list of schedules to filter the list. Type the keyword in the appropriate field and click **Enter**, and the list will filter accordingly.
+
+For sorting, click on the column heading to sort the column in ascending order (indicated by a small arrow pointing down). Click on the column heading again to sort the column in descending order (indicated by a small arrow pointing up).
+:::
 
 Click on the schedule record (e.g., 3 schedule(s)) in the status bar to
 display the **Selection** panel.
