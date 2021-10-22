@@ -165,9 +165,9 @@ help).
 The SMA_CLEAN_ENS stored procedure cleans up "orphaned" entries in the
 ENSSELECTED table of the OpCon database.
 
-  ---------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White triangle icon on yellow circlular background](../../Resources/Images/caution-icon(48x48).png "Caution icon")   **CAUTION:** [This process is irreversible. SMA Technologies recommends backing up the database before executing SMA_CLEAN_ENS. For information on manually backing up the database, refer to [Manually Backing Up the Database](Manual-Database-Backups-and-Restoration.md#Manually).]
-  ---------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::caution
+This process is irreversible. SMA Technologies recommends backing up the database before executing SMA_CLEAN_ENS. For information on manually backing up the database, refer to [Manually Backing Up the Database](Manual-Database-Backups-and-Restoration.md#Manually).
+:::
 
 The stored procedure performs the following actions:
 
@@ -220,9 +220,13 @@ Click the **New Query** button.
 
 Enter the *command* for the **SMA_CLEAN_ENS** stored procedure.
 
-  ------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [[EXEC SMA_CLEAN_ENS]{style="font-family: 'Courier New';"}]{.statement2}
-  ------------------------------------------------------------------------------------------------------------------------------ ---------------------------------------------------------------------------------------
+:::tip Example
+
+```sql
+EXEC SMA_CLEAN_ENS
+```
+
+:::
 
 Click the **Execute** button or press **F5**.
 
@@ -281,9 +285,9 @@ SMA Technologies provides command files for automating the maintenance of Thresh
 reside in the \<Configuration Directory\>\\Utilities\\Database\\
 directory.
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 The Compact_ThreshIDs.cmd and Compact_ThreshIDs_WinAuth.cmd files run
 the SMA_COMPACTTHRESHIDS stored procedure through sqlcmd.exe. The
@@ -304,9 +308,9 @@ For Windows Authentication:
 
 Compact_ThreshIDs_WinAuth.cmd
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 #### Automating the Stored Procedure in OpCon
 
@@ -363,9 +367,9 @@ regular intervals to keep the "next" token ID value below the maximum.
 SMA Technologies provides command files for automating the maintenance of token IDs. These files reside in the
 \<Configuration Directory\>\\Utilities\\Database\\ directory.
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 The Compact_TokenIDs.cmd and Compact_TokenIDs_WinAuth.cmd files run the
 SMA_COMPACTTOKENIDS stored procedure through sqlcmd.exe. The command
@@ -386,9 +390,9 @@ For Windows Authentication:
 
 Compact_TokenIDs_WinAuth.cmd
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 #### Automating the Stored Procedure in OpCon
 
@@ -428,4 +432,3 @@ Directory\>\\Utilities\\Database\\.
 +----------------------------------+----------------------------------+
 
 SMA Technologies recommends scheduling this job during a time that tokens are not being deleted and recreated.
-:::

@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Viewing and Updating Expression Dependencies
-viewport: width=device-width, initial-scale=1.0
----
-
 # Viewing and Updating Expression Dependencies
 
 The **Expression Dependency** panel in **Daily Job Definition** displays
@@ -26,13 +20,13 @@ conceptual information, refer to [Property Expressions API Syntax](../../../refe
 refer to the [Use Cases](../../../reference/property-expressions-syntax.md#Use)
  section.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.
+:::
 
 To perform this procedure:
 
@@ -58,9 +52,9 @@ page in the form of a breadcrumb trail.
 Click on the job record (e.g., 1 job(s)) in the status bar to display
 the **Selection** panel.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.
+:::
 
 ![Job Summary Tab in Operations](../../../Resources/Images/SM/Job-Summary-Tab-(UNIX).png "Job Summary Tab in Operations")
 
@@ -74,9 +68,9 @@ will switch to display a white lock unlocked on a green background
 ![Daily Job Definition Admin Switch](../../../Resources/Images/SM/Daily-Job-Definition-Admin-Button.png "Daily Job Definition Admin Switch")
 when enabled.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Lock** button will not be visible to users who do not have the appropriate permissions.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
+:::note
+The **Lock** button will not be visible to users who do not have the appropriate permissions.
+:::
 
 Expand the **Expression Dependency** panel to expose its content.
 
@@ -91,10 +85,8 @@ b.  Click the green **Add** button (**+**) to define a new property
     You are allowed to have up to two (2) properties expressions for a
     job.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Click the **Undo** button if you wish to undo your changes for any reason.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+:::note
+Click the **Undo** button if you wish to undo your changes for any reason.
+:::
 
 Click the **Save** button.
-
-:::

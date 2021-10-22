@@ -85,7 +85,6 @@ To activate this mode:
 4. Press **Ctrl+Alt+L** again to generate the **debug.log** file.
 5. Send the generated file to SMA Technologies     Customer Support.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [ For all buttons in the Solution Manager, you only have to click once to trigger the action.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
+:::note
+For all buttons in the Solution Manager, you only have to click once to trigger the action.
 :::

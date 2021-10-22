@@ -110,9 +110,9 @@ To access job summary:
     been opened for a lengthy period of time.
 8. Close the **Selection** panel when done.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The job summary can also be accessed while in PERT View. For more information, refer to [PERT View Job Summary Access](Using-PERT-View.md#PERT9).]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The job summary can also be accessed while in PERT View. For more information, refer to [PERT View Job Summary Access](Using-PERT-View.md#PERT9).
+:::
 
 ![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
@@ -120,4 +120,3 @@ Related Topics
 - [Accessing Daily Job     Definition](Accessing-Daily-Job-Definition.md)
 - [Accessing Job Executions     History](Accessing-Job-Executions-History.md)
 - [Using PERT View](Using-PERT-View.md)
-:::

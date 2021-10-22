@@ -1,16 +1,10 @@
----
-lang: en-us
-title: Performing Job Procedures when Working in Matrix View
-viewport: width=device-width, initial-scale=1.0
----
-
 # Performing Job Procedures when Working in Matrix View
 
 ## Adding Job Completion Comments
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [This menu option is only available when the job is [Finished OK]{.skd-job-statuses}, [Marked Finished OK]{.skd-job-statuses}, [Failed]{.skd-job-statuses}, or [Marked Failed]{.skd-job-statuses}.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+This menu option is only available when the job is Finished OK, Marked Finished OK, Failed, or Marked Failed.
+:::
 
 To perform this procedure:
 
@@ -31,8 +25,7 @@ To perform this procedure:
 ## Viewing Job Output
 
 This action will open a job's output file when the job is complete.
-Before attempting to view a job's output file, first refer to [Viewing a Job Output
-File](../../../operations/job-output.md)
+Before attempting to view a job's output file, first refer to [Viewing a Job Output File](../../../operations/job-output.md)
  in the **Concepts** online help.
 
 To perform this procedure:
@@ -57,9 +50,9 @@ To perform this procedure:
 
 ## Opening Window to Host
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [This action requires the configuration emulator for the connection to the machine. For information on configuring an emulator, refer to [Preferences for Window To Host](Preferences-for-Windows-To-Host.md).]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::
+This action requires the configuration emulator for the connection to the machine. For information on configuring an emulator, refer to [Preferences for Window To Host](Preferences-for-Windows-To-Host.md).
+:::
 
 To perform this procedure:
 
@@ -143,9 +136,9 @@ To perform this procedure:
 This action will suspend the processing of the selected job. A job that
 has been submitted to start cannot be held.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the action is performed when a schedule is selected, all jobs on a schedule are affected.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
+:::note
+If the action is performed when a schedule is selected, all jobs on a schedule are affected.
+:::
 
 To perform this procedure:
 
@@ -166,9 +159,9 @@ To perform this procedure:
 This action will cancel the job. Any jobs that were dependent on this
 job will not have their dependencies met.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the action is performed when a schedule is selected, all jobs on a schedule are affected.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
+:::note
+If the action is performed when a schedule is selected, all jobs on a schedule are affected.
+:::
 
 To perform this procedure:
 
@@ -209,9 +202,9 @@ To perform this procedure:
 This action will send a request to kill the job. Any jobs dependent on
 killed jobs will not have the dependencies met.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [This option is not available for the BIS, OpenVMS, IBM i, and OS 2200 platforms.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
+:::note
+This option is not available for the BIS, OpenVMS, IBM i, and OS 2200 platforms.
+:::
 
 To perform this procedure:
 
@@ -231,9 +224,9 @@ To perform this procedure:
 
 This action will place the job back in a [Qualifying]{.skd-job-statuses} state, and the job will process when all dependencies have been met.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the action is performed when a schedule is selected, all jobs on a schedule are affected.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
+:::note
+If the action is performed when a schedule is selected, all jobs on a schedule are affected.
+:::
 
 To perform this procedure:
 
@@ -274,9 +267,9 @@ To perform this procedure:
 
 This action will place the job back in a [Qualifying]{.skd-job-statuses} state. The job starts as soon as all dependencies are met.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [During the restart qualifying process, the SAM uses all current details from the Daily tables and from the **Job Configuration** screen unless the **Re-build the SubSchedule** option is selected. If **Re-build the SubSchedule** has been selected, SAM will re-build the subschedule before restarting the jobs.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+During the restart qualifying process, the SAM uses all current details from the Daily tables and from the **Job Configuration** screen unless the **Re-build the SubSchedule** option is selected. If **Re-build the SubSchedule** has been selected, SAM will re-build the subschedule before restarting the jobs.
+:::
 
 To perform this procedure:
 
@@ -362,7 +355,7 @@ To perform this procedure:
 
 ## Marking Jobs Finished OK
 
-The action marks the selected job as [Finished OK]{.skd-job-statuses}. If the job is marked [Finished OK]{.skd-job-statuses} before it starts,
+The action marks the selected job as Finished OK. If the job is marked Finished OK before it starts,
 both the start time and finish time saved in history equal the time the
 job is marked.
 
@@ -383,7 +376,7 @@ To perform this procedure:
 
 ## Marking Jobs Failed
 
-This action marks the selected job as [Failed]{.skd-job-statuses}. If the job is marked [Failed]{.skd-job-statuses} before it starts, both the
+This action marks the selected job as Failed. If the job is marked Failed before it starts, both the
 start and the finish time saved in history equal the time the job is
 marked.
 
@@ -508,4 +501,3 @@ To perform this procedure:
     dialog.
 13. Click the **Close** button to close the **View SAP Job's Spools**
     dialog.
-:::

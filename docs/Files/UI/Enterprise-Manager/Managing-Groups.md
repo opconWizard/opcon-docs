@@ -1,10 +1,4 @@
----
-lang: en-us
-title: Managing Groups
-viewport: width=device-width, initial-scale=1.0
----
-
-#  Managing Groups
+# Managing Groups
 
 ## Adding Machine, Schedule, or Job Groups
 
@@ -25,9 +19,9 @@ Type the new *group name*.
 
 Click the **OK** button.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [(Optional) You can create child groups to further organize triggers.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------
+:::note
+(Optional) You can create child groups to further organize triggers.
+:::
 
 **Add Machines to a Group**
 

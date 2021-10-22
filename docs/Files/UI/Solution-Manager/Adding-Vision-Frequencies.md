@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Adding Vision Frequencies
-viewport: width=device-width, initial-scale=1.0
----
-
 # Adding Vision Frequencies
 
 To add a Vision Frequency:
@@ -41,9 +35,10 @@ directly on the calendars.
 Click the **Save** button.
 
 [Defining SLA]{.ul}
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [A Vision license is required to define SLA. For more information, refer to [License File Request and Storing](Working-with-Vision.md#License) in the **Solution Manager** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+:::note
+A Vision license is required to define SLA. For more information, refer to [License File Request and Storing](Working-with-Vision.md#License) in the **Solution Manager** online help.
+:::
 
 a.  Click the **+** button under **SLA**.
 b.  Select an *expected time option* from the **Requirement** drop-down.
@@ -52,9 +47,10 @@ d.  Select the *day offset* in the **Day** drop-down.
 e.  Click **OK**.
 
 [Defining Trigger(s)]{.ul}
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [A Vision license is required to define Triggers. For more information, refer to [License File Request and Storing](Working-with-Vision.md#License) in the **Solution Manager** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+:::note
+A Vision license is required to define Triggers. For more information, refer to [License File Request and Storing](Working-with-Vision.md#License) in the **Solution Manager** online help.
+:::
 
 a.  Click the **+** button under **Trigger(s)**.
 b.  Select a *status* from the **Status** drop-down.
@@ -71,4 +67,3 @@ h.  Click **OK**.
 **On the Vision Settings page:**
 
 Click the **Save** button.
-:::

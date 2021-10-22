@@ -63,9 +63,9 @@ used for all replication agent connections. For best security, grant
 only the required privileges for each agent. The following is a list of
 required privileges for each agent:
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The scripts provided by SMA Technologies to automate the replication setup will automatically grant the appropriate database privileges. Folder share permissions must be configured manually.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The scripts provided by SMA Technologies to automate the replication setup will automatically grant the appropriate database privileges. Folder share permissions must be configured manually.
+:::
 
 Snapshot Agent
 
@@ -231,9 +231,9 @@ Right-click on **Start** and select **Explore**.
 Browse to the \<Configuration Directory\>**\\Utilities\\Database\\**
 directory.
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 Press the **Ctrl** key and hold while clicking the following files:
 
@@ -261,13 +261,13 @@ select **Copy** from the menu.
 Browse to the Secondary SAM Application server to the \<Configuration
 Directory\>**\\Utilities\\Database** directory and click in the folder.
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
-  ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [To access the directory on the Secondary server, the directory must be shared to the user currently logged on to the Primary machine, or the user must have administrative access to the Secondary server.]
-  ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+To access the directory on the Secondary server, the directory must be shared to the user currently logged on to the Primary machine, or the user must have administrative access to the Secondary server.
+:::
 
 Press **Ctrl+V** to paste the files, or right click in the directory and
 select **Paste** from the menu.
@@ -624,9 +624,9 @@ could instead be managed through ENS if desired. For information on ENS,
 refer to [Event Notification](../../notifications/Components.md) in
 the **Concepts** online help.
 
-  ---------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White triangle icon on yellow circlular background](../../Resources/Images/caution-icon(48x48).png "Caution icon")   **CAUTION:** [If notifications are not configured on the SMAReplicationMonitor jobs, replication could fail without anyone noticing. While the method described below need not be used, SMA Technologies [strongly]{.ul} recommends that some form of automatic notification be configured.]
-  ---------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::caution
+If notifications are not configured on the SMAReplicationMonitor jobs, replication could fail without anyone noticing. While the method described below need not be used, SMA Technologies [strongly]{.ul} recommends that some form of automatic notification be configured.
+:::
 
 In EM Navigation under Administration:
 
@@ -658,13 +658,11 @@ a.  Replace **\<to\>** with the *email address to a cell phone number*.
 b.  Replace **\<message\>** with the message to deliver in the text.
     SMA Technologies recommends the following     message:\
     **Replication has failed on the OpConxps database. The \[\[$JOB     NAME\]\] job has failed**.
-    +----------------------------------+----------------------------------+
-    | ![White pencil/paper icon on     | **NOTE:** [The finished event    |     | gray circular                    | string would read:]  |
-    | background](../.                 | $NOTIFY:TEXTMSG,55512           |
-    | ./Resources/Images/note-icon(48x | 12\@cellprovider.com,Replication |
-    | 48).png "Note icon") | has failed on the OpConxps       |
-    |                                  | database. The \[\[$JOB NAME\]\] |     |                                  | job has failed.                  |
-    +----------------------------------+----------------------------------+
+    :::note
+    The finished event string would read:
+
+    $NOTIFY:TEXTMSG,5551212@cellprovider.com,Replication has failed on the OpConxps database. The [[$JOB NAME]] job has failed.
+    :::
 c.  Select all of the text defined for the \<to\> and \<message\> (all
     of the text should be highlighted gray).
 d.  Press **Ctrl + C** on the keyboard to copy the text for use with the
@@ -1332,4 +1330,3 @@ File Name**.
 View the SMAServMan, SAM, Critical, SMANetCom, and SMANetComTrace logs
 to verify that the SAM and SMANetCom connected successfully to the
 database.
-:::

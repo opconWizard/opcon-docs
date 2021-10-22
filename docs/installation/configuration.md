@@ -944,9 +944,9 @@ skip this section and proceed to [OpCon Server Configuration](#Finish).
     Schedule](../objects/schedules.md#report-generator-schedule)
      in the **Concepts** online help.
 
-  --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White "X" icon on red circular background](../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Backing up the OpCon database and the transaction log regularly is an extremely important aspect of operating OpCon. If the transaction log is not backed up regularly, the hard drive eventually fills up and OpCon discontinues processing.]
-  --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::warning
+Backing up the OpCon database and the transaction log regularly is an extremely important aspect of operating OpCon. If the transaction log is not backed up regularly, the hard drive eventually fills up and OpCon discontinues processing.
+:::
 
 [Create DSNs for the Transport Databases]{.ul}
 The first time the utility is activated, there is a prompt to select a

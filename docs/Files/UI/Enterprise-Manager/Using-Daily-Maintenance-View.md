@@ -3,29 +3,11 @@
 The **Daily Maintenance** view gives the users the ability to manage
 daily schedules and validate the job dependencies in the Daily tables.
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [If there is a need to | | gray circular                    | keep schedules in the Daily      |
-| background](../../.              | tables for longer than a single  |
-| ./Resources/Images/note-icon(48x | day, [SMA                        | | 48).png "Note icon") | Te                               |
-|                                  | chnologies]{.GeneralCompanyName} |
-|                                  | recommends that no more than two |
-|                                  | weeks of schedules be kept. The  |
-|                                  | SAM-SS performs better when      |
-|                                  | there are fewer days of          |
-|                                  | schedules built. ]   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | [For you to perform any of the   | |                                  | Daily Maintenance functions, you |
-|                                  | must have all the appropriate    |
-|                                  | privileges. For additional       |
-|                                  | information, refer to            |
-|                                  | [Departmental Function           | |                                  | Privileges](                     |
-|                                  | ../../Concepts/Departmental-Fu |
-|                                  | nction-Privileges.md) |
-|                                  |  in the **Concepts**       |
-|                                  | online help.]        |
-+----------------------------------+----------------------------------+
+:::note
+If there is a need to keep schedules in the Daily tables for longer than a single day, SMA Technologies recommends that no more than two weeks of schedules be kept. The SAM-SS performs better when there are fewer days of schedules built.
+
+For you to perform any of the Daily Maintenance functions, you must have all the appropriate privileges. For additional information, refer to Departmental Function Privileges(../../../administration/privileges.md#departmental-function-privileges) in the Concepts online help.
+:::
 
 When on the **Daily Maintenance** view, it gives you the ability to
 check and/or delete daily schedules, validate job dependencies in the

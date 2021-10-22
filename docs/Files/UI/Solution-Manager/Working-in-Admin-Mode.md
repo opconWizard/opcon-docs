@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Working in Admin Mode
-viewport: width=device-width, initial-scale=1.0
----
-
 # Working in Admin Mode
 
 Users in the «ocadm» role or a role with the «Maintain Service Request»
@@ -14,9 +8,9 @@ Admin Mode Self Service Page Display
 
 ![Admin Mode Self Service Screen Display](../../../Resources/Images/SM/Service-Request-View-Admin.png "Admin Mode Self Service Screen Display")
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [For more information about Function Privileges including those pertaining to the Maintaining Service Requests, refer to [Function Privileges](../../../administration/privileges.md#function-privileges) in the **Concepts** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+For more information about Function Privileges including those pertaining to the Maintaining Service Requests, refer to [Function Privileges](../../../administration/privileges.md#function-privileges) in the **Concepts** online help.
+:::
 
 From this page, you can do any of the following:
 
@@ -28,4 +22,3 @@ From this page, you can do any of the following:
 - [Set up Privileges](Setting-up-Privileges.md)
 - [Set up User Inputs](Setting-up-User-Inputs.md)
 - [View Service Request     Processes](Viewing-Service-Request-Process-Indicators.md)
-:::

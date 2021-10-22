@@ -1,12 +1,6 @@
----
-lang: en-us
-title: Navigation Editors
-viewport: width=device-width, initial-scale=1.0
----
-
 # Navigation Editors
 
-[]{#aanchor228} In the Enterprise Manager, the Navigation Editors(e.g., Schedule Master, Job Master, Calendars, Global Properties, Thresholds,
+In the Enterprise Manager, the Navigation Editors(e.g., Schedule Master, Job Master, Calendars, Global Properties, Thresholds,
 Resources, Machines, Machine Groups, Server Options, Roles, User
 Accounts, Batch Users, Departments, Access Codes, Privileges) provide
 screens to update information stored in the
@@ -17,32 +11,30 @@ opened at the same time, but only one can be active at a time.
 
 To perform the procedure:
 
-1.  Click on the arrow to expand a Navigation topic in the [Navigation     Panel](Navigation-Panel.md) to the left of the screen.
-2.  Double-click on the **Navigation Editor**(e.g., **Schedule
+1. Click on the arrow to expand a Navigation topic in the [Navigation     Panel](Navigation-Panel.md) to the left of the screen.
+2. Double-click on the **Navigation Editor**(e.g., **Schedule
     Master**).
-3.  *(Optional)* Click on and drag the **Navigation
+3. *(Optional)* Click on and drag the **Navigation
     Editor** tab onto the tab bar if not already attached.
-4.  Repeat [Step 2]{.ul} to open more editors.
+4. Repeat [Step 2]{.ul} to open more editors.
 
 ## Changing Navigation Editor Tab Order
 
 Click on and drag then release the specific **Navigation Editor** tab
 that needs to be moved to the new location on the tab bar.
 
- 
-
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [A stack symbol (![Three white folders with black borders stacked](../../../Resources/Images/EM/stacked-folders.png "Stacked icon")) will appear as you drag the view over other editor tabs.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+A stack symbol (![Three white folders with black borders stacked](../../../Resources/Images/EM/stacked-folders.png "Stacked icon")) will appear as you drag the view over other editor tabs.
+:::
 
 ## Arranging Navigation Editors
 
 To perform the procedure:
 
-1.  Click on and drag the specific **Navigation Editor** tab in the
+1. Click on and drag the specific **Navigation Editor** tab in the
     direction where you want the editor to display (e.g., drag the tab
     to the left, right, top, or bottom of screen).
-2.  Release the **Navigation Editor** tab once the stack symbol has
+2. Release the **Navigation Editor** tab once the stack symbol has
     changed to the arrow symbol. The **Navigation Editor** will drop
     into place.
 
@@ -56,21 +48,21 @@ on any **Navigation Editor** tab.
 **Move**: Allows one editor or the editor tab group to become free to
 move to another location.
 
--   Editor: Allows the editor to move to a new location.
--   Tab Group: If two or more editors sit side by side to be grouped
+- Editor: Allows the editor to move to a new location.
+- Tab Group: If two or more editors sit side by side to be grouped
     together, allows the editor tab group to move to a new location.
 
 **Size**: Provides a bold border to make it easier to adjust the size of
 the editor pane.
 
--   Left: Turns the left side of the border for the editor bold to make
+- Left: Turns the left side of the border for the editor bold to make
     it easy to grab with the mouse pointer to drag to a preferred size.
--   Right: Turns the right side of the border for the editor bold to
+- Right: Turns the right side of the border for the editor bold to
     make it easy to grab with the mouse pointer to drag to a preferred
     size.
--   Top: Turns the top side of the border for the editor bold to make it
+- Top: Turns the top side of the border for the editor bold to make it
     easy to grab with the mouse pointer to drag to a preferred size.
--   Bottom: Turns the bottom side of the border for the editor bold to
+- Bottom: Turns the bottom side of the border for the editor bold to
     make it easy to grab with the mouse pointer to drag to a preferred
     size.
 
@@ -86,7 +78,3 @@ vertical sidebar.
 **Close All**: Closes all open editors.
 
 **New Editor**: Opens a new editor of the same one currently selected.
-:::
-
- 
-

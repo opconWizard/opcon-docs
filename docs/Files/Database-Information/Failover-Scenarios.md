@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Failover Scenarios
-viewport: width=device-width, initial-scale=1.0
----
-
 # Failover Scenarios
 
 ## Introduction
@@ -54,13 +48,13 @@ configured, Automatic Failover can occur in the following, situations:
 - The Secondary SMAServMan only starts its application group based on
     criteria defined by a user.
 
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [When the Secondary SMAServMan's application group is active, starting the Primary SMAServMan has no effect.]
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------
+:::note
+When the Secondary SMAServMan's application group is active, starting the Primary SMAServMan has no effect.
+:::
 
-  ----------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The administrator must activate at least one failover option in the Secondary SMAServMan's configuration file for automatic failover to occur.]
-  ----------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The administrator must activate at least one failover option in the Secondary SMAServMan's configuration file for automatic failover to occur.
+:::
 
 ### Choosing Failover Triggers
 
@@ -94,9 +88,9 @@ Secondary SMAServMan determines connection loss based on lack of ping
 response from the Primary SMAServMan, there is no distinction between a
 temporary network problem and a primary machine crash.
 
-  --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [If configuring the Secondary SMAServMan to take control of processing upon connection loss, the customer must guarantee network connectivity.]
-  --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If configuring the Secondary SMAServMan to take control of processing upon connection loss, the customer must guarantee network connectivity.
+:::
 
 For information on configuring failover based on abnormal shutdown on
 the Primary, refer to the
@@ -652,9 +646,9 @@ indicate SMAServMan's expected behavior.
 The following table presents the general steps when the Primary and
 Secondary SMAServMan's fail to synchronize.
 
-  ----------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Secondary SMAServMan.ini file is configured not to failover when there is a synchronization failure.]
-  ----------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Secondary SMAServMan.ini file is configured not to failover when there is a synchronization failure.
+:::
 
   Step   Description
   ------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -93,24 +93,17 @@ Fields that do not allow exceptions will be handled during schedule build time.
 
 In the To Replace field:
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [[Steps 18 - 20]{.ul}  |
-| gray circular                    | will apply to all predefined job |
-| background](../../.              | fields, except Job Build Status. |
-| ./Resources/Images/note-icon(48x | For Job Build Status, you need   |
-| 48).png "Note icon") | only select one of the following |
-|                                  | replacement values from the      |
-|                                  | **New Value** drop-down          |
-|                                  | list:]               |
-|                                  |                                  |
-|                                  | -   Cancelled                    |
-|                                  | -   Disable Build                |
-|                                  | -   On Hold                      |
-|                                  | -   Release                      |
-|                                  | -   To Be Skipped                |
-|                                  |                                  |
-|                                  | Then, proceed to [Step 21]{.ul}. |
-+----------------------------------+----------------------------------+
+:::note
+Steps 18 - 20 will apply to all predefined job fields, except Job Build Status. For Job Build Status, you need only select one of the following replacement values from the New Value drop-down list:
+
+- Cancelled
+- Disable Build
+- On Hold
+- Release
+- To Be Skipped
+
+Then, proceed to Step 21.
+:::
 
 Provide the existing string to replace (or leave this blank to replace
 everything) in the job field.

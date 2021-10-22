@@ -339,7 +339,7 @@ The following information applies to defining Step Control:
             JEVENT=eventname, and sent like any other message.
     - Message **$JOB:GOOD** will set the job to a [Finished             OK]{.skd-job-statuses} status immediately.
     - Message **$JOB:BAD** will set the job to a
-            [Failed]{.skd-job-statuses} status immediately.         -   Message **$S=jobstep\[.procstep\]** will set the job's
+            Failed status immediately.         -   Message **$S=jobstep\[.procstep\]** will set the job's
             restart step to *jobstep\[.procstep*\].
   - Refer to [Using the XPSCOMM Interface         Routine](https://help.smatechnologies.com/opcon/agents/zos/latest/Files/Agents/zOS/Advanced-Features.md#Using)
          in the **z/OS LSAM** online help for information on
@@ -789,7 +789,8 @@ Within the z/OS LSAM, it is possible to trap and track events submitted outside 
 three possible approaches to Non-Schedule Event Tracking.
 
 1. Define a single job name "mask" that is always trapped by the z/OS
-    LSAM; 2.  Define from one to eight single character JES execution classes to
+    LSAM;
+2. Define from one to eight single character JES execution classes to
     monitor and trap for tracking;
 3. Insert a tracking indicator ("T" or "Q") as the continuation
     character of the first Job card on any batch job requiring tracking.
@@ -827,34 +828,15 @@ starting in column 59 overrides the AdHoc schedule name default. This
 allows the scheduling of a job through any schedule on
 OpCon.
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [The @ character is an | | gray circular                    | indicator flag, and not part of  |
-| background](../.                 | the schedule name.]  |
-| ./Resources/Images/note-icon(48x |                                  |
-| 48).png "Note icon") |                                  |
-|                                  |                                  |
-|                                  | [The requested schedule must     | |                                  | exist on the CURRENT day, or     |
-|                                  | dynamic tracking fails. The      |
-|                                  | "AdHoc" schedule always exists |
-|                                  | or will be added automatically.  |
-|                                  | Note: ]              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | [When the 'Q' continuation     | |                                  | character is used and a schedule |
-|                                  | name is supplied on the job      |
-|                                  | card, the job will be added to   |
-|                                  | the LATEST date with the         |
-|                                  | schedule. This helps to link     |
-|                                  | jobs across the "midnight       |
-|                                  | boundary".]         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | [The default schedule name can   | |                                  | be changed from AdHoc by         |
-|                                  | defining the TRACSCHD parameter  |
-|                                  | in XPSPARMS.]        |
-+----------------------------------+----------------------------------+
+:::note
+The @ character is an indicator flag, and not part of the schedule name.
+
+The requested schedule must exist on the CURRENT day, or dynamic tracking fails. The "AdHoc" schedule always exists or will be added automatically. Note:
+
+When the 'Q' continuation character is used and a schedule name is supplied on the job card, the job will be added to the LATEST date with the schedule. This helps to link jobs across the "midnight boundary".
+
+The default schedule name can be changed from AdHoc by defining the TRACSCHD parameter in XPSPARMS.
+:::
 
 ### Assigning a Date, Schedule, Job and Frequency to a Job
 

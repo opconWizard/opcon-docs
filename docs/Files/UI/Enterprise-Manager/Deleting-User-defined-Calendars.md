@@ -1,14 +1,8 @@
----
-lang: en-us
-title: Deleting Un-used User-defined Calendars
-viewport: width=device-width, initial-scale=1.0
----
-
 # Deleting Un-used User-defined Calendars
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [SMA Technologies recommends deleting user-defined calendars that are no longer in use. This helps control the size of the tables in the database. Holiday calendars are automatically deleted if the associated schedule is deleted.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+SMA Technologies recommends deleting user-defined calendars that are no longer in use. This helps control the size of the tables in the database. Holiday calendars are automatically deleted if the associated schedule is deleted.
+:::
 
 To delete an un-used calendar:
 
@@ -57,4 +51,3 @@ Delete the Calendar
     button to cancel the deletion.
 7. Click **Close ☒** (to the right of the **Calendars** tab) to close
     the **Calendars** screen.
-:::

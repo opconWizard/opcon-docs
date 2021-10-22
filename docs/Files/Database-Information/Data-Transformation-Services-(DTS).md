@@ -268,9 +268,9 @@ below). In the case of errors, the command file produces several output
 files in the \<Output Directory\>\\SAM\\Log\\ directory to aid in
 support. Each log file is named for its respective SQL script.
 
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Output Directory was configured during installation. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Output Directory was configured during installation. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 The following scripts are located in the \<Configuration
 Directory\>\\Utilities\\Database\\ directory:
@@ -282,9 +282,9 @@ Directory\>\\Utilities\\Database\\ directory:
 - PDSA Framework Scrip
 - PDSA Framework Data Script
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 For additional information on the SQL scripts, refer to [OpCon Database Scripts](../Installation/OpCon-Database-Scripts.md)
 in the **OpCon Installation** online help.
@@ -316,9 +316,9 @@ The following list describes the parameters for the commands:
 
 #### Execute the Command Script
 
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [To successfully execute the DB_Update_WinAuth.cmd file, the administrator must be logged in to the SAM application server as an Active Directory User with privileges to the "sysadmin" server role on the SQL Server.]
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+To successfully execute the DB_Update_WinAuth.cmd file, the administrator must be logged in to the SAM application server as an Active Directory User with privileges to the "sysadmin" server role on the SQL Server.
+:::
 
 1. Use menu path: **Start \> Run**.
 2. Enter *cmd* in the **Open** text box.
@@ -344,4 +344,3 @@ continue normally.
 4. Click **SMA Service Manager**.
 5. Click **Start** on the toolbar to start the service.
 6. Click **Close ☒** on the **Services** window.
-:::

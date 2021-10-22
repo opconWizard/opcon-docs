@@ -482,23 +482,15 @@ Output sub-type.
 The following information applies to the Episys: FTP all Reports in List
 sub-type.
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [The destination       | | gray circular                    | server must allow FTP to be able |
-| background](../.                 | to use this sub-type. Verify FTP |
-| ./Resources/Images/note-icon(48x | is allowed by going to the SAM   |
-| 48).png "Note icon") | server and starting a command    |
-|                                  | prompt. Type the following       |
-|                                  | command :]           |
-|                                  |                                  |
-|                                  | telnet *DestinationServer* 21    |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | (21 is the default FTP server    |
-|                                  | port. Replace                    |
-|                                  | *DestinationServer* with the     |
-|                                  | desired server name.)            |
-+----------------------------------+----------------------------------+
+:::note
+The destination server must allow FTP to be able to use this sub-type. Verify FTP is allowed by going to the SAM server and starting a command prompt. Type the following command :
+
+```bash
+telnet DestinationServer 21
+```
+
+(21 is the default FTP server port. Replace DestinationServer with the desired server name.)
+:::
 
 - **Group ID/User ID**: Defines the UNIX Group ID and User ID assigned
     to the job for UNIX security authentication. These numbers (e.g.,

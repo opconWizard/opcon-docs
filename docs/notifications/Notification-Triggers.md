@@ -235,11 +235,11 @@ Daily was derived from the selected job in the Master.
 |                               |                                     |
 |                               |      [Submitted]{.skd-job-statuses} | |                               |         to                          |
 |                               |                                     |
-|                               |        [Failed]{.skd-job-statuses}. | |                               |         A job only goes straight    |
+|                               |        Failed. | |                               |         A job only goes straight    |
 |                               |         from                        |
 |                               |                                     |
 |                               |      [Submitted]{.skd-job-statuses} | |                               |         to                          |
-|                               |         [Failed]{.skd-job-statuses} | |                               |         for a very short running    |
+|                               |         Failed | |                               |         for a very short running    |
 |                               |         job that never returns a    |
 |                               |                                     |
 |                               |        [Running]{.skd-job-statuses} | |                               |         status. This trigger does   |
@@ -266,13 +266,13 @@ Daily was derived from the selected job in the Master.
 |                               | of [Finished                        | |                               | OK]{.skd-job-statuses}.             |
 +-------------------------------+-------------------------------------+
 | Job Failed                    | The job has completed with a status |
-|                               | of [Failed]{.skd-job-statuses}.     | +-------------------------------+-------------------------------------+
+|                               | of Failed.     | +-------------------------------+-------------------------------------+
 | Job Marked Finished OK        | The job was marked [Finished        | |                               | OK]{.skd-job-statuses} by an        |
 |                               | OpCon    |
 |                               | event or a user.                    |
 +-------------------------------+-------------------------------------+
 | Job Marked Failed             | The job was marked                  |
-|                               | [Failed]{.skd-job-statuses} by an   | |                               | OpCon    |
+|                               | Failed by an   | |                               | OpCon    |
 |                               | event or a user.                    |
 +-------------------------------+-------------------------------------+
 | Job Cancelled                 | A job was cancelled by an           |

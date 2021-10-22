@@ -31,9 +31,9 @@ page in the form of a breadcrumb trail.
 Click on the job record (e.g., 1 job(s)) in the status bar to display
 the **Selection** panel.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.
+:::
 
 Select the **Job Output** accordion-style tab in the panel.
 
@@ -44,9 +44,9 @@ job output files for the selected job. When clicked, the button toggles
 to **Cancel**. At any time during the refresh, you can click the
 **Cancel** button to cancel the action.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Refresh** button will be disabled in the panel if no job output is available for the selected job.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
+:::note
+The **Refresh** button will be disabled in the panel if no job output is available for the selected job.
+:::
 
 Click on any **Job Output** button that displays after the refresh to
 view the job output file.
@@ -75,4 +75,3 @@ Related Topics
 - [Performing Agent Status     Updates](Performing-Agent-Status-Updates.md)
 - [Using PERT View](Using-PERT-View.md)
 - [Managing Daily Processes](Managing-Daily-Processes.md)
-:::

@@ -24,9 +24,9 @@ Enter the *remote server database*.
 
 Specify the authentication method to connect to the database.
 
--   If using Windows Authentication, select the **Windows
+- If using Windows Authentication, select the **Windows
     Authentication** checkbox.
--   If using SQL Authentication, enter a valid *username* and *password*
+- If using SQL Authentication, enter a valid *username* and *password*
     in the provided fields.
 
 In the Options frame:
@@ -37,13 +37,9 @@ mirroring. This will ensure that the proper connection string is used.
 Select the **Transparent IP Network Resolution** method: Auto, Disabled,
 or Enabled.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Auto resolution, in most cases, in best for ensuring that the connection is successful.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------
+:::note
+Auto resolution, in most cases, in best for ensuring that the connection is successful.
+:::
 
 Click ![Save icon](../../../Resources/Images/EM/EMsave.png "Save icon")
 **Save** on the **Remote Instances** toolbar.
-:::
-
- 
-

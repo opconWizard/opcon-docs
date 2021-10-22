@@ -18,13 +18,13 @@ In **Admin** mode, job frequencies can be updated. For conceptual
 information, refer to [Job Frequency](../../../job-components/frequency.md) in the
 **Concepts** online help.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.
+:::
 
 To perform this procedure:
 
@@ -50,9 +50,9 @@ page in the form of a breadcrumb trail.
 Click on the job record (e.g., 1 job(s)) in the status bar to display
 the **Selection** panel.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.
+:::
 
 ![Job Summary Tab in Operations](../../../Resources/Images/SM/Job-Summary-Tab-(UNIX).png "Job Summary Tab in Operations")
 
@@ -66,9 +66,9 @@ will switch to display a white lock unlocked on a green background
 ![Daily Job Definition Admin Switch](../../../Resources/Images/SM/Daily-Job-Definition-Admin-Button.png "Daily Job Definition Admin Switch")
 when enabled.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Lock** button will not be visible to users who do not have the appropriate permissions.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
+:::note
+The **Lock** button will not be visible to users who do not have the appropriate permissions.
+:::
 
 Expand the **Frequency** panel to expose its content.
 
@@ -111,17 +111,17 @@ Enter the positive number of hours and minutes to offset the
 Late-To-Start Offset from the job Start Offset (taking into
 consideration the Absolute or Relative setting).
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the time arrives and the job has not yet started, it will be set to a status of [Late to Start]{.skd-job-statuses}. The time at which the job will be set to a status of [Late to Start]{.skd-job-statuses} is calculated by adding the **Schedule Start Time + Job Start Offset + Late to Start**. The default value of 00:00 disables this feature.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If the time arrives and the job has not yet started, it will be set to a status of [Late to Start]{.skd-job-statuses}. The time at which the job will be set to a status of [Late to Start]{.skd-job-statuses} is calculated by adding the **Schedule Start Time + Job Start Offset + Late to Start**. The default value of 00:00 disables this feature.
+:::
 
 Enter the positive number of hours and minutes to offset the
 Late-To-Finish Offset from the job Start Offset (taking into
 consideration the Absolute or Relative setting).
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the time arrives and the job is still running, it will be set to a status of [Running; Late to Finish]{.skd-job-statuses}. The time at which the job will be set to a status of [Late to Finish]{.skd-job-statuses} is calculated by adding the **Schedule Start Time + Job Start Offset + Late to Finish**. The default value of 00:00 disables this feature.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If the time arrives and the job is still running, it will be set to a status of [Running; Late to Finish]{.skd-job-statuses}. The time at which the job will be set to a status of [Late to Finish]{.skd-job-statuses} is calculated by adding the **Schedule Start Time + Job Start Offset + Late to Finish**. The default value of 00:00 disables this feature.
+:::
 
 **In the Latest Offset frame:**
 
@@ -142,9 +142,9 @@ Enter the positive number of hours and minutes to offset the latest
 start time of the job from the start time of the schedule (Latest Start
 Offset).
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [ If the latest start time is passed before the job qualifies for execution, the job is set to a Missed Latest Start Time status and will not automatically execute. The default value of 00:00 disables the feature.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If the latest start time is passed before the job qualifies for execution, the job is set to a Missed Latest Start Time status and will not automatically execute. The default value of 00:00 disables the feature.
+:::
 
 **In the Job Start Time Estimation Method frame:**
 
@@ -180,9 +180,9 @@ Specify a number for the job's priority, zero (0) being the lowest.
 Either manually input the priority number or utilize the input field
 selectors to make your selections.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the SAM can submit more jobs at the same time to a machine than the machine allows, the SAM uses the priority values to submit the most important jobs first.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If the SAM can submit more jobs at the same time to a machine than the machine allows, the SAM uses the priority values to submit the most important jobs first.
+:::
 
 Specify the maximum run time in minutes for the job. Either manually
 input the maximum run time or utilize the input field selectors to make
@@ -205,9 +205,9 @@ Specify the maximum number of restart attempts that should be made.
 Either manually input the number or utilize the input field selectors to
 make your selections.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Retry feature is useful for situations where a job may fail because of timing (e.g., a database is currently unavailable, or a file has not yet arrived). OpCon will process the events, threshold/resource updates, and subsequent job dependencies only upon job failure after the maximum retry.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Retry feature is useful for situations where a job may fail because of timing (e.g., a database is currently unavailable, or a file has not yet arrived). OpCon will process the events, threshold/resource updates, and subsequent job dependencies only upon job failure after the maximum retry.
+:::
 
 **In the When Job Finishes Ok frame:**
 
@@ -259,10 +259,8 @@ are:
 - **Number of Runs**: This option is used to specify the total number
     of times for the recurring job to run.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Click the **Undo** button if you wish to undo your changes for any reason.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+:::note
+Click the **Undo** button if you wish to undo your changes for any reason.
+:::
 
 Click the **Save** button.
-
-:::

@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Configuring Settings
-viewport: width=device-width, initial-scale=1.0
----
-
 # Configuring Settings
 
 To configure user settings:
@@ -72,9 +66,9 @@ application. Refresh intervals can be set for the following services:
 
 ## Debug
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Debug** section will only appear if a member of the ocadm role has not disabled your ability to configure custom debug settings.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The **Debug** section will only appear if a member of the ocadm role has not disabled your ability to configure custom debug settings.
+:::
 
 The **Debug** section allows you to configure debugging in the
 application by utilizing the **Global Settings** switch. If the switch
@@ -116,7 +110,6 @@ following options will become available for configuration:
             to configure the logs to be sent on the max size to keep
             limit (from 0 to 5000 kilobytes).
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [In instances where you are able to reproduce an issue in the application, you can also utilize the **InstantLog Mode** feature to generate a temporary log file to send to the Support team. For more information about how to activate this feature, refer to [InstantLog Mode](SM-UI-Layout.md#InstantLog).]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+In instances where you are able to reproduce an issue in the application, you can also utilize the **InstantLog Mode** feature to generate a temporary log file to send to the Support team. For more information about how to activate this feature, refer to [InstantLog Mode](SM-UI-Layout.md#InstantLog).
 :::

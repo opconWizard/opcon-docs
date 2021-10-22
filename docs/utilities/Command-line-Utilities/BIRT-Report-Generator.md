@@ -43,16 +43,12 @@ The following describes the command-line parameters:
         PDF.
   - Valid options are PDF, HTML, and XLS.
 
-    +----------------------------------+----------------------------------+
-    | ![White pencil/paper icon on     | **NOTE:** [When reports are      |     | gray circular                    | exported to XLS format, the      |
-    | background](../../.              | following limitations are        |
-    | ./Resources/Images/note-icon(48x | applied: ]           |
-    | 48).png "Note icon") |                                  |
-    |                                  | -   [The final XLS file will not |     |                                  |     contain the report header    |
-    |                                  |     and footer. ]    |
-    |                                  | -   [Report charts are not       |     |                                  |     exported into the XLM        |
-    |                                  |     format.]         |
-    +----------------------------------+----------------------------------+
+    :::note
+    When reports are exported to XLS format, the following limitations are applied:
+
+    - The final XLS file will not contain the report header and footer.
+    - Report charts are not exported into the XLM format.
+    :::
 
 **-o** \<output target file\>: Defines the path or email address to send
 the report to.
@@ -100,39 +96,6 @@ User_Name and User_Password parameters:\
 \
 -p
 "Driver_URL=jdbc:jtds:sqlserver://servername/databasename;domain=\<name\>"
-
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [If the SAM is         | | gray circular                    | installed on a 32-bit machine    |
-| background](../../.              | and the SQL Database is on a     |
-| ./Resources/Images/note-icon(48x | remote machine, you must choose  |
-| 48).png "Note icon") | one of the following options to  |
-|                                  | enable BIRTrptGen.exe to run     |
-|                                  | reports using Windows            |
-|                                  | Authentication:]     |
-|                                  |                                  |
-|                                  | -   [Configure SMA Service       | |                                  |     Manager to run as a domain   |
-|                                  |     user that is in the Active   |
-|                                  |     Directory Group that was     |
-|                                  |     configured during            |
-|                                  |     installation.For more        |
-|                                  |     information, refer to [OpCon | |                                  |     Server                       |
-|                                  |     Configuration](..            |
-|                                  | /../Installation/OpCon-Server% |
-|                                  | 20Configuration.md#Add) |
-|                                  |      in the **OpCon        |
-|                                  |     Installation** online        |
-|                                  |     help.]           |
-|                                  | -   [Add a Login named "NT      | |                                  |     AUTHORITY\\ANONYMOUS LOGON" |
-|                                  |     to SQL Server. Type the name |
-|                                  |     into the Login name field,   |
-|                                  |     and do not use the Search    |
-|                                  |     button. This is not a login  |
-|                                  |     that is searchable. In User  |
-|                                  |     Mapping, select the OpConxps |
-|                                  |     database and "opconxps"    |
-|                                  |     role                         |
-|                                  |     membership.]     |
-+----------------------------------+----------------------------------+
 
 []{#-p_User_Name}-p **User_Name**
 

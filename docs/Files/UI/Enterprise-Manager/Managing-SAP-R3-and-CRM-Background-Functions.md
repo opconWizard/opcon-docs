@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Managing SAP R/3 and CRM Background Functions
-viewport: width=device-width, initial-scale=1.0
----
-
 # Managing SAP R/3 and CRM Background Functions
 
 ## SAP Login
@@ -40,9 +34,9 @@ Events,** and **Event Profiles.**
 The **SAP Event Driven Automation** screen provides a list of triggers
 to define for a job.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [An event profile which monitors the SAP events defined in Event Driven Automation must be created and active on the SAP system for Event Driven Automation to work.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+An event profile which monitors the SAP events defined in Event Driven Automation must be created and active on the SAP system for Event Driven Automation to work.
+:::
 
 - **Add**: Click the **Add** button to create a new trigger.
 - **Remove**: Click the **Remove** button to delete a trigger.
@@ -151,9 +145,9 @@ Related Topics
 The **View Intercepted SAP Jobs** screen contains a list of numbers for
 all intercepted SAP jobs. Below is a brief explanation of the screen.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Click on the specific column header to sort in ascending or descending order.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------
+:::note
+Click on the specific column header to sort in ascending or descending order.
+:::
 
 - **Job Name**: Contains the intercepted SAP job names.
 - **Job Number**: Contains the intercepted SAP job numbers.
@@ -243,5 +237,3 @@ occurring on the SAP system should be monitored.
 Related Topics
 
 - [Managing Event Profiles](Managing-Event-Profiles.md)
-
-:::

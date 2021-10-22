@@ -354,9 +354,9 @@ Delete arguments by:
 a.  Selecting the desired row in the defined arguments table.
 b.  Clicking the **Remove** button.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** A special argument definition, JAVA_JVM_ARGS, can be used to point to a global property that contains a list of arguments defined in arg=value pairs separated by a comma (e.g., JAVA_JVM_ARGS=\[\[GLOBAL_PROPERTY\]\], where \[\[GLOBAL_PROPERTY\]\]=\[\[arg1=value1,arg2=value2\]\]).
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+A special argument definition, JAVA_JVM_ARGS, can be used to point to a global property that contains a list of arguments defined in arg=value pairs separated by a comma (e.g., JAVA_JVM_ARGS=\[\[GLOBAL_PROPERTY\]\], where \[\[GLOBAL_PROPERTY\]\]=\[\[arg1=value1,arg2=value2\]\]).
+:::
 
 Managing Items in the Environment Variables tab
 
@@ -376,9 +376,9 @@ Delete variables by:
 a.  Selecting the desired row in the defined variables table.
 b.  Clicking the **Remove** button.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [A special argument definition, JAVA_ENV_VARS, can be used to point to a global property that contains a list of environment variables defined in env=value pairs separated by a comma (e.g., JAVA_ENV_VARS=\[\[GLOBAL_PROPERTY\]\], where \[\[GLOBAL_PROPERTY\]\]=\[\[name1=value1,name2=value2\]\]).]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+A special argument definition, JAVA_ENV_VARS, can be used to point to a global property that contains a list of environment variables defined in env=value pairs separated by a comma (e.g., JAVA_ENV_VARS=\[\[GLOBAL_PROPERTY\]\], where \[\[GLOBAL_PROPERTY\]\]=\[\[name1=value1,name2=value2\]\]).
+:::
 
 **In the Failure Criteria frame:**
 
@@ -462,9 +462,9 @@ Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
 Then, proceed to [Step 2]{.ul} below to define the platform-specific job
 information.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [To define the OpCon job for an SAP R/3 and CRM Tracked or Queued job, do not define any SAP-specific details and click ![](../../../Resources/Images/EM/EMsave.png) **Save** on the **Job Master**] toolbar.
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+To define the OpCon job for an SAP R/3 and CRM Tracked or Queued job, do not define any SAP-specific details and click ![Save](../../../Resources/Images/EM/EMsave.png) **Save** on the **Job Master**] toolbar.
+:::
 
 **In the SAP R/3 and CRM Definition frame:**
 
@@ -1030,9 +1030,9 @@ To define job details:
     Name** text box. Windows wildcard characters are supported in the
     file name (e.g., C:\\Folder\\Filename?ABC\*.txt).
 
-      --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      ![White pencil/paper icon on gray circlular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Standard Windows wildcard characters include the asterisk (\*) for zero or more characters, and the question mark (?) for a single character.]
-      --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   :::note
+   Standard Windows wildcard characters include the asterisk (\*) for zero or more characters, and the question mark (?) for a single character.
+   :::
 
 4. Specify the time frame (*Start Time* and *End Time*) within which
     the file must arrive in the directory.
@@ -1579,4 +1579,3 @@ i.  Pasting the contents of the clipboard into the editor.
 j.  Clicking the **OK** button.
 k.  Clicking the **Save JCL** button.
 l.  Closing the **JCL/Sysout Access** dialog.
-:::

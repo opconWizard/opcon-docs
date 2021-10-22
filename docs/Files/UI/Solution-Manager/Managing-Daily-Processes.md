@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Managing Daily Processes
-viewport: width=device-width, initial-scale=1.0
----
-
 # Managing Daily Processes
 
 The ![Processes Button](../../../Resources/Images/SM/Processes-Button.png "Processes Button")
@@ -55,9 +49,9 @@ To create a filter profile:
 
 Set the desired filter(s) in the Operations **Processes** view.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Keep in mind that any changes that you make to affect the column state of the grids (e.g., hiding columns) will not be stored by the filter profile.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Keep in mind that any changes that you make to affect the column state of the grids (e.g., hiding columns) will not be stored by the filter profile.
+:::
 
 Click the **Advanced** button (![Filter Profile Advanced Button](../../../Resources/Images/SM/FilterProfileAdvancedButton.png "Filter Profile Advanced Button"))
 on the filter profile bar to expose the action buttons.
@@ -82,9 +76,9 @@ name (e.g., Test Filter (Private) or Test Filter (Role_ocadm)).
 Click the **Save** button (![Filter Profile Save Button](../../../Resources/Images/SM/FilterProfileSaveButton.png "Filter Profile Save Button"))
 to save the new filter profile.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Personal (private), public, or shared (those shared to and shared with) filter profiles are accessible from the **Filter Profile** drop-down list on the filter profile bar.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Personal (private), public, or shared (those shared to and shared with) filter profiles are accessible from the **Filter Profile** drop-down list on the filter profile bar.
+:::
 
 ### Modifying Filter Profiles
 
@@ -101,9 +95,9 @@ To modify a filter profile:
 4. Click the **Save** button (![Filter Profile Add     Button](../../../Resources/Images/SM/FilterProfileAddButton.png "Filter Profile Add Button"))
     to save the updates.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You could also use an existing filter profile as a base, modify it, and save it as a new filter profile. To do so, you would select the existing profile, modify the existing set of filters, click the **Add** button (![Filter Profile Add Button](../../../Resources/Images/SM/FilterProfileAddButton.png "Filter Profile Add Button")), enter a new name, configure sharing, and save it has a new filter profile.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+You could also use an existing filter profile as a base, modify it, and save it as a new filter profile. To do so, you would select the existing profile, modify the existing set of filters, click the **Add** button (![Filter Profile Add Button](../../../Resources/Images/SM/FilterProfileAddButton.png "Filter Profile Add Button")), enter a new name, configure sharing, and save it has a new filter profile.
+:::
 
 ### Deleting Filter Profiles
 
@@ -165,9 +159,9 @@ Quick Filtering
 
 ![Quick Filtering](../../../Resources/Images/SM/Quick-Filtering.png "Quick Filtering")
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Schedules filter bar also has a **Status** drop-down list which has the following options: Waiting, Held, In Progress, Completed, and Completed with Error(s). You can filter the list to display only those schedules that fall under the category of the selected status.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Schedules filter bar also has a **Status** drop-down list which has the following options: Waiting, Held, In Progress, Completed, and Completed with Error(s). You can filter the list to display only those schedules that fall under the category of the selected status.
+:::
 
 ### In-depth Filtering
 
@@ -250,4 +244,3 @@ Related Topics
 - [Performing Agent Status     Updates](Performing-Agent-Status-Updates.md)
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Using PERT View](Using-PERT-View.md)
-:::

@@ -339,66 +339,27 @@ Disable Replication
 To update the OpCon server components, perform the procedures in this
 section.
 
-[Install the OpCon Server]{.ul}
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** Upgrades can be        | | gray circular                    | considered major or minor        |
-| background](../.                 | depending on the version numbers |
-| ./Resources/Images/note-icon(48x | updated.                         |
-| 48).png "Note icon") |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | [Major Upgrade]{.ul}             | |                                  |                                  |
-|                                  | Qualifies as an upgrade where    |
-|                                  | the first and/or second number   |
-|                                  | in the version changes, e.g.,    |
-|                                  | upgrading from 1.0.0 to 1.1.0 or |
-|                                  | upgrading from 1.0.0 to 2.0.0,   |
-|                                  | and the package code changes in  |
-|                                  | the installer.                   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | During a major upgrade, if the   |
-|                                  | installer has configuration      |
-|                                  | screens, they will be displayed  |
-|                                  | for any new settings to be set   |
-|                                  | or existing settings to be       |
-|                                  | changed.                         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | All scripts that control file    |
-|                                  | importing, file merging, and     |
-|                                  | updating configuration options   |
-|                                  | will be run.                     |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | [Minor Upgrade]{.ul}             | |                                  |                                  |
-|                                  | Qualifies as an upgrade where    |
-|                                  | only the third number in the     |
-|                                  | version changes, e.g., upgrading |
-|                                  | from 1.0.0 to 1.0.1 or upgrading |
-|                                  | from 1.2.3 to 1.2.4, and the     |
-|                                  | package code in the installer    |
-|                                  | does not change.                 |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | During a minor upgrade, the      |
-|                                  | installer will display a welcome |
-|                                  | screen and then immediately      |
-|                                  | proceed to the ready to install  |
-|                                  | screen. No configuration screens |
-|                                  | will be presented.               |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | All scripts that control file    |
-|                                  | importing, file merging, and     |
-|                                  | updating configuration options   |
-|                                  | are disabled.                    |
-+----------------------------------+----------------------------------+
+#### Install the OpCon Server
+
+:::note
+Upgrades can be considered major or minor depending on the version numbers updated.
+
+**Major Upgrade**:
+
+Qualifies as an upgrade where the first and/or second number in the version changes, e.g., upgrading from 1.0.0 to 1.1.0 or upgrading from 1.0.0 to 2.0.0, and the package code changes in the installer.
+
+During a major upgrade, if the installer has configuration screens, they will be displayed for any new settings to be set or existing settings to be changed.
+
+All scripts that control file importing, file merging, and updating configuration options will be run.
+
+**Minor Upgrade**:
+
+Qualifies as an upgrade where only the third number in the version changes, e.g., upgrading from 1.0.0 to 1.0.1 or upgrading from 1.2.3 to 1.2.4, and the package code in the installer does not change.
+
+During a minor upgrade, the installer will display a welcome screen and then immediately proceed to the ready to install screen. No configuration screens will be presented.
+
+All scripts that control file importing, file merging, and updating configuration options are disabled.
+:::
 
 :::note
 The SAM installation configures the SMA Service Manager as a stand-alone service. If manual or hot failover is desired, refer to [Failover Scenarios](../Files/Database-Information/Failover-Scenarios.md) in the **Database Information** online help.
@@ -433,21 +394,6 @@ component installer, if selected.
 
 Complete the installer wizard for each component you selected in the
 OWI. For details about the specific installers, refer to [Component Installations](./components.md).
-
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [The OpCon Server      | | gray circular                    | should include the following     |
-| background](../.                 | components at a                  |
-| ./Resources/Images/note-icon(48x | minimum:]            |
-| 48).png "Note icon") |                                  |
-|                                  | -   [SMA                         | |                                  |     OpCon](Component-I         |
-|                                  | nstallations.md#SMA_OpCon_Core) |
-|                                  | -   [SMA OpCon Enterprise        | |                                  |     Manager](Compone             |
-|                                  | nt-Installations.md#Enterpri) |
-|                                  | -   [SMA OpCon Agent for         | |                                  |     Microsoft](<https://h>         |
-|                                  | elp.smatechnologies.com/opcon/ag |
-|                                  | ents/windows/latest/Files/Agents |
-|                                  | /Microsoft/Installation.md#New) |
-+----------------------------------+----------------------------------+
 
 [Configure the Server]{.ul}
 For information on configuring the server, refer to [OpCon Server Configuration](./components.md).

@@ -1,34 +1,28 @@
----
-lang: en-us
-title: Editing Schedules in Master Schedule Tables
-viewport: width=device-width, initial-scale=1.0
----
+# Editing Schedules in Master Schedule Tables
 
-#  Editing Schedules in Master Schedule Tables
-
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Changes made in the Master tables will take effect the next time the schedule is built.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------
+:::note
+Changes made in the Master tables will take effect the next time the schedule is built.
+:::
 
 To perform this procedure:
 
-1.  Double-click on **Daily Maintenance** under the **Operation** topic.
+1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2.  Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date** for the schedule to be
     edited.
-3.  Click on the **schedule** to edit.
-4.  Click on the **Edit Master** button in the **Maintenance** frame at
+3. Click on the **schedule** to edit.
+4. Click on the **Edit Master** button in the **Maintenance** frame at
     the bottom-right side of the screen. The **Schedule Master** screen
     displays.
-5.  *(Optional)* Click on the **Schedule** tab and enter
+5. *(Optional)* Click on the **Schedule** tab and enter
     the *changes*.
-6.  Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
+6. Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
     on the **Schedule Master** toolbar.
-7.  *(Optional)* Click on the **Frequency** tab. The
+7. *(Optional)* Click on the **Frequency** tab. The
     **Frequency Definition Wizard** displays.
-8.  Enter the *changes*.
-9.  Click the **Finish** button to save the changes.
+8. Enter the *changes*.
+9. Click the **Finish** button to save the changes.
 10. *(Optional)* Click on the **Events** tab. The
     **Event Definition Wizard** displays.
 11. Enter the *changes*.
@@ -37,7 +31,3 @@ To perform this procedure:
     close the **Schedule Master** screen.
 14. Click **Close ☒** (to the right of the **Daily Maintenance** tab) to
     close the **Daily Maintenance** screen.
-:::
-
- 
-

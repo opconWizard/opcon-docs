@@ -8,13 +8,13 @@ replication including the topics:
 - Restoring the database to the Publishing Database Server
 - Restoring replication
 
-  --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Failure to follow replication failover and recovery procedures in the proper order can result in data corruption. SMA Technologies has tested the following steps in the order listed to achieve successful replication failover and recovery.]
-  --------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::warning
+Failure to follow replication failover and recovery procedures in the proper order can result in data corruption. SMA Technologies has tested the following steps in the order listed to achieve successful replication failover and recovery.
+:::
 
-  --------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Exceeding the number of licensed machines (LSAMs) causes the license to be shortened to 30 days from date of license violation and will void the license key.]
-  --------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::warning
+Exceeding the number of licensed machines (LSAMs) causes the license to be shortened to 30 days from date of license violation and will void the license key.
+:::
 
 ## Automatic Failover to the Subscribing Database Server
 
@@ -29,9 +29,9 @@ up for processing, failover to the Subscribing OpCon Database Server.
 Complete the procedures below when replication is using either a push or
 a pull subscription.
 
-  ---------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White triangle icon on yellow circlular background](../../Resources/Images/caution-icon(48x48).png "Caution icon")   **CAUTION:** [The [Disable Replication]{.ul} procedure below can only be successful if the administrator configured the StopRepl.cmd or StopRepl_WinAuth.cmd file for the correct subscription type. For information on configuring the StopRepl.cmd file, refer to [Configuring Failover Scripts and the SMA Service Manager](Manual-Setup-for-Microsoft-SQL-Replication.md#Configur).]
-  ---------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::caution
+The [Disable Replication]{.ul} procedure below can only be successful if the administrator configured the StopRepl.cmd or StopRepl_WinAuth.cmd file for the correct subscription type. For information on configuring the StopRepl.cmd file, refer to [Configuring Failover Scripts and the SMA Service Manager](Manual-Setup-for-Microsoft-SQL-Replication.md#Configur).
+:::
 
 [Disable Replication]{.ul}
 
@@ -74,9 +74,9 @@ manual steps to restore processing to the primary server. If the SMA
 Replication schedules have been configured, use the
 SMAReplicationRecoverToPrimary schedule to restore.
 
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If the hard drive was lost, a new copy of Windows and MSSQL is on the server. Verify that all OpCon system requirements are met. Refer to [Getting Started](../../installation/system-requirements.md) in the **OpCon Installation** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If the hard drive was lost, a new copy of Windows and MSSQL is on the server. Verify that all OpCon system requirements are met. Refer to [Getting Started](../../installation/system-requirements.md) in the **OpCon Installation** online help.
+:::
 
 ### Stopping the SMA Service Manager on the Secondary Server
 
@@ -314,9 +314,9 @@ Click the **Execute** button or press **F5** to execute the query.
 
 ### Deleting Stored Procedures from Last Replication Setup
 
-  ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If using SQL Server Management Studio 2014, then you can skip this entire manual procedure. The stored procedures are automatically deleted by SQL Server during the process of stopping/turning off replication. If using an earlier version of SQL Server Management Studio, you must follow this procedure to delete the stored procedures.]
-  ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If using SQL Server Management Studio 2014, then you can skip this entire manual procedure. The stored procedures are automatically deleted by SQL Server during the process of stopping/turning off replication. If using an earlier version of SQL Server Management Studio, you must follow this procedure to delete the stored procedures.
+:::
 
 In order for SQL to work correctly after restoration, delete all stored
 procedures from the subscribing OpCon database created during the
@@ -358,9 +358,9 @@ In the Object Explorer Details frame:
 
 Select the *first procedure* starting with **sp_MS**.
 
-  ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If unable to see the Object Explorer Details frame, use menu path: View\>Object Explorer Details.]
-  ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
+:::note
+If unable to see the Object Explorer Details frame, use menu path: View\>Object Explorer Details.
+:::
 
 Press the **Shift** key on the keyboard then select the *last procedure*
 in the list beginning with **sp_MS**.
@@ -399,4 +399,3 @@ replication, refer to [Manual Setup for Microsoft SQL Replication](Manual-Setup-
 . For information on using the SMA Replication schedules, refer to
 [Setup for Automatic Microsoft SQL Replication](Setup-for-Automatic-Microsoft-SQL-Replication.md)
 .
-:::

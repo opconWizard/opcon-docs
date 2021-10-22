@@ -1,33 +1,27 @@
----
-lang: en-us
-title: Viewing Schedule and/or Job Information
-viewport: width=device-width, initial-scale=1.0
----
+# Viewing Schedule and/or Job Information
 
-#  Viewing Schedule and/or Job Information
-
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If a completed schedule contains failed jobs, it will show in [red]{style="color: #ff0000;"} by default (this is the default failed color for failed jobs) with the text like this: [ScheduleName (Completed -- Contains Failed Jobs)]{style="color: #ff0000;"}. If the schedule is still in progress, but contains failed jobs, it will look like this: [ScheduleName (In Progress -- Contains Failed Jobs)]{style="color: #ff0000;"}.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If a completed schedule contains failed jobs, it will show in [red]{style="color: #ff0000;"} by default (this is the default failed color for failed jobs) with the text like this: [ScheduleName (Completed -- Contains Failed Jobs)]{style="color: #ff0000;"}. If the schedule is still in progress, but contains failed jobs, it will look like this: [ScheduleName (In Progress -- Contains Failed Jobs)]{style="color: #ff0000;"}.
+:::
 
 To view schedule or job information:
 
-1.  Double-click on **Matrix** under the **Operation** topic. The
+1. Double-click on **Matrix** under the **Operation** topic. The
     **Matrix** screen displays.
-2.  *(Optional)* Right-click on a **schedule** in the
+2. *(Optional)* Right-click on a **schedule** in the
     schedule list.
-3.  Click on **Schedule Information** to view the schedule information.
-4.  Click the **OK** button to close the **Schedule Information**
+3. Click on **Schedule Information** to view the schedule information.
+4. Click the **OK** button to close the **Schedule Information**
     dialog.
-5.  *(Optional)* Click on a **schedule** in the schedule
+5. *(Optional)* Click on a **schedule** in the schedule
     list to view the job information in the **Job** table.
-6.  Double-click the **job** to open the **Job Information** dialog.
+6. Double-click the **job** to open the **Job Information** dialog.
     Alternatively, you can right-click on the **job** then click on
     **Job Information** to view additional job information.
-7.  Click the **OK** button to close the **Job Information** dialog.
-8.  Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+7. Click the **OK** button to close the **Job Information** dialog.
+8. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
     arrow to expand the **schedule** containing the subschedule.
-9.  Right-click on the **subschedule**.
+9. Right-click on the **subschedule**.
 10. Click on **SubSchedule Information** from the menu.
 11. Click the **OK** button to close the **SubSchedule Information**
     dialog.
@@ -59,7 +53,3 @@ To view schedule or job information:
 25. Right-click on the **job**.
 26. Click on **Job History** to view job history information.
 27. Click the **OK** button to close the **Job History** dialog.
-:::
-
- 
-

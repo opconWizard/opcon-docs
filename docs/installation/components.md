@@ -330,26 +330,11 @@ OpCon administrator should define the update site(s) allowed for the
 environment. EM supports update sites through an http site, FTP site, or
 a local network directory.
 
-+----------------------------------+----------------------------------+
-| ![White triangle icon on yellow  | **CAUTION:** [ If choosing a     | | circlular                        | local directory, do not place    |
-| background](../../Reso           | the Update directory inside the  |
-| urces/Images/caution-icon(48x48) | directory structure for an EM    |
-| .png "Caution icon") | that will be updated. If the     |
-|                                  | update location will be on the   |
-|                                  | SAM server, [SMA                 | |                                  | Te                               |
-|                                  | chnologies]{.GeneralCompanyName} |
-|                                  | recommends using a path similar  |
-|                                  | to the following: C:\\EM         |
-|                                  | Updates.]            |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | The repository will exist inside |
-|                                  | this directory after extraction  |
-|                                  | from the zip file provided by    |
-|                                  | [SMA                             | |                                  | Tec                              |
-|                                  | hnologies]{.GeneralCompanyName}. |
-+----------------------------------+----------------------------------+
+:::caution
+If choosing a local directory, do not place the Update directory inside the directory structure for an EM that will be updated. If the update location will be on the SAM server, SMA Technologies recommends using a path similar to the following: C:\EM Updates.
+
+The repository will exist inside this directory after extraction from the zip file provided by SMA Technologies.
+:::
 
 When the administrator receives a new version from SMA Technologies, they can update the repository
 locations to distribute it to all EM installations in the network. If
@@ -1172,19 +1157,14 @@ section for a complete list of parameters.
 |                                  | TO MSLSAM\\MSLSAM\\MSGIN'"     |
 +----------------------------------+----------------------------------+
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [To perform a minor    | | gray circular                    | upgrade during a Silent Mode     |
-| background](../.                 | Install, the following           |
-| ./Resources/Images/note-icon(48x | parameters need to be included   |
-| 48).png "Note icon") | in the \_siParameter             |
-|                                  | variable:]           |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | -siP                             |
-|                                  | arameter=REINSTALLMODE="vomus" |
-|                                  | REINSTALL="ALL"                |
-+----------------------------------+----------------------------------+
+:::note
+To perform a minor upgrade during a Silent Mode Install, the following parameters need to be included in the _siParameter variable:
+
+```shell
+-siParameter=REINSTALLMODE="vomus" REINSTALL="ALL"
+```
+
+:::
 
 Use menu path: **File \> Save**.
 

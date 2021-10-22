@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Viewing Cards in Vision Live
-viewport: width=device-width, initial-scale=1.0
----
-
 # Viewing Cards in Vision Live
 
 Cards are displayed on the Vision Live page and you can use the filter
@@ -171,9 +165,9 @@ Vision Live Hierarchy
 
 ![Vision Navigation](../../../Resources/Images/SM/Vision-Navigation.png "Vision Navigation")
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Edit button will only be visible to users in Admin mode.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------
+:::note
+The Edit button will only be visible to users in Admin mode.
+:::
 
 Clicking the Edit button next to the breadcrumb trail will display the
 card hierarchy and take you to the Vision Settings page.
@@ -189,9 +183,9 @@ made to the entire tree.
 
 ![Vision Breadcrumb Trail Home Edit Button](../../../Resources/Images/SM/Vision-Breadcumb-Trail-Home-Edit-Button.png "Vision Breadcrumb Trail Home Edit Button")
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You must have the appropriate privileges to view Vision Settings. For more information, refer to [Working in Admin Mode](Working-in-Admin-Mode_Vision.md) in the **Solution Manager** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+You must have the appropriate privileges to view Vision Settings. For more information, refer to [Working in Admin Mode](Working-in-Admin-Mode_Vision.md) in the **Solution Manager** online help.
+:::
 
 Vision Settings Hierarchy
 
@@ -366,4 +360,3 @@ Vision cards use the following icon and color combinations:
 | s/Images/SM/Vision-Delete-Bu | card.                            |
 | tton.png "Vision Delete Button") |                                  |
 +----------------------------------+----------------------------------+
-:::

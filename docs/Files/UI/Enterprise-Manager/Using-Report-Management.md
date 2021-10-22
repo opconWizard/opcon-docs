@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Using Report Management
-viewport: width=device-width, initial-scale=1.0
----
-
 # Using Report Management
 
 []{#aanchor0} Report Management enables administrators to view the attributes of a report in the database and add, delete, and edit report
@@ -18,64 +12,53 @@ Report Management utility.
 Opening the utility requires only a few click once inside the Enterprise
 Manager.
 
- 
-
 **To open the utility:**
 
-1.  Double-click on **Reports** under the **Information** topic. The
+1. Double-click on **Reports** under the **Information** topic. The
     **Reports** screen displays.
-2.  Click the **Manage Reports** button on the **Reports** toolbar. The
+2. Click the **Manage Reports** button on the **Reports** toolbar. The
     **Report Management** dialog displays.
 
 ## Understanding Report Management Options
 
 The Report Manage utility has two frames: General and Filter.
 
- 
-
 The **General** frame has the following options:
 
--   **Report Locked**: When this checkbox is selected, the report
+- **Report Locked**: When this checkbox is selected, the report
     definition is locked so that only users in the *ocadm* role can
     manage and lock or unlock a the report. Users with privileges to
     report management will be able to refer to locked reports, manage
     unlocked report definitions, and add new report definitions, but all
     fields will be disabled.
--   **Report**: This list box contains all of the BIRT reports currently
+- **Report**: This list box contains all of the BIRT reports currently
     defined in the database. This is the same list displayed in the
     **Reports** screens.
--   **Title**: This is the unique title of the selected report.
--   **Template**: This is the BIRT report template containing the report
+- **Title**: This is the unique title of the selected report.
+- **Template**: This is the BIRT report template containing the report
     information. No path should be included in the file name because all
     reports must be located in the
     **OpConxps\\EnterpriseManager\\reports\\OpConXPS_Reports**
     directory. The **Open** button next to the template can be used to
     browse to a file name.
--   **Administrator**: A level of user authorization for the reports
+- **Administrator**: A level of user authorization for the reports
     that is visible only by *ocadm* or users with equivalent status.
--   **All Users**: A level of user authorization for the reports that is
+- **All Users**: A level of user authorization for the reports that is
     visible in Enterprise Manager by all users who have Report Function
     authorization.
 
-
-
- 
-
 The **Filter** frame has the following options:
 
--   **Standard Filters**: The **Schedule Dates**, **Schedules**, and
+- **Standard Filters**: The **Schedule Dates**, **Schedules**, and
     **Departments** filters directly applies to what you will refer to
     when running the reports.
-    -   If a checkbox is selected, the filter applies to the report.
+  - If a checkbox is selected, the filter applies to the report.
 
-      -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The standard filters are an integral part of the report file by design. Never change these filters without changes in the report template.]
-      -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    :::note
+    The standard filters are an integral part of the report file by design. Never change these filters without changes in the report template.
+    :::
 
-```{=html}
-<!-- -->
-```
--   **Special Filter**: This field is used to define custom filters for
+- **Special Filter**: This field is used to define custom filters for
     reports. Most reports do not require a special filter. Use the
     following syntax when defining the special filter:
 
@@ -112,24 +95,22 @@ The **Filter** frame has the following options:
     |                                  | calendars.]{.statement2}         |
     +----------------------------------+----------------------------------+
 
-
-
 ## Adding Reports
 
 To add a report:
 
-1.  Double-click on **Reports** under the **Information** topic. The
+1. Double-click on **Reports** under the **Information** topic. The
     **Reports** screen displays.
-2.  Click the **Manage Reports** button on the **Reports** toolbar. The
+2. Click the **Manage Reports** button on the **Reports** toolbar. The
     **Report Management** dialog displays.
-3.  Click the **Add** button.
-4.  Enter a *report name* in the **Title** text box.
-5.  Enter the *BIRT Report Template file name* in the **Template** text
+3. Click the **Add** button.
+4. Enter a *report name* in the **Title** text box.
+5. Enter the *BIRT Report Template file name* in the **Template** text
     box.
-6.  Select the **Administrator** or **All Users** the radio button.
-7.  Select any preferred filter checkboxes and/or enter a *special
+6. Select the **Administrator** or **All Users** the radio button.
+7. Select any preferred filter checkboxes and/or enter a *special
     filter*.
-8.  Click the **Save** button or click the **Cancel** button to discard
+8. Click the **Save** button or click the **Cancel** button to discard
     changes in the report specification and display the previously
     selected report.
 
@@ -137,13 +118,13 @@ To add a report:
 
 To edit a report:
 
-1.  Double-click on **Reports** under the **Information** topic. The
+1. Double-click on **Reports** under the **Information** topic. The
     **Reports** screen displays.
-2.  Select the **report name** from the **Report** list box.
-3.  Click the **Manage Reports** button on the **Reports** toolbar. The
+2. Select the **report name** from the **Report** list box.
+3. Click the **Manage Reports** button on the **Reports** toolbar. The
     **Report Management** dialog displays.
-4.  Make the changes.
-5.  Click the **Save** button or click the **Cancel** button to discard
+4. Make the changes.
+5. Click the **Save** button or click the **Cancel** button to discard
     changes in the report specification and display the previously
     selected report.
 
@@ -151,14 +132,10 @@ To edit a report:
 
 To delete a report:
 
-1.  Double-click on **Reports** under the **Information** topic. The
+1. Double-click on **Reports** under the **Information** topic. The
     **Reports** screen displays.
-2.  Select the **report name** from the **Report** list box.
-3.  Click the **Manage Reports** button on the **Reports** toolbar. The
+2. Select the **report name** from the **Report** list box.
+3. Click the **Manage Reports** button on the **Reports** toolbar. The
     **Report Management** dialog displays.
-4.  Click the **Remove** button.
-5.  Click the **Yes** button to confirm the report deletion.
-:::
-
- 
-
+4. Click the **Remove** button.
+5. Click the **Yes** button to confirm the report deletion.

@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Performing Agent Status Updates
-viewport: width=device-width, initial-scale=1.0
----
-
 # Performing Agent Status Updates
 
 The **Operations** module allows you to perform Agent status updates
@@ -25,13 +19,13 @@ of Agent machines.
 
 ![Agent Filter Bar](../../../Resources/Images/SM/Agent-Filter-Bar.png "Agent Filter Bar")
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an [alternative filtering option](Managing-Daily-Processes.md#Interactive), you can use the interactive color-coded **Statistics Bar** above the list of Agent machines to filter the list by status. Click on any color in the bar to filter the view by the current status.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an [alternative filtering option](Managing-Daily-Processes.md#Interactive), you can use the interactive color-coded **Statistics Bar** above the list of Agent machines to filter the list by status. Click on any color in the bar to filter the view by the current status.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You can sort the list of Agent machines as well. Click on the column heading to sort the column in ascending order (indicated by a small arrow pointing down). Click on the column heading again to sort the column in descending order (indicated by a small arrow pointing up).]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+You can sort the list of Agent machines as well. Click on the column heading to sort the column in ascending order (indicated by a small arrow pointing down). Click on the column heading again to sort the column in descending order (indicated by a small arrow pointing up).
+:::
 
 Select any **Agent(s)** in the list. A record of your selection(s) will
 display in the [status bar](SM-UI-Layout.md#Status) at the bottom
@@ -44,9 +38,9 @@ panel.
 
 ![Agent Status Update Panel](../../../Resources/Images/SM/Agent-Status-Update-Panel.png "Agent Status Update Panel")
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on any Agent machine selected in the list to display the **Action** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on any Agent machine selected in the list to display the **Action** panel.
+:::
 
 *(Optional)* Click the **Refresh available actions**
 button to verify which status update actions are available for the
@@ -86,4 +80,3 @@ Related Topics
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Using PERT View](Using-PERT-View.md)
 - [Managing Daily Processes](Managing-Daily-Processes.md)
-:::

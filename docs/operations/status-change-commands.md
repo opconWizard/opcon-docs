@@ -30,7 +30,7 @@ The schedule and job status change commands are used with events and graphical i
     of all subsequent jobs are met.
 - **Kill**: Sends a request to abort one ore more jobs on an
     LSAM machine. If the kill is successful, the     graphical interfaces report a killed job as
-    [Failed]{.skd-job-statuses}. If the Kill is not successful, the job     continues to show a [Running]{.skd-job-statuses} status in the
+    Failed. If the Kill is not successful, the job     continues to show a [Running]{.skd-job-statuses} status in the
     graphical interfaces. This option is [not]{.ul} available for the     BIS, OpenVMS, and OS 2200 platforms. To enable/disable the kill
     feature, refer to the [Advanced Machine Configuration](../objects/machines.md#advanced-machine-configuration).
 - **Release**: Releases the selected job(s) from a
@@ -66,8 +66,8 @@ The schedule and job status change commands are used with events and graphical i
     Finished OK]{.skd-job-statuses} before it starts, both the start and
     finish time saved in history equal the time the job is marked.
 - **Mark Failed**: Changes the selected job(s) to a
-    [Failed]{.skd-job-statuses} status regardless of the job's current     status. All events are processed as if the job(s) had failed without
-    intervention. If a job is [Marked Failed]{.skd-job-statuses} before     it starts, both the start and finish time saved in history equal the
+    Failed status regardless of the job's current     status. All events are processed as if the job(s) had failed without
+    intervention. If a job is Marked Failed before     it starts, both the start and finish time saved in history equal the
     time the job is marked.
 - **Under Review**: Places the selected job(s) in an [Under     Review]{.skd-job-statuses} status that reflects that the job is
     being reviewed while corrective action is taken to resolve errors.

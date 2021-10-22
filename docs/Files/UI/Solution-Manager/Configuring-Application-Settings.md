@@ -1,14 +1,8 @@
----
-lang: en-us
-title: Configuring Application Settings
-viewport: width=device-width, initial-scale=1.0
----
-
 # Configuring Application Settings
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Application Settings** tab will be available only to users who are in the ocadm role.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------
+:::note
+The **Application Settings** tab will be available only to users who are in the ocadm role.
+:::
 
 To configure application settings:
 
@@ -44,11 +38,9 @@ can easily identity the environments in which you are working. Once
 defined, the environment name will appear at the top of the [Navigation menu](SM-UI-Layout.md#Navigati) in the application and will also
 appear on the [login screen](Logging-In.md#Solution_Manager_Login_Screen).
 
-Environment Name Displayed in Application
+![Define Environment Name](../../../Resources/Images/SM/Defined-Env-Name.png "Defined Enviroment Name")
 
-  -------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
-   ![Define Environment Name](../../../Resources/Images/SM/Defined-Env-Name.png "Defined Enviroment Name")   ![Define Environment Name](../../../Resources/Images/SM/Defined-Env-Name2.png "Defined Enviroment Name")
-  -------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
+![Define Environment Name](../../../Resources/Images/SM/Defined-Env-Name2.png "Defined Enviroment Name")
 
 ## Themes
 
@@ -130,7 +122,6 @@ the application. You can configure the following debugging options:
             to configure the logs to be sent on the max size to keep
             limit (from 0 to 5000 kilobytes).
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [In instances where you are able to reproduce an issue in the application, you can also utilize the **InstantLog Mode** feature to generate a temporary log file to send to the Support team. For more information about how to activate this feature, refer to [InstantLog Mode](SM-UI-Layout.md#InstantLog).]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+In instances where you are able to reproduce an issue in the application, you can also utilize the **InstantLog Mode** feature to generate a temporary log file to send to the Support team. For more information about how to activate this feature, refer to [InstantLog Mode](SM-UI-Layout.md#InstantLog).
 :::

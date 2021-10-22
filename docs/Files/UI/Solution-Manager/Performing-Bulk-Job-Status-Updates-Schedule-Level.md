@@ -84,9 +84,9 @@ to** drop-down list:
 - **Hold**: This option allows you to suspend the processing of ALL
     jobs associated with the selected schedule(s), based on a filter.
 - **Mark Failed**: This option allows you to mark all jobs on the
-    selected schedule(s) as [Failed]{.skd-job-statuses}, based on a     filter.
+    selected schedule(s) as Failed, based on a     filter.
 - **Mark Finished OK**: This option allows you to mark all jobs on the
-    selected schedule(s) as [Finished OK]{.skd-job-statuses}, based on a     filter.
+    selected schedule(s) as Finished OK, based on a     filter.
 - **Mark Under Review**: This option allows you to mark all jobs on
     the selected schedule(s) as [Under Review]{.skd-job-statuses}, based     on a filter.
 - **Mark Fixed**: This option allows you to mark all jobs on the

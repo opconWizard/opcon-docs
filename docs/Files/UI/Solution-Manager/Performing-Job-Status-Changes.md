@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Performing Job Status Changes
-viewport: width=device-width, initial-scale=1.0
----
-
 # Performing Job Status Changes
 
 The **Operations** module allows you to perform job status changes using
@@ -18,9 +12,9 @@ the keyword and click **Enter**) in the **Jobs** section on the
 
 ![Jobs Operation Dials](../../../Resources/Images/SM/Job-Operation-Dials.png "Jobs Operation Dials")
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The "Ignored" operation dial groups any job with a job status of [Cancelled]{.skd-job-statuses} or [Skipped]{.skd-job-statuses}.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The "Ignored" operation dial groups any job with a job status of [Cancelled]{.skd-job-statuses} or [Skipped]{.skd-job-statuses}.
+:::
 
 The **Processes** page will display.
 
@@ -60,9 +54,9 @@ of the page in the form of a breadcrumb trail.
 Click on the job record (e.g., 1 job(s)) in the status bar to display
 the **Selection** panel.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on any job selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on any job selected in the list to display the **Selection** panel.
+:::
 
 Select the **Job Status Update** accordion-style tab in the panel.
 
@@ -76,9 +70,9 @@ default.
 
 *(Optional)* Enter or select a change status reason.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Depending on application configuration, the **Change Status Reason** drop-down list may store a number of the previous reasons entered for Job or Schedule status updates.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Depending on application configuration, the **Change Status Reason** drop-down list may store a number of the previous reasons entered for Job or Schedule status updates.
+:::
 
 Select one of the following status updates to apply to the selected
 job(s):
@@ -93,7 +87,7 @@ job(s):
     job dependencies of all subsequent jobs are met.
 - **Kill**: This option allows you to send a request to abort one ore
     more jobs on an Agent machine. If the kill is successful, the
-    application reports the killed job as [Failed]{.skd-job-statuses}.     If the Kill is not successful, the job continues to show a
+    application reports the killed job as Failed.     If the Kill is not successful, the job continues to show a
     [Running]{.skd-job-statuses} status in the application. -   **Release**: This option allows you to release the selected job(s)
     from a [Held]{.skd-job-statuses} state. -   **Force Start**: This option allows you to force start the selected
     job(s). This causes the job(s) to ignore all dependencies, and to
@@ -111,24 +105,24 @@ job(s):
     type supports this feature and there is an available list of steps
     in the database returned by the Agent during runtime.
 - **Mark Finished OK**: This option allows you to change the selected
-    job(s) to a [Finished OK]{.skd-job-statuses} status regardless of     the job's current status. All events are processed as if the job(s)
-    had [Finished OK]{.skd-job-statuses} without intervention. If a job     is [Marked Finished OK]{.skd-job-statuses} before it starts, both
+    job(s) to a Finished OK status regardless of     the job's current status. All events are processed as if the job(s)
+    had Finished OK without intervention. If a job     is Marked Finished OK before it starts, both
     the start and finish time saved in history equal the time the job is
     marked.
 - **Mark Failed**: This option allows you change the selected job(s)
-    to a [Failed]{.skd-job-statuses} status regardless of the job's     current status. All events are processed as if the job(s) had failed
-    without intervention. If a job is [Marked Failed]{.skd-job-statuses}     before it starts, both the start and finish time saved in history
+    to a Failed status regardless of the job's     current status. All events are processed as if the job(s) had failed
+    without intervention. If a job is Marked Failed     before it starts, both the start and finish time saved in history
     equal the time the job is marked.
 - **Mark Under Review**: This option allows you to change the selected
-    job(s) to an [Under Review]{.skd-job-statuses} status (and being     worked on) when the job is in a [Failed]{.skd-job-statuses}, [Marked
+    job(s) to an [Under Review]{.skd-job-statuses} status (and being     worked on) when the job is in a Failed, [Marked
     Failed]{.skd-job-statuses}, or [Initialization     Error]{.skd-job-statuses} state.
 - **Mark Fixed**: This option allows you to change the selected job(s)
-    to [Fixed]{.skd-job-statuses} status when the job is in a     [Failed]{.skd-job-statuses}, [Marked Failed]{.skd-job-statuses},
+    to [Fixed]{.skd-job-statuses} status when the job is in a     Failed, Marked Failed,
     [Initialization Error]{.skd-job-statuses}, or [Under     Review]{.skd-job-statuses} state.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [For more information about job status changes, refer to [Schedule and Job Status Change Commands](../../../operations/status-change-commands.md) in the **Concepts** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+For more information about job status changes, refer to [Schedule and Job Status Change Commands](../../../operations/status-change-commands.md) in the **Concepts** online help.
+:::
 
 Close the **Selection** panel when done.
 
@@ -142,4 +136,3 @@ Related Topics
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Using PERT View](Using-PERT-View.md)
 - [Managing Daily Processes](Managing-Daily-Processes.md)
-:::

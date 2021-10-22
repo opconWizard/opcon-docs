@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Stylizing Service Request Buttons
-viewport: width=device-width, initial-scale=1.0
----
-
 # Stylizing Service Request Buttons
 
 You can also stylize the Service Request button using custom HTML.
@@ -74,11 +68,10 @@ below in orange:
 \<span\>[SERVICE REQUEST NAME]{style="background-color: #ff8c00;"}\</span\>
 :::
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you submit a [Service Request using a URL]{.Hyperlink}, the URL uses the Service Request Name and not the text displayed by the custom HTML. To avoid confusion, it is recommended that you copy the Service Request Name into the custom HTML [\<span\>]{style="font-family: 'Courier New';"} text area. This way, the actual Service Request Name and the text displayed on the button will match.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If you submit a [Service Request using a URL]{.Hyperlink}, the URL uses the Service Request Name and not the text displayed by the custom HTML. To avoid confusion, it is recommended that you copy the Service Request Name into the custom HTML [\<span\>]{style="font-family: 'Courier New';"} text area. This way, the actual Service Request Name and the text displayed on the button will match.
+:::
 
 The result using the template code:
 
 ![Customized Service Request button](../../../Resources/Images/SM/Stylizing-Service-Request_1.png "Customized Service Request button")
-:::

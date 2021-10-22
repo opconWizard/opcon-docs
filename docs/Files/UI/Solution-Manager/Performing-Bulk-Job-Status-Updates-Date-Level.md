@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Performing Bulk Job Status Updates (Date Level)
-viewport: width=device-width, initial-scale=1.0
----
-
 # Performing Bulk Job Status Updates (Date Level)
 
 The **Operations** module has made performing mass action on job status
@@ -31,9 +25,9 @@ Click on the date record (e.g., 3 date(s)) in the status bar to display
 the **Selection** panel with the **Bulk Job Status Update** tab in
 focus.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on any date selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on any date selected in the list to display the **Selection** panel.
+:::
 
 ![Bulk Job Status Update at Date Level](../../../Resources/Images/SM/BulkUpdateOnDate.png "Bulk Job Status Update at Date Level")
 
@@ -48,9 +42,9 @@ have those dependencies met.
 associated with the selected date(s), based on a filter.
 
 **Mark Failed**: This option allows you to mark all jobs on the selected
-date(s) as [Failed]{.skd-job-statuses}, based on a filter.
+date(s) as Failed, based on a filter.
 **Mark Finished OK**: This option allows you to mark all jobs on the
-selected date(s) as [Finished OK]{.skd-job-statuses}, based on a filter.
+selected date(s) as Finished OK, based on a filter.
 **Mark Fixed**: This option allows you to mark all jobs on the selected
 date(s) as [Fixed]{.skd-job-statuses}, based on a filter.
 **Mark Under Review**: This option allows you to mark all jobs on the
@@ -121,9 +115,9 @@ all Job Statuses to** drop-down, then follow [steps a - c]{.ul} of Scenario 2. K
 scenario will display each selected date along the Container job(s)
 associated with each date.
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [ To hide the associated Container jobs in the **Job Containers Action** frame, simply click on any of the other three Job Container Actions (Restart, Rebuild, or None).]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+To hide the associated Container jobs in the **Job Containers Action** frame, simply click on any of the other three Job Container Actions (Restart, Rebuild, or None).
+:::
 
 **Restart on Hold**: This option allows you to place all jobs on the
 selected date(s) in an On Hold state on restart, based on a filter.
@@ -132,23 +126,23 @@ selected date(s) in an On Hold state on restart, based on a filter.
 date(s) in a [Job to be Skipped]{.skd-job-statuses} state until they qualify to start. When the jobs qualify, the jobs are skipped and the
 job dependencies of all subsequent jobs will be met.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [For more information about job status changes, refer to [Schedule and Job Status Change Commands](../../../operations/status-change-commands.md) in the **Concepts** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+For more information about job status changes, refer to [Schedule and Job Status Change Commands](../../../operations/status-change-commands.md) in the **Concepts** online help.
+:::
 
 Select the **checkbox(es)** for the current job status(es) that will
 undergo the status change. Any selection made in the **Jobs To Update**
 frame will serve as a status filter.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [For more information about job statuses and allowed changes, refer to [Schedule and Job Status Descriptions and Allowed Status Changes](../../../operations/status-descriptions.md) in the **Concepts** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+For more information about job statuses and allowed changes, refer to [Schedule and Job Status Descriptions and Allowed Status Changes](../../../operations/status-descriptions.md) in the **Concepts** online help.
+:::
 
 *(Optional)* Enter or select a change status reason.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Depending on application configuration, the **Change Status Reason** drop-down list may store a number of the previous reasons entered for Job or Schedule status updates.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Depending on application configuration, the **Change Status Reason** drop-down list may store a number of the previous reasons entered for Job or Schedule status updates.
+:::
 
 Click **Apply** to apply the job status change.
 
@@ -163,4 +157,3 @@ Related Topics
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Using PERT View](Using-PERT-View.md)
 - [Managing Daily Processes](Managing-Daily-Processes.md)
-:::

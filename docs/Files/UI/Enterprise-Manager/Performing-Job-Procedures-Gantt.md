@@ -3,7 +3,7 @@
 ## Adding Job Completion Comments
 
 :::note
-This menu option is only available when the job is [Finished OK]{.skd-job-statuses}, [Marked Finished OK]{.skd-job-statuses}, [Failed]{.skd-job-statuses}, or [Marked Failed]{.skd-job-statuses}.
+This menu option is only available when the job is Finished OK, Marked Finished OK, Failed, or Marked Failed.
 :::
 
 To perform this procedure:
@@ -315,7 +315,7 @@ To perform this procedure:
 
 ## Marking Jobs Finished OK
 
-The action marks the selected job as [Finished OK]{.skd-job-statuses}. If the job is marked [Finished OK]{.skd-job-statuses} before it starts,
+The action marks the selected job as Finished OK. If the job is marked Finished OK before it starts,
 both the start time and finish time saved in history equal the time the
 job is marked.
 
@@ -334,7 +334,7 @@ To perform this procedure:
 
 ## Marking Jobs Failed
 
-This action marks the selected job as [Failed]{.skd-job-statuses}. If the job is marked [Failed]{.skd-job-statuses} before it starts, both the
+This action marks the selected job as Failed. If the job is marked Failed before it starts, both the
 start and the finish time saved in history equal the time the job is
 marked.
 

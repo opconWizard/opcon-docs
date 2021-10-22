@@ -135,26 +135,14 @@ required for the Call Information.
 |                     | Remote Information   |
 +---------------------+----------------------+
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [All the rules for the | | gray circular                    | IBM i FTP command and            |
-| background](../.                 | sub-commands apply to the FTP    |
-| ./Resources/Images/note-icon(48x | Job Type. For additional         |
-| 48).png "Note icon") | information, consult the IBM     |
-|                                  | documentation.]      |
-|                                  |                                  |
-|                                  | -   When specifying an actual IP |
-|                                  |     address, the address must be |
-|                                  |     enclosed in single quotes.   |
-|                                  | -   When specifying a Host Name, |
-|                                  |     the Host Name must exist in  |
-|                                  |     the IBM i Host Table and the |
-|                                  |     Host Name must not be        |
-|                                  |     enclosed in quotes.          |
-|                                  |                                  |
-|                                  | For additional information on    |
-|                                  | command CFGTCP (option 10),      |
-|                                  | consult the IBM documentation.   |
-+----------------------------------+----------------------------------+
+:::note
+All the rules for the IBM i FTP command and sub-commands apply to the FTP Job Type. For additional information, consult the IBM documentation.
+
+- When specifying an actual IP address, the address must be enclosed in single quotes.
+- When specifying a Host Name, the Host Name must exist in the IBM i Host Table and the Host Name must not be enclosed in quotes.
+
+For additional information on command CFGTCP (option 10), consult the IBM documentation.
+:::
 
 - **Prerun** (Optional): Defines the IBM i job to be executed
     immediately before the initiation of the job specified in the

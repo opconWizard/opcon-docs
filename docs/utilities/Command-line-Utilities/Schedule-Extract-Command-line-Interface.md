@@ -42,25 +42,20 @@ a.  If the machine is 64-bit, make sure to install the EM from the
 b.  If the machine is 32-bit, make sure to install the EM from the
     \<media\>\\Install\\Enterprise Manager\\x86\\ folder.
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [If you install the EM | | gray circular                    | from the x86 folder onto a       |
-| background](../../.              | 64-bit machine, you will have to |
-| ./Resources/Images/note-icon(48x | edit the schedule_extract.cmd    |
-| 48).png "Note icon") | file to specifically start the   |
-|                                  | 32-bit version of Java. With a   |
-|                                  | default installation of 32-bit   |
-|                                  | Java, replace this               |
-|                                  | string:]             |
-|                                  |                                  |
-|                                  | command=java                     |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | With this string:                |
-|                                  |                                  |
-|                                  | command="C:\\Program Files      |
-|                                  | (x86)\\Java\\jre6\\bin\\java"   |
-+----------------------------------+----------------------------------+
+:::note
+If you install the EM from the x86 folder onto a 64-bit machine, you will have to edit the schedule_extract.cmd file to specifically start the 32-bit version of Java. With a default installation of 32-bit Java, replace this string:
+
+```shell
+command=java
+```
+
+With this string:
+
+```shell
+command="C:\Program Files (x86)\Java\jre6\bin\java"
+```
+
+:::
 
 You have to run the job as a user that has logged on to the machine and
 created a profile in the EM for the connection to the

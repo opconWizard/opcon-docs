@@ -10,17 +10,17 @@ For a UNIX job, you can:
 For conceptual information, refer to [UNIX Job Details](../../../job-types/unix.md) in the
 **Concepts** online help.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the Machine Privilege, then you will not be able to edit the daily job definition.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------
+:::note
+If you do not have the Machine Privilege, then you will not be able to edit the daily job definition.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.
+:::
 
 ## Updating Job Action: Run Program Job Details
 
@@ -48,9 +48,9 @@ page in the form of a breadcrumb trail.
 Click on the job record (e.g., 1 job(s)) in the status bar to display
 the **Selection** panel.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.
+:::
 
 ![Job Summary Tab in Operations](../../../Resources/Images/SM/Job-Summary-Tab-(UNIX).png "Job Summary Tab in Operations")
 
@@ -64,15 +64,15 @@ will switch to display a white lock unlocked on a green background
 ![Daily Job Definition Admin Switch](../../../Resources/Images/SM/Daily-Job-Definition-Admin-Button.png "Daily Job Definition Admin Switch")
 when enabled.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Lock** button will not be visible to users who do not have the appropriate permissions.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
+:::note
+The **Lock** button will not be visible to users who do not have the appropriate permissions.
+:::
 
 Expand the **Task Details** panel to expose its content.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [All required fields are designated by a red asterisk ([\*]{style="color: #ff0000; font-weight: bold;"}).]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
+:::note
+All required fields are designated by a red asterisk.
+:::
 
 Select a **User Id** to use when running the job. Either use the default
 value of "0/0" or assign it to an available batch user. Keep in mind
@@ -111,16 +111,16 @@ Start Image*. This field permits up to 4000 characters.
 Enter any required *command-line parameters*. This field permits up to
 4000 characters.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [OpCon concatenates the Start Image and Parameters and inserts a space between them before sending the job to the UNIX LSAM.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+OpCon concatenates the Start Image and Parameters and inserts a space between them before sending the job to the UNIX LSAM.
+:::
 
 Enter the *NICE Value* to increase/decrease the priority of the job
 [and]{.ul} prerun (if present). Valid values range from -20 to 20 with a default of zero (0).
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [A lower NICE Value signifies a higher priority; therefore, entering a negative number raises the priority and a positive number lowers the priority.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+A lower NICE Value signifies a higher priority; therefore, entering a negative number raises the priority and a positive number lowers the priority.
+:::
 
 **In the Job Output Parsing frame:**
 
@@ -139,9 +139,9 @@ string. This field permits up to 255 characters.
 
 Select or enter the **Exit Code**.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Remove any defined parsing criteria by clicking the **Delete** button at the end of the row.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
+:::note
+Remove any defined parsing criteria by clicking the **Delete** button at the end of the row.
+:::
 
 Enter the **Custom Application Log Path**. Wildcard characters are
 supported for specifying multiple logs.
@@ -163,9 +163,9 @@ job Failed or Finished OK.
 Use the **and/or** field to define multiple failure criteria. This field
 defines the way the strings are evaluated together.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You must define all "And" comparisons before the "Or" comparisons. Additionally, if the Comparison Operator on the previous group is "Equal To", then the *and/or* value must be set to "Or".]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+You must define all "And" comparisons before the "Or" comparisons. Additionally, if the Comparison Operator on the previous group is "Equal To", then the *and/or* value must be set to "Or".
+:::
 
 Use the **Fail on Core Dump** switch to configure how the
 LSAM should report the status of the job when the job does or does not create a core file.
@@ -175,9 +175,9 @@ LSAM should report the status of the job when the job does or does not create a 
 - If the **Fail on Core Dump** switch is enabled ![Green Enabled     Switch](../../../Resources/Images/SM/Enabled-Switch.png "Green Enabled Switch")
     and a core dump [is not]{.ul} produced, then the job succeeds     (assuming all other exit code processing is good).
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The final exit code processing has nothing to do with whether a core dump is produced or not. It simply is a final determination of whether the program produced an acceptable job status.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The final exit code processing has nothing to do with whether a core dump is produced or not. It simply is a final determination of whether the program produced an acceptable job status.
+:::
 
 Define up to five different signal failure criteria. If any signal
 failure criterion is TRUE when a job finishes,
@@ -200,9 +200,9 @@ variable by clicking the **Delete** button at the end of the row.
 
 Click the **OK** button to add the name/value.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Click the **Undo** button if you wish to undo your changes for any reason.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+:::note
+Click the **Undo** button if you wish to undo your changes for any reason.
+:::
 
 Click the **Save** button.
 
@@ -267,9 +267,9 @@ To perform this procedure:
 For conceptual information, refer to [Embedded Scripts](../../../automation-concepts/embedded-scripts.md) in the
 **Concepts** online help.
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the Script Privilege for the script, then you will not be able to see the task details or edit the daily job definition (the Lock button will be disabled).]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If you do not have the Script Privilege for the script, then you will not be able to see the task details or edit the daily job definition (the Lock button will be disabled).
+:::
 
 To perform this procedure:
 
@@ -295,9 +295,9 @@ page in the form of a breadcrumb trail.
 Click on the job record (e.g., 1 job(s)) in the status bar to display
 the **Selection** panel.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.
+:::
 
 ![Job Summary Tab in Operations](../../../Resources/Images/SM/Job-Summary-Tab-(UNIX).png "Job Summary Tab in Operations")
 
@@ -311,15 +311,15 @@ will switch to display a white lock unlocked on a green background
 ![Daily Job Definition Admin Switch](../../../Resources/Images/SM/Daily-Job-Definition-Admin-Button.png "Daily Job Definition Admin Switch")
 when enabled.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Lock** button will not be visible to users who do not have the appropriate permissions.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
+:::note
+The **Lock** button will not be visible to users who do not have the appropriate permissions.
+:::
 
 Expand the **Task Details** panel to expose its content.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [All required fields are designated by a red asterisk ([\*]{style="color: #ff0000; font-weight: bold;"}).]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
+:::note
+All required fields are designated by a red asterisk.
+:::
 
 Select a **User Id** to use when running the job. Either use the default
 value of "0/0" or assign it to an available batch user. Keep in mind
@@ -345,9 +345,9 @@ Select the specific **version (or revision) of the script** to run for
 this job. The **Comments** field will populate with any notes provided
 about the script.
 
-  --------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circlular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Selecting the "Latest" version means that just before the job runs, the latest version of the script will be used.]
-  --------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Selecting the "Latest" version means that just before the job runs, the latest version of the script will be used.
+:::
 
 [Viewing Scripts]{.ul}
 To view the details about a script, click the **Preview** button
@@ -356,13 +356,13 @@ Once clicked, the **Script Viewer** pop-up window will display
 information (e.g., name, description, type, version, version comment,
 author, created, updated) about and the contents of the selected script.
 
-  --------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circlular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Preview** button will only be enabled for embedded scripts for which the user is a member of a role with privileges to view the contents. A user must be a member of a role with All Administrative Functions, All Function Privileges, View Embedded Script Contents privilege, or must be in the ocadm role to view the contents.]
-  --------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The **Preview** button will only be enabled for embedded scripts for which the user is a member of a role with privileges to view the contents. A user must be a member of a role with All Administrative Functions, All Function Privileges, View Embedded Script Contents privilege, or must be in the ocadm role to view the contents.
+:::
 
-  --------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circlular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the View Embedded Script Contents privilege, then you will not be able to see any of the script contents in **Preview** mode.]
-  --------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If you do not have the View Embedded Script Contents privilege, then you will not be able to see any of the script contents in **Preview** mode.
+:::
 
 **In the Runner frame:**
 
@@ -378,9 +378,9 @@ the runner.
 Enter any *argument(s)* that you wish to pass to the script at runtime.
 This field permits up to 255 characters.
 
-  --------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circlular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [When defining the argument, keep in mind the that the equal sign (=) is a restricted character.]
-  --------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------
+:::note
+When defining the argument, keep in mind the that the equal sign (=) is a restricted character.
+:::
 
 **In the Failure Criteria frame:**
 
@@ -399,9 +399,9 @@ job Failed or Finished OK.
 Use the **and/or** field to define multiple failure criteria. This field
 defines the way the strings are evaluated together.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You must define all "And" comparisons before the "Or" comparisons. Additionally, if the Comparison Operator on the previous group is "Equal To", then the *and/or* value must be set to "Or".]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+You must define all "And" comparisons before the "Or" comparisons. Additionally, if the Comparison Operator on the previous group is "Equal To", then the *and/or* value must be set to "Or".
+:::
 
 Use the **Fail on Core Dump** switch to configure how the
 LSAM should report the status of the job when the job does or does not create a core file.
@@ -411,9 +411,9 @@ LSAM should report the status of the job when the job does or does not create a 
 - If the **Fail on Core Dump** switch is enabled ![Green Enabled     Switch](../../../Resources/Images/SM/Enabled-Switch.png "Green Enabled Switch")
     and a core dump [is not]{.ul} produced, then the job succeeds     (assuming all other exit code processing is good).
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The final exit code processing has nothing to do with whether a core dump is produced or not. It simply is a final determination of whether the program produced an acceptable job status.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The final exit code processing has nothing to do with whether a core dump is produced or not. It simply is a final determination of whether the program produced an acceptable job status.
+:::
 
 Define up to five different signal failure criteria. If any signal
 failure criterion is TRUE when a job finishes,
@@ -436,10 +436,8 @@ variable by clicking the **Delete** button at the end of the row.
 
 Click the **OK** button to add the name/value.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Click the **Undo** button if you wish to undo your changes for any reason.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------
+:::note
+Click the **Undo** button if you wish to undo your changes for any reason.
+:::
 
 Click the **Save** button.
-
-:::

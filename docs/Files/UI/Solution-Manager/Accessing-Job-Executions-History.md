@@ -67,22 +67,21 @@ To access job execution history:
 10. Select a job executions history record that is listed on the page
     then right-click on it to access any available job output in the
     **Selection** panel to the right.
-      -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-      ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The job output record for the historical instance of the job must still exist on the target platform for this operation to be successful.]
-      -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    :::note
+    The job output record for the historical instance of the job must still exist on the target platform for this operation to be successful.
+    :::
 11. Click the **Refresh** button to fetch a list both of any existing or
     new job output files for the selected job. When clicked, the button
     toggles to **Cancel**. At any time during the refresh, you can click
     the **Cancel** button to cancel the action.
 12. Click the **Close** button to close the panel.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Job execution history can also be accessed while in PERT View. For more information, refer to [PERT View Job Executions History Access](Using-PERT-View.md#PERT11).]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Job execution history can also be accessed while in PERT View. For more information, refer to [PERT View Job Executions History Access](Using-PERT-View.md#PERT11).
+:::
 
 ![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
 - [Accessing Job Summary](Accessing-Job-Summary.md)
 - [Using PERT View](Using-PERT-View.md)
-:::

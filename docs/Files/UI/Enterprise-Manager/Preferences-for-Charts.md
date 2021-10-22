@@ -1,34 +1,29 @@
----
-lang: en-us
-title: Setting Preferences for Charts
-viewport: width=device-width, initial-scale=1.0
----
-
 # Setting Preferences for Charts
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Close and re-open the charts to refer to the change in this section take effect.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
+:::note
+Close and re-open the charts to refer to the change in this section take effect.
+:::
 
 To set the preferences:
 
-1.  []{#aanchor492} Launch the Enterprise Manager application. 2.  Use menu path: **EnterpriseManager \> Preferences**. The
+1. Launch the Enterprise Manager application.
+2. Use menu path: **EnterpriseManager \> Preferences**. The
     **Preferences** dialog displays.
-3.  Click on the arrow (![Expand Arrow     ](../../../Resources/Images/EM/EMarrowtoexpand.png "Expand Arrow "))
+3. Click on the arrow (![Expand Arrow     ](../../../Resources/Images/EM/EMarrowtoexpand.png "Expand Arrow "))
     next to **Enterprise Manager** in the Preferences tree to expand the
     drop-down list.
-4.  Click on **Charts** to show options pertaining to Chart Preferences.
+4. Click on **Charts** to show options pertaining to Chart Preferences.
     The **Charts** settings display to the right.
-5.  *(Optional)* Select the **Show Legend** checkbox to
+5. *(Optional)* Select the **Show Legend** checkbox to
     show the legend on the charts. (It is checked by default.)
-6.  *(Optional)* Select the **Use Transparency**
+6. *(Optional)* Select the **Use Transparency**
     checkbox to show the charts with transparency.
-7.  *(Optional)* Select the **Use Depth** checkbox to
+7. *(Optional)* Select the **Use Depth** checkbox to
     show 3-D charts.
-8.  *(Optional)* Select the **Beep and Notify for failed
+8. *(Optional)* Select the **Beep and Notify for failed
     jobs** checkbox to cause the EM to send notification and beep three
     times when a job fails in the chart view (it is checked by default).
-9.  Click **Apply** to save the changes in this window.
+9. Click **Apply** to save the changes in this window.
 10. Click on the arrow
     (![](../../../Resources/Images/EM/EMarrowtoexpand.png)) next to
     **Charts** in the Preferences tree to expand the drop-down list.
@@ -83,7 +78,3 @@ To set the preferences:
 32. Click **Apply** to save the changes in this dialog.
 33. Click **OK** to save the changes and close the **Preferences**
     dialog.
-:::
-
- 
-

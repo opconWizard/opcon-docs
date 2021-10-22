@@ -72,15 +72,13 @@ Vision Remote Instances Admin Page
 
 ![Vision Remote Instances Admin Page](../../../Resources/Images/SM/Vision-Remote-Instances-Admin-Page.png "Vision Remote Instances Admin Page")
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [A user must be in the «ocadm» role to define remote instances. For more information about Function Privileges including those pertaining to Vision, refer to [Function Privileges](../../../administration/privileges.md#function-privileges) in the **Concepts** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+A user must be in the «ocadm» role to define remote instances. For more information about Function Privileges including those pertaining to Vision, refer to [Function Privileges](../../../administration/privileges.md#function-privileges) in the **Concepts** online help.
+:::
 
 ![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
 Related Topics
 
-- [Adding Vision Remote     Instances](Adding-Vision-Remote-Instances.md)
-- [Editing Vision Remote     Instances](Editing-Vision-Remote-Instances.md)
-- [Deleting Vision Remote     Instances](Deleting-Vision-Remote-Instances.md)
-
-:::
+- [Adding Vision Remote Instances](Adding-Vision-Remote-Instances.md)
+- [Editing Vision Remote Instances](Editing-Vision-Remote-Instances.md)
+- [Deleting Vision Remote Instances](Deleting-Vision-Remote-Instances.md)

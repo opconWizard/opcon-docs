@@ -1,18 +1,10 @@
----
-lang: en-us
-title: Setting up New Profiles
-viewport: width=device-width, initial-scale=1.0
----
-
 # Setting up New Profiles
 
 Follow the procedure provided below to set up a new profile.
 
- 
-
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Begin with [Step 6]{.ul} if the **Database Connection Profile** dialog is already displayed.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------
+:::note
+Begin with [Step 6]{.ul} if the **Database Connection Profile** dialog is already displayed.
+:::
 
 To set up a new profile:
 
@@ -51,9 +43,9 @@ iii. Enter the *SQL server name* or *IP Address* in the **SQL Server**
 Select the *database* from the drop-down list. Click the **Database**
 button to show the available databases.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** The list of databases will only be made available once each of the previous text boxes have been filled in.
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
+:::
+The list of databases will only be made available once each of the previous text boxes have been filled in.
+:::
 
 *(Optional)* Type the *Timeout (sec)* (It is set to 30
 by default).
@@ -66,9 +58,9 @@ Select the **color** and click **OK** to save the color change.
 Click **Next** to advance to the next window of the **Database
 Connection Profile** dialog.
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** The next window will indicate whether the database connection has tested successfully.
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------
+:::note
+The next window will indicate whether the database connection has tested successfully.
+:::
 
 **If the test was not successful:**
 
@@ -83,9 +75,9 @@ Choose the method for connecting to the SAM application server for
 accessing centralized OpCon product
 documentation.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** For the default \[\[SERVER\]\] token in the UNC path to the OpConxps directory on the SAM server, the EM will automatically replace that token with the database server IP/Hostname specified in the profile (refer to [Step 4a]{.ul}). With this token in place, if you change the database server in the profile you will not need to change the UNC path (as long as the share directory is the same).
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+For the default \[\[SERVER\]\] token in the UNC path to the OpConxps directory on the SAM server, the EM will automatically replace that token with the database server IP/Hostname specified in the profile (refer to [Step 4a]{.ul}). With this token in place, if you change the database server in the profile you will not need to change the UNC path (as long as the share directory is the same).
+:::
 
 If on the OpCon server, choose the [Directory with Windows integrated authentication]{._Override
 style="font-weight: bold;"} option.
@@ -117,7 +109,3 @@ Click **Apply** to save the changes in this dialog.
 **If finished making changes in the Preferences dialog:**
 
 Click **OK** to save the changes and close the **Preferences** dialog.
-:::
-
- 
-

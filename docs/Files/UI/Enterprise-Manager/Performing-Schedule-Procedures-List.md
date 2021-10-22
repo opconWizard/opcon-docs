@@ -1,14 +1,8 @@
----
-lang: en-us
-title: Performing Schedule Procedures when Working in List View
-viewport: width=device-width, initial-scale=1.0
----
-
 # Performing Schedule Procedures when Working in List View
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If a completed schedule contains failed jobs, it will show in [red]{style="color: #ff0000;"} by default (this is the default failed color for failed jobs) with the text like this: [ScheduleName (Completed -- Contains Failed Jobs)]{style="color: #ff0000;"}. If the schedule is still in progress, but contains failed jobs, it will look like this: [ScheduleName (In Progress -- Contains Failed Jobs)]{style="color: #ff0000;"}.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If a completed schedule contains failed jobs, it will show in [red]{style="color: #ff0000;"} by default (this is the default failed color for failed jobs) with the text like this: [ScheduleName (Completed -- Contains Failed Jobs)]{style="color: #ff0000;"}. If the schedule is still in progress, but contains failed jobs, it will look like this: [ScheduleName (In Progress -- Contains Failed Jobs)]{style="color: #ff0000;"}.
+:::
 
 ## Viewing Schedule Information
 
@@ -230,9 +224,9 @@ To perform this procedure:
 Use the **Close** feature to mark a schedule as
 [Completed]{.skd-job-statuses} when the schedule is still [In Process]{.skd-job-statuses} only because it contains failed jobs.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [This feature is not available for subschedules.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------
+:::note
+This feature is not available for subschedules.
+:::
 
 To perform this procedure:
 
@@ -276,9 +270,9 @@ To perform this procedure:
 This action will suspend the processing of ALL jobs associated with the
 selected schedule, based on a filter.
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Jobs that have already been submitted for starting cannot be held.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------
+:::note
+Jobs that have already been submitted for starting cannot be held.
+:::
 
 To perform this procedure:
 
@@ -302,7 +296,7 @@ To perform this procedure:
 ## Marking All Jobs Failed on Schedules
 
 This option marks all jobs on the selected schedule as
-[Failed]{.skd-job-statuses}, based on a filter.
+Failed, based on a filter.
 To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
@@ -324,7 +318,7 @@ To perform this procedure:
 
 ## Marking All Jobs Finished OK on Schedules
 
-This option marks all jobs on the selected schedule as [Finished OK]{.skd-job-statuses}, based on a filter.
+This option marks all jobs on the selected schedule as Finished OK, based on a filter.
 
 To perform this procedure:
 
@@ -584,9 +578,9 @@ c.  Click on the drop-down arrow and select a **machine** or select
     **\<None\>** to build an instance for each machine in the defined
     machine group.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If no properties are defined for the schedule, OpCon will still request the build for the schedule, but no properties will be defined.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If no properties are defined for the schedule, OpCon will still request the build for the schedule, but no properties will be defined.
+:::
 
 Click the **Yes** button to confirm the request sent for "job name" or
 click the **Cancel** button to cancel the request.
@@ -604,4 +598,3 @@ Name\>** dialog.
 
 Click on the **x** to the right of the **Daily list** tab to close the
 screen.
-:::

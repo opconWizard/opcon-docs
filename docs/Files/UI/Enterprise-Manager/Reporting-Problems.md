@@ -1,30 +1,25 @@
----
-lang: en-us
-title: Reporting Problems
-viewport: width=device-width, initial-scale=1.0
----
-
 # Reporting Problems
 
-[]{#aanchor378} If you encounter a bug problem, you can report it directly through the Enterprise Manager. The activities of the
+If you encounter a bug problem, you can report it directly through the Enterprise Manager. The activities of the
 Enterprise Manager are recorded in a log file and when the bug is
 reported, the log file will be gathered and attached to the reporting
 email. These problems refer only to the Enterprise Manager itself; other
 problems relating to the SAM or LSAM should be reported in the normal
-way to the SMA Technologies support team. 
+way to the SMA Technologies support team.
+
 To report an EM bug:
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Before actually gathering the log files and recording the details of the problem, it is useful to set tracing on then re-produce the bug. To set tracing on, go to the **Enterprise Manager** menu and select **Preferences**. In the Preferences dialog, select **Enterprise Manager** then set the Logging Level to **TRACE**. Click **Apply** then click **OK**. Once TRACE has been set in the Logging Level, re-produce the bug then follow the steps below to forward all the necessary information to report the bug to the support team.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Before actually gathering the log files and recording the details of the problem, it is useful to set tracing on then re-produce the bug. To set tracing on, go to the **Enterprise Manager** menu and select **Preferences**. In the Preferences dialog, select **Enterprise Manager** then set the Logging Level to **TRACE**. Click **Apply** then click **OK**. Once TRACE has been set in the Logging Level, re-produce the bug then follow the steps below to forward all the necessary information to report the bug to the support team.
+:::
 
 Double-click on **Report Problem** under the **Support** topic. The
 **Report Problem** dialog displays with **Enterprise Manager** radio
 button selected by default.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You can also report a problem experienced with Enterprise Manager by going to the Enterprise Manager **Help** menu, clicking on **About OpCon/xps Enterprise Manager**, and selecting **Report Problem**. You would then proceed with [Step 2]{.ul}][ below][.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+You can also report a problem experienced with Enterprise Manager by going to the Enterprise Manager **Help** menu, clicking on **About OpCon/xps Enterprise Manager**, and selecting **Report Problem**. You would then proceed with Step 2 below.
+:::
 
 Click the **Next** button to advance to the **Choose Method** screen.
 
@@ -65,7 +60,3 @@ m.  Click the **Open** button.
 n.  Click the **Next** button to send the email.
 o.  Click the **Finish** button to complete the problem report process
     and to close the dialog.
-:::
-
- 
-

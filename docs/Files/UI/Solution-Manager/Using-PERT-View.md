@@ -43,7 +43,7 @@ job's current job status, as indicated below:
     [Skipped]{.skd-job-statuses}. -   Orange - Indicates the underlying job has a status of [Missed Start
     Time]{.skd-job-statuses}.
 - Red - Indicates the underlying job has a status of
-    [Failed]{.skd-job-statuses}. -   Gray - Indicates the underlying job has a status of
+    Failed. -   Gray - Indicates the underlying job has a status of
     [Qualifying]{.skd-job-statuses}. -   Turquoise - Indicates the underlying job has a status of
     [Held]{.skd-job-statuses}.
 Tooltips are available for Status and Alert icons within nodes in the
@@ -148,13 +148,13 @@ selections:
 **PERT**: This option displays the individual jobs and job dependency
 relationships for a schedule.
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The PERT action will display all jobs and job dependency relationships for the selected schedule(s) whereas the Dependency Chain, Predecessors, or Successors action on the job(s) will display only the jobs related to the original selection.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The PERT action will display all jobs and job dependency relationships for the selected schedule(s) whereas the Dependency Chain, Predecessors, or Successors action on the job(s) will display only the jobs related to the original selection.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [ When PERT is requested for a schedule, the cross-schedule dependencies will also be displayed in the diagram. If the **Group by Schedule** option is enabled, then only the predecessor jobs from other schedules will be displayed in the workflow.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+When PERT is requested for a schedule, the cross-schedule dependencies will also be displayed in the diagram. If the **Group by Schedule** option is enabled, then only the predecessor jobs from other schedules will be displayed in the workflow.
+:::
 
 **Isolate Dependency Chain**: This option displays the entire dependency
 chain (e.g., is preceding the critical path and subsequent jobs).
@@ -214,9 +214,9 @@ Select the **Export** button to save the current view (i.e., what is
 currently displayed on the screen) locally to your machine as a PNG
 file.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [ To export the entire PERT representation, ensure that everything is captured on screen by using the zooming options.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+To export the entire PERT representation, ensure that everything is captured on screen by using the zooming options.
+:::
 
 ## PERT View Dependency Lines
 
@@ -454,9 +454,9 @@ with the matching keyword(s) highlighted. You can then click on any job
 returned in the search results to navigate directly to that job in the
 PERT diagram.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [ Wildcards are supported in the search criteria. Standard wildcard characters include the asterisk (\*) for any characters and the question mark (?) for a single character substitution.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Wildcards are supported in the search criteria. Standard wildcard characters include the asterisk (\*) for any characters and the question mark (?) for a single character substitution.
+:::
 
 Search Feature in PERT View
 
@@ -604,4 +604,3 @@ Related Topics
 - [Accessing Daily Job     Definition](Accessing-Daily-Job-Definition.md)
 - [Accessing Job Executions     History](Accessing-Job-Executions-History.md)
 - [Managing Daily Processes](Managing-Daily-Processes.md)
-:::

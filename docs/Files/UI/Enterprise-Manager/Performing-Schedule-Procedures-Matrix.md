@@ -252,9 +252,9 @@ c.  Click on the drop-down arrow and select a **machine** or select
     **\<None\>** to build an instance for each machine in the defined
     machine group.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If no properties are defined for the schedule, OpCon will still request the build for the schedule, but no properties will be defined.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If no properties are defined for the schedule, OpCon will still request the build for the schedule, but no properties will be defined.
+:::
 
 Click the **Yes** button to confirm the request sent for "job name" or
 click the **Cancel** button to cancel the request.

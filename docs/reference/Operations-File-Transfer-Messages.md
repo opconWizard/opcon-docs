@@ -633,9 +633,9 @@ met:
 
 #### Processing Errors
 
-  ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Occurrence of an error does not necessarily (but usually does) mean that a job is aborted. If the job does complete successfully, it may indicate some marginal operating conditions in need of attention.]
-  ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Occurrence of an error does not necessarily (but usually does) mean that a job is aborted. If the job does complete successfully, it may indicate some marginal operating conditions in need of attention.
+:::
 
 +----------------------+----------------------+---------------------+
 | Message              | Explanation          | Origination         |

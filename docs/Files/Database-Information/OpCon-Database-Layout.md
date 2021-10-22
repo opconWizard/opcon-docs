@@ -1,14 +1,8 @@
----
-lang: en-us
-title: OpCon Database Layout
-viewport: width=device-width, initial-scale=1.0
----
-
 # OpCon Database Layout
 
-  --------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [The information in this topic is correct; however, most of the Daily tables have an additional column for the Instance Number for schedules. This new column is part of the Primary Key for each of the affected tables. User defined Reports and SQL queries will be affected by this change.]
-  --------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::warning
+The information in this topic is correct; however, most of the Daily tables have an additional column for the Instance Number for schedules. This new column is part of the Primary Key for each of the affected tables. User defined Reports and SQL queries will be affected by this change.
+:::
 
 ## Disclaimer
 
@@ -27,9 +21,9 @@ Technologies]{.GeneralCompanyName}-provided SQL scripts.
 
 ## Introduction
 
-  --------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
-  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Unauthorized updates to the OpCon database voids OpCon support and warranties.]
-  --------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
+:::warning
+Unauthorized updates to the OpCon database voids OpCon support and warranties.
+:::
 
 The Database is a dynamic component of OpCon (Operations
 Control/Cross-platform Scheduler) and accommodates the objects used by
@@ -59,9 +53,9 @@ for OpCon components.
 The following is the naming convention for each auxiliary table:
 \<Primary Table Name\>\_AUX.
 
-  ------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [The auxiliary table for the JMASTER table is named [JMASTER_AUX]{style="font-family: 'Courier New';"}.]{.statement2}
-  ------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------
+:::info
+The auxiliary table for the JMASTER table is named JMASTER_AUX.
+:::
 
 Each of the auxiliary tables contains the following:
 
@@ -1236,9 +1230,9 @@ The primary table ENSHISTORY contains notifications the SMA Notify
 Handler has processed. When the SMA Notify Handler retrieves the record
 successfully, it deletes the record.
 
-  ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The stored procedure 'SMA_CHECK_FOR_NOTIFICATION' should be used to insert data into the table.]
-  ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
+:::note
+The stored procedure 'SMA_CHECK_FOR_NOTIFICATION' should be used to insert data into the table.
+:::
 
 +----------------+----------------+----------------+----------------+
 | Column Name    | Explanation    | Data Type      | Additional     |
@@ -5202,9 +5196,9 @@ Job Definitions, ENS, or external events. The SMA Notify Handler
 processes all records in this table. When the SMA Notify Handler
 retrieves the record successfully, it deletes the record.
 
-  ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The stored procedure 'SMA_CHECK_FOR_NOTIFICATION' should be used to insert data into the table.]
-  ----------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
+:::note
+The stored procedure 'SMA_CHECK_FOR_NOTIFICATION' should be used to insert data into the table.
+:::
 
 +-------------+-----------------+----------------+-----------------+
 | Column Name | Explanation     | Data Type      | Additional      |
@@ -8473,9 +8467,9 @@ single record, which is maintained by the Administration and Security
 sections of the Enterprise Manager and SAM. All keys are by default base
 one and increment of one.
 
-  --------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White "X" icon on red circular background](../../Resources/Images/warning-icon(48x48).png "Warning icon")   **WARNING:** [Invalid changes in this table result in database referential integrity problems, and subsequent failure of the user to insert, delete or modify information in the database.]
-  --------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::warning
+Invalid changes in this table result in database referential integrity problems, and subsequent failure of the user to insert, delete or modify information in the database.
+:::
 
 +-------------+------------------+--------------+------------------+
 | Column Name | Explanation      | Data Type    | Additional       |
@@ -9069,9 +9063,9 @@ The UACCESS table contains Access Code privilege information. Access
 Codes allow you to lock or hide specific job records from other users,
 even on a schedule those users have access to.
 
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [You cannot see records that have an Access Code to which you do not have permission.]
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------
+:::note
+You cannot see records that have an Access Code to which you do not have permission.
+:::
 
 +-------------+------------------+--------------+------------------+
 | Column Name | Explanation      | Data Type    | Additional       |

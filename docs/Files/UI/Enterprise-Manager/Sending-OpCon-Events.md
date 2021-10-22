@@ -81,9 +81,9 @@ ii. Using the search field and filter criteria to find it. You can use
 
 Double-click on the **global property** (e.g., $SCHEDULE DATE).
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Double brackets will automatically be placed around the placeholder for the token that is defined.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------
+:::note
+Double brackets will automatically be placed around the placeholder for the token that is defined.
+:::
 
   --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------
   ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [$JOB:ADD,\[\[$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth.]{.statement2}
@@ -158,4 +158,3 @@ event choice.
     The **Remove** dialog displays.
 8. Click the **Yes** button to confirm the deletion or click the **No**
     button to cancel the deletion.
-:::

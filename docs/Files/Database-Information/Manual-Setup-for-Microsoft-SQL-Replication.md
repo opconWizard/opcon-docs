@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Manual Setup for Microsoft SQL Replication
-viewport: width=device-width, initial-scale=1.0
----
-
 # Manual Setup for Microsoft SQL Replication
 
 This section covers the manual steps for setting up Microsoft SQL
@@ -213,9 +207,9 @@ On the Complete the Wizard screen:
 
 Enter a *Publication name* and click **Finish**.
 
-  ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [On the Create Publications screen, the goal is to see "Success" with 0 Errors and 0 Warnings. If errors are present, rerun the New Publication Wizard process.]
-  ----------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+On the Create Publications screen, the goal is to see "Success" with 0 Errors and 0 Warnings. If errors are present, rerun the New Publication Wizard process.
+:::
 
 Click **Close**.
 
@@ -301,7 +295,8 @@ To use this procedure, refer to [Log into SQL Management Studio](#Login_to_SQL_M
     Subscriptions**.
 4. Click **Next**.
 5. Leave the **Run all agents at the Distributor, \<Server name\>
-    \[push subscriptions\]** radio button selected and click **Next**. 6.  If the secondary server is not available, click the **Add
+    \[push subscriptions\]** radio button selected and click **Next**. 
+6. If the secondary server is not available, click the **Add
     Subscriber** button.
 7. Select **Add SQL Server Subscriber**.
 8. Enter the *\<Subscribing Server name\>*.
@@ -476,9 +471,9 @@ Watch until it completes successfully and click **Close ☒**.
 Perform the following procedure to verify replication is working
 correctly.
 
-  ----------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If opting to manually refresh in Management Studio, be sure to refresh when you are verifying the replication.]
-  ----------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If opting to manually refresh in Management Studio, be sure to refresh when you are verifying the replication.
+:::
 
 [Verify Replication]{.ul}
 To use this procedure, refer to [Log into SQL Management Studio](#Login_to_SQL_Management_Studio) on the
@@ -526,9 +521,9 @@ the SQL scripts and command file. Installed with the SAM-SS, the
 required files are in the \<Configuration
 Directory\>\\Utilities\\Database\\ directory.
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 #### Determining Values for the Command Files
 
@@ -537,9 +532,9 @@ and SMA_DELPULL.sql scripts through SQL Server Management Studio. The
 command files log the results of the queries in the SMA_STOPREPL.log and
 SMA_DELPULL.log files in the \<Output Directory\>\\SAM\\Log\\ directory.
 
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Output Directory was configured during installation. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Output Directory was configured during installation. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 ##### StopRepl.cmd File
 
@@ -591,9 +586,9 @@ In the Folders frame:
 Browse to the \<Configuration Directory\>**\\Utilities\\Database\\**
 directory.
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
+:::
 
 Right-click the desired **StopRepl command file**.
 
@@ -604,9 +599,9 @@ b.  If using *Windows Authentication to SQL*, right-click the
 
 Select **Edit** in the right-click menu.
 
-  ----------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The command file should open with an ASCII text editor (e.g., Notepad).]
-  ----------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------
+:::note
+The command file should open with an ASCII text editor (e.g., Notepad).
+:::
 
 Replace all command file variables (e.g., %1, %2, and so forth) with the
 values in [Determining Values for the Command Files](#Determin)
@@ -639,4 +634,3 @@ SMAServMan to execute the StopRepl.cmd or StopRepl_WinAuth.cmd file for
 the desired failover trigger. For information on configuring SMAServMan
 for failover, refer to [Automatic Failover to the Subscribing Database Server](Failover-and-Recovery-with-Replication.md#Automati)
 .
-:::

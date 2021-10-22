@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Configuring Date User Inputs
-viewport: width=device-width, initial-scale=1.0
----
-
 # Configuring Date User Inputs
 
 When configured, the Date User Input will be displayed to users as a
@@ -55,11 +49,10 @@ formats from the drop-down list:
 - M/D/YY (7/30/20)
 - MMMM D YYYY (July 30 2020)
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The date pattern format is based on the Javascript Moment format without the support of **yo**, **N**, **NN**, **NNN**, **NNNN**, **NNNNN**, **y**, **yy**, **yyy**, and **yyyy** patterns. For more information on the official date format, refer to <https://momentjs.com/docs/#/displaying/format>.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+The date pattern format is based on the Javascript Moment format without the support of **yo**, **N**, **NN**, **NNN**, **NNNN**, **NNNNN**, **y**, **yy**, **yyy**, and **yyyy** patterns. For more information on the official date format, refer to <https://momentjs.com/docs/#/displaying/format>.
+:::
 
 Click the **OK** button to confirm User Input configuration, or click
 the **Cancel** button to discard changes. This will return you to the
 **Service Request definition** page.
-:::

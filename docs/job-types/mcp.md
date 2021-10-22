@@ -253,33 +253,11 @@ The REMOVE type jobs use the following fields:
   - The maximum number of characters for the **From** field is 40.
   - Tokens are supported in this field.
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [Effective with MCP    | | gray circular                    | LSAM 16.02, the user will be     |
-| background](../.                 | able to modify the               |
-| ./Resources/Images/note-icon(48x | \*SMA/WFL/REMOVEJOB WFL to elect |
-| 48).png "Note icon") | to have the WFL complete OK even |
-|                                  | if there are no files deleted.   |
-|                                  | Security errors and locked files |
-|                                  | will still cause the REMOVEJOB   |
-|                                  | WFL to be reported as failed in  |
-|                                  | this case.]          |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | [To implement the alternate      | |                                  | behavior, modify a working copy  |
-|                                  | of \*SMA/WFL/REMOVEJOB to        |
-|                                  | comment out sequence \#26600,    |
-|                                  | and un-comment sequence 26650.   |
-|                                  | Because the default behavior is  |
-|                                  | to fail the REMOVE MCP job if    |
-|                                  | there are no files to remove, it |
-|                                  | will be necessary to             |
-|                                  | re-implement this modification   |
-|                                  | each time the MCP LSAM is        |
-|                                  | upgraded if the alternate        |
-|                                  | behavior is                      |
-|                                  | desired.]            |
-+----------------------------------+----------------------------------+
+:::note
+Effective with MCP LSAM 16.02, the user will be able to modify the *SMA/WFL/REMOVEJOB WFL to elect to have the WFL complete OK even if there are no files deleted. Security errors and locked files will still cause the REMOVEJOB WFL to be reported as failed in this case.
+
+To implement the alternate behavior, modify a working copy of *SMA/WFL/REMOVEJOB to comment out sequence #26600, and un-comment sequence 26650. Because the default behavior is to fail the REMOVE MCP job if there are no files to remove, it will be necessary to re-implement this modification each time the MCP LSAM is upgraded if the alternate behavior is desired.
+:::
 
 ## Pre-Run Information
 

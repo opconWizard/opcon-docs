@@ -1,14 +1,8 @@
----
-lang: en-us
-title: Adding Thresholds to Layouts
-viewport: width=device-width, initial-scale=1.0
----
+# Adding Thresholds to Layouts
 
-#  Adding Thresholds to Layouts
-
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the privileges to "Modify Jobs in Job Master" in at least one department, or "All Administration Functions" or "All Functions," the **Select Threshold** tool is disabled.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If you do not have the privileges to "Modify Jobs in Job Master" in at least one department, or "All Administration Functions" or "All Functions," the **Select Threshold** tool is disabled.
+:::
 
 To add a threshold:
 
@@ -52,9 +46,9 @@ Edit a Threshold Dependency
 Right-click the **threshold dependency** link (line) whose details need
 to be changed.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [When clicking on the Threshold Dependency link line, the line should thicken and become bold.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
+:::note
+When clicking on the Threshold Dependency link line, the line should thicken and become bold.
+:::
 
 Click **Edit**. The **Editing Job Dependency** dialog displays.
 
@@ -63,10 +57,6 @@ Value, Frequency).
 
 Click the **OK** button to save the threshold dependency change(s).
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Refer to the [[Delete a Dependency](Adding-Jobs-to-Schedule-Layouts.md#Delete_a_Dependency)]{.Hyperlink} procedure to delete threshold dependencies.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Refer to the [Delete a Dependency](Adding-Jobs-to-Schedule-Layouts.md#Delete_a_Dependency) procedure to delete threshold dependencies.
 :::
-
- 
-

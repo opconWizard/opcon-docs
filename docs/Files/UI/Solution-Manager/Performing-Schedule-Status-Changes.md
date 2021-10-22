@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Performing Schedule Status Changes
-viewport: width=device-width, initial-scale=1.0
----
-
 # Performing Schedule Status Changes
 
 The **Operations** module allows you to perform schedule status change
@@ -32,48 +26,13 @@ of a breadcrumb trail.
 
 ![Schedule Processes](../../../Resources/Images/SM/Schedule-Processes.png "Schedule Processes")
 
-+----------------------------------+----------------------------------+
-| ![White pencil/paper icon on     | **NOTE:** [Depending on the      | | gray circular                    | number of schedules returned in  |
-| background](../../.              | general or after making date     |
-| ./Resources/Images/note-icon(48x | selections, you may wish to      |
-| 48).png "Note icon") | filter and/or sort the list of   |
-|                                  | schedules to make it easier to   |
-|                                  | make your schedule               |
-|                                  | selections.]         |
-|                                  |                                  |
-|                                  | -   [For                         | |                                  |     [filtering](Managing         |
-|                                  | -Daily-Processes.md#Quick), |
-|                                  |     use the **Filter Bar** just  |
-|                                  |     above the list of schedules  |
-|                                  |     to filter the list. Type the |
-|                                  |     keyword in the appropriate   |
-|                                  |     field and click **Enter**,   |
-|                                  |     and the list will filter     |
-|                                  |     accordingly.]    |
-|                                  | -   For [alternative             | |                                  |     filtering](Managing-Dai    |
-|                                  | ly-Processes.md#Interactive), |
-|                                  |     use the interactive          |
-|                                  |     color-coded **Statistics     |
-|                                  |     Bar** above the list of      |
-|                                  |     schedules to filter the list |
-|                                  |     by status. Click on any      |
-|                                  |     color in the bar to filter   |
-|                                  |     the view by the current      |
-|                                  |     schedule status.             |
-|                                  |                                  |
-|                                  | ```{=html}                       |
-|                                  | <!-- -->                         |
-|                                  |```                              |
-|                                  | -   [For sorting, click on the   | |                                  |     column heading to sort the   |
-|                                  |     column in ascending order    |
-|                                  |     (indicated by a small arrow  |
-|                                  |     pointing down). Click on the |
-|                                  |     column heading again to sort |
-|                                  |     the column in descending     |
-|                                  |     order (indicated by a small  |
-|                                  |     arrow pointing up).          |
-|                                  |     ]                |
-+----------------------------------+----------------------------------+
+:::note
+Depending on the number of schedules returned in general or after making date selections, you may wish to filter and/or sort the list of schedules to make it easier to make your schedule selections.
+
+For filtering, use the **Filter Bar** just above the list of schedules to filter the list. Type the keyword in the appropriate field and click **Enter**, and the list will filter accordingly.
+
+For sorting, click on the column heading to sort the column in ascending order (indicated by a small arrow pointing down). Click on the column heading again to sort the column in descending order (indicated by a small arrow pointing up).
+:::
 
 Click on the schedule record (e.g., 3 schedule(s)) in the status bar to
 display the **Selection** panel with the **Schedule Status Update** tab
@@ -81,9 +40,9 @@ in focus.
 
 ![Schedule Status Update Panel](../../../Resources/Images/SM/Schedule-Status-Update-Panel.png "Schedule Status Update Panel")
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on any schedule selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on any schedule selected in the list to display the **Selection** panel.
+:::
 
 *(Optional)* Click the **Refresh available actions**
 button to verify which status update actions are available for the
@@ -93,16 +52,16 @@ enabled by default.
 
 *(Optional)* Enter or select a change status reason.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Depending on application configuration, the **Change Status Reason** drop-down list may store a number of the previous reasons entered for Job or Schedule status updates.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Depending on application configuration, the **Change Status Reason** drop-down list may store a number of the previous reasons entered for Job or Schedule status updates.
+:::
 
 Select one of the following status updates to apply to the selected
 schedule(s):
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Any status updates that are applied to the Schedule Names selected will effect ALL jobs that are scheduled to run on that specific date (as opposed to "just" the ones that are listed within the current scope being viewed).]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Any status updates that are applied to the Schedule Names selected will effect ALL jobs that are scheduled to run on that specific date (as opposed to "just" the ones that are listed within the current scope being viewed).
+:::
 
 - **Release**: This option allows you to release the selected
     schedule(s) from a [Held]{.skd-job-statuses} state. Jobs on the     schedule(s) continue processing from the point where they were
@@ -121,9 +80,9 @@ schedule(s):
 - **Close**: This option allows you to mark the selected schedule(s)
     as [Completed]{.skd-job-statuses} when the schedule(s) are still [In     Process]{.skd-job-statuses} only because they contain failed jobs.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [For more information about job status changes, refer to [Schedule and Job Status Change Commands](../../../operations/status-change-commands.md) in the **Concepts** online help.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+For more information about job status changes, refer to [Schedule and Job Status Change Commands](../../../operations/status-change-commands.md) in the **Concepts** online help.
+:::
 
 Close the **Selection** panel when done.
 
@@ -136,4 +95,3 @@ Related Topics
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Using PERT View](Using-PERT-View.md)
 - [Managing Daily Processes](Managing-Daily-Processes.md)
-:::

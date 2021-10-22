@@ -1,14 +1,8 @@
----
-lang: en-us
-title: Defining Escalation Groups
-viewport: width=device-width, initial-scale=1.0
----
+# Defining Escalation Groups
 
-#  Defining Escalation Groups
-
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Each user must have an email address defined in order to receive [escalation]{.GeneralEscalatedNotification}s. Refer to [Adding User Accounts](Adding-User-Accounts.md) for more information.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Each user must have an email address defined in order to receive [escalation]{.GeneralEscalatedNotification}s. Refer to [Adding User Accounts](Adding-User-Accounts.md) for more information.
+:::
 
 To define a group:
 
@@ -33,7 +27,3 @@ b.  Select a **user** in the **Available Users** list then click the
 Repeat [Step 4]{.ul} until all desired assigned users are added.
 
 Click **Save**.
-:::
-
- 
-

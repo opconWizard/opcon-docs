@@ -106,9 +106,9 @@ address:
 Verify the backup file is in the *default SQL Backup directory* on the
 machine where the database restoration occurs.
 
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The default SQL Backup directory may vary based on the version of Microsoft SQL Server.]
-  ----------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------
+:::note
+The default SQL Backup directory may vary based on the version of Microsoft SQL Server.
+:::
 
 [Verify the Backup File]{.ul}
 

@@ -10,17 +10,17 @@ defined. For a Windows job, you can:
 For conceptual information, refer to [Windows Job Details](../../../job-types/windows.md) in
 the **Concepts** online help.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the Machine Privilege, then you will not be able to edit the daily job definition.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------
+:::note
+If you do not have the Machine Privilege, then you will not be able to edit the daily job definition.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.
+:::
 
 ## Updating Job Action: Run Program Job Details
 
@@ -155,88 +155,64 @@ To perform this procedure:
 For conceptual information, refer to [Embedded Scripts](../../../automation-concepts/embedded-scripts.md) in the
 **Concepts** online help.
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the Script Privilege for the script, then you will not be able to see the task details or edit the daily job definition (the Lock button will be disabled).]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If you do not have the Script Privilege for the script, then you will not be able to see the task details or edit the daily job definition (the Lock button will be disabled).
+:::
 
 To perform this procedure:
 
 1. Click on the **Processes** button at the top-right of the
     **Operations Summary** page. The **Processes** page will display.
-
 2. Ensure that both the **Date** and **Schedule** toggle switches are
     enabled so that you can make your date and schedule selection,
     respectively. Each switch will appear with a green checkmark when
     enabled.
-
 3. Select the desired **date(s)** to display the associated
     schedule(s).
-
 4. Select one or more **schedule(s)** in the list.
-
 5. Select one **job** in the list. A record of your selection will
     display in the [status bar](SM-UI-Layout.md#Status) at the
     bottom of the page in the form of a breadcrumb trail.
-
 6. Click on the job record (e.g., 1 job(s)) in the status bar to
     display the **Selection** panel.
-
 7. Click the **Daily Job Definition** button ![Daily Job Definition     Button](../../../Resources/Images/SM/Daily-Job-Definition-Button.png "Daily Job Definition Button")
     at the top-left corner of the panel to access the **Daily Job
     Definition** page. By default, this page will be in **Read-only**
     mode.
-
 8. Click the **Lock** button ![Daily Job Definition Read-only     Button](../../../Resources/Images/SM/Daily-Job-Definition-Read-only-Button.png "Daily Job Definition Read-only Button")
     at the top-right corner to place the page in **Admin** mode. The
     button will switch to display a white lock unlocked on a green
     background ![Daily Job Definition Admin     Switch](../../../Resources/Images/SM/Daily-Job-Definition-Admin-Button.png "Daily Job Definition Admin Switch")
     when enabled.
-
 9. Expand the **Task Details** panel to expose its content.
-
 10. Select a **user id** that is assigned to the job for Windows
     security authentication.
-
 11. Select from the **Machines or Machine Group** drop-down list the
     **machine** where the LSAM is installed. If you wish     instead to specify a machine group, then toggle the **Machines**
     switch to *Machine Group* then select the **machine group** from the
     drop-down list. When toggled to Machine Group, the switch will
     appear green.
-
 12. Select the **script** that you wish to associate with the job. The
     **Type** field will populate to show the type of script selected.
-
 13. Select the specific **version (or revision) of the script** to run
     for this job. The **Comments** field will populate with any notes
     provided about the script.
-
 14. Select the **runner** (interpreter) that will be used to run the
     script. The **Run Command Template** field will populate to show the
     syntax for the runner.
-
 15. Enter any *argument(s)* that you wish to pass to the script at
     runtime. This field permits up to 4000 characters.
-
 16. Enter the *working directory* for the execution of the script. This
     field permits up to 255 characters.
-
 17. Select an **operator** then enter or select the **exit code
     integer**.
-
 18. Specify whether the defined criteria should be used to determine if
     the job Failed or Finished OK.
-
 19. Click the green **Add** button (**+**) to define the environment
     variables.
-
 20. Enter a *name* in the **Name** field.
-
 21. Enter a *value* in the **Value** field. Remove any defined
     environment variable by clicking the **Delete** button at the end of
     the row.
-
 22. Click the **OK** button to add the name/value.
-
 23. Click the **Save** button.
-
-:::

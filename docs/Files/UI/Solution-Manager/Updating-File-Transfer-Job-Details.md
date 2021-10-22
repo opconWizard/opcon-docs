@@ -3,17 +3,17 @@
 In **Admin** mode, Windows job type properties can be updated or
 defined. For conceptual information, refer to [File Transfer Job Details](../../../job-types/file-transfer.md) in the **Concepts** online help.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Only those with the appropriate permissions will have access to the **Lock** button and can update job properties. For details about privileges, refer to [Required Privileges](Accessing-Daily-Job-Definition.md#Required) in the **Accessing Daily Job Definition** topic.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If you do not have the Machine Privilege, then you will not be able to edit the daily job definition.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------
+:::note
+If you do not have the Machine Privilege, then you will not be able to edit the daily job definition.
+:::
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+Changes made to the job properties in the **Daily Job Definition** will take place immediately. If the job has already run, the changes will take effect the next time the job runs.
+:::
 
 ## Updating File Transfer Job Details
 
@@ -41,9 +41,9 @@ page in the form of a breadcrumb trail.
 Click on the job record (e.g., 1 job(s)) in the status bar to display
 the **Selection** panel.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.]
-  -------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+:::note
+As an alternative, you can right-click on the job selected in the list to display the **Selection** panel.
+:::
 
 ![Job Summary Tab in Operations](../../../Resources/Images/SM/Job-Summary-Tab-(File-Transfer).png "Job Summary Tab in Operations")
 
@@ -57,15 +57,15 @@ will switch to display a white lock unlocked on a green background
 ![Daily Job Definition Admin Switch](../../../Resources/Images/SM/Daily-Job-Definition-Admin-Button.png "Daily Job Definition Admin Switch")
 when enabled.
 
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The **Lock** button will not be visible to users who do not have the appropriate permissions.]
-  -------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------
+:::note
+The **Lock** button will not be visible to users who do not have the appropriate permissions.
+:::
 
 Expand the **Task Details** panel to expose its content.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [All required fields are designated by a red asterisk ([\*]{style="color: #ff0000; font-weight: bold;"}).]
-  -------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
+:::note
+All required fields are designated by a red asterisk.
+:::
 
 **In the Source frame:**
 
@@ -76,9 +76,9 @@ file.
 
 Select the **machine** with the source file to transfer.
 
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The source machine must be Windows or UNIX.]
-  -------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------
+:::note
+The source machine must be Windows or UNIX.
+:::
 
 Select the **user** with access to the file on the Source machine.
 
@@ -86,9 +86,9 @@ Enter the *full path and file name* for the **file** to transfer.
 
 Select the **data type** of the file on the source machine:
 
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [If anything other than Binary is defined as the Source Data Type, the integrity of the file is maintained but the file structure will likely be altered. This is done in an effort to present the transferred file in a user-friendly structure for the given platform.]
-  -------------------------------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+:::note
+If anything other than Binary is defined as the Source Data Type, the integrity of the file is maintained but the file structure will likely be altered. This is done in an effort to present the transferred file in a user-friendly structure for the given platform.
+:::
 
 - **Text**: Indicates that the SMA File Transfer Agent and Server
     should use the default text data type for the platform when working
@@ -106,9 +106,9 @@ destination file.
 
 Select the **machine** that will receive the file.
 
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------
-  ![White pencil/paper icon on gray circular background](../../../Resources/Images/note-icon(48x48).png "Note icon")   **NOTE:** [The destination machine must be Windows or UNIX.]
-  -------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------
+:::note
+The destination machine must be Windows or UNIX.
+:::
 
 Select the **user** with access to the location on the Destination
 machine that will receive the file.
@@ -184,9 +184,9 @@ gzip, and zip:
 - **Preferred**: Indicates compression is attempted during the
     transfer.
 
-  ------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
-  ![White triangle icon on yellow circlular background](../../../Resources/Images/caution-icon(48x48).png "Caution icon")   **CAUTION:** [Both the agent and the server must both support the same compression type for compression to succeed.]
-  ------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------
+:::caution
+Both the agent and the server must both support the same compression type for compression to succeed.
+:::
 
 Select the **Encryption** option to determine if encryption is disabled,
 required, or preferred. Supported encryption types are 3DES, AES, and
@@ -197,9 +197,9 @@ DES:
 - **Preferred**: Indicates encryption is attempted during the
     transfer.
 
-  ------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
-  ![White triangle icon on yellow circlular background](../../../Resources/Images/caution-icon(48x48).png "Caution icon")   **CAUTION:** [Both the agent and the server must both support the same encryption type for the encryption to succeed.]
-  ------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------
+:::caution
+Both the agent and the server must both support the same encryption type for the encryption to succeed.
+:::
 
 Select the **TLS Security Override** option to determine if TLS Security
 for file transfers is disabled, required, or preferred:
@@ -225,5 +225,3 @@ but the transfer did not comply with the preferred settings for Delete
 Source File, Compression, and Encryption.
 
 Click the **Save** button.
-
-:::
