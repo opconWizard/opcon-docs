@@ -1167,7 +1167,7 @@ configuration, there are several jobs that will need configuration. For
 details on each job and the required configuration, refer to [OpCon Data Maintenance](../Files/Database-Information/OpCon-Data-Maintenance.md)
  in the **Database Information** online help. Additionally, there
 are no notifications set up by default for the imported jobs other than
-the AdHoc jobs. Use either [Event Notification](../notifications/Event-Notification.md) in
+the AdHoc jobs. Use either [Event Notification](../notifications/Components.md) in
 the **Concepts** online help to configure notifications for groups of
 jobs, or go to the [Job Events](../Files/UI/Enterprise-Manager/Job-Events.md) in
 the **Enterprise Manager** online help to configure for each job with

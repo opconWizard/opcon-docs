@@ -6,7 +6,7 @@ The **Escalation Manager** editor is used to define
 [Escalation]{.GeneralEscalatedNotificationCapitalized} rules are applied to triggers in [Notification
 Definitions](Notification-Definitions.md) in **Notification
 Manager**. For all conceptual information regarding the Event
-Notification System (ENS), refer to [Event Notification](../../../notifications/Event-Notification.md) in
+Notification System (ENS), refer to [Event Notification](../../../notifications/Components.md) in
 the **Concepts** online help.
 
 When on the **Escalation Manager** screen, it displays

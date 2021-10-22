@@ -131,7 +131,7 @@ Close the **Selection** panel when done.
 Related Topics
 
 - [Performing Job Status     Changes](Performing-Job-Status-Changes.md)
-- [Performing Bulk Status Job Updates (Schedule     Level)](Performing-Bulk-Job-Status-Updates--Schedule-Level.md)
+- [Performing Bulk Status Job Updates (Schedule     Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md)
 - [Performing Agent Status     Updates](Performing-Agent-Status-Updates.md)
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Using PERT View](Using-PERT-View.md)

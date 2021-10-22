@@ -621,7 +621,7 @@ address the problem and restart replication.
 The following procedure configures text messages through job level
 events; however, the notification can be any $NOTIFY type event and
 could instead be managed through ENS if desired. For information on ENS,
-refer to [Event Notification](../../notifications/Event-Notification.md) in
+refer to [Event Notification](../../notifications/Components.md) in
 the **Concepts** online help.
 
   ---------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

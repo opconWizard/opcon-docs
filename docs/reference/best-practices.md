@@ -256,12 +256,12 @@ notifications should work as intended.
     under [Job Automation     Components](../job-components/frequency.md).
 2. Set up ENS to include the Container job in a group that sends
     notifications for jobs that are [Late to Start]{.skd-job-statuses}.     For more information, refer to [Event
-    Notification](../notifications/Event-Notification.md).
+    Notification](../notifications/Components.md).
 3. Set a [Late to Start]{.skd-job-statuses} value for the jobs in the     subschedule. For more information, refer to the **Late to Start**
     value under [Job Automation     Components](../job-components/frequency.md).
 4. Set up ENS to include the jobs in the subschedule in a group that
     sends notifications for jobs that are [Late to     Start]{.skd-job-statuses}. For more information, refer to [Event
-    Notification](../notifications/Event-Notification.md).
+    Notification](../notifications/Components.md).
 
 ## Shut Down a Machine with an LSAM
 

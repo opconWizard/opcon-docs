@@ -584,7 +584,7 @@ Once any schedule is selected, right-click on the mouse to display the
 Update** accordion-style tab in the panel, as shown in the graphic. From
 there, follow [Steps 6 - 9]{.ul} of the [Performing Bulk Job Status
 Updates (Schedule
-Level)](Performing-Bulk-Job-Status-Updates--Schedule-Level.md)
+Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md)
 topic to perform bulk job status updates for the selected schedule(s) in
 the diagram.
 
@@ -597,7 +597,7 @@ Related Topics
 
 - [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)
 - [Performing Job Status     Changes](Performing-Job-Status-Changes.md)
-- [Performing Bulk Status Job Updates (Schedule     Level)](Performing-Bulk-Job-Status-Updates--Schedule-Level.md)
+- [Performing Bulk Status Job Updates (Schedule     Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md)
 - [Performing Agent Status     Updates](Performing-Agent-Status-Updates.md)
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Accessing Job Summary](Accessing-Job-Summary.md)

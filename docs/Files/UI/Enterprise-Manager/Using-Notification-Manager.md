@@ -6,7 +6,7 @@ OpCon then define triggers to send
 notifications. User-defined group folders are created and displayed for
 each item (Machines, Schedules, and/or Jobs). For all conceptual
 information regarding the Event Notification System (ENS), refer to
-[Event Notification](../../../notifications/Event-Notification.md)
+[Event Notification](../../../notifications/Components.md)
  in the **Concepts** online help.
 
 :::caution

@@ -82,7 +82,7 @@ Related Topics
 
 - [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)
 - [Performing Job Status     Changes](Performing-Job-Status-Changes.md)
-- [Performing Bulk Status Job Updates (Schedule     Level)](Performing-Bulk-Job-Status-Updates--Schedule-Level.md)
+- [Performing Bulk Status Job Updates (Schedule     Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md)
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Using PERT View](Using-PERT-View.md)
 - [Managing Daily Processes](Managing-Daily-Processes.md)
