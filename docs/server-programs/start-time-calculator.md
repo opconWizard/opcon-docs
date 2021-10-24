@@ -38,151 +38,19 @@ The SMAStartTimeCalculator.ini file contains the following major sections:
 The General Settings contain basic information for Start Time Calculator
 processing.
 
-+------------------+---------+---------------+--------------------+
-| General Settings | Default | Dynamic (Y/N) | Definition         |
-+==================+=========+===============+====================+
-| RefreshInterval  | 300     | Y             | -   Sets time      |
-|                  |         |               |     interval (in   |
-|                  |         |               |     seconds) at    |
-|                  |         |               |     which the      |
-|                  |         |               |     service        |
-|                  |         |               |     recalculates   |
-|                  |         |               |     the estimated  |
-|                  |         |               |     start time for |
-|                  |         |               |     all the jobs   |
-|                  |         |               |     in the OpCon   |
-|                  |         |               |     database.      |
-|                  |         |               | -   The default    |
-|                  |         |               |     value of 300   |
-|                  |         |               |     seconds is     |
-|                  |         |               |     appropriate    |
-|                  |         |               |     for smaller,   |
-|                  |         |               |     less complex   |
-|                  |         |               |     automation     |
-|                  |         |               |     environments.  |
-|                  |         |               |     [SMA           | |                  |         |               |                    |
-|                  |         |               |   Technologies]{.G |
-|                  |         |               | eneralCompanyName} |
-|                  |         |               |     strongly       |
-|                  |         |               |     recommends     |
-|                  |         |               |     increasing the |
-|                  |         |               |     value of this  |
-|                  |         |               |     setting for    |
-|                  |         |               |     larger and     |
-|                  |         |               |     more complex   |
-|                  |         |               |     environments.  |
-|                  |         |               | -   Valid values:  |
-|                  |         |               |     1 through      |
-|                  |         |               |     65535 seconds  |
-+------------------+---------+---------------+--------------------+
+|General Settings|Default|Dynamic (Y/N)|Definition|
+|--- |--- |--- |--- |
+|RefreshInterval|300|Y|Sets time interval (in seconds) at which the service recalculates the estimated start time for all the jobs in the OpCon database. The default value of 300 seconds is appropriate for smaller, less complex automation environments. SMA Technologies strongly recommends increasing the value of this setting for larger and more complex environments. Valid values: 1 through 65535 seconds|
+
+:::caution
+If the SMAStartTimeCalculator takes more time than the refresh interval to process all jobs, it will continually process and can have a negative impact on the SAM. Increase the refresh interval by 15 minute increments (900 seconds) until performance is acceptable.
+:::
 
 #### Debug Options
 
 The Debug Options configure the Start Time Calculator's logging behavior.
 
-+----------------+----------------+---------------+----------------+
-| Debug Options  | Default        | Dynamic (Y/N) | Definition     |
-+================+================+===============+================+
-| Maxi           | 150000 (bytes) | Y             | -   Defines    |
-| mumLogFileSize |                |               |     the        |
-|                |                |               |     maximum    |
-|                |                |               |     size in    |
-|                |                |               |     bytes for  |
-|                |                |               |     each log   |
-|                |                |               |     file.      |
-|                |                |               | -   Determines |
-|                |                |               |     when the   |
-|                |                |               |     current    |
-|                |                |               |     log file   |
-|                |                |               |     is closed  |
-|                |                |               |     and a new  |
-|                |                |               |     file is    |
-|                |                |               |     started.   |
-|                |                |               |     When the   |
-|                |                |               |     file       |
-|                |                |               |     reaches    |
-|                |                |               |     this       |
-|                |                |               |     maximum    |
-|                |                |               |     size, it   |
-|                |                |               |     is         |
-|                |                |               |     "rolled   |
-|                |                |               |     over."    |
-|                |                |               | -   This       |
-|                |                |               |     setting    |
-|                |                |               |     creates    |
-|                |                |               |     small,     |
-|                |                |               |     manageable |
-|                |                |               |     log files. |
-|                |                |               | -              |
-|                |                |               |   SMAStartTime |
-|                |                |               | Calculator.log |
-|                |                |               |     resides in |
-|                |                |               |     the        |
-|                |                |               |     \<Output   |
-|                |                |               |     Directo    |
-|                |                |               | ry\>\\SAM\\Log |
-|                |                |               |     directory. |
-|                |                |               | -   When the   |
-|                |                |               |     log file   |
-|                |                |               |     reaches    |
-|                |                |               |     the        |
-|                |                |               |     maximum    |
-|                |                |               |     size,      |
-|                |                |               |     Start Time |
-|                |                |               |     Calculator |
-|                |                |               |     archives   |
-|                |                |               |     the log    |
-|                |                |               |     file. The  |
-|                |                |               |     SAM then   |
-|                |                |               |     maintains  |
-|                |                |               |     the        |
-|                |                |               |     archive    |
-|                |                |               |     folders.   |
-|                |                |               | -   Minimum    |
-|                |                |               |     Value =    |
-|                |                |               |     4096 bytes |
-|                |                |               | -   Maximum    |
-|                |                |               |     Value =    |
-|                |                |               |     65536      |
-|                |                |               |     bytes      |
-+----------------+----------------+---------------+----------------+
-| TraceLevel     | 0              | Y             | -   Determines |
-|                |                |               |     the detail |
-|                |                |               |     of         |
-|                |                |               |     logging.   |
-|                |                |               | -   Valid      |
-|                |                |               |     Entries:   |
-|                |                |               |     -   0 =    |
-|                |                |               |                |
-|                |                |               |       Standard |
-|                |                |               |                |
-|                |                |               |        logging |
-|                |                |               |     -   1 =    |
-|                |                |               |         Basic, |
-|                |                |               |                |
-|                |                |               |   non-detailed |
-|                |                |               |         trace  |
-|                |                |               |     -   2 =    |
-|                |                |               |                |
-|                |                |               |       Detailed |
-|                |                |               |         trace  |
-|                |                |               |     -   3 =    |
-|                |                |               |         Very   |
-|                |                |               |                |
-|                |                |               |       detailed |
-|                |                |               |         trace  |
-|                |                |               |                |
-|                |                |               |        (Traces |
-|                |                |               |         all    |
-|                |                |               |         the    |
-|                |                |               |                |
-|                |                |               |       possible |
-|                |                |               |         debug  |
-|                |                |               |                |
-|                |                |               |    information |
-|                |                |               |         in the |
-|                |                |               |                |
-|                |                |               |  application.) |
-+----------------+----------------+---------------+----------------+
-
-: Start Time Calculator Configuration: Debug Options
+|Debug Options|Default|Dynamic (Y/N)|Definition|
+|--- |--- |--- |--- |
+|MaximumLogFileSize|150000 (bytes)|Y|Defines the maximum size in bytes for each log file. Determines when the current log file is closed and a new file is started. When the file reaches this maximum size, it is "rolled over." This setting creates small, manageable log files.SMAStartTimeCalculator.log resides in the *Output Directory*\SAM\Log directory. Note: The Output Directory was configured during installation. For more information, refer to File Locations in the Concepts online help. When the log file reaches the maximum size, Start Time Calculator archives the log file. The SAM then maintains the archive folders. Minimum Value = 4096 bytes, Maximum Value = 65536 bytes|
+|TraceLevel|0|Y|Determines the detail of logging. Valid Entries:0 = Standard logging1 = Basic, non-detailed trace2 = Detailed trace3 = Very detailed trace (Traces all the possible debug information in the application.)|

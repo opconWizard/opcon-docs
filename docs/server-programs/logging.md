@@ -38,19 +38,11 @@ creates one. The folder names use the following naming convention:
 yyyy_mm_dd (Weekday). The logging mechanism generates the weekday name
 according to the Regional Settings of the user executing the component.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [If the Regional    | | circular                         | Settings are set to English, an  |
-| background](../../Reso           | archive folder would have the    |
-| urces/Images/example-icon(48x48) | following name: 2008_01_11       |
-| .png "Example icon") | (Friday).]{.statement2}          |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | If the Regional Settings are set |
-|                                  | to French, an archive folder     |
-|                                  | would have the following name:   |
-|                                  | 2008_01_11 (Vendredi).           |
-+----------------------------------+----------------------------------+
+:::tip Example
+If the Regional Settings are set to English, an archive folder would have the following name: 2008_01_11 (Friday).
+
+If the Regional Settings are set to French, an archive folder would have the following name: 2008_01_11 (Vendredi).
+:::
 
 As a log file fills up, each component moves it to the current archive
 folder and renames it using the following naming convention: Log
@@ -98,7 +90,7 @@ log when it starts or when it regenerates.
     critical and Application Event log, and will also terminate
     immediately.
 - If the SAM log is locked while SAM is running, it still writes to
-    the critical log but [not]{.ul} to the Application Event log and it     will continue to run.
+    the critical log but not to the Application Event log and it     will continue to run.
 
 ### Critical.log
 
@@ -132,27 +124,22 @@ TE/TI/TX\#MachineName Message.
 The next table contains the definitions of the TE/TI/TX messages with
 the associated SMA protocol types.
 
-  TX Number   Legacy/Contemporary Protocol   Definition
-  ----------- ------------------------------ -----------------------------------
-  TE1         Both                           Tracked or Queued Job Error
-  TI1         Both                           Tracked or Queued Job Information
-  TX1         Both                           Job Start
-  TX2         Both                           Job Status
-  TX3         Legacy                         Confirmation of Job Completion
-  TX4         Both                           Machine Status
-  TX9         Legacy                         Retrieve Pending Messages
-
-  : SMANetCom Message Numbers
+|TX Number|Legacy/Contemporary Protocol|Definition|
+|--- |--- |--- |
+|TE1|Both|Tracked or Queued Job Error|
+|TI1|Both|Tracked or Queued Job Information|
+|TX1|Both|Job Start|
+|TX2|Both|Job Status|
+|TX3|Legacy|Confirmation of Job Completion|
+|TX4|Both|Machine Status|
+|TX9|Legacy|Retrieve Pending Messages|
 
 #### LSAM Response Breakdown
 
-In the SMANetComTrace.log, every "From" (\<\<\<) message is an LSAM
-response to an SMANetCom request. Embedded in a 48-character string, the
-message follows the machine name and job name in an LSAM response. Break
-down the string in the following manner:
+In the SMANetComTrace.log, every "From" (\<\<\<) message is an LSAM response to an SMANetCom request. Embedded in a 48-character string, the message follows the machine name and job name in an LSAM response. Break down the string in the following manner:
 
 - The first 10 characters are the OpCon job number.
-- The 11[th]{._Override style="font-size: 80%;vertical-align: super;"}     character is the LSAM response.
+- The 11th character is the LSAM response.
   - 0 - Job Not Found
   - 1 - Job Initialization Error
   - 2 - Job to be Requeued
@@ -163,15 +150,9 @@ down the string in the following manner:
   - 7 - Job Erred, Completion Notice Pending
   - 8 - Job Finished OK, Deleted from Tracking File
   - 9 - Job Erred, Deleted from Tracking File
-- The 12[th]{._Override style="font-size: 80%;vertical-align: super;"}     through 23[rd]{._Override
-    style="font-size: 80%;vertical-align: super;"} characters are the
-    start and stop time of the job.
-- The 24[th]{._Override style="font-size: 80%;vertical-align: super;"}     through 28[th]{._Override
-    style="font-size: 80%;vertical-align: super;"} characters are the
-    maximum number of jobs the LSAM is allowed to process concurrently.
-- The last 20 characters are the exit condition and the status
-    description of the job. For more information on LSAM exit
-    conditions, refer to the individual LSAM's online help.
+- The 12th through 23rd characters are the start and stop time of the job.
+- The 24th through 28th characters are the maximum number of jobs the LSAM is allowed to process concurrently.
+- The last 20 characters are the exit condition and the status description of the job. For more information on LSAM exit conditions, refer to the individual LSAM's online help.
 
 :::note
 For most LSAMs, the status description will not be shown.
@@ -179,7 +160,7 @@ For most LSAMs, the status description will not be shown.
 
 ## SMAServMan.log
 
-SMAServMan writes all information to the SMAServMan.log regarding the management of all listed applications. For more information on SMA Service Manager's listed applications, refer to the [Application List](./service-manager.md#Applicat) table in the **SMA Service Manager** topic.
+SMAServMan writes all information to the SMAServMan.log regarding the management of all listed applications. For more information on SMA Service Manager's listed applications, refer to the [Application List](./service-manager.md#application-list) table in the **SMA Service Manager** topic.
 
 ## SMANotifyHandler.log
 
