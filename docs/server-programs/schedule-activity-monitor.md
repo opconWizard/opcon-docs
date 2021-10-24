@@ -1,3 +1,7 @@
+---
+sidebar_label: 'SAM'
+---
+
 # Schedule Activity Monitor (SAM)
 
 The Schedule Activity Monitor (SAM) component determines when jobs in the Daily tables qualify for submission to an LSAM and also processes OpCon events. The SAM places messages for the LSAMs in the database and monitors the database for responses. When the responses are received, the SAM updates job statuses and re-qualifies jobs for processing. The SAM also processes events in the database and events received from external sources. For information on events, refer to the [OpCon Events](/events/introduction) online help.

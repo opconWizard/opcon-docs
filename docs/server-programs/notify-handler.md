@@ -1,3 +1,7 @@
+---
+sidebar_label: 'SMANotifyHandler'
+---
+
 # SMA Notify Handler
 
 The SMA Notify Handler component is responsible for reading the NOTIFY table in the OpCon database and writing the message to the appropriate location. For more information, refer to [Using Notification Manager](../Files/UI/Enterprise-Manager/Using-Notification-Manager.md) in the **Enterprise Manager** online help.

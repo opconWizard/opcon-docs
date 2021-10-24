@@ -1,3 +1,7 @@
+---
+sidebar_label: 'SMANetCom'
+---
+
 # SMA Network Communications Module (SMANetCom)
 
 The SMANetCom component is responsible for all communication between the SAM and all LSAMs. In OpCon, SMANetCom is the communication bridge between Central Components and LSAMs. SMANetCom is a multi-threaded application, allowing the dedication of one thread per LSAM.

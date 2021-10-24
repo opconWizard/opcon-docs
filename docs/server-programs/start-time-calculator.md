@@ -1,3 +1,7 @@
+---
+sidebar_label: 'SMAStartTimeCalculator'
+---
+
 # SMA Start Time Calculator
 
 The SMA Start Time Calculator component periodically recalculates the estimated start time for all the active jobs in the OpCon Daily tables. Following each set of calculations, this service updates the database. Schedule Operations views display the current Estimated Start Time for each job.

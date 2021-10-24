@@ -18,7 +18,7 @@ The Configuration Directory location is based on where you installed your progra
 
 ### SMAServMan.ini
 
-All settings in the configuration file apply to the machine on which the file resides. 
+All settings in the configuration file apply to the machine on which the file resides.
 
 #### General Settings
 

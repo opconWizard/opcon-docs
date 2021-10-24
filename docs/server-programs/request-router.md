@@ -1,3 +1,7 @@
+---
+sidebar_label: 'SMARequestRouter'
+---
+
 # SMA Request Router
 
 The SMA Request Router component reads the OpCon database to process requests from the SAM and the Enterprise Manager. After retrieving the record, the SMA Request Router sends the information to the designated handler to process the request. When the handler finishes processing the request, the SMA Request Router writes the completion information to the OpCon database.
