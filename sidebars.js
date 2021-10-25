@@ -379,7 +379,6 @@ module.exports = {
           items: [
             'Files/UI/Solution-Manager/Getting-Started',
             'Files/UI/Solution-Manager/Application-Help',
-            'Files/UI/Solution-Manager/Getting-Started',
             'Files/UI/Solution-Manager/Logging-In',
             'Files/UI/Solution-Manager/Migrating-Data',
             {
