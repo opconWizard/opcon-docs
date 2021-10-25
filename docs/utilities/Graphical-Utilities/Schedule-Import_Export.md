@@ -87,7 +87,7 @@ Schedule Import Export**.
 **On the Log in to Schedule Import/Export screen:**
 
 :::note
-For procedures on creating OpCon/xps User Accounts, refer to [Adding User Accounts](../../Files/UI/Enterprise-Manager/Adding-User-Accounts.md) in the **Enterprise Manager** online help.
+For procedures on creating OpCon User Accounts, refer to [Adding User Accounts](../../Files/UI/Enterprise-Manager/Adding-User-Accounts.md) in the **Enterprise Manager** online help.
 :::
 
 Do the following in the **Username** text box:
@@ -214,11 +214,11 @@ considered:
     complete, the details of imported jobs need to be verified to make
     sure appropriate Batch User IDs are listed. Jobs fail if no Batch
     User ID is listed.
-- OpCon/xps Global Properties, Thresholds, and Resources will only be
+- OpCon Global Properties, Thresholds, and Resources will only be
     exported if the options are selected to do so. Imported jobs and
     events making use of these items may fail unless those properties
     are transferred.
-- When OpCon/xps Global Properties, Thresholds, and Resources are
+- When OpCon Global Properties, Thresholds, and Resources are
     imported, only new items will be accepted. If the item exists in the
     target database, the item and its value are retained. If the item
     does not exist in the target database, the item and its value will
@@ -352,7 +352,7 @@ Database used as the transport database.
 database. This name can be found on the Schedule Import Export login
 screen.
 
-**UID**: A valid, case-sensitive OpCon/xps User Login ID.
+**UID**: A valid, case-sensitive OpCon User Login ID.
 
 **PWD**: The case-sensitive password corresponding to the User Login ID
 above.
@@ -584,11 +584,11 @@ ImpEx.exe AccessDSN,SQLDSN,UID,PWD,IMPORT,PurgeJobs?,PurgeCalDates?\
 **AccessDSN**: The **ODBC** Data Source Name corresponding to the Access
 Database used as the transport database.
 
-**SQLDSN**: The ODBC Data Source Name corresponding to the OpCon/xps
+**SQLDSN**: The ODBC Data Source Name corresponding to the OpCon
 database. This name can be found on the Schedule Import Export login
 screen.
 
-**UID**: A valid, case-sensitive OpCon/xps User Login ID.
+**UID**: A valid, case-sensitive OpCon User Login ID.
 
 **PWD**: The case-sensitive password corresponding to the User Login ID
 above.

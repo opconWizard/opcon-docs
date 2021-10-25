@@ -98,11 +98,11 @@ This report becomes more CPU intensive as the amount of Job History in the datab
   **Parameters**: \<None\>
   --------------------------------------------------------------------------------------------------------------------------------------
 
-## Current OpCon/xps Instance Property Values
+## Current OpCon Instance Property Values
 
   --------------------------------------------------------------------------------------------------
 
-**Description**: Shows all OpCon/xps instance property names with their descriptions and values
+**Description**: Shows all OpCon instance property names with their descriptions and values
   **File Name**: admin09
   **Primary Table**: TOKEN
   **Required Filters**: \<None\>
@@ -236,7 +236,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 
   --------------------------------------------------------------------------------
 
-**Description**: Shows OpCon/xps User Roles that are duplicates of each other
+**Description**: Shows OpCon User Roles that are duplicates of each other
   **File Name**: Admin22
   **Primary Table**: ROLES
   **Required Filters**: \<None\>

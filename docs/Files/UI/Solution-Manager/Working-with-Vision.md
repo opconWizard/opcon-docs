@@ -86,7 +86,7 @@ next procedures.
 To request the license file:
 
 1. Launch Enterprise Manager.
-2. Use menu path: **Help \> About OpCon/xps Enterprise Manager**.
+2. Use menu path: **Help \> About OpCon Enterprise Manager**.
 3. Click the **License Information** tab.
 4. Select the **System ID** \[e.g., (OpconServer_6410)\] at the end of     the first line.
 5. Right-click and select **Copy**.

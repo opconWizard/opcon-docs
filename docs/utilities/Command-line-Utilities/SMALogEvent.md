@@ -108,7 +108,7 @@ to the Windows Event Log.
 To modify the command file:
 
 1. Log on to the **SAM application server** as a *Windows user* with
-    access to the OpCon/xps installation directories.
+    access to the OpCon installation directories.
 2. Right-click on **Start** and select **Explore**.
 3. Browse to and select the **\<Target Directory\>\\OpConxps\\SAM\\**
     directory in Explorer's **Folders** frame.

@@ -433,7 +433,7 @@ in the value. These properties can be associated with the following
 objects:
 
 - Remote Instance (RI)
-- OpCon/xps Instance (OI)
+- OpCon Instance (OI)
 - Machines (Machine Instance (MI))
 - Schedules (Schedule Instance (SI))
 - Jobs (Job Instance (JI))

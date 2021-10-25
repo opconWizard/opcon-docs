@@ -147,14 +147,14 @@ Click the **Back** button to correct the problem and try again.
 
 If the test was successful:
 
-Click the **Next** button to go on to set up the OpCon/xps Installation
+Click the **Next** button to go on to set up the OpCon Installation
 details.
 
 :::note
 For the default \[\[SERVER\]\] token in the UNC path to the OpCon directory on the SAM server, the EM will automatically replace that token with the database server IP/Hostname specified in the profile (refer to Step 4a). With this token in place, if you change the database server in the profile you will not need to change the UNC path (as long as the share directory is the same).
 :::
 
-On the OpCon/xps installation details screen:
+On the OpCon installation details screen:
 
 Confirm the path to the OpCon directory on the SAM server.
 
@@ -759,7 +759,7 @@ Manager.
 Use menu path: **Start \> All Programs \> OpConxps \> Enterprise
 Manager**.
 
-On the OpCon/xps Login screen:
+On the OpCon Login screen:
 
 Enter *ocadm* in the **Username** text box.
 
@@ -1215,7 +1215,7 @@ The configuration of the startup type varies when implementing failover.
 [Request a License File]{.ul}
 Log in to the **Enterprise Manager**.
 
-Use menu path: **Help \> About OpCon/xps Enterprise Manager**.
+Use menu path: **Help \> About OpCon Enterprise Manager**.
 
 Click the **License Information** tab.
 

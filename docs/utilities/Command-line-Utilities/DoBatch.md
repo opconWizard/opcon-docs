@@ -146,7 +146,7 @@ each parameter is also provided. The letter '**O**' means optional,
     using the database connection defined on the OpCon Server with the
     SMA Connection Configuration tool. Leave this parameter empty to
     support the legacy syntax.
-- **UID**: (Required) A valid, case-sensitive OpCon/xps User Login ID.
+- **UID**: (Required) A valid, case-sensitive OpCon User Login ID.
 - **PWD**: (Required) The case-sensitive password corresponding to the
     User Login ID above.
 - **Logfile**: (Required) The location where DoBatch creates a

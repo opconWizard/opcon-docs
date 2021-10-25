@@ -68,7 +68,7 @@ Click the [Back]{._Override style="font-weight: bold;"} button to correct the pr
 
 **If the test was successful:**
 
-[]{#OpConxps_data_location_details}Click [Next]{._Override style="font-weight: bold;"} to go on to set up the OpCon/xps data
+[]{#OpConxps_data_location_details}Click [Next]{._Override style="font-weight: bold;"} to go on to set up the OpCon data
 location details.
 
 Choose the method for connecting to the SAM application server for

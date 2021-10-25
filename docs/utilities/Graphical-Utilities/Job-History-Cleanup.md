@@ -37,7 +37,7 @@ HISTORY.EXE -u\<user\> -w\<password\> -s\<Schedule\>
 The following describes the command-line parameters:
 
 - **HISTORY.EXE**: The name of the job history cleanup program.
-- **-u\<User\>**: Any valid, case-sensitive OpCon/xps User Login ID.
+- **-u\<User\>**: Any valid, case-sensitive OpCon User Login ID.
 - **-w\<Password\>**: The case-sensitive password corresponding to the
     User Login ID above.
 - **-s\<Schedule\>**: The Schedule name to clean up history records

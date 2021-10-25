@@ -1,6 +1,6 @@
 # Database Replication Checklist
 
-The SQL scripts provided by SMA Technologies for replicating the OpCon/xps database require several scripting variables
+The SQL scripts provided by SMA Technologies for replicating the OpCon database require several scripting variables
 to execute successfully. The following sections describe these SQL
 scripting variables as defined within the
 SMA_SetDBReplicationScriptingVariables.cmd file. Installed with the SAM

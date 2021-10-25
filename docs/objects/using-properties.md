@@ -40,7 +40,7 @@ ObjectType.PropertyName.Qualifier.Qualifier...
 - The ObjectType tells OpCon where the
     property belongs.
   - **RI** = Remote Instance (This is the remote instance of OpCon.)
-  - **OI** = OpCon/xps Instance
+  - **OI** = OpCon Instance
   - **MI** = Machine Instance
   - **SI** = Schedule Instance
   - **JI** = Job Instance
@@ -76,7 +76,7 @@ The simplest references to property names require no qualifiers. Simple property
 
 The complete simple syntax for each object is the following:
 
-- OpCon/xps Instance:
+- OpCon Instance:
 
 ```shell
 OI.PropertyName -or- PropertyName
@@ -186,7 +186,7 @@ The following are all valid tokens when specified on a command line or job event
 For each object that supports properties, there are different syntax rules.
 
 - [Remote Instance Property Name Syntax](#Remote_Instance_Property_Name_Syntax)
-- [OpCon/xps Instance Property Name Syntax](#OpCon/xp)
+- [OpCon Instance Property Name Syntax](#OpCon/xp)
 - [Machine Instance Property Name Syntax](#Machine)
 - [Schedule Instance Property Name Syntax](#Schedule)
 - [Job Instance Property Name Syntax](#Job)
@@ -226,18 +226,18 @@ $DATE resolves to the date on the primary OpCon server.
 **Result**: When JobA has a status of Finished OK, then JobB will run.
 :::
 
-### OpCon/xps Instance Property Name Syntax
+### OpCon Instance Property Name Syntax
 
 :::note
-In the graphical interfaces, the Global Properties screens are used to manage the OpCon/xps Instance properties because they have a "global" availability within the OpCon/xps instance.
+In the graphical interfaces, the Global Properties screens are used to manage the OpCon Instance properties because they have a "global" availability within the OpCon instance.
 :::
 
 OI.PropertyName
 
-- *OI* is an optional indicator for the OpCon/xps Instance property. If not specified, an OpCon/xps Instance property is assumed (e.g., OI.MyOpConxpsProperty and MyOpConxpsProperty will both be interpreted as OpCon Global Properties).
+- *OI* is an optional indicator for the OpCon Instance property. If not specified, an OpCon Instance property is assumed (e.g., OI.MyOpConxpsProperty and MyOpConxpsProperty will both be interpreted as OpCon Global Properties).
 - *PropertyName* is the name assigned to the property.
 
-The table displays sample property names that are associated with the OpCon/xps instance and the tokens that access them.
+The table displays sample property names that are associated with the OpCon instance and the tokens that access them.
 
 |Property Name|Token|
 |--- |--- |
@@ -245,11 +245,11 @@ The table displays sample property names that are associated with the OpCon/xps 
 |MySpecialProperty|[[MySpecialProperty]] -or- [[OI.MySpecialProperty]]|
 
 :::tip Example
-This example shows the definition and use of a user-defined OpCon/xps Instance property.
+This example shows the definition and use of a user-defined OpCon Instance property.
 
 **Scenario**: For every working day, the Accounting schedule runs and has a job named ProcessCreditTransactions which is built On Hold. The Accounting schedule is built for multiple days, but it must run on each day and complete before the next day can begin processing. An external process must execute before ProcessCreditTransactions can be released. That external process could occur any time between 10:00 PM and 4:00 AM each day.
 
-- Because ProcessCreditTransactions must be released on the correct date, on the Administration screen for Global Properties, the administrator creates an OpCon/xps Instance property named ProcessingDate and sets the initial value to the current date.
+- Because ProcessCreditTransactions must be released on the correct date, on the Administration screen for Global Properties, the administrator creates an OpCon Instance property named ProcessingDate and sets the initial value to the current date.
 - On the Administration screen for Schedule Master, the administrator marks the checkbox to Conflict with Other Days for the Accounting schedule. This setting will ensure that the Accounting schedule will only process one day at a time.
 - On the Accounting schedule, the administrator creates a Null job with an OpCon event to set the value of the ProcessingDate property to the Schedule Date as soon as the Accounting schedule begins processing.
 

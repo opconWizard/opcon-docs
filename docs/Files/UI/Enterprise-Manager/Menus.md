@@ -80,7 +80,7 @@ The [Help]{._Override style="font-weight: bold;"} menu displays the following op
     refer to the [procedures for changing     preferences](Setting-Preferences.md).
 -   [Legend]{._Override style="font-weight: bold;"}: This item opens the     legend window that explains the colors and icons associated with the
     jobs, schedules, and dependencies displayed in the views.
--   [About OpCon/xps Enterprise Manager]{._Override     style="font-weight: bold;"}: This menu item displays [SMA
+-   [About OpCon Enterprise Manager]{._Override     style="font-weight: bold;"}: This menu item displays [SMA
     Technologies]{.GeneralCompanyName} contact information, Product
     version details, and the option to Report a Problem. This menu also
     displays OpCon License information to

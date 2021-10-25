@@ -393,10 +393,10 @@ Sequence Number sub-type.
     \[\[BatchOutputFile\]\]. Refer to     [Properties](../objects/properties.md).
 - **MSGIN Directory**: Defines the full path to the MSGIN directory on
     the UNIX machine the job will run on.
-- **OpCon/xps User ID**: Defines an OpCon/xps User ID with privileges
+- **OpCon User ID**: Defines an OpCon User ID with privileges
     to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
      in the **OpCon Events** online help.
 
 ### Episys: Find Report from Episys Reports
@@ -426,10 +426,10 @@ Reports sub-type.
     [Properties](../objects/properties.md#using).
 - **MSGIN Directory**: Defines the full path to the MSGIN directory on
     the UNIX machine the job will run on.
-- **OpCon/xps User ID**: Defines an OpCon/xps User ID with privileges
+- **OpCon User ID**: Defines an OpCon User ID with privileges
     to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
      in the **OpCon Events** online help.
 - **Occurrence to Search for**: Defines a numerical value (maximum
     value 99) that identifies the occurrence of the Report title to
@@ -464,10 +464,10 @@ Output sub-type.
     .
 - **MSGIN Directory**: Defines the full path to the MSGIN directory on
     the UNIX machine the job will run on.
-- **OpCon/xps User ID**: Defines an OpCon/xps User ID with privileges
+- **OpCon User ID**: Defines an OpCon User ID with privileges
     to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon/xps User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
     .
 - **Occurrence to Search for**: Defines a numerical value (maximum
     value 99) that identifies the occurrence of the Report title to

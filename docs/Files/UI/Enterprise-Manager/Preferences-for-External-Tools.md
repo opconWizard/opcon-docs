@@ -15,7 +15,7 @@ To set the preferences:
     drop-down list.
 4.  Click on **External Tools**. The **External Tools** settings display
     to the right.
-5.  Enter the *OpCon/xps Installation Directory* on the local machine in
+5.  Enter the *OpCon Installation Directory* on the local machine in
     the text box to enable the Enterprise Manager to open the Schedule
     Import Export utility. Alternatively, click the **Browse** button
     and select the **directory**.

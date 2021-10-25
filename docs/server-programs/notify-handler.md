@@ -15,7 +15,7 @@ The SMA Notify Handler can send the following basic notifications after reading 
 - SNMP Trap (For more information on configuring notifications for SMTP, refer to [Configuring SNMP Notifications](../notifications/Notification-Configuration.md#Configur) in the **Concepts** online help.)
 - Unisys Single Point of Operations (SPO) AL and CO Reports (For more information on configuring notifications for SMTP, refer to [Configuring SPO Notifications](../notifications/Notification-Configuration.md#Configur2) in the **Concepts** online help.)
 - Text Messages (SMS)
-- OpCon/xps Events
+- OpCon Events
 - Command
 
 ## Configuration
@@ -30,7 +30,7 @@ When processing notifications:
 
 - The SMA Notify Handler resolves tokens before sending any notifications. Tokens can resolve to any valid property in OpCon.
 - For all Schedules, SMA Notify Handler looks up the Schedule Name for the notification from the Daily tables to ensure that all notifications containing a Schedule Name will contain the unique schedule name instance for the customer to follow up on if necessary.
-- Any OpCon/xps Events are passed in the SAM's MSGIN directory for processing. SMA Notify Handler automatically supplies the user name and password.
+- Any OpCon Events are passed in the SAM's MSGIN directory for processing. SMA Notify Handler automatically supplies the user name and password.
 - For all notification types with message or text fields, SMA Notify Handler inserts a Notification ID as the first few characters of the message. This ID provides a way for users to look up the source of a notification.
 - Email and Text Messaging SMTP server usage:
   - SMTPSERVER and SMTPSERVER2 will be used for email notifications and only used for SMS if SMTPSERVER3 and SMTPSERVER4 are not configured.

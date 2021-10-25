@@ -392,7 +392,7 @@ from the Job Details screen in the Enterprise Manager.
 ## View License Information
 
 Grants access to the **License Information** tab in the **About
-OpCon/xps Enterprise Manager** window accessible from the **Help** menu
+OpCon Enterprise Manager** window accessible from the **Help** menu
 in the Enterprise Manager.
 
 ## View Service Requests

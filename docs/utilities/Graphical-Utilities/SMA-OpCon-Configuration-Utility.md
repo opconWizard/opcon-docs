@@ -454,9 +454,9 @@ replication for databases on the SQL Database Server.
     MyReplPublisher\\SQLReplication).
 - **Publication Database Name**: Defines the name of the database to
     be replicated. If the default database name was accepted during
-    installation of OpCon/xps, this value would be OPCONXPS.
+    installation of OpCon, this value would be OPCONXPS.
 - **Publication Name**: Defines the name given to the publication of
-    articles (OpCon/xps database tables) to be replicated. Normally,
+    articles (OpCon database tables) to be replicated. Normally,
     this name matches the Publication Database Name. If the default
     database named was used, then the publication name would be
     OPCONXPS.

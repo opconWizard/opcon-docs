@@ -23,9 +23,9 @@ Jamie needs to create an External Application Dependency because she has an OpCo
 - In Job Master, Jamie creates a threshold dependency for 'Testing' and makes the 'Testing' job dependent on the threshold **EXTERNALAPP**. Jamie will set the dependent value equal (**EQ**) to **1**.
 - In the Job Master, Jamie creates a threshold update for the 'Testing' job and sets the Job Status to **Finished OK** for the Threshold **EXTERNALAPP** with a value of **0**. This takes place after JobA executes and will reset the threshold for the next time the job executes.
 - Jamie builds the schedule and the 'Testing' job should be in a Wait Threshold/Resource Dependency state in Schedule Operations.
-- On the machine with the job that the 'Testing' job is dependent on, Jamie will edit the external job so when the process finishes, it copies or FTPs an ASCII file to the SAM server. The file should contain the following OpCon/xps event: $THRESHOLD:SET,EXTERNALAPP,1,username,event_password. This file should be placed in the MSGIN directory for the SAM.
+- On the machine with the job that the 'Testing' job is dependent on, Jamie will edit the external job so when the process finishes, it copies or FTPs an ASCII file to the SAM server. The file should contain the following OpCon event: $THRESHOLD:SET,EXTERNALAPP,1,username,event_password. This file should be placed in the MSGIN directory for the SAM.
 
-**Result**: When the external OpCon/xps event is received through the MSGIN, the threshold EXTERNALAPP is updated to a value of one, and the 'Testing' job starts processing if there are no other dependencies to resolve. When the 'Testing' job finishes, the threshold EXTERNALAPP is set back to zero.
+**Result**: When the external OpCon event is received through the MSGIN, the threshold EXTERNALAPP is updated to a value of one, and the 'Testing' job starts processing if there are no other dependencies to resolve. When the 'Testing' job finishes, the threshold EXTERNALAPP is set back to zero.
 :::
 
 :::tip Example

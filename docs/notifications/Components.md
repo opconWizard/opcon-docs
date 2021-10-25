@@ -2,7 +2,7 @@
 
 Event Notification in OpCon is a process in which Machine, Schedule, and Job status change events generate (i.e., trigger) notifications. For critical notifications, administrators can also apply [escalation]{.GeneralEscalatedNotification} rules to provide higher visibility.
 
-The basic types of notifications include Windows Event Log, Email (SMTP), Network Message, SNMP Trap, Unisys Single Point of Operations (SPO) AL and CO Reports, Text Messages (SMS), OpCon/xps Events, and Command. With OpCon, notifications can be created in several ways. 
+The basic types of notifications include Windows Event Log, Email (SMTP), Network Message, SNMP Trap, Unisys Single Point of Operations (SPO) AL and CO Reports, Text Messages (SMS), OpCon Events, and Command. With OpCon, notifications can be created in several ways. 
 
 ## Components
 

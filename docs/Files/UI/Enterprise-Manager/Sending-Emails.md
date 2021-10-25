@@ -19,7 +19,7 @@ email notification:
     sending blind carbon copies. Separate email address(es) with a
     semi-colon (;). The maximum for this field is 3,000 characters.
 -   **Subject** (Optional): Defines the message's subject. The Subject
-    field defaults to "OpCon/xps Notification: \<Status Change Event
+    field defaults to "OpCon Notification: \<Status Change Event
     Trigger Name\>".
 -   **JORS Output**: Select this checkbox to include JORS output files
     as attachments to the email for job triggers.

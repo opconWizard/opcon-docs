@@ -1,7 +1,7 @@
 # Sending OpCon Events
 
 The **Event** tab provides the following fields for defining an
-OpCon/xps event launched for the selected trigger:
+OpCon event launched for the selected trigger:
 
 - **Event Command**: Defines the Event Command definition. For
     additional information, refer to the [OpCon Events](../../../events/introduction.md) online help.
@@ -45,7 +45,7 @@ Click on the appropriate **machine/schedule/job trigger**.
 
 **In the General tab under Notification Definitions:**
 
-Select the checkbox for **Send OpCon/xps Events**.
+Select the checkbox for **Send OpCon Events**.
 
 Click on the **Event** tab and click the **Add** button. The **Event
 Definition Wizard** displays.

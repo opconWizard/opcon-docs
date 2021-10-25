@@ -49,7 +49,7 @@ To change the LSAM Machine ID:
 
 Execute SMA_CHGMACHINE
 
-On the OpCon/xps Database Server:
+On the OpCon Database Server:
 
 Log in as a *local administrative user*.
 
@@ -74,7 +74,7 @@ Click the **Connect** button.
 
 In the Microsoft SQL Server Management Studio window:
 
-Expand (+) the **Databases** folder and select the **OpCon/xps
+Expand (+) the **Databases** folder and select the **OpCon
 Database**.
 
 Click the **New Query** button on the toolbar.
@@ -177,7 +177,7 @@ Follow the procedure provided to execute the stored procedure.
 
 To execute the stored procedure:
 
-On the OpCon/xps Database Server:
+On the OpCon Database Server:
 
 Log in as a *local administrative user*.
 
@@ -202,7 +202,7 @@ Click the **Connect** button.
 
 In the Microsoft SQL Server Management Studio window:
 
-Expand (+) the **Databases** folder and select the **OpCon/xps
+Expand (+) the **Databases** folder and select the **OpCon
 Database**.
 
 Click the **New Query** button on the toolbar.
@@ -259,7 +259,7 @@ Follow the procedure provided to execute the stored procedure.
 
 To execute the stored procedure:
 
-On the OpCon/xps Database Server:
+On the OpCon Database Server:
 
 Log in as a *local administrative user*.
 
@@ -284,7 +284,7 @@ Click the **Connect** button.
 
 In the Microsoft SQL Server Management Studio window:
 
-Expand (+) the **Databases** folder and select the **OpCon/xps
+Expand (+) the **Databases** folder and select the **OpCon
 Database**.
 
 Click the **New Query** button on the toolbar.
@@ -429,7 +429,7 @@ Follow the procedure provided to execute the stored procedure.
 
 To execute the stored procedure:
 
-On the OpCon/xps Database Server:
+On the OpCon Database Server:
 
 Log in as a *local administrative user*.
 
@@ -454,7 +454,7 @@ Click the **Connect** button.
 
 In the Microsoft SQL Server Management Studio window:
 
-Expand (+) the **Databases** folder and select the **OpCon/xps
+Expand (+) the **Databases** folder and select the **OpCon
 Database**.
 
 Click the **New Query** button on the toolbar.
@@ -556,7 +556,7 @@ Follow the procedure provided to execute the stored procedure.
 
 To execute the stored procedure:
 
-On the OpCon/xps Database Server:
+On the OpCon Database Server:
 
 Log in as a *local administrative user*.
 
@@ -581,7 +581,7 @@ Click the **Connect** button.
 
 In the Microsoft SQL Server Management Studio window:
 
-Expand (+) the **Databases** folder and select the **OpCon/xps
+Expand (+) the **Databases** folder and select the **OpCon
 Database**.
 
 Click the **New Query** button on the toolbar.
@@ -663,7 +663,7 @@ Follow the procedure provided to execute the stored procedure.
 
 To execute the stored procedure:
 
-On the OpCon/xps Database Server:
+On the OpCon Database Server:
 
 Log in as a *local administrative user*.
 
@@ -688,7 +688,7 @@ Click the **Connect** button.
 
 In the Microsoft SQL Server Management Studio window:
 
-Expand (+) the **Databases** folder and select the **OpCon/xps
+Expand (+) the **Databases** folder and select the **OpCon
 Database**.
 
 Click the **New Query** button on the toolbar.
@@ -822,7 +822,7 @@ To schedule the stored procedure:
 
 Log in to Management Studio
 
-On the OpCon/xps Database Server:
+On the OpCon Database Server:
 
 Use menu path: **Start \> All Programs \> Microsoft SQL Server \> SQL
 Server Management Studio**.

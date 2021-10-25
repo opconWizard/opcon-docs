@@ -110,7 +110,7 @@ If the test was successful:
 Click the **Next** button to go on to choose the method for connecting
 to the SAM application server for reading log files.
 
-On the OpCon/xps data location screen:
+On the OpCon data location screen:
 
 Choose the **Directory with Windows integrated authentication** radio
 button.
@@ -205,10 +205,10 @@ In order for a user to log in to Enterprise Manager, a Database Connection Profi
 The installation writes the log file named SMA_OpCon_Enterprise_Manager\_\<CPUType\>\_Install.log to the Windows directory. Consult this file if any installation problems are suspected.
 :::
 
-[Reconfigure OpCon/xps Data Location]{.ul}
+[Reconfigure OpCon Data Location]{.ul}
 If the previous version of the EM was installed from a release lower
 than 16.0, you may need to complete this procedure to reconfigure the
-share path to the OpCon/xps data.
+share path to the OpCon data.
 
 In the Enterprise Manager:
 
@@ -238,7 +238,7 @@ Click the **Next** button to go on to choose the method for connecting
 to the SAM application server for reading log files and accessing
 centralized OpCon product documentation.
 
-On the OpCon/xps data location screen:
+On the OpCon data location screen:
 
 Choose the **Directory with Windows integrated authentication** radio
 button.

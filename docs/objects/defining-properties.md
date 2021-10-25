@@ -3,7 +3,7 @@
 The following basic information applies to defining properties:
 
 - **Name**: Defines the property name.
-  - For Global Properties (OpCon/xps Instance (OI) properties), the
+  - For Global Properties (OpCon Instance (OI) properties), the
         property name must not exceed 64 characters and must be unique.
   - For Machine, Schedule, and Job Instance properties, the name has no restriction on length and should be unique for an instance.
     :::note
@@ -22,7 +22,7 @@ The following basic information applies to defining properties:
             once within the name.
   - If the database has a binary sort order, the property names are
         case-sensitive.
-- **Documentation**: For Global Properties (OpCon/xps Instance (OI)
+- **Documentation**: For Global Properties (OpCon Instance (OI)
     properties), provides an area for descriptions, explanations, and
     notes that can be updated for the defined property.
 - **Encrypted**: Allows the Value to be encrypted. Once an encrypted
@@ -91,7 +91,7 @@ PropertyName1=value;PropertyName2=value...
 
 ### Enterprise Manager
 
-- User-defined OpCon/xps Instance (OI) properties and values are maintained in [Properties](./properties.md). For information on Adding, Editing, or Deleting Properties, refer to [Managing Global Properties](../Files/UI/Enterprise-Manager/Managing-Global-Properties.md) in the **Enterprise Manager** online help.
+- User-defined OpCon Instance (OI) properties and values are maintained in [Properties](./properties.md). For information on Adding, Editing, or Deleting Properties, refer to [Managing Global Properties](../Files/UI/Enterprise-Manager/Managing-Global-Properties.md) in the **Enterprise Manager** online help.
 - Users can define Schedule Instance Properties from the [Schedule Instance Definition](../Files/UI/Enterprise-Manager/Schedule-Instance-Definition.md) frame in the **Enterprise Manager** online help.
 - Users can define Job Instance Properties from the [Job Instance Definition](../Files/UI/Enterprise-Manager/Job-Instance-Definition.md) frame in the **Enterprise Manager** online help.
 - From Schedule Build, users can define Schedule Instance properties
@@ -105,7 +105,7 @@ PropertyName1=value;PropertyName2=value...
 
 ### OpCon Events
 
-- The [Property-Related Events](../events/types.md#property) ($PROPERTY:ADD, SET, and DELETE) support maintenance of user-defined properties for any object (e.g., OpCon/xps Instance, Machine Instance, Schedule Instance, and Job Instance).
+- The [Property-Related Events](../events/types.md#property) ($PROPERTY:ADD, SET, and DELETE) support maintenance of user-defined properties for any object (e.g., OpCon Instance, Machine Instance, Schedule Instance, and Job Instance).
 - $SCHEDULE:BUILD type events have an optional parameter for defining
     properties for the schedule being built. Properties will
     automatically be associated with the defined schedule to build. A

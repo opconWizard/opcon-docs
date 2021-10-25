@@ -325,7 +325,7 @@ To successfully execute the DB_Update_WinAuth.cmd file, the administrator must b
 3. Click **OK**.
 4. Change directories to the \<Configuration
     Directory\>**\\Utilities\\Database\\** directory by entering: cd
-    OpCon/xpsDatabaseScriptDir.
+    OpConDatabaseScriptDir.
 5. Enter *DB_Update.cmd* or *DB_Update_WinAuth.cmd* and the
     *parameters*.
 6. Read the logs for each of the SQL scripts to verify success.

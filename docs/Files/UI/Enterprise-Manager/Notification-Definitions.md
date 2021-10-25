@@ -27,7 +27,7 @@ how to define and send that notification type:
 
 - [Send Email (SMTP)](Sending-Emails.md)
 - [Send Short Text Message](Sending-Short-Text-Messages.md)
-- [Send OpCon/xps Events](Sending-OpCon-Events.md)
+- [Send OpCon Events](Sending-OpCon-Events.md)
 - [Send Windows Event Log](Sending-Windows-Event-Logs.md)
 - [Send Network Message](Sending-Network-Messages.md)
 - [Send SNMP Trap](Sending-SNMP-Traps.md)

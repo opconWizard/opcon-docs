@@ -4183,7 +4183,7 @@ Message TO SAM' is supported (e.g., JEVENT=SS1TEST10).
     is specified.
 - **EM field label**: Step Action
 - **Valid Values**:
-  - **Send Trigger Message to SAM**: Tells OpCon/xps that a message
+  - **Send Trigger Message to SAM**: Tells OpCon that a message
         is to be sent to the Schedule Operations screen of the graphical
         interfaces. The Trigger Message field is used to define the
         message sent.
@@ -4197,7 +4197,7 @@ definition.
 - **Requirements**: Required if tuxedo_art_step_control parent element
     is specified.
 - **EM field label**: Trigger Message
-- **Valid Values**: This may refer to any valid OpCon/xps event that
+- **Valid Values**: This may refer to any valid OpCon event that
     was predefined in the Tuxedo ART Event table.
   - Minimum Characters: 1
   - Maximum Characters: 20

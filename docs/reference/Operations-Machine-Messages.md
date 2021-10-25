@@ -915,32 +915,32 @@ system console:
 |                                  |     run contains additional      |
 |                                  |     error information.           |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> is        | The                              |
+| \<*OpCon-Job-ID*\> is        | The                              |
 | currently running                | OpCon |
 |                                  | job has been started and is      |
 |                                  | processing, a run-id for the job |
 |                                  | has not yet been identified.     |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\>           | The                              |
+| \<*OpCon-Job-ID*\>           | The                              |
 | (\<*Exec-Run-ID*\>) is currently | OpCon |
 | running                          | job has been started and is      |
 |                                  | processing with the              |
 |                                  | \<Exec-Run-ID\>.                 |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> Pre-run   | The Pre-run for                  |
+| \<*OpCon-Job-ID*\> Pre-run   | The Pre-run for                  |
 | errored \<*hh:mm mm/dd/yyyy*\>   | OpCon |
 |                                  | job has errored at *time date*.  |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> errored   | The                              |
+| \<*OpCon-Job-ID*\> errored   | The                              |
 | \<*hh:mm mm/dd/yyyy*\>           | OpCon |
 |                                  | job has errored at *time date*.  |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\>           | The                              |
+| \<*OpCon-Job-ID*\>           | The                              |
 | (\<*Exec-Run-ID*\>) errored      | OpCon |
 | \<*hh:mm mm/dd/yyyy*\>           | job with *Exec-Run-ID* errored   |
 |                                  | at *time date*.                  |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> Pre-run   | -   The Pre-run for              |
+| \<*OpCon-Job-ID*\> Pre-run   | -   The Pre-run for              |
 | no status\...assume aborted      |                                  |
 |                                  | OpCon |
 |                                  |     job has been started, but    |
@@ -957,7 +957,7 @@ system console:
 |                                  |     problem with the DEMAND      |
 |                                  |     user-id configuration.       |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> no        | -   The                          |
+| \<*OpCon-Job-ID*\> no        | -   The                          |
 | status\...assume aborted         |                                  |
 |                                  | OpCon |
 |                                  |     job has been started, but    |
@@ -974,7 +974,7 @@ system console:
 |                                  |     DEMAND user-id               |
 |                                  |     configuration.               |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\>           | -   The                          |
+| \<*OpCon-Job-ID*\>           | -   The                          |
 | (\<*Exec-Run-ID*\>) no           |                                  |
 | status\...assume aborted         | OpCon |
 |                                  |     job, with Exec-Run-ID, has   |
@@ -1011,7 +1011,7 @@ system console:
 |                                  |     TIP file definition.         |
 +----------------------------------+----------------------------------+
 | LSAM POST RUN JOBID NOT FOUND    | -   The                          |
-| \<*OpCon/xps-Job-ID*\>           |                                  |
+| \<*OpCon-Job-ID*\>           |                                  |
 |                                  | OpCon |
 |                                  |     job related to a pre-run job |
 |                                  |     cannot be found in the TIP   |
@@ -1019,7 +1019,7 @@ system console:
 |                                  | -   Most likely a TIP file       |
 |                                  |     corruption.                  |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> ECL LINE  | -   The LSAM has detected an ECL |
+| \<*OpCon-Job-ID*\> ECL LINE  | -   The LSAM has detected an ECL |
 | TRUNCATED TO 80 CHARACTERS       |     command (beginning with @)   |
 |                                  |     exceeding 80 characters in   |
 |                                  |     length. The ECL line is      |
@@ -1039,14 +1039,14 @@ system console:
 |                                  | -   The LSAM attempts to restart |
 |                                  |     the DEMAND run.              |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\>           | -   The Exec Run-ID for          |
+| \<*OpCon-Job-ID*\>           | -   The Exec Run-ID for          |
 | duplicated, running as           |                                  |
 | \<*Exec-Run-ID*\>                | OpCon |
 |                                  |     job has been duplicated.     |
 |                                  | -   The Exec has assigned        |
 |                                  |     Exec-Run-ID to the job.      |
 +----------------------------------+----------------------------------+
-| \*ST FAIL:\<*OpCon/xps-Job-ID*\> | -   The @\@CON ST command for    |
+| \*ST FAIL:\<*OpCon-Job-ID*\> | -   The @\@CON ST command for    |
 | ERR=\<*xx*\>                     |     the                          |
 | STAT=\<*start-error-message*\>   |                                  |
 |                                  | OpCon |
@@ -1058,7 +1058,7 @@ system console:
 |                                  |     the Exec in response to the  |
 |                                  |     ST command.                  |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\>           | -   The                          |
+| \<*OpCon-Job-ID*\>           | -   The                          |
 | (\<*Exec-Run-ID*\>) is waiting   |                                  |
 | in backlog                       | OpCon |
 |                                  |     job, with Exec-Run-ID, has   |
@@ -1075,21 +1075,21 @@ system console:
 |                                  |     batch hold (CS H) on the     |
 |                                  |     system.                      |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> SUBMITTED | The                              |
+| \<*OpCon-Job-ID*\> SUBMITTED | The                              |
 | AT \<*hh:mm*\> ON                | OpCon |
 | \<*mm/dd/yyyy*\>                 | job start command has been       |
 |                                  | submitted at *time* on *date*.   |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> STARTING  | The                              |
+| \<*OpCon-Job-ID*\> STARTING  | The                              |
 | AS EXEC JOB \<*Exec-Run-ID*\>    | OpCon |
 |                                  | job has been assigned the        |
 |                                  | *Exec-Run-ID*.                   |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\> IS A      | The                              |
+| \<*OpCon-Job-ID*\> IS A      | The                              |
 | PRE-RUN JOB                      | OpCon |
 |                                  | job started is a pre-run job.    |
 +----------------------------------+----------------------------------+
-| \<*OpCon/xps-Job-ID*\>-NO START  | The LSAM has received a start    |
+| \<*OpCon-Job-ID*\>-NO START  | The LSAM has received a start    |
 | DATA AVAILABLE                   | command from                     |
 |                                  | OpCon |
 |                                  | for a job without ECL location   |
@@ -1137,7 +1137,7 @@ system console:
 |                                  |     file.                        |
 +----------------------------------+----------------------------------+
 | \*START                          | -   The \@START command for      |
-| FAIL:\<*OpCon/xps-Job-ID*\>      |                                  |
+| FAIL:\<*OpCon-Job-ID*\>      |                                  |
 | ERR=\<*xx*\>                     | OpCon |
 | STAT=\<*start-error-message*\>   |     job failed.                  |
 |                                  | -   The ERR field contains an    |
@@ -1474,7 +1474,7 @@ interfaces following the job status.
 +----------------------------------+----------------------------------+
 | JOB \<OpConxps-job-id\> RUN      | -   The MAM is unable to start   |
 | \<BIS-run-name\> CANNOT BE       |     the BIS-run-name associated  |
-| STARTED                          |     with OpCon/xps-job-id.       |
+| STARTED                          |     with OpCon-job-id.       |
 |                                  | -   Most likely an invalid run   |
 |                                  |     name, or an error in the     |
 |                                  |     registration of run.         |
@@ -2891,7 +2891,7 @@ XPS*nnnc*
 |                                  |     before starting its          |
 |                                  |     replacement.                 |
 +----------------------------------+----------------------------------+
-| XPS001I - OpCon/xps V            | -   Indicates OpCon/xps for z/OS |
+| XPS001I - OpCon V            | -   Indicates OpCon for z/OS |
 | *v.rr.mmll* Initialized --       |     has initialized storage      |
 | \[*machineid*\]                  |     queues and control blocks    | |                                  |     successfully.                |
 |                                  | -   Machineid is the MACHINEID=  |
@@ -3017,7 +3017,7 @@ XPS*nnnc*
 |                                  |     operating properly and that  |
 |                                  |     an OMVS segment is defined   |
 |                                  |     to the security facility for |
-|                                  |     OPCON/XPS.                   |
+|                                  |     OpCon.                   |
 |                                  | -   Ensure that the TCPIP=       |
 |                                  |     parameter in XPSPRMnn        |
 |                                  |     denotes the proper task name |
@@ -3245,10 +3245,10 @@ XPS*nnnc*
 |                                  |     its issuance cannot be       |
 |                                  |     determined.                  |
 +----------------------------------+----------------------------------+
-| XPS027I - OpCon/xps LSAM Log     | Each midnight (00:00) and upon   |
+| XPS027I - OpCon LSAM Log     | Each midnight (00:00) and upon   |
 | Dataset Spin-Off Underway        | operator request (F              |
 |                                  | LSAM,SPINLOG) and new generation |
-|                                  | of the OPCON/XPS RECLOG is       |
+|                                  | of the OpCon RECLOG is       |
 |                                  | created. Logging is suspended    |
 |                                  | during the activity of           |
 |                                  | de-allocating, closing,          |
@@ -3888,7 +3888,7 @@ XPS*nnnc*
 +----------------------------------+----------------------------------+
 | XPS073E - XPS390 Not Initialized | -   Indicates XPSELOAD program   |
 |                                  |     cannot be executed "stand   |
-|                                  |     alone" without OPCON/XPS    |
+|                                  |     alone" without OpCon    |
 |                                  |     being initialized.           |
 |                                  | -   Start the OPCONnn task to    |
 |                                  |     reload exits automatically.  |
@@ -4120,7 +4120,7 @@ XPS*nnnc*
 |                                  |     indicate the REXX has        |
 |                                  |     successfully completed.      |
 +----------------------------------+----------------------------------+
-| XPS093I - OpCon/xps SAM Contact  | -   Indicates XPSERVER had timed |
+| XPS093I - OpCon SAM Contact  | -   Indicates XPSERVER had timed |
 | Reestablished                    |     out waiting on Netcom to     |
 |                                  |     respond (message XPS046      |
 |                                  |     should have been pending).   |

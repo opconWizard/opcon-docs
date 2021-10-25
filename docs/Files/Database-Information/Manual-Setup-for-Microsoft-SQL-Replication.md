@@ -542,7 +542,7 @@ The following variables exist within the StopRepl.cmd file. Determine
 the correct value and use the information to update the file.
 
 - **%1**: Defines the directory path of the parent directory to the
-    OpCon/xps \<Configuration Directory\> on the Secondary SAM
+    OpCon \<Configuration Directory\> on the Secondary SAM
     application server. Exclude the trailing backslash (\\) and always
     enclose this parameter in double quotes (e.g., "C:\\ProgramData").
 - **%2**: The password with which sa logs in to the SQL Server on
@@ -556,7 +556,7 @@ The following variable exists within the StopRepl_WinAuth.cmd file.
 Determine the correct value, and use the information to update the file.
 
 - **%1**: Defines the directory path of the parent directory to the
-    OpCon/xps \<Configuration Directory\> on the Secondary SAM
+    OpCon \<Configuration Directory\> on the Secondary SAM
     application server. Exclude the trailing backslash (\\) and always
     enclose this parameter in double quotes (e.g., "C:\\ProgramData").
 
@@ -617,13 +617,13 @@ a.  Replace **\<Severity\>** with the desired *Windows Event Severity*
     value (I=Informational, W=Warning, E=Error).
 b.  Replace **\<EventID\>** with a *one- to five-digit ID* for
     notification.
-c.  Replace **\<UserID\>** with a valid *OpCon/xps User Login ID*.
+c.  Replace **\<UserID\>** with a valid *OpCon User Login ID*.
 d.  Replace **\<EventPassword\>** with the *external event password* for
     the User Login ID.
 
 #### Executing the Stop Replication Command File
 
-If implementing manual failover for OpCon/xps, the failover procedures
+If implementing manual failover for OpCon, the failover procedures
 in this manual provide information on executing the StopRepl.cmd or
 StopRepl_WinAuth.cmd file. For additional information, refer to [Manual Failover to the Subscribing Database
 Server](Failover-and-Recovery-with-Replication.md#Manual)

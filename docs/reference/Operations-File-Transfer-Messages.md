@@ -177,7 +177,7 @@ Schedule Operations.
 |                                  | -   Indicates a corrupted        |
 |                                  |     SMAFTA/ECL element.          |
 +----------------------------------+----------------------------------+
-| 2 (02) Missing OpCon/xps Job-ID  | -   The OpCon/xps Job Name       |
+| 2 (02) Missing OpCon Job-ID  | -   The OpCon Job Name       |
 | parameter                        |     parameter is missing.        |
 |                                  | -   Indicates a corrupted        |
 |                                  |     SMAFTA/ECL element.          |

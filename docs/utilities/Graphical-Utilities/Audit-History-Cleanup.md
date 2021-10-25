@@ -33,7 +33,7 @@ AUDIT.EXE -u\<User\> -w\<Password\> -d\<Days to Keep\|Cut-off Date\>
 The following describes the command-line parameters:
 
 - **AUDIT.EXE**: The name of the audit management program.
-- **-u\<User\>**: Any valid, case-sensitive OpCon/xps User Login ID.
+- **-u\<User\>**: Any valid, case-sensitive OpCon User Login ID.
 - **-w\<Password\>**: The case-sensitive password corresponding to the
     User Login ID.
 - **-d\<Days to Keep\|Cut-off Date\>**: Defines either the Days to

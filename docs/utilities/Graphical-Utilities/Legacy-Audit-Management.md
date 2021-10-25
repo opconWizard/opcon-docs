@@ -71,7 +71,7 @@ The menus available are File, Options, View, and Help.
 
 ### Help
 
-- **OpCon/xps Help**: Displays relevant OpCon documentation.
+- **OpCon Help**: Displays relevant OpCon documentation.
 - **About**: Displays product versions and Technical Support
     information.
 
@@ -383,10 +383,10 @@ LEGACYAUDIT.EXE DSN,UID,PWD,{Days to Keep\|Cut-off Date}, \[-e\] \[-l\]
 #### Parameters
 
 - **LEGACYAUDIT.EXE**: The name of the audit management program.
-- **DSN**: The ODBC Data Source Name corresponding to the OpCon/xps
+- **DSN**: The ODBC Data Source Name corresponding to the OpCon
     database. This name can be found on the Legacy Audit Management
     login screen.
-- **UID**: Any valid, case-sensitive OpCon/xps User Login ID.
+- **UID**: Any valid, case-sensitive OpCon User Login ID.
 - **PWD**: The case-sensitive password corresponding to the User Login
     ID above.
 - **Days to Keep**: A number between 0 and 32,000. If desired, the

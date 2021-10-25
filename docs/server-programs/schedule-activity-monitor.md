@@ -46,7 +46,7 @@ The SMA Connection Configuration program contains connection information to the 
 After maintenance has been paid to SMA Technologies and it is time to request a new license file, complete the following procedure.
 
 1. Log in to the **Enterprise Manager**.
-2. Use menu path: **Help \> About OpCon/xps Enterprise Manager**.
+2. Use menu path: **Help \> About OpCon Enterprise Manager**.
 3. Click the **License Information** tab.
 
     :::note

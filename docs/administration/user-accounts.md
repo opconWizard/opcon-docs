@@ -57,7 +57,7 @@ The following information applies to User Account management:
     OpCon from any
     OpCon application. The applications
     behave differently depending on the way the user signs on:
-  - If the user signs on with an Opcon/xps User Login ID and
+  - If the user signs on with an OpCon User Login ID and
         password, the applications will inform them that the account is
         disabled and will present the login screen again. This allows
         the user to try to sign on with a different User Login ID and/or

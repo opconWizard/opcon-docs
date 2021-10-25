@@ -18,7 +18,7 @@ Exceeding the number of licensed machines (LSAMs) causes the license to be short
 
 ## Automatic Failover to the Subscribing Database Server
 
-When configured, automatic failover to the Subscribing OpCon/xps
+When configured, automatic failover to the Subscribing OpCon
 Database Server occurs when the Secondary SMA Service Manager encounters
 a failover trigger. For further information, refer to [Automatic Failover](Failover-Scenarios.md#Automati).
 

@@ -256,7 +256,7 @@ all of the procedures in the section titled [Configuring Command Files](#Configu
 2. Enter *cmd* in the **Open** text box and click **OK**.
 3. In the **cmd** box, change directories to the \<Configuration
     Directory\>**\\Utilities\\Database\\** directory by entering: cd
-    *OpCon/xpsDatabaseScriptDir*.
+    *OpConDatabaseScriptDir*.
 4. Enter *SMA_DBMirrorCreateLoginsAndEndpoints.cmd*.
 5. Read the logs for each of the SQL scripts to verify success.
 6. Enter *SMA_DBMirrorSetup.cmd*.
@@ -311,7 +311,7 @@ SMA_ManualFailoverToMirror.cmd file to initiate the failover.
 2. Enter *cmd* in the **Open** text box and click **OK**.
 3. In the **cmd** box, change directories to the \<Configuration
     Directory\>**\\Utilities\\Database\\** directory by entering: cd
-    *OpCon/xpsDatabaseScriptDir*.
+    *OpConDatabaseScriptDir*.
 4. Enter *SMA_ManualFailoverToMirror.cmd*.
 5. Read the logs for each of the SQL scripts to verify success.
 
@@ -324,7 +324,7 @@ principal server.
 2. Enter *cmd* in the **Open** text box and click **OK**.
 3. In the **cmd** box, change directories to the \<Configuration
     Directory\>**\\Utilities\\Database\\** directory by entering: cd
-    *OpCon/xpsDatabaseScriptDir*.
+    *OpConDatabaseScriptDir*.
 4. Enter *SMA_ManualFailbackToPrincipal.cmd*.
 5. Read the logs for each of the SQL scripts to verify success.
 
@@ -601,7 +601,7 @@ procedure.
 2. Enter *cmd* in the **Open** text box and click **OK**.
 3. In the **cmd** box, change directories to the \<Configuration
     Directory\>**\\Utilities\\Database\\** directory by entering: cd
-    *OpCon/xpsDatabaseScriptDir*.
+    *OpConDatabaseScriptDir*.
 4. Enter *SMA_DBMirrorRemove.cmd*.
 5. Read the logs for each of the SQL scripts to verify success.
 :::

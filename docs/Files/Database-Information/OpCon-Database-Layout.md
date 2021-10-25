@@ -1353,7 +1353,7 @@ The stored procedure 'SMA_CHECK_FOR_NOTIFICATION' should be used to insert data 
 |                |                |                | -   6: Text    |
 |                |                |                |     Message    |
 |                |                |                | -   7:         |
-|                |                |                |     OpCon/xps  |
+|                |                |                |     OpCon  |
 |                |                |                |     Event      |
 +----------------+----------------+----------------+----------------+
 | ACTIONMSG      | This column    | varchar (4000) | None           |
@@ -1424,7 +1424,7 @@ System (ENS) event triggers (ENSACTIONS).
 |              |                 |               | -   6: Text     |
 |              |                 |               |     Message     |
 |              |                 |               | -   7:          |
-|              |                 |               |     OpCon/xps   |
+|              |                 |               |     OpCon   |
 |              |                 |               |     Event       |
 |              |                 |               | -   10: Run     |
 |              |                 |               |     Command     |
@@ -2845,7 +2845,7 @@ through the use of $NOTIFY:\<action\> OpCon events.
 |               |                |                | -   6: Text    |
 |               |                |                |     Message    |
 |               |                |                | -   7:         |
-|               |                |                |     OpCon/xps  |
+|               |                |                |     OpCon  |
 |               |                |                |     Event      |
 |               |                |                | -   10: Run    |
 |               |                |                |     Command    |
@@ -2876,7 +2876,7 @@ through the use of $NOTIFY:\<action\> OpCon events.
 |               | Notification   |                |                |
 |               | for ENS        |                |                |
 |               | Manager or an  |                |                |
-|               | OpCon/xps      |                |                |
+|               | OpCon      |                |                |
 |               | Event via the  |                |                |
 |               | \              |                |                |
 |               | $NOTIFY:ACTION |                |                |
@@ -5297,7 +5297,7 @@ The stored procedure 'SMA_CHECK_FOR_NOTIFICATION' should be used to insert data 
 |             |                 |                | -   6: Text     |
 |             |                 |                |     Message     |
 |             |                 |                | -   7:          |
-|             |                 |                |     OpCon/xps   |
+|             |                 |                |     OpCon   |
 |             |                 |                |     Event       |
 +-------------+-----------------+----------------+-----------------+
 | ACTIONMSG   | This column     | varchar (4000) | None            |

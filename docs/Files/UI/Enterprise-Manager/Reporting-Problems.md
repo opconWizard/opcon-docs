@@ -18,7 +18,7 @@ Double-click on **Report Problem** under the **Support** topic. The
 button selected by default.
 
 :::note
-You can also report a problem experienced with Enterprise Manager by going to the Enterprise Manager **Help** menu, clicking on **About OpCon/xps Enterprise Manager**, and selecting **Report Problem**. You would then proceed with Step 2 below.
+You can also report a problem experienced with Enterprise Manager by going to the Enterprise Manager **Help** menu, clicking on **About OpCon Enterprise Manager**, and selecting **Report Problem**. You would then proceed with Step 2 below.
 :::
 
 Click the **Next** button to advance to the **Choose Method** screen.
