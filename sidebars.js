@@ -58,7 +58,6 @@ module.exports = {
                 'objects/using-properties',
               ], 
             },
-            'objects/properties',
             'objects/thresholds',
             'objects/resources',
             'objects/calendars',
