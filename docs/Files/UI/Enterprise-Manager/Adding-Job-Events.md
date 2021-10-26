@@ -45,16 +45,20 @@ d.  [(If Job Completion Complex Expression was     selected)]{.optional-text} En
 Click the **Next** button to advance to the **Event Definition** screen
 of the wizard.
 
-Select an [OpCon]{.GeneralOpConGlobalName style="font-weight: bold;"} **event template** from the **Event Template** drop-down list. For more
+Select an **OpCon event template** from the **Event Template** drop-down list. For more
 information, refer to the [OpCon Events](../../../events/introduction.md) online help.
 
 :::tip Example
-$JOB:ADD,\<schedule date\>,\<schedule name\>,\<job name\>,\<frequency name\>
+
+```shell
+$JOB:ADD,<schedule date\>,<schedule name\>,<job name\>,<frequency name\>
+```
+
 :::
 
-[]{#Place_your_mouse_cursor}Place your mouse cursor at the beginning of a **\<syntax placeholder\>** displayed in the **Event Parameters** text
+Place your mouse cursor at the beginning of a **<syntax placeholder\>** displayed in the **Event Parameters** text
 box then drag the cursor to the right to select the entire syntax
-placeholder, excluding any surrounding commas. For example: ,[\<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
+placeholder, excluding any surrounding commas. For example: ,[<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
 
 Replace the selected syntax placeholder with valid
 OpCon event information.
@@ -142,16 +146,16 @@ d.  [(If Job Completion Complex Expression was     selected)]{.optional-text} En
 Click the **Next** button to advance to the **Event Definition** screen
 of the wizard.
 
-Select an [OpCon]{.GeneralOpConGlobalName style="font-weight: bold;"} **event template** from the **Event Template** drop-down list. For more
+Select an **OpCon event template** from the **Event Template** drop-down list. For more
 information, refer to the [OpCon Events](../../../events/introduction.md) online help.
 
 :::tip Example
-$JOB:ADD,\<schedule date\>,\<schedule name\>,\<job name\>,\<frequency name\>
+$JOB:ADD,<schedule date\>,<schedule name\>,<job name\>,<frequency name\>
 :::
 
-[]{#Place_your_mouse_cursor}Place your mouse cursor at the beginning of a **\<syntax placeholder\>** displayed in the **Event Parameters** text
+[]{#Place_your_mouse_cursor}Place your mouse cursor at the beginning of a **<syntax placeholder\>** displayed in the **Event Parameters** text
 box then drag the cursor to the right to select the entire syntax
-placeholder, excluding any surrounding commas. For example: ,[\<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
+placeholder, excluding any surrounding commas. For example: ,[<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
 
 Replace the selected syntax placeholder with valid
 OpCon event information.

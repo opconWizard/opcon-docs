@@ -1189,21 +1189,14 @@ a relative generation, which can be '0', for the current generation,
 or a signed number (e.g., -1, +1, +2). The relative generation is used,
 with the catalog, to compute the absolute generation of the GDS.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [GDG **A.B.C** is   | | circular                         | defined and has generations 7,   |
-| background](../Reso           | 8, 9, and 10                     |
-| urces/Images/example-icon(48x48) | cataloged.]{.statement2}         |
-| .png "Example icon") |                                  |
-|                                  | -   **A.B.C(0)** resolves to     |
-|                                  |     generation 10:               |
-|                                  |     **A.B.C.G0010V00**           |
-|                                  | -   **A.B.C(-1)** resolves to    |
-|                                  |     generation 9:                |
-|                                  |     **A.B.C.G0009V00**           |
-|                                  | -   **A.B.C(+1)** resolves to    |
-|                                  |     generation 11:               |
-|                                  |     **A.B.C.G0011V00**           |
-+----------------------------------+----------------------------------+
+:::tip Example
+GDG **A.B.C** is defined and has generations 7, 8, 9, and 10 cataloged.
+
+- **A.B.C(0)** resolves to generation 10: **A.B.C.G0010V00**
+- **A.B.C(-1)** resolves to generation 9: **A.B.C.G0009V00**
+- **A.B.C(+1)** resolves to generation 11: **A.B.C.G0011V00**
+
+:::
 
 The base generation is determined and recorded by the system when the
 group is first referenced in the job. Thus, a given relative generation
@@ -1214,23 +1207,19 @@ relative generation is not the same. To use the correct generation
 during a restart, it is normally necessary to un-catalogue the new
 generations or change the relative generations in the JCL.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [Given JCL that     | | circular                         | includes the following           |
-| background](../Reso           | statements:]{.statement2}        |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | //STEP1 \....                    |
-|                                  |                                  |
-|                                  | //DD1 DD                         |
-|                                  | DSN=A.B.C(+1),DISP=(NEW,CATLG)   |
-|                                  |                                  |
-|                                  | \...                             |
-|                                  |                                  |
-|                                  | //STEP3 \...                     |
-|                                  |                                  |
-|                                  | //DD2 DD DSN=A.B.C(+1),DISP=SHR  |
-|                                  |                                  |
-|                                  | \...                             |
-+----------------------------------+----------------------------------+
+:::tip Example
+Given JCL that includes the following statements:
+
+```jcl
+//STEP1 ....
+//DD1 DD DSN=A.B.C(+1),DISP=(NEW,CATLG)
+...
+//STEP3 ...
+//DD2 DD DSN=A.B.C(+1),DISP=SHR
+...
+```
+
+:::
 
 This is the correct way to refer to a new GDS across steps, and works as
 expected. In our example, both statements would refer to generation 11.

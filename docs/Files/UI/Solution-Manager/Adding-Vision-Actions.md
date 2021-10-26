@@ -27,7 +27,7 @@ The **Create new Event** window will display.
 
 ![Vision Action Create New Event](../../../Resources/Images/SM/Vision-Action-Create-New-Event.png "Vision Action Create New Event")
 
-Select an [OpCon]{.GeneralOpConGlobalName style="font-weight: bold;"} **Event Template** to start defining event details. Once you choose a
+Select an **OpCon Event Template** to start defining event details. Once you choose a
 template, the screen dynamically changes to provide UI assistance for
 filling out the event details.
 

@@ -87,32 +87,23 @@ and will result in the defined exit code.
 to use. The table lists the key=value pairs that define the variables
 and their associated values.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [The job            | | circular                         | JobAdded-runtime-Envvar has      |
-| background](../../Reso           | environment variables defined    |
-| urces/Images/example-icon(48x48) | as:]{.statement2}                |
-| .png "Example icon") |                                  |
-|                                  | Run_Time=\[\[JI.1\]\]            | |                                  |                                  |
-|                                  | Exit_Code=\[\[JI.2\]\]           | |                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | This job can be added to the     |
-|                                  | daily using an event with        |
-|                                  | various values of Run_Time and   |
-|                                  | Exit_Code.                       |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=20;2=20,Y |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=30;2=30,Y |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=40;2=40,Y |
-+----------------------------------+----------------------------------+
+:::tip Example
+The job JobAdded-runtime-Envvar has environment variables defined as:
+
+```shell
+Run_Time=[[JI.1]]
+Exit_Code=[[JI.2]]
+```
+
+This job can be added to the daily using an event with various values of Run_Time and Exit_Code.
+
+```shell
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=20;2=20,Y
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=30;2=30,Y
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=40;2=40,Y
+```
+
+:::
 
 - **Env Variable Name**: Defines the environment variable name.
 
@@ -166,32 +157,23 @@ and their associated values.
 to use. The table lists the key=value pairs that define the variables
 and their associated values.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [The job            | | circular                         | JobAdded-runtime-Envvar has      |
-| background](../../Reso           | environment variables defined    |
-| urces/Images/example-icon(48x48) | as:]{.statement2}                |
-| .png "Example icon") |                                  |
-|                                  | Run_Time=\[\[JI.1\]\]            | |                                  |                                  |
-|                                  | Exit_Code=\[\[JI.2\]\]           | |                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | This job can be added to the     |
-|                                  | daily using an event with        |
-|                                  | various values of Run_Time and   |
-|                                  | Exit_Code.                       |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=20;2=20,Y |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=30;2=30,Y |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=40;2=40,Y |
-+----------------------------------+----------------------------------+
+:::tip Example
+The job JobAdded-runtime-Envvar has environment variables defined as:
+
+```shell
+Run_Time=[[JI.1]]
+Exit_Code=[[JI.2]]
+```
+
+This job can be added to the daily using an event with various values of Run_Time and Exit_Code.
+
+```shell
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=20;2=20,Y
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=30;2=30,Y
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=40;2=40,Y
+```
+
+:::
 
 - **Env Variable Name**: Defines the environment variable name.
 

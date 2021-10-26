@@ -679,22 +679,17 @@ rule associated with a defined job pattern.
         not *x* is a property expression. Valid values are: true or
         false.
 
-    +----------------------------------+----------------------------------+
-    | ![White pencil icon on green     | **EXAMPLE:**                     |     | circular                         | The following is an example XML  |
-    | background](../../../Reso        | definition for the \<exception\> |
-    | urces/Images/example-icon(48x48) | element:                         |
-    | .png "Example icon") |                                  |
-    |                                  | \<exce                           |
-    |                                  | ption\>&lt;Exception&gt;&lt;Fiel |
-    |                                  | dCode&gt;3002&lt;/FieldCode&gt;\ |
-    |                                  | &lt;NewValue&gt                  |
-    |                                  | ;$this.MyUser&lt;/NewValue&gt;\ |
-    |                                  | &lt;NewValueIsExpression&gt;fal  |
-    |                                  | se&lt;/NewValueIsExpression&gt;\ |
-    |                                  | &lt                              |
-    |                                  | ;ToReplace&gt;&lt;/ToReplace&gt; |
-    |                                  | &lt;/Exception&gt;\</exception\> |
-    +----------------------------------+----------------------------------+
+:::tip Example
+The following is an example XML definition for the <exception\> element:
+
+```xml
+<exception>&lt;Exception&gt;&lt;FieldCode&gt;3002&lt;/FieldCode&gt;
+&lt;NewValue&gt;$this.MyUser&lt;/NewValue&gt;
+&lt;NewValueIsExpression&gt;false&lt;/NewValueIsExpression&gt;
+&lt;ToReplace&gt;&lt;/ToReplace&gt;&lt;/Exception&gt;</exception>
+```
+
+:::
 
 ## new_token and update_token Element Structures
 
@@ -2194,26 +2189,20 @@ The Comparison Operator must be one of the following:
 - RG (Range)
 - IN (Contains)
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../../Reso        | If the Comparison Operator is    |
-| urces/Images/example-icon(48x48) | Range, Value is 6 and End Value  |
-| .png "Example icon") | is 9, then the value for         |
-|                                  | \<ppefeedbackval\> would be:     |
-|                                  |                                  |
-|                                  | \<ppefeedba                      |
-|                                  | ckval\>RG;6;9\</ppefeedbackval\> |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | If the Comparison Operator is    |
-|                                  | Equal To, and the Value is 5,    |
-|                                  | then the value for               |
-|                                  | \<ppefeedbackval\> would be:     |
-|                                  |                                  |
-|                                  | \<ppefeedbackval\>EQ;5           |
-|                                  | \</ppefeedbackval\>              |
-+----------------------------------+----------------------------------+
+:::tip Example
+If the Comparison Operator is Range, Value is 6 and End Value is 9, then the value for <ppefeedbackval\> would be:
+
+```xml
+<ppefeedbackval>RG;6;9</ppefeedbackval>
+```
+
+If the Comparison Operator is Equal To, and the Value is 5, then the value for <ppefeedbackval\> would be:
+
+```xml
+<ppefeedbackval>EQ;5 </ppefeedbackval>
+```
+
+:::
 
 For LSAM Feedback: Valid data for this element is any string to match.
 

@@ -6,9 +6,9 @@ recovery actions.
 
 ## Syntax
 
-[]{#aanchor72} Use the following syntax for the SMAGetServiceStatus.exe program in the \<Target Directory\>\\OpConxps\\Utilities\\:
+Use the following syntax for the SMAGetServiceStatus.exe program in the <Target Directory\>\\OpConxps\\Utilities\\:
 
-SMAGetServiceStatus.exe "*\<Service Display Name\>*"
+SMAGetServiceStatus.exe "*<Service Display Name\>*"
 
 ### Parameters
 
@@ -16,7 +16,7 @@ The following describes the command-line parameters:
 
 **SMAGetServiceStatus.exe**: The name of the command.
 
-**\<Service Display Name\>**: The "Display Name" for a service (in the
+**<Service Display Name\>**: The "Display Name" for a service (in the
 Properties \> General tab) in the Services window. For more details,
 refer to [Getting Service Display Names](#Getting_Service_Display_Names).
 
@@ -35,42 +35,22 @@ To perform the procedure:
 
 ### Example
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** Settings for a job  | | circular                         | monitoring SMA Microsoft         |
-| background](../../../Reso        | Resource Monitor. If SMA         |
-| urces/Images/example-icon(48x48) | Microsoft Resource Monitor is    |
-| .png "Example icon") | stopped,                         |
-|                                  | OpCon |
-|                                  | notifies the administrator by    |
-|                                  | way of email.                    |
-|                                  |                                  |
-|                                  | In the Job Details screen, the   |
-|                                  | Command Line is:                 |
-|                                  |                                  |
-|                                  | "\<Target                       |
-|                                  | Directory\>\\OpConxps\\Util      |
-|                                  | ities\\SMAGetServiceStatus.exe" |
-|                                  | "SMA Microsoft Resource         |
-|                                  | Monitor"                        |
-|                                  |                                  |
-|                                  | In the Job Details screen, the   |
-|                                  | Exit Code is EQ -2.              |
-|                                  |                                  |
-|                                  | In the Events screen:            |
-|                                  |                                  |
-|                                  | a.  The status is                |
-|                                  |     '**Failed**'.              |
-|                                  | b.  The Event is                 |
-|                                  |     $                           |
-|                                  | NOTIFY:EMAIL,Admin\@Company.com, |
-|                                  |     SMA Microsoft Resource       |
-|                                  |     Monitor, SMA Microsoft       |
-|                                  |     Resource Monitor is Down.    |
-|                                  |                                  |
-|                                  | If desired, create other events  |
-|                                  | for notification actions within  |
-|                                  | ENS manager.                     |
-+----------------------------------+----------------------------------+
+:::tip Example
+Settings for a job monitoring SMA Microsoft Resource Monitor. If SMA Microsoft Resource Monitor is stopped, OpCon notifies the administrator by way of email.
+
+1. In the Job Details screen, the Command Line is:
+
+   ```shell
+    "<Target Directory>\OpConxps\Utilities\SMAGetServiceStatus.exe" "SMA Microsoft Resource Monitor"
+   ```
+
+2. In the Job Details screen, the Exit Code is EQ -2.
+3. In the Events screen:
+   - The status is 'Failed'.
+   - The Event is $NOTIFY:EMAIL,Admin@Company.com, SMA Microsoft Resource Monitor, SMA Microsoft Resource Monitor is Down.
+4. If desired, create other events for notification actions within ENS manager.
+
+:::
 
 ## Scheduling
 

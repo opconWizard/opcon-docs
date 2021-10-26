@@ -521,17 +521,11 @@ Expand (+) the **Security** folder.
 
 If the SAM and the database are on a different machine:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [On a domain named  | | circular                         | "ABCCompany" with a SAM        |
-| background](../../Reso           | Application Server named         |
-| urces/Images/example-icon(48x48) | "OpConxpsServer", the Login    |
-| .png "Example icon") | name for the SQL server would    |
-|                                  | be:]{.statement2}                |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | ABCCompany\\OpConxpsServer$     |
-+----------------------------------+----------------------------------+
+:::tip Example
+On a domain named "ABCCompany" with a SAM Application Server named "OpConxpsServer", the Login name for the SQL server would be:
+
+ABCCompany\OpConxpsServer$
+:::
 
 a.  Right-click **Logins** and select **New Login** from the menu.
 b.  Enter the *domain* and *SAM Application Server name* in the **Login

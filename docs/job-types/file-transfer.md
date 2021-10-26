@@ -87,84 +87,41 @@ For Windows as destination:
 - Use question mark (?) as a wildcard to match any single character in
     the file name.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **Examples when Windows is the   | | circular                         | Destination:**                   |
-| background](../../Reso           |                                  |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  | When transferring from Windows   |
-|                                  | or UNIX to a [destination        | |                                  | Windows]{.ul} machine, the       |
-|                                  | following combinations of Source |
-|                                  | and Destination wildcard file    |
-|                                  | names are supported:             |
-|                                  |                                  |
-|                                  | -   [FILE\*.TXT]{styl            | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     may be changed to            |
-|                                  |     [ANY\*.RTF]{styl             | |                                  | e="font-family: 'Courier New';"} |
-|                                  | -   [?FILE\*.TXT]{styl           | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     may be changed to            |
-|                                  |     [?ANY\*.RTF]{styl            | |                                  | e="font-family: 'Courier New';"} |
-|                                  | -   [FIL?XX.TXT]{styl            | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     may be changed to            |
-|                                  |     [FILE?YYY.RTF]{styl          | |                                  | e="font-family: 'Courier New';"} |
-|                                  |                                  |
-|                                  | The non-wildcard characters may  |
-|                                  | be changed in content and        |
-|                                  | length, as long as the wild card |
-|                                  | character appears in the same    |
-|                                  | relative position. Also, the     |
-|                                  | suffix may be changed.           |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | The following combinations of    |
-|                                  | Source and Destination wildcard  |
-|                                  | file names are not supported by  |
-|                                  | the [destination Windows]{.ul}   | |                                  | agent:                           |
-|                                  |                                  |
-|                                  | -   [C:\\path\\\*today.\*]{styl  | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     may not be changed to        |
-|                                  |                                  |
-|                                  |    [C:\\new\\path\\\*back]{style | |                                  | ="font-family: 'Courier New';"}\ |
-|                                  |     (the number of wildcard      |
-|                                  |     characters do not match)     |
-|                                  | -   [FIL\*XX.TXT]{styl           | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     may not be changed to        |
-|                                  |     [FIL?XX.TXT]{style           | |                                  | ="font-family: 'Courier New';"}\ |
-|                                  |     (the type of wildcard        |
-|                                  |     character used does not      |
-|                                  |     match)                       |
-+----------------------------------+----------------------------------+
+:::tip Examples when Windows is the Destination
+When transferring from Windows or UNIX to a destination Windows machine, the following combinations of Source and Destination wildcard file names are supported:
+
+- FILE*.TXT may be changed to ANY*.RTF
+- ?FILE*.TXT may be changed to ?ANY*.RTF
+- FIL?XX.TXT may be changed to FILE?YYY.RTF
+
+The non-wildcard characters may be changed in content and length, as long as the wild card character appears in the same relative position. Also, the suffix may be changed.
+
+The following combinations of Source and Destination wildcard file names are not supported by the destination Windows agent:
+
+- C:\path\*today.* may not be changed to C:\new\path\*back (the number of wildcard characters do not match)
+- FIL*XX.TXT may not be changed to FIL?XX.TXT (the type of wildcard character used does not match)
+
+**Note**: If you interchange * and ?, the job will not fail and the file name will only replace one character.
+:::
 
 For UNIX as destination:
 
-- Set the destination as the directory for the files to be transferred
-    to.
+- Set the destination as the directory for the files to be transferred to.
 - Do not define a destination file.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **Examples when UNIX is the      | | circular                         | Destination:**                   |
-| background](../../Reso           |                                  |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  | The following example is         |
-|                                  | supported:                       |
-|                                  |                                  |
-|                                  | -   Source: /tmp/text\*          |
-|                                  | -   Destination: /usr            |
-|                                  |                                  |
-|                                  | The following example is not     |
-|                                  | supported:                       |
-|                                  |                                  |
-|                                  | -   Source: /tmp/text\*          |
-|                                  | -   Destination: /usr/text\*     |
-|                                  |     (destination must be a       |
-|                                  |     directory)                   |
-|                                  |                                  |
-|                                  | **Note:** Wildcard file transfer |
-|                                  | only supports the Overwrite      |
-|                                  | option for "When File Exists". |
-+----------------------------------+----------------------------------+
+:::tip Examples when UNIX is the Destination
+The following example is supported:
+
+- Source: /tmp/text*
+- Destination: /usr
+
+The following example is not supported:
+
+- Source: /tmp/text*
+- Destination: /usr/text* (destination must be a directory)
+
+Note: Wildcard file transfer only supports the Overwrite option for "When File Exists".
+:::
 
 - If you use wildcards for the destination file and the destination
     machine does not support the feature, the job will fail.
@@ -244,7 +201,7 @@ file exists. The following are valid options:
     overwriting any existing file on the destination machine.
 - **Backup then Overwrite**: Indicates the SMAFT Agent checks for the
     existence of the file on the destination machine before starting
-    transfer. If it exists, the file is copied as \<filename\>.bak (in
+    transfer. If it exists, the file is copied as <filename\>.bak (in
     the same directory) and the original file is then overwritten. If
     the file does not exist on the destination machine, a new file is
     created.
@@ -253,7 +210,7 @@ file exists. The following are valid options:
     file is created with destination filename.
 - **Backup then Append**: Indicates the SMAFT Agent checks for
     existence of the file on the destination machine before starting
-    transfer. If it exists, the file is copied as \<filename\>.bak (in
+    transfer. If it exists, the file is copied as <filename\>.bak (in
     the same directory) and the source file is appended to the original
     destination file. If the file does not exist on the destination
     machine, a new file is created.
@@ -284,7 +241,7 @@ kbits/second.
 preferred. Supported compression types are tar, gzip, and zip. The
 following are valid options:
 
-- **\<None\>**: Indicates the transfer does not use compression.
+- **<None\>**: Indicates the transfer does not use compression.
 - **Required**: Indicates the transfer job fails if compression does
     not occur.
 - **Preferred**: Indicates compression is attempted during the
@@ -299,7 +256,7 @@ Both the agent and the server must both support the same compression type for co
 preferred. Supported encryption types are 3DES, AES, and DES. The
 following are valid options:
 
-- **\<None\>**: Indicates the transfer does not use encryption.
+- **<None\>**: Indicates the transfer does not use encryption.
 - **Required**: Indicates the job fails if encryption does not occur.
 - **Preferred**: Indicates encryption is attempted during the
     transfer. The result of the encryption attempt does not affect the
@@ -338,7 +295,7 @@ The valid options include:
 **TLS Security Override**: Determines if TLS Security for file transfers
 is disabled, required, or preferred. The following are valid options:
 
-- **\<None\>**: Indicates that TLS Security [should not]{.ul} be used     by the SMAFT Agent when connecting to the SMAFT Server.
+- **<None\>**: Indicates that TLS Security [should not]{.ul} be used     by the SMAFT Agent when connecting to the SMAFT Server.
 - **Required**: Indicates that the SMAFT Agent [must]{.ul} use TLS     Security; otherwise, the job will be failed.
 - **Preferred** (Default): Indicates that the OpCon job request
     assembly routine uses the SMAFT Server Port numbers and the SMAFT
@@ -364,13 +321,13 @@ this online help:
 |          |                       |                            |
 |          | Destination Data Type |                            |
 +----------+-----------------------+----------------------------+
-|          | If File Exists        | \<All Values\>             |
+|          | If File Exists        | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Delete Source File    | \<All Values\>             |
+|          | Delete Source File    | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Maximum Transfer Rate | \<All Values\>             |
+|          | Maximum Transfer Rate | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Start Transfer On     | \<All Values\>             |
+|          | Start Transfer On     | <All Values\>             |
 +----------+-----------------------+----------------------------+
 | MCP      | Source Data Type      | ASCII                      |
 |          |                       |                            |
@@ -382,9 +339,9 @@ this online help:
 |          |                       |                            |
 |          | Destination Data Type |                            |
 +----------+-----------------------+----------------------------+
-|          | If File Exists        | \<All Values\>             |
+|          | If File Exists        | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Maximum Transfer Rate | \<All Values\>             |
+|          | Maximum Transfer Rate | <All Values\>             |
 +----------+-----------------------+----------------------------+
 |          | Start Transfer On     | Source or Destination      |
 |          |                       |                            |
@@ -402,9 +359,9 @@ this online help:
 |          |                       |                            |
 |          | Destination Data Type |                            |
 +----------+-----------------------+----------------------------+
-|          | If File Exists        | \<All Values\>             |
+|          | If File Exists        | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Maximum Transfer Rate | \<All Values\>             |
+|          | Maximum Transfer Rate | <All Values\>             |
 +----------+-----------------------+----------------------------+
 |          | Start Transfer On     | Destination                |
 +----------+-----------------------+----------------------------+
@@ -420,17 +377,17 @@ this online help:
 +----------+-----------------------+----------------------------+
 |          | If File Exists        | Single File Transfer       |
 |          |                       |                            |
-|          |                       | \<All Values\>             |
+|          |                       | <All Values\>             |
 |          |                       |                            |
 |          |                       | Wild Card Transfer         |
 |          |                       |                            |
 |          |                       | Overwrite                  |
 +----------+-----------------------+----------------------------+
-|          | Maximum Transfer Rate | \<All Values\>             |
+|          | Maximum Transfer Rate | <All Values\>             |
 +----------+-----------------------+----------------------------+
 |          | Compression           | Single File Transfer       |
 |          |                       |                            |
-|          |                       | \<All Values\>             |
+|          |                       | <All Values\>             |
 |          |                       |                            |
 |          |                       | Wild Card Transfer         |
 |          |                       |                            |
@@ -438,13 +395,13 @@ this online help:
 +----------+-----------------------+----------------------------+
 |          | Encryption            | Single File Transfer       |
 |          |                       |                            |
-|          |                       | \<All Values\>             |
+|          |                       | <All Values\>             |
 |          |                       |                            |
 |          |                       | Wild Card Transfer         |
 |          |                       |                            |
 |          |                       | None                       |
 +----------+-----------------------+----------------------------+
-|          | Start Transfer On     | \<All Values\>             |
+|          | Start Transfer On     | <All Values\>             |
 +----------+-----------------------+----------------------------+
 | Windows  | Source Data Type      | ASCII                      |
 |          |                       |                            |
@@ -456,19 +413,19 @@ this online help:
 |          |                       |                            |
 |          | Destination Data Type |                            |
 +----------+-----------------------+----------------------------+
-|          | If File Exists        | \<All Values\>             |
+|          | If File Exists        | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Delete Source File    | \<All Values\>             |
+|          | Delete Source File    | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Maximum Transfer Rate | \<All Values\>             |
+|          | Maximum Transfer Rate | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Compression           | \<All Values\>             |
+|          | Compression           | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Encryption            | \<All Values\>             |
+|          | Encryption            | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Start Transfer On     | \<All Values\>             |
+|          | Start Transfer On     | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | TLS Security Override | \<All Values\>             |
+|          | TLS Security Override | <All Values\>             |
 +----------+-----------------------+----------------------------+
 | z/OS     | Source Data Type      | ASCII                      |
 |          |                       |                            |
@@ -480,9 +437,9 @@ this online help:
 |          |                       |                            |
 |          | Destination Data Type |                            |
 +----------+-----------------------+----------------------------+
-|          | If File Exists        | \<All Values\>             |
+|          | If File Exists        | <All Values\>             |
 +----------+-----------------------+----------------------------+
-|          | Maximum Transfer Rate | \<All Values\>             |
+|          | Maximum Transfer Rate | <All Values\>             |
 +----------+-----------------------+----------------------------+
 |          | Start Transfer On     | Destination                |
 +----------+-----------------------+----------------------------+

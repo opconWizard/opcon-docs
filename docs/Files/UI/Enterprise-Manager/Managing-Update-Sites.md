@@ -28,9 +28,9 @@ Click the **Local** or **Archive** button.
 For the **Local** site, search for the directory where the repository
 file was extracted.
 
-  --------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [**\<media\>**:\\Install\\Enterprise Manager\\repository\\]{.statement2}
-  --------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------
+:::tip Example
+**<media\>**:\\Install\\Enterprise Manager\\repository\\
+:::
 
 i.  Click on the **directory** in the **Browser For Folder** dialog and
     click **OK**.

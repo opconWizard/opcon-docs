@@ -59,16 +59,11 @@ The Property Expressions API supports the operators below, and applies
 them in the order of precedence. Use parenthesis to change the
 precedence of any operators.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** 5+3 \* 6 = 23       | | circular                         | because multiplication has       |
-| background](../../Reso           | higher precedence than addition. |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  |                                  |
-|                                  | (5+3) \* 6 = 48 because the      |
-|                                  | parenthesis changed the order of |
-|                                  | computation.                     |
-+----------------------------------+----------------------------------+
+:::tip Example
+5+3 * 6 = 23 because multiplication has higher precedence than addition.
+
+(5+3) * 6 = 48 because the parenthesis changed the order of computation.
+:::
 
 :::note
 For mathematical operations, the result will never exceed 15 numbers.

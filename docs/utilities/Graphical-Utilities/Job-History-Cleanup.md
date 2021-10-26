@@ -65,73 +65,25 @@ The following describes the command-line parameters:
 - **-p**(Optional): Indicates a purge is to take place instead of an
     archive. Specify -p [without]{.ul} the -h switch to purge the     archive table (HISTARC).
 
-### Examples
+:::tip Example
+The following shows the syntax used to archive the job history for all schedules:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 1:** The following     | | circular                         | shows the syntax used to archive |
-| background](../../../Reso        | the job history for all          |
-| urces/Images/example-icon(48x48) | schedules:                       |
-| .png "Example icon") |                                  |
-|                                  | history.exe -ubatchuser          |
-|                                  | -wbatchpwd -d30 -m12             |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Example 1 will connect to the    |
-|                                  | OpCon |
-|                                  | database defined for the SAM.    |
-|                                  | The user is batchuser and the    |
-|                                  | password is batchpwd. The        |
-|                                  | schedule option was omitted,     |
-|                                  | which means all schedules'      |
-|                                  | history will be archived. (A -p  |
-|                                  | switch was not listed to         |
-|                                  | indicate a purge.) The days to   |
-|                                  | keep was set to 30, which means  |
-|                                  | the previous month's history    |
-|                                  | will be kept. The minimum        |
-|                                  | records parameter was set to 12, |
-|                                  | which means at least 12 records  |
-|                                  | will be kept for each job. This  |
-|                                  | is beneficial for jobs that run  |
-|                                  | occasionally because the last 12 |
-|                                  | executions of the job will be    |
-|                                  | kept, even if the executions are |
-|                                  | older than 30 days.              |
-+----------------------------------+----------------------------------+
+```cmd
+history.exe -ubatchuser -wbatchpwd -d30 -m12
+```
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 2:** The following     | | circular                         | shows the syntax used to purge   |
-| background](../../../Reso        | the job history from the archive |
-| urces/Images/example-icon(48x48) | table for all schedules:         |
-| .png "Example icon") |                                  |
-|                                  | history.exe -ubatchuser          |
-|                                  | -wbatchpwd -d365 -m120 -p        |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Example 2 above will connect to  |
-|                                  | the                              |
-|                                  | OpCon |
-|                                  | database defined for the SAM.    |
-|                                  | The user is batchuser and the    |
-|                                  | password is batchpwd. The        |
-|                                  | schedule option was omitted,     |
-|                                  | which means all schedules'      |
-|                                  | history will be deleted. The     |
-|                                  | days to keep was set to 365,     |
-|                                  | which means the previous year's |
-|                                  | history will be kept. The        |
-|                                  | minimum records parameter was    |
-|                                  | set to 120, which means at least |
-|                                  | 120 records will be kept for     |
-|                                  | each job. The -p switch          |
-|                                  | indicates that the records       |
-|                                  | should be purged. The -a switch  |
-|                                  | indicates that the records       |
-|                                  | should be purged from the        |
-|                                  | archive (HISTARC) table.         |
-+----------------------------------+----------------------------------+
+This will connect to the OpCon database defined for the SAM. The user is batchuser and the password is batchpwd. The schedule option was omitted, which means all schedules' history will be archived. (A -p switch was not listed to indicate a purge.) The days to keep was set to 30, which means the previous month's history will be kept. The minimum records parameter was set to 12, which means at least 12 records will be kept for each job. This is beneficial for jobs that run occasionally because the last 12 executions of the job will be kept, even if the executions are older than 30 days.
+:::
+
+:::tip Example
+The following shows the syntax used to purge the job history from the archive table for all schedules:
+
+```cmd
+history.exe -ubatchuser -wbatchpwd -d365 -m120 -p 
+```
+
+This will connect to the OpCon database defined for the SAM. The user is batchuser and the password is batchpwd. The schedule option was omitted, which means all schedules' history will be deleted. The days to keep was set to 365, which means the previous year's history will be kept. The minimum records parameter was set to 120, which means at least 120 records will be kept for each job. The -p switch indicates that the records should be purged. The -a switch indicates that the records should be purged from the archive (HISTARC) table.
+:::
 
 ## Logging
 

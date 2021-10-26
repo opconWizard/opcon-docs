@@ -81,12 +81,14 @@ Click the **New Query** button on the toolbar.
 
 Enter the command for the **SMA_CHGMACHINE** stored procedure.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The command for the | | circular                         | SMA_CHGMACHINE stored procedure: |
-| background](../../../Reso        |                                  |
-| urces/Images/example-icon(48x48) | EXEC SMA_CHGMACHINE 'NEPTUNE'  |
-| .png "Example icon") |                                  |
-+----------------------------------+----------------------------------+
+:::tip Example
+The command for the SMA_CHGMACHINE stored procedure:
+
+```sql
+EXEC SMA_CHGMACHINE 'NEPTUNE'
+```
+
+:::
 
 Click the **Execute** button on the toolbar or press **F5** to execute
 the query.
@@ -150,26 +152,23 @@ The following describes the parameters for the stored procedure:
 
 #### Examples
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **Example \#1:** With the        | | circular                         | following command, the stored    |
-| background](../../../Reso        | procedure only affects rows with |
-| urces/Images/example-icon(48x48) | both a Group ID of 123 and a     |
-| .png "Example icon") | User ID of 45:                   |
-|                                  |                                  |
-|                                  | EXEC SMA_CHG_UNIX_GIDUID         |
-|                                  | '                               |
-|                                  | 123','789','45','56',NULL |
-+----------------------------------+----------------------------------+
+:::tip Example
+With the following command, the stored procedure only affects rows with both a Group ID of 123 and a User ID of 45:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **Example \#2:** With the        | | circular                         | following command, all UNIX jobs |
-| background](../../../Reso        | have the Group ID set to 789 and |
-| urces/Images/example-icon(48x48) | the User ID set to 56:           |
-| .png "Example icon") |                                  |
-|                                  | EXEC SMA_CHG_UNIX_GIDUID         |
-|                                  | NULL,'789',NULL,'56',        |
-|                                  | 'ProdSched1'                   |
-+----------------------------------+----------------------------------+
+```sql
+EXEC SMA_CHG_UNIX_GIDUID '123','789','45','56',NULL
+```
+
+:::
+
+:::tip Example
+With the following command, all UNIX jobs have the Group ID set to 789 and the User ID set to 56:
+
+```sql
+EXEC SMA_CHG_UNIX_GIDUID NULL,'789',NULL,'56', 'ProdSched1'
+```
+
+:::
 
 ### Executing SMA_CHG_UNIX_GIDUID
 
@@ -209,20 +208,19 @@ Click the **New Query** button on the toolbar.
 
 Enter the command for the **SMA_CHG_UNIX_GIDUID** stored procedure.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [EXEC               | | circular                         | SMA_CHG_UNIX_GIDUID              |
-| background](../../../Reso        | '123','789','45','        |
-| urces/Images/example-icon(48x48) | 56',NULL]{style="font-family: ' |
-| .png "Example icon") | Courier New';font-size: 11.5pt"} |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **- or -**                       |
-|                                  |                                  |
-|                                  | EXEC SMA_CHG_UNIX_GIDUID         |
-|                                  | NULL,'                          |
-|                                  | 789',NULL,'56','ProdSched1' |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```sql
+EXEC SMA_CHG_UNIX_GIDUID '123','789','45','56',NULL
+```
+
+**\- or \-**
+
+```sql
+EXEC SMA_CHG_UNIX_GIDUID NULL,'789',NULL,'56','ProdSched1'
+```
+
+:::
 
 Click the **Execute** button on the toolbar or press **F5** to execute
 the query.
@@ -300,42 +298,24 @@ the query.
 
 View the feedback from the stored procedure.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following is a  | | circular                         | summary displayed by the         |
-| background](../../../Reso        | execution of SMA CLEAN_ENS:      |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | SUMMARY                          |
-|                                  |                                  |
-|                                  | =============================    |
-|                                  | ================================ |
-|                                  |                                  |
-|                                  | NUMBER OF MACHINE REFERENCES     |
-|                                  | UPDATED : 0                      |
-|                                  |                                  |
-|                                  | NUMBER OF MACHINE REFERENCES     |
-|                                  | REMOVED : 0                      |
-|                                  |                                  |
-|                                  | NUMBER OF SCHEDULE REFERENCES    |
-|                                  | UPDATED : 0                      |
-|                                  |                                  |
-|                                  | NUMBER OF SCHEDULE REFERENCES    |
-|                                  | REMOVED : 0                      |
-|                                  |                                  |
-|                                  | NUMBER OF JOB REFERENCES REMOVED |
-|                                  | : 1                              |
-|                                  |                                  |
-|                                  | \-\-\-\-\-\-\-\-\-\-\-\-\        |
-|                                  | -\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\ |
-|                                  | -\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\ |
-|                                  | -\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- |
-|                                  |                                  |
-|                                  | TOTAL REFERENCES UPDATED : 0     |
-|                                  |                                  |
-|                                  | TOTAL REFERENCES REMOVED : 1     |
-|                                  |                                  |
-|                                  | =============================    |
-|                                  | ================================ |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following is a summary displayed by the execution of SMA CLEAN_ENS:
+
+```shell
+SUMMARY
+=============================================================
+NUMBER OF MACHINE REFERENCES UPDATED : 0
+NUMBER OF MACHINE REFERENCES REMOVED : 0
+NUMBER OF SCHEDULE REFERENCES UPDATED : 0
+NUMBER OF SCHEDULE REFERENCES REMOVED : 0
+NUMBER OF JOB REFERENCES REMOVED : 1
+-------------------------------------------------------------
+TOTAL REFERENCES UPDATED : 0
+TOTAL REFERENCES REMOVED : 1
+=============================================================
+```
+
+:::
 
 ## SMA_CLEARSCHED
 
@@ -461,64 +441,46 @@ Click the **New Query** button on the toolbar.
 
 Copy and paste the following syntax into the query window:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../../Reso        | Declare \@errorcode int          |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | Declare \@errortext Varchar(255) |
-|                                  |                                  |
-|                                  | BEGIN                            |
-|                                  |                                  |
-|                                  | exec SMA_COPYSCHED               |
-|                                  | '\<SourceSchedule\>'           |
-|                                  |                                  |
-|                                  | ,'\<TargetSchedule\>'          |
-|                                  |                                  |
-|                                  | ,'Copy Privileges (Y/N)'       |
-|                                  |                                  |
-|                                  | ,'Copy Jobs (Y/N)'             |
-|                                  |                                  |
-|                                  | ,\@errorcode OUTPUT              |
-|                                  |                                  |
-|                                  | ,\@errortext OUTPUT              |
-|                                  |                                  |
-|                                  | Print convert (Char(5),          |
-|                                  | \@errorcode) + ' ' +           |
-|                                  | \@errortext                      |
-|                                  |                                  |
-|                                  | END                              |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```sql
+Declare @errorcode int
+Declare @errortext Varchar(255)
+
+BEGIN
+exec SMA_COPYSCHED '<SourceSchedule>'
+,'<TargetSchedule>'
+,'Copy Privileges (Y/N)'
+,'Copy Jobs (Y/N)'
+,@errorcode OUTPUT
+,@errortext OUTPUT
+Print convert (Char(5), @errorcode) + ' ' + @errortext
+END
+```
+
+:::
 
 Replace the parameters with the *desired information*, as shown in the
 example:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../../Reso        | Declare \@errorcode int          |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | Declare \@errortext Varchar(255) |
-|                                  |                                  |
-|                                  | BEGIN                            |
-|                                  |                                  |
-|                                  | exec SMA_COPYSCHED               |
-|                                  | 'Development'                  |
-|                                  |                                  |
-|                                  | ,'Production'                  |
-|                                  |                                  |
-|                                  | ,'N'                           |
-|                                  |                                  |
-|                                  | ,'Y'                           |
-|                                  |                                  |
-|                                  | ,\@errorcode OUTPUT              |
-|                                  |                                  |
-|                                  | ,\@errortext OUTPUT              |
-|                                  |                                  |
-|                                  | Print convert (Char(5),          |
-|                                  | \@errorcode) + ' ' +           |
-|                                  | \@errortext                      |
-|                                  |                                  |
-|                                  | END                              |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```sql
+Declare @errorcode int
+Declare @errortext Varchar(255)
+
+BEGIN
+exec SMA_COPYSCHED 'Development'
+,'Production'
+,'N'
+,'Y'
+,@errorcode OUTPUT
+,@errortext OUTPUT
+Print convert (Char(5), @errorcode) + ' ' + @errortext
+END
+```
+
+:::
 
 Click the **Execute** button on the toolbar or press **F5** to execute
 the query.
@@ -695,31 +657,24 @@ Click the **New Query** button on the toolbar.
 
 Enter the command for the **SMA_MERGESCHED** stored procedure.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../../Reso        | Declare \@errorcode int          |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | Declare \@errortext Varchar(255) |
-|                                  |                                  |
-|                                  | BEGIN                            |
-|                                  |                                  |
-|                                  | exec SMA_mergesched              |
-|                                  | 'TargetSchedule'               |
-|                                  |                                  |
-|                                  | ,'SourceSchedule'              |
-|                                  |                                  |
-|                                  | ,0                               |
-|                                  |                                  |
-|                                  | ,\@errorcode OUTPUT              |
-|                                  |                                  |
-|                                  | ,\@errortext OUTPUT              |
-|                                  |                                  |
-|                                  | Print convert (Char(5),          |
-|                                  | \@errorcode) + ' ' +           |
-|                                  | \@errortext                      |
-|                                  |                                  |
-|                                  | END                              |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```sql
+Declare @errorcode int
+Declare @errortext Varchar(255)
+
+BEGIN
+exec SMA_mergesched 'TargetSchedule'
+,'SourceSchedule'
+,0
+,@errorcode OUTPUT
+,@errortext OUTPUT
+
+Print convert (Char(5), @errorcode) + ' ' + @errortext
+END
+```
+
+:::
 
 Click the **Execute** button on the toolbar or press **F5** to execute
 the query.
@@ -777,14 +732,14 @@ The command file may contain multiple net send commands or any other valid comma
 - If omitted, the recipient defaults to the hostname of the machine on
     which the store procedure executes.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | command executes a command file  |
-| background](../../../Reso        | named if the SAM fails:          |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | EXEC SMA_SAMWATCH                |
-|                                  | 1,'C:\\ProgramData\\OpCon       |
-|                                  | xps\\Scripts\\sma_samwatch.cmd' |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following command executes a command file named if the SAM fails:
+
+```sql
+EXEC SMA_SAMWATCH 1,'C:\ProgramData\OpConxps\Scripts\sma_samwatch.cmd'
+```
+
+:::
 
 **\<\#1\>**: The number of times SMA_SAMWATCH retries when a SAMPULSE
 record for the requested SAMID is absent. This situation may occur when
@@ -797,18 +752,14 @@ SAM is not running or during a SAM regeneration.
 - Valid values include integers ranging from 0 and 59.
 - If omitted, the default is 5.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** After the following | | circular                         | command attempts to detect the   |
-| background](../../../Reso        | SAM seven times at 20 second     |
-| urces/Images/example-icon(48x48) | intervals, the command executes  |
-| .png "Example icon") | a command file named             |
-|                                  | "sma_samwatch.cmd" if the SAM  |
-|                                  | has not been detected:           |
-|                                  |                                  |
-|                                  | EXEC SMA_SAMWATCH                |
-|                                  | 1,'C:\\ProgramData\\OpConxps\\  |
-|                                  | Scripts\\sma_samwatch.cmd',7,20 |
-+----------------------------------+----------------------------------+
+:::tip Example
+After the following command attempts to detect the SAM seven times at 20 second intervals, the command executes a command file named "sma_samwatch.cmd" if the SAM has not been detected:
+
+```sql
+EXEC SMA_SAMWATCH 1,'C:\ProgramData\OpConxps\Scripts\sma_samwatch.cmd',7,20
+```
+
+:::
 
 ### Scheduling SMA_SAMWATCH in SQL
 

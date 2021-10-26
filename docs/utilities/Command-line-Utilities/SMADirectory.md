@@ -61,13 +61,13 @@ argument.
 |           |                |                 |                 |
 |           |                |                 |                 |
 |           |                |                 |                 |
-|           |                |                 | \<d             |
+|           |                |                 | <d             |
 |           |                |                 | riveTarget\>\\P |
 |           |                |                 | rogramData\\OpC |
 |           |                |                 | onxps\\MSLSAM\\ |
 |           |                |                 |                 |
 |           |                |                 | SMA             |
-|           |                |                 | Directory\\\<di |
+|           |                |                 | Directory\\<di |
 |           |                |                 | rectoryTarget\> |
 |           |                |                 |                 |
 |           |                |                 |                 |
@@ -119,8 +119,8 @@ argument.
 |           |                |                 | be in the       |
 |           |                |                 | following form: |
 |           |                |                 |                 |
-|           |                |                 | \<Numbe         |
-|           |                |                 | r\>\<TimeSpan\> |
+|           |                |                 | <Numbe         |
+|           |                |                 | r\><TimeSpan\> |
 |           |                |                 |                 |
 |           |                |                 |                 |
 |           |                |                 |                 |
@@ -464,14 +464,15 @@ successfully.
 
 The following command-line syntax can be used:
 
-\<Target Directory\>\\OpConxps\\MSLSAM\\SMADirectory.exe
-Directory,DaysToRetain,FileExtensions
+```shell
+<Target Directory\>\\OpConxps\\MSLSAM\\SMADirectory.exe Directory,DaysToRetain,FileExtensions
+```
 
 #### Parameters
 
 The following describes the command-line parameters:
 
-- **\<Target Directory\>**: The path to the OpCon installation folder
+- **<Target Directory\>**: The path to the OpCon installation folder
     (e.g., "C:\\Program Files\").
 - **Directory**: The path to the directory to examine.
 - **DaysToRetain**: The number of days to keep in the directory.
@@ -487,23 +488,19 @@ The following describes the command-line parameters:
 
 #### Example
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | The following command line would | | circular                         | delete any files with an         |
-| background](../../../Reso        | extension of "log" that were   |
-| urces/Images/example-icon(48x48) | older than 5 days:               |
-| .png "Example icon") |                                  |
-|                                  | "C:\\Program                    |
-|                                  | Files\\                          |
-|                                  | OpConxps\\MSLSAM\\SMADirectory" |
-|                                  |                                  |
-|                                  | "C:\\Program                    |
-|                                  | Data\\OpConxps\\SAM\\Log,5,log" |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Notice that there is no period   |
-|                                  | in front of log.                 |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following command line would delete any files with an extension of "log" that were older than 5 days:
+
+```shell
+"C:\Program Files\OpConxps\MSLSAM\SMADirectory"
+```
+
+```shell
+"C:\ProgramData\OpConxps\SAM\Log,5,log"
+```
+
+Notice that there is no period in front of log.
+:::
 
 ## Exit Codes
 

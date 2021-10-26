@@ -101,14 +101,14 @@ Non-customized.
 
   : SMAHoliday Configuration: FixedHolidays Settings
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [09/mo-1=usa ;      | | circular                         | Labor Day]{.statement2}          |
-| background](../../../Reso        |                                  |
-| urces/Images/example-icon(48x48) | -   09/mo-1 defines the Rule.    |
-| .png "Example icon") | -   usa defines the Tag.         |
-|                                  | -   Labor Day defines the        |
-|                                  |     Description.                 |
-+----------------------------------+----------------------------------+
+:::tip Example
+09/mo-1=usa ; Labor Day
+
+- 09/mo-1 defines the Rule.
+- usa defines the Tag.
+- Labor Day defines the Description.
+
+:::
 
   FixedHolidays Customized Settings     Description
   ------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -177,42 +177,28 @@ Non-customized.
 
 : SMAHoliday Configuration: FixedHolidays Non-customized Settings
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | examples describe FixedHoliday   |
-| background](../../../Reso        | scenarios:                       |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | -   WN20 = Week 20 is a holiday  |
-|                                  |     week                         |
-|                                  | -   d1 = All Sundays; 6 day      |
-|                                  |     workweek                     |
-|                                  | -   d7 = All Saturdays; 5 day    |
-|                                  |     workweek                     |
-|                                  | -   d1/w1 = First day of first   |
-|                                  |     week for all months          |
-|                                  | -   wl/m1 = Last week of first   |
-|                                  |     month                        |
-|                                  | -   d2/w3/m1 *or* 01/mo-3=usa ;  |
-|                                  |     Martin Luther King, Jr. Day  |
-|                                  | -   d2/w3/m1 *or* 02/mo-3=usa ;  |
-|                                  |     Presidents Day               |
-|                                  | -   d2/wl/m5 *or* 05/mo-l=usa ;  |
-|                                  |     Memorial Day                 |
-|                                  | -   d2/w1/m9 *or* 09/mo-1=usa ;  |
-|                                  |     Labor Day                    |
-|                                  | -   d2/w2/m10 *or* 10/mo-2=usa ; |
-|                                  |     Columbus Day                 |
-|                                  | -   d5/w4/m11 *or* 11/th-4=usa ; |
-|                                  |     Thanksgiving Day             |
-|                                  | -   Easter_Sun = Easter Sunday   |
-|                                  | -   Easter_Monday = Easter       |
-|                                  |     Monday                       |
-|                                  | -   Easter_Friday = Easter       |
-|                                  |     Friday                       |
-|                                  | -   Whit_Sunday = Pentecoste     |
-|                                  | -   Whit_Monday = Lundi          |
-|                                  |     Pentecoste                   |
-|                                  | -   Ass_Thu = Jeudi Assencion    |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following examples describe FixedHoliday scenarios:
+
+- WN20 = Week 20 is a holiday week
+- d1 = All Sundays; 6 day workweek
+- d7 = All Saturdays; 5 day workweek
+- d1/w1 = First day of first week for all months
+- wl/m1 = Last week of first month
+- d2/w3/m1 or 01/mo-3=usa ; Martin Luther King, Jr. Day
+- d2/w3/m1 or 02/mo-3=usa ; Presidents Day
+- d2/wl/m5 or 05/mo-l=usa ; Memorial Day
+- d2/w1/m9 or 09/mo-1=usa ; Labor Day
+- d2/w2/m10 or 10/mo-2=usa ; Columbus Day
+- d5/w4/m11 or 11/th-4=usa ; Thanksgiving Day
+- Easter_Sun = Easter Sunday
+- Easter_Monday = Easter Monday
+- Easter_Friday = Easter Friday
+- Whit_Sunday = Pentecoste
+- Whit_Monday = Lundi Pentecoste
+- Ass_Thu = Jeudi Assencion
+
+:::
 
 #### VariableHoliday Settings
 
@@ -253,63 +239,31 @@ date result of the rule.
 
 : SMAHoliday Configuration: VariableHoliday Settings
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | example describes a              |
-| background](../../../Reso        | VariableHoliday scenario where   |
-| urces/Images/example-icon(48x48) | InclusiveDate=No:                |
-| .png "Example icon") |                                  |
-|                                  | -   date=01/01                   |
-|                                  | -   condition=if outputdate ==   |
-|                                  |     d1 then +1 \|\| if           |
-|                                  |     outputdate == d7 then -1     |
-|                                  | -   tag=New Years Day            |
-|                                  | -   InclusiveDate=No             |
-|                                  |                                  |
-|                                  | If 01/01 falls on a d1=Sunday,   |
-|                                  | then the output date will move   |
-|                                  | one day forwards (the holiday    |
-|                                  | will be Monday=01/02) This will  |
-|                                  | yield one date as a result.      |
-|                                  |                                  |
-|                                  | **- or-**                        |
-|                                  |                                  |
-|                                  | If 01/01 falls on a d7=Saturday, |
-|                                  | then the output date will move   |
-|                                  | one day backwards (the holiday   |
-|                                  | will be Friday=12/31) This will  |
-|                                  | yield one date as a result.      |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following example describes a VariableHoliday scenario where InclusiveDate=No:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | example describes a              |
-| background](../../../Reso        | VariableHoliday scenario where   |
-| urces/Images/example-icon(48x48) | InclusiveDate=Yes:               |
-| .png "Example icon") |                                  |
-|                                  | -   date=01/01                   |
-|                                  | -   condition=if outputdate ==   |
-|                                  |     d1 then +1 \|\| if           |
-|                                  |     outputdate == d7 then -1     |
-|                                  | -   tag=New Years Day            |
-|                                  | -   InclusiveDate=Yes            |
-|                                  |                                  |
-|                                  | If 01/01 falls on a d1=Sunday,   |
-|                                  | then the output date will move   |
-|                                  | one day forwards (the holiday    |
-|                                  | will be Monday=01/02 and will    |
-|                                  | also include Sunday=01/01). This |
-|                                  | will yield two dates as a        |
-|                                  | result.                          |
-|                                  |                                  |
-|                                  | **- or-**                        |
-|                                  |                                  |
-|                                  | If 01/01 falls on a d7=Saturday, |
-|                                  | then the output date will move   |
-|                                  | one day backwards (the holiday   |
-|                                  | will be Friday=12/31 and it will |
-|                                  | also include Saturday=01/01).    |
-|                                  | This will yield two dates as a   |
-|                                  | result.                          |
-+----------------------------------+----------------------------------+
+- date=01/01
+- condition=if outputdate == d1 then +1 || if outputdate == d7 then -1
+- tag=New Years Day
+- InclusiveDate=No
+
+If 01/01 falls on a d1=Sunday, then the output date will move one day forwards (the holiday will be Monday=01/02) This will yield one date as a result.
+**\- or \-**
+If 01/01 falls on a d7=Saturday, then the output date will move one day backwards (the holiday will be Friday=12/31) This will yield one date as a result.
+:::
+
+:::tip Example
+The following example describes a VariableHoliday scenario where InclusiveDate=Yes:
+
+- date=01/01
+- condition=if outputdate == d1 then +1 || if outputdate == d7 then -1
+- tag=New Years Day
+- InclusiveDate=Yes
+
+If 01/01 falls on a d1=Sunday, then the output date will move one day forwards (the holiday will be Monday=01/02 and will also include Sunday=01/01). This will yield two dates as a result.
+**\- or \-**
+If 01/01 falls on a d7=Saturday, then the output date will move one day backwards (the holiday will be Friday=12/31 and it will also include Saturday=01/01). This will yield two dates as a result.
+:::
 
 #### RangeHoliday Settings
 
@@ -319,45 +273,31 @@ Non-customized) separated by an equal sign (=). Range holidays have the
 following restrictions: they must be included in the Range section and
 they cannot be a Tag.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         | [02/15=02/20]{.statement2}       |
-| background](../../../Reso        |                                  |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  | This rule will result in the     |
-|                                  | following dates:                 |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | 02/15                            |
-|                                  |                                  |
-|                                  | 02/16                            |
-|                                  |                                  |
-|                                  | 02/17                            |
-|                                  |                                  |
-|                                  | 02/18                            |
-|                                  |                                  |
-|                                  | 02/19                            |
-|                                  |                                  |
-|                                  | 02/20                            |
-+----------------------------------+----------------------------------+
+:::tip Example
+02/15=02/20
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [The following is   | | circular                         | an example of different Range    |
-| background](../../../Reso        | rules that can be configured in  |
-| urces/Images/example-icon(48x48) | a calendar:]{.statement2}        |
-| .png "Example icon") |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | \[Range\]                        | |                                  |                                  |
-|                                  | 01/mo-3=02/mo-1                  |
-|                                  |                                  |
-|                                  | 02/02=02/20                      |
-|                                  |                                  |
-|                                  | 01/01=-4                         |
-|                                  |                                  |
-|                                  | Easter_Fri=4                     |
-+----------------------------------+----------------------------------+
+This rule will result in the following dates:
+
+02/15
+02/16
+02/17
+02/18
+02/19
+02/20
+:::
+
+:::tip Example
+The following is an example of different Range rules that can be configured in a calendar:
+
+```ini
+[Range]
+01/mo-3=02/mo-1
+02/02=02/20
+01/01=-4
+Easter_Fri=4
+```
+
+:::
 
 ## Command-line Syntax
 

@@ -8,7 +8,7 @@ OpCon supports automatic schedule maintenance
 on the Administration \> Schedules screen; nevertheless, SMA Technologies also supports DoBatch for backwards
 compatibility.
 
-The directory \<Target Directory\>\\OpConxps\\OpConxps\\ contains the
+The directory <Target Directory\>\\OpConxps\\OpConxps\\ contains the
 DoBatch.exe program. To keep log files together, SMA Technologies expects DoBatch to run on the SAM
 application server.
 
@@ -17,13 +17,13 @@ Creating a DoBatch Command File
 To create a DoBatch command file:
 
 1. Open an *ASCII text editor* (e.g., Notepad).
-2. Enter the appropriate command to navigate to the \<Configuration
+2. Enter the appropriate command to navigate to the <Configuration
     Directory\>\\Scripts directory on the OpCon server. The following
     example shows the default location:
 3. Add the appropriate DoBatch command(s) according to the objective
     (e.g., build, check, delete, and forecast schedules). For
     information, refer to the next section about commands and syntax.
-4. Save with file extension **.cmd** in the \<Configuration
+4. Save with file extension **.cmd** in the <Configuration
     Directory\>**\\Scripts\\** directory.
 5. Schedule the command file with a Windows job in the Enterprise
     Manager (EM).
@@ -42,19 +42,15 @@ DoBatch program and the BUILD parameter, using the following syntax:
 DoBatch.exe \[DSN\],UID,PWD,logfile,BUILD\[HLD\],StartDate,EndDate,
 \[Overwrite?\],ScheduleName(s) +CSV+ +JOBID+\[\[$JOBID\]\] ↵
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | how to create a command file to  |
-| background](../../../Reso        | build schedules SCHED1 and       |
-| urces/Images/example-icon(48x48) | SCHED2 for the next seven days,  |
-| .png "Example icon") | and overwrite any existing       |
-|                                  | schedules:                       |
-|                                  |                                  |
-|                                  | cd "c:\\program                 |
-|                                  | files\\opconxps\\opconxps" ↵\   |
-|                                  | DoBatch.exe,batchuser,           |
-|                                  | password,build.log,BUILD,1,7,y,\ |
-|                                  | SCHED1,SCHED2 ↵                  |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following shows how to create a command file to build schedules SCHED1 and SCHED2 for the next seven days, and overwrite any existing schedules:
+
+```shell
+cd "c:\program files\opconxps\opconxps"
+DoBatch.exe,batchuser,password,build.log,BUILD,1,7,y,SCHED1,SCHED2
+```
+
+:::
 
 ### Checking
 
@@ -64,17 +60,15 @@ DoBatch program and the CHECK parameter, using the following syntax:
 DoBatch.exe
 \[DSN\],UID,PWD,logfile,CHECK\[+\],StartDate,EndDate,ScheduleName(s) +JOBID+\[\[$JOBID\]\] ↵
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | how to create a command file to  |
-| background](../../../Reso        | check all schedules for the next |
-| urces/Images/example-icon(48x48) | day:                             |
-| .png "Example icon") |                                  |
-|                                  | cd "c:\\program                 |
-|                                  | files\\opconxps\\opconxps" ↵\   |
-|                                  | DoBatch.exe,batchus              |
-|                                  | er,password,check.log,CHECK,1,1, |
-|                                  | ↵                                |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following shows how to create a command file to check all schedules for the next day:
+
+```shell
+cd "c:\program files\opconxps\opconxps"
+DoBatch.exe,batchuser,password,check.log,CHECK,1,1,
+```
+
+:::
 
 The CHECK parameter will only check the named schedule. This parameter
 does not check the subschedules that may be involved with the schedule.
@@ -87,17 +81,15 @@ DoBatch program and the DELETE parameter, using the following syntax:
 DoBatch.exe \[DSN\],UID,PWD,logfile,DELETE,StartDate,EndDate,
 ScheduleName(s) +JOBID+\[\[$JOBID\]\] ↵
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | how to create a command file to  |
-| background](../../../Reso        | delete all schedules for the     |
-| urces/Images/example-icon(48x48) | past seven days:                 |
-| .png "Example icon") |                                  |
-|                                  | cd "c:\\program                 |
-|                                  | files\\opconxps\\opconxps" ↵\   |
-|                                  | DoBatch.exe,batchuser,p          |
-|                                  | assword,delete.log,DELETE,-7,-1, |
-|                                  | ↵                                |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following shows how to create a command file to delete all schedules for the past seven days:
+
+```shell
+cd "c:\program files\opconxps\opconxps"
+DoBatch.exe,batchuser,password,delete.log,DELETE,-7,-1,
+```
+
+:::
 
 ### Forecasting
 
@@ -107,29 +99,16 @@ the DoBatch program and FORECAST parameter, using the following syntax:
 DoBatch.exe \[DSN\],UID,PWD,logfile,FORECAST,StartDate,EndDate,
 ScheduleName(s) +CSV+ +JOBID+\[\[$JOBID\]\] ↵
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | example shows how to create a    |
-| background](../../../Reso        | command file to forecast the     |
-| urces/Images/example-icon(48x48) | schedule SCHED1 for the next     |
-| .png "Example icon") | seven days:                      |
-|                                  |                                  |
-|                                  | cd "c:\\program                 |
-|                                  | files\\opconxps\\opconxps" ↵\   |
-|                                  | DoBatch.exe,batchuser,password,  |
-|                                  | forecast.log,FORECAST,1,7,SCHED1 |
-|                                  | +CSV+ ↵                          |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | DoBatch places the               |
-|                                  | comma-delimited file             |
-|                                  | SCHED1_Forecast.csv in the       |
-|                                  | \<Output                         |
-|                                  | Dire                             |
-|                                  | ctory\>\\SAM\\Log\\SMASchedMan\\ |
-|                                  | directory on the DoBatch         |
-|                                  | machine.                         |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following example shows how to create a command file to forecast the schedule SCHED1 for the next seven days:
+
+```shell
+cd "c:\program files\opconxps\opconxps"
+DoBatch.exe,batchuser,password,forecast.log,FORECAST,1,7,SCHED1 +CSV+
+``` 
+
+DoBatch places the comma-delimited file SCHED1_Forecast.csv in the <Output Directory\>\SAM\Log\SMASchedMan\ directory on the DoBatch machine.
+:::
 
 :::note
 The Output Directory was configured during installation. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
@@ -153,8 +132,7 @@ each parameter is also provided. The letter '**O**' means optional,
     detailed log file of its activity.
   - If a path is specified with the filename, the file is created in
         the directory specified in the path.
-  - If only a file name is specified, the log file is created in the
-        \<Output Directory\>\\SAM\\Log\\SMASchedMan\\ directory:
+  - If only a file name is specified, the log file is created in the <Output Directory\>\\SAM\\Log\\SMASchedMan\\ directory:
   - The DoBatch.log and the logfile argument are unrelated.
 - **Command** (Required): Indicates the command for DoBatch to
     process. Commands include:
@@ -212,26 +190,20 @@ each parameter is also provided. The letter '**O**' means optional,
 - **Schedule Name(s)**: The name(s) of the schedule(s) to be built.
     This parameter is Required for the BUILD, BUILDHLD, and FORECAST
     commands. It is optional for the CHECK, CHECK+, and DELETE commands.
-  - Any number of schedules may be specified, each separated by a
-        comma.
-  - If the database has a binary sort order, schedule names are
-        case-sensitive.
-  - If optional and if no schedule names are specified, all
-        schedules in the specified date range are affected.
+  - Any number of schedules may be specified, each separated by a comma.
+  - If the database has a binary sort order, schedule names are case-sensitive.
+  - If optional and if no schedule names are specified, all schedules in the specified date range are affected.
 - **+CSV+**: A switch for DoBatch to create a comma-delimited (.csv)
     file. The file contains schedule date(s), job name(s), and
     associated frequency information. This parameter is Optional for the
     BUILD, BUILDHLD, and FORECAST commands only.
-  - For building and forecasting, the utility creates the respective
-        file:
-    - \<Schedule Name\>\_FORECAST.csv
-    - \<Schedule Name\>\_BUILD.csv
-  - The utility places the files in the \<Output
-        Directory\>\\SAM\\Log\\SMASchedMan\\ directory on the SAM
-        application server.
+  - For building and forecasting, the utility creates the respective file:
+    - *Schedule Name*_FORECAST.csv
+    - *Schedule Name*_BUILD.csv
+  - The utility places the files in the <Output Directory\>\\SAM\\Log\\SMASchedMan\\ directory on the SAM application server.
   - The file is convenient for generating reports on non-Windows
-        platforms. SMA Technologies recommends         scheduling an ftp transfer of the file to the target platform.
-  - The files are not automatically deleted. [SMA         Technologies]{.GeneralCompanyName} recommends scheduling the
+        platforms. SMA Technologies recommends scheduling an ftp transfer of the file to the target platform.
+  - The files are not automatically deleted. SMA Technologies recommends scheduling the
         deletion of these files.
   - There is a file for each schedule. If the schedule is built for
         multiple days, the additional days are appended to the
@@ -246,7 +218,7 @@ each parameter is also provided. The letter '**O**' means optional,
 ## Logging
 
 A simple log file DoBatch.log, maintained by the DoBatch program,
-resides in the directory \<Output Directory\>\\SAM\\Log\\SMASchedMan\\.
+resides in the directory <Output Directory\>\\SAM\\Log\\SMASchedMan\\.
 DoBatch expects to run on the SAM application server; consequently, the
 utility places the log file in the SAM directory to keep all the log
 files together.

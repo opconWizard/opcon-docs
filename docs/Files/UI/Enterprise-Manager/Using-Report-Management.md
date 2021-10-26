@@ -66,34 +66,15 @@ The **Filter** frame has the following options:
     Title:{Table.Column}:SQL Select statement
     ```
 
-    +----------------------------------+----------------------------------+
-    | ![White pencil icon on green     | **EXAMPLE:** [The following      |     | circular                         | example shows the text for the   |
-    | background](../../../Reso        | **Special Filter**               |
-    | urces/Images/example-icon(48x48) | field:]{.statement2}             |
-    | .png "Example icon") |                                  |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  | [The **Special Filter** field    |     |                                  | for the Jobs Using a Calendar    |
-    |                                  | report contains the following    |
-    |                                  | text:]{.statement2}              |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  | [                                |     |                                  | Calendars:{CALDESC.CALID}:SELECT |
-    |                                  | CALNAME,CALID FROM CALDESC WHERE |
-    |                                  | SKDID = 0 AND CALNAME \<\>       |
-    |                                  | 'Master Holiday' ORDER BY      |
-    |                                  | CALNAME.]{.statement2}           |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  | [The selection box displayed     |     |                                  | after the **Reports** button is  |
-    |                                  | clicked will have a title of     |
-    |                                  | Calendars. The list box will     |
-    |                                  | contain a list of all            |
-    |                                  | user-defined                     |
-    |                                  | calendars.]{.statement2}         |
-    +----------------------------------+----------------------------------+
+  :::tip Example
+  The following example shows the text for the Special Filter field:
+
+  The Special Filter field for the Jobs Using a Calendar report contains the following text:
+
+  Calendars:{CALDESC.CALID}:SELECT CALNAME,CALID FROM CALDESC WHERE SKDID = 0 AND CALNAME <\> 'Master Holiday' ORDER BY CALNAME.
+
+  The selection box displayed after the Reports button is clicked will have a title of Calendars. The list box will contain a list of all user-defined calendars.
+  :::
 
 ## Adding Reports
 

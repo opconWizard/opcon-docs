@@ -498,21 +498,18 @@ address.
 If connecting to an SAP machine through a router, define the complete
 router connection string.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | example is a router connection   |
-| background](../../Reso           | string:                          |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | /H/127.0.0.1/H/cpce801           |
-|                                  |                                  |
-|                                  | -   **cpce801** is the SAP       |
-|                                  |     machine name                 |
-|                                  | -   **127.0.0.1** is the TCP/IP  |
-|                                  |     address of the SAP machine   |
-|                                  | -   A valid connection string    |
-|                                  |     must be in this field to     |
-|                                  |     create jobs in the           |
-|                                  |     Enterprise Manager.          |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following example is a router connection string:
+
+```shell
+/H/127.0.0.1/H/cpce801
+```
+
+- **cpce801** is the SAP machine name
+- **127.0.0.1** is the TCP/IP address of the SAP machine
+- A valid connection string must be in this field to create jobs in the Enterprise Manager.
+
+:::
 
 **System Number**: Defines the system number for the SAPQueryProcessor
 to connect to the SAP system.
@@ -559,21 +556,18 @@ address.
 If connecting to an SAP machine through a router, define the complete
 router connection string.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | example is a router connection   |
-| background](../../Reso           | string:                          |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | /H/127.0.0.1/H/cpce801           |
-|                                  |                                  |
-|                                  | -   **cpce801** is the SAP       |
-|                                  |     machine name.                |
-|                                  | -   **127.0.0.1** is the TCP/IP  |
-|                                  |     address of the SAP machine.  |
-|                                  | -   A valid connection string    |
-|                                  |     must be in this field to     |
-|                                  |     create jobs in the           |
-|                                  |     Enterprise Manager.          |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following example is a router connection string:
+
+```shell
+/H/127.0.0.1/H/cpce801
+```
+
+- **cpce801** is the SAP machine name
+- **127.0.0.1** is the TCP/IP address of the SAP machine
+- A valid connection string must be in this field to create jobs in the Enterprise Manager.
+
+:::
 
 **System Number**: The system number for the SAPQueryProcessor to
 connect to the SAP system.

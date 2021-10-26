@@ -18,7 +18,7 @@ Click on the **Events** tab.
 Click the **Add** button in the **Events** frame. The **Event Definition
 Wizard** displays.
 
-Select an [OpCon]{.GeneralOpConGlobalName style="font-weight: bold;"} **event template** from the **Event Template** drop-down list. For more
+Select an **OpCon event template** from the **Event Template** drop-down list. For more
 information, refer to the [OpCon Events](../../../events/introduction.md) online help.
 
 :::tip Example

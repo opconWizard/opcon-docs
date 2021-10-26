@@ -172,23 +172,11 @@ on the respective summary tab of the main SMA Resource Monitor screen.
         This process will repeat until the file is no longer in use -
         then the action group(s) will be triggered.
 
-    +----------------------------------+----------------------------------+
-    | ![White pencil icon on green     | **EXAMPLE:** [Make sure the file |     | circular                         | is done arriving before it is    |
-    | background](../../../Reso        | created.]{.statement2}           |
-    | urces/Images/example-icon(48x48) |                                  |
-    | .png "Example icon") |                                  |
-    |                                  | For large file transfers, it     |
-    |                                  | takes time for the complete file |
-    |                                  | to arrive. Set the 'Wait        |
-    |                                  | Verify' value high enough to    |
-    |                                  | make sure that the file should   |
-    |                                  | not have changed size in that    |
-    |                                  | time. As soon as the size        |
-    |                                  | matches the same previous size   |
-    |                                  | and the file is no longer in     |
-    |                                  | use, the action group(s) will be |
-    |                                  | triggered.                       |
-    +----------------------------------+----------------------------------+
+    :::tip
+    Make sure the file is done arriving before it is created.
+
+    For large file transfers, it takes time for the complete file to arrive. Set the 'Wait Verify' value high enough to make sure that the file should not have changed size in that time. As soon as the size matches the same previous size and the file is no longer in use, the action group(s) will be triggered.
+    ::::
 - **From Time**: Defines the start time for monitoring resources. This
     option provides a way to monitor resources only during a specified
     time period of the day.

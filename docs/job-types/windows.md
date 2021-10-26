@@ -189,32 +189,23 @@ and will result in the defined exit code.
 to use. The table lists the key=value pairs that define the variables
 and their associated values.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [The job            | | circular                         | JobAdded-runtime-Envvar has      |
-| background](../../Reso           | environment variables defined    |
-| urces/Images/example-icon(48x48) | as:]{.statement2}                |
-| .png "Example icon") |                                  |
-|                                  | Run_Time=\[\[JI.1\]\]            | |                                  |                                  |
-|                                  | Exit_Code=\[\[JI.2\]\]           | |                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | This job can be added to the     |
-|                                  | daily using an event with        |
-|                                  | various values of Run_Time and   |
-|                                  | Exit_Code.                       |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=20;2=20,Y |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=30;2=30,Y |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=40;2=40,Y |
-+----------------------------------+----------------------------------+
+:::tip Example
+The job JobAdded-runtime-Envvar has environment variables defined as:
+
+```shell
+Run_Time=[[JI.1]]
+Exit_Code=[[JI.2]]
+```
+
+This job can be added to the daily using an event with various values of Run_Time and Exit_Code.
+
+```shell
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=20;2=20,Y
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=30;2=30,Y
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=40;2=40,Y
+```
+
+:::
 
 - **Env Variable Name**: Defines the environment variable name.
 
@@ -288,32 +279,23 @@ information, refer to [Advanced Failure Criteria](../objects/jobs.md#advanced-fa
 to use. The table lists the key=value pairs that define the variables
 and their associated values.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [The job            | | circular                         | JobAdded-runtime-Envvar has      |
-| background](../../Reso           | environment variables defined    |
-| urces/Images/example-icon(48x48) | as:]{.statement2}                |
-| .png "Example icon") |                                  |
-|                                  | Run_Time=\[\[JI.1\]\]            | |                                  |                                  |
-|                                  | Exit_Code=\[\[JI.2\]\]           | |                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | This job can be added to the     |
-|                                  | daily using an event with        |
-|                                  | various values of Run_Time and   |
-|                                  | Exit_Code.                       |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=20;2=20,Y |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=30;2=30,Y |
-|                                  |                                  |
-|                                  | \[\[$SCHEDULE                   | |                                  | DATE\]\],\[\[$SCHEDULE          |
-|                                  | NAME\]\],JobAdde                 |
-|                                  | d-runtime-Envvar,ap1,1=40;2=40,Y |
-+----------------------------------+----------------------------------+
+:::tip Example
+The job JobAdded-runtime-Envvar has environment variables defined as:
+
+```shell
+Run_Time=[[JI.1]]
+Exit_Code=[[JI.2]]
+```
+
+This job can be added to the daily using an event with various values of Run_Time and Exit_Code.
+
+```shell
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=20;2=20,Y
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=30;2=30,Y
+[[$SCHEDULE DATE]],[[$SCHEDULE NAME]],JobAdded-runtime-Envvar,ap1,1=40;2=40,Y
+```
+
+:::
 
 - **Env Variable Name**: Defines the environment variable name.
 
@@ -538,13 +520,14 @@ source file.
 **Source File**: Defines the full path and file name, or the saved
 WS_FTP Pro location and file name for the source file.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | example shows a sample           |
-| background](../../Reso           | destination profile in WS_FTP    |
-| urces/Images/example-icon(48x48) | Pro:                             |
-| .png "Example icon") |                                  |
-|                                  | vendor!swcorp                    |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following example shows a sample destination profile in WS_FTP Pro:
+
+```shell
+vendor!swcorp
+```
+
+:::
 
 **Destination Profile**: Defines the name of the WS_FTP Pro profile for
 the destination file.
@@ -569,4 +552,3 @@ from
 **Advanced Failure Criteria**: The WS_FTP Pro sub-type can make use of
 the Advanced Failure Criteria feature for the job defined in the Command
 Line. For more information, refer to [Advanced Failure Criteria](../objects/jobs.md#advanced-failure-criteria).
-:::

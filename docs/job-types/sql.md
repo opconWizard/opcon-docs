@@ -130,12 +130,13 @@ Running a MS SQL Script job requires SQLCMD to be installed on the agent machine
 
 **In Line Script (radio button)**: Select to define an in line script.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../Reso           | SELECT FirstName, LastName FROM  |
-| urces/Images/example-icon(48x48) | Person.Person WHERE LastName     |
-| .png "Example icon") | LIKE 'Whi%';                   |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```sql
+SELECT FirstName, LastName FROM Person.Person WHERE LastName LIKE 'Whi%';
+```
+
+:::
 
 - **Statement(s)**: Defines the SQL query to be executed against the
     selected SQL server/database. Multiple semicolon-delimited queries

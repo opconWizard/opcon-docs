@@ -8,35 +8,17 @@ status change of one or more items within a group.
 - Schedule and Job triggers can be placed on Schedule groups.
 - Job triggers can be placed on Job groups.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** In Notification     | | circular                         | Manager, a trigger for Job       |
-| background](../../Reso           | Failed is set on a Job Group of  |
-| urces/Images/example-icon(48x48) | jobs containing a job named      |
-| .png "Example icon") | "Backup." The job "Backup"   |
-|                                  | is configured to run on each     |
-|                                  | machine in a group.              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | When the schedule builds, the    |
-|                                  | single job from Job Master will  |
-|                                  | become several jobs that display |
-|                                  | in any Operation view with the   |
-|                                  | following names:                 |
-|                                  |                                  |
-|                                  | -   Backup_WinMach1              |
-|                                  | -   Backup_WinMach2              |
-|                                  | -   Backup_WinMach3              |
-|                                  |                                  |
-|                                  | Because "Backup" was selected  |
-|                                  | in the Job Group, if any one of  |
-|                                  | the jobs fail, the notification  |
-|                                  | will be sent and the exact name  |
-|                                  | of the job can be sent with the  |
-|                                  | notification so customers know   |
-|                                  | which instance of the job        |
-|                                  | failed.                          |
-+----------------------------------+----------------------------------+
+:::tip Example
+In Notification Manager, a trigger for Job Failed is set on a Job Group of jobs containing a job named "Backup." The job "Backup" is configured to run on each machine in a group.
+
+When the schedule builds, the single job from Job Master will become several jobs that display in any Operation view with the following names:
+
+- Backup_WinMach1
+- Backup_WinMach2
+- Backup_WinMach3
+
+Because "Backup" was selected in the Job Group, if any one of the jobs fail, the notification will be sent and the exact name of the job can be sent with the notification so customers know which instance of the job failed.
+:::
 
 ## Machine Triggers
 
@@ -61,43 +43,18 @@ schedule name at the end of the concatenated schedule name is the one
 that will qualify for the trigger if it is in the Notification Manager
 Group.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** In Notification     | | circular                         | Manager, a trigger for a         |
-| background](../../Reso           | schedule placed on Hold is set   |
-| urces/Images/example-icon(48x48) | on a Notification Manager Group  |
-| .png "Example icon") | of schedules containing a        |
-|                                  | schedule named                   |
-|                                  | "ImportantProcess". This       |
-|                                  | schedule is configured as a      |
-|                                  | subschedule on other schedules,  |
-|                                  | and it also has Container jobs   |
-|                                  | on it to call other schedules.   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | When the schedules build for the |
-|                                  | day, the following schedules     |
-|                                  | contain the schedule name:       |
-|                                  |                                  |
-|                                  | 1.  ImportantProcess             |
-|                                  | 2.  ImportantPro                 |
-|                                  | cess_Container1\[OtherSchedule\] | |                                  | 3.  ProcessFile                  |
-|                                  | s_Container1\[ImportantProcess\] | |                                  | 4.  ProcessF                     |
-|                                  | iles_Container1\[ImportantProces | |                                  | s\]\_Container1\[OtherSchedule\] |
-|                                  |                                  |
-|                                  | Because ImportantProcess is in   |
-|                                  | the Notification Manager Group   |
-|                                  | for the trigger, if schedule 1   |
-|                                  | or 3 is placed On Hold, the      |
-|                                  | trigger will fire. It does not   |
-|                                  | fire for schedules 2 or 4        |
-|                                  | because "OtherSchedule" is the |
-|                                  | schedule that contains jobs. The |
-|                                  | trigger would fire for those     |
-|                                  | schedules only if                |
-|                                  | "OtherSchedule" was in the     |
-|                                  | Notification Manager Group.      |
-+----------------------------------+----------------------------------+
+:::tip Example
+In Notification Manager, a trigger for a schedule placed on Hold is set on a Notification Manager Group of schedules containing a schedule named "ImportantProcess". This schedule is configured as a subschedule on other schedules, and it also has Container jobs on it to call other schedules.
+
+When the schedules build for the day, the following schedules contain the schedule name:
+
+1. ImportantProcess
+2. ImportantProcess_Container1\[OtherSchedule]
+3. ProcessFiles_Container1\[ImportantProcess]
+4. ProcessFiles_Container1\[ImportantProcess]_Container1\[OtherSchedule]
+
+Because ImportantProcess is in the Notification Manager Group for the trigger, if schedule 1 or 3 is placed On Hold, the trigger will fire. It does not fire for schedules 2 or 4 because "OtherSchedule" is the schedule that contains jobs. The trigger would fire for those schedules only if "OtherSchedule" was in the Notification Manager Group.
+:::
 
   Status                        Definition
   ----------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -111,35 +68,17 @@ Group.
 A job qualifies for a job event trigger if the name of the job in the
 Daily was derived from the selected job in the Master.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** In Notification     | | circular                         | Manager, a trigger for Job       |
-| background](../../Reso           | Failed is set on a Notification  |
-| urces/Images/example-icon(48x48) | Manager Group of jobs containing |
-| .png "Example icon") | a job named "Backup." The job  |
-|                                  | "Backup" is configured to run  |
-|                                  | on each machine in a group.      |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | When the schedule builds, the    |
-|                                  | single job from Master will      |
-|                                  | become several jobs in the Daily |
-|                                  | with the names:                  |
-|                                  |                                  |
-|                                  | -   Backup_WinMach1              |
-|                                  | -   Backup_WinMach2              |
-|                                  | -   Backup_WinMach3              |
-|                                  |                                  |
-|                                  | Because "Backup" was selected  |
-|                                  | in the Notification Manager      |
-|                                  | Group, if any one of the jobs in |
-|                                  | the Daily fail, the notification |
-|                                  | will be sent and the exact name  |
-|                                  | of the job can be sent with the  |
-|                                  | notification so customers know   |
-|                                  | which instance of the job        |
-|                                  | failed.                          |
-+----------------------------------+----------------------------------+
+:::tip Example
+In Notification Manager, a trigger for Job Failed is set on a Notification Manager Group of jobs containing a job named "Backup." The job "Backup" is configured to run on each machine in a group.
+
+When the schedule builds, the single job from Master will become several jobs in the Daily with the names:
+
+- Backup_WinMach1
+- Backup_WinMach2
+- Backup_WinMach3
+
+Because "Backup" was selected in the Notification Manager Group, if any one of the jobs in the Daily fail, the notification will be sent and the exact name of the job can be sent with the notification so customers know which instance of the job failed.
+:::
 
 +-------------------------------+-------------------------------------+
 | Status                        | Definition                          |
@@ -299,6 +238,3 @@ Daily was derived from the selected job in the Master.
 |                               | OpCon    |
 |                               | event or a user.                    |
 +-------------------------------+-------------------------------------+
-
-: Job Triggers
-:::

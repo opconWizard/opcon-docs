@@ -132,94 +132,35 @@ When defining the new value, bear in mind the following:
 Click the **Is Expression** checkbox if the new value provided is a
 property expression.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLES:**                    | | circular                         |                                  |
-| background](../../../Reso        |                                  |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | **Scenario \#1**: [A command     | |                                  | line string value needs to be    |
-|                                  | changed from                     |
-|                                  | "C:\\MyFolder\\MyApp.exe -arg1  |
-|                                  | firstArg -arg2 secondArg" to    |
-|                                  | "C:\\MyFolder\\MyApp.exe -arg1  |
-|                                  | firstArg -arg2 secondArg -arg3   |
-|                                  | thirdArg". The exception rule   |
-|                                  | definition would                 |
-|                                  | be:]{.statement2}                |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Job Field**: (Windows) Command |
-|                                  | Line                             |
-|                                  |                                  |
-|                                  | **To Replace**:                  |
-|                                  | C:\\MyFolder\\MyApp.exe -arg1    |
-|                                  | firstArg -arg2 secondArg         |
-|                                  |                                  |
-|                                  | **New Value**:                   |
-|                                  | C:\\MyFolder\\MyApp.exe -arg1    |
-|                                  | firstArg -arg2 secondArg -arg3   |
-|                                  | thirdArg                         |
-|                                  |                                  |
-|                                  | **Is Expression**: false         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Scenario \#2**: [The machine   | |                                  | needs to be changed from         |
-|                                  | "MyMachine" to                 |
-|                                  | "My\<Property\>Machine". The   |
-|                                  | exception rule definition would  |
-|                                  | be:]{.statement2}                |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Job Field**: Primary Machine   |
-|                                  |                                  |
-|                                  | **To Replace**: MyMachine        |
-|                                  |                                  |
-|                                  | **New Value**:                   |
-|                                  | My\[\[$this.Property\]\]Machine | |                                  |                                  |
-|                                  | **Is Expression**: false         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Scenario \#3**: [The           | |                                  | department needs to be changed   |
-|                                  | from "\<CurrentValue\>" to     |
-|                                  | "\<C                            |
-|                                  | urrentValue\>\<InstanceName\>". |
-|                                  | The exception rule definition    |
-|                                  | would be:]{.statement2}          |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Job Field**: Department        |
-|                                  |                                  |
-|                                  | **To Replace**:                  |
-|                                  |                                  |
-|                                  | **New Value**:                   |
-|                                  | \[\[\@current\]\]\[\[\@name\]\]  | |                                  |                                  |
-|                                  | **Is Expression**: false         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Scenario \#4**: [The job start | |                                  | offset needs to be changed from  |
-|                                  | "\<CurrentValue\>" by adding   |
-|                                  | 10 minutes to it. In this        |
-|                                  | scenario, the use of an          |
-|                                  | expression is ideal for changing |
-|                                  | numeric fields. The exception    |
-|                                  | rule definition would            |
-|                                  | be:]{.statement2}                |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Job Field**: Start Offset      |
-|                                  |                                  |
-|                                  | **To Replace**:                  |
-|                                  |                                  |
-|                                  | **New Value**: \[\[\@current\]\] | |                                  | + ToOaTime("00:10")            |
-|                                  |                                  |
-|                                  | **Is Expression**: true          |
-+----------------------------------+----------------------------------+
+:::tip Examples
+**Scenario #1**: A command line string value needs to be changed from "C:\MyFolder\MyApp.exe -arg1 firstArg -arg2 secondArg" to "C:\MyFolder\MyApp.exe -arg1 firstArg -arg2 secondArg -arg3 thirdArg". The exception rule definition would be:
+
+**Job Field**: (Windows) Command Line
+**To Replace**: C:\MyFolder\MyApp.exe -arg1 firstArg -arg2 secondArg
+**New Value**: C:\MyFolder\MyApp.exe -arg1 firstArg -arg2 secondArg -arg3 thirdArg
+**Is Expression**: false
+
+**Scenario #2**: The machine needs to be changed from "MyMachine" to "My<Property\>Machine". The exception rule definition would be:
+
+**Job Field**: Primary Machine
+**To Replace**: MyMachine
+**New Value**: My[[$this.Property]]Machine
+**Is Expression**: false
+
+**Scenario #3**: The department needs to be changed from "<CurrentValue\>" to "<CurrentValue\><InstanceName\>". The exception rule definition would be:
+
+**Job Field**: Department
+**To Replace**:
+**New Value**: [[@current]][[@name]]
+**Is Expression**: false
+
+**Scenario #4**: The job start offset needs to be changed from "<CurrentValue\>" by adding 10 minutes to it. In this scenario, the use of an expression is ideal for changing numeric fields. The exception rule definition would be:
+
+**Job Field**: Start Offset
+**To Replace**:
+**New Value**: [[@current]] + ToOaTime("00:10")
+**Is Expression**: true
+:::
 
 Click **OK** button to save the exception rule definition or click the
 **Cancel** button to cancel exception rule definition.
@@ -232,4 +173,3 @@ definition(s).
 
 Click **Close ☒** (to the right of the **Schedule Master** tab) to close
 the **Schedule Master** screen.
-:::

@@ -89,19 +89,11 @@ convention: yyyy_mm_dd (Weekday). The logging mechanism generates the
 weekday name matching the format recognized by the regional settings of
 the user running the SMA Resource Monitor service.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [If the Regional    | | circular                         | Settings are set to English, an  |
-| background](../../../Reso        | archive folder would have the    |
-| urces/Images/example-icon(48x48) | following name: 2008_01_11       |
-| .png "Example icon") | (Friday)]{.statement2}           |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | If the Regional Settings are set |
-|                                  | to French, an archive folder     |
-|                                  | would have the following name:   |
-|                                  | 2008_01_11 (Vendredi)            |
-+----------------------------------+----------------------------------+
+:::tip Example
+Make sure the file is done arriving before it is created.
+
+For large file transfers, it takes time for the complete file to arrive. Set the 'Wait Verify' value high enough to make sure that the file should not have changed size in that time. As soon as the size matches the same previous size and the file is no longer in use, the action group(s) will be triggered.
+:::
 
 As a log file fills up, SMA Resource Monitor moves it to the current
 archive folder and renames it using the following naming convention: SMA

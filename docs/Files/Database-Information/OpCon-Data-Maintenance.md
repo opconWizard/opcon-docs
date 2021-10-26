@@ -50,7 +50,7 @@ The Job Average utility only uses the run times of jobs in the "FINISHED OK" sta
 The SMA_JOBAVG stored procedure should be scheduled to run at regular
 intervals to keep job start and run times up to date. The following
 sections describe the use of the stored procedure and the command files.
-Installed with the SAM-SS, the required files are in the \<Configuration
+Installed with the SAM-SS, the required files are in the <Configuration
 Directory\>\\Utilities\\Database\\ directory.
 
 :::note
@@ -125,7 +125,7 @@ by modifying the desired command file to use the following syntax in the
 1. Log on to the SAM application server as a *Windows user* with access
     to the OpCon installation directories.
 2. Right-click on **Start** and select **Explore**.
-3. Browse to the **\<Configuration Directory\>\\Utilities\\Database\\**
+3. Browse to the **<Configuration Directory\>\\Utilities\\Database\\**
     directory.
 4. Right-click the **Job_Avg.cmd** or **Job_Avg_WinAuth.cmd** file and
     select **Edit**.
@@ -136,8 +136,7 @@ by modifying the desired command file to use the following syntax in the
 
 #### Syntax
 
-The following is the syntax for executing the command files from the
-\<Configuration Directory\>\\Utilities\\Database\\ directory:
+The following is the syntax for executing the command files from the <Configuration Directory\>\\Utilities\\Database\\ directory:
 
 For SQL Authentication:
 
@@ -232,41 +231,23 @@ Click the **Execute** button or press **F5**.
 
 View the feedback from stored procedure.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [The following is a | | circular                         | summary displayed by the         |
-| background](../../Reso           | execution of SMA                 |
-| urces/Images/example-icon(48x48) | CLEAN_ENS:]{.statement2}         |
-| .png "Example icon") |                                  |
-|                                  | ==============================   |
-|                                  | ================================ |
-|                                  |                                  |
-|                                  | NUMBER OF MACHINE REFERENCES     |
-|                                  | UPDATED: 0                       |
-|                                  |                                  |
-|                                  | NUMBER OF MACHINE REFERENCES     |
-|                                  | REMOVED: 0                       |
-|                                  |                                  |
-|                                  | NUMBER OF SCHEDULE REFERENCES    |
-|                                  | UPDATED: 0                       |
-|                                  |                                  |
-|                                  | NUMBER OF SCHEDULE REFERENCES    |
-|                                  | REMOVED: 0                       |
-|                                  |                                  |
-|                                  | NUMBER OF JOB REFERENCES         |
-|                                  | REMOVED: 1                       |
-|                                  |                                  |
-|                                  | \-\-\-\-\-\-\-\-\-\-\-\-\-\      |
-|                                  | -\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\ |
-|                                  | -\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\ |
-|                                  | -\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-- |
-|                                  |                                  |
-|                                  | TOTAL REFERENCES UPDATED: 0      |
-|                                  |                                  |
-|                                  | TOTAL REFERENCES REMOVED: 1      |
-|                                  |                                  |
-|                                  | ==============================   |
-|                                  | ================================ |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following is a summary displayed by the execution of SMA CLEAN_ENS:
+
+```sql
+==============================================================
+NUMBER OF MACHINE REFERENCES UPDATED: 0
+NUMBER OF MACHINE REFERENCES REMOVED: 0
+NUMBER OF SCHEDULE REFERENCES UPDATED: 0
+NUMBER OF SCHEDULE REFERENCES REMOVED: 0
+NUMBER OF JOB REFERENCES REMOVED: 1
+--------------------------------------------------------------
+TOTAL REFERENCES UPDATED: 0
+TOTAL REFERENCES REMOVED: 1
+==============================================================
+```
+
+:::
 
 ### SMA_COMPACTTHRESHIDS
 
@@ -282,7 +263,7 @@ processing jobs properly.
 The SMA_COMPACTTHRESHIDS stored procedure should be scheduled to run at
 regular intervals to keep the "next" token ID value below the maximum.
 SMA Technologies provides command files for automating the maintenance of Threshold and Resource IDs. These files
-reside in the \<Configuration Directory\>\\Utilities\\Database\\
+reside in the <Configuration Directory\>\\Utilities\\Database\\
 directory.
 
 :::note
@@ -297,8 +278,7 @@ procedure.
 
 #### Syntax
 
-The following is the syntax for executing the command files from the
-\<Configuration Directory\>**\\Utilities\\Database\\** directory:
+The following is the syntax for executing the command files from the <Configuration Directory\>**\\Utilities\\Database\\** directory:
 
 For SQL Authentication:
 
@@ -323,34 +303,26 @@ additional information, refer to [SMAUtility Schedule](../../objects/schedules#s
 
 ##### Job Details
 
-The **Command Line** is determined under the **Syntax** heading above.
-The Working Directory is \<Configuration
-Directory\>\\Utilities\\Database\\.
+The **Command Line** is determined under the **Syntax** heading above. The Working Directory is <Configuration Directory\>\\Utilities\\Database\\.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [The example below  | | circular                         | uses the SQL Authentication      |
-| background](../../Reso           | command file and tokens that     |
-| urces/Images/example-icon(48x48) | resolve to the OpCon properties  |
-| .png "Example icon") | defined for use with the         |
-|                                  | SMAUtility                       |
-|                                  | schedule.]{.statement2}          |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Command Line:                    |
-|                                  |                                  |
-|                                  | "\[\[SM                         | |                                  | AOpConDataPath\]\]\\utilities\\d |
-|                                  | atabase\\Compact_ThreshIDs.cmd" |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Working Directory:               |
-|                                  |                                  |
-|                                  | "\[\[SMAOpConDat                | |                                  | aPath\]\]\\utilities\\database" |
-+----------------------------------+----------------------------------+
+:::tip Example
+The example below uses the SQL Authentication command file and tokens that resolve to the OpCon properties defined for use with the SMAUtility schedule.
 
-SMA Technologies recommends scheduling this job during a time that thresholds and resources are not being deleted and
-recreated.
+Command Line:
+
+```shell
+"[[SMAOpConDataPath]]\utilities\database\Compact_ThreshIDs.cmd"
+```
+
+Working Directory:
+
+```shell
+"[[SMAOpConDataPath]]\utilities\database"
+```
+
+:::
+
+SMA Technologies recommends scheduling this job during a time that thresholds and resources are not being deleted and recreated.
 
 ### SMA_COMPACTTOKENIDS
 
@@ -364,8 +336,7 @@ to continue processing jobs properly.
 
 The SMA_COMPACTTOKENIDS stored procedure should be scheduled to run at
 regular intervals to keep the "next" token ID value below the maximum.
-SMA Technologies provides command files for automating the maintenance of token IDs. These files reside in the
-\<Configuration Directory\>\\Utilities\\Database\\ directory.
+SMA Technologies provides command files for automating the maintenance of token IDs. These files reside in the <Configuration Directory\>\\Utilities\\Database\\ directory.
 
 :::note
 The Configuration Directory location is based on where you installed your programs. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
@@ -379,8 +350,7 @@ procedure.
 
 #### Syntax
 
-The following is the syntax for executing the command files from the
-\<Configuration Directory\>**\\Utilities\\Database\\** directory:
+The following is the syntax for executing the command files from the <Configuration Directory\>**\\Utilities\\Database\\** directory:
 
 For SQL Authentication:
 
@@ -406,29 +376,24 @@ additional information, refer to [SMAUtility Schedule](../../objects/schedules#s
 ##### Job Details
 
 The **Command Line** is determined under the **Syntax** heading above.
-The Working Directory is \<Configuration
+The Working Directory is <Configuration
 Directory\>\\Utilities\\Database\\.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [The example below  | | circular                         | uses the SQL Authentication      |
-| background](../../Reso           | command file and tokens that     |
-| urces/Images/example-icon(48x48) | resolve to the OpCon properties  |
-| .png "Example icon") | defined for use with the         |
-|                                  | SMAUtility                       |
-|                                  | schedule.]{.statement2}          |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Command Line:                    |
-|                                  |                                  |
-|                                  | "\[\[S                          | |                                  | MAOpConDataPath\]\]\\utilities\\ |
-|                                  | database\\Compact_TokenIDs.cmd" |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Working Directory:               |
-|                                  |                                  |
-|                                  | "\[\[SMAOpConD                  | |                                  | ataPath\]\]\\utilities\\database |
-+----------------------------------+----------------------------------+
+:::tip Example
+The example below uses the SQL Authentication command file and tokens that resolve to the OpCon properties defined for use with the SMAUtility schedule.
+
+Command Line:
+
+```shell
+"[[SMAOpConDataPath]]\utilities\database\Compact_TokenIDs.cmd"
+```
+
+Working Directory:
+
+```shell
+"[[SMAOpConDataPath]]\utilities\database
+```
+
+:::
 
 SMA Technologies recommends scheduling this job during a time that tokens are not being deleted and recreated.

@@ -106,54 +106,21 @@ statuses:
 - Marked Failed
 - Under Review
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [To further explain | | circular                         | the back view of a card, each    |
-| background](../../../Reso        | tag card has a count of the jobs |
-| urces/Images/example-icon(48x48) | in various statuses, and each    |
-| .png "Example icon") | group card has the sum of the    |
-|                                  | count for each job status for    |
-|                                  | its child cards.]{.statement2}   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | An example scenario:             |
-|                                  |                                  |
-|                                  | -   **Card1**: 7 Waiting, 11     |
-|                                  |     Running, 8 Finished, 2 Error |
-|                                  | -   **Card2**: 5 Waiting, 10     |
-|                                  |     Running, 3 Finished, 2 Error |
-|                                  | -   **Card3**: 2 Waiting, 1      |
-|                                  |     Running, 5 Finished, 0       |
-|                                  |     Failed                       |
-|                                  |                                  |
-|                                  | Card2 and Card3 are tag cards    |
-|                                  | that have a count of jobs they   |
-|                                  | are tracking. Card1 is a group   |
-|                                  | cards and gets its count by      |
-|                                  | simply adding the counts of its  |
-|                                  | children.                        |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Now, if Card2 has a Pattern of   |
-|                                  | "tag1" and Card3 has a Pattern |
-|                                  | of "tag2", and if there is a   |
-|                                  | job that has Finished OK and has |
-|                                  | two tags associated with it      |
-|                                  | ("tag1" and "tag2"), this    |
-|                                  | job will get counted once for    |
-|                                  | Card2 and once for Card3. But,   |
-|                                  | since Card1 has a sum of counts  |
-|                                  | for Card2 and Card3, that same   |
-|                                  | job gets counted twice for       |
-|                                  | Card1.                           |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | So, while Card1 shows 8          |
-|                                  | Finished, there are only 7 jobs  |
-|                                  | that actually Finished.          |
-+----------------------------------+----------------------------------+
+:::tip Example
+To further explain the back view of a card, each tag card has a count of the jobs in various statuses, and each group card has the sum of the count for each job status for its child cards.
+
+An example scenario:
+
+- **Card1**: 7 Waiting, 11 Running, 8 Finished, 2 Error
+- **Card2**: 5 Waiting, 10 Running, 3 Finished, 2 Error
+- **Card3**: 2 Waiting, 1 Running, 5 Finished, 0 Failed
+
+Card2 and Card3 are tag cards that have a count of jobs they are tracking. Card1 is a group cards and gets its count by simply adding the counts of its children.
+
+Now, if Card2 has a Pattern of "tag1" and Card3 has a Pattern of "tag2", and if there is a job that has Finished OK and has two tags associated with it ("tag1" and "tag2"), this job will get counted once for Card2 and once for Card3. But, since Card1 has a sum of counts for Card2 and Card3, that same job gets counted twice for Card1.
+
+So, while Card1 shows 8 Finished, there are only 7 jobs that actually Finished.
+:::
 
 ## Card Hierarchy
 

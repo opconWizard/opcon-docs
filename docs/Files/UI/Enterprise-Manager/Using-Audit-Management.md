@@ -35,7 +35,7 @@ categories available include:
     Schedule Build, Schedule Check, and Date level Schedule Deletes.
 - **Threshold/Resource**: Displays all changes made to Threshold and
     Resource definitions.
-- []{#aanchor196} **User Account**: Displays all changes made to User     Account definitions, Last Login, Last Log out, and the version of
+- **User Account**: Displays all changes made to User     Account definitions, Last Login, Last Log out, and the version of
     the Enterprise Manager used.
 
 **Audit Management** also provides a **Type Filter Text** box in order
@@ -44,13 +44,11 @@ selection. You can also type an \* (asterisk) in front of a word in a
 string if the string you are looking for is not necessarily at the
 beginning of the string.
 
-  --------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [In the Audit Management screen, type **\*JobName** to find a specific job name in the output.]{.statement2}
-  --------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------
+:::tip Example
+In the Audit Management screen, type **\*JobName** to find a specific job name in the output.
+:::
 
 ![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
-Related Topics
 
-- [Viewing Audit     Records](Viewing-and-Exporting-Audit-Records.md#Viewing)
-- [Exporting Audit     Records](Viewing-and-Exporting-Audit-Records.md#Exportin)
-:::
+- [Viewing Audit Records](Viewing-and-Exporting-Audit-Records.md#Viewing)
+- [Exporting Audit Records](Viewing-and-Exporting-Audit-Records.md#Exportin)

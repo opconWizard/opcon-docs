@@ -10,19 +10,9 @@ OpCon event launched for the selected trigger:
 - **Test**: Sends a test for the activated notification of the
     trigger.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [Notification       | | circular                         | Message]{.statement2}            |
-| background](../../../Reso        |                                  |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  | [03/11/08 09:41:23 Logged        | |                                  | \[NTLOG\] EventID= 77777 \|      |
-|                                  | Schedule Date= Mar 11 2008 \|    |
-|                                  | Sched/Job Info=                  |
-|                                  | TestSched:Conversion:12345 \|    |
-|                                  | Machine Name= machine01 \|       |
-|                                  | Message= The conversion          |
-|                                  | failed.]{.statement2}            |
-+----------------------------------+----------------------------------+
+:::tip Example Notification Message
+03/11/08 09:41:23 Logged [NTLOG] EventID= 77777 | Schedule Date= Mar 11 2008 | Sched/Job Info= TestSched:Conversion:12345 | Machine Name= machine01 | Message= The conversion failed.
+:::
 
 ## Adding Events
 
@@ -85,9 +75,13 @@ Double-click on the **global property** (e.g., $SCHEDULE DATE).
 Double brackets will automatically be placed around the placeholder for the token that is defined.
 :::
 
-  --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [$JOB:ADD,\[\[$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth.]{.statement2}
-  --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------
+:::tip Example
+
+```shell
+$JOB:ADD,\[\[$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth
+```
+
+:::
 
 Click the **Finish** button once the definition of all event parameters
 for the template are complete.

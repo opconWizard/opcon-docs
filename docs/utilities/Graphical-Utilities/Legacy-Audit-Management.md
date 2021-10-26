@@ -409,19 +409,14 @@ LEGACYAUDIT.EXE DSN,UID,PWD,{Days to Keep\|Cut-off Date}, \[-e\] \[-l\]
 - **-p** (Optional): Informs legacyaudit.exe to purge the audit
     archive table (AUDITARC).
 
-#### Example
+:::tip Example
+The example below connects to a data source called OPCONXPS. The user is batchuser and the password is batchpwd. The Days to Keep was set to 30, which means the previous month's audit history is kept.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The example below   | | circular                         | connects to a data source called |
-| background](../../../Reso        | OPCONXPS. The user is batchuser  |
-| urces/Images/example-icon(48x48) | and the password is batchpwd.    |
-| .png "Example icon") | The Days to Keep was set to 30,  |
-|                                  | which means the previous         |
-|                                  | month's audit history is kept.  |
-|                                  |                                  |
-|                                  | legacyaudit.exe                  |
-|                                  | OPCONXPS,batchuser,batchpwd,30,  |
-+----------------------------------+----------------------------------+
+```shell
+legacyaudit.exe OPCONXPS,batchuser,batchpwd,30,
+```
+
+:::
 
 ### Scheduling
 

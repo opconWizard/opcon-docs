@@ -31,70 +31,27 @@ arguments are:
 
 ### Examples
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 1:** A file with a     | | circular                         | base name of                     |
-| background](../../../Reso        | C:\\temp\\dynxxxxxxxx.txt where  |
-| urces/Images/example-icon(48x48) | xxxxxxxx represents MMDDYYYY     |
-| .png "Example icon") | needs to be monitored.           |
-|                                  |                                  |
-|                                  | Since SMASetRMFileName ONLY      |
-|                                  | updates, it is mandatory that    |
-|                                  | the rule to monitor the file be  |
-|                                  | created.                         |
-|                                  |                                  |
-|                                  | Create a token called            |
-|                                  | $DATEMMDDYYYY with a value of   |
-|                                  | mmddyyyy.                        |
-|                                  |                                  |
-|                                  | Create a job that executes       |
-|                                  | SMASetRMFileName with the        |
-|                                  | following arguments:             |
-|                                  |                                  |
-|                                  | -   **-r**                       |
-|                                  |                                  |
-|                                  |   "C:\\ProgramData\\OpConxps\\S |
-|                                  | MAResourceMonitor\\Rules\\\<Rule |
-|                                  |     Name\>.Rule"                |
-|                                  | -   **-f**                       |
-|                                  |     "C:\\temp\                  |
-|                                  | \dym\[\[$DATEMMDDYYYY\]\].txt" | |                                  |                                  |
-|                                  | This new job can be run daily to |
-|                                  | update the name specification in |
-|                                  | the Rules file.                  |
-+----------------------------------+----------------------------------+
+:::tip Example
+A file with a base name of C:\temp\dynxxxxxxxx.txt where xxxxxxxx represents MMDDYYYY needs to be monitored.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 2:** A file with an    | | circular                         | unknown filename is created on a |
-| background](../../../Reso        | UNIX machine (or on another      |
-| urces/Images/example-icon(48x48) | platform that supports MSGIN).   |
-| .png "Example icon") | This file is then transferred to |
-|                                  | C:\\temp on the PC where         |
-|                                  | SMAResourceMonitor is running.   |
-|                                  |                                  |
-|                                  | Since SMASetRMFileName ONLY      |
-|                                  | updates, it is mandatory that a  |
-|                                  | rule be created to monitor the   |
-|                                  | file that will be created.       |
-|                                  |                                  |
-|                                  | Create a token called DYNFNAME   |
-|                                  | with a value of x.               |
-|                                  |                                  |
-|                                  | Create a job that executes       |
-|                                  | SMASetRMFileName with the        |
-|                                  | following arguments:             |
-|                                  |                                  |
-|                                  | -   **-r**                       |
-|                                  |                                  |
-|                                  |   "C:\\ProgramData\\OpConxps\\S |
-|                                  | MAResourceMonitor\\Rules\\\<Rule |
-|                                  |     Name\>.Rule"                |
-|                                  | -   **-f** "\[\[DYNFNAME\]\]"  | |                                  |                                  |
-|                                  | Before running this job, an      |
-|                                  | event to set this token must be  |
-|                                  | generated from the UNIX machine  |
-|                                  | (or from another platform that   |
-|                                  | supports MSGIN).                 |
-+----------------------------------+----------------------------------+
+1. Since SMASetRMFileName ONLY updates, it is mandatory that the rule to monitor the file be created.
+2. Create a token called $DATEMMDDYYYY with a value of mmddyyyy.
+3. Create a job that executes SMASetRMFileName with the following arguments:
+   - **-r** "C:\ProgramData\OpConxps\SMAResourceMonitor\Rules\<Rule Name\>.Rule"
+   - **-f** "C:\temp\dym\[\[$DATEMMDDYYYY]].txt"
+4. This new job can be run daily to update the name specification in the Rules file.
+:::
+
+:::tip Example
+A file with an unknown filename is created on a UNIX machine (or on another platform that supports MSGIN). This file is then transferred to C:\temp on the PC where SMAResourceMonitor is running.
+
+1. Since SMASetRMFileName ONLY updates, it is mandatory that a rule be created to monitor the file that will be created.
+2. Create a token called DYNFNAME with a value of x.
+3. Create a job that executes SMASetRMFileName with the following arguments:
+   - **-r** "C:\ProgramData\OpConxps\SMAResourceMonitor\Rules\<Rule Name\>.Rule"
+   - **-f** "\[\[DYNFNAME]]"
+4. Before running this job, an event to set this token must be generated from the UNIX machine (or from another platform that supports MSGIN).
+:::
 
 ## Exit Values
 

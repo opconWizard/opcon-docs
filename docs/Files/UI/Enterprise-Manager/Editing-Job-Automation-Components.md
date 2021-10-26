@@ -211,16 +211,20 @@ d.  [(If Job Completion Complex Expression was     selected)]{.optional-text} En
 Click the **Next** button to advance to the **Event Definition** screen
 of the wizard.
 
-Select an [OpCon]{.GeneralOpConGlobalName style="font-weight: bold;"} **event template** from the **Event Template** drop-down list. For more
+Select an **OpCon event template** from the **Event Template** drop-down list. For more
 information, refer to the [OpCon Events](../../../events/introduction.md) online help.
 
-  --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [$JOB:ADD,\<schedule date\>,\<schedule name\>,\<job name\>,\<frequency name\>]{.statement2}
-  --------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------
+:::tip Example
 
-[]{#Place_your_mouse_cursor}Place your mouse cursor at the beginning of a **\<syntax placeholder\>** displayed in the **Event Parameters** text
+```shell
+$JOB:ADD,<schedule date\>,<schedule name\>,<job name\>,<frequency name\>
+```
+
+:::
+
+Place your mouse cursor at the beginning of a **<syntax placeholder\>** displayed in the **Event Parameters** text
 box then drag the cursor to the right to select the entire syntax
-placeholder, excluding any surrounding commas. For example: ,[\<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
+placeholder, excluding any surrounding commas. For example: ,<schedule name\>, .
 
 Replace the selected syntax placeholder with valid
 OpCon event information.
@@ -248,9 +252,13 @@ Double-click on the **global property** (e.g., $SCHEDULE DATE).
 Double brackets will automatically be placed around the placeholder for the token that is defined.
 :::
 
-  --------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------
-  ![White pencil icon on green circular background](../../../Resources/Images/example-icon(48x48).png "Example icon")   **EXAMPLE:** [$JOB:ADD,\[\[$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth]{.statement2}
-  --------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------
+:::tip Example
+
+```shell
+$JOB:ADD,\[\[$SCHEDULE DATE\]\],Payroll,Emp1,15thofMonth
+```
+
+:::
 
 Click the **Reset** button to reset the parameters to their original
 states.

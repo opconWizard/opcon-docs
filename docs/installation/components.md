@@ -1,8 +1,6 @@
 # Component Installations
 
-This topic contains instructions for installing the Enterprise Manager
-and Optional Server components as stand-alone installations. Click on
-any of the following links to access the installation instructions:
+This topic contains instructions for installing the Enterprise Manager and Optional Server components as stand-alone installations. Click on any of the following links to access the installation instructions:
 
 - [Enterprise Manager](#Enterpri)
 - [SMA OpCon Configuration Utility](#SMA5)
@@ -25,8 +23,7 @@ The Enterprise Manager (EM) is a rich client application for OpCon. To install 
 
 ### New Installation on Windows
 
-If the Enterprise Manager has never been installed on a Windows machine,
-complete the procedures in this section to install the EM.
+If the Enterprise Manager has never been installed on a Windows machine, complete the procedures in this section to install the EM.
 
 [Install the Enterprise Manager]{.ul}
 
@@ -48,17 +45,14 @@ In order for a user to log in to Enterprise Manager, a Database Connection Profi
 :::
 
 :::note
-The installation writes the log file named SMA_OpCon_Enterprise_Manager\_\<CPUType\>\_Install.log to the Windows directory. Consult this file if any installation problems are suspected.
+The installation writes the log file named SMA_OpCon_Enterprise_Manager\_<CPUType\>\_Install.log to the Windows directory. Consult this file if any installation problems are suspected.
 :::
 
-[[]{#Create_a_Profile_for_the_EM_to_Connect_to_the_Database}Create a Profile for the EM to Connect to the Database]{.ul}
+#### Create a Profile for the EM to Connect to the Database
 
-Set up the EM profile to connect to the same database as the SAM as per
-the procedure to [Create System DSNs](./configuration.md#Create_System_DSNs)
-.
+Set up the EM profile to connect to the same database as the SAM as per the procedure to [Create System DSNs](./configuration.md#Create_System_DSNs).
 
-Use menu path: **Start \> All Programs \> OpConxps \> Enterprise
-Manager**.
+Use menu path: **Start \> All Programs \> OpConxps \> Enterprise Manager**.
 
 On the Welcome screen:
 
@@ -120,12 +114,12 @@ For the default \[\[SERVER\]\] token in the UNC path to the OpConxps directory o
 :::
 
 a.  If on the OpCon server, in the **Path** field, enter the path to the
-    \<Output Directory\>.
+    <Output Directory\>.
 b.  If on any other Windows machine on the same Domain, first share the
-    \<Output Directory\> (e.g., C:\\ProgramData\\OpConxps) on the OpCon
+    <Output Directory\> (e.g., C:\\ProgramData\\OpConxps) on the OpCon
     server to users and grant the each user Read permission. Then, in
     the **Path** field, enter or browse to select the path to the
-    \<Output Directory\> on the server.
+    <Output Directory\> on the server.
 
 Click **Finish** to save the profile.
 
@@ -202,7 +196,7 @@ In order for a user to log in to Enterprise Manager, a Database Connection Profi
 :::
 
 :::note
-The installation writes the log file named SMA_OpCon_Enterprise_Manager\_\<CPUType\>\_Install.log to the Windows directory. Consult this file if any installation problems are suspected.
+The installation writes the log file named SMA_OpCon_Enterprise_Manager\_<CPUType\>\_Install.log to the Windows directory. Consult this file if any installation problems are suspected.
 :::
 
 [Reconfigure OpCon Data Location]{.ul}
@@ -248,12 +242,12 @@ For the default \[\[SERVER\]\] token in the UNC path to the OpConxps directory o
 :::
 
 a.  If on the OpCon server, in the **Path** field, enter the path to the
-    \<Configuration Directory\>.
+    <Configuration Directory\>.
 b.  If on any other Windows machine on the same Domain, first share the
-    \<Configuration Directory\> (e.g., C:\\ProgramData\\OpConxps) on the
+    <Configuration Directory\> (e.g., C:\\ProgramData\\OpConxps) on the
     OpCon server to users and grant the each user Read permission. Then,
     in the **Path** field, enter or browse to select the path to the
-    \<Configuration Directory\> on the server.
+    <Configuration Directory\> on the server.
 
 Click **Finish** to save the updated profile.
 
@@ -285,7 +279,7 @@ on a supported Mac OSX system.
 3. Open a *command line* and run the following command to allow MacOS
     to run EnterpriseManager.app:
 
-    \> cd \<EM Install Dir\>
+    \> cd <EM Install Dir\>
 
     \> xattr -c EnterpriseManager.app
 
@@ -525,12 +519,13 @@ v.  **Containment**: Specifies whether or not database containment is
     required. Available options are None or Partial. Default setting is
     None.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../Reso           | C:\\Program Files\\Microsoft SQL |
-| urces/Images/example-icon(48x48) | Server\\MSSQL.1                  |
-| .png "Example icon") | \\MSSQL\\Data\\OPCONXPS_Data.MDF |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```shell
+C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data\OPCONXPS_Data.MDF
+```
+
+:::
 
 Configure the Log File information by entering the following:
 
@@ -545,12 +540,13 @@ iv. **File Growth**: Defines the percentage increment by which the
 v.  **Max Size**: Defines the maximum size in megabytes beyond which the
     database transaction log should not be allowed to grow.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../Reso           | C:\\Program Files\\Microsoft SQL |
-| urces/Images/example-icon(48x48) | Server\\MSSQL.                   |
-| .png "Example icon") | 1\\MSSQL\\Data\\OPCONXPS_Log.LDF |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```shell
+C:\Program Files\Microsoft SQL Server\MSSQL.1\MSSQL\Data\OPCONXPS_Log.LDF
+```
+
+:::
 
 Click **Next**.
 
@@ -655,7 +651,7 @@ ii. Open **certmgr** and make sure that the newly-created certificate is
 iii. Double-click on the new certificate in the list.
 iv. Switch to the **Details** tab, copy the "Thumbprint" value into a
     text editor (e.g., Notepad), and remove all the spaces. The value
-    (free of any spaces) will replace \<certificate thumbprint\> in the
+    (free of any spaces) will replace <certificate thumbprint\> in the
     command specified in [Step vi]{.ul}.
 v.  Open the **command prompt** in Administrator mode (*Run as
     administrator*).
@@ -768,7 +764,7 @@ upgrade installation on the SMA OpCon Schedule Import Export.
 Schedule Import Export must Run as Administrator to configure the System
 DSNs for SQL Server and Access databases.
 
-1. Locate ImpEx.exe in the following location: **\<Target
+1. Locate ImpEx.exe in the following location: **<Target
     Directory\>\\OpConxps\\Utilities\\**.
 2. Right-click **ImpEx.exe** and select **Run as Administrator** from
     the menu.
@@ -900,7 +896,7 @@ The installation writes the log file named SMA_OpCon_Resource_Monitor_Install.lo
 
 1. Right-click on the **Start** button and select **Explore** from the
     menu.
-2. Browse to the \<Configuration Directory\\**SMAResourceMonitor**
+2. Browse to the <Configuration Directory\\**SMAResourceMonitor**
     directory.
 3. Find the **SMAResourceMonitor.ini** file.
 4. Right-click the **file** and select **Open With**.
@@ -921,7 +917,7 @@ If you want to change the default settings, perform the steps provided
 here.
 
 :::note
-[SMA Technologies recommends leaving the SMA Microsoft Resource Monitor service set to Automatic (Delayed Start) to avoid potential issues at startup time while other services and programs start up.]
+SMA Technologies recommends leaving the SMA Microsoft Resource Monitor service set to Automatic (Delayed Start) to avoid potential issues at startup time while other services and programs start up.
 :::
 
 On the Application server:
@@ -1078,44 +1074,6 @@ Copy the MSI package and **SilentInstall.cmd** file from the
 Installation package into a directory on your server (e.g.,
 C:\\SilentInstall).
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [Copy               | | circular                         | ]{.statement2}                   |
-| background](../../Reso           |                                  |
-| urces/Images/example-icon(48x48) | **\<me                           |
-| .png "Example Icon") | dia\>:**\\Install\\LSAM\\Windows |
-|                                  | LSAM\\x86\\SMA OpCon Windows     |
-|                                  | LSAM Install.msi                 |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | and                              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **\<me                           |
-|                                  | dia\>:**\\Install\\LSAM\\Windows |
-|                                  | LSAM\\x86\\SilentInstall.cmd     |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | to:                              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | C:\\SilentInstall                |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | The C:\\SilentInstall directory  |
-|                                  | will have the following files:   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | -   SMA OpCon Windows LSAM       |
-|                                  |     Install.msi                  |
-|                                  | -   SilentUninstall.cmd          |
-+----------------------------------+----------------------------------+
-
 Right-click **SilentInstall.cmd** file in the local folder (e.g.,
 C:\\SilentInstall) and select **Edit** from the menu.
 
@@ -1124,7 +1082,7 @@ Find and enable the preferred command based on your requirements:
 a.  Set the **\_siType** variable equal to **1** in the file to perform
     a COMPLETE install of the MSI package.
 b.  Set the **\_siType** variable equal to **2** and set the
-    **\_siRemove** variable equal to **"\<feature\>,\<feature\>"** in
+    **\_siRemove** variable equal to **"<feature\>,<feature\>"** in
     the file to perform a COMPLETE install of the MSI package, except
     for features specified to be removed. Refer to the [Silent Install     Features](#Silent_Install_Features) section for the
     complete feature list.
@@ -1149,13 +1107,13 @@ custom parameter values, the default values will be used. Refer to the
 [Silent Install Parameters](#Silent_Install_Parameters)
 section for a complete list of parameters.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:**                     | | circular                         |                                  |
-| background](../../Reso           | set                              |
-| urces/Images/example-icon(48x48) | \_siPar                          |
-| .png "Example Icon") | ameter="RESMON_MSGIN='C:\\PATH |
-|                                  | TO MSLSAM\\MSLSAM\\MSGIN'"     |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```batch
+set _siParameter="RESMON_MSGIN='C:\PATH TO MSLSAM\MSLSAM\MSGIN'"
+```
+
+:::
 
 :::note
 To perform a minor upgrade during a Silent Mode Install, the following parameters need to be included in the _siParameter variable:
@@ -1173,7 +1131,7 @@ C:\\SilentInstall\\) to run the command.
 
 Check the logfile to confirm installation. The log files for silent
 installations are created in the %WINDIR% (usually C:\\Windows). They
-use the naming convention **\<package name\>\_Silent.log**.
+use the naming convention **<package name\>\_Silent.log**.
 
 :::tip Example
 If you chose to perform a silent installation of the SMA OpCon Windows LSAM x86 Install.msi, the log file in %WINDIR% would be: **SMA_OpCon_Windows_LSAM_x86_Install_Silent.log**
@@ -1195,45 +1153,6 @@ This procedure assumes that the product is already installed from a 15.0 or high
 Copy the MSI package and **SilentUninstall.cmd** file from the
 OpCon Installation package into any directory
 on your server (e.g., C:\\SilentUninstall).
-
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [Copy               | | circular                         | ]{.statement2}                   |
-| background](../../Reso           |                                  |
-| urces/Images/example-icon(48x48) | **\<me                           |
-| .png "Example Icon") | dia\>:**\\Install\\LSAM\\Windows |
-|                                  | LSAM\\x86\\SMA OpCon Windows     |
-|                                  | LSAM Install.msi                 |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | and                              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **\<me                           |
-|                                  | dia\>:**\\Install\\LSAM\\Windows |
-|                                  | LSAM\\x86\\SilentUninstall.cmd   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | to:                              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | C:\\SilentUninstall              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | The C:\\SilentUninstall          |
-|                                  | directory will have the          |
-|                                  | following files:                 |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | -   SMA OpCon Windows LSAM       |
-|                                  |     Install.msi                  |
-|                                  | -   SilentUninstall.cmd          |
-+----------------------------------+----------------------------------+
 
 Double-click **SilentUninstall.cmd** file in the local folder (e.g.,
 C:\\SilentUninstall) to run the command.

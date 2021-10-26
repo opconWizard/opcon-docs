@@ -11,7 +11,7 @@ offsets from the $SCHEDULE DATE or $DATE; however, Chronoman is used
 to make complex date calculations (e.g., a property may need to be
 updated with the date of the last working day of the month).
 
-Chronoman.exe is installed in the \<Target
+Chronoman.exe is installed in the <Target
 Directory\>\\OpConxps\\MSLSAM\\ directory. Chronoman should be scheduled
 using a Windows OpCon job. Any jobs requiring
 the property value should be dependent on the associated Chronoman job.
@@ -48,7 +48,7 @@ the utility.
 +---------+-----------+----------------------------------------------+
 | Setting | Default   | Definition                                   |
 +=========+===========+==============================================+
-| Q1      | \<blank\> | -   Defines the first day of the First       |
+| Q1      | <blank\> | -   Defines the first day of the First       |
 |         |           |     Fiscal Quarter.                          |
 |         |           | -   Specify the date with the Month and Day  |
 |         |           |     to start. The date must match the syntax |
@@ -59,7 +59,7 @@ the utility.
 |         |           |     executes based Fiscal the current Fiscal |
 |         |           |     year.                                    |
 +---------+-----------+----------------------------------------------+
-| Q2      | \<blank\> | -   Defines the first day of the Second      |
+| Q2      | <blank\> | -   Defines the first day of the Second      |
 |         |           |     Fiscal Quarter.                          |
 |         |           | -   Specify the date with the Month and Day  |
 |         |           |     to start. The date must match the syntax |
@@ -70,7 +70,7 @@ the utility.
 |         |           |     executes based Fiscal the current Fiscal |
 |         |           |     year.                                    |
 +---------+-----------+----------------------------------------------+
-| Q3      | \<blank\> | -   Defines the first day of the Third       |
+| Q3      | <blank\> | -   Defines the first day of the Third       |
 |         |           |     Fiscal Quarter.                          |
 |         |           | -   Specify the date with the Month and Day  |
 |         |           |     to start. The date must match the syntax |
@@ -81,7 +81,7 @@ the utility.
 |         |           |     executes based Fiscal the current Fiscal |
 |         |           |     year.                                    |
 +---------+-----------+----------------------------------------------+
-| Q4      | \<blank\> | -   Defines the first day of the Fourth      |
+| Q4      | <blank\> | -   Defines the first day of the Fourth      |
 |         |           |     Fiscal Quarter.                          |
 |         |           | -   Specify the date with the Month and Day  |
 |         |           |     to start. The date must match the syntax |
@@ -97,42 +97,30 @@ the utility.
 
 ### Configuration File Example
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | Here is an example showing       | | circular                         | updated configuration file       |
-| background](../../../Reso        | settings. For the dates with     |
-| urces/Images/example-icon(48x48) | Regional settings configured to  |
-| .png "Example icon") | use English (United States), the |
-|                                  | Fiscal Q1 begins on July 1, Q2   |
-|                                  | begins on October 1, Q3 begins   |
-|                                  | on January 1, and Q4 begins on   |
-|                                  | April 1.                         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | \[General\]                      | |                                  |                                  |
-|                                  | PathToMsgInDir=.\\MSGIN          |
-|                                  |                                  |
-|                                  | PathToLogDir=.\\Log              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | \[Fiscal Quarter Begin Dates\]   | |                                  |                                  |
-|                                  | Q1=07/01                         |
-|                                  |                                  |
-|                                  | Q2=10/01                         |
-|                                  |                                  |
-|                                  | Q3=01/01                         |
-|                                  |                                  |
-|                                  | Q4=04/01                         |
-+----------------------------------+----------------------------------+
+:::tip Example
+Here is an example showing updated configuration file settings. For the dates with Regional settings configured to use English (United States), the Fiscal Q1 begins on July 1, Q2 begins on October 1, Q3 begins on January 1, and Q4 begins on April 1.
+
+```ini
+[General]
+PathToMsgInDir=.\MSGIN
+PathToLogDir=.\Log
+
+[Fiscal Quarter Begin Dates]
+Q1=07/01
+Q2=10/01
+Q3=01/01
+Q4=04/01
+```
+
+:::
 
 ## Command-line Syntax
 
 Chronoman uses the following command-line syntax:
 
-chronoman =t\<Property Name\> =o\<Sign\>\<Number\> =u\<unit\>
-=f\<format\> \[=b\<Date and Time\>\]\[=c\<File Path\>\]\[=j\< Julian Date and Time\>\]\[=n\<Date and
-Time\>\]\[=s\<Schedule\>\]\[=z\<insertion_point, desired_length_of_string\>\] ↵
+chronoman =t<Property Name\> =o<Sign\><Number\> =u<unit\>
+=f<format\> \[=b<Date and Time\>\]\[=c<File Path\>\]\[=j< Julian Date and Time\>\]\[=n<Date and
+Time\>\]\[=s<Schedule\>\]\[=z<insertion_point, desired_length_of_string\>\] ↵
 
 :::note
 The wrapping of the syntax in this document does not indicate the location of a carriage return; the ↵ indicates the location of a carriage return. Parameters always begin with the equals sign (=).
@@ -236,7 +224,7 @@ The wrapping of the syntax in this document does not indicate the location of a 
 |           | determine non-working days.                             |
 +-----------+---------------------------------------------------------+
 | =s        | This parameter is the name of the schedule to use if    |
-|           | the \<units of offset\> are WD (Working Days) or if a   |
+|           | the <units of offset\> are WD (Working Days) or if a   |
 |           | command file computes working days. Chronoman uses the  |
 |           | schedule's Holiday Calendar to determine non-working   |
 |           | days. The schedule parameter can be omitted if a        |
@@ -258,26 +246,18 @@ The wrapping of the syntax in this document does not indicate the location of a 
 
 ### Command-line Example
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [chronoman          | | circular                         | =tTestProperty =o-1 =uh =fmmddyy |
-| background](../../../Reso        | hh:nn =b09/15/2017               |
-| urces/Images/example-icon(48x48) | 05:00]{.statement2               |
-| .png "Example icon") | styl                             |
-|                                  | e="font-family: 'Courier New';"} |
-|                                  |                                  |
-|                                  | -   This example changes the     |
-|                                  |     value of a token called      |
-|                                  |     TestProperty.                |
-|                                  | -   The value of the property is |
-|                                  |     the base time (09/15/2017    |
-|                                  |     05:00) plus the offset (-1)  |
-|                                  |     hour.                        |
-|                                  | -   The property is in the       |
-|                                  |     format "mmddyy hh:nn".     |
-|                                  | -   When the calculation is      |
-|                                  |     complete, TestProperty has a |
-|                                  |     value of 091517 04:00.       |
-+----------------------------------+----------------------------------+
+:::tip Example
+
+```shell
+chronoman =tTestProperty =o-1 =uh =fmmddyy hh:nn =b09/15/2017 05:00
+```
+
+- This example changes the value of a token called TestProperty.
+- The value of the property is the base time (09/15/2017 05:00) plus the offset (-1) hour.
+- The property is in the format "mmddyy hh:nn".
+- When the calculation is complete, TestProperty has a value of 091517 04:00.
+
+:::
 
 ## Command File Syntax
 
@@ -291,17 +271,19 @@ computed date from the previous directive.
 Command file directives override the equivalent command-line parameters if both are specified. The exception to this is the *units of offset* and *offset* must be specified in either the command file or on the command line. An error is generated if a conflict is found.
 :::
 
-The basic format for the command file is: [\<Units of offset\>]{style="font-family: 'Courier New';"},
-[\<offset\>]{style="font-family: 'Courier New';"}
+The basic format for the command file is: [<Units of offset\>]{style="font-family: 'Courier New';"},
+[<offset\>]{style="font-family: 'Courier New';"}
 
-- **\<Units of offset\>**: This field is the type of unit to use with
+- **<Units of offset\>**: This field is the type of unit to use with
     the offset parameter. Refer to [Chronoman Offset     Parameters](#Chronoma2).
-- **\<offset\>**: This field is a positive or negative integer.
+- **<offset\>**: This field is a positive or negative integer.
 
 If special calculations on the date are required, the following syntax
 is also supported:
 
-\<Special Directive\>, \<argument if applicable\>
+```xml
+<Special Directive\>, <argument if applicable\>
+```
 
 ### Special Directives
 
@@ -889,15 +871,15 @@ table, the **R/O** column header represents "Required/Optional".
 | =n                | SET_NEGATIVE      | O   | None              |
 |                   |_ANNUAL_PLAN_NAME |     |                   |
 +-------------------+-------------------+-----+-------------------+
-| =o                | \<offset\>        | O   | -   Entered after |
-|                   |                   |     |     \<units of    |
+| =o                | <offset\>        | O   | -   Entered after |
+|                   |                   |     |     <units of    |
 |                   |                   |     |     offset\> in   |
 |                   |                   |     |     the command   |
 |                   |                   |     |     file.         |
 |                   |                   |     | -   Do not        |
 |                   |                   |     |     specify =o    |
 |                   |                   |     |     parameter if  |
-|                   |                   |     |     \<offset\> is |
+|                   |                   |     |     <offset\> is |
 |                   |                   |     |     in the        |
 |                   |                   |     |     command file. |
 +-------------------+-------------------+-----+-------------------+
@@ -909,15 +891,15 @@ table, the **R/O** column header represents "Required/Optional".
 |                   |                   |     | overrides command |
 |                   |                   |     | line.             |
 +-------------------+-------------------+-----+-------------------+
-| =u                | \<units of        | O   | -   Entered       |
+| =u                | <units of        | O   | -   Entered       |
 |                   | offset\>          |     |     before        |
-|                   |                   |     |     \<offset\> in |
+|                   |                   |     |     <offset\> in |
 |                   |                   |     |     the command   |
 |                   |                   |     |     file.         |
 |                   |                   |     | -   Do not        |
 |                   |                   |     |     specify =u    |
 |                   |                   |     |     parameter if  |
-|                   |                   |     |     \<units of    |
+|                   |                   |     |     <units of    |
 |                   |                   |     |     offset\> is   |
 |                   |                   |     |     in the        |
 |                   |                   |     |     command file. |
@@ -960,333 +942,157 @@ Arguments in the command file can be represented by tokens. Chronoman
 can resolve only tokens referencing user-defined properties. Chronoman
 cannot resolve any System or user-defined System tokens.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** A property could be | | circular                         | created called DAYS_BEFORE_CLOSE |
-| background](../../../Reso        | with a value of -3. If it were   |
-| urces/Images/example-icon(48x48) | decided to start the period      |
-| .png "Example icon") | close processing four days       |
-|                                  | early, only this value would     |
-|                                  | need to be changed. To calculate |
-|                                  | the actual date for this value,  |
-|                                  | assuming that closing occurs on  |
-|                                  | the last work day of a month,    |
-|                                  | the command file would contain:  |
-|                                  |                                  |
-|                                  | FIND_MONTH_END                   |
-|                                  |                                  |
-|                                  | FIND_WORKING_DAY_BACKWARD        |
-|                                  |                                  |
-|                                  | WD,\[\[DAYS_BEFORE_CLOSE\]\]     | +----------------------------------+----------------------------------+
+:::tip Example
+A property could be created called DAYS_BEFORE_CLOSE with a value of -3. If it were decided to start the period close processing four days early, only this value would need to be changed. To calculate the actual date for this value, assuming that closing occurs on the last work day of a month, the command file would contain:
+
+```shell
+FIND_MONTH_END
+FIND_WORKING_DAY_BACKWARD
+WD,[[DAYS_BEFORE_CLOSE]]
+```
+
+:::
 
 ### Command File Examples
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **SCENARIO 1:** If today is a    | | circular                         | working day, set the property to |
-| background](../../../Reso        | today's date. If today is NOT a |
-| urces/Images/example-icon(48x48) | working day, set the property to |
-| .png "Example icon") | the date of the next working     |
-|                                  | day.                             |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **OpCon Command Line**:          |
-|                                  |                                  |
-|                                  | "C:\\Program                    |
-|                                  | File                             |
-|                                  | s\\Opconxps\\MSLSAM\\Chronoman" |
-|                                  | =t\"WK.Day\" =cC:\\Chronoman |
-|                                  | Files\\WkDayCommand.txt          |
-|                                  | =sTestSchedule                   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Chronoman Command File**:      |
-|                                  |                                  |
-|                                  | SET_FORMAT_STRING,mmddyy\        |
-|                                  | FIND_WORKING_DAY_FORWARD         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Summary**: The base date of    |
-|                                  | today is assumed because it is   |
-|                                  | not specified on the command     |
-|                                  | line or in the command file. The |
-|                                  | property to be updated is called |
-|                                  | WK.Day. The schedule to be used  |
-|                                  | for determining working days is  |
-|                                  | called "TestSchedule".         |
-|                                  |                                  |
-|                                  | -   The WK.Day property is       |
-|                                  |     surrounded with escaped      |
-|                                  |     quotes in the =t parameter   |
-|                                  |     on the command line because  |
-|                                  |     the name contains a period.  |
-|                                  | -   [SET_FORMAT_STRING]{styl     | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     specifies the format for     |
-|                                  |     output to the property as a  |
-|                                  |     date format using numbers    |
-|                                  |     only.                        |
-|                                  | -                                |
-|                                  |  [FIND_WORKING_DAY_FORWARD]{styl | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     uses the value of the        |
-|                                  |     computed date if it is a     |
-|                                  |     workday, otherwise the next  |
-|                                  |     workday is found to arrive   |
-|                                  |     at the final value for the   |
-|                                  |     property.                    |
-+----------------------------------+----------------------------------+
+:::tip Example Scenario 1
+SCENARIO 1: If today is a working day, set the property to today's date. If today is NOT a working day, set the property to the date of the next working day.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **SCENARIO 2:** Set the property | | circular                         | to the date of the first day     |
-| background](../../../Reso        | after the next working day.      |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  |                                  |
-|                                  | **OpCon Command Line**:          |
-|                                  |                                  |
-|                                  | "C:\\Program                    |
-|                                  | File                             |
-|                                  | s\\Opconxps\\MSLSAM\\Chronoman" |
-|                                  | =tNextDay =cC:\\Chronoman        |
-|                                  | Files\\NextDayCommand.txt        |
-|                                  | =sTestSchedule                   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Chronoman Command File**:      |
-|                                  |                                  |
-|                                  | SET_FORMAT_STRING,mm/dd/yy\      |
-|                                  | d,1\                             |
-|                                  | FIND_WORKING_DAY_FORWARD\        |
-|                                  | d,1                              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Summary:** The base date of    |
-|                                  | today is assumed because it is   |
-|                                  | not specified on the command     |
-|                                  | line or in the command file. The |
-|                                  | property to be updated is called |
-|                                  | NextDay. The schedule to be used |
-|                                  | for determining working days is  |
-|                                  | called TestSchedule.             |
-|                                  |                                  |
-|                                  | -   [SET_FORMAT_STRING]{styl     | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     specifies the format for     |
-|                                  |     output to the property as a  |
-|                                  |     standard date format. d,1    |
-|                                  |     adds one day to the computed |
-|                                  |     date.                        |
-|                                  | -                                |
-|                                  |  [FIND_WORKING_DAY_FORWARD]{styl | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     uses the value of the        |
-|                                  |     computed date if it is a     |
-|                                  |     working day; otherwise, the  |
-|                                  |     next workday is found. d,1   |
-|                                  |     adds one more day to the     |
-|                                  |     computed date to arrive at   |
-|                                  |     the final value for the      |
-|                                  |     property.                    |
-+----------------------------------+----------------------------------+
+**OpCon Command Line**:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **SCENARIO 3:** Set the property | | circular                         | to tomorrow's date.             |
-| background](../../../Reso        |                                  |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  | **OpCon Command Line**:          |
-|                                  |                                  |
-|                                  | "C:\\Program                    |
-|                                  | File                             |
-|                                  | s\\Opconxps\\MSLSAM\\Chronoman" |
-|                                  | =tTomorrow =cC:\\Chronoman       |
-|                                  | Files\\TomorrowCommand.txt       |
-|                                  | =sTestSchedule                   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Chronoman Command File**:      |
-|                                  |                                  |
-|                                  | SET_FORMAT_STRING,mm/dd/yy\      |
-|                                  | d,1                              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Summary**: The base date of    |
-|                                  | today is assumed because it is   |
-|                                  | not specified on the command     |
-|                                  | line or in the command file. The |
-|                                  | property to be updated is called |
-|                                  | *Tomorrow*. The schedule to be   |
-|                                  | used for determining working     |
-|                                  | days is called *TestSchedule*.   |
-|                                  |                                  |
-|                                  | -   [SET_FORMAT_STRING]{styl     | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     specifies the format for     |
-|                                  |     output to the property as a  |
-|                                  |     standard date format. d,1    |
-|                                  |     adds one day to the computed |
-|                                  |     date to arrive at the final  |
-|                                  |     value for the property.      |
-+----------------------------------+----------------------------------+
+```shell
+"C:\Program Files\Opconxps\MSLSAM\Chronoman" =t"WK.Day" =cC:\Chronoman Files\WkDayCommand.txt =sTestSchedule
+```
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **SCENARIO 4:** Set the property | | circular                         | to the first working day of the  |
-| background](../../../Reso        | month in the format of a         |
-| urces/Images/example-icon(48x48) | seven-character Julian date.     |
-| .png "Example icon") |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | For this example, a user-defined |
-|                                  | System property was created in   |
-|                                  | the Enterprise Manager. The      |
-|                                  | property was given a Name of     |
-|                                  | $SCHEDULE DATE JUL and a value  |
-|                                  | of YYYYj.                        |
-|                                  |                                  |
-|                                  | -   The property can be passed   |
-|                                  |     to a command file from the   |
-|                                  |     OpCon command line.          |
-|                                  | -   This property cannot be used |
-|                                  |     in the command file because  |
-|                                  |     only the SAM can resolve     |
-|                                  |     system.                      |
-|                                  | -   The command file must        |
-|                                  |     contain a variable that can  |
-|                                  |     be replaced by an entry on   |
-|                                  |     the OpCon command line.      |
-|                                  | -   The command file for this is |
-|                                  |     called JulianFirst.cmd. The  |
-|                                  |     contents of the command file |
-|                                  |     should all be on one line.   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **OpCon Command Line**:          |
-|                                  |                                  |
-|                                  | "C:\\Chronoman                  |
-|                                  | Files\\JulianFirst.cmd"         |
-|                                  | \[\[$SCHEDULE DATE JUL\]\]      | |                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **JulianFirst.cmd File**:        |
-|                                  |                                  |
-|                                  | "C:\\Program                    |
-|                                  | File                             |
-|                                  | s\\OpConxps\\MSLSAM\\Chronoman" |
-|                                  | =cC:\\Chronoman                  |
-|                                  | Files\\JulianFirstCommand.txt    |
-|                                  | =sTestSchedule =j%1              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **JulianFirstCommand.txt File**: |
-|                                  |                                  |
-|                                  | SET_FORMAT_STRING, YYYYy\        |
-|                                  | SET_TOKEN_NAME,                  |
-|                                  | "Julian.First"\                |
-|                                  | FIND_MONTH_BEGIN\                |
-|                                  | FIND_WORKING_DAY_FORWARD\        |
-|                                  | ZERO_FILL_DIRECTIVE,5,7          |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Summary**: The base date is    |
-|                                  | set to the Schedule Date in a    |
-|                                  | Julian format (i.e., 2008025).   |
-|                                  | The schedule to be used for      |
-|                                  | determining working days is      |
-|                                  | called TestSchedule.             |
-|                                  |                                  |
-|                                  | -   [SET_FORMAT_STRING]{styl     | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     specifies the format for     |
-|                                  |     output to the property as a  |
-|                                  |     Julian date beginning with   |
-|                                  |     the four-digit year.         |
-|                                  | -   [SET_TOKEN_NAME]{styl        | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     defines the property to be   |
-|                                  |     updated as Julian.First. The |
-|                                  |     name is surrounded in quotes |
-|                                  |     as "Julian.First" because  |
-|                                  |     there is a period in the     |
-|                                  |     name.                        |
-|                                  | -   [FIND_MONTH_BEGIN]{styl      | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     finds the first day of the   |
-|                                  |     month of the computed date.  |
-|                                  | -                                |
-|                                  |  [FIND_WORKING_DAY_FORWARD]{styl | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     uses the value of the        |
-|                                  |     computed date if it is a     |
-|                                  |     working day, otherwise the   |
-|                                  |     next workday is found.       |
-|                                  | -   [ZERO_FILL_DIRECTIVE]{styl   | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     inserts zeros into the       |
-|                                  |     computed date at the fifth   |
-|                                  |     character and continuing     |
-|                                  |     until the final string is    |
-|                                  |     seven characters. The result |
-|                                  |     of this directive is output  |
-|                                  |     to the property. If the base |
-|                                  |     date were 2008025, the value |
-|                                  |     of the property would be     |
-|                                  |     updated with 2008001.        |
-+----------------------------------+----------------------------------+
+**Chronoman Command File**:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **SCENARIO 5:** Set the property | | circular                         | to the number of elapsed days    |
-| background](../../../Reso        | between the first day of March   |
-| urces/Images/example-icon(48x48) | and the second Thursday of the   |
-| .png "Example icon") | month.                           |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **OpCon Command Line**:          |
-|                                  |                                  |
-|                                  | C:\\Program                      |
-|                                  | Fi                               |
-|                                  | les\\Opconxps\\MSLSAM\\Chronoman |
-|                                  | =b03/01/2017 =tDays              |
-|                                  | =cC:\\Chronoman                  |
-|                                  | Files\\DaysCommand.txt           |
-|                                  | =sTestSchedule                   |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **DaysCommand.txt File**:        |
-|                                  |                                  |
-|                                  | SET_FORMAT_STRING,\#\#\          |
-|                                  | w,1\                             |
-|                                  | FIND_DAY_OF_WEEK_FORWARD,5\      |
-|                                  | COMPUTE_ELAPSED_DAYS             |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | **Summary**: The base date of    |
-|                                  | March 1, 2017 is used for the    |
-|                                  | computation. The property to be  |
-|                                  | updated is called Days. The      |
-|                                  | schedule to be used for          |
-|                                  | determining working days is      |
-|                                  | called TestSchedule.             |
-|                                  |                                  |
-|                                  | -   [SET_FORMAT_STRING]{styl     | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     specifies the format for     |
-|                                  |     output to the property as an |
-|                                  |     integer. W,1 adds one week   |
-|                                  |     to the computed date.        |
-|                                  | -   [                            | |                                  | FIND_DAY_OF_WEEK_FORWARD,5]{styl |
-|                                  | e="font-family: 'Courier New';"} |
-|                                  |     uses the value of the        |
-|                                  |     computed date if it is       |
-|                                  |     Thursday, otherwise the next |
-|                                  |     Thursday are found.          |
-|                                  | -   [COMPUTE_ELAPSED_DAYS]{styl  | |                                  | e="font-family: 'Courier New';"} |
-|                                  |     calculate the number of days |
-|                                  |     between the base date and    |
-|                                  |     the computed date. The       |
-|                                  |     number of elapsed days are   |
-|                                  |     output to the property.      |
-+----------------------------------+----------------------------------+
+```shell
+SET_FORMAT_STRING,mmddyy
+FIND_WORKING_DAY_FORWARD
+```
+
+**Summary**: The base date of today is assumed because it is not specified on the command line or in the command file. The property to be updated is called WK.Day. The schedule to be used for determining working days is called "TestSchedule".
+
+- The WK.Day property is surrounded with escaped quotes in the =t parameter on the command line because the name contains a period.
+- SET_FORMAT_STRING specifies the format for output to the property as a date format using numbers only.
+- FIND_WORKING_DAY_FORWARD uses the value of the computed date if it is a workday, otherwise the next workday is found to arrive at the final value for the property.
+
+:::
+
+:::tip Example
+Set the property to the date of the first day after the next working day.
+
+**OpCon Command Line**:
+
+```shell
+"C:\Program Files\Opconxps\MSLSAM\Chronoman" =tNextDay =cC:\Chronoman Files\NextDayCommand.txt =sTestSchedule
+```
+
+**Chronoman Command File**:
+
+```ini
+SET_FORMAT_STRING,mm/dd/yy
+d,1
+FIND_WORKING_DAY_FORWARD
+d,1
+```
+
+**Summary**: The base date of today is assumed because it is not specified on the command line or in the command file. The property to be updated is called NextDay. The schedule to be used for determining working days is called TestSchedule.
+
+- SET_FORMAT_STRING specifies the format for output to the property as a standard date format. d,1 adds one day to the computed date.
+- FIND_WORKING_DAY_FORWARD uses the value of the computed date if it is a working day; otherwise, the next workday is found. d,1 adds one more day to the computed date to arrive at the final value for the property.
+
+:::
+
+:::tip Example
+Set the property to tomorrow's date.
+
+**OpCon Command Line**:
+
+```shell
+"C:\Program Files\Opconxps\MSLSAM\Chronoman" =tTomorrow =cC:\Chronoman Files\TomorrowCommand.txt =sTestSchedule
+```
+
+**Chronoman Command File**:
+
+```ini
+SET_FORMAT_STRING,mm/dd/yy
+d,1
+```
+
+**Summary**: The base date of today is assumed because it is not specified on the command line or in the command file. The property to be updated is called Tomorrow. The schedule to be used for determining working days is called TestSchedule.
+
+- SET_FORMAT_STRING specifies the format for output to the property as a standard date format. d,1 adds one day to the computed date to arrive at the final value for the property.
+
+:::
+
+:::tip Example
+Set the property to the first working day of the month in the format of a seven-character Julian date.
+
+For this example, a user-defined System property was created in the Enterprise Manager. The property was given a Name of $SCHEDULE DATE JUL and a value of YYYYj.
+
+- The property can be passed to a command file from the OpCon command line.
+- This property cannot be used in the command file because only the SAM can resolve system.
+- The command file must contain a variable that can be replaced by an entry on the OpCon command line.
+- The command file for this is called JulianFirst.cmd. The contents of the command file should all be on one line.
+
+**OpCon Command Line**:
+
+```shell
+"C:\Chronoman Files\JulianFirst.cmd" [[$SCHEDULE DATE JUL]]
+```
+
+**JulianFirst.cmd File**:
+
+```shell
+"C:\Program Files\OpConxps\MSLSAM\Chronoman" =cC:\Chronoman Files\JulianFirstCommand.txt =sTestSchedule =j%1
+```
+
+**JulianFirstCommand.txt File**:
+
+```ini
+SET_FORMAT_STRING, YYYYy
+SET_TOKEN_NAME, "Julian.First"
+FIND_MONTH_BEGIN
+FIND_WORKING_DAY_FORWARD
+ZERO_FILL_DIRECTIVE,5,7
+```
+
+**Summary**: The base date is set to the Schedule Date in a Julian format (i.e., 2008025). The schedule to be used for determining working days is called TestSchedule.
+
+- SET_FORMAT_STRING specifies the format for output to the property as a Julian date beginning with the four-digit year.
+- SET_TOKEN_NAME defines the property to be updated as Julian.First. The name is surrounded in quotes as "Julian.First" because there is a period in the name.
+- FIND_MONTH_BEGIN finds the first day of the month of the computed date.
+- FIND_WORKING_DAY_FORWARD uses the value of the computed date if it is a working day, otherwise the next workday is found.
+- ZERO_FILL_DIRECTIVE inserts zeros into the computed date at the fifth character and continuing until the final string is seven characters. The result of this directive is output to the property. If the base date were 2008025, the value of the property would be updated with 2008001.
+
+:::
+
+:::tip Example
+Set the property to the number of elapsed days between the first day of March and the second Thursday of the month.
+
+**OpCon Command Line**:
+
+```shell
+C:\Program Files\Opconxps\MSLSAM\Chronoman =b03/01/2017 =tDays =cC:\Chronoman Files\DaysCommand.txt =sTestSchedule
+```
+
+**DaysCommand.txt File**:
+
+```ini
+SET_FORMAT_STRING,##
+w,1
+FIND_DAY_OF_WEEK_FORWARD,5
+COMPUTE_ELAPSED_DAYS
+```
+
+**Summary**: The base date of March 1, 2017 is used for the computation. The property to be updated is called Days. The schedule to be used for determining working days is called TestSchedule.
+
+- SET_FORMAT_STRING specifies the format for output to the property as an integer. W,1 adds one week to the computed date.
+- FIND_DAY_OF_WEEK_FORWARD,5 uses the value of the computed date if it is Thursday, otherwise the next Thursday are found.
+- COMPUTE_ELAPSED_DAYS calculate the number of days between the base date and the computed date. The number of elapsed days are output to the property.
+
+:::
 
 ## Logging
 
@@ -1297,7 +1103,7 @@ The Output Directory was configured during installation. For more information, r
 The Chronoman log file provides detailed information regarding the
 Chronoman processing.
 
-- The log file resides in the \<Output Directory\>\\MSLSAM\\Log\\
+- The log file resides in the <Output Directory\>\\MSLSAM\\Log\\
     directory.
 - Each time the Chronoman.exe runs, it creates a log file name with
     the following syntax: Chronoman_CCYYMMDD_HHmmssss.log. The "ssss"
@@ -1306,8 +1112,7 @@ Chronoman processing.
 - Upon startup, Chronoman.exe checks the MSLSAM\\Log folder for log
     files older than today and moves them to the appropriate archive
     subfolder.
-- All archived log files reside in the \<Output
-    Directory\>\\MSLSAM\\Log\\Archive\\\<Day\> folder.
+- All archived log files reside in the <Output Directory\>\\MSLSAM\\Log\\Archive\\<Day\> folder.
 - If the Chronoman log files in the MSLSAM\\Log are older than the
     oldest Archive folder, the old logs are simply deleted.
 
@@ -1482,7 +1287,7 @@ the Linux agent embedded in it, keep the following things in mind:
 1. When running in Docker, the Linux job needs to be set up similar to
     a Windows job with the same parameters.
 2. The start image for the Linux job should be: *dotnet
-    /app/Chronoman.dll \<arguments\>*.
+    /app/Chronoman.dll <arguments\>*.
 3. The Chronoman.ini file will be located in the **/app/config**
     directory in the container, mapped to any folder on the host machine
     just like all other INI files.

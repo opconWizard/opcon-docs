@@ -56,13 +56,16 @@ To configure Pingman, modify the pingman.ini file located in the
 
 : Pingman.ini Settings
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following       | | circular                         | example shows multiple machine   |
-| background](../../../Reso        | lines added:                     |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") | Machine_1=Host1\                 |
-|                                  | Machine_2=Host2 Machine_3=Host3  |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following example shows multiple machine lines added:
+
+```ini
+Machine_1=Host1
+Machine_2=Host2
+Machine_3=Host3
+```
+
+:::
 
 Running Pingman
 

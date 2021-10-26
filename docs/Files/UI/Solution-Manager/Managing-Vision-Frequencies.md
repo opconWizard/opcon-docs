@@ -97,30 +97,20 @@ apply five days after the current day.
 While the frequency defines what day a card is visible, the SLA Day
 determines which day should be monitored for the SLA to run.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** You want to monitor | | circular                         | the instance of a card that is   |
-| background](../../../Reso        | set to start at 8:00 a.m. one    |
-| urces/Images/example-icon(48x48) | day and finish at 1:00 a.m. the  |
-| .png "Example icon") | next day.                        |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | You will need to define two      |
-|                                  | SLAs:                            |
-|                                  |                                  |
-|                                  | -   One SLA with the following   |
-|                                  |     settings:                    |
-|                                  |     -   **Requirement**:         |
-|                                  |         Expected Start Time      |
-|                                  |     -   **Time**: 08:00          |
-|                                  |     -   **Day**: Current         |
-|                                  | -   Another SLA with the         |
-|                                  |     following settings:          |
-|                                  |     -   **Requirement**:         |
-|                                  |         Expected End Time        |
-|                                  |     -   **Time**: 01:00          |
-|                                  |     -   **Day**: Next            |
-+----------------------------------+----------------------------------+
+:::tip Example
+You want to monitor the instance of a card that is set to start at 8:00 a.m. one day and finish at 1:00 a.m. the next day.
+
+You will need to define two SLAs:
+
+- One SLA with the following settings:
+  - **Requirement**: Expected Start Time
+  - **Time**: 08:00
+  - **Day**: Current
+- Another SLA with the following settings:
+  - **Requirement**: Expected End Time
+  - **Time**: 01:00
+  - **Day**: Next
+:::
 
 **Trigger(s)**: This frame allows you to define settings for triggering
 the action(s) to be run.

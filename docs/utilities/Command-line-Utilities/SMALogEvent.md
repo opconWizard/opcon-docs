@@ -7,19 +7,21 @@ to run when these programs start, stop, or encounter other triggers.
 SMA Technologies recommends using SMALogEvent in these scripts for notification purposes.
 
 SMA Technologies provides a command file to execute the SMALogEvent program. Installed with the SAM-SS, the required
-files are in the \<Target Directory\>\\OpConxps\\SAM\\ directory.
+files are in the <Target Directory\>\\OpConxps\\SAM\\ directory.
 
 ## Syntax
 
 The command file contains the following syntax:
 
-\<Opconxps path\>SMALogEvent \<Source\>, \<Severity\>, \<Message\>
+```shell
+<Opconxps path\>SMALogEvent <Source\>, <Severity\>, <Message\>
+```
 
 ### Parameters
 
 The following describes the command file parameters:
 
-**\<OpConxps path\>**: The path to the location of the SMALogEvent
+**<OpConxps path\>**: The path to the location of the SMALogEvent
 program.
 
 - By default, SMA Technologies places the     SMALogEvent program in the SAM installation directory.
@@ -28,43 +30,27 @@ program.
 
 **SMALogEvent**: The name of the program.
 
-**\<Source\>**: The value SMALogEvent writes to the Source column in the
+**<Source\>**: The value SMALogEvent writes to the Source column in the
 Windows Event Log.
 
-**\<Severity\>**: The value SMALogEvent writes to the Type column in the
+**<Severity\>**: The value SMALogEvent writes to the Type column in the
 Windows Event Log.
 
 - The value must be **I** (Information), **W** (Warning), or **E**
     (Error).
 
-**\<Message\>**: Any message the administrator desires to see in the
+**<Message\>**: Any message the administrator desires to see in the
 Windows Event Log. A third-party notification tool should be able to
 identify the message to send an email, page, or network pop-up message.
 The log message should be detailed and provide circumstances that
 triggered notification.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** If the SMAServMan   | | circular                         | calls this command file for any  |
-| background](../../../Reso        | of the definable scripts, there  |
-| urces/Images/example-icon(48x48) | can be several helpful messages. |
-| .png "Example icon") |                                  |
-|                                  | -   For the                      |
-|                                  |     SyncInitFailureScript        |
-|                                  |     setting, the message might   |
-|                                  |     be: "The Primary SMAServMan |
-|                                  |     is unable to synchronize     |
-|                                  |     with the Secondary           |
-|                                  |     SMAServMan."                |
-|                                  | -   For the                      |
-|                                  |     PrimaryAbnormalShutdown      |
-|                                  |     setting, the message might   |
-|                                  |     be: "The Secondary SMA      |
-|                                  |     Service Manager has begun    |
-|                                  |     processing in the            |
-|                                  |                                  |
-|                                  | OpCon |
-|                                  |     database."                  |
-+----------------------------------+----------------------------------+
+:::tip
+If the SMAServMan calls this command file for any of the definable scripts, there can be several helpful messages.
+
+- For the SyncInitFailureScript setting, the message might be: "The Primary SMAServMan is unable to synchronize with the Secondary SMAServMan."
+- For the PrimaryAbnormalShutdown setting, the message might be: "The Secondary SMA Service Manager has begun processing in the OpCon database."
+:::
 
 ## Renaming the Command File
 
@@ -87,11 +73,11 @@ To rename the command file:
     access to the OpCon installation
     directories.
 2. Right-click on **Start** and select **Explore**.
-3. Browse to and select the **\<Configuration
+3. Browse to and select the **<Configuration
     Directory\>\\OpConxps\\SAM\\**directory in Explorer's **Folders**
     frame.
 4. Right-click on **Test_WriteEvent.cmd** and select **Copy**.
-5. Right-click in the **\<Configuration Directory\>\\OpConxps\\SAM\\**
+5. Right-click in the **<Configuration Directory\>\\OpConxps\\SAM\\**
     folder and select **Paste**.
 6. Right-click on the **Copy of Test_WriteEvent.cmd file** and select
     **Rename**.
@@ -110,7 +96,7 @@ To modify the command file:
 1. Log on to the **SAM application server** as a *Windows user* with
     access to the OpCon installation directories.
 2. Right-click on **Start** and select **Explore**.
-3. Browse to and select the **\<Target Directory\>\\OpConxps\\SAM\\**
+3. Browse to and select the **<Target Directory\>\\OpConxps\\SAM\\**
     directory in Explorer's **Folders** frame.
 4. Right-click the **WriteEvent.cmd** file and select **Edit**.
     **Notepad** should open.
@@ -126,22 +112,13 @@ To modify the command file:
 9. Use Menu path: **File \> Save**.
 10. **Close ☒** **Notepad**.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The example command | | circular                         | file tells the administrator     |
-| background](../../../Reso        | that SMAServMan has encountered  |
-| urces/Images/example-icon(48x48) | something causing it to execute  |
-| .png "Example icon") | a script.                        |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Our command file, C:\\Program    |
-|                                  | Files                            |
-|                                  | \\OpConxps\\SAM\\WriteEvent.cmd, |
-|                                  | contains the following:          |
-|                                  |                                  |
-|                                  | "C:\\Program                    |
-|                                  | Fil                              |
-|                                  | es\\OpConxps\\SAM\\SMALogEvent" |
-|                                  | SecondServMan, I, MSG201         |
-+----------------------------------+----------------------------------+
+:::tip Example
+The example command file tells the administrator that SMAServMan has encountered something causing it to execute a script.
+
+Our command file, C:\Program Files\OpConxps\SAM\WriteEvent.cmd, contains the following:
+
+```shell
+"C:\Program Files\OpConxps\SAM\SMALogEvent" SecondServMan, I, MSG201
+```
+
 :::

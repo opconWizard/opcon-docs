@@ -61,37 +61,33 @@ information applies to defining Class operations:
   - Valid Characters: alphanumeric, asterisk, slash, backslash,
         percent, colon, underscore, period, and hyphen
 
-    +----------------------------------+----------------------------------+
-    | ![White pencil icon on green     | **EXAMPLE:** [When setting the   |     | circular                         | JVM memory requirements for the  |
-    | background](../../Reso           | job:]{.statement2}               |
-    | urces/Images/example-icon(48x48) |                                  |
-    | .png "Example icon") |                                  |
-    |                                  |                                  |
-    |                                  | [Insert the memory requirement   |     |                                  | in the JVM Argument Name         |
-    |                                  | field:]{.statement2}             |
-    |                                  |                                  |
-    |                                  | -Xmx256m                         |
-    +----------------------------------+----------------------------------+
+:::tip Example
+When setting the JVM memory requirements for the job:
 
-    +----------------------------------+----------------------------------+
-    | ![White pencil icon on green     | **EXAMPLE:** [When using the -D  |     | circular                         | option to set logging            |
-    | background](../../Reso           | information:]{.statement2}       |
-    | urces/Images/example-icon(48x48) |                                  |
-    | .png "Example icon") |                                  |
-    |                                  |                                  |
-    |                                  | [Insert the option in the JVM    |     |                                  | Argument Name                    |
-    |                                  | field:]{.statement2}             |
-    |                                  |                                  |
-    |                                  | -Dlog4j.configuration            |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  | [Insert the definition in the    |     |                                  | JVM Argument Value               |
-    |                                  | field:]{.statement2}             |
-    |                                  |                                  |
-    |                                  | file:c:\                         |
-    |                                  | \test\\logging\\log4j.properties |
-    +----------------------------------+----------------------------------+
+Insert the memory requirement in the JVM Argument Name field:
+
+```java
+-Xmx256m
+```
+
+:::
+
+:::tip Example
+When using the -D option to set logging information:
+
+Insert the option in the JVM Argument Name field:
+
+```java
+-Dlog4j.configuration
+```
+
+Insert the definition in the JVM Argument Value field:
+
+```shell
+file:c:\test\logging\log4j.properties
+```
+
+:::
 
 - **Environment Variables** (Optional): Defines the variables that
     allow users to specify Operating System Environment Variables. The
@@ -110,24 +106,22 @@ information applies to defining Class operations:
   - Valid Characters: alphanumeric, asterisk, slash, backslash,
         percent, colon, underscore, period, and hyphen
 
-    +----------------------------------+----------------------------------+
-    | ![White pencil icon on green     | **EXAMPLE:** [When setting a     |     | circular                         | directory                        |
-    | background](../../Reso           | definition:]{.statement2}        |
-    | urces/Images/example-icon(48x48) |                                  |
-    | .png "Example icon") |                                  |
-    |                                  |                                  |
-    |                                  | [Insert the option in the Env    |     |                                  | Variable Name                    |
-    |                                  | field:]{.statement2}             |
-    |                                  |                                  |
-    |                                  | TEST_HOME                        |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  | [Insert the definition in the    |     |                                  | Env Variable Value               |
-    |                                  | field:]{.statement2}             |
-    |                                  |                                  |
-    |                                  | c:\\test                         |
-    +----------------------------------+----------------------------------+
+:::tip Example
+When setting a directory definition:
+
+Insert the option in the Env Variable Name field:
+
+```java
+TEST_HOME
+```
+
+Insert the definition in the Env Variable Value field:
+
+```shell
+c:\test
+```
+
+:::
 
 - **Failure Criteria**: Provides fields to define criteria that
     OpCon uses to determine the final status
@@ -191,24 +185,22 @@ information applies to defining Command operations:
   - Valid Characters: alphanumeric, asterisk, slash, backslash,
         percent, colon, underscore, period, and hyphen
 
-    +----------------------------------+----------------------------------+
-    | ![White pencil icon on green     | **EXAMPLE:** [When setting a     |     | circular                         | directory                        |
-    | background](../../Reso           | definition:]{.statement2}        |
-    | urces/Images/example-icon(48x48) |                                  |
-    | .png "Example icon") |                                  |
-    |                                  |                                  |
-    |                                  | [Insert the option in the Env    |     |                                  | Variable Name                    |
-    |                                  | field:]{.statement2}             |
-    |                                  |                                  |
-    |                                  | TEST_HOME                        |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  |                                  |
-    |                                  | [Insert the definition in the    |     |                                  | Env Variable Value               |
-    |                                  | field:]{.statement2}             |
-    |                                  |                                  |
-    |                                  | c:\\test                         |
-    +----------------------------------+----------------------------------+
+:::tip Example
+When setting a directory definition:
+
+Insert the option in the Env Variable Name field:
+
+```java
+TEST_HOME
+```
+
+Insert the definition in the Env Variable Value field:
+
+```shell
+c:\test
+```
+
+:::
 
 - **Failure Criteria**: Provides fields to define criteria that
     OpCon uses to determine the final status
@@ -271,37 +263,33 @@ used.
 - Valid Characters: alphanumeric, asterisk, slash, backslash, percent,
     colon, underscore, period, and hyphen
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [When setting the   | | circular                         | JVM memory requirements for the  |
-| background](../../Reso           | job:]{.statement2}               |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  |                                  |
-|                                  | [Insert the memory requirement   | |                                  | in the JVM Argument Name         |
-|                                  | field:]{.statement2}             |
-|                                  |                                  |
-|                                  | -Xmx256m                         |
-+----------------------------------+----------------------------------+
+:::tip Example
+When setting the JVM memory requirements for the job:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [When using the -D  | | circular                         | option to set logging            |
-| background](../../Reso           | information:]{.statement2}       |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  |                                  |
-|                                  | [Insert the option in the JVM    | |                                  | Argument Name                    |
-|                                  | field:]{.statement2}             |
-|                                  |                                  |
-|                                  | -Dlog4j.configuration            |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | [Insert the definition in the    | |                                  | JVM Argument Value               |
-|                                  | field:]{.statement2}             |
-|                                  |                                  |
-|                                  | file:c:\                         |
-|                                  | \test\\logging\\log4j.properties |
-+----------------------------------+----------------------------------+
+Insert the memory requirement in the JVM Argument Name field:
+
+```java
+-Xmx256m
+```
+
+:::
+
+:::tip Example
+When using the -D option to set logging information:
+
+Insert the option in the JVM Argument Name field:
+
+```java
+-Dlog4j.configuration
+```
+
+Insert the definition in the JVM Argument Value field:
+
+```shell
+file:c:\test\logging\log4j.properties
+```
+
+:::
 
 **Environment Variables** (Optional): Defines the variables that allow
 users to specify Operating System Environment Variables. The variables
@@ -320,24 +308,22 @@ used.
 - Valid Characters: alphanumeric, asterisk, slash, backslash, percent,
     colon, underscore, period, and hyphen
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** [When setting a     | | circular                         | directory                        |
-| background](../../Reso           | definition:]{.statement2}        |
-| urces/Images/example-icon(48x48) |                                  |
-| .png "Example icon") |                                  |
-|                                  |                                  |
-|                                  | [Insert the option in the Env    | |                                  | Variable Name                    |
-|                                  | field:]{.statement2}             |
-|                                  |                                  |
-|                                  | TEST_HOME                        |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | [Insert the definition in the    | |                                  | Env Variable Value               |
-|                                  | field:]{.statement2}             |
-|                                  |                                  |
-|                                  | c:\\test                         |
-+----------------------------------+----------------------------------+
+:::tip Example
+When setting a directory definition:
+
+Insert the option in the Env Variable Name field:
+
+```java
+TEST_HOME
+```
+
+Insert the definition in the Env Variable Value field:
+
+```shell
+c:\test
+```
+
+:::
 
 **Failure Criteria**: Provides fields to define criteria that
 OpCon uses to determine the final status of
@@ -358,4 +344,3 @@ the job.
     - **LE** (less than or equal to)
   - **Exit Code Integer**: Any integer (-2,147,483,648 through
         2,147,483,647) to compare with the job's exit code.
-:::

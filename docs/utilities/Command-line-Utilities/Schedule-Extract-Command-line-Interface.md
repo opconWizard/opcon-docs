@@ -37,10 +37,8 @@ information, refer to [Setting Preferences for Schedule Extract](../../Files/UI/
 You have to schedule the job on a Windows machine that has an LSAM and
 an Enterprise Manager compatible with the operating system installed.
 
-a.  If the machine is 64-bit, make sure to install the EM from the
-    \<media\>\\Install\\Enterprise Manager\\x64\\ folder.
-b.  If the machine is 32-bit, make sure to install the EM from the
-    \<media\>\\Install\\Enterprise Manager\\x86\\ folder.
+a.  If the machine is 64-bit, make sure to install the EM from the <media\>\\Install\\Enterprise Manager\\x64\\ folder.
+b.  If the machine is 32-bit, make sure to install the EM from the <media\>\\Install\\Enterprise Manager\\x86\\ folder.
 
 :::note
 If you install the EM from the x86 folder onto a 64-bit machine, you will have to edit the schedule_extract.cmd file to specifically start the 32-bit version of Java. With a default installation of 32-bit Java, replace this string:
@@ -77,15 +75,9 @@ Working Directory.
 
 The syntax for the command-line interface is:
 
-\<Target Directory\>\\OpConxps\\Enterprise
-Manager\\Tools\\schedule_extract.cmd
-
--opconprofile \<ProfileName\> (-s "\<ScheduleName\>" OR -f "\<File
-Name\>")
-
-\[-opconuser \<OpconUser\>\] \[-opconpassword \<Password\>\] \[-c \<Y/N\>\]
-
-\[-p \<Y/N\>\] \[-v \<Y/N\>\] \[-o \<Y/N\>\] \[-chg \<change file\>\] \[-split\]
+```shell
+<Target Directory\>\\OpConxps\\Enterprise Manager\\Tools\\schedule_extract.cmd -opconprofile <ProfileName\> (-s "<ScheduleName\>" OR -f "<File Name\>") \[-opconuser <OpconUser\>\] \[-opconpassword <Password\>\] \[-c <Y/N\>\] \[-p <Y/N\>\] \[-v <Y/N\>\] \[-o <Y/N\>\] \[-chg <change file\>\] \[-split\]
+```
 
 ### Parameters
 
@@ -111,7 +103,7 @@ of schedules to extract.
 
 - Required if -s is not specified.
 - The file should contain one line per schedule.
-- Use the syntax: [-s;\<Schedule Name\>]{.outputtxt} -   Following the \<Schedule Name\>, you can specify the optional
+- Use the syntax: [-s;<Schedule Name\>]{.outputtxt} -   Following the <Schedule Name\>, you can specify the optional
     arguments, with each argument and value separated with a semicolon
     (;).
 
@@ -145,7 +137,7 @@ overrides any -v values defined in the file.
 - The file will be created in the directory defined in the Schedule
     Extract preferences within Enterprise Manager.
 - If not specified, the default file name uses the following syntax:
-    SMADDI_YYYYMMDDHHMM\_\<ScheduleName\>.xml.
+    SMADDI_YYYYMMDDHHMM\_<ScheduleName\>.xml.
 
 **-chg** (Optional): Defines the full path and filename of a file
 listing automatic changes to be applied to all schedules defined in the
@@ -198,129 +190,70 @@ met during SMADDI processing:
 
 ### Examples
 
-For these next examples, the \[\[EManagerTools\]\] value is an OpCon global property containing the location
-of the schedule_extract command file.
+For these next examples, the \[\[EManagerTools\]\] value is an OpCon global property containing the location of the schedule_extract command file.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 1:**                   | | circular                         |                                  |
-| background](../../../Reso        | \[\[EManagerTools\]\]            |
-| urces/Images/example-icon(48x48) | -opconprofile PRODUCTION         |
-| .png "Example icon") | -opconuser ocadm                 |
-|                                  |                                  |
-|                                  | -opconpassword opconxps -s       |
-|                                  | Sched001                         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Executes the command line to     |
-|                                  | Schedule Extract with the        |
-|                                  | following parameters:            |
-|                                  |                                  |
-|                                  | -   Use the PRODUCTION profile   |
-|                                  | -   Use the                      |
-|                                  |                                  |
-|                                  | OpCon |
-|                                  |     user 'ocadm' and its       |
-|                                  |     password                     |
-|                                  | -   Extract the schedule         |
-|                                  |     'Sched001' from the Master |
-|                                  |     tables of the                |
-|                                  |                                  |
-|                                  | OpCon |
-|                                  |     database.                    |
-+----------------------------------+----------------------------------+
+:::tip Example
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 2:**                   | | circular                         |                                  |
-| background](../../../Reso        | \[\[EManagerTools\]\]            |
-| urces/Images/example-icon(48x48) | -opconprofile PRODUCTION         |
-| .png "Example icon") | -opconuser ocadm                 |
-|                                  |                                  |
-|                                  | -opconpassword opconxps -s       |
-|                                  | "TEST ONE"                     |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Executes the command line to     |
-|                                  | Schedule Extract with the        |
-|                                  | following parameters:            |
-|                                  |                                  |
-|                                  | -   Use the PRODUCTION profile   |
-|                                  | -   Use the                      |
-|                                  |                                  |
-|                                  | OpCon |
-|                                  |     user 'ocadm' and its       |
-|                                  |     password                     |
-|                                  | -   Extract the schedule 'TEST  |
-|                                  |     ONE' from the Master tables |
-|                                  |     of the                       |
-|                                  |                                  |
-|                                  | OpCon |
-|                                  |     database.                    |
-+----------------------------------+----------------------------------+
+```shell
+[[EManagerTools]] -opconprofile PRODUCTION -opconuser ocadm -opconpassword opconxps -s Sched001
+```
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 3:**                   | | circular                         |                                  |
-| background](../../../Reso        | \[\[EManagerTools\]\]            |
-| urces/Images/example-icon(48x48) | -opconprofile PRODUCTION         |
-| .png "Example icon") | -opconuser ocadm                 |
-|                                  |                                  |
-|                                  | -opconpassword opconxps -s       |
-|                                  | Sched002 -c Y -p Y -v Y          |
-|                                  |                                  |
-|                                  | -o Sched002-OUT.xml              |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Executes the command line to     |
-|                                  | Schedule Extract with the        |
-|                                  | following parameters:            |
-|                                  |                                  |
-|                                  | -   Use the PRODUCTION profile   |
-|                                  | -   Use the                      |
-|                                  |                                  |
-|                                  | OpCon |
-|                                  |     user 'ocadm' and its       |
-|                                  |     password                     |
-|                                  | -   Extract the schedule         |
-|                                  |     'Sched002' from the Master |
-|                                  |     tables of the                |
-|                                  |                                  |
-|                                  | OpCon |
-|                                  |     database.                    |
-|                                  | -   Include any associated       |
-|                                  |     dates, properties and        |
-|                                  |     variables and generate the   |
-|                                  |     Sched002-OUT.xml file.       |
-+----------------------------------+----------------------------------+
+Executes the command line to Schedule Extract with the following parameters:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 4:**                   | | circular                         |                                  |
-| background](../../../Reso        | \[\[EManagerTools\]\]            |
-| urces/Images/example-icon(48x48) | -opconprofile PRODUCTION         |
-| .png "Example icon") | -opconuser ocadm                 |
-|                                  |                                  |
-|                                  | -opconpassword opconxps -f       |
-|                                  | c:/extract/schedules.txt         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | Instructs the Enterprise Manager |
-|                                  | to execute the Schedule Extract  |
-|                                  | with the following parameters:   |
-|                                  |                                  |
-|                                  | -   Use the PRODUCTION profile   |
-|                                  | -   Use the                      |
-|                                  |                                  |
-|                                  | OpCon |
-|                                  |     user 'ocadm' and its       |
-|                                  |     password                     |
-|                                  | -   Extract the list of          |
-|                                  |     schedules contained in the   |
-|                                  |     c:\\extract\\schedules.txt   |
-|                                  |     file. The text file contains |
-|                                  |     the following information:   |
-+----------------------------------+----------------------------------+
+- Use the PRODUCTION profile
+- Use the OpCon user 'ocadm' and its password
+- Extract the schedule 'Sched001' from the Master tables of the OpCon database.
+
+:::
+
+:::tip Example
+
+```shell
+[[EManagerTools]] -opconprofile PRODUCTION -opconuser ocadm -opconpassword opconxps -s "TEST ONE"
+```
+
+Executes the command line to Schedule Extract with the following parameters:
+
+- Use the PRODUCTION profile
+- Use the OpCon user 'ocadm' and its password
+- Extract the schedule 'TEST ONE' from the Master tables of the OpCon database.
+
+:::
+
+:::tip Example
+
+```shell
+[[EManagerTools]] -opconprofile PRODUCTION -opconuser ocadm -opconpassword opconxps -s Sched002 -c Y -p Y -v Y -o Sched002-OUT.xml
+```
+
+Executes the command line to Schedule Extract with the following parameters:
+
+- Use the PRODUCTION profile
+- Use the OpCon user 'ocadm' and its password
+- Extract the schedule 'Sched002' from the Master tables of the OpCon database.
+- Include any associated dates, properties and variables and generate the Sched002-OUT.xml file.
+
+:::
+
+:::tip Example
+
+```shell
+[[EManagerTools]] -opconprofile PRODUCTION -opconuser ocadm -opconpassword opconxps -f c:/extract/schedules.txt
+```
+
+Instructs the Enterprise Manager to execute the Schedule Extract with the following parameters:
+
+- Use the PRODUCTION profile
+- Use the OpCon user 'ocadm' and its password
+- Extract the list of schedules contained in the c:\extract\schedules.txt file. The text file contains the following information:
+
+```shell
+-s;Sched001
+-s;Sched002;-c;Y;-p;Y;-v;Y;-o;Sched002-OUT.xml
+-s;TEST ONE;-c;Y;-p;Y;-v;Y
+```
+
+:::
 
 ## Automatic Change Files
 
@@ -356,14 +289,14 @@ The following Tag IDs define the values that can be changed:
     field.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Frequency_Name**: The matching frequency name will be changed in
     the new_schedule, new_master, add_frequency and add_dependency
     objects extracted for this schedule.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Job_Name**: The matching Job Name will be changed in the
     new_master, add_frequency and add_dependency objects extracted for
@@ -371,20 +304,20 @@ The following Tag IDs define the values that can be changed:
     any $JOB events in the job name field.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Job_Machine_Name**: The matching job machine name (primary machine
     name) will be changed in the new_master object extracted for this
     schedule.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Job_Machine_Group_Name**: The matching job machine group name will
     be changed in the new_master object extracted for this schedule.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Resource_Name**: The matching value in the threshold descriptor
     will be changed in the new_variable and add_dependency objects. The
@@ -392,7 +325,7 @@ The following Tag IDs define the values that can be changed:
     new_schedule object and the job events of the new_master object.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Threshold_Name**: The matching value in the threshold descriptor
     will be changed in the new_variable and add_dependency objects. The
@@ -400,14 +333,14 @@ The following Tag IDs define the values that can be changed:
     new_schedule object and the job events of the new_master object.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Windows_User**: The matching Windows user within a Windows job
     will be changed in the new_master object extracted for this
     schedule.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Windows_Command_Line**: The matching value in the command line
     within a Windows job will be changed in the new_master object
@@ -416,26 +349,26 @@ The following Tag IDs define the values that can be changed:
     start and end of the command line.
   - By default, this replacement element does partial string
         replacement. Specify
-        \<global_change_partial_update\>false\</global_change_partial_update\>
+        <global_change_partial_update\>false</global_change_partial_update\>
         to disable partial replacement.
 - **Windows_Working_Directory**: The matching value in the working
     directory within a Windows job will be changed in the new_master
     object extracted for this schedule.
   - By default, this replacement element does partial string
         replacement. Specify
-        \<global_change_partial_update\>false\</global_change_partial_update\>
+        <global_change_partial_update\>false</global_change_partial_update\>
         to disable partial replacement.
 - **Unix_User_Id**: The matching UNIX user id within a UNIX job will
     be changed in the new_master object extracted for this schedule.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Unix_Group_Id**: The matching UNIX group id within a UNIX job will
     be changed in the new_master object extracted for this schedule.
   - By default, this replacement element does not do partial string
         replacement. Specify
-        \<global_change_partial_update\>true\</global_change_partial_update\>
+        <global_change_partial_update\>true</global_change_partial_update\>
         to enable partial replacement.
 - **Unix_Start_Image**: The matching value in start image within a
     UNIX job will be changed in the new_master object extracted for this
@@ -444,7 +377,7 @@ The following Tag IDs define the values that can be changed:
     command line.
   - By default, this replacement element does partial string
         replacement. Specify
-        \<global_change_partial_update\>false\</global_change_partial_update\>
+        <global_change_partial_update\>false</global_change_partial_update\>
         to disable partial replacement.
 - **Unix_Parameter**: The matching value in the parameter within a
     UNIX job will be changed in the new_master object extracted for this
@@ -453,18 +386,18 @@ The following Tag IDs define the values that can be changed:
     command line.
   - By default, this replacement element does partial string
         replacement. Specify
-        \<global_change_partial_update\>false\</global_change_partial_update\>
+        <global_change_partial_update\>false</global_change_partial_update\>
         to disable partial replacement.
 
 The change file consists of an XML format file with the following XML
 tags. It is possible to have multiple definitions of a tag id with
 different values.
 
-[\<global_change_file\>]{style="font-family: 'Courier New';"} is the root tag
+[<global_change_file\>]{style="font-family: 'Courier New';"} is the root tag
 
-[\<global_change\>]{style="font-family: 'Courier New';"} contains the defined change
+[<global_change\>]{style="font-family: 'Courier New';"} contains the defined change
 
-[\<global_change_tag_id\>]{style="font-family: 'Courier New';"} defines the change tag id and consists of one of the following values:
+[<global_change_tag_id\>]{style="font-family: 'Courier New';"} defines the change tag id and consists of one of the following values:
 
 - Schedule_Name
 - Frequency_Name
@@ -481,249 +414,142 @@ different values.
 - Unix_Start_Image
 - Unix_Parameter
 
-[\<global_change_current_value\>]{style="font-family: 'Courier New';"} defines the existing value to search for.
+[<global_change_current_value\>]{style="font-family: 'Courier New';"} defines the existing value to search for.
 
-[\<global_change_new_value\>]{style="font-family: 'Courier New';"} defines the value to replace the existing value.
+[<global_change_new_value\>]{style="font-family: 'Courier New';"} defines the value to replace the existing value.
 
-[\<global_change_partial_update\>]{style="font-family: 'Courier New';"} defines if Schedule Extract should replace the matching value for the
-\<global_change_current_value\> anywhere within the whole value of the
+[<global_change_partial_update\>]{style="font-family: 'Courier New';"} defines if Schedule Extract should replace the matching value for the
+<global_change_current_value\> anywhere within the whole value of the
 change tag id.
 
-- This element is optional because each \<global_change_tag_id\> has a
+- This element is optional because each <global_change_tag_id\> has a
     default behavior for partial replacement.
 
 Valid Values for this element include *true* and *false*.
 
 ### Examples
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 1:** This example will | | circular                         | change the schedule name within  |
-| background](../../../Reso        | all extracted objects to S-TEST1 |
-| urces/Images/example-icon(48x48) | when a matching schedule name of |
-| .png "Example icon") | TTEST is found.                  |
-|                                  |                                  |
-|                                  | \<?xml version="1.0"           |
-|                                  | encoding="ISO-8859-1"          |
-|                                  | standalone="no"?\>             |
-|                                  |                                  |
-|                                  | \<global_change_file\>           |
-|                                  |                                  |
-|                                  | \<global_change\>                |
-|                                  |                                  |
-|                                  | \<global_change_tag_id\>Schedu   |
-|                                  | le_Name\</global_change_tag_id\> |
-|                                  |                                  |
-|                                  | \<gl                             |
-|                                  | obal_change_current_value\>TTEST |
-|                                  | \</global_change_current_value\> |
-|                                  |                                  |
-|                                  | \<global_change_new_value\>S-T   |
-|                                  | EST1\</global_change_new_value\> |
-|                                  |                                  |
-|                                  | \</global_change\>               |
-|                                  |                                  |
-|                                  | \</global_change_file\>          |
-+----------------------------------+----------------------------------+
+:::tip Example
+This example will change the schedule name within all extracted objects to S-TEST1 when a matching schedule name of TTEST is found.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE 2:** This example will | | circular                         | change the Windows User name to  |
-| background](../../../Reso        | production\\prod01 if a matching |
-| urces/Images/example-icon(48x48) | test\\test01 Windows user is     |
-| .png "Example icon") | found and to production\\prod03  |
-|                                  | if a matching test\\test03       |
-|                                  | Windows user is found in a       |
-|                                  | Windows job.                     |
-|                                  |                                  |
-|                                  | \<?xml version="1.0"           |
-|                                  | encoding="ISO-8859-1"          |
-|                                  | standalone="no"?\>             |
-|                                  |                                  |
-|                                  | \<global_change_file\>           |
-|                                  |                                  |
-|                                  | \<global_change\>                |
-|                                  |                                  |
-|                                  | \<global_change_tag_id\>Windo    |
-|                                  | ws_User\</global_change_tag_id\> |
-|                                  |                                  |
-|                                  | \<global_change_current_value\>  |
-|                                  |                                  |
-|                                  | test\\test01                     |
-|                                  |                                  |
-|                                  | \</global_change_current_value\> |
-|                                  |                                  |
-|                                  | \<global_change_new_value\>      |
-|                                  |                                  |
-|                                  | production\\prod01               |
-|                                  |                                  |
-|                                  | \</global_change_new_value\>     |
-|                                  |                                  |
-|                                  | \</global_change\>               |
-|                                  |                                  |
-|                                  | \<global_change\>                |
-|                                  |                                  |
-|                                  | \<global_change_tag_id\>Windo    |
-|                                  | ws_User\</global_change_tag_id\> |
-|                                  |                                  |
-|                                  | \<global_change_current_value\>  |
-|                                  |                                  |
-|                                  | test\\test03                     |
-|                                  |                                  |
-|                                  | \</global_change_current_value\> |
-|                                  |                                  |
-|                                  | \<global_change_new_value\>      |
-|                                  |                                  |
-|                                  | production\\prod03               |
-|                                  |                                  |
-|                                  | \</global_change_new_value\>     |
-|                                  |                                  |
-|                                  | \</global_change\>               |
-|                                  |                                  |
-|                                  | \</global_change_file\>          |
-+----------------------------------+----------------------------------+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<global_change_file>
+<global_change>
+<global_change_tag_id>Schedule_Name</global_change_tag_id>
+<global_change_current_value>TTEST</global_change_current_value>
+<global_change_new_value>S-TEST1</global_change_new_value>
+</global_change>
+</global_change_file>
+```
+
+:::
+
+:::tip Example
+This example will change the Windows User name to production\prod01 if a matching test\test01 Windows user is found and to production\prod03 if a matching test\test03 Windows user is found in a Windows job.
+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<global_change_file>
+<global_change>
+<global_change_tag_id>Windows_User</global_change_tag_id>
+<global_change_current_value>
+test\test01
+</global_change_current_value>
+<global_change_new_value>
+production\prod01
+</global_change_new_value>
+</global_change>
+<global_change>
+<global_change_tag_id>Windows_User</global_change_tag_id>
+<global_change_current_value>
+test\test03
+</global_change_current_value>
+<global_change_new_value>
+production\prod03
+</global_change_new_value>
+</global_change>
+</global_change_file>
+```
+
+:::
 
 ### Change File Sample Code
 
 The following sample code contains tags for every global change
 supported with Schedule Extract:
 
-\<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?\>
-
-\<global_change_file\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Schedule_Name\</global_change_tag_id\>
-
-\<global_change_current_value\>TTEST\</global_change_current_value\>
-
-\<global_change_new_value\>S-TEST1\</global_change_new_value\>
-
-\<global_change_partial_update\>false\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Job_Name\</global_change_tag_id\>
-
-\<global_change_current_value\>WJOB001\</global_change_current_value\>
-
-\<global_change_new_value\>PROD-JOB001\</global_change_new_value\>
-
-\<global_change_partial_update\>false\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Frequency_Name\</global_change_tag_id\>
-
-\<global_change_current_value\>SatSun\</global_change_current_value\>
-
-\<global_change_new_value\>WeekEnd\</global_change_new_value\>
-
-\<global_change_partial_update\>false\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Job_Machine_Name\</global_change_tag_id\>
-
-\<global_change_current_value\>VM-BVH-OPCON45\</global_change_current_value\>
-
-\<global_change_new_value\>VM_BVH_NEW\</global_change_new_value\>
-
-\<global_change_partial_update\>false\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Windows_User\</global_change_tag_id\>
-
-\<global_change_current_value\>SMAEUROPE\\TEST\</global_change_current_value\>
-
-\<global_change_new_value\>
-SMAEUROPE\\PRODUCTION\</global_change_new_value\>
-
-\<global_change_partial_update\>false\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Windows_Command_Line\</global_change_tag_id\>
-
-\<global_change_current_value\>C:\\\</global_change_current_value\>
-
-\<global_change_new_value\>D:\\\</global_change_new_value\>
-
-\<global_change_partial_update\>true\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Windows_Working_Directory\</global_change_tag_id\>
-
-\<global_change_current_value\>C:\\\</global_change_current_value\>
-
-\<global_change_new_value\>D:\\\</global_change_new_value\>
-
-\<global_change_partial_update\>true\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Unix_User_Id\</global_change_tag_id\>
-
-\<global_change_current_value\>root\</global_change_current_value\>
-
-\<global_change_new_value\>admin\</global_change_new_value\>
-
-\<global_change_partial_update\>false\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Unix_Group_Id\</global_change_tag_id\>
-
-\<global_change_current_value\>root\</global_change_current_value\>
-
-\<global_change_new_value\>group01\</global_change_new_value\>
-
-\<global_change_partial_update\>false\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Unix_Start_Image\</global_change_tag_id\>
-
-\<global_change_current_value\>test.sh\</global_change_current_value\>
-
-\<global_change_new_value\>test001.sh\</global_change_new_value\>
-
-\<global_change_partial_update\>true\</global_change_partial_update\>
-
-\</global_change\>
-
-\<global_change\>
-
-\<global_change_tag_id\>Unix_Parameter\</global_change_tag_id\>
-
-\<global_change_current_value\>Schedule\</global_change_current_value\>
-
-\<global_change_new_value\>Test_Schedule\</global_change_new_value\>
-
-\<global_change_partial_update\>true\</global_change_partial_update\>
-
-\</global_change\>
-
-\</global_change_file\>
+```xml
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?\>
+<global_change_file\>
+<global_change\>
+<global_change_tag_id\>Schedule_Name</global_change_tag_id\>
+<global_change_current_value\>TTEST</global_change_current_value\>
+<global_change_new_value\>S-TEST1</global_change_new_value\>
+<global_change_partial_update\>false</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Job_Name</global_change_tag_id\>
+<global_change_current_value\>WJOB001</global_change_current_value\>
+<global_change_new_value\>PROD-JOB001</global_change_new_value\>
+<global_change_partial_update\>false</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Frequency_Name</global_change_tag_id\>
+<global_change_current_value\>SatSun</global_change_current_value\>
+<global_change_new_value\>WeekEnd</global_change_new_value\>
+<global_change_partial_update\>false</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Job_Machine_Name</global_change_tag_id\>
+<global_change_current_value\>VM-BVH-OPCON45</global_change_current_value\>
+<global_change_new_value\>VM_BVH_NEW</global_change_new_value\>
+<global_change_partial_update\>false</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Windows_User</global_change_tag_id\>
+<global_change_current_value\>SMAEUROPE\\TEST</global_change_current_value\>
+<global_change_new_value\>SMAEUROPE\\PRODUCTION</global_change_new_value\>
+<global_change_partial_update\>false</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Windows_Command_Line</global_change_tag_id\>
+<global_change_current_value\>C:\\</global_change_current_value\>
+<global_change_new_value\>D:\\</global_change_new_value\>
+<global_change_partial_update\>true</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Windows_Working_Directory</global_change_tag_id\>
+<global_change_current_value\>C:\\</global_change_current_value\>
+<global_change_new_value\>D:\\</global_change_new_value\>
+<global_change_partial_update\>true</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Unix_User_Id</global_change_tag_id\>
+<global_change_current_value\>root</global_change_current_value\>
+<global_change_new_value\>admin</global_change_new_value\>
+<global_change_partial_update\>false</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Unix_Group_Id</global_change_tag_id\>
+<global_change_current_value\>root</global_change_current_value\>
+<global_change_new_value\>group01</global_change_new_value\>
+<global_change_partial_update\>false</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Unix_Start_Image</global_change_tag_id\>
+<global_change_current_value\>test.sh</global_change_current_value\>
+<global_change_new_value\>test001.sh</global_change_new_value\>
+<global_change_partial_update\>true</global_change_partial_update\>
+</global_change\>
+<global_change\>
+<global_change_tag_id\>Unix_Parameter</global_change_tag_id\>
+<global_change_current_value\>Schedule</global_change_current_value\>
+<global_change_new_value\>Test_Schedule</global_change_new_value\>
+<global_change_partial_update\>true</global_change_partial_update\>
+</global_change\>
+</global_change_file\>
+```
 
 ## Logging
 
@@ -735,38 +561,22 @@ redirect the output to your own log file. Use \> to create a new file or
 and the LSAM's configuration file must be set to "Capture Job Output"
 if you want to use the View Job Output feature.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** To create a new     | | circular                         | file:                            |
-| background](../../../Reso        |                                  |
-| urces/Images/example-icon(48x48) | C:\\Program                      |
-| .png "Example icon") | Files\\OpConxps\\EnterpriseMana  |
-|                                  | ger\\tools\>schedule_extract.cmd |
-|                                  | -opconuser                       |
-|                                  |                                  |
-|                                  | ocadm -opconpassword opconxps    |
-|                                  | -opconprofile OpCon -s AdHoc -o  |
-|                                  | AdHoc.txt -c y -                 |
-|                                  |                                  |
-|                                  | p y -v y **\>                    |
-|                                  | C:\\Extr                         |
-|                                  | act\\Log\\schedule_extract.log** |
-+----------------------------------+----------------------------------+
+:::tip Example
+To create a new file:
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** To append:          | | circular                         |                                  |
-| background](../../../Reso        | C:\\Program                      |
-| urces/Images/example-icon(48x48) | Files\\OpConxps\\EnterpriseMana  |
-| .png "Example icon") | ger\\tools\>schedule_extract.cmd |
-|                                  | -opconuser                       |
-|                                  |                                  |
-|                                  | ocadm -opconpassword opconxps    |
-|                                  | -opconprofile OpCon -s AdHoc -o  |
-|                                  | AdHoc.txt -c y -                 |
-|                                  |                                  |
-|                                  | p y -v y                         |
-|                                  | **\>\> C:\\Extr                  |
-|                                  | act\\Log\\schedule_extract.log** |
-+----------------------------------+----------------------------------+
+```shell
+C:\Program Files\OpConxps\EnterpriseManager\tools>schedule_extract.cmd -opconuser ocadm -opconpassword opconxps -opconprofile OpCon -s AdHoc -o AdHoc.txt -c y -p y -v y > C:\Extract\Log\schedule_extract.log
+```
+
+:::
+
+:::tip Example
+
+```shell
+C:\Program Files\OpConxps\EnterpriseManager\tools>schedule_extract.cmd -opconuser ocadm -opconpassword opconxps -opconprofile OpCon -s AdHoc -o AdHoc.txt -c y -p y -v y >> C:\Extract\Log\schedule_extract.log
+```
+
+:::
 
 ## Exit Codes
 

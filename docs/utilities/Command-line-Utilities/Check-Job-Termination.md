@@ -12,15 +12,14 @@ of a job's exit code.
 
 ## Rules
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** If formatting an    | | circular                         | SMACheckTerm command line to     |
-| background](../../../Reso        | check a UNIX job, the command    |
-| urces/Images/example-icon(48x48) | line would look something like   |
-| .png "Example icon") | this:                            |
-|                                  |                                  |
-|                                  | SMACheckTerm.exe JobA ScheduleA  |
-|                                  | "\[\[$SCHEDULE DATE\]\]"      | |                                  | "+000000001:0000:N"            |
-+----------------------------------+----------------------------------+
+:::tip Example
+If formatting an SMACheckTerm command line to check a UNIX job, the command line would look something like this:
+
+```shell
+SMACheckTerm.exe JobA ScheduleA "[[$SCHEDULE DATE]]" "+000000001:0000:N"
+```
+
+:::
 
 ## Logging
 
@@ -40,19 +39,11 @@ use the following naming convention: yyyy_mm_dd (Weekday). The logging
 mechanism generates the weekday name according to the Regional Settings
 of the user executing the utility.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** If the Regional     | | circular                         | Settings are set to English, an  |
-| background](../../../Reso        | archive folder would have the    |
-| urces/Images/example-icon(48x48) | following name: 2008_01_11       |
-| .png "Example icon") | (Friday).                        |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | If the Regional Settings are set |
-|                                  | to French, an archive folder     |
-|                                  | would have the following name:   |
-|                                  | 2008_01_11 (Vendredi).           |
-+----------------------------------+----------------------------------+
+:::tip Example
+If the Regional Settings are set to English, an archive folder would have the following name: 2008_01_11 (Friday).
+
+If the Regional Settings are set to French, an archive folder would have the following name: 2008_01_11 (Vendredi).
+:::
 
 Once per day the SAM deletes old archive folders. The SAM retains 10
 days of archived logs by default. If desired, change the Logging

@@ -2012,21 +2012,15 @@ error number and description varies from system to system. Moreover, a
 system call often has multiple failure modes; consequently, the same
 message ID may be followed by a variety of error codes.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | a Detailed LSAM Message which    |
-| background](../../Reso           | might be returned for a LSAM     |
-| urces/Images/example-icon(48x48) | exit code of 000010205:          |
-| .png "Example icon") |                                  |
-|                                  | \[sma_lsam\] (monitor) - Unable  | |                                  | to execute \[/usr/john/job_1\]   |
-|                                  | for \[JOB1\] (120 / 2 \[ENOENT\] | |                                  | - No such file or directory)     |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | In this case, the user should    |
-|                                  | check what was entered for       |
-|                                  | "Start Image" on the Job       |
-|                                  | Details screen.                  |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following shows a Detailed LSAM Message which might be returned for a LSAM exit code of 000010205:
+
+```shell
+[sma_lsam] (monitor) - Unable to execute [/usr/john/job_1] for [JOB1] (120 / 2 [ENOENT] - No such file or directory)
+```
+
+In this case, the user should check what was entered for "Start Image" on the Job Details screen.
+:::
 
 There are currently over 500 messages which might be output, making a
 listing of each impractical. The following table lists the messages
@@ -2402,24 +2396,20 @@ Scripts using the sma_status utility can use the 20-character message area to di
 
 : UNIX LSAM Messages
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | UNIX job (Ujob1) running in      |
-| background](../../Reso           | Schedule Operations without a    |
-| urces/Images/example-icon(48x48) | user-defined status message:     |
-| .png "Example icon") |                                  |
-|                                  | Ujob1 (Daily) (Job Running --    |
-|                                  | PID = 29613)                     |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | The following shows a UNIX job   |
-|                                  | (Ujob2) running in Schedule      |
-|                                  | Operations with a user-defined   |
-|                                  | status message:                  |
-|                                  |                                  |
-|                                  | Ujob2 (Daily) (Job Running --    |
-|                                  | Starting Step 1)                 |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following shows UNIX job (Ujob1) running in Schedule Operations without a user-defined status message:
+
+```shell
+Ujob1 (Daily) (Job Running – PID = 29613)
+```
+
+The following shows a UNIX job (Ujob2) running in Schedule Operations with a user-defined status message:
+
+```shell
+Ujob2 (Daily) (Job Running – Starting Step 1)
+```
+
+:::
 
 ### UNIX LSAM Exit Codes
 
@@ -2624,21 +2614,15 @@ error number and text varies from system to system. Also, a system call
 often has multiple failure modes, so the same message ID can be followed
 by a variety of error codes.
 
-+----------------------------------+----------------------------------+
-| ![White pencil icon on green     | **EXAMPLE:** The following shows | | circular                         | a LSAM Error Message which might |
-| background](../../Reso           | be returned for a LSAM exit code |
-| urces/Images/example-icon(48x48) | of 000010205:                    |
-| .png "Example icon") |                                  |
-|                                  | \[sma_lsam\] (monitor) - Unable  | |                                  | to execute \[/usr/john/job_1\]   |
-|                                  | for \[JOB1\] (120 / 2 \[ENOENT\] | |                                  | - No such file or directory)     |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | In this case, the user should    |
-|                                  | check what was entered for       |
-|                                  | "Start Image" on the Job       |
-|                                  | Details screen.                  |
-+----------------------------------+----------------------------------+
+:::tip Example
+The following shows a LSAM Error Message which might be returned for a LSAM exit code of 000010205:
+
+```shell
+[sma_lsam] (monitor) - Unable to execute [/usr/john/job_1] for [JOB1] (120 / 2 [ENOENT] - No such file or directory)
+```
+
+In this case, the user should check what was entered for "Start Image" on the Job Details screen.
+:::
 
 The following is a list of UNIX LSAM exit codes specifically for File
 Arrival jobs.
