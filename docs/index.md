@@ -1,36 +1,22 @@
 ---
 slug: '/'
-sidebar_label: 'Product Name'
 ---
 
-# Tutorial Intro
+# OpCon
 
-Let's discover **Docusaurus in less than 5 minutes**.
+OpCon (Operations Console Cross-Platform Scheduler) is an enterprise-wide, heterogeneous workflow automation and orchestration platform.
 
-## Getting Started
+The current release is **OpCon 21.0.0**.
 
-Get started by **creating a new site**.
+The following sections contain more information:
 
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+- [Release Notes](./release-notes.md)
+- [Concepts](./components.md)
+- [Installation](./installation/whats-new.md)
+- [Database Information](./Files/Database-Information/Failover-Scenarios.md)
+- [Events](./events/introduction.md)
+- [Server Programs](./server-programs/introduction.md)
+- [Reports](./reports/overview.md)
+- [Solution Manager](./Files/UI/Solution-Manager/Getting-Started.md)
+- [Enterprise Manager](./Files/UI/Solution-Manager/Logging-In.md)
+- [Utilities](./utilities/overview.md)

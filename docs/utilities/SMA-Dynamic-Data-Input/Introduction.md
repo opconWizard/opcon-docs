@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Introduction'
+---
+
 # SMA Dynamic Data Input Introduction
 
 SMA Dynamic Data Input (SMADDI) is an optional component of
@@ -8,8 +12,7 @@ procedures used to update the database. The **SMA OpCon DDI Install**
 package installs the SMADDI service. The **SMA OpCon Database Scripts
 Install** package includes the application of the SMADDI stored
 procedures to the OpCon database. Both
-installation packages can be found in the\
-\<Target Directory\>\\Install\\\_Exe directory. For installation
+installation packages can be found in the\\<Target Directory\>\\Install\\\_Exe directory. For installation
 instructions on either package, refer to the **OpCon Installation**
 online help.
 

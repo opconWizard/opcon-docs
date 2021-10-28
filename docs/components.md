@@ -4,7 +4,7 @@ sidebar_label: Getting Started
 
 # Getting Started with OpCon
 
-OpCon (Operations Console Cross-Platform Scheduler) is an enterprise-wide, heterogeneous workflow automation system. The OpCon Server components include the database and Schedule Activity Monitor (SAM) and supporting services. On user workstations, desktop clients connect to the database and web-based interfaces connect to web services to manage the data for automation. The agents responsible for executing jobs are called Local Schedule Activity Monitors (LSAMs).
+The OpCon Server components include the database and Schedule Activity Monitor (SAM) and supporting services. On user workstations, desktop clients connect to the database and web-based interfaces connect to web services to manage the data for automation. The agents responsible for executing jobs are called Local Schedule Activity Monitors (LSAMs).
 
 ## OpCon Architecture Overview
 

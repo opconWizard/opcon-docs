@@ -5,7 +5,7 @@ module.exports = {
     {
       type: 'category', 
       label: 'Concepts',
-      collapsed: false,
+      collapsed: true,
       items: [
         'components',
         'file-locations',
@@ -522,6 +522,7 @@ module.exports = {
       label: 'Utilities',
       collapsed: true,
       items: [
+        'utilities/overview',
         {
           type: 'category', 
           label: 'Command-line Utilities',
