@@ -3,7 +3,7 @@
 This topic covers the steps for setting up OpCon to automate the setup
 and tear-down of Microsoft SQL Replication.
 
-[]{#aanchor59} Database replication is one of the options provided by SQL Server to improve the availability of a database. Database
+Database replication is one of the options provided by SQL Server to improve the availability of a database. Database
 replication is based on a publishing industry metaphor, and there are
 three roles to be fulfilled in a database replication topology:
 publisher, distributor, and subscriber. There are three types of

@@ -168,6 +168,30 @@ module.exports = {
     },
     {
       type: 'category', 
+      label: 'Database',
+      collapsed: true,
+      items: [
+        'Files/Database-Information/Failover-Scenarios',
+        'Files/Database-Information/Manual-Setup-for-Microsoft-SQL-Replication',
+        'Files/Database-Information/Setup-for-Automatic-Microsoft-SQL-Replication',
+        'Files/Database-Information/Failover-and-Recovery-with-Replication',
+        'Files/Database-Information/Setup-for-Automatic-Microsoft-SQL-Mirroring',
+        'Files/Database-Information/Manual-Database-Backups-and-Restoration',
+        'Files/Database-Information/OpCon-Data-Maintenance',
+        'Files/Database-Information/OpCon-Database-Layout',
+        {
+          type: 'category', 
+          label: 'Reference Information',
+          collapsed: true,
+          items: [
+            'Files/Database-Information/Database-Mirroring-Checklist',
+            'Files/Database-Information/Database-Replication-Checklist',
+          ], 
+        },
+      ], 
+    },
+    {
+      type: 'category', 
       label: 'OpCon Events',
       collapsed: true,
       items: [

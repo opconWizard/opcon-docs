@@ -1,26 +1,15 @@
 # OpCon Data Maintenance
 
-[]{#aanchor137} Regular database maintenance for OpCon helps to maintain good performance for all of the OpCon applications. Before using any of
-the scripts in this topic, refer to [Environment Variables](#Environm).
+Regular database maintenance for OpCon helps to maintain good performance for all of the OpCon applications. Before using any of the scripts in this topic, refer to [Environment Variables](#Environm).
 
-This section describes the scripts used to maintain the database through
-OpCon. SMA Technologies suggests:
+This section describes the scripts used to maintain the database through OpCon. SMA Technologies suggests:
 
-- Daily backups of the "master", "msdb", and "distribution"
-    databases to provide further data protection. These backups are used
-    in the event of the loss of the database server, refer to [Job     Details](#Job).
-- Monthly to yearly maintenance with supplemental scripts depending on
-    the need, refer to [Supplemental Stored     Procedures](#Suppleme).
+- Daily backups of the "master", "msdb", and "distribution" databases to provide further data protection. These backups are used in the event of the loss of the database server, refer to [Job Details](#Job).
+- Monthly to yearly maintenance with supplemental scripts depending on the need, refer to [Supplemental Stored     Procedures](#Suppleme).
 
 ## Environment Variables
 
-All database maintenance scripts distributed by SMA Technologies use the
-SMA_SetDBMaintenanceScriptingVariables.cmd and
-SMA_SetDBEnvironmentScriptingVariables.cmd files to set up the
-processing environment. These command files **must** be configured before any of the database maintenance scripts will work as documented
-in this topic. For information on settings in the scripting variables
-files, refer to [Mirroring Information Worksheet](Database-Mirroring-Checklist.md#Mirrorin)
-.
+All database maintenance scripts distributed by SMA Technologies use the SMA_SetDBMaintenanceScriptingVariables.cmd and SMA_SetDBEnvironmentScriptingVariables.cmd files to set up the processing environment. These command files **must** be configured before any of the database maintenance scripts will work as documented in this topic. For information on settings in the scripting variables files, refer to [Mirroring Information Worksheet](Database-Mirroring-Checklist.md#Mirrorin).
 
 ## Supplemental Stored Procedures
 
@@ -30,18 +19,13 @@ SMA Technologies provides several supplemental SQL stored procedures to aid in m
 A SQL user without administrator privileges must be a member of the "opconspuser" role to use the following supplemental stored procedures.
 :::
 
-- [SMA_JOBAVG](#SMA_JOBA): Averages the run time of
-    jobs in the OpCon database history.
-- [SMA_CLEAN_ENS](#SMA_CLEA): Cleans up "orphaned"
-    entries in the ENSSELECTED table of the OpCon database.
-- [SMA_COMPACTTOKENIDS](#SMA_COMP): Re-allocates the
-    IDs for the tokens in the OpCon database to lower the number of the
-    highest token ID.
+- [SMA_JOBAVG](#SMA_JOBA): Averages the run time of jobs in the OpCon database history.
+- [SMA_CLEAN_ENS](#SMA_CLEA): Cleans up "orphaned" entries in the ENSSELECTED table of the OpCon database.
+- [SMA_COMPACTTOKENIDS](#SMA_COMP): Re-allocates the IDs for the tokens in the OpCon database to lower the number of the highest token ID.
 
 ### SMA_JOBAVG
 
-The SMA_JOBAVG stored procedure will automatically calculate average
-start time and run time by frequency for every job it processes.
+The SMA_JOBAVG stored procedure will automatically calculate average start time and run time by frequency for every job it processes.
 
 :::note
 The Job Average utility only uses the run times of jobs in the "FINISHED OK" status. Jobs that are Marked FINISHED OK are not considered. It also uses the first run of the job each day to calculate average start times (Finished OK or Failed status).

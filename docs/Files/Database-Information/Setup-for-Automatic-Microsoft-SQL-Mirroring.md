@@ -1,6 +1,6 @@
 # Setup for Automatic Microsoft SQL Mirroring
 
-[]{#aanchor368} Database mirroring is one of the options provided by SQL Server to increase the availability of a database. Database mirroring
+Database mirroring is one of the options provided by SQL Server to increase the availability of a database. Database mirroring
 can be configured in one of two operating modes, high-performance mode
 or high-safety mode.
 
