@@ -610,5 +610,10 @@ module.exports = {
         }, 
       ], 
     },
+    {
+      type: 'link',
+      label: 'REST API Docs',
+      href: 'https://help.smatechnologies.com/opcon/core/api/21-0.html',
+    },
   ],
 };
