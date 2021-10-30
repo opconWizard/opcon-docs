@@ -251,11 +251,11 @@ drive.
 - SMA Technologies also strongly recommends     that you use the same path for each program and output file location
     on the same machine (e.g., SAM, Database Scripts, Resource Monitor,
     etc.).
-- For the simplest final directory structures, [SMA     Technologies]{.GeneralCompanyName} recommends installing your
+- For the simplest final directory structures, SMA Technologies recommends installing your
     software to a non-system drive (if available). This will keep all
     program, configuration, and output files in the same directory
     structure.
-- If installing to the system drive (e.g., C:\\), [SMA     Technologies]{.GeneralCompanyName} complies with Microsoft standards
+- If installing to the system drive (e.g., C:\\), SMA Technologies complies with Microsoft standards
     to store configuration files in ProgramData.
 - For more information, refer to [File     Locations](../reference/property-expressions-syntax.md) in the
     **Concepts** online help.

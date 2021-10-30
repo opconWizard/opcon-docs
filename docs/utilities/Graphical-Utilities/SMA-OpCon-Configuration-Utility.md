@@ -89,8 +89,8 @@ screen:
 The Profiles section at the bottom of the screen is used for saving all
 of your custom information across all five tabs for the database
 environment. It is important to save your profile because upgrades in
-the future from SMA Technologies will overwrite all of your scripting variables command files. [SMA
-Technologies]{.GeneralCompanyName} will be overwriting these files
+the future from SMA Technologies will overwrite all of your scripting variables command files. SMA
+Technologies will be overwriting these files
 because we often need to change commands within the files themselves.
 When you save a Profile, you can simply apply that profile to the
 scripts and all your custom settings are applied.

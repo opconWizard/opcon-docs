@@ -858,11 +858,11 @@ Review the **Send Email Cc** parameter.
 
 a.  If the value for [Send Email to SMA     Office]{.GeneralSendEmailtoSMAOffice} is Disabled, then leave the
     value for Send Email Cc blank.
-b.  If the value for [Send Email to SMA     Office]{.GeneralSendEmailtoSMAOffice} has [an SMA
-    Technologies]{.GeneralCompanyNameAnLowercase}office selected, set
+b.  If the value for [Send Email to SMA     Office]{.GeneralSendEmailtoSMAOffice} has an SMA
+    Technologies office selected, set
     the value for Send Email Cc to one or more email addresses,
     separated by semicolons (;). These email addresses will be copied
-    any time an automatic email is sent to the [SMA     Technologies]{.GeneralCompanyName} office.
+    any time an automatic email is sent to the SMA Technologies office.
 
 For **Task-based Licensed** customers, review the **Encrypt Task License
 Report** parameter.
@@ -1041,7 +1041,7 @@ Select **SMADBCredentials** in the **Select Global Property** list box.
 In the **Global Property Value** text box, verify the *User Name* and
 *Password*.
 
-a.  **-uocadm** is the default user name for logging in. [SMA     Technologies]{.GeneralCompanyName} recommends updating the default
+a.  **-uocadm** is the default user name for logging in. SMA Technologies recommends updating the default
     value to a user other than ocadm.
 b.  **-w\*\*\*\*\*\*\*\*\*\*\*\*** is the default password for ocadm.
     Replace the 12 asterisks with the actual password for ocadm. The
@@ -1233,7 +1233,7 @@ After SMA Technologies responds to the license request, save the license file to
 If the license file is encrypted after being received from SMA Technologies (e.g., saved to a Windows folder set with the "Encrypt contents to secure data" option), SAM will not be able to read the license file.
 :::
 
-1. Open your email program to get the license file from [SMA     Technologies]{.GeneralCompanyName}.
+1. Open your email program to get the license file from SMA Technologies.
 2. Open the email message containing the license file.
 3. Right-click the **license file** and select **Save As**.
 4. Browse to the \<Configuration Directory\>**\\SAM** directory.

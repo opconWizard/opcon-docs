@@ -145,7 +145,7 @@ each parameter is also provided. The letter '**O**' means optional,
     does not check the subschedules that may be involved with the
     schedule.
   - If CHECK is used for the command, the process runs without
-        checking any circular dependencies. [SMA         Technologies]{.GeneralCompanyName} advises this command if the
+        checking any circular dependencies. SMA Technologies advises this command if the
         process is being used frequently.
   - If CHECK+ is used, circular dependencies are included in the
         process.

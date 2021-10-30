@@ -70,7 +70,7 @@ following:
 - $ARGUMENTS is a placeholder for the location where the Agent should
     place the arguments when constructing the command to send to the
     operating system.
-  - This placeholder is optional for each runner, but [SMA         Technologies]{.GeneralCompanyName} recommends that you include
+  - This placeholder is optional for each runner, but SMA Technologies recommends that you include
         it for every runner to reduce the number of runners defined.
   - This placeholder will be replaced at runtime with any script
         parameters included on the job definition screen.

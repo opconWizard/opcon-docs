@@ -119,7 +119,7 @@ This job can be added to the daily using an event with various values of Run_Tim
     sub-directories under the specified file path.
 - **File Creation Time Stamp Window, Relative to Midnight (in
     days,hrs,mins or a token)**: Defines the time frame that the program
-    uses to watch for the arrival of the file. As best practice, [SMA     Technologies]{.GeneralCompanyName} recommends setting the time frame
+    uses to watch for the arrival of the file. As best practice, SMA Technologies recommends setting the time frame
     to be close to the expected time of arrival (e.g., if the file is
     expected to arrive in the evening, set the time frame to evening
     hours).
