@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Manual Setup for Replication'
+---
+
 # Manual Setup for Microsoft SQL Replication
 
 This section covers the manual steps for setting up Microsoft SQL Replication.

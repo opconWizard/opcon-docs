@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Manual Backups'
+---
+
 # Manual Database Backups and Restoration
 
 Automation of backups is a more efficient and reliable method for database maintenance; however, if automation is not an option, manually back up the database on a regular basis. SMA Technologies recommends regular backups of the OpCon database, transaction logs, and system databases. There are two reasons for these backups:

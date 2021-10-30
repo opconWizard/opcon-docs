@@ -178,7 +178,6 @@ module.exports = {
         'Files/Database-Information/Setup-for-Automatic-Microsoft-SQL-Mirroring',
         'Files/Database-Information/Manual-Database-Backups-and-Restoration',
         'Files/Database-Information/OpCon-Data-Maintenance',
-        'Files/Database-Information/OpCon-Database-Layout',
         {
           type: 'category', 
           label: 'Reference Information',

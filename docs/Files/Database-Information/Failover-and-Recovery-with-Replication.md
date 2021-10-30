@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Failover with Replication'
+---
+
 # Failover and Recovery with Replication
 
 This section is a guide for manual OpCon failover and recovery with replication including the topics:
