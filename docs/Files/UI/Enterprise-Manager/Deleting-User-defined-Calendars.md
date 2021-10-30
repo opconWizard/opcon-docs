@@ -16,10 +16,10 @@ Remove the Calendar from the Schedule Master Tables
     and click the **Remove** button.
 5. Click the **Yes** button to confirm the deletion or click the **No**
     button to cancel the deletion.
-6. Repeat [Steps 4 and 5]{.ul} for all jobs using the calendar to
+6. Repeat Steps 4 and 5 for all jobs using the calendar to
     delete.
 
-[]{#Remove_the_Calendar_from_the_Job_Master_Tables}Remove the Calendar from the Job Master Tables
+Remove the Calendar from the Job Master Tables
 
 1. Double-click on **Job Master** under the **Administration** topic.
     The **Job Master** screen displays.
@@ -30,7 +30,7 @@ Remove the Calendar from the Schedule Master Tables
     and click the **Remove** button.
 6. Click the **Yes** button to confirm the deletion or click the **No**
     button to cancel the deletion.
-7. Repeat [Step 6]{.ul} for all jobs using the calendar to be deleted.
+7. Repeat Step 6 for all jobs using the calendar to be deleted.
 8. Click **Close ☒** (to the right of the **Job Master** tab) to close
     the **Job Master** screen.
 
@@ -40,11 +40,11 @@ Delete the Calendar
     The **Calendars** screen displays.
 2. Select the calendar in the **Selection** drop-down list.
 3. Ensure that no schedules are using the calendar. If the box contains
-    a schedule, refer to [[Remove the Calendar from the Job Master     Tables](#Remove_the_Calendar_from_the_Job_Master_Tables)
-    ]{.Hyperlink} procedure.
+    a schedule, refer to [Remove the Calendar from the Job Master     Tables](#Remove_the_Calendar_from_the_Job_Master_Tables)
+     procedure.
 4. Ensure that no jobs are using the calendar. If the box contains a
-    job, refer to [[Remove the Calendar from the Job Master     Tables](#Remove_the_Calendar_from_the_Job_Master_Tables)
-    ]{.Hyperlink} procedure.
+    job, refer to [Remove the Calendar from the Job Master     Tables](#Remove_the_Calendar_from_the_Job_Master_Tables)
+     procedure.
 5. Click ![Remove     icon](../../../Resources/Images/EM/EMdelete.png "Remove icon")
     **Remove** on the **Calendars** toolbar.
 6. Click the **Yes** button to confirm the deletion or click the **No**

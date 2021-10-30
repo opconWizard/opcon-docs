@@ -22,8 +22,8 @@ depending on the type of event you wish to copy.
 
 Do one of the following:
 
-a.  [(If Frequency Related)]{.optional-text} Select the **frequency** in     the **Frequency list** then proceed to [Step 7]{.ul}.
-b.  [(If Job Related)]{.optional-text} Proceed to [Step 7]{.ul}.
+a.  If Frequency Related: Select the **frequency** in     the **Frequency list** then proceed to Step 7.
+b.  If Job Related: Proceed to Step 7.
 
 Right-click on **event** in the **Events** list.
 
@@ -41,8 +41,8 @@ depending on the type of event you wish to copy.
 
 Do one of the following:
 
-a.  [(If Frequency Related)]{.optional-text} Select the **frequency** in     the **Frequency list** then proceed to [Step 14]{.ul}.
-b.  [(If Job Related)]{.optional-text} Proceed to [Step 14]{.ul}.
+a.  If Frequency Related: Select the **frequency** in     the **Frequency list** then proceed to Step 14.
+b.  If Job Related: Proceed to Step 14.
 
 Right-click inside the **Events** list.
 

@@ -1,10 +1,4 @@
----
-lang: en-us
-title: Printing Reports
-viewport: width=device-width, initial-scale=1.0
----
-
-#  Printing Reports
+# Printing Reports
 
 To print a report:
 
@@ -25,7 +19,7 @@ button.
 Click the **OK** button.
 
 Click the **Open** button to continue the print process or continue to
-[Step 9]{.ul}:
+Step 9:
 
 a.  Click on the **File** menu in the **Adobe Acrobat** window.
 b.  Click the **Print** menu option.
@@ -35,6 +29,3 @@ d.  Click the **Print** button to print the report.
 Click the **Save** button to save to a specific location and print at a
 later time.
 :::
-
- 
-

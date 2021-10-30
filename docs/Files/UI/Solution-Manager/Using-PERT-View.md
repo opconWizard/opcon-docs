@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Using PERT View
-viewport: width=device-width, initial-scale=1.0
----
-
 # Using PERT View
 
 PERT functionality renders on-demand diagrams that show job dependency
@@ -44,8 +38,8 @@ job's current job status, as indicated below:
     Time]{.skd-job-statuses}.
 - Red - Indicates the underlying job has a status of
     Failed. -   Gray - Indicates the underlying job has a status of
-    [Qualifying]{.skd-job-statuses}. -   Turquoise - Indicates the underlying job has a status of
-    [Held]{.skd-job-statuses}.
+    Qualifying. -   Turquoise - Indicates the underlying job has a status of
+    Held.
 Tooltips are available for Status and Alert icons within nodes in the
 diagram.
 
@@ -86,12 +80,10 @@ value of the dependency is displayed as a tooltip.
 
 Within nodes, these icons represent the following:
 
-- ![Threshold/Recource Update Icon in PERT     View](../../../Resources/Images/SM/PERTThresResIcon.png "Threshold/Recource Update Icon in PERT View"){.flat
-    width="25px"} - Indicates that there are threshold/resource updates
+- ![Threshold/Recource Update Icon in PERT     View](../../../Resources/Images/SM/PERTThresResIcon.png "Threshold/Recource Update Icon in PERT View") - Indicates that there are threshold/resource updates
     associated with underlying Daily jobs. When hovered over the icon,
     the associated update is displayed as a tooltip.
-- ![OpCon Events Icon in PERT     View](../../../Resources/Images/SM/PERTEventsIcon.png "OpCon Events Icon in PERT View"){.flat
-    width="25px"} - Indicates that there are OpCon Events associated
+- ![OpCon Events Icon in PERT     View](../../../Resources/Images/SM/PERTEventsIcon.png "OpCon Events Icon in PERT View") - Indicates that there are OpCon Events associated
     with underlying Daily jobs. When hovered over the icon, the
     associated event is displayed as a tooltip.
 - ![Expression Dependency Icon in PERT     View](../../../Resources/Images/SM/PERTExprDepsIcon.png "Expression Dependency Icon in PERT View"){.flat

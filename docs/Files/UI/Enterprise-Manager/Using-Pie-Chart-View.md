@@ -4,7 +4,7 @@ The **Pie Chart** view is used to represent a schedule that provides
 corresponding colors for the job statuses. There are a few preferences
 relating to the pie chart that can be changed according to your
 preference. For additional information on changing these preferences,
-refer to [[Setting Preferences for Charts](Preferences-for-Charts.md)]{.Hyperlink}.
+refer to [Setting Preferences for Charts](Preferences-for-Charts.md).
 
 When on the**Pie Chart** screen, it shows a pie chart representation of
 jobs grouped together by status for either a schedule or a day. When
@@ -38,11 +38,7 @@ The **Pie Chart** view also has the following right-click menu options:
 
 - **Jobs list:** This will open the **Jobs \<job status name\>**
     dialog and display the jobs that match the selection of the pie. The
-    dialog provides buttons to **Edit Master** and **Edit Daily**. For
-    more information, refer to [[Using Pie Chart     View](#chapter_3_-_operation_4154347757_1331583){.Heading_And_Page
-    .MCXref .xref .xrefHeading_And_Page}]{.Hyperlink} or [[Using Pie     Chart
-    View](#chapter_3_-_operation_4154347757_1237378){.Heading_And_Page
-    .MCXref .xref .xrefHeading_And_Page}]{.Hyperlink}.
+    dialog provides buttons to **Edit Master** and **Edit Daily**.
 - **Refresh Chart:** This will refresh the displayed items in the pie
     chart.
 

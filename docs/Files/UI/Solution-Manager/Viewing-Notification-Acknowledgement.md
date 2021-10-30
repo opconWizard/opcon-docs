@@ -1,27 +1,27 @@
 # Viewing Notification Acknowledgement
 
 The **Notification Acknowledgement** page is used to view and
-acknowledge [escalations]{.GeneralEscalatedNotificationPlural}. For more conceptual information, refer to
+acknowledge escalations. For more conceptual information, refer to
 [Escalation](../../../notifications/Escalation.md) in the
 **Concepts** online help.
 
 When on the **Notification Acknowledgement** screen, it lists any
-[escalations]{.GeneralEscalatedNotificationPlural} that have not been acknowledged. The screen shows the following information for each
-[escalation]{.GeneralEscalatedNotification}:
+escalations that have not been acknowledged. The screen shows the following information for each
+escalation:
 
 - **Date & Time**: The date and time of the
-    [escalation]{.GeneralEscalatedNotification}. -   **Notification**: The subject of the email notification pending
+    escalation. -   **Notification**: The subject of the email notification pending
     acknowledgment.
 - **Escalation Level**: The current level of the
-    [escalation]{.GeneralEscalatedNotification}, as defined in the rule     sequence.
+    escalation, as defined in the rule     sequence.
 - **Status**: The current state of the
-    [escalation]{.GeneralEscalatedNotification}'s acknowledgment.     Status has three states:
-  - **Pending**: An [escalation]{.GeneralEscalatedNotification} is         awaiting acknowledgment and has been sent to one or more groups
+    escalation's acknowledgment.     Status has three states:
+  - **Pending**: An escalation is         awaiting acknowledgment and has been sent to one or more groups
         of users who are part of the
-        [escalation]{.GeneralEscalatedNotification} rule.     -   **Exhausted**: An [escalation]{.GeneralEscalatedNotification}
+        escalation rule.     -   **Exhausted**: An escalation
         has been sent to all groups of users in the rule, but has not
         been acknowledged.
-  - **Acknowledged**: An [escalation]{.GeneralEscalatedNotification}         has been acknowledged. The notification will soon automatically
+  - **Acknowledged**: An escalation         has been acknowledged. The notification will soon automatically
         disappear after acknowledgment.
 
 ## Acknowledging Escalations

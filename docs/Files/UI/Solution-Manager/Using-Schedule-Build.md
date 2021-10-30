@@ -35,7 +35,7 @@ a master schedule:
     the schedule is found on the target date, this toggle switch
     indicates if the schedule should be overwritten. When this setting
     is on, OpCon overwrites the schedule if it is in a
-    [Completed]{.skd-job-statuses} status. If the schedule is [In     Process]{.skd-job-statuses}, it will not be overwritten. The toggle
+    Completed status. If the schedule is In Process, it will not be overwritten. The toggle
     switch will appear red ![Schedule Build Overwrite Existing     Schedules](../../../Resources/Images/SM/Schedule-Build-Overwrite-Existing-Schedules.png "Schedule Build Overwrite Existing Schedules")
     when enabled.
 - **Name**: This field defines the name of the schedule. Select the

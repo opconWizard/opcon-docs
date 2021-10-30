@@ -290,7 +290,7 @@ Click the **New Query** button on the toolbar.
 Enter the command for the **SMA_CLEAN_ENS** stored procedure.
 
 :::tip Example
-EXEC SMA_CLEAN_ENS]{style="font-family: 'Courier New';font-size: 11.5pt;"}
+EXEC SMA_CLEAN_ENS
 :::
 
 Click the **Execute** button on the toolbar or press **F5** to execute

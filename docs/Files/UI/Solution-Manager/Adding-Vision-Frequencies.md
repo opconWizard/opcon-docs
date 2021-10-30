@@ -34,7 +34,7 @@ directly on the calendars.
 
 Click the **Save** button.
 
-[Defining SLA]{.ul}
+## Defining SLA
 
 :::note
 A Vision license is required to define SLA. For more information, refer to [License File Request and Storing](Working-with-Vision.md#License) in the **Solution Manager** online help.
@@ -46,7 +46,7 @@ c.  Select the **Time**.
 d.  Select the *day offset* in the **Day** drop-down.
 e.  Click **OK**.
 
-[Defining Trigger(s)]{.ul}
+## Defining Trigger(s)
 
 :::note
 A Vision license is required to define Triggers. For more information, refer to [License File Request and Storing](Working-with-Vision.md#License) in the **Solution Manager** online help.

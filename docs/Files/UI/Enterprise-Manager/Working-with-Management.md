@@ -6,7 +6,7 @@ viewport: width=device-width, initial-scale=1.0
 
 # Working with Management {#working-with-management style="margin-bottom: 6pt;"}
 
-The **Management** topic in the [Navigation Panel]{.GeneralNavigation} provides the views to manage the Audit Management, History Management,
+The **Management** topic in the Navigation Panel provides the views to manage the Audit Management, History Management,
 and Notification Manager information.
 
 Click on any **Management** [function item[[]{.MCTextPopupArrow}Fuction items are displayed as icons with descriptions in the Navigation

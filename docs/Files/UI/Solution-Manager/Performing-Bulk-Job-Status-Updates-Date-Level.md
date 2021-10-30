@@ -2,8 +2,8 @@
 
 The **Operations** module has made performing mass action on job status
 updates at the date level easier. For example, with a few simple steps,
-you can update a job's status for a selected date to [Mark Finished OK]{.skd-job-statuses} when the job's current state is in [Waiting,
-Held]{.skd-job-statuses}.
+you can update a job's status for a selected date to Mark Finished OK when the job's current state is in Waiting,
+Held.
 
 To perform bulk job status updates:
 
@@ -46,15 +46,15 @@ date(s) as Failed, based on a filter.
 **Mark Finished OK**: This option allows you to mark all jobs on the
 selected date(s) as Finished OK, based on a filter.
 **Mark Fixed**: This option allows you to mark all jobs on the selected
-date(s) as [Fixed]{.skd-job-statuses}, based on a filter.
+date(s) as Fixed, based on a filter.
 **Mark Under Review**: This option allows you to mark all jobs on the
-selected date(s) as [Under Review]{.skd-job-statuses}, based on a filter.
+selected date(s) as Under Review, based on a filter.
 
 **Release**: This option allows you to place all held jobs on the
-selected date(s) back into a [Qualifying]{.skd-job-statuses} state, based on a filter. Jobs start as soon as all dependencies are met.
+selected date(s) back into a Qualifying state, based on a filter. Jobs start as soon as all dependencies are met.
 
 **Restart**: This option allows you to place all jobs on the selected
-date(s) back in a [Qualifying]{.skd-job-statuses} state, based on a filter. Jobs are started as soon as all dependencies are met.
+date(s) back in a Qualifying state, based on a filter. Jobs are started as soon as all dependencies are met.
 
 For Container jobs, additional options are available to perform bulk
 Restart operations:
@@ -111,7 +111,7 @@ Enter or select the change status reason and click **Apply**.
 
 **Scenario 3**: If multiple dates are selected and the dates contain
 multiple Container jobs and **Restart** is selected from the **Change
-all Job Statuses to** drop-down, then follow [steps a - c]{.ul} of Scenario 2. Keep in mind that clicking the **Custom** button in this
+all Job Statuses to** drop-down, then follow steps a - c of Scenario 2. Keep in mind that clicking the **Custom** button in this
 scenario will display each selected date along the Container job(s)
 associated with each date.
 
@@ -123,7 +123,7 @@ To hide the associated Container jobs in the **Job Containers Action** frame, si
 selected date(s) in an On Hold state on restart, based on a filter.
 
 **Skip**: This option allows you to place all jobs on the selected
-date(s) in a [Job to be Skipped]{.skd-job-statuses} state until they qualify to start. When the jobs qualify, the jobs are skipped and the
+date(s) in a Job to be Skipped state until they qualify to start. When the jobs qualify, the jobs are skipped and the
 job dependencies of all subsequent jobs will be met.
 
 :::note

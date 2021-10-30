@@ -1,12 +1,6 @@
----
-lang: en-us
-title: Working with Security
-viewport: width=device-width, initial-scale=1.0
----
+# Working with Security
 
-# []{#top}Working with Security
-
-The **Security** topic in the [Navigation Panel]{.GeneralNavigation} provides the views to manage the User Accounts and User Privileges
+The **Security** topic in the Navigation Panel provides the views to manage the User Accounts and User Privileges
 information.
 
 Click on any **Administration** [function item[[]{.MCTextPopupArrow}Fuction items are displayed as icons with

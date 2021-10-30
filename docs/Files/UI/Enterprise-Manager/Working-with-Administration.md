@@ -1,6 +1,6 @@
 # Working with Administration
 
-The **Administration** topic in the [Navigation Panel]{.GeneralNavigation} provides the screen information and procedures for the [editors](Navigation-Editors.md) and
+The **Administration** topic in the Navigation Panel provides the screen information and procedures for the [editors](Navigation-Editors.md) and
 [views](Navigation-Views.md).
 
 :::note

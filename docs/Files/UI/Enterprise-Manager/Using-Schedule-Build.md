@@ -62,23 +62,23 @@ If a schedule is being built for a date prior to the current date, the user will
 Click the **OK** button.
 
 :::note
-Schedules built on Hold will appear [blue]{style="color: #1e90ff; font-weight: bold;"}. Schedules built as **Released** will appear **green**. Hovering the mouse over a row in the **Build Results** table will display the details about the specific schedule build including the log file details.
+Schedules built on Hold will appear **blue**. Schedules built as **Released** will appear **green**. Hovering the mouse over a row in the **Build Results** table will display the details about the specific schedule build including the log file details.
 :::
 
-If the Define schedule instance checkbox [was not]{.ul} selected:
+If the Define schedule instance checkbox was not selected:
 Click **Close ☒** (top-right-hand side of screen) to close the **Build
 Schedules** dialog.
 
-If the Define schedule instance checkbox [was]{.ul} selected and the schedule [is not]{.ul} associated with any named instances:
+If the Define schedule instance checkbox was selected and the schedule is not associated with any named instances:
 
 Do the following in the **Define Schedule Instance** dialog:
 
 a.  Enter a set of one or more *property definitions* using the
     following format: **PropertyName=PropertyValue**. Separate each
     definition with a semicolon (;).
-b.  Skip to [Step 13]{.ul}.
+b.  Skip to Step 13.
 
-If the Define schedule instance checkbox [was]{.ul} selected and the schedule [is]{.ul} associated with any named instances:
+If the Define schedule instance checkbox was selected and the schedule is associated with any named instances:
 
 Do the following in the **Define Schedule Instance** dialog:
 
@@ -86,7 +86,7 @@ a.  Select the named instance.
 b.  Enter a set of one or more *property definitions* using the
     following format: **PropertyName=PropertyValue**. Separate each
     definition with a semicolon (;).
-c.  Go to [Step 13]{.ul}.
+c.  Go to Step 13.
 
 Click the **OK** button to save the property definitions or click the
 **Cancel** button to cancel the definitions for that schedule instance.

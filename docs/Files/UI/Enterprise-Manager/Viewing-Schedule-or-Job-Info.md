@@ -19,14 +19,14 @@ To view schedule or job information:
     Alternatively, you can right-click on the **job** then click on
     **Job Information** to view additional job information.
 7. Click the **OK** button to close the **Job Information** dialog.
-8. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+8. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     arrow to expand the **schedule** containing the subschedule.
 9. Right-click on the **subschedule**.
 10. Click on **SubSchedule Information** from the menu.
 11. Click the **OK** button to close the **SubSchedule Information**
     dialog.
 12. *(Optional)* Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the **schedule** containing the subschedule.
 13. *(Optional)* Click on the **subschedule**.
 14. *(Optional)* View the subschedule jobs in the

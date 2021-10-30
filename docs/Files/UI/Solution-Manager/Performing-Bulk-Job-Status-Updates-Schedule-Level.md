@@ -65,19 +65,19 @@ to** drop-down list:
 - **Mark Finished OK**: This option allows you to mark all jobs on the
     selected schedule(s) as Finished OK, based on a     filter.
 - **Mark Under Review**: This option allows you to mark all jobs on
-    the selected schedule(s) as [Under Review]{.skd-job-statuses}, based     on a filter.
+    the selected schedule(s) as Under Review, based     on a filter.
 - **Mark Fixed**: This option allows you to mark all jobs on the
-    selected schedule(s) as [Fixed]{.skd-job-statuses}, based on a     filter.
+    selected schedule(s) as Fixed, based on a     filter.
 - **Release**: This option allows you to place all held jobs on the
-    selected schedule(s) back into a [Qualifying]{.skd-job-statuses}     state, based on a filter. Jobs start as soon as all dependencies are
+    selected schedule(s) back into a Qualifying     state, based on a filter. Jobs start as soon as all dependencies are
     met.
 - **Restart**: This option allows you to place all jobs on the
-    selected schedule(s) back in a [Qualifying]{.skd-job-statuses}     state, based on a filter. Jobs are started as soon as all
+    selected schedule(s) back in a Qualifying     state, based on a filter. Jobs are started as soon as all
     dependencies are met.
 - **Restart on Hold**: This option allows you to place all jobs on the
     selected schedule(s) in an On Hold state on     restart, based on a filter.
 - **Skip**: This option allows you to place all jobs on the selected
-    schedule(s) in a [Job to be Skipped]{.skd-job-statuses} state until     they qualify to start. When the jobs qualify, the jobs are skipped
+    schedule(s) in a Job to be Skipped state until     they qualify to start. When the jobs qualify, the jobs are skipped
     and the job dependencies of all subsequent jobs will be met.
 
 :::note

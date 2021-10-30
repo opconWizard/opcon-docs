@@ -23,7 +23,7 @@ To set the preferences:
     Color:" text. The **Color** dialog displays.
 8. Select the **color** and click **OK**.
 9. Click the **Update List** button.
-10. Repeat [Steps 5 - 9]{.ul} to change additional Individual Job Status
+10. Repeat Steps 5 - 9 to change additional Individual Job Status
     colors.
 11. Click **Apply** to save the changes in this dialog.
 12. Click **OK** to save the changes and close the **Preferences**
@@ -42,7 +42,7 @@ To set the preferences:
     Color:" text. The **Color** dialog displays.
 5. Select the *color* and click **OK**.
 6. Click the **Add To List** button.
-7. Repeat [Steps 2 - 6]{.ul} to add more Individual Job Status colors.
+7. Repeat Steps 2 - 6 to add more Individual Job Status colors.
 8. Click **Apply** to save the changes in this dialog.
 9. Click **OK** to save the changes and close the **Preferences**
     dialog.

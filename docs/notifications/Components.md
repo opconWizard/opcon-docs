@@ -1,8 +1,8 @@
 # Event Notifcation
 
-Event Notification in OpCon is a process in which Machine, Schedule, and Job status change events generate (i.e., trigger) notifications. For critical notifications, administrators can also apply [escalation]{.GeneralEscalatedNotification} rules to provide higher visibility.
+Event Notification in OpCon is a process in which Machine, Schedule, and Job status change events generate (i.e., trigger) notifications. For critical notifications, administrators can also apply escalation rules to provide higher visibility.
 
-The basic types of notifications include Windows Event Log, Email (SMTP), Network Message, SNMP Trap, Unisys Single Point of Operations (SPO) AL and CO Reports, Text Messages (SMS), OpCon Events, and Command. With OpCon, notifications can be created in several ways. 
+The basic types of notifications include Windows Event Log, Email (SMTP), Network Message, SNMP Trap, Unisys Single Point of Operations (SPO) AL and CO Reports, Text Messages (SMS), OpCon Events, and Command. With OpCon, notifications can be created in several ways.
 
 ## Components
 
@@ -28,10 +28,10 @@ The Event Notification system in OpCon consists of the following components:
         that are defined in Notification Manager are sent to the SMA
         Notify Handler by way of the database.
 - **Escalation Manager**: Used to configure notification
-    [escalation]{.GeneralEscalatedNotification} groups and rules. For     more information, refer to [Using Escalation
+    escalation groups and rules. For     more information, refer to [Using Escalation
     Manager](../Files/UI/Enterprise-Manager/Using-Escalation-Manager.md)
      in the **Enterprise Manager** online help.
 - **Escalation Acknowledgment**: Used to view
-    [escalations]{.GeneralEscalatedNotificationPlural} and to     acknowledge them. For more information, refer to [Using Escalation
+    escalations and to     acknowledge them. For more information, refer to [Using Escalation
     Acknowledgment](../Files/UI/Enterprise-Manager/Using-Escalation-Acknowlegement.md)
      in the **Enterprise Manager** online help.

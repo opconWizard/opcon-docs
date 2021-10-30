@@ -8,7 +8,7 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date** for the schedule to be
     edited.
 3. Click on the **schedule** to edit.

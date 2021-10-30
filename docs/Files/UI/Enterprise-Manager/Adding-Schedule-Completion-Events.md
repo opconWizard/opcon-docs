@@ -23,7 +23,7 @@ $JOB:ADD,<schedule date\>,<schedule name\>,<job name\>,<frequency name\>]
 
 Place your mouse cursor at the beginning of a **<syntax placeholder\>** displayed in the **Event Parameters** text
 box then drag the cursor to the right to select the entire syntax
-placeholder, excluding any surrounding commas. For example: ,[<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
+placeholder, excluding any surrounding commas. For example: ,<schedule name\>, .
 
 Replace the selected syntax placeholder with valid
 OpCon event information.
@@ -31,7 +31,7 @@ OpCon event information.
 If you wish to replace the syntax placeholder with a token, then do the
 following:
 
-Follow [Step 6]{.ul} to select the syntax placeholder.
+Follow Step 6 to select the syntax placeholder.
 
 Click the ![Insert Token buton](../../../Resources/Images/EM/EMinserttoken.png "Insert Token button")
 **Insert token** button or press **Ctrl/t** on the keyboard to list

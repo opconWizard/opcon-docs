@@ -64,7 +64,7 @@ options:
 - **Granted**: This option allows you to define which roles are
     granted privileges.
 
-**[]{#Thresholds}Thresholds**: This frame allows you to define the numerical range for the QoS or SLA success rate.
+**Thresholds**: This frame allows you to define the numerical range for the QoS or SLA success rate.
 
 - **QoS**: Defines a measure of the number of times jobs have
     completed successfully.

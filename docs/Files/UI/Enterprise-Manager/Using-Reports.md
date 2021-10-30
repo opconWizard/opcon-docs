@@ -9,10 +9,10 @@ using the BIRT Report Generator. Refer to [BIRT Report Generator](../../../utili
 environments, the reports can run out of memory due to the amount of
 data.
 
-Upon activation, the [Reports]{._Override style="font-style: normal; font-weight: bold;"} screen displays a
+Upon activation, the **Reports** screen displays a
 drop-down list for selecting the preferred reports. Depending upon your
 report selection , the appropriate report will display in the
-[Reports]{._Override style="font-style: normal; font-weight: bold;"} view.
+**Reports** view.
 
 ## EM Reports Toolbar
 
@@ -30,8 +30,7 @@ functionality.
 
 ![BIRT toolbar](../../../Resources/Images/EM/EMreportsfulltoolbar.png "BIRT toolbar")
 
-Be sure to report any BIRT Report issues to
-[<https://bugs.eclipse.org/bugs/enter_bug.cgi?product=BIRT>]{.Hyperlink}.
+Be sure to report any BIRT Report issues to <https://bugs.eclipse.org/bugs/enter_bug.cgi?product=BIRT>}.
 
 ## Reports Right-Click Menu
 

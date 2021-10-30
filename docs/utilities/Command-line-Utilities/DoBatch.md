@@ -157,10 +157,6 @@ each parameter is also provided. The letter '**O**' means optional,
          in the **Enterprise Manager** online help for information
         on resolving a circular dependency.
 
-    ```{=html}
-    <!-- -->
-    ```
-
 - **DELETE**: Commands the program to delete the schedule(s).
   - This parameter must be uppercase.
 - **FORECAST**: Commands the program to complete all the same

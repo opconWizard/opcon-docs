@@ -1,10 +1,4 @@
----
-lang: en-us
-title: Adding Threshold/Resource Dependencies
-viewport: width=device-width, initial-scale=1.0
----
-
-#  Adding Threshold/Resource Dependencies
+# Adding Threshold/Resource Dependencies
 
 ## Setting Job-Related Threshold/Resource Dependencies
 
@@ -32,11 +26,11 @@ list.
 Select a **threshold/resource** in the **Threshold/Resource** drop-down
 list.
 
-a.  [(For a Threshold)]{.optional-text} Select an **operator** and enter     a *value* in the **Value** field. Then, proceed to [Step 10]{.ul}.
-b.  [(For a Resource)]{.optional-text} Enter a *value* in the **Value**     field. Alternatively, you can select the **All** checkbox to require
+a.  For a Threshold: Select an **operator** and enter     a *value* in the **Value** field. Then, proceed to Step 10.
+b.  For a Resource: Enter a *value* in the **Value**     field. Alternatively, you can select the **All** checkbox to require
     the job to consume all resources when it runs. Unselect the **All**
-    checkbox to re-enable the **Value** field. Then, proceed to [Step
-    10]{.ul}.
+    checkbox to re-enable the **Value** field. Then, proceed to Step
+    10.
 
 Click the **OK** button to save the changes or the **Cancel** button to
 discard the changes.
@@ -71,11 +65,11 @@ list.
 
 Do one of the following:
 
-a.  [(For a Threshold)]{.optional-text} Select an **operator** and enter     a *value* in the **Value** field. Then, proceed to [Step 11]{.ul}.
-b.  [(For a Resource)]{.optional-text} Enter a *value* in the **Value**     field. Alternatively, you can select the **All** checkbox to require
+a.  For a Threshold: Select an **operator** and enter     a *value* in the **Value** field. Then, proceed to Step 11.
+b.  For a Resource: Enter a *value* in the **Value**     field. Alternatively, you can select the **All** checkbox to require
     the job to consume all resources when it runs. Unselect the **All**
-    checkbox to re-enable the **Value** field. Then, proceed to [Step
-    11]{.ul}.
+    checkbox to re-enable the **Value** field. Then, proceed to Step
+    11.
 
 Select a **frequency** in the **Frequency** drop-down list.
 
@@ -85,6 +79,3 @@ discard the changes.
 Click **Close ☒** (to the right of the **Job Master** tab) to close the
 **Job Master** screen.
 :::
-
- 
-

@@ -13,9 +13,9 @@ Remove the Machine from the Daily Table
 
 1. Double-click on **Daily Maintenance** under the **Administration**
     topic. The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -25,7 +25,7 @@ Remove the Machine from the Daily Table
     **Alternate** machine.
 7. Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
     on the **Job Daily** toolbar.
-8. Repeat [Steps 4 -- 7]{.ul} for all jobs assigned to the machine to
+8. Repeat Steps 4 - 7 for all jobs assigned to the machine to
     be deleted.
 9. Click **Close ☒** (to the right of the **Job Daily** tab) to close
     the **Job Daily** screen.
@@ -34,9 +34,9 @@ Remove the Machine from the Master Table
 
 1. Double-click on **Daily Maintenance** under the**Administration**
     topic.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Master** button in the **Maintenance** frame at
@@ -46,7 +46,7 @@ Remove the Machine from the Master Table
     **Alternate** machine.
 7. Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
     on the **Job Master** toolbar.
-8. Repeat [Steps 4 -- 7]{.ul} for all jobs assigned to the machine to
+8. Repeat Steps 4 - 7 for all jobs assigned to the machine to
     be deleted.
 9. Click **Close ☒** (to the right of the **Job Master** tab) to close
     the **Job Master** screen.

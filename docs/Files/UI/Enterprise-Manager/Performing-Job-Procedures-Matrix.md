@@ -179,7 +179,7 @@ To perform this procedure:
 
 ## Skipping Jobs
 
-This action will place the job in a [Job to be Skipped]{.skd-job-statuses} state until the job qualifies to start. When
+This action will place the job in a Job to be Skipped state until the job qualifies to start. When
 the job qualifies, it is skipped and the job dependency of all
 subsequent jobs will be met.
 
@@ -222,7 +222,7 @@ To perform this procedure:
 
 ## Releasing Held Jobs
 
-This action will place the job back in a [Qualifying]{.skd-job-statuses} state, and the job will process when all dependencies have been met.
+This action will place the job back in a Qualifying state, and the job will process when all dependencies have been met.
 
 :::note
 If the action is performed when a schedule is selected, all jobs on a schedule are affected.
@@ -265,7 +265,7 @@ To perform this procedure:
 
 ## Restarting Jobs
 
-This action will place the job back in a [Qualifying]{.skd-job-statuses} state. The job starts as soon as all dependencies are met.
+This action will place the job back in a Qualifying state. The job starts as soon as all dependencies are met.
 
 :::note
 During the restart qualifying process, the SAM uses all current details from the Daily tables and from the **Job Configuration** screen unless the **Re-build the SubSchedule** option is selected. If **Re-build the SubSchedule** has been selected, SAM will re-build the subschedule before restarting the jobs.
@@ -397,7 +397,7 @@ To perform this procedure:
 
 ## Marking Jobs Under Review
 
-This action marks the selected job as [Under Review]{.skd-job-statuses}.
+This action marks the selected job as Under Review.
 To perform this procedure:
 
 1. Double-click on **Matrix** under the **Operation** topic. The
@@ -415,7 +415,7 @@ To perform this procedure:
 
 ## Marking Jobs Fixed
 
-This action marks the selected job as [Fixed]{.skd-job-statuses}.
+This action marks the selected job as Fixed.
 To perform this procedure:
 
 1. Double-click on **Matrix** under the **Operation** topic. The

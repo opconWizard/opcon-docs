@@ -1,16 +1,16 @@
 # Using Escalation Manager
 
 The **Escalation Manager** editor is used to define
-[escalation]{.GeneralEscalatedNotification} rules for any ENS trigger that uses email. User-defined
-[escalation]{.GeneralEscalatedNotification} user groups are created and assigned to [escalation]{.GeneralEscalatedNotification} rules.
-[Escalation]{.GeneralEscalatedNotificationCapitalized} rules are applied to triggers in [Notification
+escalation rules for any ENS trigger that uses email. User-defined
+escalation user groups are created and assigned to escalation rules.
+ rules are applied to triggers in [Notification
 Definitions](Notification-Definitions.md) in **Notification
 Manager**. For all conceptual information regarding the Event
 Notification System (ENS), refer to [Event Notification](../../../notifications/Components.md) in
 the **Concepts** online help.
 
 When on the **Escalation Manager** screen, it displays
-[escalation]{.GeneralEscalatedNotification} rules and groups.
+escalation rules and groups.
 
 **Escalation Manager** also provides a **Type Filter Text** box for
 rules and groups in order to type a part of or the full name for the
@@ -23,10 +23,10 @@ In the Escalation Manager screen, type **Level** to find a specific rule or grou
 :::
 
 The **Escalation Manager** has the following areas for managing
-[escalation]{.GeneralEscalatedNotification}s:
+escalations:
 **Rules**: The **Rules** frame provides a list of
-[escalation]{.GeneralEscalatedNotification} rules.
-You must add [escalation]{.GeneralEscalatedNotification} user groups to the **Groups** frame before adding rules.
+escalation rules.
+You must add escalation user groups to the **Groups** frame before adding rules.
 
 The **Rules** frame has both a toolbar and right-click menu which
 provide the following functionality:
@@ -39,7 +39,7 @@ provide the following functionality:
 - **Delete**: This deletes the selected rule.
 
 **Groups**: The **Groups** frame provides a list of
-[escalation]{.GeneralEscalatedNotification} user groups.
+escalation user groups.
 You must create user groups before assigning them to rules in the
 **Rules** frame.
 

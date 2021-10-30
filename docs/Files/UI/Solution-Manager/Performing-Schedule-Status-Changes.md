@@ -64,21 +64,21 @@ Any status updates that are applied to the Schedule Names selected will effect A
 :::
 
 - **Release**: This option allows you to release the selected
-    schedule(s) from a [Held]{.skd-job-statuses} state. Jobs on the     schedule(s) continue processing from the point where they were
+    schedule(s) from a Held state. Jobs on the     schedule(s) continue processing from the point where they were
     stopped. If there are subschedules under the defined schedule and
     they are in a status of [Parent Hold]{.skd-job-statuses}, those     subschedules will also be released.
 - **Hold**: This option allows you to suspend the processing of the
     selected schedule(s). All currently running jobs continue to process
     to completion, but no new jobs on the schedule(s) start. If there
     are subschedules under the selected schedule and they are in a
-    status of [Waiting]{.skd-job-statuses} or [In     Process]{.skd-job-statuses}, those subschedules are placed in a
+    status of [Waiting]{.skd-job-statuses} or In Process, those subschedules are placed in a
     status of [Parent Hold]{.skd-job-statuses}. -   **Start**: This option allows you to override the selected
     schedule's start date(s) and time(s), and cause them to run
     immediately. The SAM begins processing the schedule(s) as soon as
     this option is selected. If there are subschedules under the defined
     schedule and they are in a status of [Parent     Hold]{.skd-job-statuses}, those subschedules will also be started.
 - **Close**: This option allows you to mark the selected schedule(s)
-    as [Completed]{.skd-job-statuses} when the schedule(s) are still [In     Process]{.skd-job-statuses} only because they contain failed jobs.
+    as Completed when the schedule(s) are still In Process only because they contain failed jobs.
 
 :::note
 For more information about job status changes, refer to [Schedule and Job Status Change Commands](../../../operations/status-change-commands.md) in the **Concepts** online help.

@@ -1,16 +1,8 @@
----
-lang: en-us
-title: Working with Vision
-viewport: width=device-width, initial-scale=1.0
----
-
 # Working with Vision
 
 Vision is an SMA Solution Manager module that allows you to define cards
 that show a summary of the status of all jobs with a matching tag and
 view the health of cards based on their historical completion.
-
-Solution Manager Vision
 
 ![Solution Manager Vision Home Page](../../../Resources/Images/SM/Vision-Home-Page.png "Solution Manager Vision Home Page")
 
@@ -110,16 +102,12 @@ To save the license file:
     file immediately.
 
 ![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
-[]{#Related_Topics}Related Topics
 
-- [Viewing Cards in Vision     Live](Viewing-Cards-in-Vision-Live.md)
+Related Topics
+
+- [Viewing Cards in Vision Live](Viewing-Cards-in-Vision-Live.md)
 - [Viewing Vision Health](Viewing-Vision-Health.md)
-
 - [Managing Vision Settings](Managing-Vision-Settings.md)
-
-- [Managing Vision     Frequencies](Managing-Vision-Frequencies.md)
+- [Managing Vision Frequencies](Managing-Vision-Frequencies.md)
 - [Managing Vision Actions](Managing-Vision-Actions.md)
-
-- [Managing Vision Remote     Instances](Managing-Vision-Remote-Instances.md)
-
-:::
+- [Managing Vision Remote Instances](Managing-Vision-Remote-Instances.md)

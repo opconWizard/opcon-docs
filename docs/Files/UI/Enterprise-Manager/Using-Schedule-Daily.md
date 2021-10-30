@@ -7,7 +7,7 @@ information on editing daily schedules, refer to [Editing Daily Schedules](../..
  in the **Concepts** online help.
 
 :::note
-If a completed schedule contains failed jobs, it will show in [red]{style="color: #ff0000;"} by default (this is the default failed color for failed jobs) with the text like this: ScheduleName (Completed -- Contains Failed Jobs). If the schedule is still in progress, but contains failed jobs, it will look like this: ScheduleName (In Progress -- Contains Failed Jobs).
+If a completed schedule contains failed jobs, it will show in red by default (this is the default failed color for failed jobs) with the text like this: ScheduleName (Completed -- Contains Failed Jobs). If the schedule is still in progress, but contains failed jobs, it will look like this: ScheduleName (In Progress -- Contains Failed Jobs).
 :::
 
 ## Schedule Daily Toolbar

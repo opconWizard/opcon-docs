@@ -110,7 +110,7 @@ Related Topics
 - [Editing SAP Jobs](Editing-SAP-Jobs.md)
 - [Viewing SAP Job Logs](Viewing-SAP-Job-Logs.md)
 
-### []{#Interception_Profiles}Interception Profiles
+### Interception Profiles
 
 The **SAP Interception Profiles** screen contains a list of SAP profiles
 from SAP that are set for job interception and allows the user to create
@@ -140,7 +140,7 @@ Related Topics
 
 - [Managing Interception     Profiles](Managing-Interception-Profiles.md)
 
-### []{#Intercept_SAP_Jobs}Intercept SAP Jobs
+### Intercept SAP Jobs
 
 The **View Intercepted SAP Jobs** screen contains a list of numbers for
 all intercepted SAP jobs. Below is a brief explanation of the screen.
@@ -170,7 +170,7 @@ Related Topics
 
 - [Starting Intercepted Jobs     ASAP](Starting-Intercepted-Jobs-ASAP.md)
 
-### []{#Background_Process_Resources}Background Process Resources
+### Background Process Resources
 
 The **Background Process Resources** screen contains information
 regarding the availability of SAP background processes.
@@ -190,7 +190,7 @@ Related Topics
 
 - [Monitoring SAP R/3 and CRM Background Process     Resources](Monitoring-SAP-R3-and-CRM-Background-Process-Resources.md)
 
-### []{#Raise_SAP_Events}Raise SAP Events
+### Raise SAP Events
 
 The **Raise SAP Events** screen contains the fields to send an SAP event
 to satisfy an SAP job event requirement.

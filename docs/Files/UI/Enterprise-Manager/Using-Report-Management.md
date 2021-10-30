@@ -1,6 +1,6 @@
 # Using Report Management
 
-[]{#aanchor0} Report Management enables administrators to view the attributes of a report in the database and add, delete, and edit report
+Report Management enables administrators to view the attributes of a report in the database and add, delete, and edit report
 specifications. Reports for OpCon were
 created using BIRT Reports, and can be viewed through the Enterprise
 Manager. You can create customized reports with the BIRT report writer

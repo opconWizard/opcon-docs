@@ -1,14 +1,14 @@
 # Editing Schedules in Daily Schedule Tables
 
 :::note
-Changes made in the daily schedule tables to the schedule [start time and events]{.ul} will take place immediately. If the schedule has already run, the changes will take effect the next time the schedule runs.
+Changes made in the daily schedule tables to the schedule start time and events will take place immediately. If the schedule has already run, the changes will take effect the next time the schedule runs.
 :::
 
 To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date** for the schedule to be
     checked.
 3. Click on the **schedule** to edit.

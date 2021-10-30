@@ -1,7 +1,7 @@
 # Editing Job Frequencies
 
 :::note
-You can modify the frequency if it applies [only]{.ul} to the selected job; however, to modify a frequency that is on two or more jobs, you must be in the **ocadm** role.
+You can modify the frequency if it applies only to the selected job; however, to modify a frequency that is on two or more jobs, you must be in the **ocadm** role.
 :::
 
 :::note

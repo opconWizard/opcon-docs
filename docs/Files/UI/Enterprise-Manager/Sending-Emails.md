@@ -1,53 +1,47 @@
----
-lang: en-us
-title: Sending Emails (SMTP)
-viewport: width=device-width, initial-scale=1.0
----
-
 # Sending Emails (SMTP)
 
 The **Email** tab provides the following fields for defining an SMTP
 email notification:
 
--   **To** (Required): Defines the SMTP email address(es) separated by a
+- **To** (Required): Defines the SMTP email address(es) separated by a
     semi-colon (;). The maximum for this field is 3,000 characters.
--   **Cc** (Optional): Defines additional SMTP email address(es)
+- **Cc** (Optional): Defines additional SMTP email address(es)
     separated by a semi-colon (;) for sending carbon copies. Separate
     email address(es) with a semi-colon (;). The maximum for this field
     is 3,000 characters.
--   **Bcc** (Optional): Defines additional SMTP email address(es) for
+- **Bcc** (Optional): Defines additional SMTP email address(es) for
     sending blind carbon copies. Separate email address(es) with a
     semi-colon (;). The maximum for this field is 3,000 characters.
--   **Subject** (Optional): Defines the message's subject. The Subject
+- **Subject** (Optional): Defines the message's subject. The Subject
     field defaults to "OpCon Notification: \<Status Change Event
     Trigger Name\>".
--   **JORS Output**: Select this checkbox to include JORS output files
+- **JORS Output**: Select this checkbox to include JORS output files
     as attachments to the email for job triggers.
--   **Exclude Prefix Information**: Select this checkbox to exclude the
+- **Exclude Prefix Information**: Select this checkbox to exclude the
     prefix information from the email message (e.g., Schedule Date,
     Machine Name, Schedule Name, Job Name \[and Internal Job Number\],     trigger type, and triggering status change event).
--   **Message**: Defines a user-defined message.
--   **Attachments**: Contains the attachments to be included with the
+- **Message**: Defines a user-defined message.
+- **Attachments**: Contains the attachments to be included with the
     message. Wild cards are not allowed for filenames.
 
 To send an email notification:
 
-1.  Double-click on **Notification Manager** under the **Management**
+1. Double-click on **Notification Manager** under the **Management**
     topic. The **Notification Manager** screen displays.
-2.  Click the **Machines**, **Schedules**, or **Jobs** tab in the
+2. Click the **Machines**, **Schedules**, or **Jobs** tab in the
     **Notification Triggers** frame.
-3.  Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Machines**, **Schedules**, or **Jobs**
     information.
-4.  Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+4. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Notification Group** that contains the
     appropriate trigger.
-5.  Click the **trigger**.
-6.  Select the **checkbox** to the left of the **Send Email (SMTP)**.
-7.  Click the **Email** tab.
-8.  Enter, in the **To:** text box, one or more *SMTP email addresses*
+5. Click the **trigger**.
+6. Select the **checkbox** to the left of the **Send Email (SMTP)**.
+7. Click the **Email** tab.
+8. Enter, in the **To:** text box, one or more *SMTP email addresses*
     separated by semicolons (;).
-9.  Enter, in the **CC:** text box, one or more *SMTP email addresses*
+9. Enter, in the **CC:** text box, one or more *SMTP email addresses*
     separated by semicolons (;).
 10. Enter, in the **Bcc:** text box, one or more *SMTP email addresses*
     separated by semicolons (;).
@@ -74,7 +68,3 @@ To send an email notification:
 24. Click on the item in **Attachments** to delete.
 25. Click the **Remove** button to delete the attachment from the email
     definition.
-:::
-
- 
-

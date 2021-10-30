@@ -19,5 +19,5 @@ To add an external tool:
 7. Click the **Close** button to exit from the Enterprise Manager.
 8. Save a copy of the file **userhome\\.enterpriseManager\\externaltools.xml** so it can be returned to the original file at a later stage.
 9. Copy the changed **externaltools.xml** file into the **userhome\\.enterpriseManager\\** directory.
-10. Open the Enterprise Manager again and go to the **External Tools** topic in the **[Navigation Panel]{.GeneralNavigation}** to view the entry for the Internet Information Services.
+10. Open the Enterprise Manager again and go to the **External Tools** topic in the **Navigation Panel** to view the entry for the Internet Information Services.
 11. Double-click on the **Internet Information Services** to test that it is working correctly.

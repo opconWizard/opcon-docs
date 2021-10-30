@@ -27,4 +27,4 @@ The **E-mail** field is disabled on this page for security purposes.
 For conceptual information about each of these fields, refer to [User Accounts](../../../administration/user-accounts.md) in the **Concepts** online help.
 :::
 
-Click [Save]{._Override style="font-weight: bold;"} to save the changes to the database.
+Click Save to save the changes to the database.

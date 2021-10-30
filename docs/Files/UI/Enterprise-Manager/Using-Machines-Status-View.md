@@ -15,8 +15,9 @@ formats: **Table**, **Map**, and **Statistics**.
   - **Gray**: SMANetCom is not attempting communication with the
         LSAM (e.g., the machine is marked down by a         user).
   - **Blue**: The machine is marked up by a user, and the
-        LSAM is communicating with the SMANetCom.     -   **Red**: The machine is marked up by a user, but the
-        LSAM is [not]{.ul} communicating with the         SMANetCom.
+        LSAM is communicating with the SMANetCom.
+  - **Red**: The machine is marked up by a user, but the
+        LSAM is not communicating with the         SMANetCom.
   - **Orange**: The machine is marked up by a user, but the
         communication is limited (e.g., SMANetCom is not sending job
         start information to the LSAM). For information         regarding disabling job starts, refer to [Job Starts: Determines

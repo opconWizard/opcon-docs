@@ -72,7 +72,8 @@ If data is not defined or is not available for a field or if the user does not h
 - **Job Tags**: The job- and/or frequency-related labels or bookmarks
     associated with the selected job.
 
-[Time Representations in Job Summary]{.ul}
+## Time Representations in Job Summary
+
 Time values may be displayed with varied representations that signify
 something about a start time, end time, or duration. Keep the following
 in mind if time is presented in a way that is similar to:

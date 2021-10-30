@@ -1,14 +1,6 @@
----
-lang: en-us
-title: Generating External Tokens
-viewport: width=device-width, initial-scale=1.0
----
-
 # Generating External Tokens
 
-An external token along with a valid OpCon User Login ID is required to
-execute an external event in OpCon. External tokens can be generated in
-Solution Manager as either API tokens or Custom Length tokens.
+An external token along with a valid OpCon User Login ID is required to execute an external event in OpCon. External tokens can be generated in Solution Manager as either API tokens or Custom Length tokens.
 
 To generate external tokens:
 
@@ -36,5 +28,4 @@ external token to generate:
     will be generated. If this option is selected, then the token cannot
     be used for API authentication.
 
-Click [Generate]{._Override style="font-weight: bold;"} to generate the external token.
-:::
+Click **Generate** to generate the external token.

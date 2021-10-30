@@ -1,18 +1,8 @@
----
-lang: en-us
-title: Types of Logs
-viewport: width=device-width, initial-scale=1.0
----
-
-#  Types of Logs
-
-
+# Types of Logs
 
 Upon activation, the **Logs** screen will display the current date and
 time and the log information details. This section describes the various
 types of logs that you may access.
-
-
 
 ## SAM Log
 
@@ -64,18 +54,14 @@ the server.
 
 **To open an external file:**
 
-1.  Expand the **Logs** option(click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+1. Expand the **Logs** option(click on the
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     the left)under the **Information** topic.
-2.  Double-click on **External File**.
-3.  Select the **directory** where the external file is located.
-4.  Enter a *file name* in the **File Name** text box, or select one
+2. Double-click on **External File**.
+3. Select the **directory** where the external file is located.
+4. Enter a *file name* in the **File Name** text box, or select one
     that is displayed in the drop-down list.
-5.  *(Optional)* Select the **file type** in the **Files
+5. *(Optional)* Select the **file type** in the **Files
     of type** drop-down list.
-6.  Click the **Open** button to open the selected file or click the
+6. Click the **Open** button to open the selected file or click the
     **Cancel** button to cancel the open request.
-:::
-
- 
-

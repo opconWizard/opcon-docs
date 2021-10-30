@@ -35,7 +35,7 @@ OpCon event information.
 If you wish to replace the syntax placeholder with a token, then do the
 following:
 
-Follow [Step 8]{.ul} to select the syntax placeholder.
+Follow Step 8 to select the syntax placeholder.
 
 Click the ![Insert Token buton](../../../Resources/Images/EM/EMinserttoken.png "Insert Token button")
 **Insert token** button or press **Ctrl/t** on the keyboard to list

@@ -9,9 +9,7 @@ Select the checkboxes for the **Notification Definitions** to test.
 
 Click the **Test All** button.
 
-\
-[Alternatively]{.ul}
-You can:
+Alternatively, you can:
 
 a.  Select the checkbox for the specific **Notification Definition** to
     test.

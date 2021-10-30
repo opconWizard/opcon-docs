@@ -6,9 +6,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Double-click the **job** to open the **Job Information** dialog.
     Alternatively, you can right-click on the **Jobs** icon then click
@@ -21,9 +21,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **Jobs** icon.
 5. Click on **Job History** from the menu.
@@ -39,9 +39,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **Jobs** icon.
 5. Click on **Comment** from the menu. The **Job Completion Comment**
@@ -60,9 +60,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **View Job Output** from the menu. The **Job Output
@@ -86,9 +86,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Window to Host** from the menu. The **Window to Host
@@ -103,9 +103,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Maintenance** from the menu.
@@ -126,9 +126,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Maintenance** from the menu.
@@ -146,9 +146,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Maintenance** from the menu.
@@ -172,9 +172,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Hold** from the menu. The **Hold** dialog displays.
@@ -195,9 +195,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Cancel** from the menu. The **Cancel** dialog displays.
@@ -207,7 +207,7 @@ To perform this procedure:
 
 ## Skipping Jobs
 
-This action will place the job in a [Job to be Skipped]{.skd-job-statuses} state until the job qualifies to start. When
+This action will place the job in a Job to be Skipped state until the job qualifies to start. When
 the job qualifies, it is skipped and the job dependency of all
 subsequent jobs will be met.
 
@@ -215,9 +215,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Skip** from the menu. The **Skip** dialog displays.
@@ -240,9 +240,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Kill** from the menu. The **Kill** dialog displays.
@@ -252,7 +252,7 @@ To perform this procedure:
 
 ## Releasing Held Jobs
 
-This action will place the job back in a [Qualifying]{.skd-job-statuses} state, and the job will process when all dependencies have been met.
+This action will place the job back in a Qualifying state, and the job will process when all dependencies have been met.
 
 :::note
 If the action is performed when a schedule is selected, all jobs on a schedule are affected.
@@ -262,9 +262,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Release** from the menu. The **Release** dialog displays.
@@ -282,9 +282,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Force Start** from the menu. The **Force Start** dialog
@@ -295,7 +295,7 @@ To perform this procedure:
 
 ## Restarting Jobs
 
-This action will place the job back in a [Qualifying]{.skd-job-statuses} state. The job starts as soon as all dependencies are met.
+This action will place the job back in a Qualifying state. The job starts as soon as all dependencies are met.
 
 :::note
 During the restart qualifying process, the SAM uses all current details from the Daily tables and from the **Job Configuration** screen unless the **Re-build the SubSchedule** option is selected. If **Re-build the SubSchedule** has been selected, SAM will re-build the subschedule before restarting the jobs.
@@ -309,9 +309,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Restart** from the menu. The **Restart dialog** display.
@@ -329,9 +329,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Force Restart** from the menu. The **Force Restart**
@@ -352,9 +352,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Restart Without Prerun** from the menu. The **Restart
@@ -372,9 +372,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click **Restart On Step** from the menu. The **Restart On Step**
@@ -394,9 +394,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click **Restart On Step** from the menu. The **Restart On Step**
@@ -416,9 +416,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Mark Finished OK** from the menu. The **Marked Finished
@@ -437,9 +437,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Mark Failed** from the menu. The **Marked Failed** dialog
@@ -450,16 +450,16 @@ To perform this procedure:
 
 ## Marking Jobs Under Review
 
-This action marks the selected job as [Under Review]{.skd-job-statuses}.
+This action marks the selected job as Under Review.
 To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
 2. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **date**.
 3. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Under Review** from the menu. The **Under Review** dialog
@@ -470,16 +470,16 @@ To perform this procedure:
 
 ## Marking Jobs Fixed
 
-This action marks the selected job as [Fixed]{.skd-job-statuses}.
+This action marks the selected job as Fixed.
 To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
 2. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **date**.
 3. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Fixed** from the menu. The **Fixed** dialog displays.
@@ -493,9 +493,9 @@ To perform this procedure:
 
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the preferred **SAP R/3 or CRM job**.
 5. Click on **SAP Child Processes** from the menu. The **SAP Child
@@ -517,10 +517,10 @@ To perform this procedure:
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
 2. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **date**.
 3. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **schedule**.
 4. Right-click on the preferred **SAP R/3 or CRM job**.
 5. Click on **SAP Child Processes** from the menu. The **SAP Child
@@ -544,10 +544,10 @@ To perform this procedure:
 1. Double-click on **List** under the **Operation** topic. The **Daily
     list** screen displays.
 2. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **date**.
 3. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **schedule**.
 4. Right-click on the preferred **SAP R/3 or CRM job**.
 5. Click on **SAP Job Spools** from the menu. The **SAP Login** dialog

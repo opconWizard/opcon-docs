@@ -1,10 +1,4 @@
----
-lang: en-us
-title: Deleting Threshold/Resource Updates
-viewport: width=device-width, initial-scale=1.0
----
-
-#  Deleting Threshold/Resource Updates
+# Deleting Threshold/Resource Updates
 
 To delete a threshold or resource update:
 
@@ -22,8 +16,8 @@ depending on the type of threshold/resource you wish to delete.
 
 Do one of the following:
 
-a.  [(If Frequency Related)]{.optional-text} Select the **frequency** in     the **Frequency list** then proceed to [Step 7]{.ul}.
-b.  [(If Job Related)]{.optional-text} Proceed to [Step 7]{.ul}.
+a.  If Frequency Related: Select the **frequency** in     the **Frequency list** then proceed to Step 7.
+b.  If Job Related: Proceed to Step 7.
 
 Select the **threshold/resource update** in the **Threshold/Resource
 Updates** list.
@@ -35,7 +29,3 @@ deletion.
 
 Click **Close ☒** (to the right of the **Job Master** tab) to close the
 **Job Master** screen.
-:::
-
- 
-

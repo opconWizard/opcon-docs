@@ -36,7 +36,7 @@ the preferred location. Each column value will also be displayed in a
 tool tip by hovering over a row.
 
 :::note
-If the "Show Job Containers" preference is turned off, the **Job Matrix** table will not show the Container jobs. For more information on this setting, refer to [Setting Preferences from Enterprise Manager](Preferences-from-EM.md){#aanchor233}.
+If the "Show Job Containers" preference is turned off, the **Job Matrix** table will not show the Container jobs. For more information on this setting, refer to [Setting Preferences from Enterprise Manager](Preferences-from-EM.md).
 :::
 
 - **Machine Name**: The name of the OpCon

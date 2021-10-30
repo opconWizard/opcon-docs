@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Working with Self Service
-viewport: width=device-width, initial-scale=1.0
----
-
 # Working with Self Service
 
 SMA Technologies' flagship product, OpCon, is a comprehensive cross-platform workload automation solution. Self Service
@@ -13,7 +7,7 @@ OpCon workflows without having to engage the IT department.
 
 ## License File Request and Storing
 
-[]{#aanchor131} If you have purchased the Self Service solution, you will need a license to see and access it in this version of Solution
+If you have purchased the Self Service solution, you will need a license to see and access it in this version of Solution
 Manager. To request and save the license file, follow these next
 procedures.
 

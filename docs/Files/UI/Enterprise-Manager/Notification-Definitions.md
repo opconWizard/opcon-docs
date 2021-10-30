@@ -34,10 +34,6 @@ how to define and send that notification type:
 - [Send SPO Event Report](Sending-SPO-Event-Reports.md)
 - [Run Command](Running-Commands.md)
 
-```{=html}
-<!-- -->
-```
-
 - **[Active/Inactive Notification     Status](Activating_Inactivating-Notifications.md)**: The power
     symbol to the left of each checkbox indicates the *Active*(green) or
     *Inactive* (red) status for each type of notification. By default,
@@ -51,7 +47,7 @@ how to define and send that notification type:
     and a unique SAM-generated job number.
 
 - **Escalation Rule**: This option specifies the optional
-    [escalation]{.GeneralEscalatedNotification} rule to apply to an     email notification. By default, this drop-down list and search
+    escalation rule to apply to an     email notification. By default, this drop-down list and search
     function are disabled and only become active if the **Send Email
     (SMTP)** checkbox is selected.
 

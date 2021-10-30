@@ -1,16 +1,10 @@
----
-lang: en-us
-title: Managing Update Sites
-viewport: width=device-width, initial-scale=1.0
----
-
 # Managing Update Sites
 
 ## Adding an Update Site
 
 To set the preferences:
 
-[]{#aanchor643} Launch the Enterprise Manager application. 
+Launch the Enterprise Manager application.
 Use menu path: **EnterpriseManager \> Preferences**. The **Preferences**
 dialog displays.
 
@@ -44,41 +38,41 @@ Click on the **Reload** button to test the update site.
 
 To set the preferences:
 
-1.  [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
+1. [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
     **Preferences** dialog then proceed.
-2.  Click the **Name** of the update site to edit and click the **Edit**
+2. Click the **Name** of the update site to edit and click the **Edit**
     button. The **Edit Site** dialog displays.
-3.  Make the changes in the **Name** or **Location** text box and click
+3. Make the changes in the **Name** or **Location** text box and click
     **OK** to save the changes.
 
 ## Removing an Update Site
 
 To set the preferences:
 
-1.  [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
+1. [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
     **Preferences** dialog then proceed.
-2.  Click the **Name** of the update site to remove and click the
+2. Click the **Name** of the update site to remove and click the
     **Remove** button. The **Remove Sites** dialog displays.
-3.  Click **Yes** to confirm the removal of the Update Site.
-4.  Click **No** to cancel the removal of the Update Site.
+3. Click **Yes** to confirm the removal of the Update Site.
+4. Click **No** to cancel the removal of the Update Site.
 
 ## Reloading to an Update Site
 
 To set the preferences:
 
-1.  [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
+1. [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
     **Preferences** dialog then proceed.
-2.  Click the **Name** of the update site to reload and click the
+2. Click the **Name** of the update site to reload and click the
     **Reload** button.
-3.  Click **OK** to close the **Reload** dialog.
+3. Click **OK** to close the **Reload** dialog.
 
 ## Disabling an Update Site
 
 To set the preferences:
 
-1.  [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
+1. [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
     **Preferences** dialog then proceed.
-2.  Unselect the checkbox next to the *Name* of the update site to
+2. Unselect the checkbox next to the *Name* of the update site to
     disable. Alternatively, click the **Name** of the update site that
     you wish to disable and click the **Disable** button.
 
@@ -86,9 +80,9 @@ To set the preferences:
 
 To set the preferences:
 
-1.  [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
+1. [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
     **Preferences** dialog then proceed.
-2.  Select the checkbox next to the *Name* of the update site to enable.
+2. Select the checkbox next to the *Name* of the update site to enable.
     Alternatively, click the **Name** of the update site that you wish
     to enable and click the **Enable** button.
 
@@ -99,11 +93,11 @@ you can import this file to save time.
 
 To set the preferences:
 
-1.  [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
+1. [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
     **Preferences** dialog then proceed.
-2.  Click the **Import** button. The **Import Sites** dialog displays.
-3.  Select the *correct import file*.
-4.  Click the **Open** button to load the update sites from the import
+2. Click the **Import** button. The **Import Sites** dialog displays.
+3. Select the *correct import file*.
+4. Click the **Open** button to load the update sites from the import
     file to the Update Sites list.
 
 ## Exporting Update Sites
@@ -113,13 +107,9 @@ will be available for each user to import.
 
 To set the preferences:
 
-1.  [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
+1. [Follow Steps 1 - 4 of Adding an Update Site](#Adding) to access the
     **Preferences** dialog then proceed.
-2.  Shift/click or Ctrl/click to select multiple **Update Site Names**.
-3.  Click the **Export** button. The **Export Sites** dialog displays.
-4.  Check the *location* and *file name* of the export file and click
+2. Shift/click or Ctrl/click to select multiple **Update Site Names**.
+3. Click the **Export** button. The **Export Sites** dialog displays.
+4. Check the *location* and *file name* of the export file and click
     **Save**.
-:::
-
- 
-

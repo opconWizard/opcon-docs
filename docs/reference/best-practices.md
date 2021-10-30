@@ -252,12 +252,12 @@ notifications should work as intended.
 
 ##### Procedure
 
-1. Set a [Late to Start]{.skd-job-statuses} value for the Container     job. For more information, refer to the **Late to Start** value
+1. Set a Late to Start value for the Container     job. For more information, refer to the **Late to Start** value
     under [Job Automation     Components](../job-components/frequency.md).
 2. Set up ENS to include the Container job in a group that sends
-    notifications for jobs that are [Late to Start]{.skd-job-statuses}.     For more information, refer to [Event
+    notifications for jobs that are Late to Start.     For more information, refer to [Event
     Notification](../notifications/Components.md).
-3. Set a [Late to Start]{.skd-job-statuses} value for the jobs in the     subschedule. For more information, refer to the **Late to Start**
+3. Set a Late to Start value for the jobs in the     subschedule. For more information, refer to the **Late to Start**
     value under [Job Automation     Components](../job-components/frequency.md).
 4. Set up ENS to include the jobs in the subschedule in a group that
     sends notifications for jobs that are [Late to     Start]{.skd-job-statuses}. For more information, refer to [Event
@@ -442,8 +442,8 @@ This leaves the job in a "Waiting Threshold Dependency" status until
 the files arrives.
 
 The job will also have a "Flag Job As Late to Start" value set up.
-This will flag the job as [Late to Start]{.skd-job-statuses} if the file has not arrived by the determined time. ENS will send an notification if
-the job is [Late to Start]{.skd-job-statuses}. The job will update the threshold value once it is complete, closing the loop for the next
+This will flag the job as Late to Start if the file has not arrived by the determined time. ENS will send an notification if
+the job is Late to Start. The job will update the threshold value once it is complete, closing the loop for the next
 day's processing.
 
 ##### Procedure
@@ -471,7 +471,7 @@ to the **Late to Start** value under [Late to Start/Late to Finish](../job-compo
 
 Either set up a notification event on the job using the Late to Start
 status trigger, or configure a group in ENS with a trigger to send
-notification(s) from a job event trigger on a status of [Late to Start]{.skd-job-statuses}. For more information, refer to [Job
+notification(s) from a job event trigger on a status of Late to Start. For more information, refer to [Job
 Automation Components](../job-components/events.md)
  in this online help or [Using Notification Manager](../Files/UI/Enterprise-Manager/Using-Notification-Manager.md)
  in the **Enterprise Manager** online help.

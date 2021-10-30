@@ -129,12 +129,12 @@ ii. Enter the *Run Limits* details.
 *(Optional)* Click
 ![Save icon](../../../Resources/Images/EM/EMsave.png) **Save** on the **Job
 Master** toolbar to save the job frequency details if any of the
-changes, beginning with [Step 14]{.ul}, were made .
+changes, beginning with Step 14, were made .
 
 Click **Close ☒** (to the right of the **Job Master** tab) to close the
 **Job Master** screen.
 
-## Adding Existing Job Frequencies {#adding-existing-job-frequencies mc-conditions=""}
+## Adding Existing Job Frequencies
 
 To add an existing frequency:
 

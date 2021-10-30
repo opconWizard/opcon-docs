@@ -20,7 +20,8 @@ Click ![Save icon](../../../Resources/Images/EM/EMsave.png "Save icon")
 Click **Close ☒** (to the right of the **Job Master** tab) to close the
 **Job Master** screen.
 
-[]{#Add_a_Job_Dependency}Add a Job Dependency
+## Add a Job Dependency
+
 :::note
 If you do not have the privileges to "Modify Jobs in Job Master" in at least one department or "All Administration Functions" or "All Functions," the **Add Dependency** tool is disabled.
 :::
@@ -30,7 +31,7 @@ Establish the dependency link by following either of the two procedures:
 a.  Clicking **Add Dependency** in the **Tools** frame.
 b.  Clicking on the **job** that is the object of the dependency.
 c.  Clicking on the **job** in which to create the dependency.
-d.  Proceeding to [Step 8]{.ul}.
+d.  Proceeding to Step 8.
 
 OR
 
@@ -39,7 +40,7 @@ b.  Pressing the **Ctrl** key then clicking on the **job** that is the
     object of the dependency.
 c.  Dragging the line for the link across to the **job** in which to
     create the dependency.
-d.  Proceeding to [Step 8.]{.ul}
+d.  Proceeding to Step 8.
 
 In the Add Dependency dialog:
 
@@ -61,7 +62,8 @@ Click the **OK** button to save the added job dependency.
 The dependencies will be displayed linking the respective jobs. The dependencies appear in different colors and styles depending on the type of dependency (e.g., Requires, After, Excludes or Conflict. Refer to [[Workflow Designer Dependency Lines](Workflow-Designer-Dependency-Lines.md).
 :::
 
-[]{#Edit_a_Job}Edit a Job
+## Edit a Job
+
 Click **Select** in the **Tools** frame.
 
 Right-click the **job** whose job details need to be changed.
@@ -76,7 +78,8 @@ Click ![Save icon](../../../Resources/Images/EM/EMsave.png "Save icon")
 Click **Close ☒** (to the right of the **Job Master** tab) to close the
 **Job Master** screen.
 
-[]{#Edit_a_Job_Dependency}Edit a Job Dependency
+## Edit a Job Dependency
+
 Right-click the **Job dependency** link (line) whose details need to be
 changed.
 
@@ -100,7 +103,7 @@ Select the **Frequency** for the Successor Job.
 
 Click the **OK** button to save the job dependency change(s).
 
-[]{#Delete_a_Job}Delete a Job
+## Delete a Job
 
 :::note
 If you do not have the privileges to "Delete Jobs in Job Master" in at least one department or "All Administration Functions" or "All Functions," the **Delete** option is disabled.
@@ -115,7 +118,7 @@ Click **Delete**.
 Click the **Yes** button to confirm the deletion or click the **No**
 button to cancel the deletion.
 
-[]{#Delete_a_Dependency}Delete a Dependency
+## Delete a Dependency
 
 :::note
 If you do not have the privileges to "Modify Jobs in Job Master" in at least one department or "All Administration Functions" or "All Functions," the **Delete** option is disabled.

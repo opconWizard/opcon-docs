@@ -17,7 +17,7 @@ To perform the procedure:
     Designer**).
 3. *(Optional)* Click on and drag the **Navigation
     View** tab onto the tab bar if not already attached.
-4. Repeat [Step 2]{.ul} to open more views.
+4. Repeat Step 2 to open more views.
 
 ## Changing Navigation View Tab Order
 

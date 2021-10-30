@@ -114,11 +114,11 @@ When defining the string, bear in mind the following:
   - an empty string ("")
   - a fixed string ("abc")
   - a string with instance properties (\[\[$this.Property\]\]) -   The value may not be a property expression.
-- \[\[\@name\]\] is a [case-sensitive]{.ul} token that can be used to     refer to the current instance name.
-- \[\[\@current\]\] is a [case-sensitive]{.ul} token that can be used     to refer to the current value of the job field.
+- \[\[\@name\]\] is a case-sensitive token that can be used to     refer to the current instance name.
+- \[\[\@current\]\] is a case-sensitive token that can be used     to refer to the current value of the job field.
 - $this may be used as a placeholder for the instance property named
     in the instance definition. This placeholder is
-    [case-sensitive]{.ul}.
+    case-sensitive.
 In the New Value field:
 
 Provide a replacement value for the string.
@@ -165,7 +165,7 @@ property expression.
 Click **OK** button to save the exception rule definition or click the
 **Cancel** button to cancel exception rule definition.
 
-Repeat [Steps 7 - 21]{.ul} to define additional named instances.
+Repeat Steps 7 - 21 to define additional named instances.
 
 Click ![Green circle with white checkmark inside](../../../Resources/Images/EM/EMsave.png "Save icon") **Save** on
 the **Schedule Master** toolbar to save the named schedule instance

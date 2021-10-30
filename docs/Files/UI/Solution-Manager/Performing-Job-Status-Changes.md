@@ -83,19 +83,19 @@ job(s):
     The job does not process unless manually started by a user or an
     event.
 - **Skip**: This option allows you to place the selected job(s) in a
-    [Job to be Skipped]{.skd-job-statuses} state until the job(s)     qualify to start. When the job(s) qualify, they are skipped and the
+    Job to be Skipped state until the job(s)     qualify to start. When the job(s) qualify, they are skipped and the
     job dependencies of all subsequent jobs are met.
 - **Kill**: This option allows you to send a request to abort one ore
     more jobs on an Agent machine. If the kill is successful, the
     application reports the killed job as Failed.     If the Kill is not successful, the job continues to show a
     [Running]{.skd-job-statuses} status in the application. -   **Release**: This option allows you to release the selected job(s)
-    from a [Held]{.skd-job-statuses} state. -   **Force Start**: This option allows you to force start the selected
+    from a Held state. -   **Force Start**: This option allows you to force start the selected
     job(s). This causes the job(s) to ignore all dependencies, and to
     start immediately.
 - **Restart**: This option allows you to place the selected job(s)
-    back in a [Qualifying]{.skd-job-statuses} state. All dependencies     must be met before the job(s) are submitted.
+    back in a Qualifying state. All dependencies     must be met before the job(s) are submitted.
 - **Restart on Hold**: This option allows you to place the selected
-    job(s) back in a [Qualifying]{.skd-job-statuses} state, and the     job(s) will process when all dependencies have been met.
+    job(s) back in a Qualifying state, and the     job(s) will process when all dependencies have been met.
 - **Force Restart**: This option allows you to force restart the
     selected job(s) and ignore the start time and all dependencies. The
     job(s) restart as soon as this option is selected as long as a
@@ -114,10 +114,10 @@ job(s):
     without intervention. If a job is Marked Failed     before it starts, both the start and finish time saved in history
     equal the time the job is marked.
 - **Mark Under Review**: This option allows you to change the selected
-    job(s) to an [Under Review]{.skd-job-statuses} status (and being     worked on) when the job is in a Failed, [Marked
+    job(s) to an Under Review status (and being     worked on) when the job is in a Failed, [Marked
     Failed]{.skd-job-statuses}, or [Initialization     Error]{.skd-job-statuses} state.
 - **Mark Fixed**: This option allows you to change the selected job(s)
-    to [Fixed]{.skd-job-statuses} status when the job is in a     Failed, Marked Failed,
+    to Fixed status when the job is in a     Failed, Marked Failed,
     [Initialization Error]{.skd-job-statuses}, or [Under     Review]{.skd-job-statuses} state.
 
 :::note

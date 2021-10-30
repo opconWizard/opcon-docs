@@ -24,11 +24,11 @@ The **Notification Manager** screen displays.
 Click the **Machines**, **Schedules**, or **Jobs** tab in the
 **Notification Triggers** frame.
 
-Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
 **arrow** to expand the **Machines**, **Schedules**, or **Jobs**
 information.
 
-Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
 **arrow** to expand the **Notification Group** information.
 
 Click on the appropriate **machine/schedule/job trigger**.
@@ -47,7 +47,7 @@ Select the **event** in the **Event Template** drop-down list.
 Place your mouse cursor at the beginning of a **\<syntax placeholder\>**
 displayed in the **Event Parameters** text box then drag the cursor to
 the right to select the entire syntax placeholder, excluding any
-surrounding commas. For example: ,[\<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
+surrounding commas. For example: ,<schedule name\>, .
 
 Replace the selected syntax placeholder with valid
 OpCon event information.
@@ -55,7 +55,7 @@ OpCon event information.
 If you wish to replace the syntax placeholder with a token, then do the
 following:
 
-Follow [Step 10]{.ul} to select the syntax placeholder.
+Follow Step 10 to select the syntax placeholder.
 
 Click the ![Insert Token buton](../../../Resources/Images/EM/EMinserttoken.png "Insert Token button")**Insert
 token** button or press **Ctrl/t** on the keyboard to list available
@@ -98,10 +98,10 @@ event choice.
 2. Click the **Machines**, **Schedules**, or **Jobs** tab in the
     **Notification Triggers** frame.
 3. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the **Machines**, **Schedules**, or **Jobs** information.
 4. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the **Notification Group** information.
 5. Click on the appropriate **machine/schedule/job trigger**.
 6. Click on the **Event** tab.
@@ -120,10 +120,10 @@ event choice.
 2. Select **Copy** from the menu.
 3. Click the **Machines**, **Schedules**, or **Jobs** tab in the
     **Notification Triggers** frame.
-4. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+4. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Machines**,**Schedules**,or **Jobs**
     information.
-5. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+5. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Notification Group** information.
 6. Click on the appropriate **machine/schedule/job trigger**.
 7. **In the Notification Definitions frame:**
@@ -141,10 +141,10 @@ event choice.
 2. Click the **Machines**, **Schedules**, or **Jobs** tab in the
     **Notification Triggers** frame.
 3. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the **Machines**, **Schedules**, or **Jobs** information.
 4. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the **Notification Group** information.
 5. Click on the appropriate **machine/schedule/job trigger**.
 6. Click on the **Event** tab.

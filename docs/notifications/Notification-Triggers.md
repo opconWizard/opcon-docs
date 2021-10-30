@@ -103,7 +103,7 @@ Because "Backup" was selected in the Notification Manager Group, if any one of t
 +-------------------------------+-------------------------------------+
 | Job Late to Start             | The Job Late to Start trigger is    |
 |                               | fired when SAM sets a job status to |
-|                               | [Late to Start]{.skd-job-statuses}. | +-------------------------------+-------------------------------------+
+|                               | Late to Start. | +-------------------------------+-------------------------------------+
 | Job Late to Finish            | The Job Late to Finish trigger is   |
 |                               | fired when SAM sets a job status to |
 |                               | [Running; Late to                   | |                               | Finish]{.skd-job-statuses}.         |
@@ -219,7 +219,7 @@ Because "Backup" was selected in the Notification Manager Group, if any one of t
 |                               | event or a user.                    |
 +-------------------------------+-------------------------------------+
 | Job Restarted                 | A job was placed back in a          |
-|                               | [Qualifying]{.skd-job-statuses}     | |                               | state by an                         |
+|                               | Qualifying     | |                               | state by an                         |
 |                               | OpCon    |
 |                               | event or a user.                    |
 +-------------------------------+-------------------------------------+
@@ -234,7 +234,7 @@ Because "Backup" was selected in the Notification Manager Group, if any one of t
 |                               | event or a user.                    |
 +-------------------------------+-------------------------------------+
 | Job Fixed                     | A job was placed in a               |
-|                               | [Fixed]{.skd-job-statuses} status   | |                               | by an                               |
+|                               | Fixed status   | |                               | by an                               |
 |                               | OpCon    |
 |                               | event or a user.                    |
 +-------------------------------+-------------------------------------+

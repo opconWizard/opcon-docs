@@ -38,10 +38,10 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** which has the schedule where the
     job is to be edited.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule** that has the job to edit.
 4. Click on the **job** to edit.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -61,10 +61,10 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** which has the schedule where the
     job is to be edited.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule** that has the job to edit.
 4. Click on the **job** to edit.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -83,10 +83,10 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** which has the schedule where the
     job is to be edited.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule** that has the job to edit.
 4. Click on the **job** to edit.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -109,9 +109,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -140,9 +140,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -167,10 +167,10 @@ To perform this procedure:
 Double-click on **Daily Maintenance** under the **Operation** topic. The
 **Daily Maintenance** screen displays.
 
-Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
 **arrow** to expand the **date** for the schedule.
 
-Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
 **arrow** to expand the **schedule**.
 
 Click on the **job**.
@@ -278,9 +278,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -302,9 +302,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -332,9 +332,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -359,9 +359,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -384,9 +384,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -411,9 +411,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -438,9 +438,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -462,9 +462,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -493,9 +493,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -521,9 +521,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at
@@ -550,9 +550,9 @@ To perform this procedure:
 
 1. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **date** for the schedule.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **schedule**.
 4. Click on the **job**.
 5. Click on the **Edit Daily** button in the **Maintenance** frame at

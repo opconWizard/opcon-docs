@@ -1,10 +1,4 @@
----
-lang: en-us
-title: Using Job Master
-viewport: width=device-width, initial-scale=1.0
----
-
-# []{#top}Using Job Master
+# Using Job Master
 
 The **Job Master** editor is used to define and maintain
 OpCon jobs.

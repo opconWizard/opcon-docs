@@ -1,15 +1,6 @@
----
-lang: en-us
-title: Keyboard Shortcuts
-viewport: width=device-width, initial-scale=1.0
----
-
 # Keyboard Shortcuts
 
-[]{#aanchor433} The table contains the keyboard shortcuts for Solution Manager. If a shortcut has been implemented for a button, then the
-shortcut will be specified in the button tooltip.
-
- 
+The table contains the keyboard shortcuts for Solution Manager. If a shortcut has been implemented for a button, then the shortcut will be specified in the button tooltip.
 
   Shortcut     Function
   ------------ ------------------------------------
@@ -20,7 +11,3 @@ shortcut will be specified in the button tooltip.
   Ctrl+B       Back
   Ctrl+S       Save
   Esc          Cancel/Undo/Exit/No
-:::
-
- 
-

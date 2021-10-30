@@ -1,11 +1,4 @@
----
-lang: en-us
-title: Performing Additional Job Procedures when Working in the PERT
-  View
-viewport: width=device-width, initial-scale=1.0
----
-::: {#mc-main-content role="main"}
-#  Performing Additional Job Procedures when Working in the PERT View
+# Performing Additional Job Procedures when Working in the PERT View
 
 To perform additional job procedures:
 
@@ -30,6 +23,3 @@ a.  Go to the preferred **Job procedure** under the [Performing Job     Procedur
     View](Performing-Job-Procedures-Gantt.md).
 b.  Start on Step 2 for each procedure.
 :::
-
- 
-

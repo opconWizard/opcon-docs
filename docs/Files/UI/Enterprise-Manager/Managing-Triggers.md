@@ -7,7 +7,7 @@ Triggers can only be placed on the lowest level groups. In other words, if a chi
 
 If several child groups are created within the parent group, the trigger can be placed only within the lowest level child group.
 
-Parent groups that do not contain child groups can have triggers. 
+Parent groups that do not contain child groups can have triggers.
 :::
 
 To add a trigger:
@@ -16,10 +16,10 @@ To add a trigger:
     topic. The **Notification Manager** screen displays.
 2. Click the **Machines**, **Schedules**, or **Jobs** tab in the
     **Notification Triggers** frame.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Machines**,**Schedules**,or **Jobs**
     information.
-4. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+4. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Notification Group** information.
 5. Check for any existing child groups.
 6. Right-click on the appropriate **notification group**.
@@ -34,10 +34,10 @@ To delete a trigger:
     topic. The **Notification Manager** screen displays.
 2. Click the **Machines**, **Schedules**, or **Jobs** tab in the
     **Notification Triggers** frame.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Machines**,**Schedules**,or **Jobs**
     information.
-4. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+4. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Notification Group** that contains the
     trigger to delete.
 5. Right-click on the **Machine**, **Schedule**, or **Job Notification

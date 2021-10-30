@@ -55,10 +55,6 @@ restriction.
     expression matcher pattern to validate what the user has entered in
     the text field before it is injected.
 
-```{=html}
-<!-- -->
-```
-
 - **Custom Error Message**: Allows you to define a customized error
     message that will be displayed to users if there is a regular
     expression text validation exception thrown, thus enriching the user

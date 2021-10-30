@@ -25,7 +25,7 @@ To set the preferences:
     times when a job fails in the chart view (it is checked by default).
 9. Click **Apply** to save the changes in this window.
 10. Click on the arrow
-    (![](../../../Resources/Images/EM/EMarrowtoexpand.png)) next to
+    (![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)) next to
     **Charts** in the Preferences tree to expand the drop-down list.
 11. Click on **Bar Chart** in the Preferences tree. The **Bar Chart**
     settings display to the right.

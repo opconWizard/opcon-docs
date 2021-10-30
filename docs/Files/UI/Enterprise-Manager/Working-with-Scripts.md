@@ -1,12 +1,6 @@
----
-lang: en-us
-title: Working with Scripts
-viewport: width=device-width, initial-scale=1.0
----
-
 # Working with Scripts
 
-The **Scripts** topic in the [Navigation Panel]{.GeneralNavigation} provides the views to manage the script repository, script runners, and
+The **Scripts** topic in the Navigation Panel provides the views to manage the script repository, script runners, and
 script types.
 
 Click on any **Administration** [function item[[]{.MCTextPopupArrow}Fuction items are displayed as icons with

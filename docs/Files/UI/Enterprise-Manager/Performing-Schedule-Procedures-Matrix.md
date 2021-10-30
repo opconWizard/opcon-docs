@@ -29,7 +29,7 @@ To perform this procedure:
 ## Releasing Held Schedules
 
 This action releases the selected schedule from a
-[Held]{.skd-job-statuses} state. The SAM processes jobs on the schedule from the point where they were stopped.
+Held state. The SAM processes jobs on the schedule from the point where they were stopped.
 
 To perform this procedure:
 
@@ -261,11 +261,11 @@ click the **Cancel** button to cancel the request.
 
 If multiple jobs were selected:
 
-Repeat [Steps 8 - 12]{.ul} to add the additional jobs' information.
+Repeat Steps 8 - 12 to add the additional jobs' information.
 
 If you need to add additional property definitions:
 
-Repeat [Steps 7 - 12]{.ul}.
+Repeat Steps 7 - 12.
 
 Click the **Close** button to close the **Add Jobs to \<Schedule
 Name\>** dialog.

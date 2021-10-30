@@ -13,30 +13,30 @@ To delete a batch user:
 
 Revoke Privileges
 
-1.  Double-click on **Batch User Privileges** under the **Security**
+1. Double-click on **Batch User Privileges** under the **Security**
     topic. The **Batch User Privileges** screen displays.
-2.  Select a **role** in the **Select Role** drop-down list.
+2. Select a **role** in the **Select Role** drop-down list.
     Alternatively, you can use the **Find** ((Ctrl+F) magnifying glass)
     button to find the role.
-3.  Select an **operating system** in the **Target Operating System**
+3. Select an **operating system** in the **Target Operating System**
     drop-down list.
-4.  Click on the **batch user(s)** in the **Granted** privileges list
+4. Click on the **batch user(s)** in the **Granted** privileges list
     box.
-5.  Click the **left arrow** to move the batch user(s) to the
+5. Click the **left arrow** to move the batch user(s) to the
     **Revoked** list box.
-6.  Repeat [Steps 2 -- 5]{.ul} for all user accounts having privileges
+6. Repeat Steps 2 - 5 for all user accounts having privileges
     to the batch user.
-7.  Click **Close ☒** (to the right of the **Batch User Privileges**
+7. Click **Close ☒** (to the right of the **Batch User Privileges**
     tab) to close the **Batch User Privileges** screen.
 
 Remove the Batch User from the Daily Tables
 
-9.  Double-click on **Daily Maintenance** under the **Operation** topic.
+9. Double-click on **Daily Maintenance** under the **Operation** topic.
     The **Daily Maintenance** screen displays.
-10. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+10. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
 11. Click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     expand the specific **schedule**.
 12. Click on the **job**.
 13. Click on the **Edit Daily** button. The **Job Daily** screen
@@ -46,7 +46,7 @@ Remove the Batch User from the Daily Tables
     ID/User ID** for UNIX, **User Code** for MCP) drop-down list.
 16. Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
     on the **Job Daily** toolbar.
-17. Follow [Steps 9 -- 16]{.ul} for all jobs using the batch user to be
+17. Follow Steps 9 - 16 for all jobs using the batch user to be
     deleted.
 18. Click **Close ☒** (to the right of the **Job Daily** tab) to close
     the **Job Daily** screen.
@@ -61,7 +61,7 @@ Remove the Batch User from the Master Tables
     ID/User ID** for UNIX, **User Code** for MCP) drop-down list.
 23. Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
     on the **Job Master** toolbar.
-24. Follow [Steps 21 -- 23]{.ul} for all jobs using the batch user to be
+24. Follow Steps 21 - 23 for all jobs using the batch user to be
     deleted.
 25. Click **Close** (to the right of the **Job Master** tab) to close
     the **Job Master** screen.
@@ -82,6 +82,3 @@ Delete the Batch User
 32. Click **Close ☒** (to the right of the **Batch Users** tab) to close
     the **Batch Users** screen.
 :::
-
- 
-

@@ -52,7 +52,7 @@ Click the **Save** button in the **Add Script** dialog.
 
 *(If prompted)* Assign a role or roles to the new script in the **Assign
 Script Roles** dialog and click the **Save** button. Otherwise, proceed
-to [Step 10]{.ul}.
+to Step 10.
 
 Click **Close ☒** (to the right of the **Script Repository** tab) to
 close the **Script Repository** screen.

@@ -11,7 +11,7 @@ The schedule and job status change commands are used with events and graphical i
 
 - **Hold Schedule**: Suspends the processing of the identified schedule(s). All currently running jobs continue to process to completion, but no new jobs on the schedule(s) start. If there are subschedules under the selected schedule and they are in a status of Waiting or In Process, those subschedules are placed in a status of Parent Hold.
 - **Release Schedule**: Releases the identified schedule(s) from a
-    [Held]{.skd-job-statuses} state. Jobs on the schedule(s) continue     processing from the point where they were stopped. If there are
+    Held state. Jobs on the schedule(s) continue     processing from the point where they were stopped. If there are
     subschedules under the defined schedule and they are in a status of
     [Parent Hold]{.skd-job-statuses}, those subschedules will also be     released.
 - **Start Schedule**: Overrides the identified schedule's start
@@ -34,12 +34,12 @@ The schedule and job status change commands are used with events and graphical i
     graphical interfaces. This option is [not]{.ul} available for the     BIS, OpenVMS, and OS 2200 platforms. To enable/disable the kill
     feature, refer to the [Advanced Machine Configuration](../objects/machines.md#advanced-machine-configuration).
 - **Release**: Releases the selected job(s) from a
-    [Held]{.skd-job-statuses} state. -   **Force Start**: Force starts the selected job(s). This causes the
+    Held state. -   **Force Start**: Force starts the selected job(s). This causes the
     job(s) to ignore all dependencies, and to start immediately.
 - **Restart Commands**: The restart commands include different options
-    for placing a job back in a [Qualifying]{.skd-job-statuses} status     after it has previously finished. The options include:
+    for placing a job back in a Qualifying status     after it has previously finished. The options include:
   - **Restart**: Places the selected job(s) back in a
-        [Qualifying]{.skd-job-statuses} state. All dependencies must be         met before the job(s) are submitted.
+        Qualifying state. All dependencies must be         met before the job(s) are submitted.
     - If Container jobs exist in the schedule, a list of all
             Container jobs that have matching statuses to the status
             filters chosen in the *Jobs to Update* section will display.
@@ -53,7 +53,7 @@ The schedule and job status change commands are used with events and graphical i
         available. You must have privileges to Force Start jobs and to
         Restart jobs to use this feature.
   - **Restart Without Prerun**: Places the selected job back in a
-        [Qualifying]{.skd-job-statuses} state. All dependencies must be         met before the job is submitted. The job is submitted without
+        Qualifying state. All dependencies must be         met before the job is submitted. The job is submitted without
         the associated prerun. This option is not available for the SAP
         R/3 and CRM, SAP BW, File Transfer, Container, and Null
         platforms.
@@ -74,6 +74,6 @@ The schedule and job status change commands are used with events and graphical i
     Only jobs in a Failed, Marked Failed, or Initialization Error status
     can be marked Under Review.
 - **Fixed**: Places the selected job(s) in a
-    [Fixed]{.skd-job-statuses} status to indicate that action has been     taken after job failure or error and the job is now considered
+    Fixed status to indicate that action has been     taken after job failure or error and the job is now considered
     fixed. Only jobs that are in a Failed, Marked Failed, Initialization
     Error, or Under Review status can be marked Fixed.

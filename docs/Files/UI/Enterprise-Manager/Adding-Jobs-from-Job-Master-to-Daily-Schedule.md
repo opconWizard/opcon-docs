@@ -55,11 +55,11 @@ click the **Cancel** button to cancel the request.
 
 If multiple jobs were selected:
 
-Repeat [Steps 4 - 9]{.ul} to add the additional jobs information.
+Repeat Steps 4 - 9 to add the additional jobs information.
 
 If you need to add additional property definitions:
 
-Repeat [Steps 5 - 9]{.ul}.
+Repeat Steps 5 - 9.
 
 Click on the **x** to the right of the **Daily Maintenance** tab to
 close the **Daily Maintenance** screen.

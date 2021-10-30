@@ -16,7 +16,7 @@ To perform the procedure:
     Master**).
 3. *(Optional)* Click on and drag the **Navigation
     Editor** tab onto the tab bar if not already attached.
-4. Repeat [Step 2]{.ul} to open more editors.
+4. Repeat Step 2 to open more editors.
 
 ## Changing Navigation Editor Tab Order
 

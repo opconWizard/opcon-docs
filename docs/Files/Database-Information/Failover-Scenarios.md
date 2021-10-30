@@ -59,7 +59,7 @@ For information on configuring failover based on abnormal shutdown on the Primar
 
 #### Normal Shutdown of the Primary SMAServMan
 
-In most cases, SMA Technologies [does not]{.ul} recommend configuring the Secondary SMAServMan to take control of processing upon normal shutdown of the Primary SMAServMan. With a controlled shutdown, failover is normally unnecessary; however, SMA Technologies includes failover on normal shutdown to support unique failover configurations.
+In most cases, SMA Technologies does not recommend configuring the Secondary SMAServMan to take control of processing upon normal shutdown of the Primary SMAServMan. With a controlled shutdown, failover is normally unnecessary; however, SMA Technologies includes failover on normal shutdown to support unique failover configurations.
 
 For information on configuring failover based on normal shutdown on the Primary, refer to the [PrimaryNormalShutdownFailover](../../server-programs/service-manager.md#PrimaryNormalShutdownFailover) and [PrimaryNormalShutdownScript](../../server-programs/service-manager.md#PrimaryNormalShutdownScript) settings in the **Server Programs** online help.
 

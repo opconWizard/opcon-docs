@@ -9,5 +9,5 @@ To add an access code to a job:
 3. Select the **job** in the **Job** drop-down list.
 4. Select the correct **access code** in the **Access Code** drop-down list.
 5. Click ![Save icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save** on the **Job Master** toolbar.
-6. Repeat [Steps 3 - 6]{.ul} for each job that needs the access code applied.
+6. Repeat Steps 3 - 6 for each job that needs the access code applied.
 7. Click **Close ☒** (to the right of the **Job Master** tab) to close the **Job Master** screen.

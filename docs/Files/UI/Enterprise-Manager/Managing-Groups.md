@@ -35,17 +35,14 @@ a.  Confirm the selection for **By default, ENS will treat all machines
     as: Excluded**.
 b.  Select the **checkbox** for the specific platform to select all
     machines for that specific platform. Alternatively, you can click on
-    the ![](../../../Resources/Images/EM/EMarrowtoexpand.png) **arrow**
+    the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png) **arrow**
     to the left of the platform to expand the **Machines** choices then
     select the **checkbox(es)** for the specific machine(s)
 
-```{=html}
-<!-- -->
-```
 a.  Change the selection to **By default, ENS will treat all machines
     as: Included**.
-b.  Select the **checkbox** for the specific platform to [remove]{.ul}     all machines for that specific platform. Alternatively, you can
-    click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+b.  Select the **checkbox** for the specific platform to remove     all machines for that specific platform. Alternatively, you can
+    click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to the left of the platform to expand the **Machines**
     choices then deselect the **checkbox(es)** for the specific
     machine(s) to remove.
@@ -64,12 +61,9 @@ a.  Confirm the selection for **By default, ENS will treat all schedules
     as: Excluded**.
 b.  Select the **checkbox** for each schedule to add to the group.
 
-```{=html}
-<!-- -->
-```
 a.  Change the selection to **By default, ENS will treat all schedules
     as: Included**.
-b.  Unselect the **checkbox** for each schedule to [remove]{.ul} from     the group.
+b.  Unselect the **checkbox** for each schedule to remove from     the group.
 
 Click the **Save** button.
 
@@ -85,17 +79,14 @@ a.  Confirm the selection for **By default, ENS will treat all jobs as:
     Excluded**.
 b.  Select the **checkbox** for the schedule to select all jobs for that
     schedule. Alternatively, you can click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     the left of the schedule to expand the **Jobs** choices then select
     the **checkbox(es)** for the specific job(s)
 
-```{=html}
-<!-- -->
-```
 a.  Change the selection to **By default, ENS will treat all jobs as:
     Included**.
-b.  Select the **checkbox** for the schedule to [remove]{.ul} all jobs     for that schedule. Alternatively, you can click on the
-    ![](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
+b.  Select the **checkbox** for the schedule to remove all jobs     for that schedule. Alternatively, you can click on the
+    ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to
     the left of the schedule to expand the **Jobs** choices then
     deselect the **checkbox(es)** for the specific job(s) to remove.
 
@@ -109,7 +100,7 @@ To delete a group:
     topic. The **Notification Manager** screen displays.
 2.  Click the **Machines**, **Schedules**, or **Jobs** tab in the
     **Notification Triggers** frame.
-3.  Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3.  Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Machines**,**Schedules**,or **Jobs**
     information.
 4.  Right-click on the **group** to delete.
@@ -125,7 +116,7 @@ To rename a group:
     topic. The **Notification Manager** screen displays.
 2.  Click the **Machines**, **Schedules**, or **Jobs** tab in the
     **Notification Triggers** frame.
-3.  Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3.  Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the **Machines**,**Schedules**,or **Jobs**
     information.
 4.  Right-click on the **group** to rename.

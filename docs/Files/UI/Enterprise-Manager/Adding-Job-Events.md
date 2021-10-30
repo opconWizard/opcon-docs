@@ -24,21 +24,19 @@ Trigger** screen of the wizard.
 Click the **Next** button to proceed to **Trigger Details** screen of
 the wizard.
 
-Do one of the following depending on your selection in [Step 7]{.ul}.
+Do one of the following depending on your selection in Step 7.
 
-a.  [(If Job Status was selected)]{.optional-text} Select the **job     status** in the **Job Status** drop-down list and proceed to [Step
-    10]{.ul}.
-b.  [(If LSAM Feedback was selected)]{.optional-text} Select the     **Feedback name** in the **LSAM Feedback** drop-down list. Next,
+a.  If Job Status was selected, select the **job     status** in the **Job Status** drop-down list and proceed to Step 10.
+b.  If LSAM Feedback was selected,  Select the     **Feedback name** in the **LSAM Feedback** drop-down list. Next,
     enter in the **String to match** field any *string to match the
     feedback value* that will trigger the
-    OpCon event. Then, proceed to [Step
-    10]{.ul}.
-c.  [(If Exit Description was selected)]{.optional-text} Select the     **Operator** in the **Comparison Operator** drop-down list . Next,
+    OpCon event. Then, proceed to Step 10.
+c.  If Exit Description was selected,  Select the     **Operator** in the **Comparison Operator** drop-down list . Next,
     enter in the **Value** field the proper value based on the selected
     **Operator** and enter in the **End Value** field the value for the
-    end of the Range. Then, proceed to [Step 10]{.ul}.
-d.  [(If Job Completion Complex Expression was     selected)]{.optional-text} Enter the *expression* in the
-    **Expression** text box and proceed to [Step 10]{.ul}. For more
+    end of the Range. Then, proceed to Step 10.
+d.  If Job Completion Complex Expression was selected, Enter the *expression* in the
+    **Expression** text box and proceed to Step 10. For more
     information, refer to [Property Expressions API Syntax](../../../reference/property-expressions-syntax.md)
      in the **Concepts** online help.
 
@@ -58,7 +56,7 @@ $JOB:ADD,<schedule date\>,<schedule name\>,<job name\>,<frequency name\>
 
 Place your mouse cursor at the beginning of a **<syntax placeholder\>** displayed in the **Event Parameters** text
 box then drag the cursor to the right to select the entire syntax
-placeholder, excluding any surrounding commas. For example: ,[<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
+placeholder, excluding any surrounding commas. For example: ,<schedule name\>, .
 
 Replace the selected syntax placeholder with valid
 OpCon event information.
@@ -66,7 +64,7 @@ OpCon event information.
 If you wish to replace the syntax placeholder with a token, then do the
 following:
 
-Follow [Step 12]{.ul} to select the syntax placeholder.
+Follow Step 12 to select the syntax placeholder.
 
 Click the ![Insert Token buton](../../../Resources/Images/EM/EMinserttoken.png "Insert Token button")
 **Insert token** button or press **Ctrl/t** on the keyboard to list
@@ -125,21 +123,19 @@ Trigger** screen of the wizard.
 Click the **Next** button to proceed to **Trigger Details** screen of
 the wizard.
 
-Do one of the following depending on your selection in [Step 8]{.ul}.
+Do one of the following depending on your selection in Step 8.
 
-a.  [(If Job Status was selected)]{.optional-text}Select the **job     status** in the **Job Status** drop-down list and proceed to [Step
-    11]{.ul}.
-b.  [(If LSAM Feedback was selected)]{.optional-text} Select the     **Feedback name** in the **LSAM Feedback** drop-down list. Next,
+a.  If Job Status was selected, Select the **job     status** in the **Job Status** drop-down list and proceed to Step 11.
+b.  If LSAM Feedback was selected,  Select the     **Feedback name** in the **LSAM Feedback** drop-down list. Next,
     enter in the **String to match** field any *string to match the
     feedback value* that will trigger the
-    OpCon event. Then, proceed to [Step
-    11]{.ul}.
-c.  [(If Exit Description was selected)]{.optional-text} Select the     **Operator** in the **Comparison Operator** drop-down list . Next,
+    OpCon event. Then, proceed to Step 11.
+c.  If Exit Description was selected,  Select the     **Operator** in the **Comparison Operator** drop-down list . Next,
     enter in the **Value** field the proper value based on the selected
     **Operator** and enter in the **End Value** field the value for the
-    end of the Range. Then, proceed to [Step 11]{.ul}.
-d.  [(If Job Completion Complex Expression was     selected)]{.optional-text} Enter the *expression* in the
-    **Expression** text box and proceed to [Step 11]{.ul}. For more
+    end of the Range. Then, proceed to Step 11.
+d.  If Job Completion Complex Expression was selected), Enter the *expression* in the
+    **Expression** text box and proceed to Step 11. For more
     information, refer to [Property Expressions API     Syntax](../../../reference/property-expressions-syntax.md)
      in the **Concepts** online help.
 
@@ -153,9 +149,9 @@ information, refer to the [OpCon Events](../../../events/introduction.md) onlin
 $JOB:ADD,<schedule date\>,<schedule name\>,<job name\>,<frequency name\>
 :::
 
-[]{#Place_your_mouse_cursor}Place your mouse cursor at the beginning of a **<syntax placeholder\>** displayed in the **Event Parameters** text
+Place your mouse cursor at the beginning of a **<syntax placeholder\>** displayed in the **Event Parameters** text
 box then drag the cursor to the right to select the entire syntax
-placeholder, excluding any surrounding commas. For example: ,[<schedule name\>]{style="background-color: #1e90ff; color: #ffffff;"}, .
+placeholder, excluding any surrounding commas. For example: ,<schedule name\>, .
 
 Replace the selected syntax placeholder with valid
 OpCon event information.
@@ -163,7 +159,7 @@ OpCon event information.
 If you wish to replace the syntax placeholder with a Token, then do the
 following:
 
-a.  Follow [Step 13]{.ul} to select the syntax placeholder.
+a.  Follow Step 13 to select the syntax placeholder.
 b.  Click the ![Insert Token     buton](../../../Resources/Images/EM/EMinserttoken.png "Insert Token button")
     **Insert token** button or press **Ctrl/t** on the keyboard to list
     available global properties.

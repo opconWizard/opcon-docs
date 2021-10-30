@@ -22,10 +22,10 @@ Modify Advanced Machine Parameters
 6. Click on the appropriate **Machine Properties** tab.
 7. Click on the **machine property**.
 8. Enter the *new value* or select the **new value** in the
-    **\<Property Name\>** drop-down list.
+    **<Property Name\>** drop-down list.
 9. Click the **Update** button to save the change or click the
     **Defaults** button to restore the parameter to the system defaults.
-10. Repeat [Steps 7 -- 9]{.ul} to modify another parameter(s).
+10. Repeat Steps 7 - 9 to modify another parameter(s).
 11. Click the **Save** button to save the changes made to the machine
     parameters.
 12. Right-click over the graphic to enable the menu in the
@@ -42,7 +42,7 @@ Modify Advanced Machine Parameters
 19. Click the **Update** button to save the added available property or
     click the **Defaults** button to reset the **Available Property**
     parameter to the system default.
-20. Repeat [Steps 15 - 19]{.ul} until all available properties have been
+20. Repeat Steps 15 - 19 until all available properties have been
     added.
 21. Click the **Save** button to save the available properties added to
     the machine.
@@ -57,7 +57,7 @@ Modify Advanced Machine Parameters
 27. Click the **Update** button to save the change made to the Available
     Property or click the **Defaults** button to reset the **Available
     Property** parameter to the system default.
-28. Repeat [Steps 23 -- 27]{.ul} until all Available Properties that
+28. Repeat Steps 23 - 27 until all Available Properties that
     require editing are changed.
 29. Click the **Save** button to save the changes made to the Available
     Properties.
@@ -75,7 +75,7 @@ Modify Advanced Machine Parameters
 38. Click the **Update** button to save the change made to the available
     property or click the **Defaults** button to reset the **Available
     Property** parameter to the system default.
-39. Repeat [Steps 37 and 38]{.ul} until all available properties that
+39. Repeat Steps 37 and 38 until all available properties that
     require removing have been removed.
 40. Click the **Save** button to save the changes made to the advanced
     properties.

@@ -10,5 +10,5 @@ To activate or inactivate a notification:
 4. Click on the ![Expand Arrow](../../../Resources/Images/EM/EMarrowtoexpand.png)**arrow** to expand the **Notification Group** that contains the appropriate trigger.
 5. Click the **trigger**.
 6. Select the checkbox to the left of the preferred notification.
-7. Click on the **[green]{._Override     style="font-weight: bold;color: #218921;"}** Power symbol to the
+7. Click on the **green** Power symbol to the
     left of the **Notification** checkbox.

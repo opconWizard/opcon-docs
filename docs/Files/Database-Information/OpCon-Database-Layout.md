@@ -1789,13 +1789,13 @@ notifications.
 ### Escalation
 
 The primary table [Escalation]{.GeneralEscalatedNotificationCapitalized} contains the details and status of a notification
-[escalation]{.GeneralEscalatedNotification}.
+escalation.
   Column Name           Explanation                                                                                                                                           Data Type       Additional Information
   --------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------- --------------- -------------------------------------------------------
-  EscalationId          This column contains [escalation]{.GeneralEscalatedNotification} IDs that uniquely identify each [escalation]{.GeneralEscalatedNotification}.         int (4)         The EscalationRecipient table references this column.   EscalationRuleId      This column contains the ID of the [escalation]{.GeneralEscalatedNotification} rule that triggered the [escalation]{.GeneralEscalatedNotification}.   int (4)         None
-  EscalationSequence    This column contains the ID of the current [escalation]{.GeneralEscalatedNotification} sequence (level).                                              smallint (2)    None   EscalationStatus      This column contains the status of the [escalation]{.GeneralEscalatedNotification}.                                                                   int (4)         None
+  EscalationId          This column contains escalation IDs that uniquely identify each escalation.         int (4)         The EscalationRecipient table references this column.   EscalationRuleId      This column contains the ID of the escalation rule that triggered the escalation.   int (4)         None
+  EscalationSequence    This column contains the ID of the current escalation sequence (level).                                              smallint (2)    None   EscalationStatus      This column contains the status of the escalation.                                                                   int (4)         None
   Attempts              This column contains the number of attempts that have been made to escalate the notification to the current level.                                    int (4)         None
-  LastMessageSent       This column contains the time the most recent [escalation]{.GeneralEscalatedNotification} message was sent out.                                       datetime (8)    None   ActionMessage         This column holds the content from the ACTIONMSG column on the ENSMESSAGES table but with tokens resolved.                                            varchar (max)   None
+  LastMessageSent       This column contains the time the most recent escalation message was sent out.                                       datetime (8)    None   ActionMessage         This column holds the content from the ACTIONMSG column on the ENSMESSAGES table but with tokens resolved.                                            varchar (max)   None
   TriggerName           This column contains the name of the ENS trigger being escalated.                                                                                     varchar (255)   None
   MachineName           This column contains the machine name.                                                                                                                char (24)       None
   ScheduleDate          This column contains the schedule date where relevant.                                                                                                int (4)         None
@@ -1808,7 +1808,7 @@ The primary table [Escalation]{.GeneralEscalatedNotificationCapitalized} contain
   ActionName            This column contains the ACTIONNAME from the ENSMESSAGES table.                                                                                       varchar (255)   None
   ActionIncludeId       This column contains the ACTIONINCID from the ENSMESSAGES table.                                                                                      char (1)        None
   NotifyDelimiter       This column contains the Notify delimiter from the NOTIFY table.                                                                                      char (1)        None
-  AcknowledgedBy        This column contains the USERSIGNON of the user who acknowledged the [escalation]{.GeneralEscalatedNotification}.                                     char (512)      None   AcknowledgeTime       This column contains the time the [escalation]{.GeneralEscalatedNotification} was acknowledged.                                                       datetime (8)    None
+  AcknowledgedBy        This column contains the USERSIGNON of the user who acknowledged the escalation.                                     char (512)      None   AcknowledgeTime       This column contains the time the escalation was acknowledged.                                                       datetime (8)    None
   AcknowledgeHostName   This column contains the name of the host from which the acknowledgment was made.                                                                     varchar (100)   None
 
   : Escalation Column Descriptions
@@ -1823,10 +1823,10 @@ The primary table [Escalation]{.GeneralEscalatedNotificationCapitalized} contain
 
 The primary table EscalationGroup contains an ID and name for a
 collection of roles that are associated together for purposes of
-[escalation]{.GeneralEscalatedNotification} of notifications.
+escalation of notifications.
   Column Name           Explanation                                                                                                                                                 Data Type        Additional Information
   --------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------- -------------------------------------------------------------------------------------
-  EscalationGroupId     This column contains [escalation]{.GeneralEscalatedNotification} group IDs that uniquely identify each [escalation]{.GeneralEscalatedNotification} group.   int (4)          The EscalationGroupRole and EscalationGroupENSMessage tables reference this column.   EscalationGroupName   This column contains [escalation]{.GeneralEscalatedNotification} group names.                                                                               nvarchar (128)   None
+  EscalationGroupId     This column contains escalation group IDs that uniquely identify each escalation group.   int (4)          The EscalationGroupRole and EscalationGroupENSMessage tables reference this column.   EscalationGroupName   This column contains escalation group names.                                                                               nvarchar (128)   None
 
   : EscalationGroup Column Descriptions
 
@@ -1839,7 +1839,7 @@ collection of roles that are associated together for purposes of
 ### EscalationGroupUser
 
 The primary table EscalationGroupUser is a relationship table that links
-OpCon users with [escalation]{.GeneralEscalatedNotification} groups for notifications.
+OpCon users with escalation groups for notifications.
 
 +----------------+----------------+----------------+----------------+
 | Column Name    | Explanation    | Data Type      | Additional     |
@@ -1904,14 +1904,14 @@ OpCon users with [escalation]{.GeneralEscalatedNotification} groups for notifica
 ### EscalationHistory
 
 The primary table EscalationHistory contains the details and status of a
-notification [escalation]{.GeneralEscalatedNotification} retained for historical purposes.
+notification escalation retained for historical purposes.
 
   Column Name           Explanation                                                                                                                                           Data Type       Additional Information
   --------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------- --------------- --------------------------------------------------------------
-  EscalationId          This column contains [escalation]{.GeneralEscalatedNotification} IDs that uniquely identify each [escalation]{.GeneralEscalatedNotification}.         int (4)         The EscalationHistoryRecipient table references this column.   EscalationRuleId      This column contains the ID of the [escalation]{.GeneralEscalatedNotification} rule that triggered the [escalation]{.GeneralEscalatedNotification}.   int (4)         None
-  EscalationSequence    This column contains the ID of the current [escalation]{.GeneralEscalatedNotification} sequence (level).                                              smallint (2)    None   EscalationStatus      This column contains the status of the [escalation]{.GeneralEscalatedNotification}.                                                                   int (4)         None
+  EscalationId          This column contains escalation IDs that uniquely identify each escalation.         int (4)         The EscalationHistoryRecipient table references this column.   EscalationRuleId      This column contains the ID of the escalation rule that triggered the escalation.   int (4)         None
+  EscalationSequence    This column contains the ID of the current escalation sequence (level).                                              smallint (2)    None   EscalationStatus      This column contains the status of the escalation.                                                                   int (4)         None
   Attempts              This column contains the number of attempts that have been made to escalate the notification to the current level.                                    int (4)         None
-  LastMessageSent       This column contains the time the most recent [escalation]{.GeneralEscalatedNotification} message was sent out.                                       datetime (8)    None   ActionMessage         This column holds the content from the ACTIONMSG column on the ENSMESSAGES table but with tokens resolved.                                            varchar (max)   None
+  LastMessageSent       This column contains the time the most recent escalation message was sent out.                                       datetime (8)    None   ActionMessage         This column holds the content from the ACTIONMSG column on the ENSMESSAGES table but with tokens resolved.                                            varchar (max)   None
   TriggerName           This column contains the name of the ENS trigger being escalated.                                                                                     varchar (255)   None
   MachineName           This column contains the machine name.                                                                                                                char (24)       None
   ScheduleDate          This column contains the schedule date where relevant.                                                                                                int (4)         None
@@ -1924,7 +1924,7 @@ notification [escalation]{.GeneralEscalatedNotification} retained for historical
   ActionName            This column contains the ACTIONNAME from the ENSMESSAGES table.                                                                                       varchar (255)   None
   ActionIncludeId       This column contains the ACTIONINCID from the ENSMESSAGES table.                                                                                      char (1)        None
   NotifyDelimiter       This column contains the Notify delimiter from the NOTIFY table.                                                                                      char (1)        None
-  AcknowledgedBy        This column contains the USERSIGNON of the user who acknowledged the [escalation]{.GeneralEscalatedNotification}.                                     char (512)      None   AcknowledgeTime       This column contains the time the [escalation]{.GeneralEscalatedNotification} was acknowledged.                                                       datetime (8)    None
+  AcknowledgedBy        This column contains the USERSIGNON of the user who acknowledged the escalation.                                     char (512)      None   AcknowledgeTime       This column contains the time the escalation was acknowledged.                                                       datetime (8)    None
   AcknowledgeHostName   This column contains the name of the host from which the acknowledgment was made.                                                                     varchar (100)   None
 
   : EscalationHistory Column Descriptions
@@ -1939,12 +1939,12 @@ notification [escalation]{.GeneralEscalatedNotification} retained for historical
 
 The primary table EscalationRecipient contains an ID, OpCon login, and
 email address for a recipient of a notification
-[escalation]{.GeneralEscalatedNotification}.
+escalation.
   Column Name             Explanation                                                                                                                                                               Data Type        Additional Information
   ----------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------- ------------------------
-  EscalationRecipientId   This column contains EscalationRecipient IDs that uniquely identify each recipient of a notification [escalation]{.GeneralEscalatedNotification}.                         int (4)          None   EscalationId            This column contains the ID of the notification [escalation]{.GeneralEscalatedNotification} that was sent to the [escalation]{.GeneralEscalatedNotification} recipient.   int (4)          None
-  UserSignOn              This column contains the OpCon USERSIGNON of the [escalation]{.GeneralEscalatedNotification} recipient.                                                                   char (512)       None   Email                   This column contains the email address of the [escalation]{.GeneralEscalatedNotification} recipient.                                                                      varchar (4000)   None
-  EscalationSequence      This column contains the sequence of the [escalation]{.GeneralEscalatedNotification}.                                                                                     smallint (2)     None
+  EscalationRecipientId   This column contains EscalationRecipient IDs that uniquely identify each recipient of a notification escalation.                         int (4)          None   EscalationId            This column contains the ID of the notification escalation that was sent to the escalation recipient.   int (4)          None
+  UserSignOn              This column contains the OpCon USERSIGNON of the escalation recipient.                                                                   char (512)       None   Email                   This column contains the email address of the escalation recipient.                                                                      varchar (4000)   None
+  EscalationSequence      This column contains the sequence of the escalation.                                                                                     smallint (2)     None
   : EscalationRecipient Column Descriptions
 
   Index Code               Columns
@@ -1957,13 +1957,13 @@ email address for a recipient of a notification
 
 The primary table EscalationRecipientHistory contains the history of the
 mapping between notification
-[escalations]{.GeneralEscalatedNotificationPlural} and their recipients, i.e., which notification
-[escalations]{.GeneralEscalatedNotificationPlural} were sent to whom.
+escalations and their recipients, i.e., which notification
+escalations were sent to whom.
   Column Name             Explanation                                                                                                                                                               Data Type        Additional Information
   ----------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------- ------------------------
-  EscalationRecipientId   This column contains EscalationRecipient IDs that uniquely identify each recipient of a notification [escalation]{.GeneralEscalatedNotification}.                         int (4)          None   EscalationId            This column contains the ID of the notification [escalation]{.GeneralEscalatedNotification} that was sent to the [escalation]{.GeneralEscalatedNotification} recipient.   int (4)          None
-  UserSignOn              This column contains the OpCon USERSIGNON of the [escalation]{.GeneralEscalatedNotification} recipient.                                                                   char (512)       None   Email                   This column contains the email address of the [escalation]{.GeneralEscalatedNotification} recipient.                                                                      varchar (4000)   None
-  EscalationSequence      This column contains the sequence of the [escalation]{.GeneralEscalatedNotification}.                                                                                     smallint (2)     None
+  EscalationRecipientId   This column contains EscalationRecipient IDs that uniquely identify each recipient of a notification escalation.                         int (4)          None   EscalationId            This column contains the ID of the notification escalation that was sent to the escalation recipient.   int (4)          None
+  UserSignOn              This column contains the OpCon USERSIGNON of the escalation recipient.                                                                   char (512)       None   Email                   This column contains the email address of the escalation recipient.                                                                      varchar (4000)   None
+  EscalationSequence      This column contains the sequence of the escalation.                                                                                     smallint (2)     None
   : EscalationRecipientHistory Column Descriptions
 
   Index Code                      Columns
@@ -1976,10 +1976,10 @@ mapping between notification
 
 The primary table EscalationRule contains an ID and name for a
 collection of rules created for purposes of
-[escalation]{.GeneralEscalatedNotification} of notifications.
+escalation of notifications.
   Column Name             Explanation                                                                                                                                         Data Type        Additional Information
   ----------------------- --------------------------------------------------------------------------------------------------------------------------------------------------- ---------------- ------------------------------------------------------------------------------------
-  EscalationRecipientId   This column contains EscalationRecipient IDs that uniquely identify each recipient of a notification [escalation]{.GeneralEscalatedNotification}.   int (4)          The EscalationRuleGroup and EscalationRuleENSMessage tables reference this column.   EscalationRuleName      This column contains [escalation]{.GeneralEscalatedNotification} rule names.                                                                        nvarchar (128)   None
+  EscalationRecipientId   This column contains EscalationRecipient IDs that uniquely identify each recipient of a notification escalation.   int (4)          The EscalationRuleGroup and EscalationRuleENSMessage tables reference this column.   EscalationRuleName      This column contains escalation rule names.                                                                        nvarchar (128)   None
 
   : EscalationRule Column Descriptions
 
@@ -1992,11 +1992,11 @@ collection of rules created for purposes of
 ### EscalationRuleENSMessage
 
 The primary table EscalationRuleENSMessage is a relationship table that
-links [escalation]{.GeneralEscalatedNotification} rules for notifications with notification messages.
+links escalation rules for notifications with notification messages.
 
   Column Name        Explanation                                                                                                                                                                                                                  Data Type   Additional Information
   ------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------- ------------------------------------------------------------------------
-  EscalationRuleId   This column contains [escalation]{.GeneralEscalatedNotification} rule IDs that identify [escalation]{.GeneralEscalatedNotification} rules associated with notification [escalations]{.GeneralEscalatedNotificationPlural}.   int (4)     The EscalationRule table is referenced from this table via this field.   GroupofId          This column contains ENS group IDs that identify groups of notifications.                                                                                                                                                    int (4)     The ENSMESSAGES table is referenced from this table via this field.
+  EscalationRuleId   This column contains escalation rule IDs that identify escalation rules associated with notification escalations.   int (4)     The EscalationRule table is referenced from this table via this field.   GroupofId          This column contains ENS group IDs that identify groups of notifications.                                                                                                                                                    int (4)     The ENSMESSAGES table is referenced from this table via this field.
   ActionId           This column contains ENS action IDs that identify notification actions.                                                                                                                                                      int (4)     The ENSMESSAGES table is referenced from this table via this field.
   ActionType         This column contains ENS action types that identify the type of notification that will be sent.                                                                                                                              int (4)     The ENSMESSAGES table is referenced from this table via this field.
 
@@ -2019,17 +2019,17 @@ links [escalation]{.GeneralEscalatedNotification} rules for notifications with n
 ### EscalationSequence
 
 The primary table EscalationSequence is a relationship table that links
-[escalation]{.GeneralEscalatedNotification} rules for notifications with [escalation]{.GeneralEscalatedNotification} groups. It also further
+escalation rules for notifications with escalation groups. It also further
 describes the rule further in terms of levels of
-[escalation]{.GeneralEscalatedNotification}, [escalation]{.GeneralEscalatedNotification} intervals, and other
+escalation, escalation intervals, and other
 categories.
 
   Column Name            Explanation                                                                                                                                                                                                                  Data Type        Additional Information
   ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------- -------------------------------------------------------------------------
-  EscalationSequenceId   This column contains [escalation]{.GeneralEscalatedNotification} sequence IDs that identify sequences associated with notification [escalation]{.GeneralEscalatedNotification} level rules and groups.                       int (4)          None   EscalationRuleId       This column contains [escalation]{.GeneralEscalatedNotification} rule IDs that identify [escalation]{.GeneralEscalatedNotification} rules associated with notification [escalations]{.GeneralEscalatedNotificationPlural}.   int (4)          The EscalationRule table is referenced from this table via this field.
-  EscalationGroupId      This column contains [escalation]{.GeneralEscalatedNotification} group IDs that identify groups associated with notification [escalations]{.GeneralEscalatedNotificationPlural}.                                             int (4)          The EscalationGroup table is referenced from this table via this field.   Sequence               This column contains sequence numbers associated with [escalation]{.GeneralEscalatedNotification} rule and group pairs.                                                                                                      smallint (2)     None
-  AttemptLimit           This column contains the maximum number of times that an [escalation]{.GeneralEscalatedNotification} message will be sent before escalating to the next level.                                                               smallint (2)     None   AttemptInterval        This column contains the interval in minutes between attempts to send an [escalation]{.GeneralEscalatedNotification} message.                                                                                                smallint (2)     None
-  Name                   This column contains names for the [escalation]{.GeneralEscalatedNotification} levels.                                                                                                                                       nvarchar (128)   None
+  EscalationSequenceId   This column contains escalation sequence IDs that identify sequences associated with notification escalation level rules and groups.                       int (4)          None   EscalationRuleId       This column contains escalation rule IDs that identify escalation rules associated with notification escalations.   int (4)          The EscalationRule table is referenced from this table via this field.
+  EscalationGroupId      This column contains escalation group IDs that identify groups associated with notification escalations.                                             int (4)          The EscalationGroup table is referenced from this table via this field.   Sequence               This column contains sequence numbers associated with escalation rule and group pairs.                                                                                                      smallint (2)     None
+  AttemptLimit           This column contains the maximum number of times that an escalation message will be sent before escalating to the next level.                                                               smallint (2)     None   AttemptInterval        This column contains the interval in minutes between attempts to send an escalation message.                                                                                                smallint (2)     None
+  Name                   This column contains names for the escalation levels.                                                                                                                                       nvarchar (128)   None
   : EscalationSequence Column Descriptions
 
   Index Code              Columns

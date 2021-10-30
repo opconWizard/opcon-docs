@@ -14,7 +14,7 @@ following two modes:
 
 ## Required Privileges
 
-In order to view the daily job definition, you must have [at least]{.ul} all of the following privileges:
+In order to view the daily job definition, you must have at least all of the following privileges:
 
 - **Schedule Privilege**: User must be at least in a role that has
     access to the job's parent schedule.
@@ -25,7 +25,7 @@ In order to view the daily job definition, you must have [at least]{.ul} all of 
     access to the assigned job access code.
 
 In order to edit the daily job definition, you must be in the ocadm role
-or have [at least]{.ul} all of the following privileges:
+or have at least all of the following privileges:
 
 - **Schedule Privilege**: User must be at least in a role that has
     access to the job's parent schedule.

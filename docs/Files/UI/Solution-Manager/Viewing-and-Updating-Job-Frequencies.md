@@ -112,7 +112,7 @@ Late-To-Start Offset from the job Start Offset (taking into
 consideration the Absolute or Relative setting).
 
 :::note
-If the time arrives and the job has not yet started, it will be set to a status of [Late to Start]{.skd-job-statuses}. The time at which the job will be set to a status of [Late to Start]{.skd-job-statuses} is calculated by adding the **Schedule Start Time + Job Start Offset + Late to Start**. The default value of 00:00 disables this feature.
+If the time arrives and the job has not yet started, it will be set to a status of Late to Start. The time at which the job will be set to a status of Late to Start is calculated by adding the **Schedule Start Time + Job Start Offset + Late to Start**. The default value of 00:00 disables this feature.
 :::
 
 Enter the positive number of hours and minutes to offset the
@@ -120,7 +120,7 @@ Late-To-Finish Offset from the job Start Offset (taking into
 consideration the Absolute or Relative setting).
 
 :::note
-If the time arrives and the job is still running, it will be set to a status of [Running; Late to Finish]{.skd-job-statuses}. The time at which the job will be set to a status of [Late to Finish]{.skd-job-statuses} is calculated by adding the **Schedule Start Time + Job Start Offset + Late to Finish**. The default value of 00:00 disables this feature.
+If the time arrives and the job is still running, it will be set to a status of Running; Late to Finish. The time at which the job will be set to a status of Late to Finish is calculated by adding the **Schedule Start Time + Job Start Offset + Late to Finish**. The default value of 00:00 disables this feature.
 :::
 
 **In the Latest Offset frame:**

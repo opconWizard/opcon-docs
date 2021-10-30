@@ -108,9 +108,9 @@ contains the following information:
 To get job information:
 
 1. Double-click on **List** under the **Operation** topic .
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Double-click on the **job**or right-click on the **job** then select
     **Job Information**. The **Job Information** dialog displays.
@@ -127,9 +127,9 @@ To get job information:
 To add configuration parameters:
 
 1. Double-click on **List** under the **Operation** topic .
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Job Information** from the menu. The **Job Information**
@@ -140,7 +140,7 @@ To add configuration parameters:
     **Add** dialog displays.
 9. Enter the new *property value*.
 10. Click the **OK** button.
-11. Repeat [Steps 8 - 10]{.ul} to add additional property values.
+11. Repeat Steps 8 - 10 to add additional property values.
 12. Click the **Update** button to save the property values defined or
     click the **Defaults** button to reset the parameter to the system
     defaults.
@@ -151,9 +151,9 @@ To add configuration parameters:
 To edit configuration parameters:
 
 1. Double-click on **List** under the **Operation** topic.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Job Information** from the menu. The **Job Information**
@@ -174,9 +174,9 @@ To edit configuration parameters:
 To remove properties from job information:
 
 1. Double-click on **List** under the **Operation** topic.
-2. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+2. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **date**.
-3. Click on the ![](../../../Resources/Images/EM/EMarrowtoexpand.png)
+3. Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
     **arrow** to expand the specific **schedule**.
 4. Right-click on the **job**.
 5. Click on **Job Information** from the menu. The **Job Information**
@@ -188,4 +188,3 @@ To remove properties from job information:
 10. Click the **Yes** button to delete the property or click the **No**
     button to cancel the deletion.
 11. Click the **OK** button to close the **Job Information** dialog.
-:::

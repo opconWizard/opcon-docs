@@ -29,7 +29,7 @@ Configure any of the following settings:
 - [Status Actions Reason Caching](#Status)
 - [Debug](#Debug)
 
-Click [Save]{._Override style="font-weight: bold;"} to save the changes to the database.
+Click **Save** to save the changes to the database.
 
 ## Environment Names
 
@@ -48,16 +48,11 @@ Themes allow you to customize the look and feel (skin) of each of your
 OpCon environments in order to distinguish them. You can select one of
 the following predefined themes for your environment:
 
-- ![Default Theme     Swatch](../../../Resources/Images/SM/SM-theme_defaultswatch.png "Default Theme Swatch"){.flat
-    width="25px"} Default
-- ![Blueberry Theme     Swatch](../../../Resources/Images/SM/SM-theme_blueberryswatch.png "Blueberry Theme Swatch"){.flat
-    width="25px"} Blueberry
-- ![Melon Theme     Swatch](../../../Resources/Images/SM/SM-theme_melonswatch.png "Melon Theme Swatch"){.flat
-    width="25px"} Melon
-- ![Emerald Theme     Swatch](../../../Resources/Images/SM/SM-theme_emeraldswatch.png "Emerald Theme Swatch"){.flat
-    width="25px"} Emerald
-- ![Ruby Theme     Swatch](../../../Resources/Images/SM/SM-theme_rubyswatch.png "Ruby Theme Swatch"){.flat
-    width="25px"} Ruby
+- ![Default Theme     Swatch](../../../Resources/Images/SM/SM-theme_defaultswatch.png "Default Theme Swatch") Default
+- ![Blueberry Theme     Swatch](../../../Resources/Images/SM/SM-theme_blueberryswatch.png "Blueberry Theme Swatch") Blueberry
+- ![Melon Theme     Swatch](../../../Resources/Images/SM/SM-theme_melonswatch.png "Melon Theme Swatch") Melon
+- ![Emerald Theme     Swatch](../../../Resources/Images/SM/SM-theme_emeraldswatch.png "Emerald Theme Swatch") Emerald
+- ![Ruby Theme     Swatch](../../../Resources/Images/SM/SM-theme_rubyswatch.png "Ruby Theme Swatch") Ruby
 
 ## Windows Pass-Through Authentication
 

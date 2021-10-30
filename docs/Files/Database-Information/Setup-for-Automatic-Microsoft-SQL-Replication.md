@@ -385,7 +385,7 @@ The SMAReplicationMonitor schedule must run every day to ensure replication runs
 The following procedure configures text messages through job level events; however, the notification can be any $NOTIFY type event and could instead be managed through ENS if desired. For information on ENS, refer to [Event Notification](../../notifications/Components.md) in the **Concepts** online help.
 
 :::caution
-If notifications are not configured on the SMAReplicationMonitor jobs, replication could fail without anyone noticing. While the method described below need not be used, SMA Technologies [strongly]{.ul} recommends that some form of automatic notification be configured.
+If notifications are not configured on the SMAReplicationMonitor jobs, replication could fail without anyone noticing. While the method described below need not be used, SMA Technologies **strongly** recommends that some form of automatic notification be configured.
 :::
 
 1. In EM Navigation under Administration: Double-click **Job Master**.

@@ -25,7 +25,7 @@ Establish the dependency link by following either of the two procedures:
 a.  Clicking **Add Dependency** in the **Tools** frame.
 b.  Clicking on the **threshold** that is the object of the dependency.
 c.  Clicking on the **job** in which to create the dependency.
-d.  Proceeding to [Step 7]{.ul}.
+d.  Proceeding to Step 7.
 
 OR
 
@@ -34,7 +34,7 @@ b.  Pressing the **Ctrl** key then clicking on the **threshold** that is
     the object of the dependency.
 c.  Dragging the line for the link across to the **job** in which to
     create the dependency.
-d.  Proceeding to [Step 7.]{.ul}
+d.  Proceeding to Step 7.
 
 Select the **Threshold** option information (e.g., Operator, Value,
 Frequency) in the **Threshold Dependency** dialog.

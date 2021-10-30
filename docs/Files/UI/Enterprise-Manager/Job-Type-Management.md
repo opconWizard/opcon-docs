@@ -55,7 +55,7 @@ For conceptual information, refer to [BIS Job Details](../../../job-types/bis.md
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Enter the *field information*.
 3. Click on the **Data Dependencies** tab.
@@ -91,7 +91,7 @@ For conceptual information, refer to [File Transfer Job Details](../../../job-ty
 To define job details:
 
 Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-Then, proceed to [Step 2]{.ul} below to define the platform-specific job
+Then, proceed to Step 2 below to define the platform-specific job
 information.
 
 Ensure that the **File Information** tab is selected within the **File
@@ -158,7 +158,7 @@ the **Concepts** online help.
 To define job details:
 
 Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-Then, proceed to [Step 2]{.ul} below to define the platform-specific job
+Then, proceed to Step 2 below to define the platform-specific job
 information.
 
 Ensure that the **Job Information** tab is selected in the **IBM i
@@ -309,7 +309,7 @@ For conceptual information, refer to [Java Job Details](../../../job-types/java.
 To define job details:
 
 Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-Then, proceed to [Step 2]{.ul} below to define the platform-specific job
+Then, proceed to Step 2 below to define the platform-specific job
 information.
 
 **In the Java Definition frame:**
@@ -395,7 +395,7 @@ For conceptual information, refer to [MCP Job Details](../../../job-types/mcp.md
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Ensure that the **Job Information** tab is selected within the **MCP
     Definition** frame.
@@ -419,7 +419,7 @@ the **Concepts** online help.
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Ensure that the **Job Information** tab is selected with the **OS
     2200 Definition** frame.
@@ -437,7 +437,7 @@ the **Concepts** online help.
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Click the **SAP Search** button. The **SAP Query** dialog displays.
 3. Enter the *process chain name* (wildcards (\*) can be used to expand
@@ -459,7 +459,7 @@ For conceptual information, refer to [SAP R/3 and CRM Job Details](../../../job-
 To define job details:
 
 Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-Then, proceed to [Step 2]{.ul} below to define the platform-specific job
+Then, proceed to Step 2 below to define the platform-specific job
 information.
 
 :::note
@@ -555,7 +555,7 @@ For conceptual information, refer to [SQL Job Details](../../../job-types/sql.md
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **MS SQL DTExec** in the **Job Action** drop-down list.
 3. Select a *connection type* to perform: **SQL** or **FILE**.
@@ -578,7 +578,7 @@ For conceptual information, refer to [SQL Job Details](../../../job-types/sql.md
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **MS SQL Job** in the **Job Action** drop-down list.
 3. Enter the **Server Name\\Instance**.
@@ -607,7 +607,7 @@ For conceptual information, refer to [SQL Job Details](../../../job-types/sql.md
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **MS SQL Script** in the **Job Action** drop-down list.
 3. Enter the **Server Name\\Instance**.
@@ -649,7 +649,7 @@ For conceptual information, refer to [SQL Job Details](../../../job-types/sql.md
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **MySQL** in the **Job Action** drop-down list.
 3. Enter the **Server Name**.
@@ -684,7 +684,7 @@ For conceptual information, refer to [SQL Job Details](../../../job-types/sql.md
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **Oracle** in the **Job Action** drop-down list.
 3. Enter the **Server Name**.
@@ -710,7 +710,7 @@ For conceptual information, refer to [SQL Job Details](../../../job-types/sql.md
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **Other DB** in the **Job Action** drop-down list.
 3. Select the *database connection type* to use: **ODBC Connection
@@ -752,7 +752,7 @@ in the **Concepts** online help.
 To define job details:
 
 Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-Then, proceed to [Step 2]{.ul} below to define the platform-specific job
+Then, proceed to Step 2 below to define the platform-specific job
 information.
 
 **In the Tuxedo ART Definition frame:**
@@ -820,7 +820,7 @@ For conceptual information, refer to [UNIX Job Details](../../../job-types/unix.
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **Run Program** in the **Job Action** drop-down list.
 3. Select the **UNIX Group ID** and **User Id** assigned to the job.
@@ -862,7 +862,7 @@ For conceptual information, refer to [UNIX Job Details](../../../job-types/unix.
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **File Arrival** in the **Job Action** drop-down list.
 3. Select a **group id/user id** in the **Group Id / User Id**
@@ -891,7 +891,7 @@ For conceptual information, refer to [UNIX Job Details](../../../job-types/unix.
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **Embedded Script** in the **Job Action** drop-down list.
 3. Select the **Group Id / User Id** assigned to the job.
@@ -951,7 +951,7 @@ the **Concepts** online help.
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **Run Program** in the **Job Action** drop-down list.
 3. Select a **user id** in the **User Id** drop-down list.
@@ -996,7 +996,7 @@ Follow the steps for the appropriate Microsoft LSAM version:
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **File Arrival** in the **Job Action** drop-down list.
 3. Select a **user id** in the **User Id** drop-down list.
@@ -1021,7 +1021,7 @@ To define job details:
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 
 2. Select **File Arrival** in the **Job Action** drop-down list.
@@ -1051,7 +1051,7 @@ the **Concepts** online help.
 To define job details:
 
 1. Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 2]{.ul} below to define the platform-specific
+    Then, proceed to Step 2 below to define the platform-specific
     job information.
 2. Select **Embedded Script** in the **Job Action** drop-down list.
 3. Select the **User ID** assigned to the job.
@@ -1325,7 +1325,7 @@ For conceptual information, refer to [z/OS Job Details](../../../job-types/zos.m
 To define job details:
 
 Complete [Steps 1-13 of the Adding Jobs](Adding-Jobs.md) section.
-Then, proceed to [Step 2]{.ul} below to define the platform-specific job
+Then, proceed to Step 2 below to define the platform-specific job
 information.
 
 **In the z/OS Definition frame:**

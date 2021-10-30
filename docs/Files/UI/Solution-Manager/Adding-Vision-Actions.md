@@ -41,7 +41,7 @@ Fill out the *fields* to define the event.
 Unlike defining events in Self Service, do not include user variables ${variable} in Vision actions as there is no place to enter the user input when the action is triggered. However, there are system variables that can be defined for Vision actions, as explained below.
 :::
 
-- []{#aanchor455} You have the option to use the following system     variables specifically for Vision cards:
+- You have the option to use the following system variables specifically for Vision cards:
 
   - **\[\[CI.$CARD NAME\]\]** - Resolves to the card name.     -   **\[\[CI.$CARD FREQUENCY NAME\]\]** - Resolves to the frequency
         name defined for the card.

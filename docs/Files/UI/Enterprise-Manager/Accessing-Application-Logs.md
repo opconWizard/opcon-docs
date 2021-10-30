@@ -1,6 +1,6 @@
 # Accessing Application Logs
 
-[]{#aanchor6} The Enterprise Manager application logs are generated while the Enterprise Manager is open and in use. The log files record
+The Enterprise Manager application logs are generated while the Enterprise Manager is open and in use. The log files record
 your activities in the EM. When the you report a problem with the EM
 through the **[Report Problem](Reporting-Problems.md)** dialog, the
 log files can automatically be attached to an email.

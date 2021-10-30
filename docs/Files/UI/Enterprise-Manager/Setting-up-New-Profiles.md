@@ -8,12 +8,12 @@ Begin with [Step 6]{.ul} if the **Database Connection Profile** dialog is alread
 
 To set up a new profile:
 
-[]{#aanchor622} Launch the Enterprise Manager application. 
+Launch the Enterprise Manager application.
 Use menu path: **EnterpriseManager \> Preferences**. The **Preferences**
 dialog displays.
 
 Click on the arrow
-(![](../../../Resources/Images/EM/EMarrowtoexpand.png)) next to
+(![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)) next to
 **Enterprise Manager** in the Preferences tree to expand the drop-down
 list.
 
@@ -36,6 +36,7 @@ b.  Do the following to use SQL authentication to connect to the
 ```{=html}
 <!-- -->
 ```
+
 i.  Enter [opconui]{.ul} in the **Username** text box. ii. Enter the *opconui's password* in the **Password** text box.
 iii. Enter the *SQL server name* or *IP Address* in the **SQL Server**
      text box .
