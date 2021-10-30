@@ -16,8 +16,8 @@ but are not limited to:
 3. SQL Server circular processing
 
 SMA Technologies support may not be able to return the database to a working state if an undocumented user update
-has been made. Contact SMA Technologies Support prior to any manual OpCon database updates other than [SMA
-Technologies]{.GeneralCompanyName}-provided SQL scripts.
+has been made. Contact SMA Technologies Support prior to any manual OpCon database updates other than SMA
+Technologies-provided SQL scripts.
 
 ## Introduction
 
