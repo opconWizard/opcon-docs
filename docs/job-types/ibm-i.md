@@ -157,7 +157,7 @@ For additional information on command CFGTCP (option 10), consult the IBM docume
   - Valid Values: CHKDTAARA, CHKFILE, or a user-defined prerun
         value. A user-defined value must not exceed 255 characters.
 - **Call/Script Name** (Required): For a Batch Job, enter the program
-    name using the CALL command or enter a command name. Do [not]{.ul}     use the SMBJOB command. If the SMBJOB command is used, the LSAM will
+    name using the CALL command or enter a command name. Do not use the SMBJOB command. If the SMBJOB command is used, the LSAM will
     not be able to track the job for failure. Include parameters in this
     field as desired. For an Operator Replay Job or Restricted Mode Job,
     enter the script name. The call or script name must not exceed 2000

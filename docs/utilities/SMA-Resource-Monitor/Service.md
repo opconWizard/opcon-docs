@@ -8,7 +8,8 @@ Actn files to send OpCon events to the SAM.
 When a mapped drive or UNC path is specified in File Name Path, the Resource Monitor Service needs to be running as a domain user who has access to mapped drives or the UNC path being monitored.
 :::
 
-[Configure the SMA Resource Monitor Service Log On]{.ul}
+## Configure the SMA Resource Monitor Service Log On
+
 Use menu path: **Start \> Settings \> Control Panel**.
 
 Double-click the **Administrative Tools** icon.
@@ -41,7 +42,7 @@ d.  Click **OK**.
 
 **Close ☒** the **Services** window.
 
-[Start the SMA Resource Monitor Service]{.ul}
+## Start the SMA Resource Monitor Service
 
 1. Use menu path: **Start \> Settings \> Control Panel**.
 2. Double-click the **Administrative Tools** icon.
@@ -53,7 +54,7 @@ d.  Click **OK**.
     **Started**.
 7. **Close ☒** the **Services** window.
 
-[Stop the SMA Resource Monitor]{.ul}
+## Stop the SMA Resource Monitor
 
 1. Use menu path: **Start \> Settings \> Control Panel**.
 2. Double-click the **Administrative Tools** icon.
@@ -71,17 +72,13 @@ d.  Click **OK**.
 The Output Directory was configured during installation. For more information, refer to [File Locations](../../file-locations.md) in the **Concepts** online help.
 :::
 
-The SMA Resource Monitor creates a single log file located in the:
-
-\<Output Directory\>\\SMAResourceMonitor\\Log\\ directory.
+The SMA Resource Monitor creates a single log file located in the: `<Output Directory\>\\SMAResourceMonitor\\Log\\` directory.
 
 The log file is named SMAResourceMonitor.log
 
 The SMA Resource Monitor archives log files when they reach the maximum
 log file size configured in the .ini file. All archived log files reside
-in the:
-
-\<Output Directory\>\\SMAResourceMonitor\\Log\\Archive folder.
+in the: `<Output Directory\>\\SMAResourceMonitor\\Log\\Archive` folder.
 
 If an archive folder for the day does not already exist, the SMA
 Resource Monitor creates one. The folder names use the following naming
@@ -112,10 +109,10 @@ desired, change the Log Archive Max Retention setting in the .ini file.
 The configuration for the SMA Resource Monitor service and UI is managed
 through a single .ini file named SMAResouceMonitor.ini.
 
-[Modify the SMAResourceMonitor.ini File]{.ul}
+### Modify the SMAResourceMonitor.ini File
 
 1. Right-click on **Start** and select **Explore** from the menu.
-2. Browse to the \<Configuration Directory\>\\SMAResourceMonitor\\
+2. Browse to the <Configuration Directory\>\\SMAResourceMonitor\\
     directory on the OpCon server.
 3. Find the **SMAResourceMonitor.ini** file.
 4. Right-click the file and select **Open With**.
@@ -129,7 +126,7 @@ through a single .ini file named SMAResouceMonitor.ini.
 
 ### SMAResourceMonitor.ini
 
-The SMAResourceMonitor.ini file resides in the \<Configuration
+The SMAResourceMonitor.ini file resides in the <Configuration
 Directory\>\\SMAResourceMonitor\\ directory.
 
 :::note
@@ -191,7 +188,7 @@ processing.
 |             |             |     path    |             |          |
 |             |             |     from    |             |          |
 |             |             |     your    |             |          |
-|             |             |     \<Co    |             |          |
+|             |             |     <Co    |             |          |
 |             |             | nfiguration |             |          |
 |             |             |             |             |          |
 |             |             | Directory\> |             |          |
@@ -231,7 +228,7 @@ processing.
 +-------------+-------------+-------------+-------------+----------+
 | MSG         | N/A         | Defines the | N           | Y        |
 | INDirectory |             | path to the |             |          |
-|             |             | \<Co        |             |          |
+|             |             | <Co        |             |          |
 |             |             | nfiguration |             |          |
 |             |             | Di          |             |          |
 |             |             | rectory\\MS |             |          |
@@ -270,7 +267,7 @@ processing.
 |             |             | online      |             |          |
 |             |             | help.       |             |          |
 +-------------+-------------+-------------+-------------+----------+
-| Extern      | \<blank\>   | -   Defines | N           | Y        |
+| Extern      | <blank\>   | -   Defines | N           | Y        |
 | alEventUser |             |     the     |             |          |
 |             |             |     OpCon   |             |          |
 |             |             |     user    |             |          |
@@ -375,7 +372,7 @@ processing.
 |             |             |    allowed: |             |          |
 |             |             |     15      |             |          |
 +-------------+-------------+-------------+-------------+----------+
-| ExternalEv  | \<blank\>   | -   Defines | N           | Y        |
+| ExternalEv  | <blank\>   | -   Defines | N           | Y        |
 | entPassword |             |     the     |             |          |
 |             |             |     OpCon   |             |          |
 |             |             |             |             |          |
@@ -717,7 +714,7 @@ processing.
 |               |         | ceMonitor.log |               |          |
 |               |         |     resides   |               |          |
 |               |         |     in the    |               |          |
-|               |         |     \<Output  |               |          |
+|               |         |     <Output  |               |          |
 |               |         |               |               |          |
 |               |         |    Directory\ |               |          |
 |               |         | >\\SMAResourc |               |          |

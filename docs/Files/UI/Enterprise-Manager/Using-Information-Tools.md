@@ -1,33 +1,21 @@
----
-lang: en-us
-title: Information Tools
-viewport: width=device-width, initial-scale=1.0
----
-
 # Information Tools
 
-The Information tools will perform the functions specified below,
-depending on the specific [view](Navigation-Views.md) in which you
-are currently working.
+The Information tools will perform the functions specified below, depending on the specific [view](Navigation-Views.md) in which you are currently working.
 
-  ------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -- --
-  ![Minimize icon](../../../Resources/Images/EM/EMminimize.png "Minimize icon")                                                  **[Minimize]{#Minimize}**: This tool will cause the view to be minimized and an icon for the view will be placed in the sidebar.                                                                                                                                                                            
-  ![Maximize icon](../../../Resources/Images/EM/EMmaximize.png "Maximize icon")                                                  **[Maximize]{#Maximize}**: This tool will open a view to its maximum size (e.g., use this tool to open the Error Log view to its maximum size and when opened to the maximum size, the **Maximize** button changes to **Restore**.                                                                          
-  ![Restore icon](../../../Resources/Images/EM/EMrestore.png "Restore icon")                                                     **[Restore]{#Restore}**: This tool will change the view back to its original location and size.                                                                                                                                                                                                             
-  ![Refresh icon](../../../Resources/Images/EM/refresh.png "Refresh icon")                                                       **[Refresh]{#Refresh}**: This tool will refresh the report data.                                                                                                                                                                                                                                            
-  ![Manage Reports icon](../../../Resources/Images/EM/EMreportsmgmt.png "Manage Reports icon")                                   **[Manage Reports]{#Manage_Reports}**: This tool will help to manage report filters and general security for the reports.                                                                                                                                                                                   
-  ![ Activate on Event icon](../../../Resources/Images/EM/EMinfoactivateonevent.png "Activate on Event icon")                    **[Activate On Event]{#Activate_on_Event}**: If an activity is written to the log file, even though it may not currently be the active log file when the event occurs, that log file will become the active log file displayed.                                                                             
-  ![Scroll Down icon](../../../Resources/Images/EM/EMinfoscrolldown.png "Scroll Down icon")                                      **[Scroll down]{#Scroll_Down}**: This tool will immediately move the display to the end of the log file.                                                                                                                                                                                                    
-  ![Clear icon](../../../Resources/Images/EM/EMinfoclear.png "Clear icon")                                                       **[Clear]{#Clear}**: This tool will clear the display from the current log file opened.                                                                                                                                                                                                                     
-  ![Copy to Clipboard icon](../../../Resources/Images/EM/EMinfocopytoclipboard.png "Copy to Clipboard icon")                     **[Copy to Clipboard]{#Copy_to_Clipboard}**: This tool will allow you to copy the highlighted lines from the log file to clipboard so this may be posted to another file as required.                                                                                                                       
-  ![Toggle Table of Contents icon](../../../Resources/Images/EM/EMBIRTtoc.png "Toggle Table of Contents icon")                   []{#aanchor462} **[Toggle table of contents]{#Toggle_TOC}**: The Table of Contents is not supported by Enterprise Manager.                                                                                                                                                                                  
-  ![Run Report icon](../../../Resources/Images/EM/EMBIRTrunrpt.png "Run Report icon")                                            **[Run report]{#Run_Report}**: This tool will open the **Parameter** form dialog in order to make the parameter changes and then re-run the report.                                                                                                                                                         
-  ![Export Data icon](../../../Resources/Images/EM/EMBIRTexportdata.png "Export Data icon")                                      **[Export data]{#Export_Data}**: This tool will open the **Export Data** dialog in order to provide the data export information then export the data.                                                                                                                                                       
-  ![Export Report icon](../../../Resources/Images/EM/EMBIRTexportrpt.png "Export Report icon")                                   **[Export report]{#Export_Report}**: This tool will open the **Export Report** dialog in order to provide the export format and page information then export the report. This is the recommended tool to use to print an Enterprise Manager report. Refer to [Running Reports](Running-Reports.md).      
-  ![Print Report icon](../../../Resources/Images/EM/EMBIRTprintrpt.png "Print Report icon")                                      **[Print report]{#Print_Report}**: This tool will open the **Print Report** dialog in order to provide the print format and page information then print the report.                                                                                                                                         
-  ![Print Report on the Server icon](../../../Resources/Images/EM/EMBIRTprintrptonsrver.png "Print Report on the Server icon")   **[Print report on the server]{#Print_Report_on_Server}**: Printing a report on the server is not supported by Enterprise Manager.                                                                                                                                                                          
-  ------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -- --
-:::
-
- 
-
+|||
+|--- |--- |
+||Minimize: This tool will cause the view to be minimized and an icon for the view will be placed in the sidebar.|
+||Maximize: This tool will open a view to its maximum size (e.g., use this tool to open the Error Log view to its maximum size and when opened to the maximum size, the Maximize button changes to Restore.|
+||Restore: This tool will change the view back to its original location and size.|
+||Refresh: This tool will refresh the report data.|
+||Manage Reports: This tool will help to manage report filters and general security for the reports.|
+||Activate On Event: If an activity is written to the log file, even though it may not currently be the active log file when the event occurs, that log file will become the active log file displayed.|
+||Scroll down: This tool will immediately move the display to the end of the log file.|
+||Clear: This tool will clear the display from the current log file opened.|
+||Copy to Clipboard: This tool will allow you to copy the highlighted lines from the log file to clipboard so this may be posted to another file as required.|
+||Toggle table of contents: The Table of Contents is not supported by Enterprise Manager.|
+||Run report: This tool will open the Parameter form dialog in order to make the parameter changes and then re-run the report.|
+||Export data: This tool will open the Export Data dialog in order to provide the data export information then export the data.|
+||Export report: This tool will open the Export Report dialog in order to provide the export format and page information then export the report. This is the recommended tool to use to print an Enterprise Manager report. Refer to Running  Reports.|
+||Print report: This tool will open the Print Report dialog in order to provide the print format and page information  then print the report.|
+||Print report on the server: Printing a report on the server is not supported by Enterprise Manager.|

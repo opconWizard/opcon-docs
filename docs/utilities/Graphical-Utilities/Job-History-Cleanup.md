@@ -63,7 +63,7 @@ The following describes the command-line parameters:
 - **-h** (Optional): Indicates that the primary history (HISTORY)
     table is to be purged.
 - **-p**(Optional): Indicates a purge is to take place instead of an
-    archive. Specify -p [without]{.ul} the -h switch to purge the     archive table (HISTARC).
+    archive. Specify -p *without* the -h switch to purge the     archive table (HISTARC).
 
 :::tip Example
 The following shows the syntax used to archive the job history for all schedules:

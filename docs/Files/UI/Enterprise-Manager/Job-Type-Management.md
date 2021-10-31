@@ -497,7 +497,7 @@ displays.
 
 Follow the wizard to specify or enter all necessary information.
 
-Repeat [Steps 12 and 13]{.ul} to add additional SAP Steps.
+Repeat Steps 12 and 13 to add additional SAP Steps.
 
 Re-assign the SAP Step order by:
 
@@ -545,7 +545,7 @@ Click **OK**.
 Click ![Save icon](../../../Resources/Images/EM/EMsave.png "Save icon")
 **Save** on the **Job Master** toolbar.
 
-## []{#Defining_SQL_Job_Details}Defining SQL Job Details
+## Defining SQL Job Details
 
 ### Defining Job Action: MS SQL DTExec Job Details
 
@@ -559,8 +559,8 @@ To define job details:
     job information.
 2. Select **MS SQL DTExec** in the **Job Action** drop-down list.
 3. Select a *connection type* to perform: **SQL** or **FILE**.
-    a.  [(If SQL is selected)]{.optional-text} Enter all *required         information*.
-    b.  [(If FILE is selected)]{.optional-text} Enter all *required         information*.
+    a.  (If SQL is selected): Enter all *required information*.
+    b.  (If FILE is selected): Enter all *required information*.
 4. Enter the **Package File Path**.
 5. *(Optional)* Enter the **Other Options**.
 6. Enter the *failure criteria rules*. Click the ![Reset to Default     icon](../../../Resources/Images/EM/EMresettodefault.png "Reset to Default icon") **Reset
@@ -618,8 +618,8 @@ To define job details:
 7. *(Optional)* Select the **Encrypt** checkbox.
 8. Select the *script type* to use: **Script File** or **In Line
     Script**.
-    a.  [(If Script File is selected)]{.optional-text} Enter all         *required information*.
-    b.  [(If In Line Script is selected)]{.optional-text} Enter all         *required information*.
+    a.  (If Script File is selected): Enter all *required information*.
+    b.  (If In Line Script is selected): Enter all *required information*.
 9. Add variables by:
     a.  Entering the *name/value field information*.
     b.  Clicking the **Add** button.
@@ -715,16 +715,16 @@ To define job details:
 2. Select **Other DB** in the **Job Action** drop-down list.
 3. Select the *database connection type* to use: **ODBC Connection
     String**, **OleDB Connection String**, or **DSN Name**.
-    a.  [(If ODBC Connection String is selected)]{.optional-text} Enter         all *required information*.
-    b.  [(If OleDB Connection String is selected)]{.optional-text} Enter         all *required information*.
-    c.  [(If DSN Name is selected)]{.optional-text} Enter all *required         information*.
+    a.  (If ODBC Connection String is selected): Enter         all *required information*.
+    b.  (If OleDB Connection String is selected): Enter         all *required information*.
+    c.  (If DSN Name is selected): Enter all *required         information*.
 4. *(Optional)* Select the **Windows Authentication**
     checkbox.
 5. Select the **user** in the **User Id** drop-down list.
 6. Select the *script type* to use: **Script File** or **In Line
     Script**.
-    a.  [(If Script File is selected)]{.optional-text} Enter all         *required information*.
-    b.  [(If In Line Script is selected)]{.optional-text} Enter all         *required information*.
+    a.  (If Script File is selected): Enter all         *required information*.
+    b.  (If In Line Script is selected): Enter all         *required information*.
 7. Add variables by:
     a.  Entering the *name/value field information*.
     b.  Clicking the **Add** button.
@@ -934,7 +934,7 @@ To define job details:
 5. Select **UNIX** in the **Job Type** drop-down list.
 6. Select **Episys:** in the **Job Sub-Type** drop-down list.
 7. Complete [Steps 6-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 8]{.ul} below to define the platform-specific
+    Then, proceed to Step 8 below to define the platform-specific
     job information.
 8. Select the **UNIX Group ID** and **User ID** assigned to the job.
 9. Enter the *required information* in the remaining fields.
@@ -1095,7 +1095,7 @@ To define job details:
 6. Select **Command: File Copy** in the **Job Sub-Type** drop-down
     list.
 7. Complete [Steps 6-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 8]{.ul} below to define the platform-specific
+    Then, proceed to Step 8 below to define the platform-specific
     job information.
 8. Select the **User ID** assigned to the job.
 9. Enter the *required information* in the remaining fields.
@@ -1118,7 +1118,7 @@ To define job details:
 6. Select **Command: File Delete** in the **Job Sub-Type** drop-down
     list.
 7. Complete [Steps 6-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 8]{.ul} below to define the platform-specific
+    Then, proceed to Step 8 below to define the platform-specific
     job information.
 8. Select the **User ID** assigned to the job.
 9. Enter the *required information* in the remaining fields.
@@ -1142,7 +1142,7 @@ To define job details:
 6. Select **Command: File Move** in the **Job Sub-Type** drop-down
     list.
 7. Complete [Steps 6-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 8]{.ul} below to define the platform-specific
+    Then, proceed to Step 8 below to define the platform-specific
     job information.
 8. Select the **User ID** assigned to the job.
 9. Enter the *required information* in the remaining fields.
@@ -1165,7 +1165,7 @@ To define job details:
 6. Select **Command: File Rename** in the **Job Sub-Type** drop-down
     list.
 7. Complete [Steps 6-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 8]{.ul} below to define the platform-specific
+    Then, proceed to Step 8 below to define the platform-specific
     job information.
 8. Select the **User ID** assigned to the job.
 9. Enter the *required information* in the remaining fields.
@@ -1187,7 +1187,7 @@ To define job details:
 5. Select **Windows** in the **Job Type** drop-down list.
 6. Select **Corelation** in the **Job Sub-Type** drop-down list.
 7. Complete [Steps 6-13 of the Adding Jobs](Adding-Jobs.md) section.
-    Then, proceed to [Step 8]{.ul} below to define the platform-specific
+    Then, proceed to Step 8 below to define the platform-specific
     job information.
 8. Select the **User ID** assigned to the job.
 9. Enter the *required information* in the remaining fields.
@@ -1224,7 +1224,7 @@ Select **Web Services (RESTful)** in the **Job Sub-Type** drop-down
 list.
 
 Complete [Steps 6-13 of the Adding Jobs](Adding-Jobs.md) section.
-Then, proceed to [Step 8]{.ul} below to define the platform-specific job
+Then, proceed to Step 8 below to define the platform-specific job
 information.
 
 In the Web Services (RESTful) Definition frame:
@@ -1246,9 +1246,9 @@ Enter the *URL* to call the RESTful web services based on the operation.
 Select the type of **Operation** to perform: DELETE, GET, POST,
 POST_POLL, or PUT.
 
-a.  [(If GET is selected)]{.optional-text} Enter all *required     information* under **Query Response (GET)**.
-b.  [(If POST or PUT is selected)]{.optional-text} Enter all *required     information* under **Message Body (POST/PUT)**.
-c.  [(If POST_POLL is selected)]{.optional-text} Enter all *required     information* under **Message Body (POST_POLL)**.
+a.  (If GET is selected): Enter all *required     information* under **Query Response (GET)**.
+b.  (If POST or PUT is selected): Enter all *required     information* under **Message Body (POST/PUT)**.
+c.  (If POST_POLL is selected): Enter all *required     information* under **Message Body (POST_POLL)**.
 
 Enter a *user name* to authenticate with the web service if required;
 otherwise, leave blank.
@@ -1292,7 +1292,7 @@ Select **Windows** in the **Job Type** drop-down list.
 Select **WS_FTP Pro** in the **Job Sub-Type** drop-down list.
 
 Complete [Steps 6-13 of the Adding Jobs](Adding-Jobs.md) section.
-Then, proceed to [Step 8]{.ul} below to define the platform-specific job
+Then, proceed to Step 8 below to define the platform-specific job
 information.
 
 **In the WS_FTP Pro Definition frame:**
@@ -1489,18 +1489,9 @@ Set the JCL selection for a job by:
 
 a.  Clicking on the **JCL/SYSOUT Access** button. The **JCL/Sysout
     Access** dialog displays.
-b.  Entering the *[Member Name[[]{.MCTextPopupArrow}the name of the PDS     or PDS/E member containing the JCL]{.MCTextPopupBody
-    .MCTextPopupBody_Closed .needs-pie .popupBody
-    aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
-    .popupHead}*.
-c.  Entering the *[View JCL DD Name[[]{.MCTextPopupArrow}the DD (file)     name of the library containing the JCL member]{.MCTextPopupBody
-    .MCTextPopupBody_Closed .needs-pie .popupBody
-    aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
-    .popupHead}*.
-d.  Entering the *[Save JCL DD Name[[]{.MCTextPopupArrow}the name of the     library to contain the saved JCL (Override DD]{.MCTextPopupBody
-    .MCTextPopupBody_Closed .needs-pie .popupBody
-    aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup
-    .popupHead}*.
+b.  Entering the **Member Name**.
+c.  Entering the **View JCL DD Name**.
+d.  Entering the **Save JCL DD Name**.
 e.  Clicking the **Save JCL** button.
 f.  Closing the **JCL/Sysout Access** dialog.
 
@@ -1559,7 +1550,7 @@ e.  Making sure the **Save JCL DD Name** starts with "TEMP". If it
 f.  Clicking the **Save JCL** button.
 g.  Closing the **JCL/Sysout Access** dialog.
 h.  Entering the new value in the **Override DDNAME** text box if you
-    changed the **Save JCL DD Name** in [Step e]{.ul}.
+    changed the **Save JCL DD Name** in Step e.
 i.  Making sure the **Temporary Member** text box is blank.
 
 Edit the submitted JCL directly for restarts by:

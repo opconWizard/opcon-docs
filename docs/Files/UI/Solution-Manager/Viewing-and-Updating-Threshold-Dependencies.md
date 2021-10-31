@@ -91,7 +91,8 @@ dependency. When the **Threshold Dependency** dialog displays:
     comparison with the current threshold value.
 - Click **Save** to save your selections and close the dialog.
 
-[Indicators]{.ul}
+## Indicators
+
 The defined threshold dependency will appear in the **Threshold
 Dependency** panel with visual indicators, similar to the graphic, that
 indicate whether or not the dependency is in good standings, if what is
@@ -99,10 +100,10 @@ required for the job is available to that job.
 
 ![Threshold Dependency Indicator](../../../Resources/Images/SM/Threshold-Red-Indicator.png "Threshold Depedency Indicator")
 
-- Appears [green]{.ul} if the threshold defined is correct. For     example, when the current threshold value is \> 1 and the defined
+- Appears green if the threshold defined is correct. For     example, when the current threshold value is \> 1 and the defined
     value is 2.
 
-- Appears [red]{.ul} if the threshold defined is not correct. For     example, when the current threshold value is = 1 and the defined
+- Appears red if the threshold defined is not correct. For     example, when the current threshold value is = 1 and the defined
     value is 2.
 
 - The threshold value will appear on the right.

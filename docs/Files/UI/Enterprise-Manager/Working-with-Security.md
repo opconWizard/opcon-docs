@@ -1,13 +1,7 @@
 # Working with Security
 
-The **Security** topic in the Navigation Panel provides the views to manage the User Accounts and User Privileges
-information.
+The **Security** topic in the Navigation Panel provides the views to manage the User Accounts and User Privileges information.
 
-Click on any **Administration** [function item[[]{.MCTextPopupArrow}Fuction items are displayed as icons with
-descriptions in the Navigation Panel.]{.MCTextPopupBody
-.MCTextPopupBody_Closed .needs-pie .popupBody
-aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup .popupHead}
-in the graphic to learn more about that item.
+Click on any **Administration** function item in the graphic to learn more about that item.
 
 ![Security Topic](../../../Resources/Images/EM/EMsecuritymenu.png "Security Topic")
-:::

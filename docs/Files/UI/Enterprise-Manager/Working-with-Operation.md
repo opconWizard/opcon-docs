@@ -4,10 +4,7 @@ The **Operation** views display all schedules to which the current user
 account has access in the Daily tables. Each view provides different
 ways of looking at schedules and jobs.
 
-Click on any **Operation** [function item[[]{.MCTextPopupArrow}Fuction items are displayed as icons with descriptions in the Navigation
-Panel.]{.MCTextPopupBody .MCTextPopupBody_Closed .needs-pie .popupBody
-aria-hidden="true"}](javascript:void(0)){.MCTextPopup .popup .popupHead}
-in the graphic to learn more about that item.
+Click on any **Operation** function item in the graphic to learn more about that item.
 
 ![Operation Topic](../../../Resources/Images/EM/EMoperationmenu.png "Operation Topic")
 

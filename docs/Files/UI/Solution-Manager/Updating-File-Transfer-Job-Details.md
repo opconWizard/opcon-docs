@@ -204,8 +204,8 @@ Both the agent and the server must both support the same encryption type for the
 Select the **TLS Security Override** option to determine if TLS Security
 for file transfers is disabled, required, or preferred:
 
-- **None**: Indicates that TLS Security [should not]{.ul} be used by     the SMAFT Agent when connecting to the SMAFT Server.
-- **Required**: Indicates that the SMAFT Agent [must]{.ul} use TLS     Security; otherwise, the job will be failed.
+- **None**: Indicates that TLS Security should not be used by     the SMAFT Agent when connecting to the SMAFT Server.
+- **Required**: Indicates that the SMAFT Agent **must** use TLS Security; otherwise, the job will be failed.
 - **Preferred** (Default): Indicates that the OpCon job request
     assembly routine uses the SMAFT Server Port numbers and the SMAFT
     Server/Agent TLS Capability flags to decide what value to send in

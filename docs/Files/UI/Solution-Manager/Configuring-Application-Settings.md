@@ -62,7 +62,7 @@ This switch allows you to enable/disable Windows Authentication.
 
 You can set whether or not you want a Vision card to change status
 (display in a Warning state) if there are jobs in the
-[Cancelled]{.skd-job-statuses}, [Skipped]{.skd-job-statuses}, or [Missed Start Time]{.skd-job-statuses} status. You can use this switch to
+Cancelled, Skipped, or Missed Start Time status. You can use this switch to
 disable the Warning state on Vision cards. If you disable the Warning
 state, then these jobs will be considered finished (and without error or
 warning).

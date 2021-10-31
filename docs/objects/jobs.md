@@ -106,17 +106,18 @@ OpCon determines the least tasked machine to
 run the job on. This option is useful for *Failover* and *Workload
 Balancing* scenarios.
 
-**[]{#Run}Run on each Machine**: If this option is set, OpCon runs the job on every machine in the
+**Run on each Machine**: If this option is set, OpCon runs the job on every machine in the
 group.
 
 - When the job's schedule is built and the job qualifies for the day,
     OpCon creates a copy of the job for each
     machine in the group while assigning a specific machine to each copy
     of the job. The copy of each job is named using the following
-    syntax: [Job Name_Machine Name]{style="font-family: 'Courier New';"} -   If the job also has predefined instances,
+    syntax: `Job Name_Machine Name`
+- If the job also has predefined instances,
     OpCon creates all predefined instances
     for each machine in the group. The copy of each job is named using
-    the following syntax: [Job Name_First Property Value_Machine     Name]{style="font-family: 'Courier New';"}
+    the following syntax: `Job Name_First Property Value_Machine Name`
 
 **Job Type Details**: The Job Type Details depend on the selection of
 the Job Type determined above. For complete information, refer to [Job Type Details](../job-types/overview.md).

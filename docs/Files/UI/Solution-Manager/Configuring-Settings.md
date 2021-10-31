@@ -23,7 +23,7 @@ Configure any of the following types of settings:
 - [Refresh Intervals](#Refresh)
 - [Debug](#Debug)
 
-Click [Save]{._Override style="font-weight: bold;"} to save the changes to the database.
+Click **Save** to save the changes to the database.
 
 ## General
 

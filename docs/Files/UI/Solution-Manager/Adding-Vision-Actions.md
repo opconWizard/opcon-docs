@@ -43,8 +43,8 @@ Unlike defining events in Self Service, do not include user variables ${variable
 
 - You have the option to use the following system variables specifically for Vision cards:
 
-  - **\[\[CI.$CARD NAME\]\]** - Resolves to the card name.     -   **\[\[CI.$CARD FREQUENCY NAME\]\]** - Resolves to the frequency
-        name defined for the card.
+  - **\[\[CI.$CARD NAME\]\]** - Resolves to the card name.
+  - **\[\[CI.$CARD FREQUENCY NAME\]\]** - Resolves to the frequency name defined for the card.
   - **\[\[CI.$CARD STATUS\]\]** - Resolves to the status the         defined Vision action has triggered.
   - **\[\[CI.$CARD START TIME\]\]** - Resolves to the estimated or         actual start time for the card.
   - **\[\[CI.$CARD END TIME\]\]** - Resolves to the estimated or         actual end time for the card.

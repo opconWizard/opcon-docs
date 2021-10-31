@@ -116,7 +116,7 @@ OpCon concatenates the Start Image and Parameters and inserts a space between th
 :::
 
 Enter the *NICE Value* to increase/decrease the priority of the job
-[and]{.ul} prerun (if present). Valid values range from -20 to 20 with a default of zero (0).
+and prerun (if present). Valid values range from -20 to 20 with a default of zero (0).
 
 :::note
 A lower NICE Value signifies a higher priority; therefore, entering a negative number raises the priority and a positive number lowers the priority.
@@ -127,8 +127,6 @@ A lower NICE Value signifies a higher priority; therefore, entering a negative n
 The **Job Output Parsing** frame is used to define the search criteria
 for analyzing job output that matches the defined characters (string)
 and will result in the defined exit code.
-
-\
 
 Click the green **Add** button (**+**) to define the parsing criteria.
 
@@ -159,7 +157,8 @@ Select an **operator** then enter or select the **exit code integer**.
 Specify whether the defined criteria should be used to determine if the
 job Failed or Finished OK.
 
-[Defining Multiple Failure Criteria]{.ul}
+Defining Multiple Failure Criteria:
+
 Use the **and/or** field to define multiple failure criteria. This field
 defines the way the strings are evaluated together.
 
@@ -171,9 +170,9 @@ Use the **Fail on Core Dump** switch to configure how the
 LSAM should report the status of the job when the job does or does not create a core file.
 
 - If the **Fail on Core Dump** switch is enabled ![Green Enabled     Switch](../../../Resources/Images/SM/Enabled-Switch.png "Green Enabled Switch")
-    and a core dump [is]{.ul} produced, then the job status will return     a failed exit code.
+    and a core dump is produced, then the job status will return     a failed exit code.
 - If the **Fail on Core Dump** switch is enabled ![Green Enabled     Switch](../../../Resources/Images/SM/Enabled-Switch.png "Green Enabled Switch")
-    and a core dump [is not]{.ul} produced, then the job succeeds     (assuming all other exit code processing is good).
+    and a core dump is not produced, then the job succeeds     (assuming all other exit code processing is good).
 
 :::note
 The final exit code processing has nothing to do with whether a core dump is produced or not. It simply is a final determination of whether the program produced an acceptable job status.
@@ -349,7 +348,8 @@ about the script.
 Selecting the "Latest" version means that just before the job runs, the latest version of the script will be used.
 :::
 
-[Viewing Scripts]{.ul}
+Viewing Scripts:
+
 To view the details about a script, click the **Preview** button
 (![Daily Job Definition Preview Button](../../../Resources/Images/SM/Daily-Job-Definition-View-Script.png "Daily Job Definition Preview Button")).
 Once clicked, the **Script Viewer** pop-up window will display
@@ -395,7 +395,8 @@ Select an **operator** then enter or select the **exit code integer**.
 Specify whether the defined criteria should be used to determine if the
 job Failed or Finished OK.
 
-[Defining Multiple Failure Criteria]{.ul}
+Defining Multiple Failure Criteria:
+
 Use the **and/or** field to define multiple failure criteria. This field
 defines the way the strings are evaluated together.
 
@@ -407,9 +408,9 @@ Use the **Fail on Core Dump** switch to configure how the
 LSAM should report the status of the job when the job does or does not create a core file.
 
 - If the **Fail on Core Dump** switch is enabled ![Green Enabled     Switch](../../../Resources/Images/SM/Enabled-Switch.png "Green Enabled Switch")
-    and a core dump [is]{.ul} produced, then the job status will return     a failed exit code.
+    and a core dump is produced, then the job status will return     a failed exit code.
 - If the **Fail on Core Dump** switch is enabled ![Green Enabled     Switch](../../../Resources/Images/SM/Enabled-Switch.png "Green Enabled Switch")
-    and a core dump [is not]{.ul} produced, then the job succeeds     (assuming all other exit code processing is good).
+    and a core dump is not produced, then the job succeeds     (assuming all other exit code processing is good).
 
 :::note
 The final exit code processing has nothing to do with whether a core dump is produced or not. It simply is a final determination of whether the program produced an acceptable job status.

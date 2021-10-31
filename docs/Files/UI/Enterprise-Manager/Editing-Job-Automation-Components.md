@@ -51,7 +51,7 @@ To perform this procedure:
 7. Enter the *property definition* (e.g., PropertyName=value) in the
     **Define Property** text box.
 8. Click the **Add** button.
-9. Repeat [Steps 7 and 8]{.ul} to add additional properties.
+9. Repeat Steps 7 and 8 to add additional properties.
 10. Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
     on the **Job Daily** toolbar.
 
@@ -190,21 +190,21 @@ Trigger** screen of the wizard.
 Click the **Next** button to proceed to **Trigger Details** screen of
 the wizard.
 
-Do one of the following depending on your selection in [Step 8]{.ul}.
+Do one of the following depending on your selection in Step 8.
 
-a.  [(If Job Status was selected)]{.optional-text}Select the **job     status** in the **Job Status** drop-down list and proceed to [Step
-    11]{.ul}.
-b.  [(If LSAM Feedback was selected)]{.optional-text} Select the     **Feedback name** in the **LSAM Feedback** drop-down list. Next,
+a.  (If Job Status was selected) Select the **job     status** in the **Job Status** drop-down list and proceed to Step
+    11.
+b.  (If LSAM Feedback was selected) Select the     **Feedback name** in the **LSAM Feedback** drop-down list. Next,
     enter in the **String to match** field any *string to match the
     feedback value* that will trigger the
-    OpCon event. Then, proceed to [Step
-    11]{.ul}.
-c.  [(If Exit Description was selected)]{.optional-text} Select the     **Operator** in the **Comparison Operator** drop-down list . Next,
+    OpCon event. Then, proceed to Step
+    11.
+c.  (If Exit Description was selected) Select the     **Operator** in the **Comparison Operator** drop-down list . Next,
     enter in the **Value** field the proper value based on the selected
     **Operator** and enter in the **End Value** field the value for the
-    end of the Range. Then, proceed to [Step 11]{.ul}.
-d.  [(If Job Completion Complex Expression was     selected)]{.optional-text} Enter the *expression* in the
-    **Expression** text box and proceed to [Step 11]{.ul}. For more
+    end of the Range. Then, proceed to Step 11.
+d.  (If Job Completion Complex Expression was selected) Enter the *expression* in the
+    **Expression** text box and proceed to Step 11. For more
     information, refer to [Property Expressions API     Syntax](../../../reference/property-expressions-syntax.md)
      in the **Concepts** online help.
 
@@ -232,7 +232,7 @@ OpCon event information.
 If you wish to replace the syntax placeholder with a token, then do the
 following:
 
-Follow [Step 13]{.ul} to select the syntax placeholder.
+Follow Step 13 to select the syntax placeholder.
 
 Click the ![Insert Token buton](../../../Resources/Images/EM/EMinserttoken.png "Insert Token button")
 **Insert token** button or press **Ctrl/t** on the keyboard to list

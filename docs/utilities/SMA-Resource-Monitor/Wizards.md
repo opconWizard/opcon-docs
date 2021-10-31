@@ -1,9 +1,3 @@
----
-lang: en-us
-title: SMA Resource Monitor Wizards
-viewport: width=device-width, initial-scale=1.0
----
-
 # SMA Resource Monitor Wizards
 
 The SMA Resource Monitor User Interface provides Wizards within the
@@ -11,14 +5,14 @@ The SMA Resource Monitor User Interface provides Wizards within the
 There is a step pane on the left side of the screen that contains the
 names of each step in the wizard.
 
-[[]{#Start_an_Add_Wizard}Start an Add Wizard]{.ul}
+## Start an Add Wizard
 
 1. Click on the specific tab - **File Monitors**, **Counter Monitors**,
     **Service Monitors**, **Process Monitors**, or **Action Groups** -
     for the monitor type to add.
 2. Click **Add**.
 
-[[]{#Start_an_Edit_Wizard}Start an Edit Wizard]{.ul}
+## Start an Edit Wizard
 
 1. Click on the specific tab - **File Monitors**, **Counter Monitors**,
     **Service Monitors**, **Process Monitors**, or **Action Groups** -
@@ -30,8 +24,8 @@ names of each step in the wizard.
 When the **Add** or **Edit** menu is selected from the SMA Resource
 Monitor screen, a series of Wizard screens will serve as a guide for the
 steps to add and/or edit parameters and actions for a new monitor. The
-steps that are not being used are [Blue]{._Override style="font-weight: bold;color: #0000ff;"}. The step that is currently
-being used is [Red]{._Override style="font-weight: bold;color: #ff0000;"}.
+steps that are not being used are **Blue**. The step that is currently
+being used is **Red**.
 
 ## Wizard Navigation
 
@@ -153,8 +147,7 @@ on the respective summary tab of the main SMA Resource Monitor screen.
 - **File Size** (Optional): Defines the File State setting, and
     specifies the minimum file size that the Resource Monitor is looking
     for. If *AbsoluteSize* is the file state, SMA Resource Monitor will
-    check if the file is [exactly]{.ul} the size specified. For any     other file state, SMA Resource Monitor will check if the file is [at
-    least]{.ul} the size specified.
+    check if the file is *exactly* the size specified. For any     other file state, SMA Resource Monitor will check if the file is at least the size specified.
 - **Create TimeStamp**: Defines the oldest create date for a file. If
     the create date/time stamp on the file is older than this date/time,
     SMAResourceMonitor will not process the file. The default value for
@@ -323,8 +316,8 @@ condition is met.
 - **Process State**: Contains the process state to monitor for.
   - **Running**: Trigger notification when process is found in a
         Running state.
-  - **Not Running**: Trigger notification when the process is
-        [Not]{.ul} found in a running state. -   **From Time**: This is the start time for monitoring resources. This
+  - **Not Running**: Trigger notification when the process is not found in a running state.
+  - **From Time**: This is the start time for monitoring resources. This
     option provides users a way to monitor resources only during a
     specified time period of the day.
 - **To Time**: This is the end time for monitoring resources. This

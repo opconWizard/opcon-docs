@@ -31,15 +31,14 @@ visualization.
 The color of each node in the diagram is dependent upon the underlying
 job's current job status, as indicated below:
 
-- Green - Indicates the underlying job has a status of [Finished     OK]{.skd-job-statuses}.
-- Black - Indicates the underlying job has a status of
-    [Cancelled]{.skd-job-statuses}. -   Magenta - Indicates the underlying job has a status of
-    [Skipped]{.skd-job-statuses}. -   Orange - Indicates the underlying job has a status of [Missed Start
-    Time]{.skd-job-statuses}.
-- Red - Indicates the underlying job has a status of
-    Failed. -   Gray - Indicates the underlying job has a status of
-    Qualifying. -   Turquoise - Indicates the underlying job has a status of
-    Held.
+- Green - Indicates the underlying job has a status of Finished OK.
+- Black - Indicates the underlying job has a status of Cancelled.
+- Magenta - Indicates the underlying job has a status of Skipped.
+- Orange - Indicates the underlying job has a status of Missed Start Time.
+- Red - Indicates the underlying job has a status of Failed.
+- Gray - Indicates the underlying job has a status of Qualifying.
+- Turquoise - Indicates the underlying job has a status of Held.
+
 Tooltips are available for Status and Alert icons within nodes in the
 diagram.
 
@@ -80,18 +79,19 @@ value of the dependency is displayed as a tooltip.
 
 Within nodes, these icons represent the following:
 
-- ![Threshold/Recource Update Icon in PERT     View](../../../Resources/Images/SM/PERTThresResIcon.png "Threshold/Recource Update Icon in PERT View") - Indicates that there are threshold/resource updates
+- ![Threshold/Recource Update Icon in PERT     View](../../../Resources/Images/SM/PERTThresResIcon.png "Threshold/Recource Update Icon in PERT View") 
+- Indicates that there are threshold/resource updates
     associated with underlying Daily jobs. When hovered over the icon,
     the associated update is displayed as a tooltip.
 - ![OpCon Events Icon in PERT     View](../../../Resources/Images/SM/PERTEventsIcon.png "OpCon Events Icon in PERT View") - Indicates that there are OpCon Events associated
     with underlying Daily jobs. When hovered over the icon, the
     associated event is displayed as a tooltip.
-- ![Expression Dependency Icon in PERT     View](../../../Resources/Images/SM/PERTExprDepsIcon.png "Expression Dependency Icon in PERT View"){.flat
-    width="23px"} - Indicates that there are expression dependencies
+- ![Expression Dependency Icon in PERT     View](../../../Resources/Images/SM/PERTExprDepsIcon.png "Expression Dependency Icon in PERT View")
+- Indicates that there are expression dependencies
     associated with underlying Daily jobs. When hovered over the icon,
     the associated expression dependency is displayed as a tooltip.
-- ![Required Deps Missing Icon in PERT     View](../../../Resources/Images/SM/PERTMissingDepsIcon.png "Required Deps Missing Icon in PERT View"){.flat
-    width="20px"} - Indicates that there is a required dependency
+- ![Required Deps Missing Icon in PERT     View](../../../Resources/Images/SM/PERTMissingDepsIcon.png "Required Deps Missing Icon in PERT View")
+- Indicates that there is a required dependency
     missing. When hovered over the icon, the number of required
     dependencies missing is displayed as a tooltip.
 
@@ -464,8 +464,7 @@ royal blue border appears around any selected job.
 
 Once selected, right-click on the mouse to display the **Selection**
 panel with the **Job Status Update** tab in focus, as shown in the
-graphic. From there, follow [Steps 6 - 9]{.ul} of the [Performing Job
-Status Changes](Performing-Job-Status-Changes.md) topic to change
+graphic. From there, follow Steps 6 - 9 of the [Performing Job Status Changes](Performing-Job-Status-Changes.md) topic to change
 the job status of the selected job(s) in the diagram.
 
 Job Status Update in PERT View
@@ -477,14 +476,14 @@ Job Status Update in PERT View
 As can be requested in the **Processes** page, job output files can be
 retrieved in the PERT View for a job that is completed or has started,
 is neither a NULL nor Container job, and does not have a status of
-[Waiting]{.skd-job-statuses}, On Hold, [Cancelled]{.skd-job-statuses}, [Missed Start Time]{.skd-job-statuses},
-or [Skipped]{.skd-job-statuses}.
+Waiting, On Hold, Cancelled, Missed Start Time,
+or Skipped.
 
 In the PERT View, use your mouse to select a single job in the diagram
 then right-click on the mouse to display the **Selection** panel. Keep
 in mind that a solid royal blue border will appear around the selected
 job. From there, select the **Job Output** accordion-style tab in the
-panel, as shown in the graphic, then follow [Steps 5 - 9]{.ul} of the
+panel, as shown in the graphic, then follow Steps 5 - 9 of the
 [Viewing Job Output](Viewing-Job-Output.md) topic to request the
 job output file(s).
 
@@ -553,7 +552,7 @@ schedule.
 
 Once selected, right-click on the mouse to display the **Selection**
 panel with the **Schedule Status Update** tab in focus, as shown in the
-graphic. From there, follow [Steps 6 - 9]{.ul} of the [Performing
+graphic. From there, follow Steps 6 - 9 of the [Performing
 Schedule Status Changes](Performing-Schedule-Status-Changes.md)
 topic to change the schedule status of the selected schedule(s) in the
 diagram.
@@ -574,7 +573,7 @@ schedule.
 Once any schedule is selected, right-click on the mouse to display the
 **Selection** panel. You will then need to select the **Bulk Job Status
 Update** accordion-style tab in the panel, as shown in the graphic. From
-there, follow [Steps 6 - 9]{.ul} of the [Performing Bulk Job Status
+there, follow Steps 6 - 9 of the [Performing Bulk Job Status
 Updates (Schedule
 Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md)
 topic to perform bulk job status updates for the selected schedule(s) in

@@ -22,7 +22,7 @@ refer to [UNIX Job Sub-Types](#UNIX).
 ### Fields for Run Program
 
 **NICE Value**: Defines a value in order to increase/decrease the
-priority of the job [and]{.ul} prerun (if present).
+priority of the job and prerun (if present).
 
 - Valid values range from -20 to 20 with a default of zero.
 - A lower NICE Value signifies a higher priority; therefore, entering

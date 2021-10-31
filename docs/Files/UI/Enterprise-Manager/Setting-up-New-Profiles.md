@@ -3,7 +3,7 @@
 Follow the procedure provided below to set up a new profile.
 
 :::note
-Begin with [Step 6]{.ul} if the **Database Connection Profile** dialog is already displayed.
+Begin with Step 6 if the **Database Connection Profile** dialog is already displayed.
 :::
 
 To set up a new profile:
@@ -33,11 +33,8 @@ a.  Select the **Use Windows Authentication** checkbox to use Windows
 b.  Do the following to use SQL authentication to connect to the
     database:
 
-```{=html}
-<!-- -->
-```
-
-i.  Enter [opconui]{.ul} in the **Username** text box. ii. Enter the *opconui's password* in the **Password** text box.
+i.  Enter *opconui* in the **Username** text box.
+ii. Enter the *opconui's password* in the **Password** text box.
 iii. Enter the *SQL server name* or *IP Address* in the **SQL Server**
      text box .
 
@@ -65,11 +62,11 @@ The next window will indicate whether the database connection has tested success
 
 **If the test was not successful:**
 
-Click the [Back]{._Override style="font-weight: bold;"} button to correct the problem and try again.
+Click the **Back** button to correct the problem and try again.
 
 **If the test was successful:**
 
-[]{#OpConxps_data_location_details}Click [Next]{._Override style="font-weight: bold;"} to go on to set up the OpCon data
+Click **Next** to go on to set up the OpCon data
 location details.
 
 Choose the method for connecting to the SAM application server for
@@ -77,14 +74,13 @@ accessing centralized OpCon product
 documentation.
 
 :::note
-For the default \[\[SERVER\]\] token in the UNC path to the OpConxps directory on the SAM server, the EM will automatically replace that token with the database server IP/Hostname specified in the profile (refer to [Step 4a]{.ul}). With this token in place, if you change the database server in the profile you will not need to change the UNC path (as long as the share directory is the same).
+For the default \[\[SERVER\]\] token in the UNC path to the OpConxps directory on the SAM server, the EM will automatically replace that token with the database server IP/Hostname specified in the profile (refer to Step 4a). With this token in place, if you change the database server in the profile you will not need to change the UNC path (as long as the share directory is the same).
 :::
 
-If on the OpCon server, choose the [Directory with Windows integrated authentication]{._Override
-style="font-weight: bold;"} option.
+If on the OpCon server, choose the **Directory with Windows integrated authentication** option.
 
-i.  If on the SAM server, in the [Path]{._Override     style="font-weight: bold;"} field, enter or browse the path to the
-    [\<Output Directory\>]{.GeneralRootOpConDataFolder}. ii. If on any other Windows machine on the same Domain, first share the
+i.  If on the SAM server, in the **Path** field, enter or browse the path to the <Output Directory\>. 
+ii. If on any other Windows machine on the same Domain, first share the
     C:\\ProgramData\\OpConxps folder on the
     OpCon server to users and grant the each
     user Read permission. Then, in the **Path** field, enter or browse

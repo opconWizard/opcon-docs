@@ -109,8 +109,6 @@ modification of the following information for ABAP Programs:
   X                        NE (!=)        I or E (Include or Exclude)
   X           X            BT (Between)   I or E (Include or Exclude)
 
-  : []{#Job_Dependency_Types}Job Dependency Types
-
 - **Language**: Defines the two-character language abbreviation (e.g.,
     EN for English). The language characters will automatically populate
     if a Variant was defined.

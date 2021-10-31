@@ -8,7 +8,7 @@ information from the archive audit table. Archiving and deleting can be
 done manually or automatically. For information on automatic audit
 maintenance for the legacy audit data, refer to [Maintaining Audit History Interactively](#Maintain).
 
-[]{#aanchor442} With OpCon X5, SMA Technologies replaced the auditing mechanism with a more comprehensive model. For
+With OpCon X5, SMA Technologies replaced the auditing mechanism with a more comprehensive model. For
 information on the current Auditing scheme, refer to
 [Auditing](../../components.md#database) in the
 **Concepts** online help. All auditing data stored prior to release 5.0
@@ -16,8 +16,8 @@ is maintained in the legacy tables (AUDITHIST and AUDITARCH). This audit
 trail may be viewed and maintained with the Legacy Audit Management
 Utility. This utility is no longer installed with OpCon, but is
 available on the distribution media. Copy the LegacyAudit.exe executable
-from the \<media\>\\Install\\SMA OpCon Toolkit\\Legacy Audit folder to
-the \<Target Directory\>\\Utilities folder on the SAM application server
+from the <media\>\\Install\\SMA OpCon Toolkit\\Legacy Audit folder to
+the <Target Directory\>\\Utilities folder on the SAM application server
 or any machine where an ODBC connection can be configured to the OpCon
 database.
 
@@ -149,7 +149,7 @@ take several minutes to display the entire audit history.
 
 : Audit Trail Information Format
 
-[[]{#Logging_into_Legacy_Audit_Management}Logging into Legacy Audit Management]{.ul}
+## Logging into Legacy Audit Management
 
 On the machine with the Legacy Audit Management utility:
 
@@ -163,7 +163,7 @@ Right-click on **Start** and select **Explore**.
 
 In the Explorer window:
 
-Browse to the **\<Target Directory\>\\OpConxps\\Utilities\\** directory.
+Browse to the **<Target Directory\>\\OpConxps\\Utilities\\** directory.
 
 Double-click **LegacyAudit.exe**.
 
@@ -227,7 +227,7 @@ activation, the Filter screen displays the following fields:
 
 - **User Login ID**: This is a selectable list of all User Accounts in
     OpCon for searching SQL operations issued by a specific user. The
-    default is \<All Users\>.
+    default is <All Users\>.
 - **Search in SQL Statement**: The administrator can provide a string
     to isolate records that contain the statement. The search looks for
     an exact match. If the database has binary sort order, the string is
@@ -331,7 +331,6 @@ records. For more information, refer to [Maintaining Audit Records from the Comm
 The archive option is not available when viewing the archive audit history table.
 :::
 
-[Archiving Audit Records]{.ul}
 First, [log into Legacy Audit Management](#Logging_into_Legacy_Audit_Management) before continuing
 with this procedure to archive the audit history of a single job.
 
@@ -348,9 +347,7 @@ archive table according to the specifications of the options described
 above. The default is to purge all records. After setting either the
 Cut-off Date or the Days to Keep, purge the archived audit records.
 
-[Purge Archived Audit Records]{.ul}
-Without setting the Cut-off Date or the Days to Keep, the **Purge
-Records** button purges [all]{.ul} archived audit records. SMA Technologies strongly recommends retaining at
+Without setting the Cut-off Date or the Days to Keep, the **Purge Records** button purges *all* archived audit records. SMA Technologies strongly recommends retaining at
 least two weeks of data.
 
 First, [log into Legacy Audit Management](#Logging_into_Legacy_Audit_Management) before continuing
@@ -375,10 +372,10 @@ application server.
 
 ### Syntax
 
-From the \<Target Directory\>\\Opconxps\\Utilities\\ directory, use the
+From the <Target Directory\>\\Opconxps\\Utilities\\ directory, use the
 following syntax on the command line or in a command file:
 
-LEGACYAUDIT.EXE DSN,UID,PWD,{Days to Keep\|Cut-off Date}, \[-e\] \[-l\]
+`LEGACYAUDIT.EXE DSN,UID,PWD,{Days to Keep\|Cut-off Date}, \[-e\] \[-l\]`
 
 #### Parameters
 
@@ -404,7 +401,7 @@ LEGACYAUDIT.EXE DSN,UID,PWD,{Days to Keep\|Cut-off Date}, \[-e\] \[-l\]
     letter) and filename for the legacyaudit.exe log file. If -l is not
     given, then an audit log file is placed in the same directory as the
     legacyaudit.exe file. The syntax for the default log file name is
-    Audit\_\<date-time stamp\>.log. The log file provides detailed
+    Audit\_<date-time stamp\>.log. The log file provides detailed
     information of errors generated during job execution.
 - **-p** (Optional): Informs legacyaudit.exe to purge the audit
     archive table (AUDITARC).

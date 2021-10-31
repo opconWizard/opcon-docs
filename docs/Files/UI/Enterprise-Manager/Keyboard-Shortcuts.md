@@ -1,51 +1,23 @@
----
-lang: en-us
-title: Keyboard Shortcuts
-viewport: width=device-width, initial-scale=1.0
----
-
 # Keyboard Shortcuts
 
-##  []{#Enterprise_Manager}Enterprise Manager 
-In Enterprise Manager, the[ F1]{._Override style="font-weight: bold;"} Keyboard shortcut will link to the conceptual information for the
-current location in Enterprise Manager. From the main screen, this
-option opens to the first page of the Enterprise Manager Guide user
-help.
+## Enterprise Manager
 
- 
+In Enterprise Manager, the **F1** Keyboard shortcut will link to the conceptual information for the current location in Enterprise Manager. From the main screen, this option opens to the first page of the Enterprise Manager Guide user help.
 
-The following are principal shortcuts from the tools on the Enterprise
-Manager banner page:
+The following are principal shortcuts from the tools on the Enterprise Manager banner page:
 
-+-------------------------+---------------+-------------------------+
-| ![Lockout               | Logout        | [Ctrl+L]{._Override     | | icon](../../.           |               | styl                    |
-| ./Resources/Images/EM/l |               | e="font-weight: bold;"} |
-| ock.png "Lockout icon") |               | (confirm logout)        |
-|                         |               |                         |
-|                         |               | [Ctrl+Q]{._Override     | |                         |               | styl                    |
-|                         |               | e="font-weight: bold;"} |
-|                         |               | (automatic logout)      |
-+-------------------------+---------------+-------------------------+
-| ![Refresh               | Refresh       | [F5]{styl               | | icon](../../../R        |               | e="font-weight: bold;"} |
-| esources/Images/EM/refr |               |                         |
-| esh.png "Refresh icon") |               |                         |
-+-------------------------+---------------+-------------------------+
-| ![Pause Refresh         | Pause Refresh | **Ctrl+P**              | | icon                    |               |                         |
-| ](../../../Resources/Im |               |                         |
-| ages/EM/pauserefresh.pn |               |                         |
-| g "Pause Refresh icon") |               |                         |
-+-------------------------+---------------+-------------------------+
+||||
+|--- |--- |--- |
+||Logout|Ctrl+L (confirm logout)|
+||Logout|Ctrl+Q (automatic logout)|
+||Refresh|F5|
+||Pause Refresh|Ctrl+P|
 
- 
-
-In Enterprise Manager, [Ctrl+Alt+K]{._Override style="font-weight: bold;"} (Show Key Assist) will display the following
-shortcut menu:
+In Enterprise Manager, **Ctrl+Alt+K** (Show Key Assist) will display the following shortcut menu:
 
 ![Shortcut menu options in black text on yellow background](../../../Resources/Images/EM/EMshortcutkeysmenu.png "Show Key Assist Shortcut Menu")
 
-The following [Ctrl+Alt+]{._Override style="font-weight: bold;font-style: normal;"} character keyboard
-shortcuts access the [Preference]{._Override style="font-style: italic;"} and [System]{._Override
-style="font-style: italic;"} menus and [switch between views]{._Override style="font-style: normal;"}.
+The following **Ctrl+Alt+** character keyboard shortcuts access the *Preference* and *System* menus and switch between views.
 
 +------------+--------------------------------------------------------+
 | Ctrl+Alt+B | [Go to previous views when multiple views are open in  | |            | Enterprise Manager]{._Override                         |
@@ -297,8 +269,4 @@ Master]{._Override style="font-style: italic;"}:
   Alt+U       Go to [Allow Job Updates]{._Override style="font-style: italic;"} field   Enter Key   Enable the [Enter]{._Override style="font-weight: bold;"} key to move a selected item from **Revoked** to [Granted]{._Override style="font-style: italic;"} or [Granted]{._Override style="font-style: italic;"} to **Revoked**
   ----------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
- 
 :::
-
- 
-

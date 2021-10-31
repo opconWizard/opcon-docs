@@ -13,7 +13,7 @@ the keyword and click **Enter**) in the **Jobs** section on the
 ![Jobs Operation Dials](../../../Resources/Images/SM/Job-Operation-Dials.png "Jobs Operation Dials")
 
 :::note
-The "Ignored" operation dial groups any job with a job status of [Cancelled]{.skd-job-statuses} or [Skipped]{.skd-job-statuses}.
+The "Ignored" operation dial groups any job with a job status of Cancelled or Skipped.
 :::
 
 The **Processes** page will display.
@@ -21,7 +21,8 @@ The **Processes** page will display.
 *(Optional)* Filter and/or sort the list of jobs
 displayed.
 
-[Filtering]{.ul}
+Filtering:
+
 a.  For [quick filtering](Managing-Daily-Processes.md#Quick), you
     can use the **Filter Bar** just above the list of jobs to filter the
     list. You simply type the keyword in the appropriate field and click
@@ -39,7 +40,8 @@ c.  For more [in-depth     filtering](Managing-Daily-Processes.md#In-depth), you
     Click on the **x** at the top-right corner of the button to remove
     all selected filters at once.
 
-[Sorting]{.ul}
+Sorting:
+
 Click on the column heading to sort the column in ascending order
 (indicated by a small arrow pointing down). Click on the column heading
 again to sort the column in descending order (indicated by a small arrow
@@ -88,8 +90,10 @@ job(s):
 - **Kill**: This option allows you to send a request to abort one ore
     more jobs on an Agent machine. If the kill is successful, the
     application reports the killed job as Failed.     If the Kill is not successful, the job continues to show a
-    [Running]{.skd-job-statuses} status in the application. -   **Release**: This option allows you to release the selected job(s)
-    from a Held state. -   **Force Start**: This option allows you to force start the selected
+    Running status in the application.
+- **Release**: This option allows you to release the selected job(s)
+    from a Held state. 
+- **Force Start**: This option allows you to force start the selected
     job(s). This causes the job(s) to ignore all dependencies, and to
     start immediately.
 - **Restart**: This option allows you to place the selected job(s)
@@ -114,11 +118,11 @@ job(s):
     without intervention. If a job is Marked Failed     before it starts, both the start and finish time saved in history
     equal the time the job is marked.
 - **Mark Under Review**: This option allows you to change the selected
-    job(s) to an Under Review status (and being     worked on) when the job is in a Failed, [Marked
-    Failed]{.skd-job-statuses}, or [Initialization     Error]{.skd-job-statuses} state.
+    job(s) to an Under Review status (and being     worked on) when the job is in a Failed, Marked
+    Failed, or Initialization Error state.
 - **Mark Fixed**: This option allows you to change the selected job(s)
-    to Fixed status when the job is in a     Failed, Marked Failed,
-    [Initialization Error]{.skd-job-statuses}, or [Under     Review]{.skd-job-statuses} state.
+    to Fixed status when the job is in a Failed, Marked Failed,
+    Initialization Error, or Under Review state.
 
 :::note
 For more information about job status changes, refer to [Schedule and Job Status Change Commands](../../../operations/status-change-commands.md) in the **Concepts** online help.

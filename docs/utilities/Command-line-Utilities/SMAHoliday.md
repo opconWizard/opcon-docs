@@ -333,10 +333,9 @@ the configuration (ini) file. You must set the tag in the configuration
 file. Right after the rule, you need to add an equal sign then type the
 desired tag.
 
-For example, [d1 = usa]{style="font-family: 'Courier New';"} ; 6 day workweek. When running the program, enter [-t
-usa]{style="font-family: 'Courier New';"} and the program will only read
+For example, `d1 = usa ; 6 day workweek`. When running the program, enter `-t usa` and the program will only read
 and process rules that match the tag entered in the command-line
-parameter, which is [usa]{style="font-family: 'Courier New';"} in this case.
+parameter, which is *usa* in this case.
 
 The following is a sample configuration file for SMAHoliday.exe:
 

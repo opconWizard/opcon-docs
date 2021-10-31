@@ -1,7 +1,7 @@
 # Performing Schedule Procedures when Working in List View
 
 :::note
-If a completed schedule contains failed jobs, it will show in [red]{style="color: #ff0000;"} by default (this is the default failed color for failed jobs) with the text like this: [ScheduleName (Completed -- Contains Failed Jobs)]{style="color: #ff0000;"}. If the schedule is still in progress, but contains failed jobs, it will look like this: [ScheduleName (In Progress -- Contains Failed Jobs)]{style="color: #ff0000;"}.
+If a completed schedule contains failed jobs, it will show in red by default (this is the default failed color for failed jobs) with the text like this: `ScheduleName (Completed -- Contains Failed Jobs)`. If the schedule is still in progress, but contains failed jobs, it will look like this: `ScheduleName (In Progress -- Contains Failed Jobs)`.
 :::
 
 ## Viewing Schedule Information
@@ -225,7 +225,7 @@ To perform this procedure:
 ## Closing Schedules
 
 Use the **Close** feature to mark a schedule as
-Completed when the schedule is still [In Process]{.skd-job-statuses} only because it contains failed jobs.
+Completed when the schedule is still In Process only because it contains failed jobs.
 
 :::note
 This feature is not available for subschedules.
@@ -590,11 +590,11 @@ click the **Cancel** button to cancel the request.
 
 If multiple jobs were selected:
 
-Repeat [Steps 7 - 11]{.ul} to add the additional jobs' information.
+Repeat Steps 7 - 11 to add the additional jobs' information.
 
 If you need to add additional property definitions:
 
-Repeat [Steps 6 - 11]{.ul}.
+Repeat Steps 6 - 11.
 
 Click the **Close** button to close the **Add Jobs to \<Schedule
 Name\>** dialog.

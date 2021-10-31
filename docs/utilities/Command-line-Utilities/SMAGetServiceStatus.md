@@ -20,7 +20,8 @@ The following describes the command-line parameters:
 Properties \> General tab) in the Services window. For more details,
 refer to [Getting Service Display Names](#Getting_Service_Display_Names).
 
-[]{#Getting_Service_Display_Names}[Getting Service Display Names]{.ul}
+## Getting Service Display Names
+
 To perform the procedure:
 
 1. Use menu path: **Start \> Control Panel \> Administrative Tools \>
@@ -30,7 +31,7 @@ To perform the procedure:
 3. Right-click on the **Service Name** and select **Properties**.
 4. Verify that the **General** tab is selected.
 5. View the **Display name**.
-6. Repeat [Steps 2 -- 5]{.ul} for additional service names.
+6. Repeat Steps 2 - 5 for additional service names.
 7. Click **Close ☒**.
 
 ### Example

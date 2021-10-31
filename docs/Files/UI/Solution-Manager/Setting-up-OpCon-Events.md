@@ -30,7 +30,7 @@ notation: **${variable}**
     that the one value the user supplies will be used for every instance
     of that variable.
 
-- []{#aanchor419} You have the option to use the following system     variables specifically in Solution Manager:
+- You have the option to use the following system     variables specifically in Solution Manager:
 
   - **${SM.USER.LOGIN}** - Resolves to the Name defined for the
         OpCon user who clicked the Service
@@ -53,7 +53,7 @@ OpCon.
 
 Complete the *Event definition*.
 
-*(Optional)* Click the []{#Manual_Edit}**Manual Edit** button to define an Event manually. **Manual Edit** can also be used to
+*(Optional)* Click the **Manual Edit** button to define an Event manually. **Manual Edit** can also be used to
 edit an Event that was defined using the **Event Template** option, as
 shown in the example graphic.
 
@@ -62,4 +62,3 @@ shown in the example graphic.
 Click the **OK** button to apply your changes and return to the
 **Service Request definition** page. You can also select the **Cancel**
 button to discard the Event changes.
-:::

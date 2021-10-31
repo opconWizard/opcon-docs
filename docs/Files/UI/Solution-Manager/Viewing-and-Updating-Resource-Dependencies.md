@@ -87,7 +87,8 @@ dependency. When the **Resource Dependency** dialog displays:
     (Value) that the job requires.
 - Click **Save** to save your selections and close the dialog.
 
-[Indicators]{.ul}
+## Indicators
+
 The defined resource dependency will appear in the **Resource
 Dependency** panel with visual indicators, similar to the graphic, that
 indicate whether or not the dependency is in good standings, if what is
@@ -95,10 +96,10 @@ required for the job is available to that job.
 
 ![Resource Dependency Indicator](../../../Resources/Images/SM/Resource-Green-Indicator.png "Resource Depedency Indicator")
 
-- Appears [green]{.ul} if the resource defined is correct. For     example, when the current resource value is \> 1 and the defined
+- Appears green if the resource defined is correct. For     example, when the current resource value is \> 1 and the defined
     value is 2.
 
-- Appears [red]{.ul} if the resource defined is not correct. For     example, when the current resource value is = 1 and the defined
+- Appears red if the resource defined is not correct. For     example, when the current resource value is = 1 and the defined
     value is 2.
 
 - Available resources are displayed to the right as *Available

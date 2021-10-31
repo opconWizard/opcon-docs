@@ -120,28 +120,17 @@ toggle **Full Screen** mode.
 
 ![Daily Job Definition Menu](../../../Resources/Images/SM/Daily-Job-Definition-Menu.png "Daily Job Definition Menu")
 
-![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
-Related Topics
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon") Related Topics
 
 - [Accessing Job Summary](Accessing-Job-Summary.md)
 - [Using PERT View](Using-PERT-View.md)
 - [Viewing and Updating General     Info](Viewing-and-Updating-General-Info.md)
 - [Viewing and Updating     Documentation](Viewing-and-Updating-Documentation.md)
-
 - [Viewing and Updating Instance     Properties](Viewing-and-Updating-Instance-Properties.md)
-
 - [Viewing and Updating Job Task     Details](Viewing-and-Updating-Job-Task-Details.md)
-
 - [Viewing and Updating Job     Frequencies](Viewing-and-Updating-Job-Frequencies.md)
-
 - [Viewing and Updating Expression     Dependencies](Viewing-and-Updating-Expression-Dependencies.md)
-
 - [Viewing and Updating Resource     Dependencies](Viewing-and-Updating-Resource-Dependencies.md)
-
 - [Viewing and Updating Threshold     Dependencies](Viewing-and-Updating-Threshold-Dependencies.md)
-
 - [Viewing and Updating Resource     Updates](Viewing-and-Updating-Resource-Updates.md)
-
 - [Viewing and Updating Threshold     Updates](Viewing-and-Updating-Threshold-Updates.md)
-
-:::

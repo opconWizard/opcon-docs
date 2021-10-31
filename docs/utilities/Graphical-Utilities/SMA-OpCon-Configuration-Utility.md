@@ -8,11 +8,9 @@ OpCon Server. If you would like this utility installed on any machine,
 run the setup program from the OpCon installation media in this
 location:
 
-\<media\>:\\Install\\Configuration Utility\\SMA OpCon Configuration
-Utility Install.exe.
+`<media\>:\\Install\\Configuration Utility\\SMA OpCon Configuration Utility Install.exe`
 
-To open the SMA OpCon Configuration utility, use menu path:
-**[]{#aanchor476}Start \> All Programs \> Opconxps \> Utilities \> SMA OpCon Configuration Utility**.
+To open the SMA OpCon Configuration utility, use menu path: **Start \> All Programs \> Opconxps \> Utilities \> SMA OpCon Configuration Utility**.
 
 ## Menus
 
@@ -47,7 +45,7 @@ database scripts.
 The following fields display in the common area at the top of the
 screen:
 
-- **DB Scripts Folder**: Define the path to the \<Configuration
+- **DB Scripts Folder**: Define the path to the <Configuration
     Directory\>\\Utilities\\Database folder. This folder contains the
     SMA_SET\* scripting variables files this program will update with
     your changes.
@@ -368,7 +366,7 @@ thus the name on the mirror server.
 
 - Default: Database name
 
-**Path to Full Backup File**: Defines the [path and file name]{.ul} of the full database backup file on the principal SQL database server.
+**Path to Full Backup File**: Defines the *path and file name* of the full database backup file on the principal SQL database server.
 
 - Default value: Path to full database backup location on principal
 
@@ -378,7 +376,7 @@ thus the name on the mirror server.
   C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\BACKUP
   :::
 
-**Path to Transaction Log Backup File**: Defines the [path and file name]{.ul} of the transaction log backup file on the principal SQL
+**Path to Transaction Log Backup File**: Defines the *path and file name* of the transaction log backup file on the principal SQL
 database server.
 
 - Default value: Path to full transaction log backup location on
@@ -389,7 +387,7 @@ database server.
   C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\BACKUP
   :::
 
-**DB Mirroring Scripts Directory**: Defines the \<Configuration
+**DB Mirroring Scripts Directory**: Defines the <Configuration
 Directory\> where the database mirroring scripts exist on the server
 (provided by SMA Technologies with the Database installation).
 
@@ -525,7 +523,8 @@ replication for databases on the SQL Database Server.
     bottom of the screen) to verify that all settings are correct on the
     tab.
 
-[]{#Update_Database}[Update Database]{.ul}
+### Update_Database}[Update Database
+
 If you need to reapply database scripts or run them on another database,
 follow this quick procedure.
 

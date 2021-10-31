@@ -4,9 +4,8 @@ The **Operations** module has made performing mass action on job status
 updates at the schedule level easier. Let's say, for example, that you
 wanted to specify the following mass update conditions:
 
-1. Update the job's status to [Cancel]{.skd-job-statuses} for the     selected schedule when the job's current state is
-    [Waiting]{.skd-job-statuses}. 2.  Update the job's status to [Cancel]{.skd-job-statuses} for the
-    selected schedule when the job's current state is in [Waiting,     Held]{.skd-job-statuses}.
+1. Update the job's status to Cancel for the selected schedule when the job's current state is Waiting.
+2. Update the job's status to Cancel selected schedule when the job's current state is in Waiting, Held.
 
 This is all possible in **Operations** with a few simple steps.
 

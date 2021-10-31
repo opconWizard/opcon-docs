@@ -29,7 +29,7 @@ The following information applies to defining machines:
 - **Communication Status**: Determines if SMANetCom should be
     communicating with the defined machine. If communication is started,
     SMANetCom attempts communication with the LSAM.
-- **[]{#Job_Starts}Job Starts**: Determines if the SAM should send job     start information to the LSAM. While the primary purpose of an LSAM
+- **Job Starts**: Determines if the SAM should send job     start information to the LSAM. While the primary purpose of an LSAM
     is to start jobs, LSAMs also have the ability to send external
     OpCon events. If the condition exists
     where new job starts should not be initiated on the LSAM, but
@@ -63,7 +63,7 @@ TCP/IP address with the OpCon machine name:
 To confirm name resolution for DNS or hosts file configuration, ping the machine by name from the OpCon application server.
 :::
 
-[[]{#Configure_the_Hosts_File_on_the__Application_Server}Configure the Hosts File on the OpCon Application Server]{.ul}
+### Configure the Hosts File on the OpCon Application Server
 
 Complete the following procedure on the OpCon
 application server:
@@ -336,15 +336,7 @@ messages to an LSAM.
 
 - If True, the reserved characters are converted.
 
-```{=html}
-<!-- -->
-```
-
 - If False (default), the reserved characters are not converted.
-
-```{=html}
-<!-- -->
-```
 
 - **Check CRC**: Determines if all LSAM-SMANetCom messages are checked
     for the SMA Technologies proprietary digital     signature. With the default value of True, messages are checked. Set
@@ -402,7 +394,7 @@ messages to an LSAM.
     respond within this time period; nevertheless, SMANetCom attempts
     reconnection.
   - Valid values range from 30 (Default) to 600 seconds.
-- **[]{#Consecutive_Send_Sleep_Time_(ms)}Consecutive Send Sleep Time     (ms)**: Defines in milliseconds the wait time between blocks.
+- **Consecutive Send Sleep Time (ms)**: Defines in milliseconds the wait time between blocks.
   - Valid values range from 100 (Default) to 60000 milliseconds.
 
 ### Buffer Settings

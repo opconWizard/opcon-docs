@@ -39,7 +39,7 @@ Tuxedo ART environment.
 
 ## Step Control Tab
 
-[]{#aanchor605} The Tuxedo ART agent supports a maximum of 5 Step Control definitions per job.
+The Tuxedo ART agent supports a maximum of 5 Step Control definitions per job.
 
 - **Step Name**: The name of the step defined in the script.
 - **Min CC**: The minimum step completion code.

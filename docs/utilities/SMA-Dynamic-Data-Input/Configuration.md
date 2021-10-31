@@ -31,7 +31,7 @@ The domain user must have the following privileges:
 This user must log on to this machine BEFORE trying to start the service. The initial login creates a Windows user profile required by the SMADDI service running as a Domain User.
 :::
 
-[Configure the Service to Run as a Domain User on Windows]{.ul}
+#### Configure the Service to Run as a Domain User on Windows
 
 1. Use menu path: **Start \> Control Panel**.
 2. Double-click the **Administrative Tools** icon.
@@ -53,7 +53,7 @@ This user must log on to this machine BEFORE trying to start the service. The in
 In this mode, the SMADDI service is only able to monitor input
 directories on the local machine.
 
-[Configure the Service to Run as a Local System on Windows]{.ul}
+#### Configure the Service to Run as a Local System on Windows
 
 1. Use menu path: **Start \> Control Panel**.
 2. Double-click the **Administrative Tools** icon.
@@ -70,7 +70,8 @@ directories on the local machine.
 To configure SMADDI's database connection to the OpCon database, use the
 SMA ODBC Configuration tool.
 
-[Create a System DSN]{.ul}
+### Create a System DSN
+
 Select a Driver
 
 1. Log in as a *Windows user with Local Administrative Rights*.
@@ -128,13 +129,14 @@ subsequent screens.
 If the test fails, click **Cancel**.
 
 i.  Click the **Back** button until the screen from step 7 is displayed.
-ii. Repeat [Steps 7 -- 17]{.ul} until the test is successful.
+ii. Repeat Steps 7 - 17 until the test is successful.
 
 In the ODBC Data Source Administrator window:
 
 Click **OK**.
 
-[Configure the Database Connection Information]{.ul}
+### Configure the Database Connection Information
+
 After creating the System DSN, return to the **SMA ODBC Configuration**
 window.
 
@@ -147,7 +149,7 @@ On the General tab:
 In the **Data Source Name** list box, choose the **Data Source Name
 (DSN)** created in the previous procedure.
 
-Choose [Step 5 or 6]{.ul} for your desired authentication method.
+Choose Step 5 or 6 for your desired authentication method.
 
 For SQL Authentication:
 
@@ -156,7 +158,7 @@ b.  Click the **Connect** button.
 c.  Enter the *opconsam password* in the **Verify Password** field and
     click **OK**.
 d.  If Verification is successful, click **OK**. If Verification fails,
-    click **OK** on the failure message and go back to [Step 5]{.ul}.
+    click **OK** on the failure message and go back to Step 5.
 
 For Windows Authentication to SQL Server:
 
@@ -175,7 +177,7 @@ SMADDI.ini file. The .ini file contains:
 - [Debug Options](#Debug)
 - [Directories to Monitor](#Director)
 
-[Modify the SMADDI Configuration File]{.ul}
+### Modify the SMADDI Configuration File
 
 1. Right click **Start** then select **Explore** to open **Windows
     Explorer**.

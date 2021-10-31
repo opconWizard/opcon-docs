@@ -1,7 +1,7 @@
 # Viewing Schedule and/or Job Information
 
 :::note
-If a completed schedule contains failed jobs, it will show in [red]{style="color: #ff0000;"} by default (this is the default failed color for failed jobs) with the text like this: [ScheduleName (Completed -- Contains Failed Jobs)]{style="color: #ff0000;"}. If the schedule is still in progress, but contains failed jobs, it will look like this: [ScheduleName (In Progress -- Contains Failed Jobs)]{style="color: #ff0000;"}.
+If a completed schedule contains failed jobs, it will show in red by default (this is the default failed color for failed jobs) with the text like this: `ScheduleName (Completed -- Contains Failed Jobs)`. If the schedule is still in progress, but contains failed jobs, it will look like this: `ScheduleName (In Progress -- Contains Failed Jobs)`.
 :::
 
 To view schedule or job information:
@@ -38,9 +38,9 @@ To view schedule or job information:
 17. *(Optional)* Click and drag (left mouse button) then
     release the **job column heading** into the new location.
 18. *(Optional)* Click on the **job column heading** to
-    sort the column in [ascending]{.ul} order (indicated by a small     arrow pointing up).
+    sort the column in ascending order (indicated by a small     arrow pointing up).
 19. *(Optional)* Click on the **job column heading**
-    again to sort the column in [descending]{.ul} order (indicated by a     small arrow pointing down).
+    again to sort the column in descending order (indicated by a     small arrow pointing down).
 20. *(Optional)* Click once more on the **job column
     heading**, and the sort order will be reversed.
 21. *(Optional)* Right-click on a **schedule** in the

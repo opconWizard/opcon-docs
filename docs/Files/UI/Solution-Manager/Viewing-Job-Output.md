@@ -5,8 +5,8 @@ a job if it:
 
 - is completed or has started
 - is not a NULL or Container job
-- does not have a status of [Waiting]{.skd-job-statuses}, [On     Hold]{.skd-job-statuses}, [Cancelled]{.skd-job-statuses}, [Missed
-    Start Time]{.skd-job-statuses}, or [Skipped]{.skd-job-statuses}
+- does not have a status of Waiting, On Hold, Cancelled, Missed
+    Start Time, or Skipped
 
 :::note
 Before attempting to view a job's output file, first refer to [Viewing a Job Output File](../../../operations/job-output.md) in the **Concepts** online help.

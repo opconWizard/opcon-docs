@@ -101,9 +101,7 @@ To save the license file:
     Service Manager** in your **Windows Services** tool to pick up the
     file immediately.
 
-![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
-
-Related Topics
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon") Related Topics
 
 - [Viewing Cards in Vision Live](Viewing-Cards-in-Vision-Live.md)
 - [Viewing Vision Health](Viewing-Vision-Health.md)
