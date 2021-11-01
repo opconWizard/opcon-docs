@@ -227,4 +227,3 @@ modification of the following information for External Programs:
         for the termination of the external command before returning any
         exit condition.
   - **Activate trace**: Turns on detailed flow trace for the job.
-:::

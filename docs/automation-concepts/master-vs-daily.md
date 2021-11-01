@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Master vs Daily'
+---
+
 # Job Master vs Daily Schedule
 
 OpCon was designed to use two major sets of tables. The Job Master tables (Master) contain the data required to automate all known workflows for an environment. This data includes definitions for jobs that run every day, as well as jobs that may run as infrequently as once per year. The Daily Schedule tables (Daily) contain only the information for the jobs required for each schedule date. When requested, the schedule build process selects qualified schedules and jobs to copy from the Master to the Daily.

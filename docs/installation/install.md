@@ -1,3 +1,7 @@
+---
+sidebar_label: 'New Install'
+---
+
 # New Server Installation
 
 :::caution

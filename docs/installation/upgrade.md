@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Upgrade'
+---
+
 # OpCon Server Upgrade
 
 :::caution

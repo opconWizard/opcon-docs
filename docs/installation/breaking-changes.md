@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Breaking Changes'
+---
+
 # Breaking Changes in Installation
 
 The **Breaking Changes** section provides information on changes

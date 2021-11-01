@@ -503,4 +503,3 @@ telnet DestinationServer 21
     the destination Host machine.
 - **Extension**: Defines the optional parameter used to give the
     reports an extension.
-:::

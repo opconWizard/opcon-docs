@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Frequencies'
+---
+
 # Job and Schedule Frequencies
 
 Frequencies specify the recurring days on which a schedule or a job should run. Frequencies are defined with a schedule or with a job in the Master, and are used during the Schedule Build process to determine which jobs should be run on a given day.

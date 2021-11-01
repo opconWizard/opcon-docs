@@ -119,8 +119,7 @@ group.
     for each machine in the group. The copy of each job is named using
     the following syntax: `Job Name_First Property Value_Machine Name`
 
-**Job Type Details**: The Job Type Details depend on the selection of
-the Job Type determined above. For complete information, refer to [Job Type Details](../job-types/overview.md).
+**Job Type Details**: The Job Type Details depend on the selection of the Job Type determined above.
 
 **Job Automation Components**: The automation components of jobs are
 fully defined in [Job Automation Components](../job-components/overview.md).

@@ -81,4 +81,3 @@ The job definition supports advanced failure criteria.
         contains "Fail".
   - If the Result field is set to "Fail", Anything Else contains
         "Finish OK".
-:::

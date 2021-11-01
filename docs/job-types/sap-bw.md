@@ -7,8 +7,7 @@ The information in this section applies to defining an SAP BW job. For additiona
 - **Machine**: Defines the SAP BW LSAM Machine name. For information on adding an LSAM machine to OpCon, refer to [Adding Machines](../Files/UI/Enterprise-Manager/Adding-Machines.md) in the **Enterprise Manager** online help.
 - **User ID**: Defines the valid SAP login ID.
 - **Password**: Defines the correct SAP password for the User ID.
-- **Language**: Defines the two-character language abbreviation (e.g.,
-    enter EN for English).
+- **Language**: Defines the two-character language abbreviation (e.g., enter EN for English).
 
 ## General Data
 

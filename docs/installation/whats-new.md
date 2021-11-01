@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Whats New'
+---
+
 # What's New in Installation
 
 The **What's New** section provides information related to changes with

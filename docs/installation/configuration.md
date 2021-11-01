@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Server Configuration'
+---
+
 # OpCon Server Configuration
 
 This chapter contains the information you will need to configure the OpCon Server after new installation. After an upgrade, please review these items to ensure the server is still configured correctly.

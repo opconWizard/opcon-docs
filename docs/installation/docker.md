@@ -1,3 +1,7 @@
+---
+sidebar_label: 'OpCon on Docker'
+---
+
 # OpCon on Docker Installation
 
 OpCon's server components can now be installed and run in a Docker
