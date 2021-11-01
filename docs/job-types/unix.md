@@ -246,7 +246,6 @@ job sub-types are currently supported for UNIX:
 - [Episys: Answer Prompts](#Episys:2)
 - [Episys: Compare ACH Totals](#Episys:3)
 - [Episys: Find Batch Output Sequence Number](#Episys:4)
-    
 - [Episys: Find Report from Episys Reports](#Episys:5)
 - [Episys: Find Report from RSJ Output](#Episys:6)
 - [Episys: FTP all Reports in List](#Episys:7)

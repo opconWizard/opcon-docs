@@ -97,57 +97,13 @@ The audit trail information is presented in a columnar format. Depending
 on the number of records to be retrieved and the network traffic, it may
 take several minutes to display the entire audit history.
 
-+------------------+--------------------------------------------------+
-| Column           | Description                                      |
-+==================+==================================================+
-| Date/Time Stamp  | Date and time the SQL statement was issued.      |
-+------------------+--------------------------------------------------+
-| User Login ID    | The user who executed the SQL statement.         |
-+------------------+--------------------------------------------------+
-| Records Affected | The number of records affected by the SQL        |
-|                  | statement.                                       |
-+------------------+--------------------------------------------------+
-| Action Type      | The type of SQL transaction that was processed   |
-|                  | (Insert, Update, Delete, or User Login).         |
-+------------------+--------------------------------------------------+
-| SQL Part 1 -- 12 | The SQL statement that was processed.            |
-|                  |                                                  |
-|                  | -   Entries made by actions made in the legacy   |
-|                  |     User Interface appear as the exact SQL       |
-|                  |     strings passed by that program.              |
-|                  |                                                  |
-|                  | ```{=html}                                       |
-|                  | <!-- -->                                         |
-|                  |```                                              |
-|                  | -   **Region** (Required) is the area of the     |
-|                  |     data being changed. Valid values include:    |
-|                  |     -   Machines                                 |
-|                  |     -   Schedules                                |
-|                  |     -   Jobs                                     |
-|                  | -   **Update Level** (Optional) is the level at  |
-|                  |     which the data was updated. Valid values     |
-|                  |     include:                                     |
-|                  |     -   Machines                                 |
-|                  |     -   Date                                     |
-|                  |     -   Schedules                                |
-|                  |     -   Jobs                                     |
-|                  | -   **Action** is the type of action the user    |
-|                  |     attempted.                                   |
-|                  | -   **Identity** (Required) is one or more       |
-|                  |     fields separated by semicolons (;) that      |
-|                  |     identify the item affected by the change.    |
-|                  |     The identity will include one or more of the |
-|                  |     following to uniquely identify the item:     |
-|                  |     -   Machine Name                             |
-|                  |     -   Schedule Date                            |
-|                  |     -   Schedule Name                            |
-|                  |     -   Job Name                                 |
-|                  | -   **Result** (Required) is the result of the   |
-|                  |     query action in the database (e.g., Failed,  |
-|                  |     Succeeded, etc.).                            |
-+------------------+--------------------------------------------------+
-
-: Audit Trail Information Format
+|Column|Description|
+|--- |--- |
+|Date/Time Stamp|Date and time the SQL statement was issued.|
+|User Login ID|The user who executed the SQL statement.|
+|Records Affected|The number of records affected by the SQL statement.|
+|Action Type|The type of SQL transaction that was processed (Insert, Update, Delete, or User Login).|
+|SQL Part 1 – 12|The SQL statement that was processed. Entries made by actions made in the legacy User Interface appear as the exact SQL strings passed by that program. Region (Required) is the area of the data being changed. Valid values include:MachinesSchedulesJobs Update Level (Optional) is the level at which the data was updated. Valid values include:MachinesDateSchedulesJobsAction is the type of action the user attempted. Identity (Required) is one or more fields separated by semicolons (;) that identify the item affected by the change. The identity will include one or more of the following to uniquely identify the item:Machine NameSchedule DateSchedule NameJob Name. Result (Required) is the result of the query action in the database (e.g., Failed, Succeeded, etc.).|
 
 ## Logging into Legacy Audit Management
 

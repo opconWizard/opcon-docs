@@ -30,10 +30,6 @@ or disabling date and schedule selections, respectively. The switch will
 appear with a green checkmark when enabled. When disabled, the switch
 will appear with a gray circle.
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                             [Enabled Mode]{style="font-family: Arial; font-size: 8pt; font-weight: bold;"}                                                                                                                                                             [Disabled Mode]{style="font-family: Arial; font-size: 8pt; font-weight: bold;"}    ![Schedule Status Updates Date & Schedule Toggle Switches Enabled](../../../Resources/Images/SM/Schedule-Status-Update_Date&ScheduleToggles.png "Schedule Status Updates Date & Schedule Toggle Switches Enabled")   ![Schedule Status Updates Date & Schedule Toggle Switches Disabled](../../../Resources/Images/SM/Schedule-Status-Update_Date&ScheduleTogglesDisabled.png "Schedule Status Updates Date & Schedule Toggle Switches Disabled")
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 ## Filter Profiles
 
 Filter profiles are user-defined filters in the Operations **Processes**

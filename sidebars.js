@@ -136,18 +136,18 @@ module.exports = {
             'notifications/Notification-Configuration',
           ], 
         },
-        {
-          type: 'category', 
-          label: 'Reference Information',
-          collapsed: true,
-          items: [
-            'reference/Operations-Machine-Messages',
-            'reference/Operations-File-Transfer-Messages',
-            'reference/Windows-System-Errors',
-            'reference/best-practices',
-            'reference/property-expressions-syntax',
-          ], 
-        },
+        // {
+        //   type: 'category', 
+        //   label: 'Reference Information',
+        //   collapsed: true,
+        //   items: [
+        //     'reference/Operations-Machine-Messages',
+        //     'reference/Operations-File-Transfer-Messages',
+        //     'reference/Windows-System-Errors',
+        //     'reference/best-practices',
+        //     'reference/property-expressions-syntax',
+        //   ], 
+        // },
       ], 
     },
     {
