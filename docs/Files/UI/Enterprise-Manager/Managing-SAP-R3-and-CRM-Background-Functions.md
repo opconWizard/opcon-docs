@@ -75,13 +75,12 @@ options:
 **Filter by Job Status**: Select the checkbox by each job status to
 include in the data grid. Available job statuses are:
 
-+---------------+--------------+
-| -   Scheduled | -   Released |
-+---------------+--------------+
-| -   Ready     | -   Active   |
-+---------------+--------------+
-| -   Finished  | -   Canceled |
-+---------------+--------------+
+- Scheduled
+- Ready
+- Finished
+- Released
+- Active
+- Canceled
 
 **SAP Jobs**: Below the job status checkboxes, a table contains the
 search results in the following columns: **Job Name**, **Job Number**,

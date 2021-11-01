@@ -3,8 +3,6 @@
 Cards are displayed on the Vision Live page and you can use the filter
 bar to view cards for certain days.
 
-Vision Live Page
-
 ![Vision Live Page](../../../Resources/Images/SM/Vision-Live-Page-User.png "Vision Live Page")
 
 ## Card Views
@@ -13,11 +11,7 @@ To identify whether a card is a group or tag card, group cards will have
 the top-right corner of the card folded while tag cards do not have a
 folded corner.
 
-Vision Group Card
-
 ![Vision Group Card](../../../Resources/Images/SM/Vision-Group-Card.png "Vision Group Card")
-
-Vision Tag Card
 
 ![Vision Tag Card](../../../Resources/Images/SM/Vision-Tag-Card.png "Vision Tag Card")
 
@@ -26,15 +20,11 @@ the right-hand side of the card. For more information on the badge icon,
 refer to [Vision Card Colors](#Vision) in the **Solution
 Manager** online help.
 
-Vision Remote Instance Tag Card
-
 ![Vision Remote Instance Tag Card](../../../Resources/Images/SM/Vision-Tag-Card-Remote-Instance.png "Vision Remote Instance Tag Card")
 
 Cards have two views: a summary of time information on the front (shown
 in the image on the left below) and a summary of job statuses on the
 back (shown in the image on the right below).
-
-Vision Card Front and Back View
 
 ![Vision Card Front and Back View](../../../Resources/Images/SM/Vision-Card-Front-and-Back-View.png "Vision Card Front and Back View")
 
@@ -128,8 +118,6 @@ On the Vision Live page, clicking on a group card will display the child
 card(s) on a new page. You can navigate through the hierarchy of group
 cards by clicking the name links in the breadcrumb trail.
 
-Vision Live Hierarchy
-
 ![Vision Navigation](../../../Resources/Images/SM/Vision-Navigation.png "Vision Navigation")
 
 :::note
@@ -154,8 +142,6 @@ made to the entire tree.
 You must have the appropriate privileges to view Vision Settings. For more information, refer to [Working in Admin Mode](Working-in-Admin-Mode_Vision.md) in the **Solution Manager** online help.
 :::
 
-Vision Settings Hierarchy
-
 ![Vision Settings Hierarchy](../../../Resources/Images/SM/Vision-Settings-Hierarchy.png "Vision Settings Hierarchy")
 
 ## Card Links
@@ -164,8 +150,6 @@ Clicking on a tag card defined to the current instance will display the
 Daily Processes page in the Operations module. For more information on
 the Daily Processes page, refer to [Managing Daily Processes](Managing-Daily-Processes.md) in the
 **Solution Manager** online help.
-
-Daily Processes Page
 
 ![Vision Daily Processes Page](../../../Resources/Images/SM/Vision-Daily-Processes.png "Vision Daily Processes Page")
 

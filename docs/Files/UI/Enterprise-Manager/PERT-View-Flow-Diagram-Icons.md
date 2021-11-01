@@ -12,8 +12,10 @@ Job Statuses, please refer to [Job Statuses](../../../operations/status-descript
 
 The diagram may display any of the following job type icons:
 
-  ----------------------------------------------------------------------------------------------------------- --------------- ----------------------------------------------------------------------------------------------- -----------------
-  ![BIS Job icon](../../../Resources/Images/EM/jobicon_bis.png "BIS Job icon")                                BIS             ![OS 2200 Job icon](../../../Resources/Images/EM/jobicon_os2200.png "OS 2200 Job icon")         OS 2200
+|||
+|---|---|
+|![BIS Job icon](../../../Resources/Images/EM/jobicon_bis.png "BIS Job icon")|BIS|
+|![OS 2200 Job icon](../../../Resources/Images/EM/jobicon_os2200.png "OS 2200 Job icon")|OS 2200|
   ![Container Job icon](../../../Resources/Images/EM/jobicon_container.png "Container Job icon")              Container       ![SAP BW Job icon](../../../Resources/Images/EM/jobicon_sapbw.png "SAP BW Job icon")            SAP BW
   ![File Transfer Job icon](../../../Resources/Images/EM/jobicon_filetransfer.png "File Transfer Job icon")   File Transfer   ![SAP Job icon](../../../Resources/Images/EM/jobicon_sap.png "SAP Job icon")                    SAP R/3 and CRM
   ![IBM i Job icon](../../../Resources/Images/EM/jobicon_iseries.png "IBM i Job icon")                        IBM i           ![SQL Job icon](../../../Resources/Images/EM/jobicon_sql.png "SQL Job icon")                    SQL

@@ -36,94 +36,23 @@ To set the preferences:
 13. **Close ☒** the **Enterprise Manager**.
 14. Restart to load the new formats.
 
-+----------------+----------------+----------------+----------------+
-| Letter         | Date or Time   | Presentation   | Re             |
-|                | Component      |                | sults/Examples |
-+================+================+================+================+
-| The format     |                |                |                |
-| letters and    |                |                |                |
-| examples below |                |                |                |
-| refer to this  |                |                |                |
-| Long Date      |                |                |                |
-| example:       |                |                |                |
-| **Monday,      |                |                |                |
-| August 8,      |                |                |                |
-| 2011**         |                |                |                |
-|                |                |                |                |
-|                |                |                |                |
-|                |                |                |                |
-| The example    |                |                |                |
-| date would be  |                |                |                |
-| created in the |                |                |                |
-| EM with the    |                |                |                |
-| following      |                |                |                |
-| string for the |                |                |                |
-| Long Date      |                |                |                |
-| Format:        |                |                |                |
-| **EEEE, MMMM   |                |                |                |
-| d, yyyy**      |                |                |                |
-+----------------+----------------+----------------+----------------+
-| yy             | Year           | Year           | 11             |
-+----------------+----------------+----------------+----------------+
-| yyyy           | Year           | Year           | 2011           |
-+----------------+----------------+----------------+----------------+
-| M              | Month          | Month number   | 8              |
-|                |                |                |                |
-|                |                |                | (does not      |
-|                |                |                | include the    |
-|                |                |                | leading zero)  |
-+----------------+----------------+----------------+----------------+
-| MM             | Month          | Month number   | 08             |
-|                |                |                |                |
-|                |                |                | (does include  |
-|                |                |                | the leading    |
-|                |                |                | zero)          |
-+----------------+----------------+----------------+----------------+
-| MMM            | Month          | Month text     | Aug            |
-|                |                |                |                |
-|                |                |                | (abbreviates   |
-|                |                |                | the month      |
-|                |                |                | name)          |
-+----------------+----------------+----------------+----------------+
-| MMMM           | Month          | Month text     | August         |
-|                |                |                |                |
-|                |                |                | (includes the  |
-|                |                |                | full the month |
-|                |                |                | name)          |
-+----------------+----------------+----------------+----------------+
-| d              | Day in Month   | Day Number     | 8              |
-|                |                |                |                |
-|                |                |                | (does not      |
-|                |                |                | include the    |
-|                |                |                | leading zero)  |
-+----------------+----------------+----------------+----------------+
-| dd             | Day in Month   | Day Number     | 08             |
-|                |                |                |                |
-|                |                |                | (does include  |
-|                |                |                | the leading    |
-|                |                |                | zero)          |
-+----------------+----------------+----------------+----------------+
-| E              | Day in week    | Day Text       | Wed            |
-|                |                |                |                |
-|                |                |                | (abbreviates   |
-|                |                |                | the day name)  |
-+----------------+----------------+----------------+----------------+
-| EEEE           | Day in week    | Day Text       | Wednesday      |
-|                |                |                |                |
-|                |                |                | (includes the  |
-|                |                |                | full day name) |
-+----------------+----------------+----------------+----------------+
-| a              | AM/PM marker   | AM or PM text  | AM/PM          |
-+----------------+----------------+----------------+----------------+
-| H              | Hour in Day    | 24-hour clock  | 16:00          |
-|                | (0-23)         | number         |                |
-+----------------+----------------+----------------+----------------+
-| h              | Hour in Day    | Hour in AM/PM  | 4:00           |
-|                | (1-12)         |                |                |
-+----------------+----------------+----------------+----------------+
-| mm             | Minute in hour | Number         | 30             |
-+----------------+----------------+----------------+----------------+
-| s              | Second in      | Number         | 55             |
-|                | minute         |                |                |
-+----------------+----------------+----------------+----------------+
+The format letters and examples below refer to this Long Date example: `Monday, August 8, 2011`
 
+The example date would be created in the EM with the following string for the Long Date Format: `EEEE, MMMM d, yyyy`
+
+|Letter|Date or Time Component|Presentation|Results/Examples|
+|--- |--- |--- |--- |
+|yyyy|Year|Year|2011|
+|M|Month|Month number|8 (does not include the leading zero)|
+|MM|Month|Month number|08  (does include the leading zero)|
+|MMM|Month|Month text|Aug (abbreviates the month name)|
+|MMMM|Month|Month text|August (includes the full the month name)|
+|d|Day in Month|Day Number|8 (does not include the leading zero)|
+|dd|Day in Month|Day Number|08 (does include the leading zero)|
+|E|Day in week|Day Text|Wed (abbreviates the day name)|
+|EEEE|Day in week|Day Text|Wednesday (includes the full day name)|
+|a|AM/PM marker|AM or PM text|AM/PM|
+|H|Hour in Day (0-23)|24-hour clock number|16:00|
+|h|Hour in Day (1-12)|Hour in AM/PM|4:00|
+|mm|Minute in hour|Number|30|
+|s|Second in minute|Number|55|
