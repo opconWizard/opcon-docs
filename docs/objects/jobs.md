@@ -21,14 +21,12 @@ The following information applies to defining jobs:
 **Job Name**: Defines the name of the job. When defining a job in the
 Master tables, the name can be up to but no more than 64 characters.
 
-- The following list of characters are invalid for all Job Types: \<
+- The following list of characters are invalid for all Job Types: <
     (less than), \> (greater than), & (ampersand), ' (single quote), "
-    (double quote), \| (pipe), ; (semi-colon), % (percent symbol), ( )
+    (double quote), | (pipe), ; (semi-colon), % (percent symbol), ( )
     (open and closed parentheses), \[ \] (open and closed square     brackets, { } (open and closed braces), = (equals sign), \\ (back
     slash), ! (exclamation point), \* (asterisk), ? (question mark), and
     , (comma).
-- The graphical interfaces automatically format all OpenVMS job names
-    to uppercase.
 
 :::note
 If a Job Name is changed, the history of the job under the previous name is no longer visible.

@@ -74,7 +74,7 @@ value of the dependency is displayed as a tooltip.
 - When hovered over a threshold dependency line, the tooltip displays
     the numeric value for the threshold. This value will contain one of
     the following valid operators: equal (=), greater than (\>), less
-    than (\<), greater than or equal to (≥), less than or equal to (≤),
+    than (<), greater than or equal to (≥), less than or equal to (≤),
     not equal (≠).
 
 Within nodes, these icons represent the following:

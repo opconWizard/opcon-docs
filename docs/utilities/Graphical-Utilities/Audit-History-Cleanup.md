@@ -1,7 +1,7 @@
 # Audit History Cleanup
 
 The Audit Cleanup utility (Audit.exe) is an executable that archives and
-purges audit data. Audit.exe is installed to the \<Target
+purges audit data. Audit.exe is installed to the <Target
 Directory\>\\OpConxps\\Utilities\\ directory with the SAM installation
 package. This utility will only connect to the same database that is
 configured for SAM in the SMA Connection Configuration program.
@@ -22,10 +22,10 @@ to [SMAUtility Schedule Job Descriptions](../../objects/schedules.md#smautility-
 
 ## Syntax
 
-Use the following syntax for the Audit.exe program in the \<Target
+Use the following syntax for the Audit.exe program in the <Target
 Directory\>\\OpConxps\\Utilities\\ directory:
 
-AUDIT.EXE -u\<User\> -w\<Password\> -d\<Days to Keep\|Cut-off Date\>
+AUDIT.EXE -u<User\> -w<Password\> -d<Days to Keep\|Cut-off Date\>
 \[-p\]
 
 ### Parameters
@@ -33,10 +33,10 @@ AUDIT.EXE -u\<User\> -w\<Password\> -d\<Days to Keep\|Cut-off Date\>
 The following describes the command-line parameters:
 
 - **AUDIT.EXE**: The name of the audit management program.
-- **-u\<User\>**: Any valid, case-sensitive OpCon User Login ID.
-- **-w\<Password\>**: The case-sensitive password corresponding to the
+- **-u<User\>**: Any valid, case-sensitive OpCon User Login ID.
+- **-w<Password\>**: The case-sensitive password corresponding to the
     User Login ID.
-- **-d\<Days to Keep\|Cut-off Date\>**: Defines either the Days to
+- **-d<Days to Keep\|Cut-off Date\>**: Defines either the Days to
     Keep or the Cut-off Date to determine what records to clean up.
   - Days to Keep: Defines a number between 0 and 32,000 as an
         negative offset to the current date, to start archiving or
@@ -58,7 +58,7 @@ The Output Directory was configured during installation. For more information, r
 The Audit log file provides detailed information regarding the audit
 history clean up process.
 
-- The log file resides in the \<Output Directory\>\\SAM\\Log\\
+- The log file resides in the <Output Directory\>\\SAM\\Log\\
     directory.
 - Each time the Audit.exe runs, it creates a log file name with the
     following syntax: Audit_CCYYMMDD_HHmmssss.log. The "ssss" in
@@ -67,8 +67,8 @@ history clean up process.
 - Upon startup, Audit.exe checks the SAM\\Log folder for log files
     older than today and moves them to the appropriate archive
     subfolder.
-  - All archived log files reside in the \<Output
-        Directory\>\\SAM\\Log\\Archive\\\<Day\> folder.
+  - All archived log files reside in the <Output
+        Directory\>\\SAM\\Log\\Archive\\<Day\> folder.
   - If the History log files in the SAM\\Log are older than the
         oldest Archive folder, the old logs are simply deleted.
 
@@ -82,8 +82,8 @@ The Audit.exe program uses the following exit codes:
 | 0             | Batch run successful                                |
 +---------------+-----------------------------------------------------+
 | 35001         | Program aborted. Review the Audt.log file in the    |
-|               | \<Output Directory\>\\SAM\\Log folder and possibly  |
-|               | the MSLSAM.log file in the \<Output                 |
+|               | <Output Directory\>\\SAM\\Log folder and possibly  |
+|               | the MSLSAM.log file in the <Output                 |
 |               | Directory\>\\MSLSAM\\Log folder for information.    |
 |               |                                                     |
 |               |                                                     |

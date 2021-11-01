@@ -53,7 +53,7 @@ To change the command line from "C:\\MyFolder\\MyApp.exe -arg1 firstArg -arg2 se
 
 ##### Example \#2
 
-To change the command line from "\<CurrentValue\>" to "\<CurrentValue\> -arg3 thirdArg":
+To change the command line from "<CurrentValue\>" to "<CurrentValue\> -arg3 thirdArg":
 
 **Job Field**: (Windows) Command Line
 
@@ -65,7 +65,7 @@ To change the command line from "\<CurrentValue\>" to "\<CurrentValue\> -arg3 th
 
 ##### Example \#3
 
-To change the machine from "MyMachine" to "My\<Property\>Machine":
+To change the machine from "MyMachine" to "My<Property\>Machine":
 
 **Job Field**: Primary Machine
 
@@ -77,7 +77,7 @@ To change the machine from "MyMachine" to "My\<Property\>Machine":
 
 ##### Example \#4
 
-To change the department from "\<CurrentValue\>" to "\<CurrentValue\>\<InstanceName\>":
+To change the department from "<CurrentValue\>" to "<CurrentValue\><InstanceName\>":
 
 **Job Field**: Department
 
@@ -93,7 +93,7 @@ Expressions can be used to change a numeric field, for instance, the job start o
 
 #### Expression Example \#1
 
-To change the job start offset from "\<CurrentValue\>" by adding 20 minutes to it:
+To change the job start offset from "<CurrentValue\>" by adding 20 minutes to it:
 
 **Job Field**: Start Offset
 
@@ -105,7 +105,7 @@ To change the job start offset from "\<CurrentValue\>" by adding 20 minutes to i
 
 #### Expression Example \#2
 
-To change the job start offset from "\<CurrentValue\>" by adding 15% of the current offset to it:
+To change the job start offset from "<CurrentValue\>" by adding 15% of the current offset to it:
 
 **Job Field**: Start Offset
 

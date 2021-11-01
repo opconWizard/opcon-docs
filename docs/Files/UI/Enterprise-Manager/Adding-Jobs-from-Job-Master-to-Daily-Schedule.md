@@ -47,7 +47,7 @@ and/or click on the **Instance Machines** tab.
 a.  Define the job instance properties by entering the *name* and
     *value* for the property in the specified format.
 b.  Click on the drop-down arrow and select a **machine** or select
-    **\<None\>** to build an instance for each machine in the defined
+    **<None\>** to build an instance for each machine in the defined
     Machine Group.
 
 Click the **Yes** button to confirm the request sent for "job name" or

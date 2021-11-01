@@ -7,7 +7,7 @@ notification:
     of the search criteria in the notification filter for a third-party
     tool. The maximum for this field is 64 characters.
   - The SMA Notify Handler places this ID in the message with the
-        format: "EventID=\<space\>XXXXXX".
+        format: "EventID=<space\>XXXXXX".
   - All characters are allowed except for the following: \~ (Tilde)
         , \# (Pound), % (Percent), ! (Exclamation), @ (At), $ (Dollar),
         \^ Carat

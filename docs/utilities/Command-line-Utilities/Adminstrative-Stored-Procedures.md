@@ -30,13 +30,13 @@ processing loop.
 
 ### Syntax
 
-EXEC SMA_CHGMACHINE '\<Machine Name\>'
+EXEC SMA_CHGMACHINE '<Machine Name\>'
 
 #### Parameters
 
 The stored procedure uses the following parameter:
 
-- **\<Machine Name\>**: The name of the LSAM whose MachineID is
+- **<Machine Name\>**: The name of the LSAM whose MachineID is
     changed to 1.
 
 ### Changing a Machine's ID
@@ -332,13 +332,13 @@ This process is irreversible. SMA Technologies recommends backing up the databas
 
 ### Syntax
 
-EXEC SMA_CLEARSCHED '\<ScheduleName\>'
+EXEC SMA_CLEARSCHED '<ScheduleName\>'
 
 #### Parameters
 
 The stored procedure uses the following parameter:
 
-- **\<ScheduleName\>**: The name of the schedule from which the jobs
+- **<ScheduleName\>**: The name of the schedule from which the jobs
     will be cleared.
   - The schedule name must not exceed 40 characters.
   - Enclose the schedule name in single quotation marks (e.g.,
@@ -359,9 +359,9 @@ Declare \@errortext Varchar(255)
 
 BEGIN
 
-exec SMA_COPYSCHED '\<SourceSchedule\>'
+exec SMA_COPYSCHED '<SourceSchedule\>'
 
-,'\<TargetSchedule\>'
+,'<TargetSchedule\>'
 
 ,'Copy Privileges (Y/N)'
 
@@ -379,11 +379,11 @@ END
 
 The following describes the parameters for the stored procedure:
 
-- **\<SourceSchedule\>**: The name of the schedule to copy.
+- **<SourceSchedule\>**: The name of the schedule to copy.
   - The schedule name must not exceed forty (40) characters.
   - Enclose the schedule name in single quotation marks (e.g.,
         'Schedule Name').
-- **\<TargetSchedule\>**: The name of the new schedule for the stored
+- **<TargetSchedule\>**: The name of the new schedule for the stored
     procedure to create.
   - The schedule name must not exceed forty (40) characters.
   - Enclose the schedule name in single quotation marks (e.g., 'New
@@ -501,13 +501,13 @@ This process is irreversible. SMA Technologies recommends backing up the databas
 
 ### Syntax
 
-EXEC SMA_DELETESCHED '\<Schedule Name\>'
+EXEC SMA_DELETESCHED '<Schedule Name\>'
 
 #### Parameters
 
 The stored procedure uses the following parameter:
 
-- **\<Schedule Name\>**: The name of the schedule to delete.
+- **<Schedule Name\>**: The name of the schedule to delete.
   - The schedule name must not exceed 20 characters.
   - Enclose the schedule name in single quotation marks (e.g.,
         'OldSched').
@@ -695,7 +695,7 @@ single machine and writes a message to the Windows Event Log.
 
 ### Syntax
 
-EXEC SMA_SAMWATCH SAMID,'Recipient',\<\#1\>,\<\#2\>
+EXEC SMA_SAMWATCH SAMID,'Recipient',<\#1\>,<\#2\>
 
 #### Parameters
 
@@ -741,13 +741,13 @@ EXEC SMA_SAMWATCH 1,'C:\ProgramData\OpConxps\Scripts\sma_samwatch.cmd'
 
 :::
 
-**\<\#1\>**: The number of times SMA_SAMWATCH retries when a SAMPULSE
+**<\#1\>**: The number of times SMA_SAMWATCH retries when a SAMPULSE
 record for the requested SAMID is absent. This situation may occur when
 SAM is not running or during a SAM regeneration.
 
 - If omitted, the default is 1.
 
-**\<\#2\>**: Determines the number of seconds between retry attempts.
+**<\#2\>**: Determines the number of seconds between retry attempts.
 
 - Valid values include integers ranging from 0 and 59.
 - If omitted, the default is 5.

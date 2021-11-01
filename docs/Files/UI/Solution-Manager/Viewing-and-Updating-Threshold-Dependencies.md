@@ -85,7 +85,7 @@ dependency. When the **Threshold Dependency** dialog displays:
 - Select the operator that the SAM should use when the SAM performs
     the dependency check for the job to compare the current threshold
     value to the dependent value. Valid operators include: = (equal), \>
-    (greater than), \< (less than), ≥ (greater than or equal to), ≤
+    (greater than), < (less than), ≥ (greater than or equal to), ≤
     (less than or equal to), ≠ (not equal).
 - Select the dependent value to which the SAM applies the operator for
     comparison with the current threshold value.

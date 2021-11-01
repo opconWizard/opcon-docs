@@ -12,7 +12,7 @@ procedures used to update the database. The **SMA OpCon DDI Install**
 package installs the SMADDI service. The **SMA OpCon Database Scripts
 Install** package includes the application of the SMADDI stored
 procedures to the OpCon database. Both
-installation packages can be found in the\\<Target Directory\>\\Install\\\_Exe directory. For installation
+installation packages can be found in the <Target Directory\>\\Install\\\_Exe directory. For installation
 instructions on either package, refer to the **OpCon Installation**
 online help.
 
@@ -55,12 +55,11 @@ subdirectories: Done, Error, Output.
     service processes the file and moves it to the Done subdirectory.
 - **Error**: If a parsing error or transactional error is detected
     with the input file, the service writes a file to the Error
-    subdirectory. SMADDI names the file with the following syntax:
-    \<InputFileName\> - Error.txt.
+    subdirectory. SMADDI names the file with the following syntax: `<InputFileName\> - Error.txt`.
 - **Output**: If the service is configured to write output for each
     file received, the service writes the output from the SMADDI stored
     procedures to a file in the Output subdirectory. SMADDI names the
-    file with the following syntax: \<InputFileName\> - Out.txt. The
+    file with the following syntax: `<InputFileName\> - Out.txt`. The
     Output directory contains success and failure messages. If a
     transaction error was reported in the error file, the output file
     lists the details of the transaction error encountered by the stored

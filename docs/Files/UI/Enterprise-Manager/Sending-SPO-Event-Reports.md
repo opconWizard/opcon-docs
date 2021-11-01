@@ -6,9 +6,7 @@ Report or a CO Report notification:
 - **AL**: If enabled, defines the AL report fields.
 - **Text**(Optional): Defines the user-defined message up to 250
     characters.
-  - If no text is specified, the default information of
-        \<lsam_mach_name\> \<schedule_date\> \<schedule_name\>
-        \<job_name\> is passed with the notification.
+  - If no text is specified, the default information of <lsam_mach_name\> <schedule_date\> <schedule_name\><job_name\> is passed with the notification.
   - If text is specified, the resulting SPO message contains only
         the user-defined message.
 - **Severity**: Defines the choices for the message's severity level.

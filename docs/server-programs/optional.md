@@ -46,7 +46,7 @@ information, refer to [SMA Service Manager (SMAServMan)](./service-manager.md).
 ### SMA LDAP Monitor Configuration
 
 The SMA LDAP Monitor configuration determines basic application and
-logging behavior. The SMALDAPMon.ini file resides in the \<Configuration
+logging behavior. The SMALDAPMon.ini file resides in the <Configuration
 Directory\>\\SAM\\folder. The tables contain the definitions of each
 configuration parameter. All changes to the configuration are dynamic.
 

@@ -60,7 +60,7 @@ the **Concepts** online help.
 
 ## SAM Logging
 
-The SAM writes two logs to the \<Output Directory\>\\SAM\\Log\\
+The SAM writes two logs to the <Output Directory\>\\SAM\\Log\\
 directory. The log files have the names:
 
 - [SAM.log](#SAM.log)
@@ -136,7 +136,7 @@ the associated SMA protocol types.
 
 #### LSAM Response Breakdown
 
-In the SMANetComTrace.log, every "From" (\<\<\<) message is an LSAM response to an SMANetCom request. Embedded in a 48-character string, the message follows the machine name and job name in an LSAM response. Break down the string in the following manner:
+In the SMANetComTrace.log, every "From" (<<<) message is an LSAM response to an SMANetCom request. Embedded in a 48-character string, the message follows the machine name and job name in an LSAM response. Break down the string in the following manner:
 
 - The first 10 characters are the OpCon job number.
 - The 11th character is the LSAM response.

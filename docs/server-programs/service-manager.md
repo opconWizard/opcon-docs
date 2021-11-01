@@ -112,7 +112,7 @@ For each application in the Application List, there is a major heading in the co
 +----------------------+----------------------+----------------------+
 | Parameter            | Application          | Application Default  |
 +======================+======================+:====================:+
-| ApplicationPath      | SAM                  | ""\<Target         |
+| ApplicationPath      | SAM                  | ""<Target         |
 |                      |                      | Director             |
 |                      |                      | y\>\\OpConxps\\SAM\\ |
 |                      |                      |                      |
@@ -121,70 +121,70 @@ For each application in the Application List, there is a major heading in the co
 |                      |                      |                      |
 |                      |                      | SAM\\Sam.exe""     |
 +----------------------+----------------------+----------------------+
-|                      | SMANetCom            | ""\<Target         |
+|                      | SMANetCom            | ""<Target         |
 |                      |                      | Directory            |
 |                      |                      | \>\\OpConxps\\SAM\\\ |
 |                      |                      | SMANetCom.exe""    |
 +----------------------+----------------------+----------------------+
-|                      | SMANotifyHandler     | ""\<Target         |
+|                      | SMANotifyHandler     | ""<Target         |
 |                      |                      | Directory\>\\O       |
 |                      |                      | pConxps\\SAM\\ENS\\\ |
 |                      |                      | SMAN                 |
 |                      |                      | otifyHandler.exe"" |
 +----------------------+----------------------+----------------------+
-|                      | SMARequestRouter     | ""\<Target         |
+|                      | SMARequestRouter     | ""<Target         |
 |                      |                      | Directory            |
 |                      |                      | \>\\OpConxps\\SAM\\\ |
 |                      |                      | SMAR                 |
 |                      |                      | equestRouter.exe"" |
 +----------------------+----------------------+----------------------+
-|                      | SM                   | ""\<Target         |
+|                      | SM                   | ""<Target         |
 |                      | AStartTimeCalculator | Directory            |
 |                      |                      | \>\\OpConxps\\SAM\\\ |
 |                      |                      | SMAStartTi           |
 |                      |                      | meCalculator.exe"" |
 +----------------------+----------------------+----------------------+
-|                      | SMALDAPMon           | ""\<Target         |
+|                      | SMALDAPMon           | ""<Target         |
 |                      |                      | Directory            |
 |                      |                      | \>\\OpConxps\\SAM\\\ |
 |                      |                      | SMALDAPMon.exe""   |
 +----------------------+----------------------+----------------------+
-| StartInDirectory     | SAM                  | \<Target             |
+| StartInDirectory     | SAM                  | <Target             |
 |                      |                      | Director             |
 |                      |                      | y\>\\OpConxps\\SAM\\ |
 +----------------------+----------------------+----------------------+
-|                      | SMANetCom            | \<Target             |
+|                      | SMANetCom            | <Target             |
 |                      |                      | Director             |
 |                      |                      | y\>\\OpConxps\\SAM\\ |
 +----------------------+----------------------+----------------------+
-|                      | SMANotifyHandler     | \<Target             |
+|                      | SMANotifyHandler     | <Target             |
 |                      |                      | Directory\>\\        |
 |                      |                      | OpConxps\\SAM\\ENS\\ |
 +----------------------+----------------------+----------------------+
-|                      | SMARequestRouter     | \<Target             |
+|                      | SMARequestRouter     | <Target             |
 |                      |                      | Director             |
 |                      |                      | y\>\\OpConxps\\SAM\\ |
 +----------------------+----------------------+----------------------+
-|                      | SM                   | \<Target             |
+|                      | SM                   | <Target             |
 |                      | AStartTimeCalculator | Director             |
 |                      |                      | y\>\\OpConxps\\SAM\\ |
 +----------------------+----------------------+----------------------+
-|                      | SMALDAPMon           | \<Target             |
+|                      | SMALDAPMon           | <Target             |
 |                      |                      | Director             |
 |                      |                      | y\>\\OpConxps\\SAM\\ |
 +----------------------+----------------------+----------------------+
-| CommandLineArguments | SAM                  | \<Blank\>            |
+| CommandLineArguments | SAM                  | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMANetCom            | \<Blank\>            |
+|                      | SMANetCom            | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMANotifyHandler     | \<Blank\>            |
+|                      | SMANotifyHandler     | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMARequestRouter     | \<Blank\>            |
+|                      | SMARequestRouter     | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SM                   | \<Blank\>            |
+|                      | SM                   | <Blank\>            |
 |                      | AStartTimeCalculator |                      |
 +----------------------+----------------------+----------------------+
-|                      | SMALDAPMon           | \<Blank\>            |
+|                      | SMALDAPMon           | <Blank\>            |
 +----------------------+----------------------+----------------------+
 | Ini                  | SAM                  | 60                   |
 | tialTimeOutInSeconds |                      |                      |
@@ -213,17 +213,17 @@ For each application in the Application List, there is a major heading in the co
 +----------------------+----------------------+----------------------+
 |                      | SMALDAPMon           | 90                   |
 +----------------------+----------------------+----------------------+
-| DependsOnApplication | SAM                  | \<Blank\>            |
+| DependsOnApplication | SAM                  | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMANetCom            | \<Blank\>            |
+|                      | SMANetCom            | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMANotifyHandler     | \<Blank\>            |
+|                      | SMANotifyHandler     | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMARequestRouter     | \<Blank\>            |
+|                      | SMARequestRouter     | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | StartTimeCalculator  | \<Blank\>            |
+|                      | StartTimeCalculator  | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMALDAPMon           | \<Blank\>            |
+|                      | SMALDAPMon           | <Blank\>            |
 +----------------------+----------------------+----------------------+
 | Res                  | SAM                  | 3                    |
 | tartApplicationLimit |                      |                      |
@@ -275,18 +275,18 @@ For each application in the Application List, there is a major heading in the co
 +----------------------+----------------------+----------------------+
 |                      | SMALDAPMon           | SMALDAPMonHung.cmd   |
 +----------------------+----------------------+----------------------+
-| RestartFailedScript  | SAM                  | \<Blank\>            |
+| RestartFailedScript  | SAM                  | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMANetCom            | \<Blank\>            |
+|                      | SMANetCom            | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMANotifyHandler     | \<Blank\>            |
+|                      | SMANotifyHandler     | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SMARequestRouter     | \<Blank\>            |
+|                      | SMARequestRouter     | <Blank\>            |
 +----------------------+----------------------+----------------------+
-|                      | SM                   | \<Blank\>            |
+|                      | SM                   | <Blank\>            |
 |                      | AStartTimeCalculator |                      |
 +----------------------+----------------------+----------------------+
-|                      | SMALDAPMon           | \<Blank\>            |
+|                      | SMALDAPMon           | <Blank\>            |
 +----------------------+----------------------+----------------------+
 | AutoRestartInMinutes | SAM                  | 0                    |
 +----------------------+----------------------+----------------------+
@@ -370,10 +370,10 @@ For each of the Application Hung Scripts and supplemental scripts, complete the 
 3. Go to the **Folders** frame.
 4. Browse to the <Configuration Directory\>**\\SAM\\** directory.
 5. Right-click on the desired **hung command file** (e.g., SAMHung.cmd) and select **Edit**.
-6. Search for **\<insert SMTP server name here\>** and replace that text with the *SMTP server name*.
-7. Search for **\<insert email recipient here\>** and replace that text with the *recipient email address*.
-8. Search for **\<insert domain name here\>** and replace that text with the *email domain name*.
-9. Search for **\<insert drive letter\>** and replace that text with the *drive letter containing the SAM installation*. Also, ensure that the path to the SAM folder is correct.
+6. Search for **<insert SMTP server name here\>** and replace that text with the *SMTP server name*.
+7. Search for **<insert email recipient here\>** and replace that text with the *recipient email address*.
+8. Search for **<insert domain name here\>** and replace that text with the *email domain name*.
+9. Search for **<insert drive letter\>** and replace that text with the *drive letter containing the SAM installation*. Also, ensure that the path to the SAM folder is correct.
 10. Click **File \> Save** in the menu bar.
 11. Repeat Steps 6 - 10 for each hung command file.
 
@@ -384,10 +384,10 @@ For each of the Application Hung Scripts and supplemental scripts, complete the 
 3. Go to the **Folders** frame.
 4. Browse to the <Configuration Directory\>**\\SAM\\** directory.
 5. Right-click on the desired **supplemental hung command file** (e.g., SAMHung.cmd) and select **Edit**.
-6. Search for all occurrences of **\<DB server name\>** and replace that text with the *OpCon database server name*.
-7. Search for *all occurrences* of **\<path to output file\>** and replace that text with the *path to the desired location for output files from the SQL commands*.
-8. Search for *all occurrences* of **\<DSN\>** and replace that text with the *DSN to the OpCon database*.
-9. If editing a SQL Authentication command file, search for *all occurrences* of **\<sa password\>** and replace that text with the *OpCon database sa password*.
+6. Search for all occurrences of **<DB server name\>** and replace that text with the *OpCon database server name*.
+7. Search for *all occurrences* of **<path to output file\>** and replace that text with the *path to the desired location for output files from the SQL commands*.
+8. Search for *all occurrences* of **<DSN\>** and replace that text with the *DSN to the OpCon database*.
+9. If editing a SQL Authentication command file, search for *all occurrences* of **<sa password\>** and replace that text with the *OpCon database sa password*.
 10. Click **File \> Save** in the menu bar.
 11. Repeat Steps 6 - 10 for each supplemental hung command file.
 

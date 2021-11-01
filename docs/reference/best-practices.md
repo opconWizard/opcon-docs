@@ -104,7 +104,7 @@ Add a **frequency** to this job (e.g., Daily).
 Ensure that this job is included in built schedules already existing for the future.
 :::
 
-By default, the reports are configured to be saved in: \<Output
+By default, the reports are configured to be saved in: <Output
 Directory\>**\\SAM\\Log\\Reports**. This directory can be modified
 within the **FailedJobsbyDate.cmd** file.
 

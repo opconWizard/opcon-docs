@@ -36,7 +36,7 @@ learn more about its functionality.
 
 The **Pie Chart** view also has the following right-click menu options:
 
-- **Jobs list:** This will open the **Jobs \<job status name\>**
+- **Jobs list:** This will open the **Jobs <job status name\>**
     dialog and display the jobs that match the selection of the pie. The
     dialog provides buttons to **Edit Master** and **Edit Daily**.
 - **Refresh Chart:** This will refresh the displayed items in the pie

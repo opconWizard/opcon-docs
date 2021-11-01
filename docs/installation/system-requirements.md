@@ -230,7 +230,7 @@ Close the **SQL Server Configuration Manager**.
 
 ## Installation Media
 
-Throughout this manual, the text "*\<media\>*" appears in many paths
+Throughout this manual, the text "*<media\>*" appears in many paths
 to represent the OpCon distribution media. OpCon is available in the
 following methods of delivery:
 

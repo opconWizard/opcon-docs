@@ -104,8 +104,8 @@ modification of the following information for ABAP Programs:
   X                        EQ (=)         I or E (Include or Exclude)
   X                        GT (\>)        I or E (Include or Exclude)
   X                        GE (\>=)       I or E (Include or Exclude)
-  X                        LT (\<)        I or E (Include or Exclude)
-  X                        LE (\<=)       I or E (Include or Exclude)
+  X                        LT (<)        I or E (Include or Exclude)
+  X                        LE (<=)       I or E (Include or Exclude)
   X                        NE (!=)        I or E (Include or Exclude)
   X           X            BT (Between)   I or E (Include or Exclude)
 

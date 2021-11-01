@@ -560,13 +560,15 @@ Normal Run and a Restart for the defined job only.
 dataset(s).
 
 - **Normal Run**: Defines the type of Run:
-  - **\<blank\>**: The LSAM defaults are used.     -   **None**: Disables XPR DSN cleanup.
+  - **<blank\>**: The LSAM defaults are used.
+  - **None**: Disables XPR DSN cleanup.
   - **Scratch**: Prevents NOT CATLGD 2 errors by scratching any
         pre-existing datasets.
   - **Reuse**: Prevents NOT CATLGD 2 errors by converting DISP=NEW
         to DISP=OLD.
 - **Restart**: Defines the type of Restart:
-  - **\<blank\>**: The LSAM defaults are used.     -   **None**: Disables XPR DSN cleanup.
+  - **<blank\>**: The LSAM defaults are used.
+  - **None**: Disables XPR DSN cleanup.
   - **Scratch**: Prevents NOT CATLGD 2 errors by scratching any
         pre-existing datasets.
   - **Reuse**: Prevents NOT CATLGD 2 errors by converting DISP=NEW
@@ -575,7 +577,8 @@ dataset(s).
 **GDG Option**: Defines how XPR determines Generation Data Group (GDG)
 base generations during a restart:
 
-- **\<blank\>**: The LSAM defaults are used. -   **None**: Disables GDG adjustment.
+- **<blank\>**: The LSAM defaults are used.
+- **None**: Disables GDG adjustment.
 - **Absolute**: Resets the base generation to the value it had during
     the first run.
 - **Relative**: Looks for positive relative generations in the steps
@@ -905,7 +908,7 @@ event, the LSAM immediately submits or initiates the associated job, task, or co
   - If the check fails, OpCon schedules a
         retry later.
   - The 'Device' choices are:
-    - \<User-defined\>
+    - <User-defined\>
     - 3420
     - 3423
     - 3480

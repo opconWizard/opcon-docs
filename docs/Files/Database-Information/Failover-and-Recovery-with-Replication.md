@@ -162,7 +162,7 @@ If publishing is still set up on the Publishing Database Server, complete the st
 
 1. Go to the **Object Explorer** screen.
 2. Expand (+) the **Databases** folder.
-3. Right-click the **\<database name\>** icon and choose **Tasks \> Restore \> Database**.
+3. Right-click the **<database name\>** icon and choose **Tasks \> Restore \> Database**.
 4. Verify that the **OpCon database** is selected in the **To database** combo box. If the **OpCon database** does not already exist in the **To database** combo box, enter the *database name*.
 5. Go to the **Source for restore** frame.
 6. Select the **From device** radio button.

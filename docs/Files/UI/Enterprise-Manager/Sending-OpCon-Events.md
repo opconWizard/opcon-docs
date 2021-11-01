@@ -44,7 +44,7 @@ Select the **event** in the **Event Template** drop-down list.
 
 **In the Event Parameters frame:**
 
-Place your mouse cursor at the beginning of a **\<syntax placeholder\>**
+Place your mouse cursor at the beginning of a **<syntax placeholder\>**
 displayed in the **Event Parameters** text box then drag the cursor to
 the right to select the entire syntax placeholder, excluding any
 surrounding commas. For example: ,<schedule name\>, .

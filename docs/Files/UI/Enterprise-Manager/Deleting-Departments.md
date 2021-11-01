@@ -36,7 +36,7 @@ Remove the Department from the Daily Table
 5. Click on the **Edit Daily** button. The **Job Daily** screen
     displays.
 6. Go to the **Job Details** frame.
-7. Select **\<General\>** or a different **department name** in the
+7. Select **<General\>** or a different **department name** in the
     **Department** drop-down list.
 8. Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
     on the **Job Daily** toolbar.
@@ -52,7 +52,7 @@ Remove the Department from the Master Tables
 12. Select a **schedule** in the **Schedule** drop-down list.
 13. Select a **job** in the **Job** drop-down list.
 14. Go to the **Job details** frame.
-15. Select **\<General\>** or a different **department name** in the
+15. Select **<General\>** or a different **department name** in the
     **Department** drop-down list.
 16. Click ![Save     icon](../../../Resources/Images/EM/EMsave.png "Save icon") **Save**
     on the **Job Master** toolbar.

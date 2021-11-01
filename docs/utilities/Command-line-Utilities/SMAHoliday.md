@@ -1,9 +1,3 @@
----
-lang: en-us
-title: SMAHoliday
-viewport: width=device-width, initial-scale=1.0
----
-
 # SMAHoliday
 
 :::note
@@ -12,7 +6,7 @@ The information presented in this topic pertains largely to running the SMAHolid
 
 SMAHoliday (SMAHoliday.exe) is a utility that updates the OpCon database
 with Calendar dates that represent holidays. SMAHoliday.exe is installed
-to the \<Target Directory\>\\OpConxps\\ MSLSAM\\ directory with the
+to the <Target Directory\>\\OpConxps\\ MSLSAM\\ directory with the
 Microsoft LSAM package. The SMAHoliday utility can be run as a job if
 desired.
 
@@ -313,7 +307,7 @@ modify the configuration file, you can run SMAHoliday as a command-line
 job. Use the following command-line syntax for the SMAHoliday.exe
 program:
 
-SMAHoliday.exe -c MyCalendarName -t USA -i \<INIPathAndFileName\> -d
+SMAHoliday.exe -c MyCalendarName -t USA -i <INIPathAndFileName\> -d
 01/01/2017
 
 ### Optional Parameters
@@ -493,12 +487,10 @@ the Linux agent embedded in it, keep the following things in mind:
 1. When running in Docker, the Linux job needs to be set up similar to
     a Windows job with the same parameters.
 2. The start image for the Linux job should be: *dotnet
-    /app/SMAHoliday.dll \<arguments\>*.
+    /app/SMAHoliday.dll <arguments\>*.
 3. The SMAHoliday.ini file will be located in the **/app/config**
     directory in the container, mapped to any folder on the host machine
     just like all other INI files.
 4. Use the default **OpConOnLinux** agent machine (available in the
     container) to run the utility jobs.
 5. Logs are found in **/app/log/Utilities** in the container.
-
-:::

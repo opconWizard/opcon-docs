@@ -22,12 +22,12 @@ Select an **OpCon event template** from the **Event Template** drop-down list. F
 information, refer to the [OpCon Events](../../../events/introduction.md) online help.
 
 :::tip Example
-$JOB:ADD,\<schedule date\>,\<schedule name\>,\<job name\>,\<frequency name\>.
+$JOB:ADD,<schedule date\>,<schedule name\>,<job name\>,<frequency name\>.
 :::
 
-Place your mouse cursor at the beginning of a **\<syntax placeholder\>** displayed in the **Event Parameters** text
+Place your mouse cursor at the beginning of a **<syntax placeholder\>** displayed in the **Event Parameters** text
 box then drag the cursor to the right to select the entire syntax
-placeholder, excluding any surrounding commas. For example: ,[\<schedule name\>], .
+placeholder, excluding any surrounding commas. For example: ,[<schedule name\>], .
 
 Replace the selected syntax placeholder with valid
 OpCon event information.

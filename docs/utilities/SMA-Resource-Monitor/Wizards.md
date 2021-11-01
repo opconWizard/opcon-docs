@@ -54,7 +54,7 @@ all monitor types.
     will appear on the main screen of the SMA Resource Monitor (maximum
     characters: 60). The following values are invalid for the monitor
     name: \\ (backslash), / (forward slash), : (colon), \* (asterisk), ?
-    (question mark), " (quotes), \< (less than), \> (greater than), \|
+    (question mark), " (quotes), < (less than), \> (greater than), |
     (pipe)
 - **Documentation**: Provides a place to document monitor information.
 - **Network Share**: For **File Monitors**, determines if the SMA
@@ -113,9 +113,9 @@ on the respective summary tab of the main SMA Resource Monitor screen.
     monitored. Wild cards are supported to indicate all files in a path
     or all files of an extension type, etc. UNC paths are also
     supported. The following values are invalid for the file name: \\
-    (backslash), / (forward slash),\
-    : (colon), \* (asterisk), ? (question mark), " (quotes), \< (less
-    than), \> (greater than), \| (pipe).
+    (backslash), / (forward slash),
+    : (colon), \* (asterisk), ? (question mark), " (quotes), < (less
+    than), \> (greater than), | (pipe).
 - **File State**: Defines the File State values to monitor:
   - **Create**: File Creation (default)
   - **Delete**: File Deletion

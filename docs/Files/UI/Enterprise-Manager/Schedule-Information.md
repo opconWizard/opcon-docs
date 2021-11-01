@@ -24,8 +24,8 @@ following information:
     about the schedule post processes.
 - **Status Change Explanation Tab**: Lists chronologically manual
     status changes to a schedule.
-  - The format of the value is: **\<Status Change\> -
-        \<Explanation\> (\<user\> on \<Date\> \<Time\>)**
+  - The format of the value is: **<Status Change\> -
+        <Explanation\> (<user\> on <Date\> <Time\>)**
 - **Documentation Tab**:This tab allows access to any documentation
     relating to the selected schedule.
 - **Configuration Tab**: This tab provides a place to view and define

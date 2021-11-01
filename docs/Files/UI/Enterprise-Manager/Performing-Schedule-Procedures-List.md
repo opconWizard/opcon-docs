@@ -552,7 +552,7 @@ Click on the ![Expand](../../../Resources/Images/EM/EMarrowtoexpand.png)
 Right-click on the **schedule** and hover over **Maintenance** in the
 menu.
 
-Click on **Add Jobs** from the second menu. The **Add Jobs to \<Schedule
+Click on **Add Jobs** from the second menu. The **Add Jobs to <Schedule
 Name\>** dialog displays.
 
 Select the **Job** checkbox(es) that you want to add to the schedule.
@@ -578,7 +578,7 @@ a.  *(Optional)* Define the **Job Instance Properties**:
 b.  Enter the *name* and *value* for the property in the specified
     format.
 c.  Click on the drop-down arrow and select a **machine** or select
-    **\<None\>** to build an instance for each machine in the defined
+    **<None\>** to build an instance for each machine in the defined
     machine group.
 
 :::note
@@ -596,7 +596,7 @@ If you need to add additional property definitions:
 
 Repeat Steps 6 - 11.
 
-Click the **Close** button to close the **Add Jobs to \<Schedule
+Click the **Close** button to close the **Add Jobs to <Schedule
 Name\>** dialog.
 
 Click on the **x** to the right of the **Daily list** tab to close the

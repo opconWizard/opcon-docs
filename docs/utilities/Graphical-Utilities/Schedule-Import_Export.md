@@ -404,7 +404,7 @@ filename containing a list of schedules for the program to extract.
 letter) and filename for the ImpEx.exe log file. If -l is not given,
 then Schedule Import Export's default log file will be placed in the
 same directory as the ImpEx.exe file. The syntax for the default log
-file name is ImpEx\_\<date-time stamp\>.log. The log file provides
+file name is ImpEx\_<date-time stamp\>.log. The log file provides
 detailed information of errors generated during job execution and
 information about interaction with the SAP server.
 
@@ -627,7 +627,7 @@ the job will always be considered a success.
 drive letter) and filename for the ImpEx.exe log file. If --l is not
 given or the Logfile given is invalid, then Schedule Import Export's
 default log file will be placed in the same directory as the ImpEx.exe
-file. The syntax for the default log file name is ImpEx\_\<date-time
+file. The syntax for the default log file name is ImpEx\_<date-time
 stamp\>.log. The log file provides detailed information of errors
 generated during job execution and information about interaction with
 the SAP server.

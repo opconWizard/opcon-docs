@@ -166,7 +166,7 @@ jdbc:mysql://<host>:<port>/<database>
     connection with the database. Change the server name and the port
     number to match your environment, e.g., jdbc:jtds:sqlserver://server
     name/database name
-- If you have a SQL instance, please add ";instance=\< instance
+- If you have a SQL instance, please add ";instance=< instance
     name\>" at the end of the database URL.
 
 **Database**: This parameter defines the database name, which is
@@ -183,7 +183,7 @@ x64\\reports\\OpConXPS_Reports.
 
 ## Schedule the New Reports
 
-1. Add the *report(s)* to the path: **\<OpCon Install
+1. Add the *report(s)* to the path: **<OpCon Install
     Folder\>\\SAM\\BIRT\\ReportEngine\\OpConXPS_Reports**.
 2. Create or use an existing **Schedule** in the Enterprise Manager.
 3. Create a **Windows** job with the *report name* as the *job name*.

@@ -70,7 +70,7 @@ application server:
 
 1. Right-click **Start** on the **Windows** task bar and select
     **Explore** from the menu.
-2. Browse to the **\<Windows Directory\>\\System32\\Drivers\\etc\\**
+2. Browse to the **<Windows Directory\>\\System32\\Drivers\\etc\\**
     directory.
 3. Right-click the **hosts** file and select **Open With**.
 4. Select an **ASCII text editor** (e.g., Notepad) in the **Choose the
@@ -331,7 +331,7 @@ and viewing job output, refer to [Viewing a Job Output File](../operations/job-o
 - Default value is '0' (a value of zero disables the feature).
 
 **Requires XML Escape Sequences**: Determines if the SAM converts
-reserved characters (e.g., "\<", "\>", "&", etc.) before sending
+reserved characters (e.g., "<", "\>", "&", etc.) before sending
 messages to an LSAM.
 
 - If True, the reserved characters are converted.

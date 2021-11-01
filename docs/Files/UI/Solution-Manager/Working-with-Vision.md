@@ -93,7 +93,7 @@ directory.
 
 To save the license file:
 
-1. Save the file to the **\<Configuration
+1. Save the file to the **<Configuration
     Directory\>\\OpConxps\\SAM\\** folder on your OpCon server when you
     receive your license file from SMA Technologies. SAM will automatically pick up
     this new file within 6 hours.

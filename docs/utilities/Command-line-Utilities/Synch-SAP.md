@@ -47,7 +47,7 @@ the Linux agent embedded in it, keep the following things in mind:
 1. When running in Docker, the Linux job needs to be set up similar to
     a Windows job with the same parameters.
 2. The start image for the Linux job should be: *dotnet
-    /app/SMASynchSAP.dll \<arguments\>*.
+    /app/SMASynchSAP.dll <arguments\>*.
 3. The SMASynchSAP server credentials file can use the same location as
     other OpCon configuration files
     (**/app/config**) or any location on the host machine with a mapping

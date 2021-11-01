@@ -1,6 +1,6 @@
 # SMADDI Message Types
 
-Each input file must contain a \<msgtype\> element describing the type
+Each input file must contain a <msgtype\> element describing the type
 of SMADDI message. The SMADDI service and stored procedures support the
 following message types:
 

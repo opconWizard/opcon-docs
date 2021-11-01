@@ -76,7 +76,7 @@ For examples of how each event is formatted in XML, refer to [Event Types](./typ
   - External Events: 2000
 - Commas cannot be used in text; they can only be used as separators in events.
 - Asterisks (\*) and question marks (?) cannot be used in Schedule, Job, or Machine names. These characters are reserved as wild cards (if the Server Option for wild cards in enabled).
-- For all event templates in graphical interfaces, the greater-than and less-than symbols (\<\>) are only used to define the field. A finished event definition should not contain any of these symbols.
+- For all event templates in graphical interfaces, the greater-than and less-than symbols (<\>) are only used to define the field. A finished event definition should not contain any of these symbols.
 - Tokens can be used in any field, assuming the token value and the field it replaces are compatible. For information on tokens, refer to [Tokens](../objects/using-properties.md#Tokens) in the **Concepts** online help.
   - Internal OpCon events can include tokens that identify any properties of any type.
   - External OpCon events can include tokens for user-defined properties and the $TIME, $DATE, and $NOW Managed System Properties only.

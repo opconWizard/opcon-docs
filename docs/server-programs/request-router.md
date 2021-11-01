@@ -151,7 +151,7 @@ The Output Directory was configured during installation. For more information, r
 #### Debug Options
 
 The Debug Options configure the SMABirtProcessor's logging settings.
-The SMABirtProcessor.log file resides in the \<Output
+The SMABirtProcessor.log file resides in the <Output
 Directory\>\\SAM\\Log\\ directory.
 
 :::note

@@ -121,8 +121,7 @@ when a JORS request is sent.
 when looking up the Job Summary information. When entering a directory
 name, do not use an equals sign (=) at the end of the field. The correct
 way to search for job summaries that appear in a given directory is to
-use the following syntax:\
-\<directory name\>
+use the following syntax: `<directory name\>`
 
 :::tip Example
 Use **MYJOBSUMMARY** as opposed to MYJOBSUMMARY/=
@@ -365,7 +364,7 @@ Summary Information.
 when looking up the Job Summary information. When entering a directory
 name, do not use an equals sign (=) at the end of the field. The correct
 way to search for job summaries that appear in a given directory is to
-use the following syntax: \<directory name\>
+use the following syntax: <directory name\>
 
 :::tip Example
 Use **MYJOBSUMMARY** as opposed to MYJOBSUMMARY/=
