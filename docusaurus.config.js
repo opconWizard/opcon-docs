@@ -17,6 +17,12 @@ module.exports = {
         src: 'img/logo.svg',
         href: 'https://help.smatechnologies.com',
       },
+      items: [
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
+      ],
     },
     footer: {
       style: 'dark',
@@ -32,6 +38,18 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/smatechnologies/opcon-docs/blob/develop',
+          lastVersion: 'current',
+          versions: {
+            'current': {
+              label: 'current',
+            },
+            '21.0.0': {
+              label: '21.0.0',
+              path: 'v21.0.0',
+              banner: 'none'
+
+            }
+          }
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
