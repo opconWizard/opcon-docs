@@ -260,7 +260,7 @@ notifications should work as intended.
 3. Set a Late to Start value for the jobs in the     subschedule. For more information, refer to the **Late to Start**
     value under [Job Automation     Components](../job-components/frequency.md).
 4. Set up ENS to include the jobs in the subschedule in a group that
-    sends notifications for jobs that are [Late to     Start]{.skd-job-statuses}. For more information, refer to [Event
+    sends notifications for jobs that are Late to Start. For more information, refer to [Event
     Notification](../notifications/Components.md).
 
 ## Shut Down a Machine with an LSAM
@@ -295,13 +295,13 @@ b.  For MCP, the machine count in the Enterprise Manager ought to be
      in the **MCP LSAM** online help.
 c.  For MSLSAM, refer to [Check for Running     Jobs](https://help.smatechnologies.com/opcon/agents/windows/latest/Files/Agents/Microsoft/Upgrading-from-a-Release-Prior-to-15.0.md#Check_for_Running_Jobs)
      in the **Microsoft LSAM** online help.
-d.  For OpenVMS, use the method described in [Step 3]{.ul}.
-e.  For OS 2200 and BIS, use the method described in [Step 3]{.ul}.
+d.  For OpenVMS, use the method described in Step 3.
+e.  For OS 2200 and BIS, use the method described in Step 3.
 f.  For SAP BW, refer to [Check for Running     Jobs](https://help.smatechnologies.com/opcon/agents/sapbw/latest/Files/Agents/SAP-BW/Upgrade-Installation.md#Check_for_Running_Jobs)
      in the **SAP BW LSAM** online help.
 g.  For SAP R3 and CRM, refer to [Check for Running     Jobs](https://help.smatechnologies.com/opcon/agents/sap/latest/Files/Agents/SAP/Upgrade-Installation.md#Check_for_Running_Jobs)
      in the **SAP LSAM** online help.
-h.  For UNIX, use the method described in [Step 3]{.ul}.
+h.  For UNIX, use the method described in Step 3.
 i.  For zOS, enter the following command: **F lsamname,DISP=JOBQ**.
 
 On the LSAM machine, shut down the LSAM and perform the desired
@@ -351,7 +351,7 @@ In OpCon, select the option to Enable Job
 Starts for that machine. You can select this option from any place in
 the graphical interfaces that allow you to control the Machine Status.
 
-[]{#IBM_i_Procedures_to_shut_down_a_Machine}IBM i Procedures to shut down a Machine
+IBM i Procedures to shut down a Machine
 
 On the IBM i LSAM machine, check for running jobs using the commands
 provided:
@@ -399,8 +399,8 @@ From an IBM i workstation, enter the LSAM main menu:
 i.  Select option 6: LSAM Management menu.
 ii. Select option 1: Start LSAM.
 
-Check the IBM i LSAM status by following the same procedures as [Steps
-1a and 1b]{.ul}.
+Check the IBM i LSAM status by following the same procedures as Steps
+1a and 1b.
 
 ##### Procedures to Check LSAM Status on Windows
 
@@ -420,7 +420,7 @@ and CRM, and Windows LSAMs:
 #### Use Case
 
 We have a job which is dependent on a file arriving. The job is built
-'On Hold' and [SMA Resource Monitor]{.GeneralSMAResourceMonitor} sends a $JOB:RELEASE when the file arrives. The problem is we are not
+'On Hold' and SMA Resource Monitor sends a $JOB:RELEASE when the file arrives. The problem is we are not
 notified if the file is late arriving. How can we set this up to receive
 a Late to Start notification?
 
@@ -434,10 +434,10 @@ file arrives.
 ##### Procedure Explanation
 
 A threshold will be created to use as an "On" and "Off" switch for
-the job. [[SMA Resource Monitor]{.GeneralSMAResourceMonitor}](../utilities/SMA-Resource-Monitor/Introduction.md)
+the job. [SMA Resource Monitor](../utilities/SMA-Resource-Monitor/Introduction.md)
 will watch for the arrival of the file and send a $THRESHOLD:SET event
 to update the threshold to the determined value. The job will have a
-threshold dependency equal to the value [SMA Resource Monitor]{.GeneralSMAResourceMonitor} will set once the file arrives.
+threshold dependency equal to the value SMA Resource Monitor will set once the file arrives.
 This leaves the job in a "Waiting Threshold Dependency" status until
 the files arrives.
 

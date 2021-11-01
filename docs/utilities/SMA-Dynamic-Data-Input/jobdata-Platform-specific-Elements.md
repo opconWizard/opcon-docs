@@ -1,4 +1,4 @@
-# \<jobdata\> Platform-specific Elements
+# <jobdata\> Platform-specific Elements
 
 - [Container Job Element Structure](#Containe)
 - [File Transfer Job Element Structure](#File)
@@ -22,17 +22,17 @@ detailed information on each field for this job type, refer to
 [Container Job Type](../../job-types/container.md)
  in the **Concepts** online help.
 
-\<jobdata\>
+<jobdata\>
 
-    \<cntnr_subskd\>\</cntnr_subskd\>
+    <cntnr_subskd\></cntnr_subskd\>
 
-\</jobdata\>
+</jobdata\>
 
 ### Element Definitions
 
-#### \<cntnr_subskd\>\</cntnr_subskd
+#### <cntnr_subskd\></cntnr_subskd
 
-The \<cntnr_subskd\> element defines the schedule that will run as a
+The <cntnr_subskd\> element defines the schedule that will run as a
 SubSchedule under the control of the container job.
 
 - **Requirements**: This is a Required field.
@@ -41,7 +41,7 @@ SubSchedule under the control of the container job.
     the user has privileges to that has the SubSchedule flag marked True
     in their schedule definition except the current schedule. Valid data
     for this element is the name of any schedule, except the schedule
-    identified by the \<skdname\> element that is allowed as a
+    identified by the <skdname\> element that is allowed as a
     subschedule. A schedule must have the SubSchedule indicator set to
     be allowed as a SubSchedule.
 
@@ -51,45 +51,45 @@ Enter either new_master or new_daily for the msgtype. For detailed
 information on each field for this job type, refer to [File Transfer Job Details](../../job-types/file-transfer.md)
  in the **Concepts** online help.
 
-\<jobdata\>
+<jobdata\>
 
-   \<host_name\>\</host_name\>
+   <host_name\></host_name\>
 
-   \<ft_src_user\>\</ft_src_user\>
+   <ft_src_user\></ft_src_user\>
 
-   \<ft_src_file\>\</ft_src_file\>
+   <ft_src_file\></ft_src_file\>
 
-   \<ft_dest_user\>\</ft_dest_user\>
+   <ft_dest_user\></ft_dest_user\>
 
-   \<ft_dest_file\>\</ft_user_file\>
+   <ft_dest_file\></ft_user_file\>
 
-   \<ft_xqt_mach\>\</ft_xqt_mach\>
+   <ft_xqt_mach\></ft_xqt_mach\>
 
-   \<ft_mode\>\</ft_mode\>
+   <ft_mode\></ft_mode\>
 
-   \<ft_compress\>\</ft_compress\>
+   <ft_compress\></ft_compress\>
 
-   \<ft_encrypt\>\</ft_encrypt\>
+   <ft_encrypt\></ft_encrypt\>
 
-   \<ft_overwrt\>\</ft_overwrt\>
+   <ft_overwrt\></ft_overwrt\>
 
-   \<ft_failpref\>\</ft_failpref\>
+   <ft_failpref\></ft_failpref\>
 
-   \<ft_bandwidth\>\</ft_bandwidth\>
+   <ft_bandwidth\></ft_bandwidth\>
 
-   \<dest_mach\>\</dest_mach\>
+   <dest_mach\></dest_mach\>
 
-   \<ft_dest_dt\>\</ft_dest_dt\>
+   <ft_dest_dt\></ft_dest_dt\>
 
-   \<ft_tls_override\>\</ft_tls_override\>
+   <ft_tls_override\></ft_tls_override\>
 
-\</jobdata\>
+</jobdata\>
 
 ### Element Definitions
 
-#### \<host_name\>\</host_name\>
+#### <host_name\></host_name\>
 
-The \<host_name\> element defines the Source Machine for the transfer.
+The <host_name\> element defines the Source Machine for the transfer.
 To qualify as a machine for this field, a machine must be enabled for
 file transfer in the [File Transfer Settings](../../objects/machines.md#File) category in
 the Machine's advanced settings.
@@ -102,9 +102,9 @@ the Machine's advanced settings.
   - Invalid Characters: ' (single quote), \~ (tilde), \`(grave
         accent)
 
-#### \<ft_src_user\>\</ft_src_user\>
+#### <ft_src_user\></ft_src_user\>
 
-The \<ft_src_user\> element contains the user name for the Source user
+The <ft_src_user\> element contains the user name for the Source user
 if the platform requires a user name. If the platform does not require a
 user name, specify N/A.
 
@@ -114,9 +114,9 @@ user name, specify N/A.
   - Low Range / Minimum Characters: 1
   - High Range / Maximum Characters: 60
 
-#### \<ft_src_file\>\</ft_src_file\>
+#### <ft_src_file\></ft_src_file\>
 
-The \<ft_src_file\> element contains the full path and the file name of
+The <ft_src_file\> element contains the full path and the file name of
 the source file to be transferred.
 
 - **Requirements**: This is a Required field.
@@ -125,9 +125,9 @@ the source file to be transferred.
   - Low Range / Minimum Characters: 1
   - High Range / Maximum Characters: 512
 
-#### \<ft_dest_user\>\</ft_dest_user\>
+#### <ft_dest_user\></ft_dest_user\>
 
-The \<ft_dest_user\> element contains the user name for the destination
+The <ft_dest_user\> element contains the user name for the destination
 user if the platform requires a user name. If the platform does not
 require a user name, specify N/A.
 
@@ -137,9 +137,9 @@ require a user name, specify N/A.
   - Low Range / Minimum Characters: 1
   - High Range / Maximum Characters: 60
 
-#### \<ft_dest_file\>\</ft_dest_file\>
+#### <ft_dest_file\></ft_dest_file\>
 
-The \<ft_dest_file\> element contains the full path and file name of the
+The <ft_dest_file\> element contains the full path and file name of the
 destination file to be transferred to.
 
 - **Requirements**: This is a Required field.
@@ -148,9 +148,9 @@ destination file to be transferred to.
   - Low Range / Minimum Characters: 1
   - High Range / Maximum Characters: 512
 
-#### \<FT_xqt_mach\>\</FT_xqt_mach\>
+#### <FT_xqt_mach\></FT_xqt_mach\>
 
-The \<ft_xqt_mach\> element defines which machine will initiate the File
+The <ft_xqt_mach\> element defines which machine will initiate the File
 Transfer communication.
 
 - **Requirements**: This is an Optional Field. If not specified, the
@@ -158,46 +158,46 @@ Transfer communication.
 - **EM field label**: Start Transfer On
 - **Valid Values**: Destination, Source
 
-#### \<ft_mode\>\</ft_mode\>
+#### <ft_mode\></ft_mode\>
 
-The \<ft_mode\> element defines the Source Data Type of the file to
+The <ft_mode\> element defines the Source Data Type of the file to
 transfer.
 
 - **Requirements**: This is a Required field.
 - **Valid Values**: ASCII, Binary, Default Text, EBCDIC
 
 :::note
-If Binary is used for the source data type, it WILL also be used for the destination data type as well, regardless of the value specified for the \<ft_dest_dt\> tag. If the Destination Data Type is Binary and the Source Data Type is not Binary, errors will display.
+If Binary is used for the source data type, it WILL also be used for the destination data type as well, regardless of the value specified for the <ft_dest_dt\> tag. If the Destination Data Type is Binary and the Source Data Type is not Binary, errors will display.
 :::
 
-#### \<ft_compress\>\</ft_compress\>
+#### <ft_compress\></ft_compress\>
 
-The \<ft_compress\> element allows the user to select compression
+The <ft_compress\> element allows the user to select compression
 options. It is in the "File Options" category.
 
 - **Requirements**: This is a Required field.
 - **Valid Values**: None, Required, Preferred
 
-#### \<ft_encrypt\>\</ft_encrypt\>
+#### <ft_encrypt\></ft_encrypt\>
 
-The \<ft_encrypt\> element specifies if this field must be used, is not
+The <ft_encrypt\> element specifies if this field must be used, is not
 used, or use is preferred.
 
 - **Requirements**: This is a Required field.
-- **Valid Values**: \<none\>, Required, Preferred
+- **Valid Values**: <none\>, Required, Preferred
 
-#### \<ft_overwrt\>\</ft_overwrt\>
+#### <ft_overwrt\></ft_overwrt\>
 
-The \<ft_overwrt\> element specifies what the user wants to do if the
+The <ft_overwrt\> element specifies what the user wants to do if the
 file already exists on the destination machine.
 
 - **Requirements**: This is a Required field.
 - **Valid Values**: Do Not overwrite, Overwrite, Backup then
     Overwrite, Append, Backup then Append.
 
-#### \<FT_delsrcfile\>\</FT_delsrcfile\>
+#### <FT_delsrcfile\></FT_delsrcfile\>
 
-The \<ft_delsrcfile\> element determines if the source file will be
+The <ft_delsrcfile\> element determines if the source file will be
 deleted after the SMAFT process completes successfully.
 
 - **Requirements**: This is a Required field, and if data is not
@@ -205,26 +205,26 @@ deleted after the SMAFT process completes successfully.
 - **EM field label**: Delete Source File
 - **Valid Values**: No, Required, Preferred
 
-#### \<ft_failpref\>\</ft_failpref\>
+#### <ft_failpref\></ft_failpref\>
 
-The \<ft_failpref\> element allows an FT job return a fail code if the
+The <ft_failpref\> element allows an FT job return a fail code if the
 "Preferred" Encryption and Compression settings are not met.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Fails if preferred settings not satisfied
 - **Valid Values**: Yes, No
 
-#### \<ft_bandwidth\>\</ft_bandwidth\>
+#### <ft_bandwidth\></ft_bandwidth\>
 
-The \<ft_bandwidth\> element sets the transfer rate of the file and
+The <ft_bandwidth\> element sets the transfer rate of the file and
 allows the user to "throttle back" bandwidth usage.
 
 - **Requirements**: This is a Required field.
 - **Valid Values**: 64, 128, 256, 512, 1024, 2048, \>2048
 
-#### \<dest_mach\>\</dest_mach\>
+#### <dest_mach\></dest_mach\>
 
-The \<dest_mach\> element defines the name of the destination machine
+The <dest_mach\> element defines the name of the destination machine
 for the file transfer. In order to qualify as a machine for this field,
 a machine must be enabled for file transfer in the [File Transfer Settings](../../objects/machines.md#File) category in
 the Machine's advanced settings.
@@ -237,21 +237,21 @@ the Machine's advanced settings.
   - Invalid Characters: ' (single quote), \~ (tilde), \`(grave
         accent)
 
-#### \<ft_dest_dt\>\</ft_dest_dt\>
+#### <ft_dest_dt\></ft_dest_dt\>
 
-The \<ft_dest_dt\> element defines the type of the file (ASCII, Binary,
+The <ft_dest_dt\> element defines the type of the file (ASCII, Binary,
 Default Text, or EBCDIC) to receive.
 
 - **Requirements**: This is a Required field.
 - **Valid Values**: ASCII, Binary, Default Text, EBCDIC
 
 :::note
-If Binary is used for the source data type, it WILL also be used for the destination data type as well, regardless of the value specified for the \<ft_dest_dt\> tag. If the Destination Data Type is Binary and the Source Data Type is not Binary, errors will display.
+If Binary is used for the source data type, it WILL also be used for the destination data type as well, regardless of the value specified for the <ft_dest_dt\> tag. If the Destination Data Type is Binary and the Source Data Type is not Binary, errors will display.
 :::
 
-#### \<ft_tls_override\>\</ft_tls_override\>
+#### <ft_tls_override\></ft_tls_override\>
 
-The \<ft_tls_override\> element specifies whether the file transfer
+The <ft_tls_override\> element specifies whether the file transfer
 should take place over a secure connection if possible, must take place
 over a secure connection, or must not take place over a secure
 connection.
@@ -266,193 +266,193 @@ possible element for IBM i Primary Job Elements. For detailed
 information on each field for this job type, refer to [IBM i Job Details](../../job-types/ibm-i.md) in
 the **Concepts** online help.
 
-\<msg\>
+<msg\>
 
-   \<msgtype\> \</msgtype\>
+   <msgtype\> </msgtype\>
 
-   \<schedule\>
+   <schedule\>
 
-      \<job\>
+      <job\>
 
-         \<jobdata\>
+         <jobdata\>
 
 **\-\-\-\-\--**[Job Information Element Definitions](#Job2)**\-\-\-\-\--**
 
-            \<job_type\>\</job_type\>
+            <job_type\></job_type\>
 
-            \<i5_userid\>\</i5_userid\>
+            <i5_userid\></i5_userid\>
 
-            \<job_q\_pri\>\</job_q\_pri\>
+            <job_q\_pri\></job_q\_pri\>
 
-            \<job_date\>\</job_date\>
+            <job_date\></job_date\>
 
-            \<acct_code\>\</acct_code\>
+            <acct_code\></acct_code\>
 
-            \<curr_lib\>\</curr_lib\>
+            <curr_lib\></curr_lib\>
 
-            \<init_lib\>\</init_lib\>
+            <init_lib\></init_lib\>
 
-            \<job_desc_name\>\</job_desc_name\>
+            <job_desc_name\></job_desc_name\>
 
-            \<job_desc_lib\>\</job_desc_lib\>
+            <job_desc_lib\></job_desc_lib\>
 
-            \<batchq_name\>\</batchq_name\>
+            <batchq_name\></batchq_name\>
 
-            \<batchq_lib\>\</batchq_lib\>
+            <batchq_lib\></batchq_lib\>
 
-            \<outputq_name\>\</outputq_name\>
+            <outputq_name\></outputq_name\>
 
-            \<outputq_lib\>\</outputq_lib\>
+            <outputq_lib\></outputq_lib\>
 
 **\-\-\-\-\--**[Call Information Element Definitions](#Call)**\-\-\-\-\--**
 
-            \<i5os_prerun\>\</i5os_prerun\>
+            <i5os_prerun\></i5os_prerun\>
 
-            \<call_script\>\</call_script\>
+            <call_script\></call_script\>
 
-            \<ftp_remtsys\>\</ftp_remtsys\>
+            <ftp_remtsys\></ftp_remtsys\>
 
-            \<ftp_act\>\</ftp_act\>
+            <ftp_act\></ftp_act\>
 
-            \<ftp_tfr\>\</ftp_tfr\>
+            <ftp_tfr\></ftp_tfr\>
 
-            \<ftp_user\>\</ftp_user\>
+            <ftp_user\></ftp_user\>
 
-            \<ftp_lclfn\>\</ftp_lclfn\>
+            <ftp_lclfn\></ftp_lclfn\>
 
-            \<ftp_lcldir\>\</ftp_lcldir\>
+            <ftp_lcldir\></ftp_lcldir\>
 
-            \<ftp_rmtfn\>\</ftp_rmtfn\>
+            <ftp_rmtfn\></ftp_rmtfn\>
 
-            \<ftp_rmtdir\>\</ftp_rmtdir\>
+            <ftp_rmtdir\></ftp_rmtdir\>
 
 **\-\-\-\-\--**[File Arrival Element Definitions](#File4)**\-\-\-\-\--**
 
-            \<ibmi_cfa_read\>\</ibmi_cfa_read\>
+            <ibmi_cfa_read\></ibmi_cfa_read\>
 
-            \<ibmi_cfa_write\>\</ibmi_cfa_write\>
+            <ibmi_cfa_write\></ibmi_cfa_write\>
 
-            \<ibmi_cfa_exec\>\</ibmi_cfa_exec\>
+            <ibmi_cfa_exec\></ibmi_cfa_exec\>
 
-            \<ibmi_chk_file_lck_db2\>\</ibmi_chk_file_lck_db2\>
+            <ibmi_chk_file_lck_db2\></ibmi_chk_file_lck_db2\>
 
-            \<ibmi_file_2\_watch\>\</ibmi_file_2\_watch\>
+            <ibmi_file_2\_watch\></ibmi_file_2\_watch\>
 
-            \<ibmi_file_start_watch\>\</ibmi_file_start_watch\>
+            <ibmi_file_start_watch\></ibmi_file_start_watch\>
 
-            \<ibmi_file_end_watch\>\</ibmi_file_end_watch\>
+            <ibmi_file_end_watch\></ibmi_file_end_watch\>
 
-            \<ibmi_file_stable\>\</ibmi_file_stable\>
+            <ibmi_file_stable\></ibmi_file_stable\>
 
-            \<ibmi_filearrival_failcode\>\</ibmi_filearrival_failcode\>
+            <ibmi_filearrival_failcode\></ibmi_filearrival_failcode\>
 
-            \<ibmi_dynvar_filename\>\</ibmi_dynvar_filename\>
+            <ibmi_dynvar_filename\></ibmi_dynvar_filename\>
 
-            \<ibmi_dynvar_reccnt\>\</ibmi_dynvar_reccnt\>
+            <ibmi_dynvar_reccnt\></ibmi_dynvar_reccnt\>
 
 **\-\-\-\-\--**[Log Information Element Definitions](#Log)**\-\-\-\-\--**
 
-            \<log_lvl\>\</log_lvl\>
+            <log_lvl\></log_lvl\>
 
-            \<sev_lvl\>\</sev_lvl\>
+            <sev_lvl\></sev_lvl\>
 
-            \<txt_opt\>\</txt_opt\>
+            <txt_opt\></txt_opt\>
 
-            \<cl_log\>\</cl_log\>
+            <cl_log\></cl_log\>
 
-            \<inq_msg\>\</inq_msg\>
+            <inq_msg\></inq_msg\>
 
-            \<joblogs_keep_occur\> \</joblogs_keep_occur\>
+            <joblogs_keep_occur\> </joblogs_keep_occur\>
 
-            \<joblogs_keep_days\> \</joblogs_keep_days\>
+            <joblogs_keep_days\> </joblogs_keep_days\>
 
 **\-\-\-\-\--**[Message Element Definitions](#Message)**\-\-\-\-\--**
 
-            \<msg_info\>
+            <msg_info\>
 
-            \<msg_id\>\</msg_id\>
+            <msg_id\></msg_id\>
 
-            \<msg_cmpdata\>\</msg_cmpdata\>
+            <msg_cmpdata\></msg_cmpdata\>
 
-            \<msg_pos\>\</msg_pos\>
+            <msg_pos\></msg_pos\>
 
-            \<msg_sev\>\</msg_sev\>
+            <msg_sev\></msg_sev\>
 
-            \<msg_actn\>\</msg_actn\>
+            <msg_actn\></msg_actn\>
 
-            \<msg_reply\>\</msg_reply\>
+            <msg_reply\></msg_reply\>
 
-            \<msg_endjob\>\</msg_endjob\>
+            <msg_endjob\></msg_endjob\>
 
-            \<msg_events\>\</msg_events\>
+            <msg_events\></msg_events\>
 
-            \</msg_info\>
+            </msg_info\>
 
 **\-\-\-\-\--**[Spools Element Definitions](#Spools)**\-\-\-\-\--**
 
-            \<spl_info\>
+            <spl_info\>
 
-            \<spl_name\>\</spl_name\>
+            <spl_name\></spl_name\>
 
-            \<spl_user\>\</spl_user\>
+            <spl_user\></spl_user\>
 
-            \<spl_outq_name\>\</spl_outq_name\>
+            <spl_outq_name\></spl_outq_name\>
 
-            \<spl_outq_lib\>\</spl_outq_lib\>
+            <spl_outq_lib\></spl_outq_lib\>
 
-            \<spl_copies\>\</spl_copies\>
+            <spl_copies\></spl_copies\>
 
-            \<spl_hld\>\</spl_hld\>
+            <spl_hld\></spl_hld\>
 
-            \<spl_save\>\</spl_save\>
+            <spl_save\></spl_save\>
 
-            \</spl_info\>
+            </spl_info\>
 
 **\-\-\-\-\--**[Variables Element Definitions](#Variable)**\-\-\-\-\--**
 
-            \<ibmi_agent_var_info\>
+            <ibmi_agent_var_info\>
 
-            \<ibmi_agent_var\>\</ibmi_agent_var\>
+            <ibmi_agent_var\></ibmi_agent_var\>
 
-            \<ibmi_agent_var_val\>\</ibmi_agent_var_val\>
+            <ibmi_agent_var_val\></ibmi_agent_var_val\>
 
-            \</ibmi_agent_var_info\>
+            </ibmi_agent_var_info\>
 
-         \</jobdata\>
+         </jobdata\>
 
-      \</job\>
+      </job\>
 
-   \</schedule\>
+   </schedule\>
 
-\</msg\>
+</msg\>
 
 ### Job Information Element Definitions
 
-#### \<JOB_TYPE\>\</JOB_TYPE\> {#job_typejob_type style="text-transform: lowercase;"}
+#### <JOB_TYPE\></JOB_TYPE\>
 
-The [\<JOB_TYPE\>]{style="text-transform: lowercase;"} element defines the IBM i job type.
+The <JOB_TYPE\> element defines the IBM i job type.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Job Type
 - **Valid Values**: The following values are provided in a list of
     available options: Batch Job, Tracked Job, Queued Job, Operator
     Replay Job, Restricted Mode, and FTP.
 
-#### \<I5_USERID\>\</I5_USERID\> {#i5_useridi5_userid style="text-transform: lowercase;"}
+#### <I5_USERID\></I5_USERID\>
 
-The [\<I5_USERID\>]{style="text-transform: lowercase;"} element defines the name of the IBM i user profile under which the job should be
+The <I5_USERID\> element defines the name of the IBM i user profile under which the job should be
 submitted.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: User ID
 - **Valid Values**: All values from the Batch User Privileges screen
     that the user has privileges to.
 
-#### \<JOB_Q\_PRI\>\</JOB_Q\_PRI\> {#job_q_prijob_q_pri style="text-transform: lowercase;"}
+#### <JOB_Q\_PRI\></JOB_Q\_PRI\>
 
-The [\<JOB_Q\_PRI\>]{style="text-transform: lowercase;"} element defines the job queue scheduling priority.
+The <JOB_Q\_PRI\> element defines the job queue scheduling priority.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: JobQ Priority
 - **Valid Values**: \*, 1, 2, 3, 4, 5, 6, 7, 8, 9
   - Values range from 1 through 9, where 1 is the highest priority
@@ -461,11 +461,11 @@ The [\<JOB_Q\_PRI\>]{style="text-transform: lowercase;"} element defines the job
         the SMA system parameters for the LSAM will be used.
   - The specification \*JOBD is not supported.
 
-#### \<JOB_DATE\>\</JOB_DATE\> {#job_datejob_date style="text-transform: lowercase;"}
+#### <JOB_DATE\></JOB_DATE\>
 
-The [\<JOB_DATE\>]{style="text-transform: lowercase;"} element defines the calendar date for the job to be associated with.
+The <JOB_DATE\> element defines the calendar date for the job to be associated with.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Job Date
 - **Valid Values**: \*JOBD, \*SYSVAL, \*SCHEDULE DATE, or a
     User-defined calendar date. User-defined dates must follow these
@@ -480,23 +480,23 @@ The [\<JOB_DATE\>]{style="text-transform: lowercase;"} element defines the calen
   - Invalid Character: asterisk (\*). An asterisk (\*) can be
         selected from a box, but it cannot be typed.
 
-#### \<ACCT_CODE\>\</ACCT_CODE\> {#acct_codeacct_code style="text-transform: lowercase;"}
+#### <ACCT_CODE\></ACCT_CODE\>
 
-The [\<ACCT_CODE\>]{style="text-transform: lowercase;"} element specifies the accounting code that is used when logging system resource
+The <ACCT_CODE\> element specifies the accounting code that is used when logging system resource
 use.
 
-- **Requirements**: Optional for IBM i \<jobdata\>.
+- **Requirements**: Optional for IBM i <jobdata\>.
 - **EM field label**: Accounting Code
 - **Valid Values**:
   - Minimum Characters: 0
   - Maximum Characters: 15
 
-#### \<CURR_LIB\>\</CURR_LIB\> {#curr_libcurr_lib style="text-transform: lowercase;"}
+#### <CURR_LIB\></CURR_LIB\>
 
-The [\<CURR_LIB\>]{style="text-transform: lowercase;"} element defines the name of the current library associated with the job being executed.
+The <CURR_LIB\> element defines the name of the current library associated with the job being executed.
 The actual library name may be specified.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Current
 - **Valid Values**: \*, \*CRTDFT, \*USRPRF, or a User-defined library
     name.
@@ -506,13 +506,13 @@ The actual library name may be specified.
     - Minimum Characters: 1
     - Maximum Characters: 10
 
-#### \<INIT_LIB\>\</INIT_LIB\> {#init_libinit_lib style="text-transform: lowercase;"}
+#### <INIT_LIB\></INIT_LIB\>
 
-The [\<INIT_LIB\>]{style="text-transform: lowercase;"} element defines the initial user part of the library list that is used to search for any
+The <INIT_LIB\> element defines the initial user part of the library list that is used to search for any
 objects without a library. The individual library names are not
 supported.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Init Lib List
 - **Valid Values**: \*, \*JOBD, \*NONE, \*SYSVAL, \*CURRENT, or a
     User-defined library name.
@@ -522,12 +522,12 @@ supported.
     - Minimum Characters: 1
     - Maximum Characters: 10
 
-#### \<JOB_DESC_NAME\>\</JOB_DESC_NAME\> {#job_desc_namejob_desc_name style="text-transform: lowercase;"}
+#### <JOB_DESC_NAME\></JOB_DESC_NAME\>
 
-The [\<JOB_DESC_NAME\>]{style="text-transform: lowercase;"} element defines the simple name of the job description used with the job. The
+The <JOB_DESC_NAME\> element defines the simple name of the job description used with the job. The
 actual job description name may be specified.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Name
 - **Valid Values**: \*, \*USRPRF, or the actual job description name.
   - If an asterisk (\*) is specified, the default value specified in
@@ -536,11 +536,11 @@ actual job description name may be specified.
     - Minimum Characters: 1
     - Maximum Characters: 10
 
-#### \<JOB_DESC_LIB\>\</JOB_DESC_LIB\> {#job_desc_libjob_desc_lib style="text-transform: lowercase;"}
+#### <JOB_DESC_LIB\></JOB_DESC_LIB\>
 
-The [\<JOB_DESC_LIB\>]{style="text-transform: lowercase;"} element defines the library associated with the job description name.
+The <JOB_DESC_LIB\> element defines the library associated with the job description name.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Library
 - **Valid Values**: \*, \*LIBL, \*CURLIB, or the User-defined name of
     the library associated with the job description name.
@@ -548,12 +548,12 @@ The [\<JOB_DESC_LIB\>]{style="text-transform: lowercase;"} element defines the l
     - Minimum Characters: 1
     - Maximum Characters: 10
 
-#### \<BATCHQ_NAME\>\</BATCHQ_NAME\> {#batchq_namebatchq_name style="text-transform: lowercase;"}
+#### <BATCHQ_NAME\></BATCHQ_NAME\>
 
-The [\<BATCHQ_NAME\>]{style="text-transform: lowercase;"} element defines the name of the job queue in which this job is placed. The
+The <BATCHQ_NAME\> element defines the name of the job queue in which this job is placed. The
 actual job queue name may be specified.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Name
 - **Valid Values**: \*, \*JOBD, or the actual job queue name.
   - If an asterisk (\*) is specified, the default value specified in
@@ -562,11 +562,11 @@ actual job queue name may be specified.
     - Minimum Characters: 1
     - Maximum Characters: 10
 
-#### \<BATCHQ_LIB\>\</BATCHQ_LIB\> {#batchq_libbatchq_lib style="text-transform: lowercase;"}
+#### <BATCHQ_LIB\></BATCHQ_LIB\>
 
-The [\<BATCHQ_LIB\>]{style="text-transform: lowercase;"} element defines the library associated with the batch queue name.
+The <BATCHQ_LIB\> element defines the library associated with the batch queue name.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Library
 - **Valid Values**: \*, \*LIBL, \*CURLIB, or the User-defined name of
     the library associated with the batch queue name.
@@ -576,12 +576,12 @@ The [\<BATCHQ_LIB\>]{style="text-transform: lowercase;"} element defines the lib
     - Minimum Characters: 1
     - Maximum Characters: 10
 
-#### \<OUTPUTQ_NAME\>\</OUTPUTQ_NAME\> {#outputq_nameoutputq_name style="text-transform: lowercase;"}
+#### <OUTPUTQ_NAME\></OUTPUTQ_NAME\>
 
-The [\<OUTPUTQ_NAME\>]{style="text-transform: lowercase;"} element defines the output queue used for spooled files. The actual output queue
+The <OUTPUTQ_NAME\> element defines the output queue used for spooled files. The actual output queue
 name may be specified.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Name
 - **Valid Values**: \*, \*CURRENT, \*USRPRF, \*DEV, \*JOBD, or the
     actual output queue name.
@@ -591,11 +591,11 @@ name may be specified.
     - Minimum Characters: 1
     - Maximum Characters: 10
 
-#### \<OUTPUTQ_LIB\>\</OUTPUTQ_LIB\> {#outputq_liboutputq_lib style="text-transform: lowercase;"}
+#### <OUTPUTQ_LIB\></OUTPUTQ_LIB\>
 
-The [\<OUTPUTQ_LIB\>]{style="text-transform: lowercase;"} element defines the library associated with the Output Queue name.
+The <OUTPUTQ_LIB\> element defines the library associated with the Output Queue name.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Library
 - **Valid Values**: \*, \*LIBL, \*CURLIB, or the User-defined name of
     the library associated with the output queue name.
@@ -607,9 +607,9 @@ The [\<OUTPUTQ_LIB\>]{style="text-transform: lowercase;"} element defines the li
 
 ### Call Information Element Definitions
 
-#### \<i5os_prerun\>\</i5os_prerun\>
+#### <i5os_prerun\></i5os_prerun\>
 
-The \<i5OS_prerun\> element allows users to specify an IBM i job to be
+The <i5OS_prerun\> element allows users to specify an IBM i job to be
 executed immediately before the initiation of the job specified in the
 Call/Script Name field. If the Prerun job terminates with an error, it
 will be rescheduled at a user-defined interval. The Prerun job will
@@ -625,7 +625,7 @@ execution.
   - Minimum Characters: 0
   - Maximum Characters: 255
 
-#### \<CALL_SCRIPT\>\</CALL_SCRIPT\> {#call_scriptcall_script style="text-transform: lowercase;"}
+#### <CALL_SCRIPT\></CALL_SCRIPT\>
 
 For a Batch Job, enter the program name using the CALL command or enter
 a command name. Do not use the SMBJOB command. If the SMBJOB command is
@@ -633,59 +633,59 @@ used, the LSAM will not be able to track the job for failure. Include
 parameters in this field as desired. For an Operator Replay Job or
 Restricted Mode Job, enter the script name.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Call
 - **Valid Values**: User-defined call/script name.
   - Minimum Characters: 1
   - Maximum Characters: 2000
 
-#### \<FTP_REMTSYS\>\</FTP_REMTSYS\> {#ftp_remtsysftp_remtsys style="text-transform: lowercase;"}
+#### <FTP_REMTSYS\></FTP_REMTSYS\>
 
-The [\<FTP_REMTSYS\>]{style="text-transform: lowercase;"} element sets the name of the remote system.
+The <FTP_REMTSYS\> element sets the name of the remote system.
 
 - **Requirements**: Required only when the job type is FTP for IBM i
-    \<jobdata\>.
+    <jobdata\>.
 - **EM field label**: Remote System
 - **Valid Values**:
   - Minimum Characters: 1
   - Maximum Characters: 255
 
-#### \<FTP_ACT\>\</FTP_ACT\> {#ftp_actftp_act style="text-transform: lowercase;"}
+#### <FTP_ACT\></FTP_ACT\>
 
-The [\<FTP_ACT\>]{style="text-transform: lowercase;"} element sets the FTP command to use.
+The <FTP_ACT\> element sets the FTP command to use.
 
 - **Requirements**: Required only when the job type is FTP for IBM i
-    \<jobdata\>.
+    <jobdata\>.
 - **EM field label**: Action Type
 - **Valid Values**: PUT, MPUT, GET, MGET, DEL, MDEL
 
-#### \<FTP_TFR\>\</FTP_TFR\> {#ftp_tfrftp_tfr style="text-transform: lowercase;"}
+#### <FTP_TFR\></FTP_TFR\>
 
-The [\<FTP_TFR\>]{style="text-transform: lowercase;"} element sets the type of transfer for binary or ASCII.
+The <FTP_TFR\> element sets the type of transfer for binary or ASCII.
 
 - **Requirements**: Required only when the job type is FTP for IBM i
-    \<jobdata\>.
+    <jobdata\>.
 - **EM field label**: Transfer Type
 - **Valid Values**: BIN, ASCII, EBCDIC
 
-#### \<ftp_user\>\</ftp_user\>
+#### <ftp_user\></ftp_user\>
 
-The [\<FTP_USER\>]{style="text-transform: lowercase;"} element defines the FTP users for connecting to the remote system. If not specified, the
+The <FTP_USER\> element defines the FTP users for connecting to the remote system. If not specified, the
 LSAM will use the default user from the LSAM parameters.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: User
 - **Valid Values**: All values from the Batch User Privileges
     definitions
   - Minimum Characters: 1
   - Maximum Characters: 128
 
-#### \<FTP_LCLFN\>\</FTP_LCLFN\> {#ftp_lclfnftp_lclfn style="text-transform: lowercase;"}
+#### <FTP_LCLFN\></FTP_LCLFN\>
 
-The [\<FTP_LCLFN\>]{style="text-transform: lowercase;"} element defines the name for the file once it reaches the local machine.
+The <FTP_LCLFN\> element defines the name for the file once it reaches the local machine.
 
 - **Requirements**: Required only when the job type is FTP for IBM i
-    \<jobdata\>.
+    <jobdata\>.
 - **EM field label**: Local File Name
 - **Valid Values**: User-defined value
   - This field is enabled for all action types, except **MGET**,
@@ -693,35 +693,35 @@ The [\<FTP_LCLFN\>]{style="text-transform: lowercase;"} element defines the name
   - Minimum Characters: 1
   - Maximum Characters: 128
 
-#### \<FTP_LCLDIR\>\</FTP_LCLDIR\> {#ftp_lcldirftp_lcldir style="text-transform: lowercase;"}
+#### <FTP_LCLDIR\></FTP_LCLDIR\>
 
-The [\<FTP_LCLDIR\>]{style="text-transform: lowercase;"} element defines the library or directory on the local machine.
+The <FTP_LCLDIR\> element defines the library or directory on the local machine.
 
 - **Requirements**: Required only when the job type is FTP for IBM i
-    \<jobdata\>.
+    <jobdata\>.
 - **EM field label**: Local Library or Directory
 - **Valid Values**: User-defined value
   - Minimum Characters: 1
   - Maximum Characters: 512
 
-#### \<FTP_RMTFN\>\</FTP_RMTFN\> {#ftp_rmtfnftp_rmtfn style="text-transform: lowercase;"}
+#### <FTP_RMTFN\></FTP_RMTFN\>
 
-The [\<FTP_RMTFN\>]{style="text-transform: lowercase;"} element defines the file name once it reaches the remote machine.
+The <FTP_RMTFN\> element defines the file name once it reaches the remote machine.
 
 - **Requirements**: Required only when the job type is FTP for IBM i
-    \<jobdata\>.
+    <jobdata\>.
 - **EM field label**: Remote File Name
 - **Valid Values**: \*LCLFILNAM or a user-defined value
   - This field is enabled for all action types, except **MPUT**.
   - Minimum Characters: 1
   - Maximum Characters: 128
 
-#### \<FTP_RMTDIR\>\</FTP_RMTDIR\> {#ftp_rmtdirftp_rmtdir style="text-transform: lowercase;"}
+#### <FTP_RMTDIR\></FTP_RMTDIR\>
 
-The [\<FTP_RMTDIR\>]{style="text-transform: lowercase;"} element defines the library or directory on the remote machine.
+The <FTP_RMTDIR\> element defines the library or directory on the remote machine.
 
 - **Requirements**: Required only when the job type is FTP for IBM i
-    \<jobdata\>.
+    <jobdata\>.
 - **EM field label**: Remote Library or Directory
 - **Valid Values**: User-defined value
   - Minimum Characters: 1
@@ -729,126 +729,126 @@ The [\<FTP_RMTDIR\>]{style="text-transform: lowercase;"} element defines the lib
 
 ### File Arrival Element Definitions
 
-#### \<ibmi_cfa_read\>\</ibmi_cfa_read\>
+#### <ibmi_cfa_read\></ibmi_cfa_read\>
 
-The \<ibmi_cfa_read\> element defines that the read type of object
+The <ibmi_cfa_read\> element defines that the read type of object
 authority should be verified for the named User ID.
 
 - **Requirements**: Optional when the job type is File Arrival for IBM
-    i \<jobdata\>.
+    i <jobdata\>.
 - **EM field label**: Read
 - **Valid Values**: Valid values are True or False.
 
-#### \<ibmi_cfa_write\>\</ibmi_cfa_write\>
+#### <ibmi_cfa_write\></ibmi_cfa_write\>
 
-The \<ibmi_cfa_write\> element defines that the write type of object
+The <ibmi_cfa_write\> element defines that the write type of object
 authority should be verified for the named User ID.
 
 - **Requirements**: Optional when the job type is File Arrival for IBM
-    i \<jobdata\>.
+    i <jobdata\>.
 - **EM field label**: Write
 - **Valid Values**: Valid values are True or False.
 
-#### \<ibmi_cfa_exec\>\</ibmi_cfa_exec\>
+#### <ibmi_cfa_exec\></ibmi_cfa_exec\>
 
-The \<ibmi_cfa_exec\> element defines that the execute type of object
+The <ibmi_cfa_exec\> element defines that the execute type of object
 authority should be verified for the named User ID.
 
 - **Requirements**: Optional when the job type is File Arrival for IBM
-    i \<jobdata\>.
+    i <jobdata\>.
 - **EM field label**: Execute
 - **Valid Values**: Valid values are True or False.
 
-#### \<ibmi_chk_file_lck_db2\>\</ibmi_chk_file_lck_db2\>
+#### <ibmi_chk_file_lck_db2\></ibmi_chk_file_lck_db2\>
 
-The \<ibmi_chk_file_lck_db2\> element defines whether to request
+The <ibmi_chk_file_lck_db2\> element defines whether to request
 verification that there are no in-use locks on any DB2 database files
 
 - **Requirements**: Optional when the job type is File Arrival for IBM
-    i \<jobdata\>.
+    i <jobdata\>.
 - **EM field label**: Check Lock on DB2 File
 - **Valid Values**: Valid values are True or False.
 
-#### \<ibmi_file_2\_watch\>\</ibmi_file_2\_watch\>
+#### <ibmi_file_2\_watch\></ibmi_file_2\_watch\>
 
-The \<ibmi_file_2\_watch\> element defines the file path and name of the
+The <ibmi_file_2\_watch\> element defines the file path and name of the
 file to detect.
 
 - **Requirements**: Required only when the job type is File Arrival
-    for IBM i \<jobdata\>.
+    for IBM i <jobdata\>.
 - **EM field label**: File Name
 - **Valid Values**: User-defined value
   - Minimum Characters: 1
   - Maximum Characters: 4000
 
-#### \<ibmi_file_start_watch\>\</ibmi_file_start_watch\>
+#### <ibmi_file_start_watch\></ibmi_file_start_watch\>
 
-The \<ibmi_file_start_watch\> element defines the start of the time
+The <ibmi_file_start_watch\> element defines the start of the time
 frame that the program uses to watch for the arrival of the file.
 
 - **Requirements**: Required only when the job type is File Arrival
-    for IBM i \<jobdata\>.
+    for IBM i <jobdata\>.
 - **EM field label**: Start Time
 - **Valid Values**: Valid values are a number of days and time from 0
     -- 999 in Microsoft-formatted date time (e.g., 25.50 represents 1
     day at 1:30 AM), or a Token.
 
-#### \<ibmi_file_end_watch\>\</ibmi_file_end_watch\>
+#### <ibmi_file_end_watch\></ibmi_file_end_watch\>
 
-The \<ibmi_file_end_watch\> element defines the end of the time frame
+The <ibmi_file_end_watch\> element defines the end of the time frame
 that the program uses to watch for the arrival of the file.
 
 - **Requirements**: Required only when the job type is File Arrival
-    for IBM i \<jobdata\>.
+    for IBM i <jobdata\>.
 - **EM field label**: End Time
 - **Valid Values**: Valid values are a number of days and time from 0
     -- 999 in Microsoft-formatted date time (e.g., 25.50 represents 1
     day at 1:30 AM), or a Token.
 
-#### \<ibmi_file_stable\>\</ibmi_file_stable\>
+#### <ibmi_file_stable\></ibmi_file_stable\>
 
-The \<ibmi_file_stable\> element defines the amount of time the file
+The <ibmi_file_stable\> element defines the amount of time the file
 size has remained stable to indicate the file has finished arriving.
 
 - **Requirements**: Required only when the job type is File Arrival
-    for IBM i \<jobdata\>.
+    for IBM i <jobdata\>.
 - **EM field label**: File Size Stable Duration (in secs)
 - **Valid Values**: Valid values are a number of seconds from 0 - 999,
     or a Token.
 
-#### \<ibmi_filearrival_failcode\>\</ibmi_filearrival_failcode\>
+#### <ibmi_filearrival_failcode\></ibmi_filearrival_failcode\>
 
-The \<ibmi_filearrival_failcode\> element defines the action to take
+The <ibmi_filearrival_failcode\> element defines the action to take
 based on the job failure or success status.
 
 - **Requirements**: Required only when the job type is File Arrival
-    for IBM i \<jobdata\>.
+    for IBM i <jobdata\>.
 - **EM field label**: Failure Condition
 - **Valid Values**: Valid values are Always Succeed, Fail If File
     Contains Zero Records or Zero Bytes, Fail On Error, or Fail On Error
     Except Reached End Time.
 
-#### \<ibmi_dynvar_filename\>\</ibmi_dynvar_filename\>
+#### <ibmi_dynvar_filename\></ibmi_dynvar_filename\>
 
-The \<ibmi_dynvar_filename\> element defines the root name of the file
+The <ibmi_dynvar_filename\> element defines the root name of the file
 (including an extension, if any, from an IFS stream file) that is
 stored, similar to the OpCon system property $ARRIVED FILE SHORT NAME.
 
 - **Requirements**: Optional when the job type is File Arrival for IBM
-    i \<jobdata\>.
+    i <jobdata\>.
 - **EM field label**: File Name Variable
 - **Valid Values**: User-defined value
   - Minimum Characters: 1
   - Maximum Characters: 12
 
-#### \<ibmi_dynvar_reccnt\>\</ibmi_dynvar_reccnt\>
+#### <ibmi_dynvar_reccnt\></ibmi_dynvar_reccnt\>
 
-The \<ibmi_dynvar_reccnt\> element defines the number of records (for
+The <ibmi_dynvar_reccnt\> element defines the number of records (for
 DB2 files/tables), or the number of data bytes (for IFS non-DB2 file
 systems) is stored when a file is found.
 
 - **Requirements**: Optional when the job type is File Arrival for IBM
-    i \<jobdata\>.
+    i <jobdata\>.
 - **EM field label**: Record Count Variable
 - **Valid Values**: User-defined value
   - Minimum Characters: 1
@@ -856,68 +856,68 @@ systems) is stored when a file is found.
 
 ### Log Information Element Definitions
 
-#### \<LOG_LVL\>\</LOG_LVL\> {#log_lvllog_lvl style="text-transform: lowercase;"}
+#### <LOG_LVL\></LOG_LVL\>
 
-The [\<LOG_LVL\>]{style="text-transform: lowercase;"} element defines the number of messages for logging.
+The <LOG_LVL\> element defines the number of messages for logging.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Level
 - **Valid Values**: \*, \*JOBD, 0, 1, 2, 3, 4
   - Valid values range from 0 to 4, with 0 being no logging and 4
         being the highest level of detail.
 
-#### \<SEV_LVL\>\</SEV_LVL\> {#sev_lvlsev_lvl style="text-transform: lowercase;"}
+#### <SEV_LVL\></SEV_LVL\>
 
-The [\<SEV_LVL\>]{style="text-transform: lowercase;"} element defines the lowest severity level that causes an error message to be logged.
+The <SEV_LVL\> element defines the lowest severity level that causes an error message to be logged.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Severity
 - **Valid Values**: Available Values: \*, \*JOBD, 00, 01, 02, 03, 04,
     05, through 99.
 
-#### \<TXT_OPT\>\</TXT_OPT\> {#txt_opttxt_opt style="text-transform: lowercase;"}
+#### <TXT_OPT\></TXT_OPT\>
 
-The [\<TXT_OPT\>]{style="text-transform: lowercase;"} element defines the detail of the text logged.
+The <TXT_OPT\> element defines the detail of the text logged.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Text
 - **Valid Values**: Available Values: \*, \*JOBD, \*MSG, \*SECLVL,
     \*NOLIST
 
-#### \<cl_log\>\</cl_log\>
+#### <cl_log\></cl_log\>
 
-The [\<CL_LOG\>]{style="text-transform: lowercase;"} element defines whether the commands that are run in a control language program are
+The <CL_LOG\> element defines whether the commands that are run in a control language program are
 logged to the job log by way of the CL program's message queue.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Log CL Commands
 - **Valid Values**: \*, \*JOBD, \*NO, \*YES
   - If an asterisk (\*) is specified, the default value specified in
         the SMA system parameters for the LSAM is used.
 
-#### \<INQ_MSG\>\</INQ_MSG\> {#inq_msginq_msg style="text-transform: lowercase;"}
+#### <INQ_MSG\></INQ_MSG\>
 
-The [\<INQ_MSG\>]{style="text-transform: lowercase;"} element defines the way predefined messages, sent as a result of running this job, are
+The <INQ_MSG\> element defines the way predefined messages, sent as a result of running this job, are
 answered. If not specified, the default value specified in the SMA
 system parameters will be used.
 
-- **Requirements**: Required for IBM i \<jobdata\>.
+- **Requirements**: Required for IBM i <jobdata\>.
 - **EM field label**: Inquiry Message Reply
 - **Valid Values**: Available Values: \*, \*JOBD, \*RQD, \*DFT,
     \*SYSRPYL
   - If an asterisk (\*) is specified, the default value specified in
         the SMA system parameters for the LSAM is used.
 
-#### \<JOBLOGS_KEEP_OCCUR\>\</JOBLOGS_KEEP_OCCUR\> {#joblogs_keep_occurjoblogs_keep_occur style="text-transform: lowercase;"}
+#### <JOBLOGS_KEEP_OCCUR\></JOBLOGS_KEEP_OCCUR\>
 
-The [\<JOBLOGS_KEEP_OCCUR\>]{style="text-transform: lowercase;"} element sets the number of occurrences to save for times when this same job name
+The <JOBLOGS_KEEP_OCCUR\> element sets the number of occurrences to save for times when this same job name
 may be executed more than once. The last (n) number of occurrences of
 job logs for this job name will be retained, while any prior job logs
 for this job name will be deleted. When this value is left at zero, this
 parameter will be ignored and all job logs will only be subject to the
 Number of Days (if set).
 
-- **Requirements**: Optional for IBM i \<jobdata\>.
+- **Requirements**: Optional for IBM i <jobdata\>.
 - **EM field label**: Number of Occurrences
 - **Valid Values**: User-defined value
   - Minimum Value: 0 (turns off joblog cleanup at the job level).
@@ -926,16 +926,16 @@ Number of Days (if set).
   - If the value is greater than 0, the setting in the database
         overrides the LSAM global setting for job log maintenance.
 
-#### \<JOBLOGS_KEEP_DAYS\>\</JOBLOGS_KEEP_DAYS\> {#joblogs_keep_daysjoblogs_keep_days style="text-transform: lowercase;"}
+#### <JOBLOGS_KEEP_DAYS\></JOBLOGS_KEEP_DAYS\>
 
-The [\<JOBLOGS_KEEP_DAYS\>]{style="text-transform: lowercase;"} element sets the number of days to keep the job logs. The LSAM will delete (or
+The <JOBLOGS_KEEP_DAYS\> element sets the number of days to keep the job logs. The LSAM will delete (or
 cause the system to delete, during its normal course of operations) job
 logs for the names of the jobs that have existed on the system for more
 than the number of days set in this parameter. When this value is left
 at zero, this parameter will be ignored and all job logs will only be
 subject to the Number of Occurrences (if set).
 
-- **Requirements**: Optional for IBM i \<jobdata\>.
+- **Requirements**: Optional for IBM i <jobdata\>.
 - **EM field label**: Number of Days
 - **Valid Values**: User-defined value
   - Minimum Value: 0 (turns off joblog cleanup at the job level).
@@ -946,100 +946,100 @@ subject to the Number of Occurrences (if set).
 
 ### Message Element Definitions
 
-#### \<MSG_Info\>\</MSG_Info\> {#msg_infomsg_info style="text-transform: lowercase;"}
+#### <MSG_Info\></MSG_Info\>
 
-The parent element \<msg_info\> contains the child elements needed to
+The parent element <msg_info\> contains the child elements needed to
 define a single message and response for an IBM i job. Up to 99
-\<msg_info\> elements can be defined for each IBM i job.
+<msg_info\> elements can be defined for each IBM i job.
 
 - **Requirements**: Required to define a message to watch for the job.
 - **Valid Values**: One each of the following child elements:
-    \<msg_id\>, \<msg_cmpdata\>, \<msg_pos\>, \<msg_sev\>, \<msg_actn\>,
-    \<msg_reply\>, \<msg_endjob\>, \<msg_events\>.
+    <msg_id\>, <msg_cmpdata\>, <msg_pos\>, <msg_sev\>, <msg_actn\>,
+    <msg_reply\>, <msg_endjob\>, <msg_events\>.
 
-#### \<MSG_ID\>\</MSG_ID\> {#msg_idmsg_id style="text-transform: lowercase;"}
+#### <MSG_ID\></MSG_ID\>
 
-The [\<MSG_ID\>]{style="text-transform: lowercase;"} element defines the 7 character Message ID displayed at the beginning of the message.
+The <MSG_ID\> element defines the 7 character Message ID displayed at the beginning of the message.
 
-- **Requirements**: Required for \<msg_info\> if
-    [\<MSG_SEV\>]{style="text-transform: lowercase;"} = 00. If     [\<MSG_SEV\>]{style="text-transform: lowercase;"} is greater than
-    00, \<msg_id\> is not valid.
+- **Requirements**: Required for <msg_info\> if
+    <MSG_SEV\> = 00. If     <MSG_SEV\> is greater than
+    00, <msg_id\> is not valid.
 - **EM field label**: Message ID
 - **Valid Values**: User-defined value of exactly seven (7)
     characters.
 
-#### \<MSG_CMPDATA\>\</MSG_CMPDATA\> {#msg_cmpdatamsg_cmpdata style="text-transform: lowercase;"}
+#### <MSG_CMPDATA\></MSG_CMPDATA\>
 
-The [\<MSG_CMPDATA\>]{style="text-transform: lowercase;"} element defines the characters to find in the message (defined by the message
+The <MSG_CMPDATA\> element defines the characters to find in the message (defined by the message
 ID).
 
-- **Requirements**: Optional for \<msg_info\>. If
-    [\<MSG_SEV\>]{style="text-transform: lowercase;"} \> 00,     [\<MSG_CMPDATA\>]{style="text-transform: lowercase;"} is not valid.
+- **Requirements**: Optional for <msg_info\>. If
+    <MSG_SEV\> \> 00,     <MSG_CMPDATA\> is not valid.
 - **EM field label**: Compare Data
 - **Valid Values**: User-defined value
   - Minimum Characters: 1
   - Maximum Characters: 30
 
-#### \<MSG_POS\>\</MSG_POS\> {#msg_posmsg_pos style="text-transform: lowercase;"}
+#### <MSG_POS\></MSG_POS\>
 
-The [\<MSG_POS\>]{style="text-transform: lowercase;"} element defines the position to start looking for the Compare Data word in the Message
+The <MSG_POS\> element defines the position to start looking for the Compare Data word in the Message
 defined by the Msg ID.
 
-- **Requirements**: Optional for \<msg_info\>, but required with
-    [\<MSG_CMPDATA\>]{style="text-transform: lowercase;"}. -   **EM field label**: Position
+- **Requirements**: Optional for <msg_info\>, but required with
+    <MSG_CMPDATA\>. -   **EM field label**: Position
 - **Valid Values**: User-defined value
   - Minimum Value: 0
   - Maximum Value: 999 (Message data can be as long as 2147483647,
         but IBM i supports only up to position 999 in their reply list
         entries).
 
-#### \<MSG_SEV\>\</MSG_SEV\> {#msg_sevmsg_sev style="text-transform: lowercase;"}
+#### <MSG_SEV\></MSG_SEV\>
 
-The [\<MSG_SEV\>]{style="text-transform: lowercase;"} element defines the severity of the messages to look for.
+The <MSG_SEV\> element defines the severity of the messages to look for.
 
-- **Requirements**: Required for \<msg_info\> if
-    [\<MSG_ID\>]{style="text-transform: lowercase;"} is not defined. If     \<msg_id\> is defined, \<msg_sev\> is not valid.
+- **Requirements**: Required for <msg_info\> if
+    <MSG_ID\> is not defined. If     <msg_id\> is defined, <msg_sev\> is not valid.
 - **EM field label**: Severity
 - **Valid Values**: 00, 10, 20, 30, 40, 50, 60, 70, 80, 90.
 
-#### \<MSG_ACTN\>\</MSG_ACTN\> {#msg_actnmsg_actn style="text-transform: lowercase;"}
+#### <MSG_ACTN\></MSG_ACTN\>
 
-The [\<MSG_ACTN\>]{style="text-transform: lowercase;"} element defines what the LSAM does when a message meets the defined criteria.
+The <MSG_ACTN\> element defines what the LSAM does when a message meets the defined criteria.
 
-- **Requirements**: Required for \<msg_info\>.
+- **Requirements**: Required for <msg_info\>.
 - **EM field label**: Action
 - **Valid Values**: Reply, Event, Both
 
-#### \<MSG_REPLY\>\</MSG_REPLY\> {#msg_replymsg_reply style="text-transform: lowercase;"}
+#### <MSG_REPLY\></MSG_REPLY\>
 
-The [\<MSG_REPLY\>]{style="text-transform: lowercase;"} element defines the response the LSAM sends as the reply when the Action is set to Reply
+The <MSG_REPLY\> element defines the response the LSAM sends as the reply when the Action is set to Reply
 or Both and when the message meets the search criteria.
 
-- **Requirements**: Required for \<msg_info\> if
-    [\<MSG_ACTN\>]{style="text-transform: lowercase;"} is 'Reply' or     'Both'.
+- **Requirements**: Required for <msg_info\> if
+    <MSG_ACTN\> is 'Reply' or     'Both'.
 - **EM field label**: Reply
 - **Valid Values**:
   - Minimum Characters: 1
   - Maximum Characters: 6
 
-#### \<MSG_ENDJOB\>\</MSG_ENDJOB\> {#msg_endjobmsg_endjob style="text-transform: lowercase;"}
+#### <MSG_ENDJOB\></MSG_ENDJOB\>
 
-The [\<MSG_ENDJOB\>]{style="text-transform: lowercase;"} element defines whether they want to end the OpCon job after
+The <MSG_ENDJOB\> element defines whether they want to end the OpCon job after
 the message meets the criteria or if they want to allow it to keep
 running.
 
-- **Requirements**: This field is optional for \<msg_info\>. Defaults
+- **Requirements**: This field is optional for <msg_info\>. Defaults
     to 'N' if an empty set of tags are defined.
 - **EM field label**: End Job
 - **Valid Values**: Yes, No
 
-#### \<MSG_EVENTS\>\</MSG_EVENTS\> {#msg_eventsmsg_events style="text-transform: lowercase;"}
+#### <MSG_EVENTS\></MSG_EVENTS\>
 
-The [\<MSG_EVENTS\>]{style="text-transform: lowercase;"} element defines the OpCon event to send to the SAM-SS when
+The <MSG_EVENTS\> element defines the OpCon event to send to the SAM-SS when
 the message meets the search criteria.
 
-- **Requirements**: Required for \<msg_info\> if
-    [\<MSG_ACTN\>]{style="text-transform: lowercase;"} is 'Both'. -   **Valid Values**: Available Values: Complete list of
+- **Requirements**: Required for <msg_info\> if
+    <MSG_ACTN\> is 'Both'. -   **Valid Values**: Available Values: Complete list of
     OpCon events and as in the Job Master \>
     Events screen.
   - Minimum Characters: 1
@@ -1047,54 +1047,54 @@ the message meets the search criteria.
 
 ### Spools Element Definitions
 
-#### \<SPL_info\>\</SPL_info\>
+#### <SPL_info\></SPL_info\>
 
-The parent element \<spl_info\> contains the child elements needed to
+The parent element <spl_info\> contains the child elements needed to
 define a single spool file definition for an IBM i job. Up to 99
-\<spl_info\> elements can be defined for each IBM i job.
+<spl_info\> elements can be defined for each IBM i job.
 
 - **Requirements**: Required to define a spool file definition for the
     job.
 - **Valid Values**: One of each of the following child elements:
-    \<spl_name\>, \<spl_user\>, \<spl_outq_name\>, \<spl_outq_lib\>,
-    \<spl_copies\>, \<spl_hld\>, \<spl_save\>
+    <spl_name\>, <spl_user\>, <spl_outq_name\>, <spl_outq_lib\>,
+    <spl_copies\>, <spl_hld\>, <spl_save\>
 
-#### \<SPL_NAME\>\</SPL_NAME\> {#spl_namespl_name style="text-transform: lowercase;"}
+#### <SPL_NAME\></SPL_NAME\>
 
-The [\<SPL_NAME\>]{style="text-transform: lowercase;"} element defines the name of the file that contains the output from the job.
+The <SPL_NAME\> element defines the name of the file that contains the output from the job.
 
-- **Requirements**: This field is **Required** for \<spl_info\>.
+- **Requirements**: This field is **Required** for <spl_info\>.
 - **EM field label**: File Name
 - **Valid Values**: Available Values: **\*ALL**
   - Minimum Characters: 1
   - Maximum Characters: 10
 
-#### \<SPL_USER\>\</SPL_USER\> {#spl_userspl_user style="text-transform: lowercase;"}
+#### <SPL_USER\></SPL_USER\>
 
-The [\<SPL_USER\>]{style="text-transform: lowercase;"} element defines the user that creates the spool file.
+The <SPL_USER\> element defines the user that creates the spool file.
 
-- **Requirements**: This field is **Required** for \<spl_info\> if
-    [\<SPL_OUTQ_NAME\>]{style="text-transform: lowercase;"} is blank. -   **EM field label**: User
+- **Requirements**: This field is **Required** for <spl_info\> if
+    <SPL_OUTQ_NAME\> is blank. -   **EM field label**: User
 - **Valid Values**: All values from the Batch User Privileges screen
   - Minimum Characters: 1
   - Maximum Characters: 10
 
-#### \<SPL_OUTQ_NAME\>\</SPL_OUTQ_NAME\> {#spl_outq_namespl_outq_name style="text-transform: lowercase;"}
+#### <SPL_OUTQ_NAME\></SPL_OUTQ_NAME\>
 
-The [\<SPL_OUTQ_NAME\>]{style="text-transform: lowercase;"} element defines the queue where the spool files are stored.
+The <SPL_OUTQ_NAME\> element defines the queue where the spool files are stored.
 
-- **Requirements**: This field is **Required** for \<spl_info\> if
-    [\<SPL_USER\>]{style="text-transform: lowercase;"} is blank. -   **EM field label**: OutQ Name
+- **Requirements**: This field is **Required** for <spl_info\> if
+    <SPL_USER\> is blank. -   **EM field label**: OutQ Name
 - **Valid Values**: Available Values: **\*USRPRF**
   - Minimum Characters: 1
   - Maximum Characters: 10
 
-#### \<SPL_OUTQ_LIB\>\</SPL_OUTQ_LIB\> {#spl_outq_libspl_outq_lib style="text-transform: lowercase;"}
+#### <SPL_OUTQ_LIB\></SPL_OUTQ_LIB\>
 
-The [\<SPL_OUTQ_LIB\>]{style="text-transform: lowercase;"} element defines the library that contains the Outq.
+The <SPL_OUTQ_LIB\> element defines the library that contains the Outq.
 
-- **Requirements**: This field is **Required** for \<spl_info\> if
-    [\<SPL_OUTQ_NAME\>]{style="text-transform: lowercase;"} is not     blank.
+- **Requirements**: This field is **Required** for <spl_info\> if
+    <SPL_OUTQ_NAME\> is not     blank.
 - **EM field label**: OutQ Library
 - **Valid Values**: Blank, but if user selects \*USRPRF for Outq Name,
     set \*USRPRF for Outq Library.
@@ -1102,60 +1102,60 @@ The [\<SPL_OUTQ_LIB\>]{style="text-transform: lowercase;"} element defines the l
   - Minimum Characters: 1
   - Maximum Characters: 10
 
-#### \<SPL_COPIES\>\</SPL_COPIES\> {#spl_copiesspl_copies style="text-transform: lowercase;"}
+#### <SPL_COPIES\></SPL_COPIES\>
 
-The [\<SPL_COPIES\>]{style="text-transform: lowercase;"} element defines the number of spool file copies to create.
+The <SPL_COPIES\> element defines the number of spool file copies to create.
 
-- **Requirements**: Optional for \<spl_info\>.
+- **Requirements**: Optional for <spl_info\>.
 - **EM field label**: Total Copies
 - **Valid Values**: User must type their own value
   - Minimum Value: 1
   - Maximum Value: 255
 
-#### \<SPL_HLD\>\</SPL_HLD\> {#spl_hldspl_hld style="text-transform: lowercase;"}
+#### <SPL_HLD\></SPL_HLD\>
 
-The [\<SPL_HLD\>]{style="text-transform: lowercase;"} element indicates whether to print the spool file.
+The <SPL_HLD\> element indicates whether to print the spool file.
 
-- **Requirements**: Optional for \<spl_info\>.
+- **Requirements**: Optional for <spl_info\>.
 - **EM field label**: Hold
 - **Valid Values**: \* (accept default), Yes, No
 
-#### \<SPL_SAVE\>\</SPL_SAVE\> {#spl_savespl_save style="text-transform: lowercase;"}
+#### <SPL_SAVE\></SPL_SAVE\>
 
-The [\<SPL_SAVE\>]{style="text-transform: lowercase;"} element indicates whether to save the spool file after it is printed.
+The <SPL_SAVE\> element indicates whether to save the spool file after it is printed.
 
-- **Requirements**: Optional for \<spl_info\>.
+- **Requirements**: Optional for <spl_info\>.
 - **EM field label**: Save
 - **Valid Values**: \* (accept default), Yes, No
 
 ### Variables Element Definitions
 
-#### \<ibmi_agent_var_info\>\</ibmi_agent_var_info\>
+#### <ibmi_agent_var_info\></ibmi_agent_var_info\>
 
-The parent element \<ibmi_agent_var_info\> contains the child elements
+The parent element <ibmi_agent_var_info\> contains the child elements
 needed to define a single variable definition for an IBM i job.
 
 - **Requirements**: Required to define a variables definition for the
     job.
 - **Valid Values**: One of each of the following child elements:
-    \<ibmi_agent_var\>, \<ibmi_agent_var_val\>
+    <ibmi_agent_var\>, <ibmi_agent_var_val\>
 
-#### \<ibmi_agent_var\>\</ibmi_agent_var\>
+#### <ibmi_agent_var\></ibmi_agent_var\>
 
-The \<ibmi_agent_var\> element defines the name of the IBM i LSAM
+The <ibmi_agent_var\> element defines the name of the IBM i LSAM
 Dynamic Variable that stores the value.
 
-- **Requirements**: Required for \<ibmi_agent_var_info\>.
+- **Requirements**: Required for <ibmi_agent_var_info\>.
 - **EM Field label**: Variable Name
 - **Valid Values**: A - Z, 0 - 9, and special characters
   - Maximum Characters: 12
 
-#### \<ibmi_agent_var_val\>\</ibmi_agent_var_val\>
+#### <ibmi_agent_var_val\></ibmi_agent_var_val\>
 
-The \<ibmi_agent_var_val\> element defines the character string to use
+The <ibmi_agent_var_val\> element defines the character string to use
 as the value to be stored in the IBM i LSAM Dynamic Variables table.
 
-- **Requirements**: Required for \<ibmi_agent_var_info\>.
+- **Requirements**: Required for <ibmi_agent_var_info\>.
 - **EM field label**: Value
 - **Valid Values**: User-defined value, or a Token
   - Maximum Characters: 128
@@ -1167,69 +1167,69 @@ possible element for Java Primary Job Data. For detailed information on
 each field for this job type, refer to [Java Job Details](../../job-types/java.md) in the
 **Concepts** online help.
 
-\<msg\>
+<msg\>
 
-   \<msgtype\>\</msgtype\>
+   <msgtype\></msgtype\>
 
-   \<schedule\>
+   <schedule\>
 
-   \<job\>
+   <job\>
 
-   \<job_subtype\>\</job_subtype\>
+   <job_subtype\></job_subtype\>
 
-   \<jobdata\>
+   <jobdata\>
 
-       \<java_uid\>\</java_uid\>
+       <java_uid\></java_uid\>
 
-       \<java_operation\>\</java_operation\>
+       <java_operation\></java_operation\>
 
-       \<java_jar\>\</java_jar\>
+       <java_jar\></java_jar\>
 
-       \<java_class\>\</java_class\>
+       <java_class\></java_class\>
 
-       \<java_method\>\</java_method\>
+       <java_method\></java_method\>
 
-       \<java_alt_jvm\>\</java_alt_jvm\>
+       <java_alt_jvm\></java_alt_jvm\>
 
-       \<java_cmd_file\>\</java_cmd_file\>
+       <java_cmd_file\></java_cmd_file\>
 
-       \<java_exe\>\</java_exe\>
+       <java_exe\></java_exe\>
 
-       \<java_params\>\</java_params\>
+       <java_params\></java_params\>
 
-       \<java_jvm_args\>\</java_jvm_args\>
+       <java_jvm_args\></java_jvm_args\>
 
-       \<java_env_vars\>\</java_env_vars\>
+       <java_env_vars\></java_env_vars\>
 
-       \<java_rtn_info\>
+       <java_rtn_info\>
 
-             \<java_rtn_oper\>\</java_rtn_oper\>
+             <java_rtn_oper\></java_rtn_oper\>
 
-             \<java_rtn_val\>\</java_rtn_val\>
+             <java_rtn_val\></java_rtn_val\>
 
-       \</java_rtn_info\>
+       </java_rtn_info\>
 
-       \<java_rtn_info\>
+       <java_rtn_info\>
 
-             \<java_rtn_oper\>\</java_rtn_oper\>
+             <java_rtn_oper\></java_rtn_oper\>
 
-             \<java_rtn_oper\>\<java_rtn_val\>\</java_rtn_val\>
+             <java_rtn_oper\><java_rtn_val\></java_rtn_val\>
 
-       \</java_rtn_info\>
+       </java_rtn_info\>
 
-   \</jobdata\>
+   </jobdata\>
 
-   \</job\>
+   </job\>
 
-   \</schedule\>
+   </schedule\>
 
-\</msg\>
+</msg\>
 
 ### Job Information Element Definitions
 
-#### \<java_uid\>\</java_uid\>
+#### <java_uid\></java_uid\>
 
-The \<java_uid\> element defines the user that the Java class or
+The <java_uid\> element defines the user that the Java class or
 executable will run as.
 
 - **Requirements**: This field is currently not in use.
@@ -1238,18 +1238,18 @@ executable will run as.
   - Minimum Characters: 1
   - Maximum Characters: 32
 
-#### \<java_operation\>\</java_operation\>
+#### <java_operation\></java_operation\>
 
-The \<java_operation\> element defines the type of operation that will
+The <java_operation\> element defines the type of operation that will
 be performed (i.e., execution of a Java class or a command line).
 
 - **Requirements**: This is a required field.
 - **EM field label**: Operation
 - **Valid Values**: CLASS, COMMAND, JAR
 
-#### \<java_jar\>\</java_jar\>
+#### <java_jar\></java_jar\>
 
-The \<java_jar\> element defines the jar file containing the class and
+The <java_jar\> element defines the jar file containing the class and
 method to be executed.
 
 - **Requirements**: This is a required field for operations "CLASS"
@@ -1260,9 +1260,9 @@ method to be executed.
   - Minimum Characters: 1
   - Maximum Characters: 4000
 
-#### \<java_class\>\</java_class\>
+#### <java_class\></java_class\>
 
-The \<java_class\> element defines the name of the Java class to be
+The <java_class\> element defines the name of the Java class to be
 executed.
 
 - **Requirements**: This is a required field if the operation is
@@ -1273,9 +1273,9 @@ executed.
   - Minimum Characters: 1
   - Maximum Characters: 4000
 
-#### \<java_method\>\</java_method\>
+#### <java_method\></java_method\>
 
-The \<java_method\> element defines the name of the Java method to be
+The <java_method\> element defines the name of the Java method to be
 executed.
 
 - **Requirements**: This is an optional field if the operation is
@@ -1288,9 +1288,9 @@ executed.
   - Minimum Characters: 1
   - Maximum Characters: 4000
 
-#### \<java_alt_jvm\>\</java_alt_jvm\>
+#### <java_alt_jvm\></java_alt_jvm\>
 
-The \<java_alt_jvm\> element defines the path to an alternate JVM to be
+The <java_alt_jvm\> element defines the path to an alternate JVM to be
 executed by the Java Agent.
 
 - **Requirements**: This is an optional field for operations "CLASS"
@@ -1301,22 +1301,22 @@ executed by the Java Agent.
   - Maximum characters: 4000
   - Valid characters: all
 
-#### \<java_cmd_file\>\</java_cmd_file\>
+#### <java_cmd_file\></java_cmd_file\>
 
-The \<java_cmd_file\> element defines the name of the command file to be
+The <java_cmd_file\> element defines the name of the command file to be
 executed.
 
 - **Requirements**: This is a required field for operations
     "COMMAND" and "JAR" and consists of the full file name where the
-    command \<java_cmd\> value can be found.
+    command <java_cmd\> value can be found.
 - **EM field label**: Directory Path
 - **Valid Values**:
   - Minimum Characters: 1
   - Maximum Characters: 4000
 
-#### \<java_exe\>\</java_exe\>
+#### <java_exe\></java_exe\>
 
-The \<java_exe\> element defines the name of the executable or script to
+The <java_exe\> element defines the name of the executable or script to
 be run.
 
 - **Requirements**: This is a required field if the operation is
@@ -1329,9 +1329,9 @@ be run.
 
 ### Parameter Element Definitions
 
-#### \<java_params\>\</java_params\>
+#### <java_params\></java_params\>
 
-The \<java_params\> element defines the list of parameters to be passed
+The <java_params\> element defines the list of parameters to be passed
 to the method or executable. The parameters are defined as:
 name1=value1,name2=value2,name3=value3. The parameters are passed to the
 method or executable in the order in which they are defined. For the
@@ -1357,9 +1357,9 @@ expects.
 
 ### JVM Arguments Element Definitions
 
-#### \<java_jvm_args\>\</java_jvm_args\>
+#### <java_jvm_args\></java_jvm_args\>
 
-The \<java_jvm_args\> element defines the list of JVM arguments that are
+The <java_jvm_args\> element defines the list of JVM arguments that are
 set as part of the JVM call on the --java command line. The JVM
 arguments are defined as: name1=value1,name2=value2,name3=value3. The
 environment variables are passed in the order in which they are defined.
@@ -1378,9 +1378,9 @@ environment variables are passed in the order in which they are defined.
 
 ### Environment Variables Element Definitions
 
-#### \<java_env_vars\>\</java_env_vars\>
+#### <java_env_vars\></java_env_vars\>
 
-The \<java_env_vars\> element defines the list of environment variables
+The <java_env_vars\> element defines the list of environment variables
 to be passed. The environment variables are defined as:
 name1=value1,name2=value2,name3=value3. The environment variables are
 passed in the order in which they are defined.
@@ -1403,19 +1403,19 @@ passed in the order in which they are defined.
 
 ### Return Code Element Definitions
 
-#### \<java_rtn_info\>\</java_rtn_info\>
+#### <java_rtn_info\></java_rtn_info\>
 
-The parent element \<java_rtn_info\> contains the child elements needed
+The parent element <java_rtn_info\> contains the child elements needed
 to define a single failure criterion for the job. SMADDI supports up to
-five \<java_rtn_info\> elements for each Java job.
+five <java_rtn_info\> elements for each Java job.
 
-- **Requirements**: Optional for \<jobdata\>. Required to define
-    failure criteria for the job. At least one \<java_rtn_info\> element
+- **Requirements**: Optional for <jobdata\>. Required to define
+    failure criteria for the job. At least one <java_rtn_info\> element
     must be provided.
-- **Valid Values**: One \<java_rtn_oper\> and one \<java_rtn_val\>
+- **Valid Values**: One <java_rtn_oper\> and one <java_rtn_val\>
     child element
 
-#### \<java_rtn_oper\>\<java_rtn_oper\>
+#### <java_rtn_oper\><java_rtn_oper\>
 
 The return operators are a list of conditions to be met on the return
 codes and up to five can be defined per job definition. The Failure
@@ -1423,18 +1423,18 @@ Criteria determines how OpCon reports the final status of the job. If
 any of the specified conditions are met, OpCon reports the job as
 Failed.
 
-- **Requirements**: Required field for \<java_rtn_info\>.
+- **Requirements**: Required field for <java_rtn_info\>.
 - **Valid Values**: EQ, NE, LT, GT, GE, LE
 
-#### \<java_rtn_val\>\</java_rtn_val\>
+#### <java_rtn_val\></java_rtn_val\>
 
-The \<java_rtn_val\> element defines the value of the exit condition and
+The <java_rtn_val\> element defines the value of the exit condition and
 up to five can be defined per job definition. The Failure Criteria
 determines how OpCon reports the final status
 of the job. If any of the specified conditions are met, OpCon reports
 the job as Failed.
 
-- **Requirements**: Required field for \<java_rtn_info\>.
+- **Requirements**: Required field for <java_rtn_info\>.
 - **Valid Values**: -2147483648 through 2147483647
 
 ## MCP Job Elements
@@ -1444,830 +1444,830 @@ possible element for MCP Primary Job Elements. For detailed information
 on each field for this job type, refer to [MCP Job Details](../../job-types/mcp.md) in the
 **Concepts** online help.
 
-\<msg\>
+<msg\>
 
-   \<msgtype\>\</msgtype\>
+   <msgtype\></msgtype\>
 
-   \<schedule\>
+   <schedule\>
 
-      \<job\>
+      <job\>
 
-         \<jobdata\>
+         <jobdata\>
 
 **\-\-\-\-\--**[Job Information Element Definitions](#Job)**\-\-\-\-\--**
 
-            \<user_code\>\</user_code\>
+            <user_code\></user_code\>
 
-            \<access_code\>\</access_code\>
+            <access_code\></access_code\>
 
-            \<job_init\>\</job_init\>
+            <job_init\></job_init\>
 
 **\-\-\-\-\--** [START and RUN Definitions](#START)**\-\-\-\-\--**
 
-            \<file_title\>\</file_title\>
+            <file_title\></file_title\>
 
-            \<args\>\</args\>
+            <args\></args\>
 
-            \<mcp_task_attributes\>
+            <mcp_task_attributes\>
 
-            \<mcp_task_attribute\>\</mcp_task_attribute\>
+            <mcp_task_attribute\></mcp_task_attribute\>
 
-            \</mcp_task_attributes\>
+            </mcp_task_attributes\>
 
-            \<mcp_file_attributes\>
+            <mcp_file_attributes\>
 
-            \<mcp_file_attribute\>\</mcp_file_attribute\>
+            <mcp_file_attribute\></mcp_file_attribute\>
 
-            \</mcp_file_attributes\>
+            </mcp_file_attributes\>
 
-            \<mcp_eot notice\>\</mcp_eot_notice\>
+            <mcp_eot notice\></mcp_eot_notice\>
 
-            \<mcp_template display\>\</mcp_template_display\>
+            <mcp_template display\></mcp_template_display\>
 
-            \<mcpjobsummary\>
+            <mcpjobsummary\>
 
-               \<job_summary_usercode\>\</job_summary_usercode\>
+               <job_summary_usercode\></job_summary_usercode\>
 
-               \<job_summary_family\>\</job_summary_family\>
+               <job_summary_family\></job_summary_family\>
 
-               \<job_summary_dir_file\>\</job_summary_dir_file\>
+               <job_summary_dir_file\></job_summary_dir_file\>
 
-            \</mcpjobsummary\>
+            </mcpjobsummary\>
 
 **\-\-\-\-\--** [EAE/AB Suite Definitions](#EAE/AB)**\-\-\-\-\--**
 
-            \<eae_report_name\>\</eae_report_name\>
+            <eae_report_name\></eae_report_name\>
 
-            \<eae_accept_file\>\</eae_accept_file\>
+            <eae_accept_file\></eae_accept_file\>
 
-            \<eae_parameters\>\</eae_parameters\>
+            <eae_parameters\></eae_parameters\>
 
 **\-\-\-\-\--** [CHANGE Definitions](#CHANGE)**\-\-\-\-\--**
 
-            \<mcp_change_source\>\</mcp_change_source\>
+            <mcp_change_source\></mcp_change_source\>
 
-            \<mcp_change_new\>\</mcp_change_new\>
+            <mcp_change_new\></mcp_change_new\>
 
-            \<mcp_change_from\>\</mcp_change_from\>
+            <mcp_change_from\></mcp_change_from\>
 
 **\-\-\-\-\--** [COPY Definitions](#COPY)**\-\-\-\-\--**
 
-            \<mcp_copy_source\>\</mcp_copy_source\>
+            <mcp_copy_source\></mcp_copy_source\>
 
-            \<mcp_copy_from\>\</mcp_copy_from\>
+            <mcp_copy_from\></mcp_copy_from\>
 
-            \<mcp_copy_from_kind\>\</mcp_copy_from_kind\>
+            <mcp_copy_from_kind\></mcp_copy_from_kind\>
 
-            \<mcp_copy_destination\>\</mcp_copy_destination\>
+            <mcp_copy_destination\></mcp_copy_destination\>
 
-            \<mcp_copy_to\>\</mcp_copy_to\>
+            <mcp_copy_to\></mcp_copy_to\>
 
-            \<mcp_copy_to_kind\>\</mcp_copy_to_kind\>
+            <mcp_copy_to_kind\></mcp_copy_to_kind\>
 
-            \<mcp_copy_hostname\>\</mcp_copy_hostname\>
+            <mcp_copy_hostname\></mcp_copy_hostname\>
 
-            \<mcp_copy_compare\>\</mcp_copy_compare\>
+            <mcp_copy_compare\></mcp_copy_compare\>
 
 **\-\-\-\-\--** [REMOVE Definitions](#REMOVE)**\-\-\-\-\--**
 
-            \<mcp_remove_source\>\</mcp_remove_source\>
+            <mcp_remove_source\></mcp_remove_source\>
 
-            \<mcp_remove_from\>\</mcp_remove_from\>
+            <mcp_remove_from\></mcp_remove_from\>
 
 **\-\-\-\-\--** [Prerun Information Element Definitions](#Prerun)**\-\-\-\-\--**
 
-            \<mcpprerun\>
+            <mcpprerun\>
 
-               \<pre_job_int\>\</pre_job_int\>
+               <pre_job_int\></pre_job_int\>
 
 **\-\-\-\-\--** [Prerun START and RUN Definitions](#Prerun2)**\-\-\-\-\--**
 
-               \<pre_file_title\>\</pre_file_title\>
+               <pre_file_title\></pre_file_title\>
 
-               \<pre_args\>\</pre_args\>
+               <pre_args\></pre_args\>
 
-            \<mcp_pre_task_attributes\>
+            <mcp_pre_task_attributes\>
 
-            \<mcp_pre_task_attribute\>\</mcp_pre_task_attribute\>
+            <mcp_pre_task_attribute\></mcp_pre_task_attribute\>
 
-            \</mcp_pre_task_attributes\>
+            </mcp_pre_task_attributes\>
 
-            \<mcp_pre_file_attributes\>
+            <mcp_pre_file_attributes\>
 
-            \<mcp_pre_file_attribute\>\</mcp_pre_file_attribute\>
+            <mcp_pre_file_attribute\></mcp_pre_file_attribute\>
 
-            \</mcp_pre_file_attributes\>
+            </mcp_pre_file_attributes\>
 
-            \<mcp_pre_eot notice\>\</mcp_pre_eot_notice\>
+            <mcp_pre_eot notice\></mcp_pre_eot_notice\>
 
-            \<mcp_pre_template display\>\</mcp_pre_template_display\>
+            <mcp_pre_template display\></mcp_pre_template_display\>
 
-            \<mcppre_jobsummary\>
+            <mcppre_jobsummary\>
 
-            \<mcp_pre_job_summary_usercode\>
+            <mcp_pre_job_summary_usercode\>
 
-            \</mcp_pre_job_summary_usercode\>
+            </mcp_pre_job_summary_usercode\>
 
-            \<mcp_pre_job_summary_family\>
+            <mcp_pre_job_summary_family\>
 
-            \</mcp_pre_job_summary_family\>
+            </mcp_pre_job_summary_family\>
 
-            \<mcp_pre_job_summary_dir_file\>
+            <mcp_pre_job_summary_dir_file\>
 
-            \</mcp_pre_job_summary_dir_file\>
+            </mcp_pre_job_summary_dir_file\>
 
-            \</mcppre_jobsummary\>
+            </mcppre_jobsummary\>
 
 **\-\-\-\-\--** [Prerun EAE/AB Suite Definitions](#Prerun3)**\-\-\-\-\--**
 
-            \<pre_eae_report_name\>\</pre_eae_report_name\>
+            <pre_eae_report_name\></pre_eae_report_name\>
 
-            \<pre_eae_accept_file\>\</pre_eae_accept_file\>
+            <pre_eae_accept_file\></pre_eae_accept_file\>
 
-            \<pre_eae_parameters\>\</pre_eae_parameters\>
+            <pre_eae_parameters\></pre_eae_parameters\>
 
 **\-\-\-\-\--** [Prerun CHANGE Definitions](#Prerun4)**\-\-\-\-\--**
 
-            \<mcp_pre_change_source\>\</mcp_pre_change_source\>
+            <mcp_pre_change_source\></mcp_pre_change_source\>
 
-            \<mcp_pre_change_new\>\</mcp_pre_change_new\>
+            <mcp_pre_change_new\></mcp_pre_change_new\>
 
-            \<mcp_pre_change_from\>\</mcp_pre_change_from\>
+            <mcp_pre_change_from\></mcp_pre_change_from\>
 
 **\-\-\-\-\--** [Prerun COPY Definitions](#Prerun5)**\-\-\-\-\--**
 
-            \<mcp_pre_copy_source\>\</mcp_pre_copy_source\>
+            <mcp_pre_copy_source\></mcp_pre_copy_source\>
 
-            \<mcp_pre_copy_from\>\</mcp_pre_copy_from\>
+            <mcp_pre_copy_from\></mcp_pre_copy_from\>
 
-            \<mcp_pre_copy_from_kind\>\</mcp_pre_copy_from_kind\>
+            <mcp_pre_copy_from_kind\></mcp_pre_copy_from_kind\>
 
-            \<mcp_pre_copy_destination\>\</mcp_pre_copy_destination\>
+            <mcp_pre_copy_destination\></mcp_pre_copy_destination\>
 
-            \<mcp_pre_copy_to\>\</mcp_pre_copy_to\>
+            <mcp_pre_copy_to\></mcp_pre_copy_to\>
 
-            \<mcp_pre_copy_to_kind\>\</mcp_pre_copy_to_kind\>
+            <mcp_pre_copy_to_kind\></mcp_pre_copy_to_kind\>
 
-            \<mcp_pre_copy_hostname\>\</mcp_pre_copy_hostname\>
+            <mcp_pre_copy_hostname\></mcp_pre_copy_hostname\>
 
-            \<mcp_pre_copy_compare\>\</mcp_pre_copy_compare\>
+            <mcp_pre_copy_compare\></mcp_pre_copy_compare\>
 
 **\-\-\-\-\--** [Prerun REMOVE Definitions](#Prerun6)**\-\-\-\-\--**
 
-            \<mcp_pre_remove_source\>\</mcp_pre_remove_source\>
+            <mcp_pre_remove_source\></mcp_pre_remove_source\>
 
-            \<mcp_pre_remove_from\>\</mcp_pre_remove_from\>
+            <mcp_pre_remove_from\></mcp_pre_remove_from\>
 
-            \</mcpprerun\>
+            </mcpprerun\>
 
 **\-\-\-\-\--** [Failure Criteria Definitions](#Failure)**\-\-\-\-\--**
 
-            \<fail_code\>\</fail_code\>
+            <fail_code\></fail_code\>
 
-            \<fail_reset\>\</fail_reset\>
+            <fail_reset\></fail_reset\>
 
-         \</jobdata\>
+         </jobdata\>
 
-      \</job\>
+      </job\>
 
-   \</schedule\>
+   </schedule\>
 
-\</msg\>
+</msg\>
 
 ### Job Information Element Definitions
 
-#### \<user_code\>\</user_code\>
+#### <user_code\></user_code\>
 
-The \<user_code\> element defines the MCP user to be impersonated when
+The <user_code\> element defines the MCP user to be impersonated when
 launching the job.
 
-- **Requirements**: Required for MCP \<jobdata\>.
+- **Requirements**: Required for MCP <jobdata\>.
 - **EM field label**: User Code
 - **Valid Values**: The user ID must not exceed 17 characters.
 
-#### \<access_code\>\</access_code\>
+#### <access_code\></access_code\>
 
-The \<access_code\> element defines the MCP Access Code that the job
+The <access_code\> element defines the MCP Access Code that the job
 uses.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: Access Code
 - **Valid Values**: A valid Access Code. The Access Code must not
     exceed 17 characters.
 
-#### \<job_init\>\</job_init\>
+#### <job_init\></job_init\>
 
-The \<job_init\> element defines the job initiation command to be used
+The <job_init\> element defines the job initiation command to be used
 when launching the job.
 
-- **Requirements**: Required for MCP \<jobdata\>.
+- **Requirements**: Required for MCP <jobdata\>.
 - **Valid Values**: Valid values for this element are START, RUN,
     EAE/AB Suite, CHANGE, COPY, and REMOVE.
 
 ### START and RUN Definitions
 
-#### \<file_title\>\</file_title\>
+#### <file_title\></file_title\>
 
-The \<file_title\> element defines the file title used for the job.
+The <file_title\> element defines the file title used for the job.
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **START** or **RUN**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **START** or **RUN**.
 - **EM field label**: File Title
 - **Valid Values**: The file title may not exceed 96 characters.
 
-#### \<args\>\</args\>
+#### <args\></args\>
 
-The \<args\> element defines the arguments to be used by the job.
+The <args\> element defines the arguments to be used by the job.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: Arguments
 - **Valid Values**: The arguments may not exceed 200 characters.
 
-#### \<mcp_task_attributes\>\</mcp_task_attributes\>
+#### <mcp_task_attributes\></mcp_task_attributes\>
 
-The parent element \<mcp_task_attributes\> contains the child elements
+The parent element <mcp_task_attributes\> contains the child elements
 needed to define one or more task attributes for a job.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
-- **Valid Values**: Any valid \<mcp_task_attributes\> child element.
+- **Requirements**: Optional for MCP <jobdata\>.
+- **Valid Values**: Any valid <mcp_task_attributes\> child element.
 
-#### \<mcp_task_attribute\>\</mcp_task_attribute\>
+#### <mcp_task_attribute\></mcp_task_attribute\>
 
-The \<mcp_task_attribute\> element defines a task attribute to be used
-by the job. Up to 10 \<mcp_task_attribute\> tags can be defined to
+The <mcp_task_attribute\> element defines a task attribute to be used
+by the job. Up to 10 <mcp_task_attribute\> tags can be defined to
 specify multiple task attributes.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: Task Attributes
 - **Valid Values**: A task attribute may not exceed 300 characters.
 
-#### \<mcp_file_attributes\>\</mcp_file_attributes\>
+#### <mcp_file_attributes\></mcp_file_attributes\>
 
-The parent element \<mcp_file_attributes\> contains the child elements
+The parent element <mcp_file_attributes\> contains the child elements
 needed to define one or more file attributes for a job.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
-- **Valid Values**: Any valid \<mcp_file_attributes\> child element.
+- **Requirements**: Optional for MCP <jobdata\>.
+- **Valid Values**: Any valid <mcp_file_attributes\> child element.
 
-#### \<mcp_file_attribute\>\</mcp_file_attribute\>
+#### <mcp_file_attribute\></mcp_file_attribute\>
 
-The \<mcp_file_attribute\> element defines a file attribute to be used
-by the job. Up to 10 \<mcp_file_attribute\> tags can be defined to
+The <mcp_file_attribute\> element defines a file attribute to be used
+by the job. Up to 10 <mcp_file_attribute\> tags can be defined to
 specify multiple file attributes.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: File Attributes
 - **Valid Values**: A file attribute may not exceed 300 characters.
 
-#### \<mcp_eot_notice\>\</mcp_eot_notice\>
+#### <mcp_eot_notice\></mcp_eot_notice\>
 
-The \<mcp_eot_notice\> element defines whether to treat each end-of-task
+The <mcp_eot_notice\> element defines whether to treat each end-of-task
 notification for this job as a display message.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: EOT Notice Message
 - **Valid Values**: Y or N.
 
-#### \<mcp_template_display\>\</mcp_template_display\>
+#### <mcp_template_display\></mcp_template_display\>
 
-The \<mcp_template_display\> element defines the template displays file
+The <mcp_template_display\> element defines the template displays file
 associated with the OpCon job's messages.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: Template Displays File
 - **Valid Values**: Any valid MCP template displays file.
 
-#### \<mcpjobsummary\>\</mcpjobsummary\>
+#### <mcpjobsummary\></mcpjobsummary\>
 
-The parent element \<mcpjobsummary\> contains the child elements needed
+The parent element <mcpjobsummary\> contains the child elements needed
 to describe the job summary detail location for the primary job.
 Individual job summary information is only valid when the value for the
-\<job_init\> element is **START**.
+<job_init\> element is **START**.
 
-- **Requirements**: Optional for \<jobdata\>.
-- **Valid Values**: SMADDI allows only one \<mcpjobsummary\> element
-    per \<jobdata\> element.
+- **Requirements**: Optional for <jobdata\>.
+- **Valid Values**: SMADDI allows only one <mcpjobsummary\> element
+    per <jobdata\> element.
 
-#### \<job_summary_usercode\>\</job_summary_usercode\>
+#### <job_summary_usercode\></job_summary_usercode\>
 
 This element defines the user code under which the Job Summary
 information will exist.
 
-- **Requirements**: Required for MCP \<mcpjobsummary\>.
+- **Requirements**: Required for MCP <mcpjobsummary\>.
 - **EM field label**: Job Summary Usercode
 - **Valid Values**: The Usercode may not exceed 17 characters.
 
-#### \<job_summary_family\>\</job_summary_family\>
+#### <job_summary_family\></job_summary_family\>
 
 This element specifies the Family name to use when looking up the Job
 Summary information for the job when using JORS.
 
-- **Requirements**: Required for MCP \<mcpjobsummary\>.
+- **Requirements**: Required for MCP <mcpjobsummary\>.
 - **EM field label**: Job Summary Family
 - **Valid Values**: The Family name may not exceed 96 characters.
 
-#### \<job_summary_dir_file\>\</job_summary_dir_file\>
+#### <job_summary_dir_file\></job_summary_dir_file\>
 
 Specifies the Directory or Filename to use when looking up the Job
 Summary information for the job when using JORS.
 
-- **Requirements**: Required for MCP \<mcpjobsummary\>.
+- **Requirements**: Required for MCP <mcpjobsummary\>.
 - **EM field label**: Job Summary Directory or Filename
 - **Valid Values**: The Directory or Filename may not exceed 200
     characters.
 
 ### EAE/AB Suite Definitions
 
-#### \<eae_report_name\>\</eae_report \_name\>
+#### <eae_report_name\></eae_report \_name\>
 
 Specifies the name of the EAE/AB Suite report to execute.
 
-- **Requirements**: Required for MCP \<jobdata\> when\<job_init\> is
+- **Requirements**: Required for MCP <jobdata\> when<job_init\> is
     **EAE/AB Suite**.
 - **EM field label**: Report Name
 - **Valid Values**: The Report Name may not exceed 256 characters.
 
-#### \<eae_accept_file\>\</eae_accept_file\>
+#### <eae_accept_file\></eae_accept_file\>
 
 Specifies the filename that the LSAM will create with the arguments in
 the Parameters field for the EAE/AB Suite command.
 
-- **Requirements**: Required for MCP \<jobdata\> when\<job_init\> is
+- **Requirements**: Required for MCP <jobdata\> when<job_init\> is
     **EAE/AB Suite**.
 - **EM field label**: AcceptFile
 - **Valid Values**: The AcceptFile may not exceed 256 characters.
 
-#### \<eae_parameters\>\</eae_parameters\>
+#### <eae_parameters\></eae_parameters\>
 
 Specifies all the parameters to run the EAE/AB Suite report.
 
-- **Requirements**: Required for MCP \<jobdata\> when\<job_init\>
+- **Requirements**: Required for MCP <jobdata\> when<job_init\>
     is**EAE/AB Suite**.
 - **EM field label**: Parameters
 - **Valid Values**: The Parameters may not exceed 256 characters.
 
 ### CHANGE Definitions
 
-#### \<mcp_change_source\>\</mcp_change_source\>
+#### <mcp_change_source\></mcp_change_source\>
 
 Specifies the filename or the directory that will be changed (e.g.,
 \*SMA/COMM or \*SMA/=).
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **CHANGE**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **CHANGE**.
 - **EM field label**: Source File or Directory
 - **Valid Values**: The Source file or Directory may not exceed 256
     characters.
 
-#### \<mcp_change_new\>\</mcp_change_new\>
+#### <mcp_change_new\></mcp_change_new\>
 
 Specifies the new filename or directory name (e.g., \*SMA/NEWCOMM or
 \*SMANEW/=).
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **CHANGE**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **CHANGE**.
 - **EM field label**: New File or Directory
 - **Valid Values**: The New Source File or Directory may not exceed
     256 characters.
 
-#### \<mcp_change_from\>\</mcp_change_from\>
+#### <mcp_change_from\></mcp_change_from\>
 
 Specifies the place where the source file is. It can be a Family Disk
 name or a tape name.
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **CHANGE**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **CHANGE**.
 - **EM field label**: From
 - **Valid Values**: The From value may not exceed 96 characters.
 
 ### COPY Definitions
 
-#### \<mcp_copy_source\>\</mcp_copy_source\>
+#### <mcp_copy_source\></mcp_copy_source\>
 
 Specifies the filename or the directory that will be copied (e.g.,
 \*SMA/COMM or \*SMA/=).
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **COPY**.
 - **EM field label**: Source File or Directory
 - **Valid Values**: The Source file or Directory may not exceed 256
     characters.
 
-#### \<mcp_copy_from\>\</mcp_copy_from\>
+#### <mcp_copy_from\></mcp_copy_from\>
 
 Specifies the place where the source file is. It can be a Family Disk
 name or a tape name.
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **COPY**.
 - **EM field label**: From
 - **Valid Values**: The From value may not exceed 96 characters.
 
-#### \<mcp_copy_from_kind\>\</mcp_copy_from_kind\>
+#### <mcp_copy_from_kind\></mcp_copy_from_kind\>
 
 Specifies the kind of the device for the source file.
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **COPY**.
 - **EM field label**: Kind
 - **Valid Values**: PACK or TAPE
 
-#### \<mcp_copy_destination\>\</mcp_copy_destination\>
+#### <mcp_copy_destination\></mcp_copy_destination\>
 
 Specifies the new filename or directory name for the copied file (e.g.,
 \*SMA/NEWCOMM or \*SMANEW/=).
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **COPY**.
 - **EM field label**: Destination File or Directory
 - **Valid Values**: The Destination Source File or Directory may not
     exceed 256 characters.
 
-#### \<mcp_copy_to\>\</mcp_copy_to\>
+#### <mcp_copy_to\></mcp_copy_to\>
 
 Specifies the place where the destination file will be placed. It can be
 a Family Disk name or a tape name.
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **COPY**.
 - **EM field label**: To
 - **Valid Values**: The To value may not exceed 96 characters.
 
-#### \<mcp_copy_to_kind\>\</mcp_copy_to_kind\>
+#### <mcp_copy_to_kind\></mcp_copy_to_kind\>
 
 Specifies the kind of the device for the destination file.
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **COPY**.
 - **EM field label**: Kind
 - **Valid Values**: PACK or TAPE
 
-#### \<mcp_copy_hostname\>\</mcp_copy_hostname\>
+#### <mcp_copy_hostname\></mcp_copy_hostname\>
 
 Specifies the Unisys MCP hostname to where the file will be copied. If
 blank, the application assumes that this is not a BNA Transfer copy.
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **COPY**.
 - **EM field label**: Hostname (if BNA Transfer)
 - **Valid Values**: The Hostname may not exceed 256 characters.
 
-#### \<mcp_copy_compare\>\</mcp_copy_compare\>
+#### <mcp_copy_compare\></mcp_copy_compare\>
 
 Specifies if the "COPY & COMPARE" feature is to be used to copy the
 file.
 
-- **Requirements**: Optional for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **COPY**.
+- **Requirements**: Optional for MCP <jobdata\> when the value for
+    the <job_init\> element is **COPY**.
 - **EM field label**: Copy & Compare
 - **Valid Values**: Y or N
 
 ### REMOVE Definitions
 
-#### \<mcp_remove_source\>\</mcp_remove_source\>
+#### <mcp_remove_source\></mcp_remove_source\>
 
 Specifies the filename or the directory that will be removed (e.g.,
 \*SMA/COMM or \*SMA/=).
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **REMOVE**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **REMOVE**.
 - **EM field label**: Source File or Directory
 - **Valid Values**: The Source File or Directory may not exceed 256
     characters.
 
-#### \<mcp_remove_from\>\</mcp_remove_from\>
+#### <mcp_remove_from\></mcp_remove_from\>
 
 Specifies the place where the source file is. It can be a Family Disk
 name or a tape name.
 
-- **Requirements**: Required for MCP \<jobdata\> when the value for
-    the \<job_init\> element is **REMOVE**.
+- **Requirements**: Required for MCP <jobdata\> when the value for
+    the <job_init\> element is **REMOVE**.
 - **EM field label**: From
 - **Valid Values**: The From value may not exceed 96 characters.
 
 ### Prerun Information Element Definitions
 
-#### \<mcpprerun\>\</mcpprerun\>
+#### <mcpprerun\></mcpprerun\>
 
-The parent element \<mcpprerun\> contains the child elements needed to
+The parent element <mcpprerun\> contains the child elements needed to
 describe a prerun job for the primary job.
 
-- **Requirements**: Optional for MCP Prerun \<jobdata\>.
-- **Valid Values**: SMADDI allows only one \<mcpprerun\> element per
-    \<jobdata\> element.
+- **Requirements**: Optional for MCP Prerun <jobdata\>.
+- **Valid Values**: SMADDI allows only one <mcpprerun\> element per
+    <jobdata\> element.
 
-#### \<pre_job_int\>\</pre_job_int\>
+#### <pre_job_int\></pre_job_int\>
 
-The \<pre_job_int\> element defines the job initiation command to be
+The <pre_job_int\> element defines the job initiation command to be
 used when launching the prerun job.
 
-- **Requirements**: Required for \<mcpprerun\>.
+- **Requirements**: Required for <mcpprerun\>.
 - **Valid Values**: Valid values for this element are START and RUN.
 
 ### Prerun START and RUN Definitions
 
-#### \<pre_file_title\>\</pre_file_title\>
+#### <pre_file_title\></pre_file_title\>
 
-The \<pre_file_title\> element defines the file title used for the
+The <pre_file_title\> element defines the file title used for the
 prerun job.
 
-- **Requirements**: Required for \<mcpprerun\>.
+- **Requirements**: Required for <mcpprerun\>.
 - **EM field label**: File Title
 - **Valid Values**: The file title must not exceed 96 characters.
 
-#### \<pre_args\>\</pre_args\>
+#### <pre_args\></pre_args\>
 
-The \<pre_job_int\> element defines the job initiation command to be
+The <pre_job_int\> element defines the job initiation command to be
 used when launching the prerun job.
 
-- **Requirements**: Required for \<mcpprerun\>.
+- **Requirements**: Required for <mcpprerun\>.
 - **EM field label**: Arguments
 - **Valid Values**: The file title must not exceed 92 characters.
 
-#### \<mcp_pre_task_attributes\>\</mcp_pre_task_attributes\>
+#### <mcp_pre_task_attributes\></mcp_pre_task_attributes\>
 
-The parent element \<mcp_pre_task_attributes\> contains the child
+The parent element <mcp_pre_task_attributes\> contains the child
 elements needed to define one or more task attributes for a prerun job.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
-- **Valid Values**: Any valid \<mcp_pre_task_attributes\> child
+- **Requirements**: Optional for MCP <jobdata\>.
+- **Valid Values**: Any valid <mcp_pre_task_attributes\> child
     element.
 
-#### \<mcp_pre_task_attribute\>\</mcp_pre_task_attribute\>
+#### <mcp_pre_task_attribute\></mcp_pre_task_attribute\>
 
-The \<mcp_pre_task_attribute\> element defines a task attribute to be
-used by the job. Up to 10 \<mcp_pre_task_attribute\> tags can be defined
+The <mcp_pre_task_attribute\> element defines a task attribute to be
+used by the job. Up to 10 <mcp_pre_task_attribute\> tags can be defined
 to specify multiple task attributes.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: Task Attributes
 - **Valid Values**: A task attribute may not exceed 300 characters.
 
-#### \<mcp_pre_file_attributes\>\</mcp_pre_file_attributes\>
+#### <mcp_pre_file_attributes\></mcp_pre_file_attributes\>
 
-The parent element \<mcp_pre_file_attributes\> contains the child
+The parent element <mcp_pre_file_attributes\> contains the child
 elements needed to define one or more file attributes for a prerun job.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
-- **Valid Values**: Any valid \<mcp_pre_file_attributes\> child
+- **Requirements**: Optional for MCP <jobdata\>.
+- **Valid Values**: Any valid <mcp_pre_file_attributes\> child
     element.
 
-#### \<mcp_pre_file_attribute\>\</mcp_pre_file_attribute\>
+#### <mcp_pre_file_attribute\></mcp_pre_file_attribute\>
 
-The \<mcp_pre_file_attribute\> element defines a file attribute to be
-used by the prerun job. Up to 10 \<mcp_pre_file_attribute\> tags can be
+The <mcp_pre_file_attribute\> element defines a file attribute to be
+used by the prerun job. Up to 10 <mcp_pre_file_attribute\> tags can be
 defined to specify multiple file attributes.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: File Attributes
 - **Valid Values**: A file attribute may not exceed 300 characters.
 
-#### \<mcp_pre_eot_notice\>\</mcp_pre_eot_notice\>
+#### <mcp_pre_eot_notice\></mcp_pre_eot_notice\>
 
-The \<mcp_pre_eot_notice\> element defines whether to treat each
+The <mcp_pre_eot_notice\> element defines whether to treat each
 end-of-task notification for this prerun job as a display message.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: EOT Notice Message
 - **Valid Values**: Y or N.
 
-#### \<mcp_pre_template_display\>\</mcp_pre_template_display\>
+#### <mcp_pre_template_display\></mcp_pre_template_display\>
 
-The \<mcp_pre_template_display\> element defines the template displays
+The <mcp_pre_template_display\> element defines the template displays
 file associated with the OpCon job's messages.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: Template Displays File
 - **Valid Values**: Any valid MCP template displays file.
 
-#### \<mcppre_jobsummary\>\</mcppre_jobsummary\>
+#### <mcppre_jobsummary\></mcppre_jobsummary\>
 
-The parent element \<mcppre_jobsummary\> contains the child elements
+The parent element <mcppre_jobsummary\> contains the child elements
 needed to describe the job summary detail location for the prerun job.
 Individual job summary information is only valid when the value for the
-\<pre_job_init\> element is **START**.
+<pre_job_init\> element is **START**.
 
-- **Requirements**: Optional for \<jobdata\>.
-- **Valid Values**: SMADDI allows only one \<mcppre_jobsummary\>
-    element per \<mcpprerun\> element.
+- **Requirements**: Optional for <jobdata\>.
+- **Valid Values**: SMADDI allows only one <mcppre_jobsummary\>
+    element per <mcpprerun\> element.
 
-#### \<mcp_pre_job_summary_usercode\>\</mcp_pre_job_summary_usercode\>
+#### <mcp_pre_job_summary_usercode\></mcp_pre_job_summary_usercode\>
 
 This element defines the user code under which the Job Summary
 information will exist for the prerun.
 
-- **Requirements**: Required if the \<mcp_pre_job_summary_family\>
-    and/or \<mcp_pre_job_summary_dir_file\> elements exist.
+- **Requirements**: Required if the <mcp_pre_job_summary_family\>
+    and/or <mcp_pre_job_summary_dir_file\> elements exist.
 - **EM field label**: Job Summary Usercode
 - **Valid Values**: The Usercode may not exceed 17 characters.
 
-#### \<mcp_pre_job_summary_family\>\</mcp_pre_job_summary_family\>
+#### <mcp_pre_job_summary_family\></mcp_pre_job_summary_family\>
 
 This element specifies the Family name to use when looking up the Job
 Summary information for the prerun when using JORS.
 
-- **Requirements**: Required if the \<mcp_pre_job_summary_usercode\>
-    and/or \<mcp_pre_job_summary_dir_file\> elements exist.
+- **Requirements**: Required if the <mcp_pre_job_summary_usercode\>
+    and/or <mcp_pre_job_summary_dir_file\> elements exist.
 - **EM field label**: Job Summary Family
 - **Valid Values**: The Family name may not exceed 96 characters.
 
-#### \<mcp_pre_job_summary_dir_file\>\</mcp_pre_job_summary_dir_file\>
+#### <mcp_pre_job_summary_dir_file\></mcp_pre_job_summary_dir_file\>
 
 Specifies the Directory or Filename to use when looking up the Job
 Summary information for the prerun when using JORS.
 
-- **Requirements**: Required if the \<mcp_pre_job_summary_usercode\>
-    and/or \<mcp_pre_job_summary_family\> elements exist.
+- **Requirements**: Required if the <mcp_pre_job_summary_usercode\>
+    and/or <mcp_pre_job_summary_family\> elements exist.
 - **EM field label**: Job Summary Directory or Filename
 - **Valid Values**: The Directory or Filename may not exceed 200
     characters.
 
 ### Prerun EAE/AB Suite Definitions
 
-#### \<pre_eae_report_name\>\</pre_eae_report \_name\>
+#### <pre_eae_report_name\></pre_eae_report \_name\>
 
 Specifies the name of the EAE/AB Suite report to execute.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when
-    \<pre_job_init\> is EAE/AB Suite.
+- **Requirements**: Required for MCP <mcpprerun\> when
+    <pre_job_init\> is EAE/AB Suite.
 - **EM field label**: Report Name
 - **Valid Values**: The Report Name may not exceed 256 characters.
 
-#### \<pre_eae_accept_file\>\</pre_eae_accept_file\>
+#### <pre_eae_accept_file\></pre_eae_accept_file\>
 
 Specifies the filename that the LSAM will create with the arguments in
-the \<pre_eae_parameters\> element.
+the <pre_eae_parameters\> element.
 
-- **Requirements**: Required for MCP \<mcpperun\> when
-    \<pre_job_init\> is EAE/AB Suite.
+- **Requirements**: Required for MCP <mcpperun\> when
+    <pre_job_init\> is EAE/AB Suite.
 - **EM field label**: AcceptFile
 - **Valid Values**: The AcceptFile may not exceed 256 characters.
 
-#### \<pre_eae_parameters\>\</pre_eae_parameters\>
+#### <pre_eae_parameters\></pre_eae_parameters\>
 
 Specifies all the parameters to run the EAE/AB Suite report.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when
-    \<pre_job_init\> is EAE/AB Suite.
+- **Requirements**: Required for MCP <mcpprerun\> when
+    <pre_job_init\> is EAE/AB Suite.
 - **EM field label**: Parameters
 - **Valid Values**: The Parameters may not exceed 256 characters.
 
 ### Prerun CHANGE Definitions
 
-#### \<mcp_pre_change_source\>\</mcp_pre_change_source\>
+#### <mcp_pre_change_source\></mcp_pre_change_source\>
 
 Specifies the filename or the directory that will be changed (e.g.,
 \*SMA/COMM or \*SMA/=).
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **CHANGE**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **CHANGE**.
 - **EM field label**: Source File or Directory
 - **Valid Values**: The Source file or Directory may not exceed 256
     characters.
 
-#### \<mcp_pre_change_new\>\</mcp_pre_change_new\>
+#### <mcp_pre_change_new\></mcp_pre_change_new\>
 
 Specifies the new filename or directory name (e.g., \*SMA/NEWCOMM or
 \*SMANEW/=).
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **CHANGE**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **CHANGE**.
 - **EM field label**: New File or Directory
 - **Valid Values**: The New File or Directory may not exceed 256
     characters.
 
-#### \<mcp_pre_change_from\>\</mcp_pre_change_from\>
+#### <mcp_pre_change_from\></mcp_pre_change_from\>
 
 Specifies the place where the source file is. It can be a Family Disk
 name or a tape name.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **CHANGE**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **CHANGE**.
 - **EM field label**: From
 - **Valid Values**: The From value may not exceed 96 characters.
 
 ### Prerun COPY Definitions
 
-#### \<mcp_pre_copy_source\>\</mcp_pre_copy_source\>
+#### <mcp_pre_copy_source\></mcp_pre_copy_source\>
 
 Specifies the filename or the directory that will be copied (e.g.,
 \*SMA/COMM or \*SMA/=).
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **COPY**.
 - **EM field label**: Source File or Directory
 - **Valid Values**: The Source file or Directory may not exceed 256
     characters.
 
-#### \<mcp_pre_copy_from\>\</mcp_pre_copy_from\>
+#### <mcp_pre_copy_from\></mcp_pre_copy_from\>
 
 Specifies the place where the source file is. It can be a Family Disk
 name or a tape name.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **COPY**.
 - **EM field label**: From
 - **Valid Values**: The From value may not exceed 96 characters.
 
-#### \<mcp_pre_copy_from_kind\>\</mcp_pre_copy_from_kind\>
+#### <mcp_pre_copy_from_kind\></mcp_pre_copy_from_kind\>
 
 Specifies the kind of the device for the source file.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **COPY**.
 - **EM field label**: Kind
 - **Valid Values**: PACK or TAPE
 
-#### \<mcp_pre_copy_destination\>\</mcp_pre_copy_destination\>
+#### <mcp_pre_copy_destination\></mcp_pre_copy_destination\>
 
 Specifies the new filename or directory name for the copied file (e.g.,
 \*SMA/NEWCOMM or \*SMANEW/=).
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **COPY**.
 - **EM field label**: Destination File or Directory
 - **Valid Values**: The Destination Source File or Directory may not
     exceed 256 characters.
 
-#### \<mcp_pre_copy_to\>\</mcp_pre_copy_to\>
+#### <mcp_pre_copy_to\></mcp_pre_copy_to\>
 
 Specifies the place where the destination file will be placed. It can be
 a Family Disk name or a tape name.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **COPY**.
 - **EM field label**: To
 - **Valid Values**: The To value may not exceed 96 characters.
 
-#### \<mcp_pre_copy_to_kind\>\</mcp_pre_copy_to_kind\>
+#### <mcp_pre_copy_to_kind\></mcp_pre_copy_to_kind\>
 
 Specifies the kind of the device for the destination file.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **COPY**.
 - **EM field label**: Kind
 - **Valid Values**: PACK or TAPE
 
-#### \<mcp_pre_copy_hostname\>\</mcp_pre_copy_hostname\>
+#### <mcp_pre_copy_hostname\></mcp_pre_copy_hostname\>
 
 Specifies the Unisys MCP hostname to where the file will be copied. If
 blank, the application assumes that this is not a BNA Transfer copy.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **COPY**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **COPY**.
 - **EM field label**: Hostname (if BNA Transfer)
 - **Valid Values**: The Hostname may not exceed 256 characters.
 
-#### \<mcp_pre_copy_compare\>\</mcp_pre_copy_compare\>
+#### <mcp_pre_copy_compare\></mcp_pre_copy_compare\>
 
 Specifies if the "COPY & COMPARE" feature is to be used to copy the
 file.
 
-- **Requirements**: Optional for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **COPY**.
+- **Requirements**: Optional for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **COPY**.
 - **EM field label**: Copy & Compare
 - **Valid Values**: Y or N
 
 ### Prerun REMOVE Definitions
 
-#### \<mcp_pre_remove_source\>\</mcp_pre_remove_source\>
+#### <mcp_pre_remove_source\></mcp_pre_remove_source\>
 
 Specifies the filename or the directory that will be removed (e.g.,
 \*SMA/COMM or \*SMA/=).
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **REMOVE**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **REMOVE**.
 - **EM field label**: Source File or Directory
 - **Valid Values**: The Source file or Directory may not exceed 256
     characters.
 
-#### \<mcp_pre_remove_from\>\</mcp_pre_remove_from\>
+#### <mcp_pre_remove_from\></mcp_pre_remove_from\>
 
 Specifies the place where the source file is. It can be a Family Disk
 name or a tape name.
 
-- **Requirements**: Required for MCP \<mcpprerun\> when the value for
-    the \<pre_job_init\> element is **CHANGE**.
+- **Requirements**: Required for MCP <mcpprerun\> when the value for
+    the <pre_job_init\> element is **CHANGE**.
 - **EM field label**: From
 - **Valid Values**: The From value may not exceed 96 characters.
 
 ### Failure Criteria Definitions
 
-#### \<fail_code\>\</fail_code\>
+#### <fail_code\></fail_code\>
 
-The \<fail_code\> element defines the fail code for the job and up to 3
+The <fail_code\> element defines the fail code for the job and up to 3
 occurrences of this element can be defined per job definition.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: Fail Codes
 - **Valid Values**: The fail code may not exceed 40 characters.
 
-#### \<fail_reset\>\</fail_reset\>
+#### <fail_reset\></fail_reset\>
 
-The \<fail_reset\> element defines the fail reset for the job and up to
+The <fail_reset\> element defines the fail reset for the job and up to
 2 occurrences of this element can be defined per job definition.
 
-- **Requirements**: Optional for MCP \<jobdata\>.
+- **Requirements**: Optional for MCP <jobdata\>.
 - **EM field label**: Fail Reset
 - **Valid Values**: The fail code may not exceed 40 characters.
 
@@ -2278,152 +2278,152 @@ possible element for OS 2200 Primary Job Elements. For detailed
 information on each field for this job type, refer to [OS 2200 Job Details](../../job-types/os-2200.md) in
 the **Concepts** online help .
 
-\<msg\>
+<msg\>
 
-    \<msgtype\>\</msgtype\>
+    <msgtype\></msgtype\>
 
-    \<schedule\>
+    <schedule\>
 
-       \<job\>
+       <job\>
 
-          \<jobdata\>
+          <jobdata\>
 
 **\-\-\-\-\--**[Job Information Element Definitions](#Job6)**\-\-\-\-\--**
 
-             \<qlfr\>\</qlfr\>
+             <qlfr\></qlfr\>
 
-             \<flname\>\</flname\>
+             <flname\></flname\>
 
-             \<eltname\>\</eltname\>
+             <eltname\></eltname\>
 
-             \<jprty\>\</jprty\>
+             <jprty\></jprty\>
 
-             \<runopt\>\</runopt\>
+             <runopt\></runopt\>
 
-             \<cword\>\</cword\>
+             <cword\></cword\>
 
-             \<runid\>\</runid\>
+             <runid\></runid\>
 
-             \<acct\>\</acct\>
+             <acct\></acct\>
 
-             \<proj\>\</proj\>
+             <proj\></proj\>
 
-             \<userid\>\</userid\>
+             <userid\></userid\>
 
-             \<maxpg\>\</maxpg\>
+             <maxpg\></maxpg\>
 
-             \<maxcrd\>\</maxcrd\>
+             <maxcrd\></maxcrd\>
 
-             \<defstat\>\</defstat\>
+             <defstat\></defstat\>
 
 **\-\-\-\-\--**[Completion Status Element Definitions](#Completi)**\-\-\-\-\--**
 
-             \<cstat\>
+             <cstat\>
 
-                \<opr\>\</opr\>
+                <opr\></opr\>
 
-                \<wdpt\>\</wdpt\>
+                <wdpt\></wdpt\>
 
-                \<cond\>\</cond\>
+                <cond\></cond\>
 
-                \<cwvalue\>\</cwvalue\>
+                <cwvalue\></cwvalue\>
 
-                \<evalue\>\</evalue\>
+                <evalue\></evalue\>
 
-                \<cstatus\>\</cstatus\>
+                <cstatus\></cstatus\>
 
-             \</cstat\>
+             </cstat\>
 
 **\-\-\-\-\--**[Prerun Job Element Definitions](#Prerun8)**\-\-\-\-\--**
 
-             \<uprerun\>
+             <uprerun\>
 
-                \<prqlfr\>\</prqlfr\>
+                <prqlfr\></prqlfr\>
 
-                \<prflname\>\</prflname\>
+                <prflname\></prflname\>
 
-                \<preltname\>\</preltname\>
+                <preltname\></preltname\>
 
-                \<prjprty\>\</prjprty\>
+                <prjprty\></prjprty\>
 
-                \<prrunopt\>\</prrunopt\>
+                <prrunopt\></prrunopt\>
 
-                \<prcword\>\</prcword\>
+                <prcword\></prcword\>
 
-                \<prrunid\>\</prrunid\>
+                <prrunid\></prrunid\>
 
-                \<pracct\>\</pracct\>
+                <pracct\></pracct\>
 
-                \<prproj\>\</prproj\>
+                <prproj\></prproj\>
 
-                \<pruserid\>\</pruserid\>
+                <pruserid\></pruserid\>
 
-                \<prmaxpg\>\</prmaxpg\>
+                <prmaxpg\></prmaxpg\>
 
-                \<prmaxcrd\>\</prmaxcrd\>
+                <prmaxcrd\></prmaxcrd\>
 
-                \<prdefstat\>\</prdefstat\>
+                <prdefstat\></prdefstat\>
 
-                \<prcstat\>
+                <prcstat\>
 
-                   \<propr\>\</propr\>
+                   <propr\></propr\>
 
-                   \<prwdpt\>\</prwdpt\>
+                   <prwdpt\></prwdpt\>
 
-                   \<prcond\>\</prcond\>
+                   <prcond\></prcond\>
 
-                   \<prcwvalue\>\</prcwvalue\>
+                   <prcwvalue\></prcwvalue\>
 
-                   \<prevalue\>\</prevalue\>
+                   <prevalue\></prevalue\>
 
-                   \<prcstatus\>\</prcstatus\>
+                   <prcstatus\></prcstatus\>
 
-                \</prcstat\>
+                </prcstat\>
 
 :::note
-The \<fileinfo\> and \<uprerun\> elements are mutually exclusive.
+The <fileinfo\> and <uprerun\> elements are mutually exclusive.
 :::
 
-             \</uprerun\>
+             </uprerun\>
 
 **\-\-\-\-\--**[File Dependency Element Definitions](#File3)**\-\-\-\-\--**
 
-             \<fileinfo\>
+             <fileinfo\>
 
-                \<fdqlfr\>\</fdqlfr\>
+                <fdqlfr\></fdqlfr\>
 
-                \<fdfname\>\</fdfname\>
+                <fdfname\></fdfname\>
 
-                \<deptype\>\</deptype\>
+                <deptype\></deptype\>
 
-                \<fsize\>\</fsize\>
+                <fsize\></fsize\>
 
-             \</fileinfo\>
+             </fileinfo\>
 
-             \<tknsub\>
+             <tknsub\>
 
-                \<lsamtkn\>\</lsamtkn\>
+                <lsamtkn\></lsamtkn\>
 
-                \<opcontkn\>\</opcontkn\>
+                <opcontkn\></opcontkn\>
 
-             \</tknsub\>
+             </tknsub\>
 
-          \</jobdata\>
+          </jobdata\>
 
-       \</job\>
+       </job\>
 
-    \</schedule\>
+    </schedule\>
 
-\</msg\>
+</msg\>
 
 ### Job Information Element Definitions
 
-#### \<qlfr\>\</qlfr\>
+#### <qlfr\></qlfr\>
 
-The \<qlfr\> element defines the Qualifier for the file containing the
+The <qlfr\> element defines the Qualifier for the file containing the
 job's ECL.
 
-- **Requirements**: Required for OS2200 \<jobdata\>.
+- **Requirements**: Required for OS2200 <jobdata\>.
 - **EM field label**: Qualifier
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the dollar sign ($), the pound sign (\#),
@@ -2433,11 +2433,11 @@ job's ECL.
 If including a pound sign (\#) with the qualifier, it must be the first character.
 :::
 
-#### \<flname\>\</flname\>
+#### <flname\></flname\>
 
-The \<flname\> element defines the File Name containing the job's ECL.
+The <flname\> element defines the File Name containing the job's ECL.
 
-- **Requirements**: Required for OS2200 \<jobdata\>.
+- **Requirements**: Required for OS2200 <jobdata\>.
 - **EM field label**: File Name
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the dollar sign ($), dash (--), and
@@ -2446,15 +2446,15 @@ The \<flname\> element defines the File Name containing the job's ECL.
     and write keys must not exceed 12 characters.
 
 :::tip Example
-\<flname\>ECL$FILE/RKEY/WKEY\</flname\>
+<flname\>ECL$FILE/RKEY/WKEY</flname\>
 :::
 
-#### \<eltname\>\</eltname\>
+#### <eltname\></eltname\>
 
-The \<eltname\> element defines the element and version name for the
+The <eltname\> element defines the element and version name for the
 file element containing the job's ECL.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Element Name
 - **Valid Values**: Valid data characters are for this element are
     alphanumeric characters, the dollar sign ($), and the dash (--).
@@ -2462,23 +2462,23 @@ file element containing the job's ECL.
     element and version must be separated by a forward slash (/).
 
 :::tip Example
-\<eltname\>RUN/GENERICP\</eltname\>
+<eltname\>RUN/GENERICP</eltname\>
 :::
 
-#### \<jprty\>\</jprty\>
+#### <jprty\></jprty\>
 
-The \<jprty\> element defines the Priority used on the job's run card.
+The <jprty\> element defines the Priority used on the job's run card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Priority
 - **Valid Values**: Valid data for this element is an alphabetical
     character.
 
-#### \<runopt\>\</runopt\>
+#### <runopt\></runopt\>
 
-The \<runopt\> element defines the options used on the job's run card.
+The <runopt\> element defines the options used on the job's run card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Options
 - **Valid Values**: Valid data for this element are alphabetical
     characters B, D, N, O, P, R, S, T, W, X, Y recognized by OS 2200 as
@@ -2486,176 +2486,176 @@ The \<runopt\> element defines the options used on the job's run card.
     not exceed 12 characters. If omitted, SMADDI does not define the
     Options.
 
-#### \<cword\>\</cword\>
+#### <cword\></cword\>
 
-The \<cword\> element defines the Condition Word value used on the
+The <cword\> element defines the Condition Word value used on the
 job's run card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Condition Word (Octal)
 - **Valid Values**: Valid data for this element is a four-digit
     positive octal number.
 
-#### \<runid\>\</runid\>
+#### <runid\></runid\>
 
-The \<runid\> element defines the Run ID used on the job's run card.
+The <runid\> element defines the Run ID used on the job's run card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Run ID
 - **Valid Values**: Valid data for this element are alphanumeric
     characters. The Run ID must not exceed six characters.
 
-#### \<acct\>\</acct\>
+#### <acct\></acct\>
 
-The \<acct\> element defines the Account used on the job's run card.
+The <acct\> element defines the Account used on the job's run card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Account
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the period (.), and the dash (--). The
     Account must not exceed 12 characters.
 
-#### \<proj\>\</proj\>
+#### <proj\></proj\>
 
-The \<proj\> element defines the Project ID used on the job's run card.
+The <proj\> element defines the Project ID used on the job's run card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Project
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the dollar sign ($), and the dash (--).
     The Project ID must not exceed 12 characters.
 
-#### \<userid\>\</userid\>
+#### <userid\></userid\>
 
-The \<userid\> element defines the User ID used on the job's run card.
+The <userid\> element defines the User ID used on the job's run card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: User ID
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the period (.), and the dash (--). The User
     ID must not exceed 12 characters.
 
-#### \<maxpg\>\</maxpg\>
+#### <maxpg\></maxpg\>
 
-The \<maxpg\> element defines the Max Pages value used on the job's run
+The <maxpg\> element defines the Max Pages value used on the job's run
 card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Max Pages
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 9999.
 
-#### \<maxcrd\>\</maxcrd\>
+#### <maxcrd\></maxcrd\>
 
-The \<maxcrd\> element defines the Max Cards value used on the job's
+The <maxcrd\> element defines the Max Cards value used on the job's
 run card.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Max Cards
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 9999.
 
 ### Completion Status Element Definitions
 
-#### \<defstat\>\</defstat\>
+#### <defstat\></defstat\>
 
-The \<defstat\> element defines the job's default Completion Status.
+The <defstat\> element defines the job's default Completion Status.
 
-- **Requirements**: Optional for OS2200 \<jobdata\>.
+- **Requirements**: Optional for OS2200 <jobdata\>.
 - **EM field label**: Anything Else
 - **Valid Values**: Valid data options for this element are GOOD FIN
     or BAD FIN.
 
-#### \<cstat\>\</cstat\>
+#### <cstat\></cstat\>
 
-The parent element \<cstat\> contains the child elements needed to
+The parent element <cstat\> contains the child elements needed to
 describe a Completion Status for the job.
 
-- **Requirements**: Required for OS2200 \<jobdata\>.
+- **Requirements**: Required for OS2200 <jobdata\>.
 - **Valid Values**: Any valid child elements. SMADDI limits the number
-    of \<cstat\> elements for each \<jobdata\> element to four.
+    of <cstat\> elements for each <jobdata\> element to four.
 
-#### \<opr\>\</opr\>
+#### <opr\></opr\>
 
-The \<opr\> element defines the logical operator used to compare a
+The <opr\> element defines the logical operator used to compare a
 job's Completion Statuses.
 
-- **Requirements**: Optional for OS2200 \<cstat\>.
+- **Requirements**: Optional for OS2200 <cstat\>.
 - **EM field label**: And/Or
 - **Valid Values**: Valid data options for this element are AND and
     OR.
 
-#### \<wdpt\>\</wdpt\>
+#### <wdpt\></wdpt\>
 
-The \<wdpt\> element defines the part of the condition word to be tested
+The <wdpt\> element defines the part of the condition word to be tested
 for a specified value to determine completion status.
 
-- **Requirements**: Optional for OS2200 \<cstat\>.
+- **Requirements**: Optional for OS2200 <cstat\>.
 - **EM field label**: Word Part
 - **Valid Values**: Valid data options for this element are S1, S2,
     S3, S4, S5, S6, T1, T2, and T3.
 
-#### \<cond\>\</cond\>
+#### <cond\></cond\>
 
-The \<cond\> element defines the operator for testing the value of the
-\<wdpt\>.
+The <cond\> element defines the operator for testing the value of the
+<wdpt\>.
 
-- **Requirements**: Optional for OS2200 \<cstat\>.
+- **Requirements**: Optional for OS2200 <cstat\>.
 - **EM field label**: Condition
 - **Valid Values**: Valid data options for this element are EQ, NE,
     LT, GT, GE, LE, L AND, and Range.
 
-#### \<cwvalue\>\</cwvalue\>
+#### <cwvalue\></cwvalue\>
 
-The \<cwvalue\> element defines the value to compare with the value of
-the \<wdpt\>.
+The <cwvalue\> element defines the value to compare with the value of
+the <wdpt\>.
 
-- **Requirements**: Optional for OS2200 \<cstat\>.
+- **Requirements**: Optional for OS2200 <cstat\>.
 - **EM field label**: Value
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 9999.
 
-#### \<evalue\>\</evalue\>
+#### <evalue\></evalue\>
 
-The \<evalue\> element defines the End Value to compare with the value
-of the \<wdpt\> when the \<cond\> is Range.
+The <evalue\> element defines the End Value to compare with the value
+of the <wdpt\> when the <cond\> is Range.
 
-- **Requirements**: Optional for OS2200 \<cstat\>.
+- **Requirements**: Optional for OS2200 <cstat\>.
 - **EM field label**: End Value
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 9999.
 
-#### \<cstatus\>\</cstatus\>
+#### <cstatus\></cstatus\>
 
-The \<cstatus\> element defines the job's Completion Status when the
+The <cstatus\> element defines the job's Completion Status when the
 specified conditions are met.
 
-- **Requirements**: Optional for OS2200 \<cstat\>.
+- **Requirements**: Optional for OS2200 <cstat\>.
 - **EM field label**: Fin Status
 - **Valid Values**: Valid data options for this element are GOOD FIN
     and BAD FIN.
 
 ### Prerun Job Element Definitions
 
-#### \<uprerun\>\</uprerun\>
+#### <uprerun\></uprerun\>
 
-The parent element \<uprerun\> contains the child elements needed to
+The parent element <uprerun\> contains the child elements needed to
 describe a prerun job for the primary job.
 
-- **Requirements**: Optional for OS2200 Prerun \<jobdata\>.
+- **Requirements**: Optional for OS2200 Prerun <jobdata\>.
 - **Valid Values**: Any valid child element. SMADDI allows only one
-    \<uprerun\> element per \<jobdata\> element.
+    <uprerun\> element per <jobdata\> element.
 
 :::note
-The \<uprerun\> and \<fileinfo\> elements are mutually exclusive.
+The <uprerun\> and <fileinfo\> elements are mutually exclusive.
 :::
 
-#### \<prqlfr\>\</prqlfr\>
+#### <prqlfr\></prqlfr\>
 
-The \<prqlfr\> element defines the Qualifier for the file containing the
+The <prqlfr\> element defines the Qualifier for the file containing the
 prerun job's ECL.
 
-- **Requirements**: Required for OS2200 Prerun \<uprerun\>
+- **Requirements**: Required for OS2200 Prerun <uprerun\>
 - **EM field label**: Qualifier
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the dollar sign ($), the pound sign (\#),
@@ -2665,12 +2665,12 @@ prerun job's ECL.
 If including a pound sign (\#) with the qualifier, it must be the first character.
 :::
 
-#### \<prflname\>\</prflname\>
+#### <prflname\></prflname\>
 
-The value for \<skdwkdays\> specifies the number of workdays per week
+The value for <skdwkdays\> specifies the number of workdays per week
 for the schedule.
 
-- **Requirements**: Required for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Required for OS2200 Prerun <uprerun\>.
 - **EM field label**: File Name
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the dollar sign ($), dash (--), and
@@ -2679,15 +2679,15 @@ for the schedule.
     and write keys must not exceed 12 characters.
 
 :::tip Example
-\<flname\>ECL$FILE/RKEY/WKEY\</flname\>
+<flname\>ECL$FILE/RKEY/WKEY</flname\>
 :::
 
-#### \<preltname\>\</preltname\>
+#### <preltname\></preltname\>
 
-The \<preltname\> element defines the element and version name for the
+The <preltname\> element defines the element and version name for the
 file element containing the prerun job's ECL.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Element Name
 - **Valid Values**: Valid data characters are for this element are
     alphanumeric characters, the dollar sign ($), and the dash (--).
@@ -2695,199 +2695,199 @@ file element containing the prerun job's ECL.
     element and version must be separated by a forward slash (/).
 
 :::tip Example
-\<eltname\>RUN/GENERICP\</eltname\>
+<eltname\>RUN/GENERICP</eltname\>
 :::
 
-#### \<prjprty\>\</prjprty\>
+#### <prjprty\></prjprty\>
 
-The \<prjprty\> element defines the Priority used on the prerun job's
+The <prjprty\> element defines the Priority used on the prerun job's
 run card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Priority
 - **Valid Values**: Valid data for this element is an alphabetical
     character.
 
-#### \<prrunopt\>\</prrunopt\>
+#### <prrunopt\></prrunopt\>
 
-The \<prrunopt\> element defines the Options used on the prerun job's
+The <prrunopt\> element defines the Options used on the prerun job's
 run card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Options
 - **Valid Values**: Valid data for this element are alphabetical
     characters recognized by OS 2200 as Options for the \@RUN and
     \@START ECL statements. The Options must not exceed 12 characters.
 
-#### \<prcword\>\</prcword\>
+#### <prcword\></prcword\>
 
-The \<prcword\> element defines the Condition Word value used on the
+The <prcword\> element defines the Condition Word value used on the
 prerun job's run card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Condition Word (Octal)
 - **Valid Values**: Valid data for this element is a four-digit
     positive octal number.
 
-#### \<prrunid\>\</prrunid\>
+#### <prrunid\></prrunid\>
 
-The \<prrunid\> element defines the Run ID used on the prerun job's run
+The <prrunid\> element defines the Run ID used on the prerun job's run
 card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Run ID
 - **Valid Values**: Valid data for this element are alphanumeric
     characters. The Run ID must not exceed six characters.
 
-#### \<pracct\>\</pracct\>
+#### <pracct\></pracct\>
 
-The \<pracct\> element defines the Account used on the prerun job's run
+The <pracct\> element defines the Account used on the prerun job's run
 card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Account
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the period (.), and the dash (--). The
     Account must not exceed 12 characters.
 
-#### \<prproj\>\</prproj\>
+#### <prproj\></prproj\>
 
-The \<prproj\> element defines the Project ID used on the prerun job's
+The <prproj\> element defines the Project ID used on the prerun job's
 run card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Project
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the dollar sign ($), and the dash (--).
     The Project ID must not exceed 12 characters.
 
-#### \<pruserid\>\</pruserid\>
+#### <pruserid\></pruserid\>
 
-The \<pruserid\> element defines the User ID used on the prerun job's
+The <pruserid\> element defines the User ID used on the prerun job's
 run card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: User ID
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the period (.), and the dash (--). The User
     ID must not exceed 12 characters.
 
-#### \<prmaxpg\>\</prmaxpg\>
+#### <prmaxpg\></prmaxpg\>
 
-The \<prmaxpg\> element defines the Max Pages value used on the prerun
+The <prmaxpg\> element defines the Max Pages value used on the prerun
 job's run card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Max Pages
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 9999.
 
-#### \<prmaxcrd\>\</prmaxcrd\>
+#### <prmaxcrd\></prmaxcrd\>
 
-The \<prmaxcrd\> element defines the Max Cards value used on the prerun
+The <prmaxcrd\> element defines the Max Cards value used on the prerun
 job's run card.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Max Cards
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 9999.
 
-#### \<prdefstat\>\</prdefstat\>
+#### <prdefstat\></prdefstat\>
 
-The \<prdefstat\> element defines the prerun job's default Completion
+The <prdefstat\> element defines the prerun job's default Completion
 Status.
 
-- **Requirements**: Optional for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Optional for OS2200 Prerun <uprerun\>.
 - **EM field label**: Anything Else
 - **Valid Values**: Valid data options for this element are GOOD FIN
     or BAD FIN.
 
-#### \<prcstat\>\</prcstat\>
+#### <prcstat\></prcstat\>
 
-The parent element \<prcstat\> contains the child elements needed to
+The parent element <prcstat\> contains the child elements needed to
 describe a Completion Status for the prerun job.
 
-- **Requirements**: Required for OS2200 Prerun \<uprerun\>.
+- **Requirements**: Required for OS2200 Prerun <uprerun\>.
 - **Valid Values**: Any valid child element. SMADDI limits the number
-    of \<prcstat\> elements for each \<uprerun\> element to four.
+    of <prcstat\> elements for each <uprerun\> element to four.
 
-#### \<propr\>\</propr\>
+#### <propr\></propr\>
 
-The \<propr\> element defines the logical operator used to compare a
+The <propr\> element defines the logical operator used to compare a
 prerun job's Completion Statuses.
 
-- **Requirements**: Optional for \<prcstat\>.
+- **Requirements**: Optional for <prcstat\>.
 - **EM field label**: And/Or
 - **Valid Values**: Valid data options for this element are AND and
     OR.
 
-#### \<prwdpt\>\</prwdpt\>
+#### <prwdpt\></prwdpt\>
 
-The \<prwdpt\> element defines the part of the condition word to be
+The <prwdpt\> element defines the part of the condition word to be
 tested for a specified value to determine completion status.
 
-- **Requirements**: Optional for \<prcstat\>.
+- **Requirements**: Optional for <prcstat\>.
 - **EM field label**: Word Part
 - **Valid Values**: Valid data options for this element are S1, S2,
     S3, S4, S5, S6, T1, T2, and T3.
 
-#### \<prcond\>\</prcond\>
+#### <prcond\></prcond\>
 
-The \<prcond\> element defines the operator for testing the value of the
-\<wdpt\>.
+The <prcond\> element defines the operator for testing the value of the
+<wdpt\>.
 
-- **Requirements**: Optional for \<prcstat\>.
+- **Requirements**: Optional for <prcstat\>.
 - **EM field label**: Condition
 - **Valid Values**: Valid data options for this element are EQ, NE,
     LT, GT, GE, LE, L AND, and Range.
 
-#### \<prevalue\>\</prevalue\>
+#### <prevalue\></prevalue\>
 
-The \<prevalue\> element defines the End Value to compare with the value
-of the \<wdpt\> when the \<cond\> is Range.
+The <prevalue\> element defines the End Value to compare with the value
+of the <wdpt\> when the <cond\> is Range.
 
-- **Requirements**: Optional for \<prcstat\>.
+- **Requirements**: Optional for <prcstat\>.
 - **EM field label**: End Value
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 9999.
 
-#### \<prcstatus\>\</prcstatus\>
+#### <prcstatus\></prcstatus\>
 
-The \<prcstatus\> element defines the prerun job's Completion Status
+The <prcstatus\> element defines the prerun job's Completion Status
 when the specified conditions are met.
 
-- **Requirements**: Optional for \<prcstat\>.
+- **Requirements**: Optional for <prcstat\>.
 - **EM field label**: Fin Status
 - **Valid Values**: Valid data options for this element are GOOD FIN
     and BAD FIN.
 
-#### \<prcwvalue\>\</prcwvalue\>
+#### <prcwvalue\></prcwvalue\>
 
-The \<prcwvalue\> element defines the value to compare with the value of
-the \<wdpt\>.
+The <prcwvalue\> element defines the value to compare with the value of
+the <wdpt\>.
 
-- **Requirements**: Optional for \<prcstat\>.
+- **Requirements**: Optional for <prcstat\>.
 - **EM field label**: Value
 - **Valid Values**: Valid data for this element is an octal number
     ranging from 0 to 7777.
 
 ### File Dependency Element Definitions
 
-#### \<fileinfo\>\</fileinfo\>
+#### <fileinfo\></fileinfo\>
 
-The parent element \<fileinfo\> contains the child elements needed to
+The parent element <fileinfo\> contains the child elements needed to
 describe a file dependency.
 
-- **Requirements**: Optional for OS2200 File Dependencies \<jobdata\>.
+- **Requirements**: Optional for OS2200 File Dependencies <jobdata\>.
 - **Valid Values**: Any valid child element. SMADDI limits the number
-    of \<fileinfo\> elements for each \<jobdata\> element to eight.
+    of <fileinfo\> elements for each <jobdata\> element to eight.
 
-#### \<fdqlfr\>\</fdqlfr\>
+#### <fdqlfr\></fdqlfr\>
 
-The \<fdqlfr\> element defines the Qualifier for the parent
-\<fileinfo\>.
+The <fdqlfr\> element defines the Qualifier for the parent
+<fileinfo\>.
 
-- **Requirements**: Required for \<fileinfo\>.
+- **Requirements**: Required for <fileinfo\>.
 - **EM field label**: Qualifier
 - **Valid Values**: Valid data characters for this element are
     alphanumeric characters, the dollar sign ($), pound sign (\#), and
@@ -2897,64 +2897,64 @@ The \<fdqlfr\> element defines the Qualifier for the parent
 The pound sign (\#) must be used in the first character in order to qualify.
 :::
 
-#### \<fdfname\>\</fdfname\>
+#### <fdfname\></fdfname\>
 
-The \<fdfname\> element defines the File Name for the parent
-\<fileinfo\>.
+The <fdfname\> element defines the File Name for the parent
+<fileinfo\>.
 
-- **Requirements**: Required for \<fileinfo\>.
+- **Requirements**: Required for <fileinfo\>.
 - **EM field label**: Filename
 - **Valid Values**: Valid data options for this element are
     alphanumeric characters, the dollar sign ($), and the dash (--).
     The File Name must not exceed 12 characters.
 
-#### \<deptype\>\</deptype\>
+#### <deptype\></deptype\>
 
-The \<deptype\> element defines the dependency type for the parent
-\<fileinfo\>.
+The <deptype\> element defines the dependency type for the parent
+<fileinfo\>.
 
-- **Requirements**: Required for \<fileinfo\>.
+- **Requirements**: Required for <fileinfo\>.
 - **EM field label**: Type
 - **Valid Values**: Valid data options for this element are Exists,
     Created, Deleted, Size, Referenced, Assigned, BackedUp, and
     Unloaded.
 
-#### \<fsize\>\</fsize\>
+#### <fsize\></fsize\>
 
-The \<fsize\> element defines the Size of the file used with the
-\<deptype\> of Size.
+The <fsize\> element defines the Size of the file used with the
+<deptype\> of Size.
 
-- **Requirements**: Optional for \<fileinfo\>.
+- **Requirements**: Optional for <fileinfo\>.
 - **EM field label**: Size
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 999.
 
 ### Token Equation Element Definitions
 
-#### \<tknsub\>\</tknsub\>
+#### <tknsub\></tknsub\>
 
-The parent element \<tknsub\> contains the child elements needed to
+The parent element <tknsub\> contains the child elements needed to
 describe a Token Replacement.
 
-- **Requirements**: Optional for OS2200 Token Equations \<jobdata\>.
+- **Requirements**: Optional for OS2200 Token Equations <jobdata\>.
 - **Valid Values**: Any valid child element. SMADDI does not limit the
-    number of \<tknsub\> elements for each \<jobdata\> element.
+    number of <tknsub\> elements for each <jobdata\> element.
 
-#### \<lsamtkn\>\</lsamtkn\>
+#### <lsamtkn\></lsamtkn\>
 
-The \<lsamtkn\> element defines the LSAM Token name as it appears in the
+The <lsamtkn\> element defines the LSAM Token name as it appears in the
 ECL on the OS 2200 platform.
 
-- **Requirements**: Required for \<tknsub\>.
+- **Requirements**: Required for <tknsub\>.
 - **Valid Values**: Valid token name as it appears in the ECL on the
     OS2200 platform.
 
-#### \<opcontkn\>\</opcontkn\>
+#### <opcontkn\></opcontkn\>
 
-The \<opcontkn\> element defines the OpCon
+The <opcontkn\> element defines the OpCon
 Token Name used in the Token Replacement.
 
-- **Requirements**: Required for \<tknsub\>.
+- **Requirements**: Required for <tknsub\>.
 - **Valid Values**: Valid data for this element is an existing token
     in the OpCon database.
 
@@ -2967,65 +2967,65 @@ Do not include the surrounding double brackets (\[\[ \]\]) when listing the OpCo
 The following sample code contains the structure for defining every
 possible element for SAP R/3 and CRM Job Data:
 
-\<msg\>
+<msg\>
 
-   \<msgtype\>\</msgtype\>
+   <msgtype\></msgtype\>
 
-   \<schedule\>
+   <schedule\>
 
-      \<job\>
+      <job\>
 
-         \<jobdata\>
+         <jobdata\>
 
-            \<sap_jobname\>\</sap_jobname\>
+            <sap_jobname\></sap_jobname\>
 
-            \<sap_jobnumber\>\</sap_jobnumber\>
+            <sap_jobnumber\></sap_jobnumber\>
 
-            \<sap_exec_target\>\</sap_exec_target\>
+            <sap_exec_target\></sap_exec_target\>
 
-            \<sap_start_immediately\>\</sap_start_immediately\>
+            <sap_start_immediately\></sap_start_immediately\>
 
-         \</jobdata\>
+         </jobdata\>
 
-      \</job\>
+      </job\>
 
-   \</schedule\>
+   </schedule\>
 
-\</msg\>
+</msg\>
 
 ### Job Information Element Definitions
 
-#### \<sap_jobname\>\</sap_jobname\>
+#### <sap_jobname\></sap_jobname\>
 
-The \<sap_jobname\> element defines the name of the job as it is known
+The <sap_jobname\> element defines the name of the job as it is known
 in the SAP R/3 environment.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Job Name
 
 :::note
-If you are defining a job for Tracking, you do not have to define the \<sap_jobname\>. In this case, the OpCon Job Name is required.
+If you are defining a job for Tracking, you do not have to define the <sap_jobname\>. In this case, the OpCon Job Name is required.
 :::
 
-#### \<sap_jobnumber\>\</sap_jobnumber\>
+#### <sap_jobnumber\></sap_jobnumber\>
 
-The \<sap_jobnumber\> element defines the unique number assigned to the
+The <sap_jobnumber\> element defines the unique number assigned to the
 SAP R/3 job in the SAP R/3 environment.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Job Number
 
-#### \<sap_exec_target\>\</sap_exec_target\>
+#### <sap_exec_target\></sap_exec_target\>
 
-The \<sap_exec_target\> element defines the target SAP R/3 execution
+The <sap_exec_target\> element defines the target SAP R/3 execution
 environment.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Exec. Target
 
-#### \<sap_start_immediately\>\</sap_start_immediately\>
+#### <sap_start_immediately\></sap_start_immediately\>
 
-The \<sap_start_immediately\> element indicates if the SAP R/3 job
+The <sap_start_immediately\> element indicates if the SAP R/3 job
 should start immediately when submitted to the target execution
 environment, or if it should start as soon as possible.
 
@@ -3038,31 +3038,31 @@ environment, or if it should start as soon as possible.
 The following sample code contains the structure for defining every
 possible element for SAP BW Job Data:
 
-\<msg\>
+<msg\>
 
-   \<msgtype\>\</msgtype\>
+   <msgtype\></msgtype\>
 
-   \<schedule\>
+   <schedule\>
 
-      \<job\>
+      <job\>
 
-         \<jobdata\>
+         <jobdata\>
 
-            \<sapbw_proc_chn_name\>\</sap_proc_chn_name\>
+            <sapbw_proc_chn_name\></sap_proc_chn_name\>
 
-         \</jobdata\>
+         </jobdata\>
 
-      \</job\>
+      </job\>
 
-   \</schedule\>
+   </schedule\>
 
-\</msg\>
+</msg\>
 
 ### Job Information Element Definitions
 
-#### \<sap_proc_chn_name\>\</sap_proc_chn_name\>
+#### <sap_proc_chn_name\></sap_proc_chn_name\>
 
-The \<sap_proc_chn_name\> element defines the SAP BW Process Chain Name
+The <sap_proc_chn_name\> element defines the SAP BW Process Chain Name
 as it is known in the SAP BW environment.
 
 - **Requirements**: This is a Required field.
@@ -3075,166 +3075,166 @@ possible element for SQL Job Data. For detailed information on each
 field for this job type, refer to [SQL Job Details](../../job-types/sql.md) in the
 **Concepts** online help.
 
-\<jobdata\>
+<jobdata\>
 
 **\-\-\-\-\--**[Job Information Element Definitions](#Job9)
 **\-\-\-\-\--**
 
-   \<sql_job_action\>\</sql_job_action\>
+   <sql_job_action\></sql_job_action\>
 
 **\-\-\-\-\--**[MS SQL DTExec Element Definitions](#MS)
 **\-\-\-\-\--**
 
-   \<sql_instance\>\</sql_instance\>
+   <sql_instance\></sql_instance\>
 
-   \<sql_user\>\</sql_user\>
+   <sql_user\></sql_user\>
 
-   \<sql_dtexec_config\>\</sql_dtexec_config\>
+   <sql_dtexec_config\></sql_dtexec_config\>
 
-   \<sql_dtexec_connect\>\</sql_dtexec_connect\>
+   <sql_dtexec_connect\></sql_dtexec_connect\>
 
-   \<sql_script_path\>\</sql_script_path\>
+   <sql_script_path\></sql_script_path\>
 
-   \<sql_other_options\>\</sql_other_options\>
+   <sql_other_options\></sql_other_options\>
 
 **\-\-\-\-\--**[MS SQL Job Element Definitions](#MS2)
 **\-\-\-\-\--**
 
-   \<sql_instance\>\</sql_instance\>
+   <sql_instance\></sql_instance\>
 
-   \<sql_wuid\>\</sql_wuid\>
+   <sql_wuid\></sql_wuid\>
 
-   \<sql_user\>\</sql_user\>
+   <sql_user\></sql_user\>
 
-   \<sql_winauth\>\</sql_winauth\>
+   <sql_winauth\></sql_winauth\>
 
-   \<sql_connect_encrypt\>\</sql_connect_encrypt\>
+   <sql_connect_encrypt\></sql_connect_encrypt\>
 
-   \<sql_connect_retry_attempts\>\</sql_connect_retry_attempts\>
+   <sql_connect_retry_attempts\></sql_connect_retry_attempts\>
 
-   \<sql_jobname\>\</sql_jobname\>
+   <sql_jobname\></sql_jobname\>
 
-   \<sql_monitor_only\>\</sql_monitor_only\>
+   <sql_monitor_only\></sql_monitor_only\>
 
-   \<sql_monitor_endtime\>\</sql_monitor_endtime\>
+   <sql_monitor_endtime\></sql_monitor_endtime\>
 
-   \<sql_other_options\>\</sql_other_options\>
+   <sql_other_options\></sql_other_options\>
 
 **\-\-\-\-\--**[MS SQL Script Element Definitions](#MS3)
 **\-\-\-\-\--**
 
-   \<sql_instance\>\</sql_instance\>
+   <sql_instance\></sql_instance\>
 
-   \<sql_db_name\>\</sql_db_name\>
+   <sql_db_name\></sql_db_name\>
 
-   \<sql_user\>\</sql_user\>
+   <sql_user\></sql_user\>
 
-   \<sql_wuid\>\</sql_wuid\>
+   <sql_wuid\></sql_wuid\>
 
-   \<sql_winauth\>\</sql_winauth\>
+   <sql_winauth\></sql_winauth\>
 
-   \<sql_connect_encrypt\>\</sql_connect_encrypt\>
+   <sql_connect_encrypt\></sql_connect_encrypt\>
 
-   \<sql_script_statements\>\</sql_script_statements\>
+   <sql_script_statements\></sql_script_statements\>
 
-   \<sql_script_path\>\</sql_script_path\>
+   <sql_script_path\></sql_script_path\>
 
-   \<sql_env_varinfo\>
+   <sql_env_varinfo\>
 
-      \<sql_env_varname\>\</sql_env_varname\>
+      <sql_env_varname\></sql_env_varname\>
 
-      \<sql_env_varvalue\>\</sql_env_varvalue\>
+      <sql_env_varvalue\></sql_env_varvalue\>
 
-   \</sql_env_varinfo\>
+   </sql_env_varinfo\>
 
-   \<sql_script_use_exit\>\</sql_script_use_exit\>
+   <sql_script_use_exit\></sql_script_use_exit\>
 
-   \<sql_redirect_path\>\</sql_redirect_path\>
+   <sql_redirect_path\></sql_redirect_path\>
 
-   \<sql_other_options\>\</sql_other_options\>
+   <sql_other_options\></sql_other_options\>
 
 **\-\-\-\-\--**[MySQL Element Definitions](#MySQL)
 **\-\-\-\-\--**
 
-   \<sql_instance\>\</sql_instance\>
+   <sql_instance\></sql_instance\>
 
-   \<sql_db_name\>\</sql_db_name\>
+   <sql_db_name\></sql_db_name\>
 
-   \<sql_user\>\</sql_user\>
+   <sql_user\></sql_user\>
 
-   \<sql_connect_port\>\</sql_connect_port\>
+   <sql_connect_port\></sql_connect_port\>
 
-   \<sql_script_path\>\</sql_script_path\>
+   <sql_script_path\></sql_script_path\>
 
-   \<sql_env_varinfo\>
+   <sql_env_varinfo\>
 
-      \<sql_env_varname\>\</sql_env_varname\>
+      <sql_env_varname\></sql_env_varname\>
 
-      \<sql_env_varvalue\>\</sql_env_varvalue\>
+      <sql_env_varvalue\></sql_env_varvalue\>
 
-   \</sql_env_varinfo\>
+   </sql_env_varinfo\>
 
-   \<sql_redirect_path\>\</sql_redirect_path\>
+   <sql_redirect_path\></sql_redirect_path\>
 
-   \<sql_other_options\>\</sql_other_options\>
+   <sql_other_options\></sql_other_options\>
 
 **\-\-\-\-\--**[Oracle Element Definitions](#Oracle)
 **\-\-\-\-\--**
 
-   \<sql_instance\>\</sql_instance\>
+   <sql_instance\></sql_instance\>
 
-   \<sql_db_name\>\</sql_db_name\>
+   <sql_db_name\></sql_db_name\>
 
-   \<sql_user\>\</sql_user\>
+   <sql_user\></sql_user\>
 
-   \<sql_connect_id\>\</sql_connect_id\>
+   <sql_connect_id\></sql_connect_id\>
 
-   \<sql_script_path\>\</sql_script_path\>
+   <sql_script_path\></sql_script_path\>
 
-   \<sql_oracle_params\>\</sql_oracle_params\>
+   <sql_oracle_params\></sql_oracle_params\>
 
-   \<sql_redirect_path\>\</sql_redirect_path\>
+   <sql_redirect_path\></sql_redirect_path\>
 
-   \<sql_other_options\>\</sql_other_options\>
+   <sql_other_options\></sql_other_options\>
 
 **\-\-\-\-\--**[Other DB Element Definitions](#Other)
 **\-\-\-\-\--**
 
-   \<sql_otherdb_connect\>\</sql_otherdb_connect\>
+   <sql_otherdb_connect\></sql_otherdb_connect\>
 
-   \<sql_otherdb_connectstring\>\</sql_otherdb_connectstring\>
+   <sql_otherdb_connectstring\></sql_otherdb_connectstring\>
 
-   \<sql_otherdb_dsn\>\</sql_otherdb_dsn\>
+   <sql_otherdb_dsn\></sql_otherdb_dsn\>
 
-   \<sql_script_statements\>\</sql_script_statements\>
+   <sql_script_statements\></sql_script_statements\>
 
-   \<sql_user\>\</sql_user\>
+   <sql_user\></sql_user\>
 
-   \<sql_wuid\>\</sql_wuid\>
+   <sql_wuid\></sql_wuid\>
 
-   \<sql_script_path\>\</sql_script_path\>
+   <sql_script_path\></sql_script_path\>
 
-   \<sql_env_varinfo\>
+   <sql_env_varinfo\>
 
-      \<sql_env_varname\>\</sql_env_varname\>
+      <sql_env_varname\></sql_env_varname\>
 
-      \<sql_env_varvalue\>\</sql_env_varvalue\>
+      <sql_env_varvalue\></sql_env_varvalue\>
 
-   \</sql_env_varinfo\>
+   </sql_env_varinfo\>
 
-   \<sql_winauth\>\</sql_winauth\>
+   <sql_winauth\></sql_winauth\>
 
-   \<sql_redirect_path\>\</sql_redirect_path\>
+   <sql_redirect_path\></sql_redirect_path\>
 
-   \<sql_other_options\>\</sql_other_options\>
+   <sql_other_options\></sql_other_options\>
 
-\</jobdata\>
+</jobdata\>
 
 ### Job Information Element Definitions
 
-#### \<sql_job_action\>\</sql_job_action\>
+#### <sql_job_action\></sql_job_action\>
 
-The \<sql_job_action\> element defines the run process the job uses.
+The <sql_job_action\> element defines the run process the job uses.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Job Action
@@ -3243,12 +3243,12 @@ The \<sql_job_action\> element defines the run process the job uses.
 
 ### MS SQL DTExec Element Definitions
 
-#### \<sql_instance\>\</sql_instance\>
+#### <sql_instance\></sql_instance\>
 
-The \<sql_instance\> element defines the server name from which to
+The <sql_instance\> element defines the server name from which to
 retrieve the package.
 
-- **Requirements**: This is a Required field if \<sql_dtexec_connect\>
+- **Requirements**: This is a Required field if <sql_dtexec_connect\>
     is set to SQL.
 - **EM field label**: Server Name
 - **Valid Values**:
@@ -3257,12 +3257,12 @@ retrieve the package.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_user\>\</sql_user\>
+#### <sql_user\></sql_user\>
 
-The \<sql_user\> element defines the user ID name that will allow the
+The <sql_user\> element defines the user ID name that will allow the
 retrieval of a package that is protected by SQL server authentication.
 
-- **Requirements**: This is a Required field if \<sql_dtexec_connect\>
+- **Requirements**: This is a Required field if <sql_dtexec_connect\>
     is set to SQL.
 - **EM field label**: User Id
 - **Valid Values**:
@@ -3271,18 +3271,18 @@ retrieval of a package that is protected by SQL server authentication.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_dtexec_connect\>\</sql_dtexec_connect\>
+#### <sql_dtexec_connect\></sql_dtexec_connect\>
 
-The \<sql_dtexec_connect\> element defines which type of DTExec
+The <sql_dtexec_connect\> element defines which type of DTExec
 connection will be used for the job.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: MS SQL DTExec Connection
 - **Valid Values**: Valid values are SQL and FILE.
 
-#### \<sql_dtexec_config\>\</sql_dtexec_config\>
+#### <sql_dtexec_config\></sql_dtexec_config\>
 
-The \<sql_dtexec_config\> element defines the configuration file to
+The <sql_dtexec_config\> element defines the configuration file to
 extract values from.
 
 - **Requirements**: This is an Optional field.
@@ -3293,9 +3293,9 @@ extract values from.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_script_path\>\</sql_script_path\>
+#### <sql_script_path\></sql_script_path\>
 
-The \<sql_script_path\> element defines the package that is stored in
+The <sql_script_path\> element defines the package that is stored in
 SQL server. The package_path argument specifies the name of the package
 to retrieve. If folders are included in the path, they are terminated
 with backslashes (\\).
@@ -3308,9 +3308,9 @@ with backslashes (\\).
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_other_options\>\</sql_other_options\>
+#### <sql_other_options\></sql_other_options\>
 
-The \<sql_other_options\> element defines any additional command line
+The <sql_other_options\> element defines any additional command line
 switches supported by the DTExec command line utility.
 
 - **Requirements**: This is an Optional field.
@@ -3323,9 +3323,9 @@ switches supported by the DTExec command line utility.
 
 ### MS SQL Job Element Definitions
 
-#### \<sql_instance\>\</sql_instance\>
+#### <sql_instance\></sql_instance\>
 
-The \<sql_instance\> element defines the name or IP address of the SQL
+The <sql_instance\> element defines the name or IP address of the SQL
 server machine with an optional instance name (e.g., SQLTEST,
 SQLTEST\\SQLEXPRESS).
 
@@ -3337,11 +3337,11 @@ SQLTEST\\SQLEXPRESS).
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_wuid\>\</sql_wuid\>
+#### <sql_wuid\></sql_wuid\>
 
-The \<sql_wuid\> element defines the Windows Authentication user name.
+The <sql_wuid\> element defines the Windows Authentication user name.
 
-- **Requirements**: This is a Required field when \<sql_winauth\> is
+- **Requirements**: This is a Required field when <sql_winauth\> is
     True.
 - **EM field label**: User Id
 - **Valid Values**:
@@ -3350,11 +3350,11 @@ The \<sql_wuid\> element defines the Windows Authentication user name.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_user\>\</sql_user\>
+#### <sql_user\></sql_user\>
 
-The \<sql_user\> element corresponds to the SQL user name.
+The <sql_user\> element corresponds to the SQL user name.
 
-- **Requirements**: This is a Required field when \<sql_winauth\> is
+- **Requirements**: This is a Required field when <sql_winauth\> is
     False.
 - **EM field label**: User Id
 - **Valid Values**:
@@ -3363,18 +3363,18 @@ The \<sql_user\> element corresponds to the SQL user name.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_winauth\>\</sql_winauth\>
+#### <sql_winauth\></sql_winauth\>
 
-The \<sql_winauth\> element defines whether to use Windows
+The <sql_winauth\> element defines whether to use Windows
 Authentication for the job.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Windows Authentication
 - **Valid Values**: Valid values are True or False.
 
-#### \<sql_connect_encrypt\>\</sql_connect_encrypt\>
+#### <sql_connect_encrypt\></sql_connect_encrypt\>
 
-The \<sql_connect_encrypt\> element defines whether to use an encrypted
+The <sql_connect_encrypt\> element defines whether to use an encrypted
 connection to the database. Use of SSL to encrypt the connection must be
 pre-configured on the SQL server connection manager to use this option.
 
@@ -3382,9 +3382,9 @@ pre-configured on the SQL server connection manager to use this option.
 - **EM field label**: Encrypt
 - **Valid Values**: Valid values are True or False.
 
-#### \<sql_connect_retry_attempts\>\</sql_connect_retry_attempts\>
+#### <sql_connect_retry_attempts\></sql_connect_retry_attempts\>
 
-The \<sql_connect_retry_attempts\> element defines the number of
+The <sql_connect_retry_attempts\> element defines the number of
 connection retry attempts to be made if connection to MS SQL server
 fails initially.
 
@@ -3392,9 +3392,9 @@ fails initially.
 - **EM field label**: Retry Attempts
 - **Valid Values**: Valid values are any number from 0-100.
 
-#### \<sql_jobname\>\</sql_jobname\>
+#### <sql_jobname\></sql_jobname\>
 
-The \<sql_jobname\> element defines the name of the job defined in the
+The <sql_jobname\> element defines the name of the job defined in the
 SQL Server Agent.
 
 - **Requirements**: This is a Required field.
@@ -3405,9 +3405,9 @@ SQL Server Agent.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_monitor_only\>\</sql_monitor_only\>
+#### <sql_monitor_only\></sql_monitor_only\>
 
-The \<sql_monitor_only\> element defines that the job should not be
+The <sql_monitor_only\> element defines that the job should not be
 started by OpCon, and once the job is started outside of OpCon, its
 status will only be monitored.
 
@@ -3415,9 +3415,9 @@ status will only be monitored.
 - **EM field label**: Monitor Only
 - **Valid Values**: Valid values are True or False.
 
-#### \<sql_monitor_endtime\>\</sql_monitor_endtime\>
+#### <sql_monitor_endtime\></sql_monitor_endtime\>
 
-The \<sql_monitor_endtime\> element defines the time end time for
+The <sql_monitor_endtime\> element defines the time end time for
 monitoring a SQL Agent job. It is indicated as an hour offset from
 schedule date midnight (e.g., 17.5 means 5:30 PM on schedule date). This
 is useful when monitoring SQL server replication jobs that run
@@ -3433,9 +3433,9 @@ OpCon schedules.
         Microsoft-formatted date time (e.g., 25.5 represents 1 day at
         1:30 AM).
 
-#### \<sql_other_options\>\</sql_other_options\>
+#### <sql_other_options\></sql_other_options\>
 
-The \<sql_other_options\> element defines an override password using -$
+The <sql_other_options\> element defines an override password using -$
 switch.
 
 - **Requirements**: This is an Optional field.
@@ -3448,9 +3448,9 @@ switch.
 
 ### MS SQL Script Element Definitions
 
-#### \<sql_instance\>\</sql_instance\>
+#### <sql_instance\></sql_instance\>
 
-The \<sql_instance\> element defines the name or IP address of the SQL
+The <sql_instance\> element defines the name or IP address of the SQL
 server machine with an optional instance name (e.g., SQLTEST,
 SQLTEST\\SQLEXPRESS ).
 
@@ -3462,9 +3462,9 @@ SQLTEST\\SQLEXPRESS ).
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_db_name\>\</sql_db_name\>
+#### <sql_db_name\></sql_db_name\>
 
-The \<sql_db_name\> element defines the SQL database name.
+The <sql_db_name\> element defines the SQL database name.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Database Name
@@ -3474,11 +3474,11 @@ The \<sql_db_name\> element defines the SQL database name.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_user\>\</sql_user\>
+#### <sql_user\></sql_user\>
 
-The \<sql_wuid\> element corresponds to the SQL user name.
+The <sql_wuid\> element corresponds to the SQL user name.
 
-- **Requirements**: This is a Required field when \<sql_winauth\> is
+- **Requirements**: This is a Required field when <sql_winauth\> is
     False.
 - **EM field label**: User Id
 - **Valid Values**:
@@ -3487,11 +3487,11 @@ The \<sql_wuid\> element corresponds to the SQL user name.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_wuid\>\</sql_wuid\>
+#### <sql_wuid\></sql_wuid\>
 
-The \<sql_wuid\> element defines the Windows Authentication user name.
+The <sql_wuid\> element defines the Windows Authentication user name.
 
-- **Requirements**: This is a Required field when \<sql_winauth\> is
+- **Requirements**: This is a Required field when <sql_winauth\> is
     True.
 - **EM field label**: User Id
 - **Valid Values**:
@@ -3500,18 +3500,18 @@ The \<sql_wuid\> element defines the Windows Authentication user name.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_winauth\>\</sql_winauth\>
+#### <sql_winauth\></sql_winauth\>
 
-The \<sql_winauth\> element defines whether to use Windows
+The <sql_winauth\> element defines whether to use Windows
 Authentication for the job.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Windows Authentication
 - **Valid Values**: Valid values are True or False.
 
-#### \<sql_connect_encrypt\>\</sql_connect_encrypt\>
+#### <sql_connect_encrypt\></sql_connect_encrypt\>
 
-The \<sql_connect_encrypt\> element defines whether to use an encrypted
+The <sql_connect_encrypt\> element defines whether to use an encrypted
 connection to the database. Use of SSL to encrypt the connection must be
 pre-configured on the SQL server connection manager to use this option.
 
@@ -3519,13 +3519,13 @@ pre-configured on the SQL server connection manager to use this option.
 - **EM field label**: Encrypt
 - **Valid Values**: Valid values are True or False.
 
-#### \<sql_script_statements\>\</sql_script_statements\>
+#### <sql_script_statements\></sql_script_statements\>
 
-The \<sql_script_statements\> element defines the SQL query to be
+The <sql_script_statements\> element defines the SQL query to be
 executed against the selected SQL server/database. Multiple
 semicolon-delimited queries can be executed.
 
-- **Requirements**: This is a Required field if \<sql_script_path\> is
+- **Requirements**: This is a Required field if <sql_script_path\> is
     not present.
 - **EM field label**: Statement(s)
 - **Valid Values**:
@@ -3534,14 +3534,14 @@ semicolon-delimited queries can be executed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### sql_script_path\>\</sql_script_path\>
+#### sql_script_path\></sql_script_path\>
 
-The \<sql_script_path\> element defines the path to the SQL script file
+The <sql_script_path\> element defines the path to the SQL script file
 to be executed against the selected SQL server/database. Only local file
 paths are allowed.
 
 - **Requirements**: This is a Required field if
-    \<sql_script_statements\> is not present.
+    <sql_script_statements\> is not present.
 - **EM field label**: Script File Path
 - **Valid Values**:
   - Minimum Characters: 1
@@ -3549,24 +3549,24 @@ paths are allowed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_env_varinfo\>\</sql_env_varinfo\>
+#### <sql_env_varinfo\></sql_env_varinfo\>
 
-The \<sql_env_varinfo\> element contains the child elements needed to
+The <sql_env_varinfo\> element contains the child elements needed to
 define a single environment variable for the job.
 
-- **Requirements**: Optional for \<jobdata\>.
+- **Requirements**: Optional for <jobdata\>.
 - **Valid Values**: One
-    [\<sql_env_varname\>]{style="text-transform: lowercase;"} and one     [\<sql_env_varvalue\>]{style="text-transform: lowercase;"} child
+    <sql_env_varname\> and one     <sql_env_varvalue\> child
     element.
 
-#### \<sql_env_varname\>\</sql_env_varname\>
+#### <sql_env_varname\></sql_env_varname\>
 
-The \<sql_env_varname\> element defines the name of the variable to be
+The <sql_env_varname\> element defines the name of the variable to be
 used in the script. Environment variables provide the ability to send
 dynamic values to the script at runtime.
 
 - **Requirements**: This is a Required field required if
-    \<sql_env_varvalue\> is present.
+    <sql_env_varvalue\> is present.
 - **EM field label**: Name
 - **Valid Values**:
   - Minimum Characters: 1
@@ -3574,13 +3574,13 @@ dynamic values to the script at runtime.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_env_varvalue\>\</sql_env_varvalue\>
+#### <sql_env_varvalue\></sql_env_varvalue\>
 
-The \<sql_env_varvalue\> element defines the value to be used in the
+The <sql_env_varvalue\> element defines the value to be used in the
 script.
 
 - **Requirements**: This is a Required field required if
-    \<sql_env_varname\> is present.
+    <sql_env_varname\> is present.
 - **EM field label**: Value
 - **Valid Values**:
   - Minimum Characters: 1
@@ -3588,18 +3588,18 @@ script.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_script_use_exit\>\</sql_script_use_exit\>
+#### <sql_script_use_exit\></sql_script_use_exit\>
 
-The \<sql_script_use_exit\> element defines whether to use the exit code
+The <sql_script_use_exit\> element defines whether to use the exit code
 that results from the script result.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Use Exit Code From Script Result
 - **Valid Values**: Valid values are True or False.
 
-#### \<sql_redirect_path\>\</sql_redirect_path\>
+#### <sql_redirect_path\></sql_redirect_path\>
 
-The \<sql_redirect_path\> element defines the path to the file where the
+The <sql_redirect_path\> element defines the path to the file where the
 results of the query should be redirected. Only local file paths are
 allowed.
 
@@ -3611,9 +3611,9 @@ allowed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_other_options\>\</sql_other_options\>
+#### <sql_other_options\></sql_other_options\>
 
-The \<sql_other_options\> element defines any additional command line
+The <sql_other_options\> element defines any additional command line
 switches supported by the SQLCMD tool.
 
 - **Requirements**: This is an Optional field.
@@ -3626,9 +3626,9 @@ switches supported by the SQLCMD tool.
 
 ### MySQL Element Definitions
 
-#### \<sql_instance\>\</sql_instance\>
+#### <sql_instance\></sql_instance\>
 
-The \<sql_instance\> element defines the name or IP address of the MySQL
+The <sql_instance\> element defines the name or IP address of the MySQL
 server machine (e.g., MYSQLTEST).
 
 - **Requirements**: This is a Required field.
@@ -3639,7 +3639,7 @@ server machine (e.g., MYSQLTEST).
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_db_name\>\</sql_db_name\>
+#### <sql_db_name\></sql_db_name\>
 
 The \_db_name\> element defines the SQL database name.
 
@@ -3651,9 +3651,9 @@ The \_db_name\> element defines the SQL database name.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_user\>\</sql_user\>
+#### <sql_user\></sql_user\>
 
-The \<sql_wuid\> element defines the user name for the connection.
+The <sql_wuid\> element defines the user name for the connection.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: User Id
@@ -3663,18 +3663,18 @@ The \<sql_wuid\> element defines the user name for the connection.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_connect_port\>\</sql_connect_port\>
+#### <sql_connect_port\></sql_connect_port\>
 
-The \<sql_connect_port\> element defines the TCP/IP port number for the
+The <sql_connect_port\> element defines the TCP/IP port number for the
 connection.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Port
 - **Valid Values**: Valid values are any number from 0-65535.
 
-#### \<sql_script_path\>\</sql_script_path\>
+#### <sql_script_path\></sql_script_path\>
 
-The \<sql_script_path\> element defines the path to the SQL script file
+The <sql_script_path\> element defines the path to the SQL script file
 to be executed against the selected MySQL server/database. Only local
 file paths are allowed.
 
@@ -3686,24 +3686,24 @@ file paths are allowed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_env_varinfo\>\</sql_env_varinfo\>
+#### <sql_env_varinfo\></sql_env_varinfo\>
 
-The \<sql_env_varinfo\> element contains the child elements needed to
+The <sql_env_varinfo\> element contains the child elements needed to
 define a single environment variable for the job.
 
-- **Requirements**: Optional for \<jobdata\>.
+- **Requirements**: Optional for <jobdata\>.
 - **Valid Values**: One
-    [\<sql_env_varname\>]{style="text-transform: lowercase;"} and one     [\<sql_env_varvalue\>]{style="text-transform: lowercase;"} child
+    <sql_env_varname\> and one     <sql_env_varvalue\> child
     element.
 
-#### \<sql_env_varname\>\</sql_env_varname\>
+#### <sql_env_varname\></sql_env_varname\>
 
-The \<sql_env_varname\> element defines the name of the variable to be
+The <sql_env_varname\> element defines the name of the variable to be
 used in the script. Environment variables provide the ability to send
 dynamic values to the script at runtime.
 
 - **Requirements**: This is a Required field required if
-    \<sql_env_varvalue\> is present.
+    <sql_env_varvalue\> is present.
 - **EM field label**: Name
 - **Valid Values**:
   - Minimum Characters: 1
@@ -3711,13 +3711,13 @@ dynamic values to the script at runtime.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_env_varvalue\>\</sql_env_varvalue\>
+#### <sql_env_varvalue\></sql_env_varvalue\>
 
-The \<sql_env_varvalue\> element defines the value to be used in the
+The <sql_env_varvalue\> element defines the value to be used in the
 script.
 
 - **Requirements**: This is a Required field required if
-    \<sql_env_varname\> is present.
+    <sql_env_varname\> is present.
 - **EM field label**: Value
 - **Valid Values**:
   - Minimum Characters: 1
@@ -3725,9 +3725,9 @@ script.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_redirect_path\>\</sql_redirect_path\>
+#### <sql_redirect_path\></sql_redirect_path\>
 
-The \<sql_redirect_path\> element defines the path to the file where the
+The <sql_redirect_path\> element defines the path to the file where the
 results of the query should be redirected. Only local file paths are
 allowed.
 
@@ -3739,9 +3739,9 @@ allowed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_other_options\>\</sql_other_options\>
+#### <sql_other_options\></sql_other_options\>
 
-The \<sql_other_options\> element defines any additional command line
+The <sql_other_options\> element defines any additional command line
 switches supported by the MySQL command line utility.
 
 - **Requirements**: This is an Optional field.
@@ -3754,9 +3754,9 @@ switches supported by the MySQL command line utility.
 
 ### Oracle Element Definitions
 
-#### \<sql_instance\>\</sql_instance\>
+#### <sql_instance\></sql_instance\>
 
-The \<sql_instance\> element defines the name or IP address of the MySQL
+The <sql_instance\> element defines the name or IP address of the MySQL
 server machine (e.g., MYSQLTEST).
 
 - **Requirements**: This is a Required field.
@@ -3767,9 +3767,9 @@ server machine (e.g., MYSQLTEST).
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_db_name\>\</sql_db_name\>
+#### <sql_db_name\></sql_db_name\>
 
-The \<sql_db_name\> element defines the SQL database name.
+The <sql_db_name\> element defines the SQL database name.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Database Name
@@ -3779,9 +3779,9 @@ The \<sql_db_name\> element defines the SQL database name.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_user\>\</sql_user\>
+#### <sql_user\></sql_user\>
 
-The \<sql_wuid\> element defines the user name for the connection.
+The <sql_wuid\> element defines the user name for the connection.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: User Id
@@ -3791,9 +3791,9 @@ The \<sql_wuid\> element defines the user name for the connection.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_connect_id\>\</sql_connect_id\>
+#### <sql_connect_id\></sql_connect_id\>
 
-The \<sql_connect_id\> element defines the connection ID.
+The <sql_connect_id\> element defines the connection ID.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Connection Id
@@ -3802,9 +3802,9 @@ The \<sql_connect_id\> element defines the connection ID.
   - Maximum Characters: 255
   - Valid Characters: Valid values are numeric characters.
 
-#### \<sql_script_path\>\</sql_script_path\>
+#### <sql_script_path\></sql_script_path\>
 
-The \<sql_script_path\> element defines the path to the SQL script file
+The <sql_script_path\> element defines the path to the SQL script file
 to be executed against the selected Oracle server/database. Only local
 file paths are allowed.
 
@@ -3816,9 +3816,9 @@ file paths are allowed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_oracle_params\>\</sql_oracle_params\>
+#### <sql_oracle_params\></sql_oracle_params\>
 
-The \<sql_oracle_params\> element defines the parameter values to be
+The <sql_oracle_params\> element defines the parameter values to be
 passed to the script.
 
 - **Requirements**: This is an Optional field.
@@ -3829,9 +3829,9 @@ passed to the script.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_redirect_path\>\</sql_redirect_path\>
+#### <sql_redirect_path\></sql_redirect_path\>
 
-The \<sql_redirect_path\> element defines the path to the file where the
+The <sql_redirect_path\> element defines the path to the file where the
 results of the query should be redirected. Only local file paths are
 allowed.
 
@@ -3843,9 +3843,9 @@ allowed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_other_options\>\</sql_other_options\>
+#### <sql_other_options\></sql_other_options\>
 
-The \<sql_other_options\> element defines any additional command line
+The <sql_other_options\> element defines any additional command line
 switches supported by the Oracle command line utility.
 
 - **Requirements**: This is an Optional field.
@@ -3858,22 +3858,22 @@ switches supported by the Oracle command line utility.
 
 ### Other DB Element Definitions
 
-#### \<sql_otherdb_connect\>\</sql_otherdb_connect\>
+#### <sql_otherdb_connect\></sql_otherdb_connect\>
 
-The \<sql_otherdb_connect\> element defines the type of database
+The <sql_otherdb_connect\> element defines the type of database
 connection to use for the job.
 
 - **Requirements**: This is a Required field.
 - **Valid Values**: Valid values are ODBC Connection String, OleDB
     Connection String, or DSN Name.
 
-#### \<sql_otherdb_connectstring\>\</sql_otherdb_connectstring\>
+#### <sql_otherdb_connectstring\></sql_otherdb_connectstring\>
 
-The \<sql_otherdb_connectstring\> element defines the ODBC or OLE DB
+The <sql_otherdb_connectstring\> element defines the ODBC or OLE DB
 connection string for connecting to the database.
 
 - **Requirements**: This is a Required field when
-    \<sql_otherdb_connect\> is ODBC Connection String or OleDB
+    <sql_otherdb_connect\> is ODBC Connection String or OleDB
     Connection String.
 - **EM field label**: ODBC Connection String or OleDB Connection
     String
@@ -3883,13 +3883,13 @@ connection string for connecting to the database.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_otherdb_dsn\>\</sql_otherdb_dsn\>
+#### <sql_otherdb_dsn\></sql_otherdb_dsn\>
 
-The \<sql_otherdb_dsn\> element defines a DSN name for connecting to the
+The <sql_otherdb_dsn\> element defines a DSN name for connecting to the
 database.
 
 - **Requirements**: This is a Required field when
-    \<sql_otherdb_connect\> is DSN Name.
+    <sql_otherdb_connect\> is DSN Name.
 - **EM field label**: DSN Name
 - **Valid Values**:
   - Minimum Characters: 1
@@ -3897,22 +3897,22 @@ database.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_winauth\>\</sql_winauth\>
+#### <sql_winauth\></sql_winauth\>
 
-The \<sql_winauth\> element defines whether to use Windows
+The <sql_winauth\> element defines whether to use Windows
 Authentication for the job.
 
 - **Requirements**: This is an Optional field.
 - **EM field label**: Windows Authentication
 - **Valid Values**: Valid values are True or False.
 
-#### \<sql_user\>\</sql_user\>
+#### <sql_user\></sql_user\>
 
-The \<sql_wuid\> element corresponds to the SQL user name.
+The <sql_wuid\> element corresponds to the SQL user name.
 
-- **Requirements**: This is optional when \<sql_otherdb_connect\> is
+- **Requirements**: This is optional when <sql_otherdb_connect\> is
     ODBC Connection String or OleDB Connection String. It is required
-    when \<sql_otherdb_connect\> is DSN Name and \<sql_winauth\> is
+    when <sql_otherdb_connect\> is DSN Name and <sql_winauth\> is
     False.
 - **EM field label**: User Id
 - **Valid Values**:
@@ -3921,11 +3921,11 @@ The \<sql_wuid\> element corresponds to the SQL user name.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_wuid\>\</sql_wuid\>
+#### <sql_wuid\></sql_wuid\>
 
-The \<sql_wuid\> element defines the user name for the connection.
+The <sql_wuid\> element defines the user name for the connection.
 
-- **Requirements**: This is a Required field when \<sql_winauth\> is
+- **Requirements**: This is a Required field when <sql_winauth\> is
     True.
 - **EM field label**: User Id
 - **Valid Values**:
@@ -3934,9 +3934,9 @@ The \<sql_wuid\> element defines the user name for the connection.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_script_statements\>\</sql_script_statements\>
+#### <sql_script_statements\></sql_script_statements\>
 
-The \<sql_script_statements\> element defines the SQL query to be
+The <sql_script_statements\> element defines the SQL query to be
 executed against the selected SQL server/database. Multiple
 semicolon-delimited queries can be executed.
 
@@ -3948,24 +3948,24 @@ semicolon-delimited queries can be executed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_env_varinfo\>\</sql_env_varinfo\>
+#### <sql_env_varinfo\></sql_env_varinfo\>
 
-The \<sql_env_varinfo\> element contains the child elements needed to
+The <sql_env_varinfo\> element contains the child elements needed to
 define a single environment variable for the job.
 
-- **Requirements**: Optional for \<jobdata\>.
+- **Requirements**: Optional for <jobdata\>.
 - **Valid Values**: One
-    [\<sql_env_varname\>]{style="text-transform: lowercase;"} and one     [\<sql_env_varvalue\>]{style="text-transform: lowercase;"} child
+    <sql_env_varname\> and one     <sql_env_varvalue\> child
     element.
 
-#### \<sql_env_varname\>\</sql_env_varname\>
+#### <sql_env_varname\></sql_env_varname\>
 
-The \<sql_env_varname\> element defines the name of the variable to be
+The <sql_env_varname\> element defines the name of the variable to be
 used in the script. Environment variables provide the ability to send
 dynamic values to the script at runtime.
 
 - **Requirements**: This is a Required field required if
-    \<sql_env_varvalue\> is present.
+    <sql_env_varvalue\> is present.
 - **EM field label**: Name
 - **Valid Values**:
   - Minimum Characters: 1
@@ -3973,13 +3973,13 @@ dynamic values to the script at runtime.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_env_varvalue\>\</sql_env_varvalue\>
+#### <sql_env_varvalue\></sql_env_varvalue\>
 
-The \<sql_env_varvalue\> element defines the value to be used in the
+The <sql_env_varvalue\> element defines the value to be used in the
 script.
 
 - **Requirements**: This is a Required field required if
-    \<sql_env_varname\> is present.
+    <sql_env_varname\> is present.
 - **EM field label**: Value
 - **Valid Values**:
   - Minimum Characters: 1
@@ -3987,9 +3987,9 @@ script.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_redirect_path\>\</sql_redirect_path\>
+#### <sql_redirect_path\></sql_redirect_path\>
 
-The \<sql_redirect_path\> element defines the path to the file where the
+The <sql_redirect_path\> element defines the path to the file where the
 results of the query should be redirected. Only local file paths are
 allowed.
 
@@ -4001,9 +4001,9 @@ allowed.
   - Valid Characters: All except \~ (tilde), \`(grave accent), and
         \^ (caret).
 
-#### \<sql_other_options\>\</sql_other_options\>
+#### <sql_other_options\></sql_other_options\>
 
-The \<sql_other_options\> element defines any additional command line
+The <sql_other_options\> element defines any additional command line
 switches supported by the database command line utility.
 
 - **Requirements**: This is an Optional field.
@@ -4021,62 +4021,62 @@ possible element for Tuxedo ART Job Data. For detailed information on
 each field for this job type, refer to [Tuxedo ART Job Details](../../job-types/tuxedo-art.md)
 in the **Concepts** online help.
 
-\<jobdata\>
+<jobdata\>
 
-\<tuxedo_art_script\>\</tuxedo_art_script\>
+<tuxedo_art_script\></tuxedo_art_script\>
 
-\<tuxedo_art_owner\>\</tuxedo_art_owner\>
+<tuxedo_art_owner\></tuxedo_art_owner\>
 
-\<tuxedo_art_jesroot_dir\>\</tuxedo_art_jesroot_dir\>
+<tuxedo_art_jesroot_dir\></tuxedo_art_jesroot_dir\>
 
-\<tuxedo_art_env_shell\>\</tuxedo_art_env_shell\>
+<tuxedo_art_env_shell\></tuxedo_art_env_shell\>
 
-\<tuxedo_art_variables\>\</tuxedo_art_variables\>
+<tuxedo_art_variables\></tuxedo_art_variables\>
 
-\<tuxedo_art_step_control\>
+<tuxedo_art_step_control\>
 
-\<tuxedo_art_step_name\>\</tuxedo_art_step_name\>
+<tuxedo_art_step_name\></tuxedo_art_step_name\>
 
-\<tuxedo_art_step_min\>\</tuxedo_art_step_min\>
+<tuxedo_art_step_min\></tuxedo_art_step_min\>
 
-\<tuxedo_art_step_max\>\</tuxedo_art_step_max\>
+<tuxedo_art_step_max\></tuxedo_art_step_max\>
 
-\<tuxedo_art_step_action\>\</tuxedo_art_step_action\>
+<tuxedo_art_step_action\></tuxedo_art_step_action\>
 
-\<tuxedo_art_step_msg\>\</tuxedo_art_step_msg\>
+<tuxedo_art_step_msg\></tuxedo_art_step_msg\>
 
-\</tuxedo_art_step_control\>
+</tuxedo_art_step_control\>
 
-\<tuxedo_art_step_control\>
+<tuxedo_art_step_control\>
 
-\<tuxedo_art_step_name\>\</tuxedo_art_step_name\>
+<tuxedo_art_step_name\></tuxedo_art_step_name\>
 
-\<tuxedo_art_step_min\>\</tuxedo_art_step_min\>
+<tuxedo_art_step_min\></tuxedo_art_step_min\>
 
-\<tuxedo_art_step_max\>\</tuxedo_art_step_max\>
+<tuxedo_art_step_max\></tuxedo_art_step_max\>
 
-\<tuxedo_art_step_action\>\</tuxedo_art_step_action\>
+<tuxedo_art_step_action\></tuxedo_art_step_action\>
 
-\<tuxedo_art_step_msg\>\</tuxedo_art_step_msg\>
+<tuxedo_art_step_msg\></tuxedo_art_step_msg\>
 
-\</tuxedo_art_step_control\>
+</tuxedo_art_step_control\>
 
-\</jobdata\>
+</jobdata\>
 
 ### Element Definitions
 
-#### \<tuxedo_art_script\>\</tuxedo_art_script\>
+#### <tuxedo_art_script\></tuxedo_art_script\>
 
-The [\<tuxedo_art_script\>]{style="text-transform: lowercase;"} element defines the name of the script to run.
+The <tuxedo_art_script\> element defines the name of the script to run.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Script
 - **Valid Values**: Text string containing the name of the script.
   - Valid characters: Alpha and numeric characters.
 
-#### \<tuxedo_art_owner\>\</tuxedo_art_owner\>
+#### <tuxedo_art_owner\></tuxedo_art_owner\>
 
-The [\<tuxedo_art_owner\>]{style="text-transform: lowercase;"} element defines the user that is used to run the agent and Tuxedo ART
+The <tuxedo_art_owner\> element defines the user that is used to run the agent and Tuxedo ART
 environment.
 
 - **Requirements**: This is an Optional field.
@@ -4085,9 +4085,9 @@ environment.
     permissions to execute the script (default is \*).
   - Valid Characters: Alpha and numeric characters, \* (asterisk).
 
-#### \<tuxedo_art_jesroot_dir\>\</tuxedo_art_jesroot_dir\>
+#### <tuxedo_art_jesroot_dir\></tuxedo_art_jesroot_dir\>
 
-The \<tuxedo_art_jesroot_dir\> element defines the full path to the JES
+The <tuxedo_art_jesroot_dir\> element defines the full path to the JES
 Root environment so that the agent can retrieve the Tuxedo Job log.
 
 - **Requirements**: This is an Optional field.
@@ -4097,9 +4097,9 @@ Root environment so that the agent can retrieve the Tuxedo Job log.
   - Valid Characters: Alpha and numeric characters, / (slash), -
         (hyphen), \_ (underscore) characters, and period.
 
-#### \<tuxedo_art_env_shell\>\</tuxedo_art_env_shell\>
+#### <tuxedo_art_env_shell\></tuxedo_art_env_shell\>
 
-The [\<tuxedo_art_env_shell\>]{style="text-transform: lowercase;"} element defines the name of the environment script that is called to
+The <tuxedo_art_env_shell\> element defines the name of the environment script that is called to
 setup the environment variables correctly when the connection is made to
 the Tuxedo environment. The name must include the .sh extension.
 
@@ -4109,9 +4109,9 @@ the Tuxedo environment. The name must include the .sh extension.
     shell to execute ending in a .sh extension.
   - Valid Characters: Alpha and numeric characters and period.
 
-#### \<tuxedo_art_variables\>\</tuxedo_art_variables\>
+#### <tuxedo_art_variables\></tuxedo_art_variables\>
 
-The [\<tuxedo_art_variables\>]{style="text-transform: lowercase;"} element defines the list of environment variables to be passed. The
+The <tuxedo_art_variables\> element defines the list of environment variables to be passed. The
 variables are defined as: name1=value1\|name2=value2\|name3=value3. The
 variables are passed in the order in which they are defined.
 
@@ -4126,16 +4126,16 @@ variables are passed in the order in which they are defined.
 
 ### Step Control Definitions
 
-#### \<tuxedo_art_step_control\>\</tuxedo_art_step_control\>
+#### <tuxedo_art_step_control\></tuxedo_art_step_control\>
 
-The [\<tuxedo_art_step_control\>]{style="text-transform: lowercase;"} element defines step control information for the agent. The agent
+The <tuxedo_art_step_control\> element defines step control information for the agent. The agent
 supports a maximum of 5 step control definitions per job.
 
 - **Requirements**: This is an optional field.
 
-#### \<tuxedo_art_step_name\>\</tuxedo_art_step_name\>
+#### <tuxedo_art_step_name\></tuxedo_art_step_name\>
 
-The [\<tuxedo_art_step_name\>]{style="text-transform: lowercase;"} element defines the name of the step defined in the script.
+The <tuxedo_art_step_name\> element defines the name of the step defined in the script.
 
 - **Requirements**: Required if tuxedo_art_step_control parent element
     is specified.
@@ -4150,9 +4150,9 @@ The [\<tuxedo_art_step_name\>]{style="text-transform: lowercase;"} element defin
   - Although brackets are invalid characters, the string
         \[\[xxxx\]\] should be allowed where xxxx equals any character         set.
 
-#### \<tuxedo_art_step_min\>\</tuxedo_art_step_min\>
+#### <tuxedo_art_step_min\></tuxedo_art_step_min\>
 
-The [\<tuxedo_art_step_min\>]{style="text-transform: lowercase;"} element defines the minimum step completion code.
+The <tuxedo_art_step_min\> element defines the minimum step completion code.
 
 - **Requirements**: Required if tuxedo_art_step_control parent element
     is specified.
@@ -4162,9 +4162,9 @@ The [\<tuxedo_art_step_min\>]{style="text-transform: lowercase;"} element define
         value.
   - It can be any number between 0 and 4095.
 
-#### \<tuxedo_art_step_max\>\</tuxedo_art_step_max\>
+#### <tuxedo_art_step_max\></tuxedo_art_step_max\>
 
-The [\<tuxedo_art_step_max\>]{style="text-transform: lowercase;"} element defines the maximum step completion code.
+The <tuxedo_art_step_max\> element defines the maximum step completion code.
 
 - **Requirements**: Required if tuxedo_art_step_control parent element
     is specified.
@@ -4174,9 +4174,9 @@ The [\<tuxedo_art_step_max\>]{style="text-transform: lowercase;"} element define
         tuxedo_art_step_min value.
   - It can be any number between 0 and 4095.
 
-#### \<tuxedo_art_step_action\>\</tuxedo_art_step_action\>
+#### <tuxedo_art_step_action\></tuxedo_art_step_action\>
 
-The [\<tuxedo_art_step_action\>]{style="text-transform: lowercase;"} element defines the step action. Currently, only the 'Send Trigger
+The <tuxedo_art_step_action\> element defines the step action. Currently, only the 'Send Trigger
 Message TO SAM' is supported (e.g., JEVENT=SS1TEST10).
 
 - **Requirements**: Required if tuxedo_art_step_control parent element
@@ -4188,9 +4188,9 @@ Message TO SAM' is supported (e.g., JEVENT=SS1TEST10).
         interfaces. The Trigger Message field is used to define the
         message sent.
 
-#### \<tuxedo_art_step_msg\>\</tuxedo_art_step_msg\>
+#### <tuxedo_art_step_msg\></tuxedo_art_step_msg\>
 
-The [\<tuxedo_art_step_msg\>]{style="text-transform: lowercase;"} element defines the trigger message that is sent to SAM for Agent
+The <tuxedo_art_step_msg\> element defines the trigger message that is sent to SAM for Agent
 Feedback. This must match an LSAM Feedback User Message match event
 definition.
 
@@ -4212,91 +4212,91 @@ possible element for UNIX Primary Job Data. For detailed information on
 each field for this job type, refer to [UNIX Job Details](../../job-types/unix.md) in the
 **Concepts** online help.
 
-\<msg\>
+<msg\>
 
-   \<msgtype\>\</msgtype\>
+   <msgtype\></msgtype\>
 
-   \<schedule\>
+   <schedule\>
 
-      \<job\>
+      <job\>
 
-         \<jobdata\>
+         <jobdata\>
 
-            \<start_image\>\</start_image\>
+            <start_image\></start_image\>
 
-            \<params\>\</params\>
+            <params\></params\>
 
-            \<pre_run\>\</pre_run\>
+            <pre_run\></pre_run\>
 
-            \<uxuid\>\</uxuid\>
+            <uxuid\></uxuid\>
 
-            \<grp_id\>\</grp_id\>
+            <grp_id\></grp_id\>
 
-            \<unix_job_action\>\</unix_job_action\>
+            <unix_job_action\></unix_job_action\>
 
-            \<unix_file_2\_watch\>\</unix_file_2\_watch\>
+            <unix_file_2\_watch\></unix_file_2\_watch\>
 
-            \<unix_file_start_watch\>\</unix_file_start_watch\>
+            <unix_file_start_watch\></unix_file_start_watch\>
 
-            \<unix_file_end_watch\>\</unix_file_end_watch\>
+            <unix_file_end_watch\></unix_file_end_watch\>
 
-            \<unix_file_stable\>\</unix_file_stable\>
+            <unix_file_stable\></unix_file_stable\>
 
-            \<unix_file_subdir\>\</unix_file_subdir\>
+            <unix_file_subdir\></unix_file_subdir\>
 
-            \<nice_val\>\</nice_val\>
+            <nice_val\></nice_val\>
 
-            \<exit_info\>
+            <exit_info\>
 
-               \<exit_oper\>\</exit_oper\>
+               <exit_oper\></exit_oper\>
 
-               \<exit_val\>\</exit_val\>
+               <exit_val\></exit_val\>
 
-            \</exit_info\>
+            </exit_info\>
 
-            \<sgnl_info\>
+            <sgnl_info\>
 
-               \<sgnl_oper\>\</sgnl_oper\>
+               <sgnl_oper\></sgnl_oper\>
 
-               \<sgnl_val\>\<sgnl_val\>
+               <sgnl_val\><sgnl_val\>
 
-            \</sgnl_info\>
+            </sgnl_info\>
 
-            \<core_dmp\>\</core_dmp\>
+            <core_dmp\></core_dmp\>
 
-            \<unix_log_srch\>
+            <unix_log_srch\>
 
-               \<unix_log_srch_opr\>\</unix_log_srch_opr\>
+               <unix_log_srch_opr\></unix_log_srch_opr\>
 
-               \<unix_log_srch_str\>\</unix_log_srch_str\>
+               <unix_log_srch_str\></unix_log_srch_str\>
 
-               \<unix_log_exit_val\>\</unix_log_exit_val\>
+               <unix_log_exit_val\></unix_log_exit_val\>
 
-            \</unix_log_srch\>
+            </unix_log_srch\>
 
-            \<unix_applog_path\>\</unix_applog_path\>
+            <unix_applog_path\></unix_applog_path\>
 
-            \<unix_environment_variables\>
+            <unix_environment_variables\>
 
-               \<unix_env_var\>\</unix_env_var\>
+               <unix_env_var\></unix_env_var\>
 
-               \<unix_env_var\>\</unix_env_var\>
+               <unix_env_var\></unix_env_var\>
 
-            \</unix_environment_variables\>
+            </unix_environment_variables\>
 
-         \</jobdata\>
+         </jobdata\>
 
-      \</job\>
+      </job\>
 
-   \</schedule\>
+   </schedule\>
 
-\</msg\>
+</msg\>
 
 ### Job Information Element Definitions
 
-#### \<start_image\>\</start_image\>
+#### <start_image\></start_image\>
 
-The \<start_image\> element defines the full path to the executable file
+The <start_image\> element defines the full path to the executable file
 on the LSAM machine.
 
 - **Requirements**: This is a Required field.
@@ -4305,9 +4305,9 @@ on the LSAM machine.
   - Minimum Characters: 1
   - Maximum Characters: 2000
 
-#### \<parms\>\</parms\>
+#### <parms\></parms\>
 
-The \<parms\> element defines the parameters that are passed to the
+The <parms\> element defines the parameters that are passed to the
 start image.
 
 - **Requirements**: This is an Optional field.
@@ -4318,9 +4318,9 @@ start image.
   - Invalid Characters: '(Single Quote), \~ (tilde), \`(grave
         accent)
 
-#### \<PRE_RUN\>\</PRE_RUN\> {#pre_runpre_run style="text-transform: lowercase;"}
+#### <PRE_RUN\></PRE_RUN\>
 
-The [\<PRE_RUN\>]{style="text-transform: lowercase;"} element contains the full path of the prerun command line that will be passed to the
+The <PRE_RUN\> element contains the full path of the prerun command line that will be passed to the
 LSAM.
 
 - **Requirements**: This is an Optional field.
@@ -4329,9 +4329,9 @@ LSAM.
   - Minimum Characters: 1
   - Maximum Characters (depending on data type): 2000
 
-#### \<UXUID\>\</UXUID\> {#uxuiduxuid style="text-transform: lowercase;"}
+#### <UXUID\></UXUID\>
 
-The [\<UXUID\>]{style="text-transform: lowercase;"} element defines the UNIX user ID for the job. The UNIX user ID and the Group ID are used for
+The <UXUID\> element defines the UNIX user ID for the job. The UNIX user ID and the Group ID are used for
 UNIX authentication.
 
 - **Requirements**: This is a Required field.
@@ -4340,9 +4340,9 @@ UNIX authentication.
   - Minimum Characters: 1
   - Maximum Characters: 30
 
-#### \<GRP_ID\>\</GRP_ID\> {#grp_idgrp_id style="text-transform: lowercase;"}
+#### <GRP_ID\></GRP_ID\>
 
-The [\<GRP_ID\>]{style="text-transform: lowercase;"} element defines the UNIX user ID and the Group ID are used for UNIX authentication.
+The <GRP_ID\> element defines the UNIX user ID and the Group ID are used for UNIX authentication.
 
 - **Requirements**: This is a Required field.
 - **EM field label**: Group Id
@@ -4350,65 +4350,65 @@ The [\<GRP_ID\>]{style="text-transform: lowercase;"} element defines the UNIX us
   - Minimum Characters: 1
   - Maximum Characters: 30
 
-#### \<unix_job_action\>\</unix_job_action\>
+#### <unix_job_action\></unix_job_action\>
 
-The \<unix_job_action\> element defines the run process the job uses.
+The <unix_job_action\> element defines the run process the job uses.
 
-- **Requirements**: Required for UNIX \<jobdata\>.
+- **Requirements**: Required for UNIX <jobdata\>.
 - **EM field label**: Job Action
 - **Valid Values**: Valid values are Embedded Script, File Arrival,
     and Run Program.
 
-#### \<unix_file_2\_watch\>\</unix_file_2\_watch\>
+#### <unix_file_2\_watch\></unix_file_2\_watch\>
 
-The \<unix_file_2\_watch\> element defines the file path and name of the
+The <unix_file_2\_watch\> element defines the file path and name of the
 file to detect.
 
-- **Requirements**: Optional for UNIX \<jobdata\>.
+- **Requirements**: Optional for UNIX <jobdata\>.
 - **EM field label**: File Name
 - **Valid Values**: The file name must not exceed 260 characters.
 
-#### \<unix_file_start_watch\>\</unix_file_start_watch\>
+#### <unix_file_start_watch\></unix_file_start_watch\>
 
-The \<unix_file_start_watch\> element defines the start of the time
+The <unix_file_start_watch\> element defines the start of the time
 frame that the program uses to watch for the arrival of the file.
 
-- **Requirements**: Optional for UNIX \<jobdata\>.
+- **Requirements**: Optional for UNIX <jobdata\>.
 - **EM field label**: Start Time
 - **Valid Values**: Valid values are a number of days and time, or a
     Token.
 
-#### \<unix_file_end_watch\>\</unix_file_end_watch\>
+#### <unix_file_end_watch\></unix_file_end_watch\>
 
-The \<unix_file_end_watch\> element defines the end of the time frame
+The <unix_file_end_watch\> element defines the end of the time frame
 that the program uses to watch for the arrival of the file.
 
-- **Requirements**: Optional for UNIX \<jobdata\>.
+- **Requirements**: Optional for UNIX <jobdata\>.
 - **EM field label**: End Time
 - **Valid Values**: Valid values are a number of days and time, or a
     Token.
 
-#### \<unix_file_stable\>\</unix_file_stable\>
+#### <unix_file_stable\></unix_file_stable\>
 
-The \<unix_file_stable\> element defines the amount of time the file
+The <unix_file_stable\> element defines the amount of time the file
 size has remained stable to indicate the file has finished arriving.
 
-- **Requirements**: Optional for UNIX \<jobdata\>.
+- **Requirements**: Optional for UNIX <jobdata\>.
 - **EM field label**: Duration
 - **Valid Values**: Valid values are a number of seconds, or a Token.
 
-#### \<unix_file_subdir\>\</unix_file_subdir\>
+#### <unix_file_subdir\></unix_file_subdir\>
 
-The \<unix_file_subdir\> element defines whether or not to search
+The <unix_file_subdir\> element defines whether or not to search
 sub-directories under the specified file path.
 
-- **Requirements**: Optional for UNIX \<jobdata\>.
+- **Requirements**: Optional for UNIX <jobdata\>.
 - **EM field label**: Sub-directory Search
 - **Valid Values**: Valid values are True or False.
 
-#### \<NICE_VAL\>\</NICE_VAL\> {#nice_valnice_val style="text-transform: lowercase;"}
+#### <NICE_VAL\></NICE_VAL\>
 
-The [\<NICE_VAL\>]{style="text-transform: lowercase;"} element is used to increase or decrease the priority of a job and prerun (if present).
+The <NICE_VAL\> element is used to increase or decrease the priority of a job and prerun (if present).
 
 - **Requirements**: This is a Optional field.
 - **EM field label**: NICE Value
@@ -4417,19 +4417,19 @@ The [\<NICE_VAL\>]{style="text-transform: lowercase;"} element is used to increa
 
 ### Exit Code Element Definitions
 
-#### \<EXIT_INFO\>\</EXIT_INFO\> {#exit_infoexit_info style="text-transform: lowercase;"}
+#### <EXIT_INFO\></EXIT_INFO\>
 
-The parent element [\<EXIT_INFO\>]{style="text-transform: lowercase;"} contains the child elements needed to define a single failure criterion
+The parent element <EXIT_INFO\> contains the child elements needed to define a single failure criterion
 for the job. SMADDI supports up to five
-[\<EXIT_INFO\>]{style="text-transform: lowercase;"} elements for each UNIX job.
+<EXIT_INFO\> elements for each UNIX job.
 
-- **Requirements**: Optional for \<jobdata\>. Required to define
+- **Requirements**: Optional for <jobdata\>. Required to define
     failure criteria for the job. At least one
-    [\<EXIT_INFO\>]{style="text-transform: lowercase;"} element must be     provided.
+    <EXIT_INFO\> element must be     provided.
 - **Valid Values**: One
-    [\<EXIT_OPER\>]{style="text-transform: lowercase;"} and one     [\<EXIT_VAL\>]{style="text-transform: lowercase;"} child element.
+    <EXIT_OPER\> and one     <EXIT_VAL\> child element.
 
-#### \<EXIT_OPER\>\</EXIT_OPER\> {#exit_operexit_oper style="text-transform: lowercase;"}
+#### <EXIT_OPER\></EXIT_OPER\>
 
 The exit operators are a list of conditions to be met on the exit values
 and up to 5 can be defined per job definition. The Failure Criteria
@@ -4438,55 +4438,55 @@ of the job. The three areas of value criteria include Exit Codes,
 Signals, and Core Dump. If any of the specified conditions are met,
 OpCon reports the job as Failed.
 
-- **Requirements**: Required field for \<exit_info\>.
+- **Requirements**: Required field for <exit_info\>.
 - **Valid Values**: EQ, NE, LT, GT, GE, LE
 
-#### \<EXIT_VAL\>\</EXIT_VAL\> {#exit_valexit_val style="text-transform: lowercase;"}
+#### <EXIT_VAL\></EXIT_VAL\>
 
-The [\<EXIT_VAL\>]{style="text-transform: lowercase;"} element defines the value of the exit condition and up to five can be defined per job
+The <EXIT_VAL\> element defines the value of the exit condition and up to five can be defined per job
 definition. The Failure Criteria determines how
 OpCon reports the final status of the job.
 The three areas of value criteria include Exit Codes, Signals, and Core
 Dump. If any of the specified conditions are met,
 OpCon reports the job as Failed.
 
-- **Requirements**: Required field for \<exit_info\>.
+- **Requirements**: Required field for <exit_info\>.
 - **Valid Values**: Valid data for this element is an integer ranging
     from -255 to 255.
 
 ### Signal Element Definitions
 
-#### \<SGNL_INFO\>\</SGNL_INFO\> {#sgnl_infosgnl_info style="text-transform: lowercase;"}
+#### <SGNL_INFO\></SGNL_INFO\>
 
-The parent element [\<SGNL_INFO\>]{style="text-transform: lowercase;"} contains the child elements needed to define a single signal failure
+The parent element <SGNL_INFO\> contains the child elements needed to define a single signal failure
 criterion for the job. SMADDI supports up to five
-[\<SGNL_INFO\>]{style="text-transform: lowercase;"} elements for each UNIX job.
+<SGNL_INFO\> elements for each UNIX job.
 
-- **Requirements**: Optional for \<jobdata\>.
+- **Requirements**: Optional for <jobdata\>.
 - **Valid Values**: One
-    [\<SGNL_OPER\>]{style="text-transform: lowercase;"} and one     [\<SGNL_VAL\>]{style="text-transform: lowercase;"} child element.
+    <SGNL_OPER\> and one     <SGNL_VAL\> child element.
 
-#### \<SGNL_OPER\>\</SGNL_OPER\> {#sgnl_opersgnl_oper style="text-transform: lowercase;"}
+#### <SGNL_OPER\></SGNL_OPER\>
 
 The signal operators are a list of conditions to be made on the exit
 values. If any signal failure criterion is TRUE when a job finishes,
 OpCon reports the job as Failed.
 
-- **Requirements**: Required field for \<sgnl_info\>.
+- **Requirements**: Required field for <sgnl_info\>.
 - **Valid Values**: EQ, NE, LT, GT, GE, LE
 
-#### \<SGNL_VAL\>\</SGNL_VAL\> {#sgnl_valsgnl_val style="text-transform: lowercase;"}
+#### <SGNL_VAL\></SGNL_VAL\>
 
-The [\<SGNL_VAL\>]{style="text-transform: lowercase;"} element defines the value of the signal exit and up to 5 can be defined per job
+The <SGNL_VAL\> element defines the value of the signal exit and up to 5 can be defined per job
 definition.
 
-- **Requirements**: Required field for \<sgnl_info\>.
+- **Requirements**: Required field for <sgnl_info\>.
 - **Valid Values**: Valid data for this element is an integer ranging
     from 0 to 99.
 
-#### \<CORE_DMP\>\</CORE_DMP\> {#core_dmpcore_dmp style="text-transform: lowercase;"}
+#### <CORE_DMP\></CORE_DMP\>
 
-The [\<CORE_DMP\>]{style="text-transform: lowercase;"} element determines if the job should fail when the job does create a core file,
+The <CORE_DMP\> element determines if the job should fail when the job does create a core file,
 or if the job should fail when the job does not create a core file.
 
 - **Requirements**: This is a optional field.
@@ -4499,47 +4499,47 @@ or if the job should fail when the job does not create a core file.
 
 ### Job Output Parsing Element Definitions
 
-#### \<unix_log_srch\>\</unix_log_srch\>
+#### <unix_log_srch\></unix_log_srch\>
 
-The parent element \<unix_log_srch\> contains the child elements needed
+The parent element <unix_log_srch\> contains the child elements needed
 to define the search criteria for analyzing job output and the resulting
 exit code when the criteria are met.
 
-- **Requirements**: Optional for UNIX Job Output Parsing \<jobdata\>.
+- **Requirements**: Optional for UNIX Job Output Parsing <jobdata\>.
 - **Valid Values**: Any valid child element.
 
-#### \<unix_log_srch_opr\>\</unix_log_srch_opr\>
+#### <unix_log_srch_opr\></unix_log_srch_opr\>
 
-The \<unix_log_srch_opr\> element defines the type of search operation
+The <unix_log_srch_opr\> element defines the type of search operation
 to perform.
 
-- **Requirements**: Optional for \<unix_log_srch\>.
+- **Requirements**: Optional for <unix_log_srch\>.
 - **EM field label**: Search Operation
 - **Valid Values**: Valid values are Contains and Does Not Contain.
 
-#### \<unix_log_srch_str\>\</unix_log_srch_str\>
+#### <unix_log_srch_str\></unix_log_srch_str\>
 
-The \<unix_log_srch_str\> element defines the parsing value string to be
+The <unix_log_srch_str\> element defines the parsing value string to be
 searched.
 
-- **Requirements**: Optional for \<unix_log_srch\>.
+- **Requirements**: Optional for <unix_log_srch\>.
 - **EM field label**: String to Search
 - **Valid Values**: The String to Search must not exceed 255
     characters.
 
-#### \<unix_log_exit_val\>\</unix_log_exit_val\>
+#### <unix_log_exit_val\></unix_log_exit_val\>
 
-The \<unix_log_exit_val\> element defines the exit code to use if the
+The <unix_log_exit_val\> element defines the exit code to use if the
 String to Search matches the Search Operation criteria.
 
-- **Requirements**: Optional for \<unix_log_srch\>.
+- **Requirements**: Optional for <unix_log_srch\>.
 - **EM field label**: Exit Code
 - **Valid Values**: Valid data for this element is any integer value
     in the range of -2147483648 through 2147483647.
 
-#### \<unix_applog_path\>\</unix_applog_path\>
+#### <unix_applog_path\></unix_applog_path\>
 
-The \<unix_applog_path\> element defines an external application log to
+The <unix_applog_path\> element defines an external application log to
 be attached to the job output log.
 
 - **Requirements**: This is an Optional field.
@@ -4549,23 +4549,23 @@ be attached to the job output log.
 
 ### Environment Variables Element Definitions
 
-#### \<unix_environment_variables\>\</unix_environment_variables\>
+#### <unix_environment_variables\></unix_environment_variables\>
 
-The \<unix_environment_variables\> element contains the child element
+The <unix_environment_variables\> element contains the child element
 needed to define one or more environment variables for the job.
 
-- **Requirements**: Optional for \<jobdata\>.
-- **Valid Values**: One \<unix_env_var\> child element for every
+- **Requirements**: Optional for <jobdata\>.
+- **Valid Values**: One <unix_env_var\> child element for every
     environment variable defined for the job.
 
-#### \<unix_env_var\>\</unix_env_var\>
+#### <unix_env_var\></unix_env_var\>
 
-The \<unix_env_var\> element defines the name=value pair to be used in
+The <unix_env_var\> element defines the name=value pair to be used in
 the script. Environment variables provide the ability to send dynamic
 values to the script at runtime.
 
 - **Requirements**: This is a Required field required if
-    \<unix_environment_variables\> is present.
+    <unix_environment_variables\> is present.
 - **EM field label**: Env Variable Name, Env Variable Value
 - **Valid Values**:
   - Minimum Characters: 3
@@ -4580,377 +4580,377 @@ possible element for Windows Primary Job Data. For detailed information
 on each field for this job type, refer to [Windows Job Details](../../job-types/windows.md) in
 the **Concepts** online help.
 
-\<jobdata\>
+<jobdata\>
 
 **\-\-\-\-\--**[Job Information Element Definitions](#Job4)
 **\-\-\-\-\--**
 
-   \<wuid\>\</wuid\>
+   <wuid\></wuid\>
 
-   \<job_priority\>\</job_priority\>
+   <job_priority\></job_priority\>
 
-   \<win_job_action\>\</win_job_action\>
+   <win_job_action\></win_job_action\>
 
-   \<win_file_2\_watch\>\</win_file_2\_watch\>
+   <win_file_2\_watch\></win_file_2\_watch\>
 
-   \<win_file_start_watch\>\</win_file_start_watch\>
+   <win_file_start_watch\></win_file_start_watch\>
 
-   \<win_file_end_watch\>\</win_file_end_watch\>
+   <win_file_end_watch\></win_file_end_watch\>
 
-   \<win_file_stable\>\</win_file_stable\>
+   <win_file_stable\></win_file_stable\>
 
-   \<win_file_subdir\>\</win_file_subdir\>
+   <win_file_subdir\></win_file_subdir\>
 
-   \<cmd_line\>\</cmd_line\>
+   <cmd_line\></cmd_line\>
 
-   \<working_dir\>\</working_dir\>
+   <working_dir\></working_dir\>
 
-   \<ecof\>\</ecof\>
+   <ecof\></ecof\>
 
 **\-\-\-\-\--**[Exit Code Element Definitions](#Exit)
 **\-\-\-\-\--**
 
-   \<fail_1\_cond\>\</fail_1\_cond\>
+   <fail_1\_cond\></fail_1\_cond\>
 
-   \<fail_1\_val\>\</fail_1\_val\>
+   <fail_1\_val\></fail_1\_val\>
 
-   \<fail_2\_cond\>\</fail_2\_cond\>
+   <fail_2\_cond\></fail_2\_cond\>
 
-   \<fail_2\_val\>\</fail_2\_val\>
+   <fail_2\_val\></fail_2\_val\>
 
-   \<fail_3\_cond\>\</fail_3\_cond\>
+   <fail_3\_cond\></fail_3\_cond\>
 
-   \<fail_3\_val\>\</fail_3\_val\>
+   <fail_3\_val\></fail_3\_val\>
 
-   \<fail_4\_cond\>\</fail_4\_cond\>
+   <fail_4\_cond\></fail_4\_cond\>
 
-   \<fail_4\_val\>\</fail_4\_val\>
+   <fail_4\_val\></fail_4\_val\>
 
-   \<fail_5\_cond\>\</fail_5\_cond\>
+   <fail_5\_cond\></fail_5\_cond\>
 
-   \<fail_5\_val\>\</fail_5\_val\>
+   <fail_5\_val\></fail_5\_val\>
 
 **\-\-\-\-\--**[Prerun Job Element Definitions](#Prerun7)
 **\-\-\-\-\--**
 
-   \<wprerun\>
+   <wprerun\>
 
-      \<pre_cmd_line\>\</pre_cmd_line\>
+      <pre_cmd_line\></pre_cmd_line\>
 
-      \<pre_working_dir\>\</pre_working_dir\>
+      <pre_working_dir\></pre_working_dir\>
 
-      \<pre_fail_cond\>\</pre_fail_cond\>
+      <pre_fail_cond\></pre_fail_cond\>
 
-      \<pre_fail_val\>\</pre_fail_val\>
+      <pre_fail_val\></pre_fail_val\>
 
-   \</wprerun\>
+   </wprerun\>
 
   **\-\-\-\-\--**[Job Output Parsing Element Definitions](#Job8)**\-\-\-\-\--**
 
-   \<win_log_srch\>
+   <win_log_srch\>
 
-      \<win_log_srch_opr\>\</win_log_srch_opr\>
+      <win_log_srch_opr\></win_log_srch_opr\>
 
-      \<win_log_srch_str\>\</win_log_srch_str\>
+      <win_log_srch_str\></win_log_srch_str\>
 
-      \<win_log_exit_val\>\</win_log_exit_val\>
+      <win_log_exit_val\></win_log_exit_val\>
 
-   \</win_log_srch\>
+   </win_log_srch\>
 
-   \<win_applog_path\>\</win_applog_path\>
+   <win_applog_path\></win_applog_path\>
 
   **\-\-\-\-\--**[Environment Variables Element Definitions](#Environm)**\-\-\-\-\--**
 
-   \<win_environment_variables\>
+   <win_environment_variables\>
 
-      \<win_env_var\>\</win_env_var\>
+      <win_env_var\></win_env_var\>
 
-      \<win_env_var\>\</win_env_var\>
+      <win_env_var\></win_env_var\>
 
-   \</win_environment_variables\>
+   </win_environment_variables\>
 
-\</jobdata\>
+</jobdata\>
 
 ### Job Information Element Definitions
 
-#### \<wuid\>\</wuid\>
+#### <wuid\></wuid\>
 
-The \<wuid\> element defines the Windows user to be impersonated when
+The <wuid\> element defines the Windows user to be impersonated when
 launching the job.
 
-- **Requirements**: Required for Windows \<jobdata\>.
+- **Requirements**: Required for Windows <jobdata\>.
 - **EM field label**: User ID
 - **Valid Values**: The user name must not exceed 32 characters.
 
-#### \<job_priority\>\</job_priority\>
+#### <job_priority\></job_priority\>
 
-The \<job_priority\> element defines the Windows priority with which the
+The <job_priority\> element defines the Windows priority with which the
 job runs.
 
-- **Requirements**: Required for Windows \<jobdata\>.
+- **Requirements**: Required for Windows <jobdata\>.
 - **EM field label**: Job Priority
 - **Valid Values**: Valid values are Normal, High, Idle, and
     Real-Time.
 
-#### \<win_job_action\>\</win_job_action\>
+#### <win_job_action\></win_job_action\>
 
-The \<win_job_action\> element defines the run process the job uses.
+The <win_job_action\> element defines the run process the job uses.
 
-- **Requirements**: Required for Windows \<jobdata\>.
+- **Requirements**: Required for Windows <jobdata\>.
 - **EM field label**: Job Action
 - **Valid Values**: Valid values are Embedded Script, File Arrival,
     and Run Program.
 
-#### \<win_file_2\_watch\>\</win_file_2\_watch\>
+#### <win_file_2\_watch\></win_file_2\_watch\>
 
-The \<win_file_2\_watch\> element defines the file path and name of the
+The <win_file_2\_watch\> element defines the file path and name of the
 file to detect.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **EM field label**: File Name
 - **Valid Values**: The file name must not exceed 260 characters.
 
-#### \<win_file_start_watch\>\</win_file_start_watch\>
+#### <win_file_start_watch\></win_file_start_watch\>
 
-The \<win_file_start_watch\> element defines the start of the time frame
+The <win_file_start_watch\> element defines the start of the time frame
 that the program uses to watch for the arrival of the file.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **EM field label**: Start Time
 - **Valid Values**: Valid values are a number of days and time, or a
     Token.
 
-#### \<win_file_end_watch\>\</win_file_end_watch\>
+#### <win_file_end_watch\></win_file_end_watch\>
 
-The \<win_file_end_watch\> element defines the end of the time frame
+The <win_file_end_watch\> element defines the end of the time frame
 that the program uses to watch for the arrival of the file.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **EM field label**: End Time
 - **Valid Values**: Valid values are a number of days and time, or a
     Token.
 
-#### \<win_file_stable\>\</win_file_stable\>
+#### <win_file_stable\></win_file_stable\>
 
-The \<win_file_stable\> element defines the amount of time the file size
+The <win_file_stable\> element defines the amount of time the file size
 has remained stable to indicate the file has finished arriving.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **EM field label**: Duration
 - **Valid Values**: Valid values are a number of seconds, or a Token.
 
-#### \<win_file_subdir\>\</win_file_subdir\>
+#### <win_file_subdir\></win_file_subdir\>
 
-The \<win_file_subdir\> element defines whether or not to search
+The <win_file_subdir\> element defines whether or not to search
 sub-directories under the specified file path.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **EM field label**: Sub-directory Search
 - **Valid Values**: Valid values are True or False.
 
-#### \<cmd_line\>\</cmd_line\>
+#### <cmd_line\></cmd_line\>
 
-The \<cmd_line\> element defines the job's command line.
+The <cmd_line\> element defines the job's command line.
 
-- **Requirements**: Required for Windows \<jobdata\>.
+- **Requirements**: Required for Windows <jobdata\>.
 - **EM field label**: Command Line
 - **Valid Values**: The command line must not exceed 4000 characters.
 
-#### \<working_dir\>\</working_dir\>
+#### <working_dir\></working_dir\>
 
-The \<working_dir\> element defines the Working Directory used for the
+The <working_dir\> element defines the Working Directory used for the
 job.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **EM field label**: Working Directory
 - **Valid Values**: The Working Directory must not exceed 255
     characters.
 
-#### \<ecof\>\</ecof\>
+#### <ecof\></ecof\>
 
-The \<ecof\> element defines the Exit Code Override File used by the
+The <ecof\> element defines the Exit Code Override File used by the
 job.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **EM field label**: E.C.O.F.
 - **Valid Values**: The Exit Code Override File must not exceed 255
     characters.
 
 ### Exit Code Element Definitions
 
-#### \<fail_1\_cond\>\</fail_1\_cond\>
+#### <fail_1\_cond\></fail_1\_cond\>
 
-The \<fail_1\_cond\> element defines the first Exit Code Operator used
+The <fail_1\_cond\> element defines the first Exit Code Operator used
 by the job.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
-- **Valid Values**: Valid data values for this element are \<space\>,
+- **Requirements**: Optional for Windows <jobdata\>.
+- **Valid Values**: Valid data values for this element are <space\>,
     EQ, NE, LT, GT, GE, and LE.
 
-#### \<fail_1\_val\>\</fail_1\_val\>
+#### <fail_1\_val\></fail_1\_val\>
 
-The \<fail_1\_val\> element defines the first Exit Code Value.
+The <fail_1\_val\> element defines the first Exit Code Value.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **Valid Values**: Valid data for this element is any integer value
     in the range of -2147483648 through 2147483647.
 
-#### \<fail_2\_cond\>\</fail_2\_cond\>
+#### <fail_2\_cond\></fail_2\_cond\>
 
-The \<fail_2\_cond\> element defines the second Exit Code Operator to be
+The <fail_2\_cond\> element defines the second Exit Code Operator to be
 used by the job.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
-- **Valid Values**: Valid data values for this element are \<space\>,
+- **Requirements**: Optional for Windows <jobdata\>.
+- **Valid Values**: Valid data values for this element are <space\>,
     EQ, NE, LT, GT, GE, and LE.
 
-#### \<fail_2\_val\>\</fail_2\_val\>
+#### <fail_2\_val\></fail_2\_val\>
 
-The \<fail_2\_val\> element defines the second Exit Code Value.
+The <fail_2\_val\> element defines the second Exit Code Value.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **Valid Values**: Valid data for this element is any integer value
     in the range of -2147483648 through 2147483647.
 
-#### \<fail_3\_cond\>\</fail_3\_cond\>
+#### <fail_3\_cond\></fail_3\_cond\>
 
-The \<fail_3\_cond\> element defines the third Exit Code Operator to be
+The <fail_3\_cond\> element defines the third Exit Code Operator to be
 used by the job.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
-- **Valid Values**: Valid data values for this element are \<space\>,
+- **Requirements**: Optional for Windows <jobdata\>.
+- **Valid Values**: Valid data values for this element are <space\>,
     EQ, NE, LT, GT, GE, and LE.
 
-#### \<fail_3\_val\>\</fail_3\_val\>
+#### <fail_3\_val\></fail_3\_val\>
 
-The \<fail_3\_val\> element defines the third Exit Code Value.
+The <fail_3\_val\> element defines the third Exit Code Value.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **Valid Values**: Valid data for this element is any integer value
     in the range of -2147483648 through 2147483647.
 
-#### \<fail_4\_cond\>\</fail_4\_cond\>
+#### <fail_4\_cond\></fail_4\_cond\>
 
-The \<fail_4\_cond\> element defines the fourth Exit Code Operator to be
+The <fail_4\_cond\> element defines the fourth Exit Code Operator to be
 used by the job.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
-- **Valid Values**: Valid data values for this element are \<space\>,
+- **Requirements**: Optional for Windows <jobdata\>.
+- **Valid Values**: Valid data values for this element are <space\>,
     EQ, NE, LT, GT, GE, and LE.
 
-#### \<fail_4\_val\>\</fail_4\_val\>
+#### <fail_4\_val\></fail_4\_val\>
 
-The \<fail_4\_val\> element defines the fourth Exit Code Value.
+The <fail_4\_val\> element defines the fourth Exit Code Value.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **Valid Values**: Valid data for this element is any integer value
     in the range of -2147483648 through 2147483647.
 
-#### \<fail_5\_cond\>\</fail_5\_cond\>
+#### <fail_5\_cond\></fail_5\_cond\>
 
-The \<fail_5\_cond\> element defines the fifth Exit Code Operator to be
+The <fail_5\_cond\> element defines the fifth Exit Code Operator to be
 used by the job.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
-- **Valid Values**: Valid data values for this element are \<space\>,
+- **Requirements**: Optional for Windows <jobdata\>.
+- **Valid Values**: Valid data values for this element are <space\>,
     EQ, NE, LT, GT, GE, and LE.
 
-#### \<fail_5\_val\>\</fail_5\_val\>
+#### <fail_5\_val\></fail_5\_val\>
 
-The \<fail_5\_val\> element defines the fifth Exit Code Value.
+The <fail_5\_val\> element defines the fifth Exit Code Value.
 
-- **Requirements**: Optional for Windows \<jobdata\>.
+- **Requirements**: Optional for Windows <jobdata\>.
 - **Valid Values**: Valid data for this element is any integer value
     in the range of -2147483648 through 2147483647.
 
 ### Prerun Job Element Definitions
 
-#### \<wprerun\>\</wprerun\>
+#### <wprerun\></wprerun\>
 
-The parent element \<wprerun\> contains the child elements needed to
+The parent element <wprerun\> contains the child elements needed to
 describe a prerun job for the primary job.
 
-- **Requirements**: Optional for Windows Prerun \<jobdata\>.
+- **Requirements**: Optional for Windows Prerun <jobdata\>.
 - **Valid Values**: Any valid child element. SMADDI allows only one
-    \<wprerun\> element per \<jobdata\> element.
+    <wprerun\> element per <jobdata\> element.
 
-#### \<pre_cmd_line\>\</pre_cmd_line\>
+#### <pre_cmd_line\></pre_cmd_line\>
 
-The \<pre_cmd_line\> element defines the command line to be used when
+The <pre_cmd_line\> element defines the command line to be used when
 launching the prerun job.
 
-- **Requirements**: Required for \<wprerun\>.
+- **Requirements**: Required for <wprerun\>.
 - **Valid Values**: The Command Line must not exceed 4000 characters.
 
-#### \<pre_working_dir\>\</pre_working_dir\>
+#### <pre_working_dir\></pre_working_dir\>
 
-The \<pre_working_dir\> element defines the Working Directory used for
+The <pre_working_dir\> element defines the Working Directory used for
 the prerun.
 
-- **Requirements**: Optional for \<wprerun\>.
+- **Requirements**: Optional for <wprerun\>.
 - **Valid Values**: The prerun Working Directory must not exceed 255
     characters.
 
-#### \<pre_fail_cond\>\</pre_fail_cond\>
+#### <pre_fail_cond\></pre_fail_cond\>
 
-The \<pre_fail_cond\> element defines the Prerun Exit Code Operator.
+The <pre_fail_cond\> element defines the Prerun Exit Code Operator.
 
-- **Requirements**: Optional for \<wprerun\>.
-- **Valid Values**: Valid data values for this element are \<space\>,
+- **Requirements**: Optional for <wprerun\>.
+- **Valid Values**: Valid data values for this element are <space\>,
     EQ, NE, LT, GT, GE, and LE.
 
-#### \<pre_fail_val\>\</pre_fail_val\>
+#### <pre_fail_val\></pre_fail_val\>
 
-The \<pre_fail_val\> element defines the Prerun Exit Code Value.
+The <pre_fail_val\> element defines the Prerun Exit Code Value.
 
-- **Requirements**: Optional for \<wprerun\>.
+- **Requirements**: Optional for <wprerun\>.
 - **Valid Values**: Valid data for this element is any integer value
     in the range of -2147483648 through 2147483647.
 
 ### Job Output Parsing Element Definitions
 
-#### \<win_log_srch\>\</win_log_srch\>
+#### <win_log_srch\></win_log_srch\>
 
-The parent element \<win_log_srch\> contains the child elements needed
+The parent element <win_log_srch\> contains the child elements needed
 to define the search criteria for analyzing job output and the resulting
 exit code when the criteria are met.
 
 - **Requirements:** Optional for Windows Job Output Parsing
-    \<jobdata\>.
+    <jobdata\>.
 - **Valid Values:** Any valid child element.
 
-#### \<win_log_srch_opr\>\</win_log_srch_opr\>
+#### <win_log_srch_opr\></win_log_srch_opr\>
 
-The \<win_log_srch_opr\> element defines the type of search operation to
+The <win_log_srch_opr\> element defines the type of search operation to
 perform.
 
-- **Requirements:** Optional for \<win_log_srch\>.
+- **Requirements:** Optional for <win_log_srch\>.
 - **EM field label:** Search Operation
 - **Valid Values:** Valid values are Contains and Does Not Contain.
 
-#### \<win_log_srch_str\>\</win_log_srch_str\>
+#### <win_log_srch_str\></win_log_srch_str\>
 
-The \<win_log_srch_str\> element defines the parsing value string to be
+The <win_log_srch_str\> element defines the parsing value string to be
 searched.
 
-- **Requirements:** Optional for \<win_log_srch\>.
+- **Requirements:** Optional for <win_log_srch\>.
 - **EM field label:** String to Search
 - **Valid Values:** The String to Search must not exceed 255
     characters.
 
-#### \<win_log_exit_val\>\</win_log_exit_val\>
+#### <win_log_exit_val\></win_log_exit_val\>
 
-The \<win_log_exit_val\> element defines the exit code to use if the
+The <win_log_exit_val\> element defines the exit code to use if the
 String to Search matches the Search Operation criteria.
 
-- **Requirements:** Optional for \<win_log_srch\>.
+- **Requirements:** Optional for <win_log_srch\>.
 - **EM field label:** Exit Code
 - **Valid Values:** Valid data for this element is any integer value
     in the range of -2147483648 through 2147483647.
 
-#### \<win_applog_path\>\</win_applog_path\>
+#### <win_applog_path\></win_applog_path\>
 
-The \<win_applog_path\> element defines an external application log to
+The <win_applog_path\> element defines an external application log to
 be attached to the job output log.
 
 - **Requirements:** This is an Optional field.
@@ -4960,23 +4960,23 @@ be attached to the job output log.
 
 ### Environment Variables Element Definitions
 
-#### \<win_environment_variables\>\</win_environment_variables\>
+#### <win_environment_variables\></win_environment_variables\>
 
-The \<win_environment_variables\> element contains the child element
+The <win_environment_variables\> element contains the child element
 needed to define one or more environment variables for the job.
 
-- **Requirements**: Optional for \<jobdata\>.
-- **Valid Values**: One \<win_env_var\> child element for every
+- **Requirements**: Optional for <jobdata\>.
+- **Valid Values**: One <win_env_var\> child element for every
     environment variable defined for the job.
 
-#### \<win_env_var\>\</win_env_var\>
+#### <win_env_var\></win_env_var\>
 
-The \<win_env_var\> element defines the name=value pair to be used in
+The <win_env_var\> element defines the name=value pair to be used in
 the script. Environment variables provide the ability to send dynamic
 values to the script at runtime.
 
 - **Requirements**: This is a Required field required if
-    \<win_environment_variables\> is present.
+    <win_environment_variables\> is present.
 - **EM field label**: Env Variable Name, Env Variable Value
 - **Valid Values**:
   - Minimum Characters: 3
@@ -4991,159 +4991,159 @@ possible element for z/OS Primary Job Data. For detailed information on
 each field for this job type, refer to [z/OS Job Details](../../job-types/zos.md) in the
 **Concepts** online help.
 
-\<jobdata\>
+<jobdata\>
 
 **\-\-\-\-\--**[Job Information Element Definitions](#Job3)
 **\-\-\-\-\--**
 
-   \<event_type\>\</event_type\>
+   <event_type\></event_type\>
 
-   \<event_name\>\</event_name\>
+   <event_name\></event_name\>
 
-   \<security_id\>\</security_id\>
+   <security_id\></security_id\>
 
-   \<ddname\>\</ddname\>
+   <ddname\></ddname\>
 
-   \<override_ddname\>\</override_ddname\>
+   <override_ddname\></override_ddname\>
 
-   \<member_name\>\</member_name\>
+   <member_name\></member_name\>
 
-   \<low_job_cond\>\</low_job_cond\>
+   <low_job_cond\></low_job_cond\>
 
-   \<max_job_cond\>\</max_job_cond\>
+   <max_job_cond\></max_job_cond\>
 
-   \<submit_from\>\</submit_from\>
+   <submit_from\></submit_from\>
 
-   \<cmd_parm\>\</cmd_parm\>
+   <cmd_parm\></cmd_parm\>
 
-   \<prsysid\>\</prsysid\>
+   <prsysid\></prsysid\>
 
-   \<restart_dupdsnact\>\</restart_dupdsnact\>
+   <restart_dupdsnact\></restart_dupdsnact\>
 
-   \<dupdsnact\>\</dupdsnact\>
+   <dupdsnact\></dupdsnact\>
 
-   \<restart_gdg\>\</restart_gdg\>
+   <restart_gdg\></restart_gdg\>
 
 **\-\-\-\-\--**[Token Equation Element Definitions](#Token)
 **\-\-\-\-\--**
 
-   \<token\>\</token\>
+   <token\></token\>
 
 **\-\-\-\-\--**[Step Control Element Definitions](#Step)
 **\-\-\-\-\--**
 
-   \<step_control\>
+   <step_control\>
 
-      \<step_name\>\</step_name\>
+      <step_name\></step_name\>
 
-      \<step_min\>\</step_min\>
+      <step_min\></step_min\>
 
-      \<step_max\>\</step_max\>
+      <step_max\></step_max\>
 
-      \<step_action\>\</step_action\>
+      <step_action\></step_action\>
 
-      \<step_msg\>\</step_msg\>
+      <step_msg\></step_msg\>
 
-   \</step_control\>
+   </step_control\>
 
 **\-\-\-\-\--**[File Prerun Element Definitions](#File2)
 **\-\-\-\-\--**
 
-   \<file_prerun\>
+   <file_prerun\>
 
-      \<dsn_filename\>\</dsn_filename\>
+      <dsn_filename\></dsn_filename\>
 
-      \<dsn_gen\>\</dsn_gen\>
+      <dsn_gen\></dsn_gen\>
 
-      \<dsn_cond_when\>\</dsn_cond_when\>
+      <dsn_cond_when\></dsn_cond_when\>
 
-      \<dsn_jobname\>\</dsn_jobname\>
+      <dsn_jobname\></dsn_jobname\>
 
-   \</file_prerun\>
+   </file_prerun\>
 
 **\-\-\-\-\--**[Message Prerun Element Definitions](#Message2)
 **\-\-\-\-\--**
 
-   \<msg_prerun\>
+   <msg_prerun\>
 
-      \<msg_key\>\</msg_key\>
+      <msg_key\></msg_key\>
 
-      \<msg_gen\>\</msg_gen\>
+      <msg_gen\></msg_gen\>
 
-      \<msg_when\>\</msg_when\>
+      <msg_when\></msg_when\>
 
-      \<msg_jobname\>\</msg_jobname\>
+      <msg_jobname\></msg_jobname\>
 
-      \<msg_offset\>\</msg_offset\>
+      <msg_offset\></msg_offset\>
 
-      \<msg_len\>\</msg_len\>
+      <msg_len\></msg_len\>
 
-   \</msp_prerun\>
+   </msp_prerun\>
 
 **\-\-\-\-\--**[Task Prerun Element Definitions](#Task)
 **\-\-\-\-\--**
 
-   \<task_prerun\>
+   <task_prerun\>
 
-      \<task_name\>\</task_name\>
+      <task_name\></task_name\>
 
-      \<task_cond\>\</task_cond\>
+      <task_cond\></task_cond\>
 
-   \</task_prerun\>
+   </task_prerun\>
 
 **\-\-\-\-\--**[Tape Prerun Element Definitions](#Tape)
 **\-\-\-\-\--**
 
-   \<tape_prerun\>
+   <tape_prerun\>
 
-      \<tape_devname\>\</tape_devname\>
+      <tape_devname\></tape_devname\>
 
-      \<tape_devnum\>\</tape_devnum\>
+      <tape_devnum\></tape_devnum\>
 
-   \</tape_prerun\>
+   </tape_prerun\>
 
-   \<rexx_prerun\>
+   <rexx_prerun\>
 
-      \<rexx_name\>\</rexx_name\>
+      <rexx_name\></rexx_name\>
 
-      \<rexx_ddname\>\</rexx_ddname\>
+      <rexx_ddname\></rexx_ddname\>
 
-      \<rexx_parm\>\</rexx_parm\>
+      <rexx_parm\></rexx_parm\>
 
-   \</rexx_prerun\>
+   </rexx_prerun\>
 
-\</jobdata\>
+</jobdata\>
 
 ### Job Information Element Definitions
 
-#### \<event_type\>\</event_type\>
+#### <event_type\></event_type\>
 
-The \<event_type\> element defines the z/OS Job sub-type. The default is
+The <event_type\> element defines the z/OS Job sub-type. The default is
 a standard Batch Job (submitted from a standard JCL library and executed
 in a JES initiator). Each job type has a different execution profile and
 method of resolving security and access permissions.
 
-- **Requirements**: Required for z/OS \<jobdata\>.
+- **Requirements**: Required for z/OS <jobdata\>.
 - **EM field label**: z/OS Job Type
 - **Valid Values**: The options are Batch Job, Started Task, Console
     Command Execution, REXX Event (Dynamic), Tracked Job, and Queued
     Job.
 
-#### \<event_name\>\</event_name\>
+#### <event_name\></event_name\>
 
-The \<event_name\> element defines different settings based on the z/OS
+The <event_name\> element defines different settings based on the z/OS
 Job Type. The default is the first word, up to eight characters, from
 the job name:
 
 - **Requirements**: Required for all event types.
-- For Batch jobs, \<event_name\> is the JCL Member name in the job
+- For Batch jobs, <event_name\> is the JCL Member name in the job
     definition on the daily schedule.
   - **EM field label**: Member Name
-- For Started tasks, \<event_name\> is the Started Task Name.
+- For Started tasks, <event_name\> is the Started Task Name.
   - **EM field label**: Started Task Name
-- For Commands, \<event_name\> is the Host Job Name.
+- For Commands, <event_name\> is the Host Job Name.
   - **EM field label**: Host Job Name
-- For REXX events, \<event_name\> is the Rexx Exec Name.
+- For REXX events, <event_name\> is the Rexx Exec Name.
   - **EM field label**: Exec Name
 - This element is ignored for Tracked and Queued Event Types.
   - **EM field label**: n/a
@@ -5157,9 +5157,9 @@ the job name:
 Tokens should also be allowed. Although brackets are invalid characters, the string \[\[xxxx\]\] should be allowed where xxxx equals any character set.
 :::
 
-#### \<security_id\>\</security_id\>
+#### <security_id\></security_id\>
 
-The \<security_id\> element defines the z/OS security ID to be assigned
+The <security_id\> element defines the z/OS security ID to be assigned
 to this job, if any. The default is the user ID in the job card or the
 USERID from XPSPARMS.
 
@@ -5174,9 +5174,9 @@ USERID from XPSPARMS.
 Tokens should also be allowed. Although brackets are invalid characters, the string \[\[xxxx\]\] should be allowed where xxxx equals any character set.
 :::
 
-#### \<ddname\>\</ddname\>
+#### <ddname\></ddname\>
 
-The \<ddname\> element defines the DD Name in the LSAM task that
+The <ddname\> element defines the DD Name in the LSAM task that
 contains the library name(s) that contain this job's JCL or the Rexx
 Exec. The default is XPSJCL or the value of the JCLDD parameter in
 XPSPARMS.
@@ -5195,9 +5195,9 @@ XPSPARMS.
 Tokens should also be allowed. Although brackets are invalid characters, the string \[\[xxxx\]\] should be allowed where xxxx equals any character set.
 :::
 
-#### \<override_ddname\>\</override_ddname\>
+#### <override_ddname\></override_ddname\>
 
-The \<override_ddname\> element defines the DD Name in the LSAM task to
+The <override_ddname\> element defines the DD Name in the LSAM task to
 search for JCL before the DDNAME.
 
 - **Requirements**: Optional for 'Batch Job' event type.
@@ -5211,10 +5211,10 @@ search for JCL before the DDNAME.
 Tokens should also be allowed. Although brackets are invalid characters, the string \[\[xxxx\]\] should be allowed where xxxx equals any character set.
 :::
 
-#### \<member_name\>\</member_name\>
+#### <member_name\></member_name\>
 
-The \<member_name\> element defines a Member name to be used in place of
-the \<event_name\>. It is most commonly used for temporary overrides.
+The <member_name\> element defines a Member name to be used in place of
+the <event_name\>. It is most commonly used for temporary overrides.
 
 - **Requirements**: Optional for 'Batch Job' event type.
 - **EM field label**: Temporary Member
@@ -5228,9 +5228,9 @@ the \<event_name\>. It is most commonly used for temporary overrides.
 Tokens should also be allowed. Although brackets are invalid characters, the string \[\[xxxx\]\] should be allowed where xxxx equals any character set.
 :::
 
-#### \<low_job_cond\>\</low_job_cond\>
+#### <low_job_cond\></low_job_cond\>
 
-The \<low_job_cond\> element defines the minimum tolerated return code
+The <low_job_cond\> element defines the minimum tolerated return code
 for the job. Any return code less than this value is considered a
 failure condition. If it is not defined, the low return code will not be
 checked.
@@ -5242,9 +5242,9 @@ checked.
     the range 0 through 4095. If defined, the value must be less than or
     equal to the max_job_cond value.
 
-#### \<max_job_cond\>\</max_job_cond\>
+#### <max_job_cond\></max_job_cond\>
 
-The \<max_job_cond\> element defines the maximum tolerated return code
+The <max_job_cond\> element defines the maximum tolerated return code
 for the job. Any return code greater than this value is considered a
 failure condition. If it is not defined, the high return code will not
 be checked.
@@ -5257,9 +5257,9 @@ be checked.
     the range 0 through 4095. If defined, the value must be greater than
     or equal to the low_job_cond value.
 
-#### \<submit_from\>\</submit_from\>
+#### <submit_from\></submit_from\>
 
-The \<submit_from\> element determines if the job will be started on the
+The <submit_from\> element determines if the job will be started on the
 system where the pre-runs were satisfied.
 
 - **Requirements**: Optional for all event types: 'Batch Job',
@@ -5277,9 +5277,9 @@ system where the pre-runs were satisfied.
 Primary LSAM refers to the LSAM/PSAM on which the job is scheduled. It should not be confused with a "gateway LSAM" in a SYSPLEX group.
 :::
 
-#### \<cmd_parm\>\</cmd_parm\>
+#### <cmd_parm\></cmd_parm\>
 
-The \<cmd_parm\> element defines the complete start parameter for the
+The <cmd_parm\> element defines the complete start parameter for the
 started task (e.g., TYPE=WARM).
 
 - **Requirements**: Optional for 'Console Command Execution',
@@ -5291,9 +5291,9 @@ started task (e.g., TYPE=WARM).
     the REXX program, depending on the event type. There has to be
     between 1 and 256 characters.
 
-#### \<prsysid\>\</prsysid\>
+#### <prsysid\></prsysid\>
 
-The \<prsysid\> element specifies the SMF System ID (Machine ID) on
+The <prsysid\> element specifies the SMF System ID (Machine ID) on
 which to run the prerun, if other than the Primary Machine ID. This ID
 must be a member of the z/OS Sysplex, have a z/OS LSAM installed and
 running. Enter a value of ANY to allow preruns on any machine in the
@@ -5312,9 +5312,9 @@ System" field in the EM.
 The File Prerun, Message Prerun, Task Prerun, Tape Prerun, and REXX Preruns use this one element to determine the machine ID. If the element is not specified, all of the preruns run on the Primary Machine ID.
 :::
 
-#### \<restart_dupdsnact\>\</restart_dupdsnact\>
+#### <restart_dupdsnact\></restart_dupdsnact\>
 
-For a Restart run, the \<restart_dupdsnact\> element determines how XPR
+For a Restart run, the <restart_dupdsnact\> element determines how XPR
 cleans up duplicate dataset(s).
 
 - **Requirements**: Optional for all event types: 'Batch Job',
@@ -5322,14 +5322,14 @@ cleans up duplicate dataset(s).
     'Queued Job' and 'Console Command Execution'.
 - **EM field label**: Duplicate Dataset Action - Restart
 - **Valid Values**:
-  - \<blank\>: The LSAM defaults are used.
+  - <blank\>: The LSAM defaults are used.
   - None: Disables XPR DSN cleanup.
   - Scratch: Prevents NOT CATLGD 2 errors by scratching any
         pre-existing datasets.
 
-#### \<dupdsnact\>\</dupdsnact\>
+#### <dupdsnact\></dupdsnact\>
 
-For a Normal run, the \<dupdsnact\> element determines how XPR cleans up
+For a Normal run, the <dupdsnact\> element determines how XPR cleans up
 duplicate dataset(s).
 
 - **Requirements**: Optional for all event types: 'Batch Job',
@@ -5337,7 +5337,7 @@ duplicate dataset(s).
     'Queued Job' and 'Console Command Execution'.
 - **EM field label**: Duplicate Dataset Action - Normal
 - **Valid Values**:
-  - \<blank\>: The LSAM defaults are used.
+  - <blank\>: The LSAM defaults are used.
   - None: Disables XPR DSN cleanup.
   - Scratch: Prevents NOT CATLGD 2 errors by scratching any
         pre-existing datasets.
@@ -5346,9 +5346,9 @@ duplicate dataset(s).
 The File Prerun, Message Prerun, Task Prerun, Tape Prerun, and REXX Preruns use this one element to determine the machine ID. If the element is not specified, all of the preruns run on the Primary Machine ID.
 :::
 
-#### \<restart_gdg\>\</restart_gdg\>
+#### <restart_gdg\></restart_gdg\>
 
-The \<restart_gdg\> element determines how XPR determines Generation
+The <restart_gdg\> element determines how XPR determines Generation
 Data Group (GDG) base generations.
 
 - **Requirements**: Optional for all event types: 'Batch Job',
@@ -5356,7 +5356,7 @@ Data Group (GDG) base generations.
     'Queued Job' and 'Console Command Execution'.
 - **EM field label**: GDG Regression
 - **Valid Values**:
-  - \<blank\>: The LSAM defaults are used.
+  - <blank\>: The LSAM defaults are used.
   - None: Disables GDG adjustment.
   - Absolute: Resets the base generation to the value it had during
         the first run.
@@ -5368,7 +5368,7 @@ Data Group (GDG) base generations.
 
 ### Token Equation Element Definitions
 
-#### \<token\>\</token\>
+#### <token\></token\>
 
 - The JCL parameter symbol or OpCon,
     separated by double backslashes, to be used in this run. Each
@@ -5399,13 +5399,13 @@ date card override could be represented as \@TODAY=October 12, 2005).
   - Minimum Characters: 7 (minimum valid definition has the form
         \\\\&a=\\\\ or \\\\\@a=\\\\)
   - Maximum Characters: 3400
-  - Up to 99 \<token\> elements may be defined.
+  - Up to 99 <token\> elements may be defined.
 
 ### Step Control Element Definitions
 
-#### \<step_control\>\</step_control\>
+#### <step_control\></step_control\>
 
-The parent element \<step_control\> contains the child elements needed
+The parent element <step_control\> contains the child elements needed
 for step control. Repeat for multiple steps. The order specified in the
 file determines the order in the list.
 
@@ -5413,9 +5413,9 @@ file determines the order in the list.
     'Tracked Job', or 'Queued Job' event types.
 - **Valid Values**: A maximum of 80 steps can be defined.
 
-#### \<step_name\>\</step_name\>
+#### <step_name\></step_name\>
 
-The \<step_name\> child element contains the fully qualified step name
+The <step_name\> child element contains the fully qualified step name
 in the format: execstep or jobstep.execstep. Execstep must identify a
 step containing the EXEC PGM keyword. Jobstep identifies the EXEC
 statement that invokes a procedure containing execstep.
@@ -5437,9 +5437,9 @@ statement that invokes a procedure containing execstep.
 The step names can be found, in reverse order, on the MVS IEF142I message (i.e., the message displaying the execstep followed by the jobstep).
 :::
 
-#### \<step_min\>\</step_min\>
+#### <step_min\></step_min\>
 
-The \<step_min\> child element indicates the minimum tolerated condition
+The <step_min\> child element indicates the minimum tolerated condition
 code for this step condition. Any condition code less than this value is
 considered a failure condition.
 
@@ -5451,9 +5451,9 @@ considered a failure condition.
   - The value must be less than or equal to the step_max value.
   - It can be any number between 0 and 4095.
 
-#### \<step_max\>\</step_max\>
+#### <step_max\></step_max\>
 
-The \<step_max\> child element indicates the maximum tolerated condition
+The <step_max\> child element indicates the maximum tolerated condition
 code for this step condition. Any condition code less than this value is
 considered a failure condition.
 
@@ -5469,9 +5469,9 @@ considered a failure condition.
 If the step_min is specified, step_max must also be specified.
 :::
 
-#### \<step_action\>\</step_action\>
+#### <step_action\></step_action\>
 
-The \<step_action\> child element defines the action to be taken when
+The <step_action\> child element defines the action to be taken when
 the defined step's return code falls in the Step CC range.
 
 - **Requirements**: Required if step_control parent element is
@@ -5500,9 +5500,9 @@ the defined step's return code falls in the Step CC range.
   - The value of event_type must be one of Batch Job, Started Task,
         Tracked Job, or Queued Job.
 
-#### \<step_msg\>\</step_msg\>
+#### <step_msg\></step_msg\>
 
-\<step_msg\> may be up to 20 characters, and is posted to the Schedule
+<step_msg\> may be up to 20 characters, and is posted to the Schedule
 Operations screen of the graphical interfaces. If the message is
 "$EVENT=eventname" the eventname action defined in the z/OS event
 trigger table is triggered.
@@ -5527,18 +5527,18 @@ trigger table is triggered.
 
 ### File Prerun Element Definitions
 
-#### \<file_prerun\>\</file_prerun\>
+#### <file_prerun\></file_prerun\>
 
-The parent element \<file_prerun\> contains the child elements needed
+The parent element <file_prerun\> contains the child elements needed
 for file prerun. Repeat for multiple file preruns. The order specified
 in the file determines the order in the list.
 
-- **Requirements**: Optional for Prerun \<job_data\>.
+- **Requirements**: Optional for Prerun <job_data\>.
 - **Valid Values**: A maximum of 80 file preruns can be defined.
 
-#### \<dsn_filename\>\</dsn_filename\>
+#### <dsn_filename\></dsn_filename\>
 
-The \<dsn_filename\> element contains up to 44 characters of DSN trigger
+The <dsn_filename\> element contains up to 44 characters of DSN trigger
 information. A fully qualified DSN need not be specified. A final
 asterisk (\*) denotes that triggers are to occur on the DSN prefix
 defined. This is especially helpful for Generation Data Group (GDG)
@@ -5574,23 +5574,23 @@ The format of this value can contain any number of "words" as long as:
 - Each word contains a maximum of 8 characters.
 - Each word is separated by periods.
 
-#### \<dsn_gen\>\</dsn_gen\>
+#### <dsn_gen\></dsn_gen\>
 
-The \<dsn_gen\> element represents the number of creations or updates a
+The <dsn_gen\> element represents the number of creations or updates a
 file (or file prefix) is to have before trigging the associated event or
 job. This may be used to start jobs after a number of GDG datasets have
 been received.
 
-- **Requirements**: Optional for \<file_prerun\>.
+- **Requirements**: Optional for <file_prerun\>.
 - **EM field label**: Generations
 - **Valid Values**: The event_type can be any value (default = 1).
   - Minimum Value: 1
   - Maximum Value: 99
   - Valid Characters: 123456789
 
-#### \<dsn_cond_when\>\</dsn_cond_when\>
+#### <dsn_cond_when\></dsn_cond_when\>
 
-The \<dsn_cond_when\> element makes up two fields from the standard EM:
+The <dsn_cond_when\> element makes up two fields from the standard EM:
 the *Condition* field and the *When* field. The *Condition* field
 indicates the type of data access condition to cause a trigger.
 Available options are Exists, Created, Updated, Deleted, Referenced,
@@ -5642,15 +5642,15 @@ Exists conditions. Valid values are:
 |     Only                         |     Monitoring                   |
 +----------------------------------+----------------------------------+
 
-#### \<dsn_jobname\>\</dsn_jobname\>
+#### <dsn_jobname\></dsn_jobname\>
 
-The \<dsn_jobname\> element identifies the job that must satisfy the
+The <dsn_jobname\> element identifies the job that must satisfy the
 condition before a trigger occurs. For example, specify the name of the
 job that must update a DSN before a trigger would occur. This prevents
 reruns or outside creations from triggering events intended for a
 specific scheduled job or task.
 
-- **Requirements**: Optional for \<file_prerun\>.
+- **Requirements**: Optional for <file_prerun\>.
 - **EM field label**: Job Name
 - **Valid Values**: The event_type can be any value.
   - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
@@ -5667,22 +5667,22 @@ The Job Name field does not apply to File Exists conditions.
 
 ### Message Prerun Element Definitions
 
-#### \<msg_prerun\>\</msg_prerun\>
+#### <msg_prerun\></msg_prerun\>
 
-The parent element \<msg_prerun\> contains the child elements needed for
+The parent element <msg_prerun\> contains the child elements needed for
 message prerun. Repeat for multiple message preruns. The order specified
 in the file determines the order in the list.
 
-- **Requirements**: Optional for Prerun \<job_data\>.
+- **Requirements**: Optional for Prerun <job_data\>.
 - **Valid Values**: A maximum of 80 message preruns can be defined.
 
-#### \<msg_key\>\</msg_key\>
+#### <msg_key\></msg_key\>
 
-The \<msg_key\> element identifies the trigger text to be sought. The
+The <msg_key\> element identifies the trigger text to be sought. The
 first characters in this field define the fixed text to seek to identify
 the message or a possible candidate message. The Offset (
-[\<msg_offset\>\</msg_offset\>](#%3Cmsg_of)) and Length (
-[\<msg_len\>\</msg_len\>](#%3Cmsg_le)) must be defined to
+<msg_offset\></msg_offset\>](#%3Cmsg_of)) and Length (
+<msg_len\></msg_len\>](#%3Cmsg_le)) must be defined to
 match the key. Following the fixed text key, a variable key may be
 defined as a second argument. The variable key is enclosed in brackets
 {}. The offset is variable and the length of the text within the
@@ -5690,7 +5690,7 @@ brackets determines the length. If this fixed text is located in a
 message, OpCon scans for the text found in
 the brackets {} in the remainder of the text.
 
-- **Requirements**: Required if the \<msg_prerun\> parent element is
+- **Requirements**: Required if the <msg_prerun\> parent element is
     specified.
 - **EM field label**: Key
 - **Valid Values**: The event_type can be any value:
@@ -5702,12 +5702,12 @@ the brackets {} in the remainder of the text.
 The Job Name field does not apply to File Exists conditions.
 :::
 
-#### \<msg_gen\>\</msg_gen\>
+#### <msg_gen\></msg_gen\>
 
-The \<msg_gen\> element represents the number of messages matching the
+The <msg_gen\> element represents the number of messages matching the
 key to be issued before triggering the associated event or job.
 
-- **Requirements**: Optional for \<msg_prerun\>.
+- **Requirements**: Optional for <msg_prerun\>.
 - **EM field label**: Generations
 - **Valid Values**: The event_type can be any value:
   - Default: 1
@@ -5715,12 +5715,12 @@ key to be issued before triggering the associated event or job.
   - Maximum Value: 99
   - Valid Characters: 123456789
 
-#### \<msg_when\>\</msg_when\>
+#### <msg_when\></msg_when\>
 
-The \<msg_when\> element indicates whether this Message Resource trigger
+The <msg_when\> element indicates whether this Message Resource trigger
 is to remain in effect after the associated event is triggered.
 
-- **Requirements**: Optional for \<msg_prerun\>.
+- **Requirements**: Optional for <msg_prerun\>.
 - **EM field label**: When
 - **Valid Values**: *While/As Scheduled Only* causes the trigger
     monitor to delete this entry once the trigger has occurred. In this
@@ -5737,14 +5737,14 @@ is to remain in effect after the associated event is triggered.
   - Valid Values: *While/As Scheduled Only* and *Continuous
         Monitoring*
 
-#### \<msg_jobname\>\</msg_jobname\>
+#### <msg_jobname\></msg_jobname\>
 
-The \<msg_jobname\> element identifies the job that must issue this
+The <msg_jobname\> element identifies the job that must issue this
 message before a trigger would occur. This prevents reruns or outside
 creations from triggering events intended for a specific scheduled job
 or task.
 
-- **Requirements**: Optional for \<msg_prerun\>.
+- **Requirements**: Optional for <msg_prerun\>.
 - **EM field label**: Job name
 - **Valid Values**: The event_type can be any value:
   - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
@@ -5753,21 +5753,21 @@ or task.
   - Maximum Characters: 8
   - SMADDI should uppercase all alpha characters specified.
 
-#### \<msg_offset\>\</msg_offset\>
+#### <msg_offset\></msg_offset\>
 
-The \<msg_offset\> element is used to define the first character of text
+The <msg_offset\> element is used to define the first character of text
 to begin searching for the key. This defines any position starting at
 zero through 120 in the message.
 
-- **Requirements**: Optional for \<msg_prerun\>.
+- **Requirements**: Optional for <msg_prerun\>.
 - **EM field label**: Offset
 - **Valid Values**: The event_type can be any value (default = 0).
   - Minimum Value: 0
   - Maximum Value: 120
 
-#### \<msg_len\>\</msg_len\>
+#### <msg_len\></msg_len\>
 
-The \<msg_len\> element is used to define the number of characters for
+The <msg_len\> element is used to define the number of characters for
 the key. This defines any length up to forty-four characters.
 
 - **Requirements**: Required if msg_prerun parent element is
@@ -5779,21 +5779,21 @@ the key. This defines any length up to forty-four characters.
 
 ### Task Prerun Element Definitions
 
-#### \<task_prerun\>\</task_prerun\>
+#### <task_prerun\></task_prerun\>
 
-The parent element \<task_prerun\> contains the child elements needed
+The parent element <task_prerun\> contains the child elements needed
 for task prerun. Repeat for multiple task preruns. The order specified
 in the file determines the order in the list.
 
-- **Requirements**: Optional for Prerun \<job_data\>.
+- **Requirements**: Optional for Prerun <job_data\>.
 - **Valid Values**: A maximum of 80 task preruns can be defined.
 
-#### \<task_name\>\</task_name\>
+#### <task_name\></task_name\>
 
-The \<task_name\> element identifies the eight-character name of a batch
+The <task_name\> element identifies the eight-character name of a batch
 job, system task, or TSO User ID being sought.
 
-- **Requirements**: Required if the \<task_prerun\> parent element is
+- **Requirements**: Required if the <task_prerun\> parent element is
     specified.
 - **EM field label**: Job/Task Name
 - **Valid Values**: The event_type can be any value.
@@ -5805,12 +5805,12 @@ job, system task, or TSO User ID being sought.
   - Maximum Characters: 8
   - SMADDI should uppercase all alpha characters specified.
 
-#### \<task_cond\>\</task_cond\>
+#### <task_cond\></task_cond\>
 
-The \<task_cond\> element identifies whether the unscheduled task or job
+The <task_cond\> element identifies whether the unscheduled task or job
 should be Executing or Not Executing for the associated event to submit.
 
-- **Requirements**: Required if the \<task_prerun\> parent element is
+- **Requirements**: Required if the <task_prerun\> parent element is
     specified.
 - **EM field label**: Job/Task Must Be
 - **Valid Values**: Validation Event types are Batch Job, Started
@@ -5821,17 +5821,17 @@ should be Executing or Not Executing for the associated event to submit.
 
 ### Tape Prerun Element Definitions
 
-#### \<tape_prerun\>\</tape_prerun\>
+#### <tape_prerun\></tape_prerun\>
 
-The parent element \<tape_prerun\> contains the child elements needed
+The parent element <tape_prerun\> contains the child elements needed
 for tape prerun.
 
-- **Requirements**: Optional for Prerun \<job_data\>.
+- **Requirements**: Optional for Prerun <job_data\>.
 - **Valid Values**: Only one set allowed.
 
-#### \<tape_devname\>\</tape_devname\>
+#### <tape_devname\></tape_devname\>
 
-The \<tape_devname\> element identifies a generic or esoteric tape unit
+The <tape_devname\> element identifies a generic or esoteric tape unit
 as defined by IBM unit standards.
 
 - **Requirements**: Required if the tape_prerun parent element is
@@ -5850,9 +5850,9 @@ as defined by IBM unit standards.
         \[\[xxxx\]\] should be allowed where xxxx equals any character         set.
   - SMADDI should uppercase all alpha characters specified.
 
-#### \<tape_devnum\>\</tape_devnum\>
+#### <tape_devnum\></tape_devnum\>
 
-The \<tape_devnum\> element identifies the number of units that must be
+The <tape_devnum\> element identifies the number of units that must be
 available for the associated job to be submitted.
 
 - **Requirements**: Required if the tape_prerun parent element is
@@ -5868,17 +5868,17 @@ available for the associated job to be submitted.
 
 ### Rexx Prerun Element Definitions
 
-#### \<rexx_prerun\>\</rexx_prerun\>
+#### <rexx_prerun\></rexx_prerun\>
 
-The parent element \<rexx_prerun\> contains the child elements needed
+The parent element <rexx_prerun\> contains the child elements needed
 for rexx prerun.
 
-- **Requirements**: Optional for Prerun \<job_data\>.
+- **Requirements**: Optional for Prerun <job_data\>.
 - **Valid Values**: Only one set allowed.
 
-#### \<rexx_name\>\</rexx_name\>
+#### <rexx_name\></rexx_name\>
 
-The \<rexx_name\> child element defines the name of the procedure to
+The <rexx_name\> child element defines the name of the procedure to
 execute.
 
 - **Requirements**: Required if the rexx_prerun parent element is
@@ -5891,13 +5891,13 @@ execute.
   - Maximum Characters: 8
   - SMADDI should uppercase all alpha characters specified.
 
-#### \<rexx_ddname\>\</rexx_ddname\>
+#### <rexx_ddname\></rexx_ddname\>
 
-The \<rexx_ddname\> element identifies the DD Name in the OPCONxx PROC
+The <rexx_ddname\> element identifies the DD Name in the OPCONxx PROC
 that includes the library name or list of library names that contain the
 REXX executable code.
 
-- **Requirements**: Optional for \<rexx_preren\>.
+- **Requirements**: Optional for <rexx_preren\>.
 - **EM field label**: REXX DD
 - **Valid Values**: The event_type can be any value.
   - Valid Characters: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ @ \# $
@@ -5906,12 +5906,12 @@ REXX executable code.
   - Maximum Characters: 8
   - SMADDI should uppercase all alpha characters specified.
 
-#### \<rexx_parm\>\</rexx_parm\>
+#### <rexx_parm\></rexx_parm\>
 
-The \<rexx_parm\> element contains any input parameters required for the
+The <rexx_parm\> element contains any input parameters required for the
 REXX procedure.
 
-- **Requirements**: Optional for \<rexx_prerun\>.
+- **Requirements**: Optional for <rexx_prerun\>.
 - **EM field label**: REXX Parm
 - **Valid Values**: The event_type can be any value.
   - Valid Characters: All

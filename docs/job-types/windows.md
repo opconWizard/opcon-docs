@@ -442,15 +442,16 @@ The Corelation subtype will automatically add needed quotation marks around the 
 
 - **Jobname**: Sets the jobname to start.
 - **Jobserial**: Sets the jobserial to start.
-- **Connector Location** [(Required)]{.optional-text}: Defines the     path where the SMACorelation.exe program is installed. The default
-    value is \[\[RCJPATH\]\].     -   SMA Technologies recommends creating a
+- **Connector Location** (Required): Defines the     path where the SMACorelation.exe program is installed. The default
+    value is \[\[RCJPATH\]\].
+  - SMA Technologies recommends creating a
         Global Property named RCJPATH so a token can be placed in the
         Corelation details and the path maintained by an administrator.
         The value for the property should contain the path to the
         SMACorelation.exe program without the trailing slash. When the
         job is saved, the EM will append \\SMACorelation.exe to
         construct the command.
-- **Corelation Job** [(Required)]{.optional-text}: Defines the     **Jobname** or **Jobserial**. This value will be a name for
+- **Corelation Job** (Required): Defines the     **Jobname** or **Jobserial**. This value will be a name for
     **Jobname**, and the value will be a number for **Jobserial**.
 - **Configuration File** *(Optional)*: Defines the
     name of the configuration file to use. If no configuration file is

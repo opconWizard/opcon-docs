@@ -337,9 +337,10 @@ The following information applies to defining Step Control:
             event that has been predefined in the z/OS Event table. If
             the name is not found, the message will be changed to
             JEVENT=eventname, and sent like any other message.
-    - Message **$JOB:GOOD** will set the job to a [Finished             OK]{.skd-job-statuses} status immediately.
+    - Message **$JOB:GOOD** will set the job to a Finished OK status immediately.
     - Message **$JOB:BAD** will set the job to a
-            Failed status immediately.         -   Message **$S=jobstep\[.procstep\]** will set the job's
+            Failed status immediately.
+    - Message **$S=jobstep\[.procstep\]** will set the job's
             restart step to *jobstep\[.procstep*\].
   - Refer to [Using the XPSCOMM Interface         Routine](https://help.smatechnologies.com/opcon/agents/zos/latest/Files/Agents/zOS/Advanced-Features.md#Using)
          in the **z/OS LSAM** online help for information on
@@ -562,25 +563,12 @@ dataset(s).
   - **\<blank\>**: The LSAM defaults are used.     -   **None**: Disables XPR DSN cleanup.
   - **Scratch**: Prevents NOT CATLGD 2 errors by scratching any
         pre-existing datasets.
-
-    ```{=html}
-    <!-- -->
-    ```
   - **Reuse**: Prevents NOT CATLGD 2 errors by converting DISP=NEW
         to DISP=OLD.
-
-```{=html}
-<!-- -->
-```
-
 - **Restart**: Defines the type of Restart:
   - **\<blank\>**: The LSAM defaults are used.     -   **None**: Disables XPR DSN cleanup.
   - **Scratch**: Prevents NOT CATLGD 2 errors by scratching any
         pre-existing datasets.
-
-    ```{=html}
-    <!-- -->
-    ```
   - **Reuse**: Prevents NOT CATLGD 2 errors by converting DISP=NEW
         to DISP=OLD.
 
@@ -811,7 +799,7 @@ submitted or non-scheduled submission as a scheduled "tracked" job.
 2. A special held class or class list as defined in XPSPRMxx. In the
     above, this is TRACLASS=TQA.
 3. A "T" is placed in continuation column 72 of the
-    1[st]{style="font-size: 80%;vertical-align: super;"} job card (this     option requires multiple continued job cards).
+    1st job card (this     option requires multiple continued job cards).
 
 Dynamically tracked jobs may or may not have dependency capabilities.
 Because their arrival on the schedule may be arbitrary, using them as
@@ -1569,7 +1557,7 @@ Becomes:
 
 DATE CARD AB.22412/15/02 /\* TODAYS DATE IN COL 17 -- MM/DD/YY \*/
 
-The following is an example of [incorrectly]{.ul} padding the override:
+The following is an example of incorrectly padding the override:
 DATE CARD AB.224\@DATE /\* TODAYS DATE IN COL 17 - MM/DD/YY \*/
 
 Becomes:

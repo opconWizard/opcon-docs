@@ -76,31 +76,10 @@ history clean up process.
 
 The Audit.exe program uses the following exit codes:
 
-+---------------+-----------------------------------------------------+
-| Status Number | Status Description                                  |
-+===============+=====================================================+
-| 0             | Batch run successful                                |
-+---------------+-----------------------------------------------------+
-| 35001         | Program aborted. Review the Audt.log file in the    |
-|               | \<Output Directory\>\\SAM\\Log folder and possibly  |
-|               | the MSLSAM.log file in the \<Output                 |
-|               | Directory\>\\MSLSAM\\Log folder for information.    |
-|               |                                                     |
-|               |                                                     |
-|               |                                                     |
-|               | **Note:** The Output Directory location was         |
-|               | configured during installation. For more            |
-|               | information, refer to [File                         | |               | Loca                                                |
-|               | tions](../../reference/property-expressions-syntax.md) |
-|               |  in the **Concepts** online help.             |
-+---------------+-----------------------------------------------------+
-| 35002         | Invalid DSN, UserID, and/or Password                |
-+---------------+-----------------------------------------------------+
-| 35003         | Invalid parameters given                            |
-+---------------+-----------------------------------------------------+
-| 35004         | The user on the command line does not have the      |
-|               | required privileges.                                |
-+---------------+-----------------------------------------------------+
-
-: Audit History Cleanup Utility Exit Codes
-:::
+|Status Number|Status Description|
+|--- |--- |
+|0|Batch run successful|
+|35001|Program aborted. Review the Audt.log file in the <Output Directory\>\SAM\Log folder and possibly the MSLSAM.log file in the <Output Directory\>\MSLSAM\Log folder for information.|
+|35002|Invalid DSN, UserID, and/or Password|
+|35003|Invalid parameters given|
+|35004|The user on the command line does not have the required privileges.|

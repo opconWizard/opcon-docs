@@ -205,7 +205,7 @@ JI."File.Name"."08.01.2010"."Sched[Name]"."Job{Name}"
 RI.RemoteInstanceName.FullyQualifiedProperty
 
 - *RI* is the **required** property type and indicates that the property will be associated with a remote instance.
-- *RemoteInstanceName*]{style="font-family: 'Courier New';"}* is the name assigned to the remote instance. For more information, refer to [Remote Instances](../objects/remote-instances.md).
+- *RemoteInstanceName* is the name assigned to the remote instance. For more information, refer to [Remote Instances](../objects/remote-instances.md).
 - *FullyQualifiedProperty* is the fully qualified property name for the property.
 
 :::tip Example

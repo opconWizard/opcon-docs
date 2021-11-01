@@ -49,7 +49,7 @@ The **SMA OpCon Install** comes packaged with the .NET Core and .NET Framework r
 ## Database Requirements
 
 :::note
-All editions of SQL Server are supported; however, [large environments must use Standard Edition or better]{.ul}.
+All editions of SQL Server are supported; however, **large environments** must use **Standard Edition or better**.
 :::
 
 :::note
@@ -103,7 +103,7 @@ If installing the SAM and supporting services (SAM-SS) on a machine with a Windo
 ### Failover Machines
 
 SMA Technologies strongly recommends installation and configuration of failover machines for the OpCon Server applications
-and database. [Whether hosted together or separately, they represent mission critical applications and data]{.ul}. Separate identical
+and database. Whether hosted together or separately, they represent mission critical applications and data. Separate identical
 hardware should be set up and configured for failover. SMA Technologies recommends using transactional
 replication or SQL Mirroring in addition to setting up database and
 transaction log backups on the primary and secondary databases.
@@ -132,7 +132,7 @@ following:
         of passwords for the OpCon SQL logins (opconsam and opconui) to
         authorized individuals only.
 
-[[]{#Create_the_OpConxps_Active_Directory_Group}Create the OpConxps Active Directory Group]{.ul}
+### Create the OpConxps Active Directory Group
 
 If using Windows Authentication to SQL or using the SMA LDAP Monitor for
 OpCon logins, authorized users on the network must be granted access to
@@ -167,7 +167,8 @@ If multiple versions of SQL Server have been installed on the SQL Server
 machine, it is important to confirm that the SQL Native Client TCP/IP
 Port number matches the SQL Server's TCP/IP Port number.
 
-[Confirm the SQL Server Port Number]{.ul}
+#### Confirm the SQL Server Port Number
+
 To confirm the SQL Port number, complete the following procedure:
 
 On the SQL Server machine hosting the OpCon database:
@@ -218,7 +219,7 @@ recorded for the SQL Server TCP/IP port number identified in Step 8.
 
 If the port numbers match, click the **Cancel** button.
 
-If the port numbers [do not]{.ul} match:
+If the port numbers do not match:
 a.  In the **Default Port** value, change the number to match the SQL
     Server TCP/IP port number identified in Step 8.
 b.  Click the **OK** button.

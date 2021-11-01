@@ -79,7 +79,7 @@ value of the dependency is displayed as a tooltip.
 
 Within nodes, these icons represent the following:
 
-- ![Threshold/Recource Update Icon in PERT     View](../../../Resources/Images/SM/PERTThresResIcon.png "Threshold/Recource Update Icon in PERT View") 
+- ![Threshold/Recource Update Icon in PERT     View](../../../Resources/Images/SM/PERTThresResIcon.png "Threshold/Recource Update Icon in PERT View")
 - Indicates that there are threshold/resource updates
     associated with underlying Daily jobs. When hovered over the icon,
     the associated update is displayed as a tooltip.
@@ -202,9 +202,7 @@ successor-level trees.
     resource. Note that if a job has already been added to the diagram,
     it will appear grayed out in the panel and cannot be selected.
 
-Select the **Export** button to save the current view (i.e., what is
-currently displayed on the screen) locally to your machine as a PNG
-file.
+Select the **Export** button to save the current view (i.e., what is currently displayed on the screen) locally to your machine as a PNG file.
 
 :::note
 To export the entire PERT representation, ensure that everything is captured on screen by using the zooming options.
@@ -212,386 +210,95 @@ To export the entire PERT representation, ensure that everything is captured on 
 
 ## PERT View Dependency Lines
 
-In PERT View, each dependency type is represented by a different line
-style and image at the end.
+In PERT View, each dependency type is represented by a different line style and image at the end.
 
-+----------------------------------+----------------------------------+
-| ![Requires Failed Dependency     | **Requires Failed**: By default, | | Line](../../../Resources/Ima     | a solid red line with arrow      |
-| ges/SM/SMrequiresdepline3.png "R | indicates a *Requires Failed*    |
-| equires Failed Dependency Line") | dependency.                      |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | For this dependency type, the    |
-|                                  | following applies:               |
-|                                  |                                  |
-|                                  | -   The job on the end with the  |
-|                                  |     arrow pointing towards it    |
-|                                  |     (the selected job) has the   |
-|                                  |     "Requires" dependency on   |
-|                                  |     the job where the line       |
-|                                  |     starts (the dependent job).  |
-|                                  |     In other words, the          |
-|                                  |     *dependent job* is the job   |
-|                                  |     that the line begins and the |
-|                                  |     *selected job* is the job to |
-|                                  |     which the arrow points.      |
-|                                  | -   The dependent job            |
-|                                  |     [must]{.ul} exist in the     | |                                  |     Daily tables and [must]{.ul} |
-|                                  |     fail after executing before  |
-|                                  |     the selected job will run.   |
-|                                  | -   If the dependent job is not  |
-|                                  |     on a schedule in the Daily   |
-|                                  |     tables, then the selected    |
-|                                  |     job will not execute unless  |
-|                                  |     it is overridden.            |
-+----------------------------------+----------------------------------+
-| ![Requires Finished OK           | **Requires Finished OK**: By     | | Dependency                       | default, a solid green line with |
-| L                                | arrow indicates a *Requires      |
-| ine](../../../Resources/Images/S | Finished OK* dependency.         |
-| M/SMrequiresdepline2.png "Requir |                                  |
-| es Finished OK Dependency Line") |                                  |
-|                                  |                                  |
-|                                  | For this dependency type, the    |
-|                                  | following applies:               |
-|                                  |                                  |
-|                                  | -   The job on the end with the  |
-|                                  |     arrow pointing towards it    |
-|                                  |     (the selected job) has the   |
-|                                  |     "Requires" dependency on   |
-|                                  |     the job where the line       |
-|                                  |     starts (the dependent job).  |
-|                                  |     In other words, the          |
-|                                  |     *dependent job* is the job   |
-|                                  |     that the line begins and the |
-|                                  |     *selected job* is the job to |
-|                                  |     which the arrow points.      |
-|                                  | -   The dependent job            |
-|                                  |     [must]{.ul} exist in the     | |                                  |     Daily tables and [must]{.ul} |
-|                                  |     complete successfully before |
-|                                  |     the selected job will run.   |
-|                                  | -   If the dependent job is not  |
-|                                  |     on a schedule in the Daily   |
-|                                  |     tables, then the selected    |
-|                                  |     job will not execute unless  |
-|                                  |     it is overridden.            |
-+----------------------------------+----------------------------------+
-| ![Requires Ignore Exit Code      | **Requires Ignore Exit Code**:   | | Dependency                       | By default, a solid black line   |
-| Line](                           | with arrow indicates a *Requires |
-| ../../../Resources/Images/SM/SMr | Ignore Exit Code* dependency.    |
-| equiresdepline1.png "Requires Ig |                                  |
-| nore Exit Code Dependency Line") |                                  |
-|                                  |                                  |
-|                                  | For this dependency type, the    |
-|                                  | following applies:               |
-|                                  |                                  |
-|                                  | -   The job on the end with the  |
-|                                  |     arrow pointing towards it    |
-|                                  |     (the selected job) has the   |
-|                                  |     "Requires" dependency on   |
-|                                  |     the job where the line       |
-|                                  |     starts (the dependent job).  |
-|                                  |     In other words, the          |
-|                                  |     *dependent job* is the job   |
-|                                  |     that the line begins and the |
-|                                  |     *selected job* is the job to |
-|                                  |     which the arrow points.      |
-|                                  | -   The dependent job            |
-|                                  |     [must]{.ul} exist in the     | |                                  |     Daily tables. The selected   |
-|                                  |     job will run when the        |
-|                                  |     dependent job completes,     |
-|                                  |     regardless of the exit       |
-|                                  |     status.                      |
-|                                  | -   If the dependent job is not  |
-|                                  |     on a schedule in the Daily   |
-|                                  |     tables, then the selected    |
-|                                  |     job will not execute unless  |
-|                                  |     it is overridden.            |
-+----------------------------------+----------------------------------+
-| ![Requires Failed Dependency     | **After Failed**: By default, a  | | Line](../../../Resources/        | dashed red line with arrow       |
-| Images/SM/SMafterdepline3.png "R | indicates an *After Failed*      |
-| equires Failed Dependency Line") | dependency.                      |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | For this dependency type, the    |
-|                                  | following applies:               |
-|                                  |                                  |
-|                                  | -   The job on the end with the  |
-|                                  |     arrow pointing towards it    |
-|                                  |     (selected job) has an        |
-|                                  |     "After" dependency on the  |
-|                                  |     job where the line starts    |
-|                                  |     (dependent job). In other    |
-|                                  |     words, the *dependent job*   |
-|                                  |     is the job that the line     |
-|                                  |     begins and the *selected     |
-|                                  |     job* is the job to which the |
-|                                  |     arrow points.                |
-|                                  | -   If the dependent job is in   |
-|                                  |     the Daily tables, then the   |
-|                                  |     selected job waits until the |
-|                                  |     dependent job fails to       |
-|                                  |     complete successfully.       |
-|                                  | -   If the dependent job is not  |
-|                                  |     on a schedule in the Daily   |
-|                                  |     tables, then the selected    |
-|                                  |     job runs without waiting for |
-|                                  |     that dependent job.          |
-+----------------------------------+----------------------------------+
-| ![After Finished OK Dependency   | **After Finished OK**: By        | | Line](../../../Resources/Im      | default, a dashed green line     |
-| ages/SM/SMafterdepline2.png "Aft | with arrow indicates an *After   |
-| er Finished OK Dependency Line") | Finished OK* dependency.         |
-|                                  |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | For this dependency type, the    |
-|                                  | following applies:               |
-|                                  |                                  |
-|                                  | -   The job on the end with the  |
-|                                  |     arrow pointing towards it    |
-|                                  |     (selected job) has an        |
-|                                  |     "After" dependency on the  |
-|                                  |     job where the line starts    |
-|                                  |     (dependent job). In other    |
-|                                  |     words, the *dependent job*   |
-|                                  |     is the job that the line     |
-|                                  |     begins and the *selected     |
-|                                  |     job* is the job to which the |
-|                                  |     arrow points.                |
-|                                  | -   If the dependent job is in   |
-|                                  |     the Daily tables, then the   |
-|                                  |     selected job waits until the |
-|                                  |     dependent job completes      |
-|                                  |     successfully.                |
-|                                  | -   If the dependent job is not  |
-|                                  |     on a schedule in the Daily   |
-|                                  |     tables, then the selected    |
-|                                  |     job runs without waiting for |
-|                                  |     that dependent job.          |
-+----------------------------------+----------------------------------+
-| ![After Ignore Exit Code         | **After Ignore Exit Code**: By   | | Dependency                       | default, a dashed black line     |
-| Line](../../../Resources/Images/ | with arrow indicates an *After   |
-| SM/SMafterdepline1.png "After Ig | Ignore Exit Code* dependency.    |
-| nore Exit Code Dependency Line") |                                  |
-|                                  |                                  |
-|                                  |                                  |
-|                                  | For this dependency type, the    |
-|                                  | following applies:               |
-|                                  |                                  |
-|                                  | -   The job on the end with the  |
-|                                  |     arrow pointing towards it    |
-|                                  |     (selected job) has an        |
-|                                  |     "After" dependency on the  |
-|                                  |     job where the line starts    |
-|                                  |     (dependent job). In other    |
-|                                  |     words, the *dependent job*   |
-|                                  |     is the job that the line     |
-|                                  |     begins and the *selected     |
-|                                  |     job* is the job to which the |
-|                                  |     arrow points.                |
-|                                  | -   If the dependent job is in   |
-|                                  |     the Daily tables, then the   |
-|                                  |     selected job waits until the |
-|                                  |     dependent job completes,     |
-|                                  |     regardless of the exit       |
-|                                  |     status.                      |
-|                                  | -   If the dependent job is not  |
-|                                  |     on a schedule in the Daily   |
-|                                  |     tables, then the selected    |
-|                                  |     job runs without waiting for |
-|                                  |     that dependent job.          |
-+----------------------------------+----------------------------------+
-| ![Excludes Dependency            | **Excludes**: By default, a      | | Line](../../../Resour            | solid orange line with           |
-| ces/Images/SM/SMexcludes2depline | [X]{style="font                  | | .png "Excludes Dependency Line") | -weight: bold; color: #fc8184;"} |
-|                                  | indicates an *Excludes*          |
-|                                  | dependency. The job on the end   |
-|                                  | with the                         |
-|                                  | [X]{style="font                  | |                                  | -weight: bold; color: #fc8184;"} |
-|                                  | on it is excluded by the job     |
-|                                  | where the line starts.           |
-+----------------------------------+----------------------------------+
-| ![Conflict Dependency            | **Conflict**: By default, a      | | Line](../../../Resou             | dashed purple line with a circle |
-| rces/Images/SM/SMconflictdepline | indicates a *Conflict*           |
-| .png "Conflict Dependency Line") | dependency. The job on the end   |
-|                                  | with the circle has a            |
-|                                  | "Conflict" dependency with the |
-|                                  | job where the line starts. The   |
-|                                  | job with the circle on it will   |
-|                                  | not run if the job at the        |
-|                                  | beginning of the line (without   |
-|                                  | the circle) is running.          |
-+----------------------------------+----------------------------------+
-| ![Resource Dependency            | **Resource Dependency**: A solid | | Line](../../../Resou             | gold line with arrow indicates a |
-| rces/Images/SM/SMresourcedepline | *Resource* dependency. The job   |
-| .png "Resource Dependency Line") | on the end with the arrow        |
-|                                  | pointing towards it has a        |
-|                                  | requirement for the resource     |
-|                                  | where the line starts.           |
-+----------------------------------+----------------------------------+
-| ![Threshold Dependency           | **Threshold Dependency**: A      | | Line](../../../Resourc           | solid brown line with arrow      |
-| es/Images/SM/SMthresholddepline. | indicates a *Threshold*          |
-| png "Threshold Dependency Line") | dependency. The job on the end   |
-|                                  | with the arrow pointing towards  |
-|                                  | it has a dependency on the       |
-|                                  | threshold where the line starts. |
-+----------------------------------+----------------------------------+
+|||
+|--- |--- |
+||Requires Failed: By default, a solid red line with arrow indicates a Requires Failed dependency.  The job on the end with the arrow pointing towards it (the selected job) has the "Requires" dependency on the job where the line starts (the dependent job). In other words, the dependent job is the job that the line begins and the selected job is the job to which the  arrow points. The dependent job must exist in the Daily tables and must fail after executing before the selected job will run. If the dependent job is not on a schedule in the Daily tables, then the selected job will not execute unless it is overridden.|
+||Requires Finished OK: By default, a solid green line with arrow indicates a Requires Finished OK dependency. The job on the end with the arrow pointing towards it (the selected job) has the "Requires" dependency on the job where the line starts (the dependent job). In other words, the dependent job is the job that the line begins and the selected job is the job to which the arrow points. The dependent job must exist in the Daily tables and must complete successfully before the selected job will run. If the dependent job is not on a schedule in the Daily tables, then the selected job will not execute unless it is overridden.|
+||Requires Ignore Exit Code: By default, a solid black line with arrow indicates a Requires Ignore Exit Code dependency. The job on the end with the arrow pointing towards it (the selected job) has the "Requires" dependency on the job where the line starts (the dependent job). In other words, the dependent job is the job that the line begins and the selected job is the job to which the   arrow points. The dependent job must exist in the Daily tables. The selected job will run when the dependent job completes, regardless of the exit status. If the dependent job is not on a schedule in the Daily tables, then the selected job will not execute unless it is overridden.|
+||After Failed: By default, a dashed red line with arrow indicates an After Failed dependency.  The job on the end with the arrow pointing towards it (selected job) has an "After" dependency on the job where the line starts (dependent job). In other words, the dependent job is the job that the line begins and the selected job is the job to which the   arrow points. If the dependent job is in the Daily tables, then the selected job waits until the dependent job fails to complete successfully. If the dependent job is not on a schedule in the Daily tables, then the selected job runs without waiting for that dependent job.|
+||After Finished OK: By default, a dashed green line with arrow indicates an After Finished OK dependency.  The job on the end with the arrow pointing towards it (selected job) has an "After" dependency on the job where the line starts (dependent job). In other words, the dependent job is the job that the line begins and the selected job is the job to which the   arrow points. If the dependent job is in the Daily tables, then the selected job waits until the dependent job  completes successfully. If the dependent job is not on a schedule in the Daily tables, then the selected job runs without waiting for that dependent job.|
+||After Ignore Exit Code: By default, a dashed black  line with arrow indicates an After Ignore Exit Code dependency. The job on the end with the arrow pointing towards it (selected job) has an "After" dependency on the job where the line starts (dependent job). In other words, the dependent job is the job that the line begins and the selected job is the job to which the arrow points. If the dependent job is in the Daily tables, then the selected job waits until the dependent job completes, regardless of the exit status. If the dependent job is not on a schedule in the Daily tables, then the selected job runs without waiting for that dependent job.|
+||Excludes: By default, a solid orange line with X indicates an Excludes dependency.  The job on the end with the X on it is excluded by the job where the line starts.|
+||Conflict: By default, a dashed purple line with a circle indicates a Conflict dependency. The job on the end with the circle has a "Conflict" dependency with the job where the line starts.  The job with the circle on it will not run if the job at the beginning of the line (without the circle) is running.|
+||Resource Dependency: A solid gold line with arrow indicates a Resource dependency.  The job on the end with the arrow pointing towards it has a requirement for the resource where the line starts.|
+||Threshold Dependency: A solid brown line with arrow indicates a Threshold dependency. The job on the end with the arrow pointing towards it has a dependency on the threshold where the line starts.|
 
 ## PERT View Search
 
-The Search bar in the top-left corner of the page allows you to search
-jobs in the PERT View. Any keyword(s) or pattern can be entered as
-search criteria and the results are returned just below the search bar
-with the matching keyword(s) highlighted. You can then click on any job
-returned in the search results to navigate directly to that job in the
-PERT diagram.
+The Search bar in the top-left corner of the page allows you to search jobs in the PERT View. Any keyword(s) or pattern can be entered as search criteria and the results are returned just below the search bar with the matching keyword(s) highlighted. You can then click on any job returned in the search results to navigate directly to that job in the PERT diagram.
 
 :::note
 Wildcards are supported in the search criteria. Standard wildcard characters include the asterisk (\*) for any characters and the question mark (?) for a single character substitution.
 :::
 
-Search Feature in PERT View
-
 ![Search Feature in PERT View](../../../Resources/Images/SM/PERTViewSearch.png "Search Feature in PERT View")
 
 ## PERT View Job Status Updates
 
-In addition to performing job status changes in the **Processes** page,
-job status updates can be performed within PERT View. You can either use
-your mouse to select a single job or simultaneously press the **Ctrl**
-key and your mouse to select several jobs in the PERT diagram. A solid
-royal blue border appears around any selected job.
+In addition to performing job status changes in the **Processes** page, job status updates can be performed within PERT View. You can either use your mouse to select a single job or simultaneously press the **Ctrl** key and your mouse to select several jobs in the PERT diagram. A solid royal blue border appears around any selected job.
 
-Once selected, right-click on the mouse to display the **Selection**
-panel with the **Job Status Update** tab in focus, as shown in the
-graphic. From there, follow Steps 6 - 9 of the [Performing Job Status Changes](Performing-Job-Status-Changes.md) topic to change
-the job status of the selected job(s) in the diagram.
-
-Job Status Update in PERT View
+Once selected, right-click on the mouse to display the **Selection** panel with the **Job Status Update** tab in focus, as shown in the graphic. From there, follow Steps 6 - 9 of the [Performing Job Status Changes](Performing-Job-Status-Changes.md) topic to change the job status of the selected job(s) in the diagram.
 
 ![Job Status Update in PERT View](../../../Resources/Images/SM/JobStatusUpdateinPERT.png "Job Status Update in PERT View")
 
 ## PERT View Job Output Requests
 
-As can be requested in the **Processes** page, job output files can be
-retrieved in the PERT View for a job that is completed or has started,
-is neither a NULL nor Container job, and does not have a status of
-Waiting, On Hold, Cancelled, Missed Start Time,
-or Skipped.
+As can be requested in the **Processes** page, job output files can be retrieved in the PERT View for a job that is completed or has started, is neither a NULL nor Container job, and does not have a status of Waiting, On Hold, Cancelled, Missed Start Time, or Skipped.
 
-In the PERT View, use your mouse to select a single job in the diagram
-then right-click on the mouse to display the **Selection** panel. Keep
-in mind that a solid royal blue border will appear around the selected
-job. From there, select the **Job Output** accordion-style tab in the
-panel, as shown in the graphic, then follow Steps 5 - 9 of the
-[Viewing Job Output](Viewing-Job-Output.md) topic to request the
-job output file(s).
-
-Job Output in PERT View
+In the PERT View, use your mouse to select a single job in the diagram then right-click on the mouse to display the **Selection** panel. Keep in mind that a solid royal blue border will appear around the selected job. From there, select the **Job Output** accordion-style tab in the panel, as shown in the graphic, then follow Steps 5 - 9 of the [Viewing Job Output](Viewing-Job-Output.md) topic to request the job output file(s).
 
 ![Job Output in PERT View](../../../Resources/Images/SM/JobOutputinPERT.png "Job Output in PERT View")
 
 ## PERT View Job Summary Access
 
-In addition to being accessible from the **Processes** page, the Daily
-job summary can also be viewed in the PERT View.
+In addition to being accessible from the **Processes** page, the Daily job summary can also be viewed in the PERT View.
 
-In the PERT View, use your mouse to select a single job in the diagram
-then right-click on the mouse to display the **Selection** panel. Keep
-in mind that a solid royal blue border will appear around the selected
-job. From there, select the **Job Summary** accordion-style tab in the
-panel, as shown in the graphic. For more information about the job
-summary fields and options, refer to the [Accessing Job Summary](Accessing-Job-Summary.md) topic.
-
-Job Summary Access in PERT View
+In the PERT View, use your mouse to select a single job in the diagram then right-click on the mouse to display the **Selection** panel. Keep in mind that a solid royal blue border will appear around the selected job. From there, select the **Job Summary** accordion-style tab in the panel, as shown in the graphic. For more information about the job summary fields and options, refer to the [Accessing Job Summary](Accessing-Job-Summary.md) topic.
 
 ![Job Summary in PERT View](../../../Resources/Images/SM/JobSummaryinPERT.png "Job Summary in PERT View")
 
 ## PERT View Daily Job Definition Access
 
-Job configuration can be accessed in the PERT View in addition to
-accessing it from the **Processes** page.
+Job configuration can be accessed in the PERT View in addition to accessing it from the **Processes** page.
 
-In the PERT View, use your mouse to select a single job in the diagram
-then right-click on the mouse to display the **Selection** panel. Keep
-in mind that a solid royal blue border will appear around the selected
-job. At the top-left corner of the panel, click the **Daily Job
-Definition** button, as shown in the graphic. For more information about
-how to reconfigure job properties, refer to the [Accessing Daily Job Definition](Accessing-Daily-Job-Definition.md)
-topic.
-
-Daily Job Definition Access in PERT View
+In the PERT View, use your mouse to select a single job in the diagram then right-click on the mouse to display the **Selection** panel. Keep in mind that a solid royal blue border will appear around the selected job. At the top-left corner of the panel, click the **Daily Job Definition** button, as shown in the graphic. For more information about how to reconfigure job properties, refer to the [Accessing Daily Job Definition](Accessing-Daily-Job-Definition.md) topic.
 
 ![Daily Job Definition in PERT View](../../../Resources/Images/SM/DailyJobDefinitioninPERT.png "Daily Job Definition in PERT View")
 
 ## PERT View Job Executions History Access
 
-In addition to accessing job executions history from the **Processes**
-page, it can also be accessed in the PERT View.
+In addition to accessing job executions history from the **Processes** page, it can also be accessed in the PERT View.
 
-In the PERT View, use your mouse to select a single job in the diagram
-then right-click on the mouse to display the **Selection** panel. Keep
-in mind that a solid royal blue border will appear around the selected
-job. At the top-left corner of the panel, click the **Job Executions
-History** button, as shown in the graphic. The **Job Executions
-History** page will display. Refer to the [Accessing Job Executions History](Accessing-Job-Executions-History.md)
-topic to learn more about the options on this page.
-
-Job Executions History Access in PERT View
+In the PERT View, use your mouse to select a single job in the diagram then right-click on the mouse to display the **Selection** panel. Keep in mind that a solid royal blue border will appear around the selected job. At the top-left corner of the panel, click the **Job Executions History** button, as shown in the graphic. The **Job Executions History** page will display. Refer to the [Accessing Job Executions History](Accessing-Job-Executions-History.md) topic to learn more about the options on this page.
 
 ![Job Executions History in PERT View](../../../Resources/Images/SM/JobExecutionsHistoryinPERT.png "Job Executions History in PERT View")
 
 ## PERT View Schedule Status Updates
 
-In addition to performing schedule status changes in the **Processes**
-page, schedule status updates can be performed within PERT View. You can
-either use your mouse to select a single schedule or simultaneously
-press the **Ctrl** key and your mouse to select several schedules in the
-PERT diagram. A solid royal blue border appears around any selected
-schedule.
+In addition to performing schedule status changes in the **Processes** page, schedule status updates can be performed within PERT View. You can either use your mouse to select a single schedule or simultaneously press the **Ctrl** key and your mouse to select several schedules in the PERT diagram. A solid royal blue border appears around any selected schedule.
 
-Once selected, right-click on the mouse to display the **Selection**
-panel with the **Schedule Status Update** tab in focus, as shown in the
-graphic. From there, follow Steps 6 - 9 of the [Performing
-Schedule Status Changes](Performing-Schedule-Status-Changes.md)
-topic to change the schedule status of the selected schedule(s) in the
-diagram.
-
-Schedule Status Update in PERT View
+Once selected, right-click on the mouse to display the **Selection** panel with the **Schedule Status Update** tab in focus, as shown in the graphic. From there, follow Steps 6 - 9 of the [Performing Schedule Status Changes](Performing-Schedule-Status-Changes.md) topic to change the schedule status of the selected schedule(s) in the diagram.
 
 ![Schedule Status Update in PERT View](../../../Resources/Images/SM/ScheduleStatusUpdateinPERT.png "Schedule Status Update in PERT View")
 
 ## PERT View Bulk Job Status Updates (Schedule Level)
 
-As can be performed in the **Processes** page, mass action on job status
-updates at the schedule level can be performed within PERT View. You can
-either use your mouse to select a single schedule or simultaneously
-press the **Ctrl** key and your mouse to select several schedules in the
-PERT diagram. A solid royal blue border appears around any selected
-schedule.
+As can be performed in the **Processes** page, mass action on job status updates at the schedule level can be performed within PERT View. You can either use your mouse to select a single schedule or simultaneously press the **Ctrl** key and your mouse to select several schedules in the PERT diagram. A solid royal blue border appears around any selected schedule.
 
-Once any schedule is selected, right-click on the mouse to display the
-**Selection** panel. You will then need to select the **Bulk Job Status
-Update** accordion-style tab in the panel, as shown in the graphic. From
-there, follow Steps 6 - 9 of the [Performing Bulk Job Status
-Updates (Schedule
-Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md)
-topic to perform bulk job status updates for the selected schedule(s) in
-the diagram.
-
-Bulk Job Status Update (Schedule Level) in PERT View
+Once any schedule is selected, right-click on the mouse to display the **Selection** panel. You will then need to select the **Bulk Job Status Update** accordion-style tab in the panel, as shown in the graphic. From there, follow Steps 6 - 9 of the [Performing Bulk Job Status Updates (Schedule Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md) topic to perform bulk job status updates for the selected schedule(s) in the diagram.
 
 ![Bulk Job Status Update (Schedule Level) in PERT View](../../../Resources/Images/SM/BulkJobUpdate(ScheduleLevel)inPERT.png "Bulk Job Status Update (Schedule Level) in PERT View")
 
-![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon")
-Related Topics
+![White "person reading" icon on blue circular background](../../../Resources/Images/moreinfo-icon(48x48).png "More Info icon") Related Topics
 
-- [Performing Schedule Status     Changes](Performing-Schedule-Status-Changes.md)
-- [Performing Job Status     Changes](Performing-Job-Status-Changes.md)
-- [Performing Bulk Status Job Updates (Schedule     Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md)
-- [Performing Agent Status     Updates](Performing-Agent-Status-Updates.md)
+- [Performing Schedule Status Changes](Performing-Schedule-Status-Changes.md)
+- [Performing Job Status Changes](Performing-Job-Status-Changes.md)
+- [Performing Bulk Status Job Updates (Schedule Level)](Performing-Bulk-Job-Status-Updates-Schedule-Level.md)
+- [Performing Agent Status Updates](Performing-Agent-Status-Updates.md)
 - [Viewing Job Output](Viewing-Job-Output.md)
 - [Accessing Job Summary](Accessing-Job-Summary.md)
-- [Accessing Daily Job     Definition](Accessing-Daily-Job-Definition.md)
-- [Accessing Job Executions     History](Accessing-Job-Executions-History.md)
+- [Accessing Daily Job Definition](Accessing-Daily-Job-Definition.md)
+- [Accessing Job Executions History](Accessing-Job-Executions-History.md)
 - [Managing Daily Processes](Managing-Daily-Processes.md)

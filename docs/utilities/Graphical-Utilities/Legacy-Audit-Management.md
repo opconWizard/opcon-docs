@@ -423,15 +423,11 @@ SMA Technologies recommends adding jobs to the SMAUtility schedule to archive an
 
 ## Exit Codes
 
-The legacyaudit.exe program writes the following exit codes to the
-E.C.O.F.:
+The legacyaudit.exe program writes the following exit codes to the E.C.O.F.:
 
-  Status Number   Status Description
-  --------------- ---------------------------------------
-  0               Batch run successful.
-  35001           Program aborted.
-  35002           Invalid DSN, UserID, and/or Password.
-  35003           Invalid parameters given.
-
-  : Audit Management Exit Codes
-:::
+|Status Number|Status Description|
+|--- |--- |
+|0|Batch run successful.|
+|35001|Program aborted.|
+|35002|Invalid DSN, UserID, and/or Password.|
+|35003|Invalid parameters given.|

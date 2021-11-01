@@ -390,10 +390,6 @@ Variables are supported. Refer to field definitions below:
   - DEL
   - MDEL
 
-```{=html}
-<!-- -->
-```
-
 - **User**: Defines the FTP users for connecting to the remote system.
     If not specified, the LSAM will use the default user     from the LSAM parameters.
   - Valid Values: All Batch User IDs defined in the
@@ -424,10 +420,6 @@ Variables are supported. Refer to field definitions below:
         character may be found under [Extending the IBM i Call Command         with Special
         Parameters](https://help.smatechnologies.com/opcon/agents/ibmi/latest/Files/Agents/IBM-i/Configuration.md#Extendin)
         .
-
-```{=html}
-<!-- -->
-```
 
 - **Remote File Name** (Required): Defines the name for the file once
     it reaches the remote machine.

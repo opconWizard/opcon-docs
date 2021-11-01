@@ -92,7 +92,7 @@ job(s):
     application reports the killed job as Failed.     If the Kill is not successful, the job continues to show a
     Running status in the application.
 - **Release**: This option allows you to release the selected job(s)
-    from a Held state. 
+    from a Held state.
 - **Force Start**: This option allows you to force start the selected
     job(s). This causes the job(s) to ignore all dependencies, and to
     start immediately.

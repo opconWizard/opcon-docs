@@ -229,16 +229,13 @@ The DoBatch.exe program uses the log file in the command-line argument
 to determine the success of the command and returns an appropriate error
 code. The exit codes are as follows:
 
-  Exit Code   Exit Description
-  ----------- ---------------------------------------------------------------
-  0           Successful execution.
-  32001       Fatal error in execution. Check DoBatch log for details.
-  32002       Error in execution. Check DoBatch log for details.
-  32003       Warning messages in execution. Check DoBatch log for details.
-  32004       Invalid command line input.
-  32005       Failed to launch SMAPass2Rtr.exe.
-  32006       Insufficient parameters for DoBatch command line.
-  32007       Command line greater than 2000 characters.
-
-  : DoBatch Exit Codes
-:::
+|Exit Code|Exit Description|
+|--- |--- |
+|0|Successful execution.|
+|32001|Fatal error in execution. Check DoBatch log for details.|
+|32002|Error in execution. Check DoBatch log for details.|
+|32003|Warning messages in execution. Check DoBatch log for details.|
+|32004|Invalid command line input.|
+|32005|Failed to launch SMAPass2Rtr.exe.|
+|32006|Insufficient parameters for DoBatch command line.|
+|32007|Command line greater than 2000 characters.|

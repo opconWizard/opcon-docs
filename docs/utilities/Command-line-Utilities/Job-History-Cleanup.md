@@ -117,12 +117,10 @@ The Output Directory was configured during installation. For more information, r
 
 The history.exe program uses the following exit codes:
 
-  Status Number   Status Description
-  --------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  0               Batch run successful.
-  34001           Program aborted. Review the History.log file in the <Output Directory\>\\SAM\\Log folder and possibly the MSLSAM.log file in the <Output Directory\>\\MSLSAM\\Log folder for information.
-  34002           Invalid DSN, UserID, and/or Password.
-  34003           Invalid parameters given.
-  34004           The user on the command line does not have the required privileges.
-
-  : Job History Cleanup Utility Exit Codes
+|Status Number|Status Description|
+|--- |--- |
+|0|Batch run successful.|
+|34001|Program aborted. Review the History.log file in the <Output Directory\>\SAM\Log folder and possibly the MSLSAM.log file in the <Output Directory\>\MSLSAM\Log folder for information.|
+|34002|Invalid DSN, UserID, and/or Password.|
+|34003|Invalid parameters given.|
+|34004|The user on the command line does not have the required privileges.|

@@ -877,7 +877,7 @@ The Customize Regional Options (Control Panel\>Regional Options\>Customize) for 
 | **Description**: Shows the jobs in the primary history table, their  |
 | finish status, associated runtime information, and machine each job  |
 | was executed on, sorted by start time. The report uses a special     |
-| filter for selecting [one history date]{._Override                   | | style="text-decoration: underline;"}.                                |
+| filter for selecting [one history date.                   | |  |
 +----------------------------------------------------------------------+
 | **File Name**: skdrep34                                              |
 +----------------------------------------------------------------------+

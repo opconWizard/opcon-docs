@@ -287,12 +287,7 @@ Retrieval](https://help.smatechnologies.com/opcon/agents/windows/latest/Files/Ag
 
 ## Exit Codes
 
-The SMAEvalExp.exe program uses the following exit codes:
-
-  Exit Code   Description
-  ----------- -------------------------------------------------------------------------------
-  0           Expression evaluation succeeded. The result is included in the Job Output.
-  -1          Expression evaluation failed. The error detail is included in the Job Output.
-
-  : SMA Evaluate Expression Utility Exit Codes
-:::
+|Exit Code|Description|
+|--- |--- |
+|0|Expression evaluation succeeded. The result is included in the Job Output.|
+|-1|Expression evaluation failed. The error detail is included in the Job Output.|

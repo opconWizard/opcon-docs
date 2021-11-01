@@ -57,10 +57,7 @@ A file with an unknown filename is created on a UNIX machine (or on another plat
 
 The SMASetRMFileName.exe program uses the following exit values:
 
-  Value   Description
-  ------- --------------------------------------------------------------
-  0       Successful execution.
-  NOT 0   An error occurred -- See the output file for a text message.
-
-  : SMASetRMFileName Exit Values
-:::
+|Value|Description|
+|--- |--- |
+|0|Successful execution.|
+|NOT 0|An error occurred – See the output file for a text message.|

@@ -79,7 +79,7 @@ For the default \[\[SERVER\]\] token in the UNC path to the OpConxps directory o
 
 If on the OpCon server, choose the **Directory with Windows integrated authentication** option.
 
-i.  If on the SAM server, in the **Path** field, enter or browse the path to the <Output Directory\>. 
+i.  If on the SAM server, in the **Path** field, enter or browse the path to the <Output Directory\>.
 ii. If on any other Windows machine on the same Domain, first share the
     C:\\ProgramData\\OpConxps folder on the
     OpCon server to users and grant the each

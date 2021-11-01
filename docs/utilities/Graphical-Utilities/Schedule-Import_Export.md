@@ -2,12 +2,12 @@
 
 The Schedule Import Export utility enables users to migrate one or more
 schedules from one database to another while maintaining relational
-integrity in the new environment. This utility is [not]{.ul} a replacement for regular database backups. Even if a user exports all
+integrity in the new environment. This utility is not a replacement for regular database backups. Even if a user exports all
 schedules from a database, some information may be left behind.
 
 To open the Schedule Import Export utility:
 
-- Use menu path: **[]{#aanchor656}Start \> All Programs \> OpConxps \>     Utilities \> Schedule Import Export**. This utility requires the
+- Use menu path: **Start \> All Programs \> OpConxps \>     Utilities \> Schedule Import Export**. This utility requires the
     same User Login ID and password as the Enterprise Manager. For
     information on logging in to the Enterprise Manager, refer to
     [Logging     In/Out](../../Files/UI/Enterprise-Manager/Logging-In.md)
@@ -19,7 +19,7 @@ To open the Schedule Import Export utility:
     transport database is still necessary.
 - To make schedule transfers, the Schedule Import Export utility
     requires the appropriate ODBC drivers for the SQL database. OpCon
-    installation does [not]{.ul} provide SQL ODBC drivers; however, the     installation does include Microsoft Access ODBC drivers for the
+    installation does not provide SQL ODBC drivers; however, the     installation does include Microsoft Access ODBC drivers for the
     transport database.
 - For information on configuring the SQL and Access DSNs, refer to
     [Create System     DSNs](../../installation/configuration.md#Create_System_DSNs)
@@ -75,7 +75,7 @@ The toolbar provides shortcuts to the File menu options.
     database, the import will default to forcing the Machine Mapping.
     The option can still be turned off before import if desired.
 
-[[]{#Log_in_to_Schedule_Import/Export}Log in to Schedule Import/Export]{.ul}
+## Log in to Schedule Import/Export
 
 :::note
 If you disable a login that is defined as a user's Network Account name (e.g., Domain\\User), the user will not be able to log in to any interactive applications. The Import Export Utility will inform the user that they are disabled and shut down the program.
@@ -170,7 +170,7 @@ transfer process does and does not include.
         valid for all departments.
   - The utility does not export departmental privileges associated
         with un-exported departments.
-  - When the Role privileges are imported, only a [new]{.ul} users'         Role's privileges are accepted. If the Role exists in the
+  - When the Role privileges are imported, only a new users'         Role's privileges are accepted. If the Role exists in the
         target database, the privileges in the target database are
         retained and users in the transport database (that do not exist
         in the target database) are imported and assigned to the Role in
@@ -256,8 +256,7 @@ to the upper list.
 If two schedules have cross-schedule job dependencies and both are migrated, it is better to migrate them at the same time in order to maintain the cross-schedule dependencies. If the schedules are migrated separately, the job dependency references are lost because they cannot be resolved.
 :::
 
-[Export Schedules]{.ul}
-Remove Master Holiday Dates
+### Remove Master Holiday Dates
 
 If the Master Holiday Dates from the source database should not be
 retained in the destination database, complete the following procedure
@@ -269,8 +268,6 @@ for each schedule being exported:
     the **Schedule Master** toolbar.
 4. Click **Close ☒** to the right of the **Server Options** tab to
     close the **Server Options** screen.
-
-Export Schedules
 
 [Log in to Schedule Import/Export](#Log_in_to_Schedule_Import/Export).
 
@@ -310,13 +307,13 @@ b.  If **No**, the process is canceled.
 Click the **Yes** or **No** button when asked if all tokens should be
 transferred.
 
-a.  If **Yes**, the utility transfers [all]{.ul} administrative token     records.
-b.  If **No**, the utility does [not]{.ul} transfer administrative token     records.
+a.  If **Yes**, the utility transfers all administrative token     records.
+b.  If **No**, the utility does not transfer administrative token     records.
 
 Click the **Yes** or **No** button when asked if all
 thresholds/resources should be transferred.
 
-a.  If **Yes**, the utility transfers [all]{.ul} thresholds/resources. b.  If **No**, the utility transfers only the thresholds/resources
+a.  If **Yes**, the utility transfers all thresholds/resources. b.  If **No**, the utility transfers only the thresholds/resources
     associated with the extracted schedule(s).
 
 In the termination message:
@@ -333,7 +330,7 @@ If there are SAP R/3 and CRM Job details from one or more SAP Server(s) in the t
 When Exporting schedules through from the command line, the transport database will be purged before the export.
 :::
 
-The following is the syntax for [exporting]{.ul} schedules from the Schedule Import Export command line:
+The following is the syntax for exporting schedules from the Schedule Import Export command line:
 
 ImpEx.exe
 AccessDSN,SQLDSN,UID,PWD,EXPORT,GlobalProperties?,Thresholds?,ScheduleName(s)
@@ -365,7 +362,7 @@ export from the SQL database. Valid entries include:
 - **Y** = Export all Global Properties from the source database.
 - **R** = Only export from the source database those Global Properties
     referenced by the extracted schedules and jobs.
-- **N** = Do [not]{.ul} export any Global Properties from the source     database.
+- **N** = Do not export any Global Properties from the source     database.
 
 **Thresholds?**: Used to indicate whether to transfer all of the
 thresholds and resources from the SQL database or not. Valid entries
@@ -487,7 +484,8 @@ User Tab
 - The right window displays the User Accounts in the SQL database for
     which the user has privileges.
 
-[Import Schedules]{.ul}
+### Import Schedules
+
 [Log in to Schedule Import/Export](#Log_in_to_Schedule_Import/Export).
 
 Select the **desired data source** in the **Data Source Name** list box.
@@ -520,7 +518,7 @@ Go to the right-hand frame and click a **machine or user name**.
 The associated machine or User Accounts for the SQL database are listed in parentheses next to the source machine or User Accounts in the left window.
 :::
 
-Repeat [Steps 7 and 8]{.ul} for all machines and/or User Accounts that
+Repeat Steps 7 and 8 for all machines and/or User Accounts that
 need to be mapped to a different name in the SQL database.
 
 Click the **Import** button then click **OK** on the warning message.
@@ -575,7 +573,7 @@ When importing schedules:
     valid.
 - All schedules in the transport database will be imported.
 
-The following is the syntax for [importing]{.ul} schedules from the Schedule Import Export command line:
+The following is the syntax for importing schedules from the Schedule Import Export command line:
 
 ImpEx.exe AccessDSN,SQLDSN,UID,PWD,IMPORT,PurgeJobs?,PurgeCalDates?\
 \[-e\] \[-l\] \[-m\] \[-s\]

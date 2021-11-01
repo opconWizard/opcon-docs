@@ -24,7 +24,7 @@ Insert the SMA Check Status executable in a job's command line using
 the following syntax:
 
 smachkstat.exe
-ScheduleDate\<space\>ScheduleName\<space\>"ComparisonExpression"\<space\>
+ScheduleDate<space\>ScheduleName<space\>"ComparisonExpression"<space\>
 \[JobName\] ↵
 
 :::note
@@ -35,7 +35,7 @@ The wrapping of the syntax in this document does not indicate the location of a 
 
 The following describes the command-line parameters:
 
-- []{#aanchor200} **SMAChkStat.exe**: This file is the program     executable. The utility is installed in the \<Target
+- **SMAChkStat.exe**: This file is the program     executable. The utility is installed in the <Target
     Directory\>\\OpConxps\\Utilities\\ directory.
 - **ScheduleDate**: This parameter is the date on which the schedule
     was built. The parameter accepts any valid date format matching the
@@ -119,9 +119,9 @@ The Output Directory was configured during installation. For more information, r
 
 - The SMACheckStat.log file provides detailed information of errors
     generated during the utility's execution. The log file resides in
-    the \<Output Directory\>\\SAM\\Log\\ directory. The syntax for the
-    log file name is SMACheckStat\_\<date-time stamp\>.log.
-- All archived log files reside in the \<Output
+    the <Output Directory\>\\SAM\\Log\\ directory. The syntax for the
+    log file name is SMACheckStat\_<date-time stamp\>.log.
+- All archived log files reside in the <Output
     Directory\>\\SAM\\Log\\Archive\\ folder. If an archive folder for
     the day does not already exist, the utility creates one. The folder
     names use the following naming convention: yyyy_mm_dd (Weekday). The
@@ -144,13 +144,10 @@ The SAM does not purge any Archive folders if any files other than archived file
 
 The SMAChkStat.exe program uses the following exit codes:
 
-  Exit Code   Exit Description
-  ----------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  0           Criterion is true.
-  33001       No matching records found. The criterion is false. Review the command line for schedule name, job name, and job status and make sure all of the parameters are valid.
-  33002       Command-line syntax error in the parameters. Parsing error.
-  33003       Database connection information, Usercode, and Password information is incorrect or SMAODBCConfiguration.dat file is missing.
-  33004       Unknown.
-
-  : SMACheckStat Exit Codes
-:::
+|Exit Code|Exit Description|
+|--- |--- |
+|0|Criterion is true.|
+|33001|No matching records found. The criterion is false. Review the command line for schedule name, job name, and job status and make sure all of the parameters are valid.|
+|33002|Command-line syntax error in the parameters. Parsing error.|
+|33003|Database connection information, Usercode, and Password information is incorrect or SMAODBCConfiguration.dat file is missing.|
+|33004|Unknown.|

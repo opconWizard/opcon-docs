@@ -28,12 +28,10 @@ The Output Directory was configured during installation. For more information, r
 :::
 
 The SMACheckTerm log file provides detailed information of errors
-generated during the utility's execution. The log file resides in the
-\<Output Directory\>\\SAM\\Log\\ directory. The syntax for the log file
-name is SMACheckTerm\_\<date-time stamp\>.log.
+generated during the utility's execution. The log file resides in the <Output Directory\>\\SAM\\Log\\ directory. The syntax for the log file
+name is SMACheckTerm\_<date-time stamp\>.log.
 
-All archived log files reside in the \<Output
-Directory\>\\SAM\\Log\\Archive\\ folder. If an archive folder for the
+All archived log files reside in the <Output Directory\>\\SAM\\Log\\Archive\\ folder. If an archive folder for the
 day does not already exist, the utility creates one. The folder names
 use the following naming convention: yyyy_mm_dd (Weekday). The logging
 mechanism generates the weekday name according to the Regional Settings
@@ -58,13 +56,10 @@ The SAM does not purge any Archive folders if any files other than archived file
 
 The SMACheckTerm.exe program uses the following exit codes:
 
-  Exit Code   Exit Description
-  ----------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  0           Criterion is true.
-  33001       No matching records found. The criterion is false. Review the command line for schedule name, schedule status, job name, and job status and make sure all of the parameters are valid.
-  33002       Command-line syntax error in the parameters. Parsing error.
-  33003       Database Connection Information, Usercode, and Password information is incorrect or SMAODBCConfiguration.dat file is missing.
-  33004       Unknown.
-
-  : SMACheckTerm Exit Codes
-:::
+|Exit Code|Exit Description|
+|--- |--- |
+|0|Criterion is true.|
+|33001|No matching records found. The criterion is false. Review the command line for schedule name, schedule status, job name, and job status and make sure all of the parameters are valid.|
+|33002|Command-line syntax error in the parameters. Parsing error.|
+|33003|Database Connection Information, Usercode, and Password information is incorrect or SMAODBCConfiguration.dat file is missing.|
+|33004|Unknown.|

@@ -1,9 +1,3 @@
----
-lang: en-us
-title: Schedule Extract Command-line Interface
-viewport: width=device-width, initial-scale=1.0
----
-
 # Schedule Extract Command-line Interface
 
 The EM is equipped with a command-line interface for Schedule Extract to
@@ -103,7 +97,8 @@ of schedules to extract.
 
 - Required if -s is not specified.
 - The file should contain one line per schedule.
-- Use the syntax: [-s;<Schedule Name\>]{.outputtxt} -   Following the <Schedule Name\>, you can specify the optional
+- Use the syntax: `-s;<Schedule Name\>`
+  - Following the <Schedule Name\>, you can specify the optional
     arguments, with each argument and value separated with a semicolon
     (;).
 
@@ -393,11 +388,11 @@ The change file consists of an XML format file with the following XML
 tags. It is possible to have multiple definitions of a tag id with
 different values.
 
-[<global_change_file\>]{style="font-family: 'Courier New';"} is the root tag
+`<global_change_file\>` is the root tag
 
-[<global_change\>]{style="font-family: 'Courier New';"} contains the defined change
+`<global_change\>` contains the defined change
 
-[<global_change_tag_id\>]{style="font-family: 'Courier New';"} defines the change tag id and consists of one of the following values:
+`<global_change_tag_id\>` defines the change tag id and consists of one of the following values:
 
 - Schedule_Name
 - Frequency_Name
@@ -414,13 +409,11 @@ different values.
 - Unix_Start_Image
 - Unix_Parameter
 
-[<global_change_current_value\>]{style="font-family: 'Courier New';"} defines the existing value to search for.
+`<global_change_current_value\>` defines the existing value to search for.
 
-[<global_change_new_value\>]{style="font-family: 'Courier New';"} defines the value to replace the existing value.
+`<global_change_new_value\>` defines the value to replace the existing value.
 
-[<global_change_partial_update\>]{style="font-family: 'Courier New';"} defines if Schedule Extract should replace the matching value for the
-<global_change_current_value\> anywhere within the whole value of the
-change tag id.
+`<global_change_partial_update\>` defines if Schedule Extract should replace the matching value for the <global_change_current_value\> anywhere within the whole value of the change tag id.
 
 - This element is optional because each <global_change_tag_id\> has a
     default behavior for partial replacement.
@@ -580,15 +573,11 @@ C:\Program Files\OpConxps\EnterpriseManager\tools>schedule_extract.cmd -opconuse
 
 ## Exit Codes
 
-The Schedule Extract Command Line Interface uses the following exit
-codes:
+The Schedule Extract Command Line Interface uses the following exit codes:
 
-  Error Code   Error Description
-  ------------ ----------------------------------------------------------------------------------------------------
-  0            The schedule extract was successful.
-  1            The schedule extract process failed. Use the View Job Output feature for more information.
-  98           The OpCon user or OpCon password is invalid.
-  99           One or more schedules for extract do not exist in the database.
-
-  : Schedule Extract Command Line Interface Exit Codes
-:::
+|Error Code|Error Description|
+|--- |--- |
+|0|The schedule extract was successful.|
+|1|The schedule extract process failed. Use the View Job Output feature for more information.|
+|98|The OpCon user or OpCon password is invalid.|
+|99|One or more schedules for extract do not exist in the database.|

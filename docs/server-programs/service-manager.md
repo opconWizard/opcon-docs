@@ -384,7 +384,7 @@ For each of the Application Hung Scripts and supplemental scripts, complete the 
 3. Go to the **Folders** frame.
 4. Browse to the <Configuration Directory\>**\\SAM\\** directory.
 5. Right-click on the desired **supplemental hung command file** (e.g., SAMHung.cmd) and select **Edit**.
-6. Search for [all occurrences]{.ul} of **\<DB server name\>** and replace that text with the *OpCon database server name*.
+6. Search for all occurrences of **\<DB server name\>** and replace that text with the *OpCon database server name*.
 7. Search for *all occurrences* of **\<path to output file\>** and replace that text with the *path to the desired location for output files from the SQL commands*.
 8. Search for *all occurrences* of **\<DSN\>** and replace that text with the *DSN to the OpCon database*.
 9. If editing a SQL Authentication command file, search for *all occurrences* of **\<sa password\>** and replace that text with the *OpCon database sa password*.

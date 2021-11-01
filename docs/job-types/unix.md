@@ -378,7 +378,7 @@ Sequence Number sub-type.
 - **OpCon User ID**: Defines an OpCon User ID with privileges
     to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon User ID specified (this is not the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
      in the **OpCon Events** online help.
 
 ### Episys: Find Report from Episys Reports
@@ -411,7 +411,7 @@ Reports sub-type.
 - **OpCon User ID**: Defines an OpCon User ID with privileges
     to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon User ID specified (this is not the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
      in the **OpCon Events** online help.
 - **Occurrence to Search for**: Defines a numerical value (maximum
     value 99) that identifies the occurrence of the Report title to
@@ -449,7 +449,7 @@ Output sub-type.
 - **OpCon User ID**: Defines an OpCon User ID with privileges
     to "Maintain Global Properties".
 - **External Event Password**: Defines the External Event Password for
-    the OpCon User ID specified (this is [not]{.ul} the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
+    the OpCon User ID specified (this is not the same     password as the user's login password). Refer to [External Events](../events/defining.md#external-events)
     .
 - **Occurrence to Search for**: Defines a numerical value (maximum
     value 99) that identifies the occurrence of the Report title to

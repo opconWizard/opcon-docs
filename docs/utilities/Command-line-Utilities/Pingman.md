@@ -1,60 +1,22 @@
 # Pingman
 
 Pingman is a utility designed to constantly ping a machine to determine
-network stability. The Pingman utility resides in the \<Target
+network stability. The Pingman utility resides in the <Target
 Directory\>\\OpConxps\\Utilities\\ directory.
 
 ## Configuration
 
-To configure Pingman, modify the pingman.ini file located in the
-\<Target Directory\>\\OpConxps\\Utilities\\ directory.
+To configure Pingman, modify the pingman.ini file located in the <Target Directory\>\\OpConxps\\Utilities\\ directory.
 
-+------------------+------------+------------------------------------+
-| Setting          | Default    | Description                        |
-+==================+:==========:+====================================+
-| Cycle Time       | 30 Seconds | Number of seconds Pingman waits    |
-|                  |            | before pinging.                    |
-+------------------+------------+------------------------------------+
-| SendTo           | 1 second   | Seconds to wait before the ping is |
-|                  |            | considered "lost" on the way to  |
-|                  |            | the host.                          |
-+------------------+------------+------------------------------------+
-| RecvFrom         | 1 second   | Seconds to wait before the ping is |
-|                  |            | considered "lost" on the way     |
-|                  |            | back from the host.                |
-+------------------+------------+------------------------------------+
-| Show Every Error | TRUE       | -   Pingman logs errors to the     |
-|                  |            |     pingman.log file in the same   |
-|                  |            |     directory where pingman.exe    |
-|                  |            |     exists.                        |
-|                  |            | -   Valid values include:          |
-|                  |            |     -   **TRUE**: Each time        |
-|                  |            |         Pingman receives an error, |
-|                  |            |         it is logged.              |
-|                  |            |     -   **FALSE**: Pingman only    |
-|                  |            |         logs changes in response   |
-|                  |            |         from a machine.            |
-+------------------+------------+------------------------------------+
-| Show Every Ping  | TRUE       | -   Pingman logs ping information  |
-|                  |            |     to the pingman.log file in the |
-|                  |            |     same directory where           |
-|                  |            |     pingman.exe exists.            |
-|                  |            | -   Valid values include:          |
-|                  |            |     -   **TRUE**: Each time a ping |
-|                  |            |         is sent, the information   |
-|                  |            |         is logged.                 |
-|                  |            |     -   **FALSE**: No ping         |
-|                  |            |         information is logged.     |
-+------------------+------------+------------------------------------+
-| Machine_1        | \<None\>   | -   The host name of the machine   |
-|                  |            |     to be monitored.               |
-| Machine_2        |            | -   Multiple machines can be       |
-|                  |            |     monitored by adding up to 250  |
-| Machine_3\....   |            |     (maximum) additional machine   |
-|                  |            |     lines.                         |
-+------------------+------------+------------------------------------+
+|Setting|Default|Description|
+|--- |--- |--- |
+|Cycle Time|30 Seconds|Number of seconds Pingman waits before pinging.|
+|SendTo|1 second|Seconds to wait before the ping is considered "lost" on the way to the host.|
+|RecvFrom|1 second|Seconds to wait before the ping is considered "lost" on the way back from the host.|
+|Show Every Error|TRUE|Pingman logs errors to the pingman.log file in the same directory where pingman.exe exists. Valid values include TRUE (Each time Pingman receives an error, it is logged) and FALSE (Pingman only logs changes in response from a machine).|
+|Show Every Ping|TRUE|Pingman logs ping information to the pingman.log file in the same directory where pingman.exe exists. Valid values include TRUE (Each time a ping is sent, the information is logged) and FALSE (No ping information is logged)|
+|Machine_1,Machine_2,Machine_3....|<None\>|The host name of the machine to be monitored. Multiple machines can be monitored by adding up to 250 (maximum) additional machine lines.|
 
-: Pingman.ini Settings
 
 :::tip Example
 The following example shows multiple machine lines added:
